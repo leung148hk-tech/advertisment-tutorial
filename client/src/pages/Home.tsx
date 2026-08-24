@@ -40,6 +40,18 @@ import {
 type Screen = "landing" | "quiz" | "details" | "report";
 const MODULES: ModuleName[] = ["基礎掌握", "理解與應用", "情境推理", "整合表達"];
 const LOGO_IMAGE = "/manus-storage/learning-compass-mark_3de5f85b.png";
+const PRIMARY_MATH_SUPPORT: Record<string, { title: string; focus: string; format: string; next: string }> = {
+  "數與運算": { title: "數感與運算支援（示範推薦）", focus: "加減乘除、位值、小數及估算", format: "小班分步練習", next: "以直式、心算策略和生活情境逐步鞏固運算過程。" },
+  "比較與規律": { title: "數感與規律支援（示範推薦）", focus: "大小比較、排序及數字規律", format: "遊戲化小組", next: "由具體物件和數線開始，建立比較和找規律的語言。" },
+  "乘除與分組": { title: "乘除概念支援（示範推薦）", focus: "乘法意義、平均分及分組", format: "小班具體操作", next: "使用圖像和實物理解分組與平均分，再連結到算式。" },
+  "乘除與分數": { title: "乘除與分數支援（示範推薦）", focus: "乘除應用、分數概念及運算", format: "主題鞏固班", next: "先整理分組與分數圖像，再練習從題意選擇合適運算。" },
+  "分數與比例": { title: "分數比例支援（示範推薦）", focus: "分數、小數、百分比及比例", format: "小班策略訓練", next: "以數線、圖像和生活折扣題，建立不同表示法之間的連結。" },
+  "圖形與量度": { title: "圖形量度支援（示範推薦）", focus: "周界、面積、體積、時間及單位", format: "圖像化練習", next: "先畫圖和標示已知資料，再把公式放進具體情境使用。" },
+  "時間與金錢": { title: "生活數學支援（示範推薦）", focus: "時間、金錢、找贖及日常計算", format: "生活情境小組", next: "利用時鐘、價錢和購物情境，逐步整理計算與檢查答案的步驟。" },
+  "數據與統計": { title: "數據判讀支援（示範推薦）", focus: "圖表、平均數、中位數及資料比較", format: "專題練習班", next: "由閱讀圖表的標題、單位和數值開始，再練習用數據回答問題。" },
+  "資料與生活解題": { title: "生活解題支援（示範推薦）", focus: "圖表比較與兩步驟生活題", format: "小班策略練習", next: "先圈出已知資料和問題所問，再把文字轉換成清晰算式。" },
+  "多步驟解題": { title: "綜合解題支援（示範推薦）", focus: "方程思維、多步驟及綜合文字題", format: "進階解題小組", next: "練習拆開題目、規劃算式順序，並以逆向運算檢查結果。" },
+};
 
 function trackIcon(icon: string) {
   if (icon === "math") return <Calculator size={20} />;
@@ -65,6 +77,7 @@ export default function Home() {
   const [district, setDistrict] = useState("");
   const [pdfBusy, setPdfBusy] = useState(false);
   const [shareStatus, setShareStatus] = useState("");
+  const [focusMode, setFocusMode] = useState(false);
   const reportRef = useRef<HTMLElement | null>(null);
 
   const gradeInfo = GRADES.find((item) => item.id === grade) ?? null;
@@ -91,6 +104,8 @@ export default function Home() {
   }), [answers, questions]);
 
   const focusAreas = useMemo(() => [...abilityResults].sort((a, b) => a.percentage - b.percentage).slice(0, 3), [abilityResults]);
+  const isPrimaryMath = trackId === "math" && gradeInfo?.stage === "小學";
+  const weakAreas = useMemo(() => isPrimaryMath ? abilityResults.filter((item) => item.correct < 2 && item.total >= 4) : [], [abilityResults, isPrimaryMath]);
 
   const selectGrade = (nextGrade: GradeId) => {
     setGrade(nextGrade);
@@ -106,6 +121,7 @@ export default function Home() {
     setQuestionIndex(0);
     setStudentName("");
     setDistrict("");
+    setFocusMode(false);
     setScreen("quiz");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -113,7 +129,7 @@ export default function Home() {
   const selectAnswer = (answer: number) => setAnswers((currentAnswers) => ({ ...currentAnswers, [current.id]: answer }));
   const next = () => { if (questionIndex === questions.length - 1) setScreen("details"); else setQuestionIndex((index) => index + 1); window.scrollTo({ top: 0, behavior: "smooth" }); };
   const previous = () => { if (questionIndex > 0) setQuestionIndex((index) => index - 1); };
-  const restart = () => { setScreen("landing"); setTrackId(""); setQuestions([]); setAnswers({}); window.scrollTo({ top: 0, behavior: "smooth" }); };
+  const restart = () => { setScreen("landing"); setTrackId(""); setQuestions([]); setAnswers({}); setFocusMode(false); window.scrollTo({ top: 0, behavior: "smooth" }); };
 
   const downloadPdf = async () => {
     if (!reportRef.current || !gradeInfo || !trackInfo) return;
@@ -196,6 +212,8 @@ export default function Home() {
     {screen === "report" && gradeInfo && trackInfo && <><section ref={reportRef} className="download-report" aria-labelledby="report-title"><div className="report-banner"><div className="report-brand"><img src={LOGO_IMAGE} alt="學習航圖" /><span><strong>學習航圖</strong><small>FREE ASSESSMENT REPORT</small></span></div><span>{reportDate}</span></div><div className="report-identity"><div><p className="eyebrow"><Sparkles size={16} /> 免費完整評估報告</p><h1 id="report-title">{studentName ? `${studentName} 的` : "你的"}{trackInfo.label}學習報告</h1><p>{gradeInfo.label} · {trackInfo.shortLabel} · 本次由 {poolSize} 題分級題庫中隨機抽取 20 題</p></div><div className="overall-score"><span>整體答對</span><strong>{score}<small>/20</small></strong><p>{Math.round(percentage * 100)}%</p></div></div><div className="report-overview"><article><span>本次表現區間</span><h2>{profile.title}</h2><p>{profile.note}</p></article><article><span>評估範圍</span><h2>4 個模組 · {abilityResults.length} 個能力面向</h2><p>基礎掌握、理解與應用、情境推理及整合表達均已納入本次隨機題組。</p></article></div><section className="report-section"><div className="section-title"><span>01</span><div><p className="eyebrow">四個模組</p><h2>答題結構概覽</h2></div></div><div className="module-score-grid">{moduleResults.map((module) => <article key={module.module}><span>{module.module}</span><strong>{module.correct}<small> / {module.total}</small></strong><p>{module.percentage >= 80 ? "表現穩定" : module.percentage >= 55 ? "建立中" : "可優先整理"}</p></article>)}</div></section><section className="report-section"><div className="section-title"><span>02</span><div><p className="eyebrow">能力分項</p><h2>本次最值得討論的面向</h2></div></div><div className="ability-report">{abilityResults.map((ability) => <div className="ability-row" key={ability.topic}><div><strong>{ability.topic}</strong><span>{ability.correct} / {ability.total} 題 · {ability.state}</span></div><div className="ability-track"><i style={{ width: `${ability.percentage}%` }} /></div></div>)}</div></section><section className="report-section plan-section"><div className="section-title"><span>03</span><div><p className="eyebrow">兩星期起步建議</p><h2>只選一至兩個重點，慢慢建立把握。</h2></div></div><div className="focus-list">{focusAreas.map((item, index) => <article key={item.topic}><span>0{index + 1}</span><div><h3>{item.topic}</h3><p>{item.percentage < 55 ? "先以有示範、可拆步驟的短練習整理核心概念；每次完成後說出做法和原因。" : "可把概念放進較接近閱讀、解題或表達情境的題目中，練習如何選擇方法。"}</p></div></article>)}</div><div className="report-disclaimer"><CheckCircle2 size={17} /><p><strong>報告限制：</strong>本結果只反映這次 20 題隨機題組的答題情況。中文及英文的寫作卷評估寫作基礎與組織能力，並不等同完整作文批改、校內成績或任何專業診斷。</p></div></section><footer className="pdf-footer"><span>學習航圖 · 分級免費評估</span><span>{district ? `${district} · ` : ""}僅供家庭學習規劃參考</span></footer></section><section className="download-actions" data-pdf-ignore="true"><div><p className="eyebrow">保存這份報告</p><h2>下載 PDF，方便和孩子、導師一起閱讀。</h2><p>PDF 由現時頁面在瀏覽器端產生，報告資料不會被傳送或保存。</p></div><div><button className="button button-primary" onClick={downloadPdf} disabled={pdfBusy}>{pdfBusy ? "正在製作 PDF…" : "下載完整 PDF 報告"} <Download size={18} /></button><button className="button button-ghost" onClick={restart}><RefreshCw size={17} /> 重新隨機抽題</button></div></section></>}
 
     {screen === "report" && gradeInfo && trackInfo && <section className="report-share-panel" aria-labelledby="share-title"><div><p className="eyebrow"><Share2 size={16} /> 分享結果摘要</p><h2 id="share-title">把學習方向，分享給值得一起討論的人。</h2><p>分享內容只包括年級、試卷和整體結果，不包括學生稱呼、所在地區、逐題答案或 PDF 內容。</p></div><div className="share-controls"><button className="share-button share-button-whatsapp" onClick={shareWhatsApp}><MessageCircle size={18} /> WhatsApp</button><button className="share-button" onClick={shareToDevice}><Share2 size={18} /> 分享到其他 App</button><button className="share-button" onClick={copyShareText}><Copy size={17} /> 複製文字</button>{shareStatus && <span className="share-status"><CheckCircle2 size={15} /> {shareStatus}</span>}</div></section>}
+    {screen === "report" && gradeInfo && trackInfo && isPrimaryMath && <section className="focus-mode-panel" data-pdf-ignore="true"><div><p className="eyebrow"><Sparkles size={16} /> 小學數學弱項精簡模式</p><h2>只看現在需要加強的數學面向。</h2><p>系統只會在某能力面向答對少於 2 題（共 4 題）時列為需要加強，避免一次偶然失誤被過度解讀。</p></div><button className={focusMode ? "button button-ghost" : "button button-primary"} onClick={() => setFocusMode((currentMode) => !currentMode)}>{focusMode ? "返回完整報告" : "開啟精簡弱項報告"} <ArrowRight size={17} /></button></section>}
+    {screen === "report" && gradeInfo && isPrimaryMath && focusMode && <section className="focus-report" aria-labelledby="focus-report-title"><div className="focus-report-header"><p className="eyebrow"><MapPin size={16} /> {gradeInfo.label} · 小學數學</p><h2 id="focus-report-title">{weakAreas.length ? "集中處理這些弱項。" : "本次未見明顯弱項。"}</h2><p>{weakAreas.length ? "以下只保留需要加強的能力面向、短期練習重點及可進一步了解的支援類型。" : "孩子在本次各能力面向至少答對 2 題；可返回完整報告查看延伸練習方向。"}</p></div>{weakAreas.length ? <div className="focus-recommendation-grid">{weakAreas.map((area, index) => { const support = PRIMARY_MATH_SUPPORT[area.topic] ?? PRIMARY_MATH_SUPPORT["多步驟解題"]; return <article className="focus-recommendation-card" key={area.topic}><span>0{index + 1}</span><p className="demo-chip">合作支援示範推薦</p><h3>{area.topic}</h3><div className="focus-score"><strong>{area.correct} / {area.total}</strong><span>本次答對</span></div><p className="support-title">{support.title}</p><dl><div><dt>適合支援</dt><dd>{support.focus}</dd></div><div><dt>建議形式</dt><dd>{support.format}</dd></div><div><dt>起步方向</dt><dd>{support.next}</dd></div></dl><button className="partner-button" disabled><MapPin size={16} /> 待加入真實合作資料</button></article>; })}</div> : <div className="focus-clear"><CheckCircle2 size={28} /><div><strong>精簡模式暫時不需列出支援建議</strong><p>這不代表孩子不需要練習；只代表本次 20 題中未出現符合弱項門檻的能力面向。</p></div></div>}<p className="focus-transparency"><strong>透明度說明：</strong>以上為按弱項和年級排列的支援類型示範，並非真實補習社名單或報讀推薦。加入真實合作資料後，才會顯示實際中心、地區、名額和聯絡方式。</p></section>}
     <footer className="site-footer"><span>© 學習航圖</span><span>小一至小六 · 中一至中三 · 分級隨機評估</span></footer>
   </main>;
 }

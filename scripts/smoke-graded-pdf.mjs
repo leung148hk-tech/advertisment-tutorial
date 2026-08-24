@@ -4,6 +4,7 @@ import { existsSync, mkdirSync, readdirSync, rmSync, writeFileSync } from "node:
 const port = 9333;
 const downloadDir = "/home/ubuntu/Downloads/learning-compass-smoke";
 const profileDir = "/tmp/learning-compass-smoke-profile";
+const testTrack = process.env.SMOKE_TRACK ?? "中文閱讀";
 rmSync(downloadDir, { recursive: true, force: true });
 rmSync(profileDir, { recursive: true, force: true });
 mkdirSync(downloadDir, { recursive: true });
@@ -53,7 +54,7 @@ async function run() {
   await wait(1000);
   await evaluate(`Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.trim() === '小一')?.click()`);
   await wait(100);
-  await evaluate(`Array.from(document.querySelectorAll('.track-card')).find((button) => button.textContent?.includes('中文閱讀'))?.click()`);
+  await evaluate(`Array.from(document.querySelectorAll('.track-card')).find((button) => button.textContent?.includes(${JSON.stringify(testTrack)}))?.click()`);
   await wait(250);
   for (let index = 0; index < 20; index += 1) {
     await evaluate(`document.querySelector('.answer-option')?.click()`);
@@ -67,6 +68,12 @@ async function run() {
   if (!reportState.report || !reportState.text || !reportState.button) {
     const bodyText = await evaluate("document.body.innerText.slice(-1600)");
     throw new Error(`The complete report did not render as expected: ${JSON.stringify(reportState)}\n${bodyText}`);
+  }
+  if (testTrack === "數學") {
+    await evaluate(`Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('開啟精簡弱項報告'))?.click()`);
+    await wait(180);
+    const focusState = await evaluate(`({ panel: !!document.querySelector('.focus-report'), recommendation: document.body.innerText.includes('合作支援示範推薦'), transparency: document.body.innerText.includes('透明度說明') })`);
+    if (!focusState.panel || !focusState.recommendation || !focusState.transparency) throw new Error(`Weakness focus report did not render as expected: ${JSON.stringify(focusState)}`);
   }
   const shareState = await evaluate(`({ panel: !!document.querySelector('.report-share-panel'), whatsapp: !!Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('WhatsApp')), device: !!Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('分享到其他 App')), copy: !!Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('複製文字')) })`);
   if (!shareState.panel || !shareState.whatsapp || !shareState.device || !shareState.copy) throw new Error(`Share controls did not render as expected: ${JSON.stringify(shareState)}`);
@@ -89,7 +96,7 @@ async function run() {
     const pageState = await evaluate("({ busy: document.body.innerText.includes('正在製作 PDF'), report: !!document.querySelector('.download-report') })");
     throw new Error(`PDF download was not created. ${JSON.stringify({ errors, pageState })}`);
   }
-  console.log(`Smoke test passed: report rendered, share controls verified and ${downloads[0]} downloaded.`);
+  console.log(`Smoke test passed for ${testTrack}: report rendered, share controls verified and ${downloads[0]} downloaded.`);
   socket.close();
   browser.kill("SIGTERM");
 }
