@@ -435,3 +435,13 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px s
 .download-actions { width:min(920px,calc(100% - 48px)); margin-top:12px; background:white; color:var(--moss); border-top:3px solid var(--moss); padding:27px 31px; }.download-actions > div:first-child > p:last-child { color:var(--muted-ink); }.download-actions .button-ghost { color:var(--moss); border-color:#c9c5b8; }.download-actions > div:last-child { align-items:center; }
 .report-share-panel { width:min(920px,calc(100% - 48px)); margin-top:12px; background:#f0ece1; }
 @media (max-width:600px) { .download-report { width:min(100% - 32px,920px); gap:9px; }.report-banner { padding:13px 17px; }.report-identity,.report-section { padding:26px 20px; }.download-report .module-score-grid { grid-template-columns:1fr 1fr; }.ability-row { grid-template-columns:1fr; gap:8px; }.download-actions { width:min(100% - 32px,920px); padding:23px 20px; } }
+
+/* Data-film chart pass: visible scale, consistent bars and a plain-language legend. */
+.ability-report { position:relative; gap:7px; padding:15px; background:#edf3ee; border-top:2px solid var(--moss); }
+.ability-report::before { content:"能力視覺化長條圖                                      0%          25%          50%          75%        100%"; color:var(--moss); font-size:9px; font-weight:700; letter-spacing:.04em; white-space:pre; overflow:hidden; padding:0 1px 7px; border-bottom:1px solid rgba(30,75,67,.18); }
+.ability-row { background:rgba(255,255,255,.77); padding:13px 15px; border:0; }.ability-row:nth-child(even) { background:rgba(255,255,255,.54); }
+.ability-row > div:first-child span { color:var(--moss); font-variant-numeric:tabular-nums; font-weight:700; }
+.ability-track { height:16px; border:1px solid rgba(30,75,67,.14); background-color:#f6f1e5; background-image:linear-gradient(to right, transparent 24.7%, rgba(30,75,67,.16) 24.7%, rgba(30,75,67,.16) 25.3%, transparent 25.3%, transparent 49.7%, rgba(30,75,67,.16) 49.7%, rgba(30,75,67,.16) 50.3%, transparent 50.3%, transparent 74.7%, rgba(30,75,67,.16) 74.7%, rgba(30,75,67,.16) 75.3%, transparent 75.3%); }
+.ability-track i { background:linear-gradient(90deg, #f06a4d 0%, #e98665 100%); box-shadow:inset -2px 0 0 rgba(255,255,255,.55); }
+.ability-report::after { content:"珊瑚長條代表本次答對比例；「表現穩定」為 80% 或以上，「建立中」為 55% 至 79%，其餘為可優先整理。"; color:var(--muted-ink); font-size:10px; line-height:1.65; padding-top:5px; }
+@media (max-width:600px) { .ability-report { padding:13px; }.ability-report::before { content:"能力視覺化長條圖 · 0%  ─────  50%  ─────  100%"; white-space:normal; } }
