@@ -408,3 +408,30 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px s
 .selection-body { background:rgba(255,255,255,.38); padding:17px; border-top:1px solid rgba(30,75,67,.2); }
 .track-card:first-child { border-top:3px solid var(--coral); }
 @media (max-width:600px) { .graded-hero { padding-top:31px; }.graded-hero::before { font-size:8px; white-space:nowrap; }.graded-hero::after { display:none; }.selection-body { padding:11px; } }
+
+/* Report sharing: compact privacy-first actions adjacent to the saved report flow. */
+.report-share-panel { width:min(980px,calc(100% - 48px)); margin:16px auto 0; padding:26px 31px; background:#f0ece1; border-left:4px solid var(--coral); display:grid; grid-template-columns:minmax(0,1fr) auto; gap:30px; align-items:end; }
+.report-share-panel h2 { color:var(--moss); font:clamp(23px,2.7vw,34px)/1.28 var(--serif); letter-spacing:-.045em; margin:0; }
+.report-share-panel > div > p:last-child { color:var(--muted-ink); font-size:11px; line-height:1.75; max-width:560px; margin:8px 0 0; }
+.share-controls { display:flex; flex-wrap:wrap; gap:8px; justify-content:flex-end; max-width:390px; }
+.share-button { display:inline-flex; align-items:center; gap:7px; background:white; color:var(--moss); border:1px solid #c9c5b8; padding:10px 12px; font-size:11px; font-weight:700; transition:transform 160ms var(--ease-out),border-color 160ms var(--ease-out); }
+.share-button:hover { border-color:var(--moss); transform:translateY(-2px); }.share-button:active { transform:scale(.97); }
+.share-button-whatsapp { background:#eaf6ed; border-color:#7eb78d; color:#236239; }
+.share-status { width:100%; display:flex; align-items:center; justify-content:flex-end; gap:5px; color:var(--moss); font-size:10px; padding-top:4px; }
+@media (max-width:600px) { .report-share-panel { width:min(100% - 32px,980px); padding:23px 20px; grid-template-columns:1fr; gap:18px; }.share-controls { justify-content:flex-start; max-width:none; }.share-status { justify-content:flex-start; } }
+
+/* Clean report pass: one decision per block, stronger summary-to-detail rhythm. */
+.download-report { width:min(920px,calc(100% - 48px)); margin-top:38px; padding:0; background:transparent; box-shadow:none; display:grid; gap:12px; }
+.report-banner { background:var(--moss); color:#d9e8df; padding:15px 22px; border:0; }
+.report-banner .report-brand { color:white; }.report-banner .report-brand small,.report-banner > span { color:#c6dbd1; }
+.report-identity { background:white; padding:38px 42px 30px; border-top:4px solid var(--coral); }
+.report-identity > div > p:last-child { max-width:490px; line-height:1.75; }
+.report-overview { gap:12px; }.report-overview article { background:white; border-left:3px solid var(--moss); padding:22px 25px; }.report-overview article:last-child { background:#f1ece0; border-left-color:var(--coral); }
+.report-section { background:white; margin:0; padding:31px 42px 36px; }.report-section .section-title { margin-bottom:20px; }.report-section .section-title h2 { font-size:25px; }
+.download-report .module-score-grid { margin:0; grid-template-columns:repeat(2,1fr); gap:10px; }.download-report .module-score-grid article { min-height:116px; padding:19px; }.download-report .module-score-grid article:nth-child(4) { background:#244941; }
+.ability-report { margin-top:0; display:grid; gap:1px; }.ability-row { background:#fbf8ee; padding:13px 15px; border:0; grid-template-columns:210px 1fr; }.ability-row:nth-child(even) { background:#f4f0e6; }
+.focus-list { margin-top:0; }.focus-list article { background:#edf3ee; border-top:3px solid var(--moss); }.focus-list article:nth-child(2) { background:#f1ece0; border-top-color:var(--coral); }.focus-list article:nth-child(3) { background:#f7eee8; border-top-color:#c98566; }
+.report-disclaimer { margin-top:14px; }
+.download-actions { width:min(920px,calc(100% - 48px)); margin-top:12px; background:white; color:var(--moss); border-top:3px solid var(--moss); padding:27px 31px; }.download-actions > div:first-child > p:last-child { color:var(--muted-ink); }.download-actions .button-ghost { color:var(--moss); border-color:#c9c5b8; }.download-actions > div:last-child { align-items:center; }
+.report-share-panel { width:min(920px,calc(100% - 48px)); margin-top:12px; background:#f0ece1; }
+@media (max-width:600px) { .download-report { width:min(100% - 32px,920px); gap:9px; }.report-banner { padding:13px 17px; }.report-identity,.report-section { padding:26px 20px; }.download-report .module-score-grid { grid-template-columns:1fr 1fr; }.ability-row { grid-template-columns:1fr; gap:8px; }.download-actions { width:min(100% - 32px,920px); padding:23px 20px; } }

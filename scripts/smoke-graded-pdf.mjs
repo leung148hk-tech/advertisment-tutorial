@@ -1,5 +1,5 @@
 import { spawn } from "node:child_process";
-import { existsSync, mkdirSync, readdirSync, rmSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 
 const port = 9333;
 const downloadDir = "/home/ubuntu/Downloads/learning-compass-smoke";
@@ -68,6 +68,16 @@ async function run() {
     const bodyText = await evaluate("document.body.innerText.slice(-1600)");
     throw new Error(`The complete report did not render as expected: ${JSON.stringify(reportState)}\n${bodyText}`);
   }
+  const shareState = await evaluate(`({ panel: !!document.querySelector('.report-share-panel'), whatsapp: !!Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('WhatsApp')), device: !!Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('分享到其他 App')), copy: !!Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('複製文字')) })`);
+  if (!shareState.panel || !shareState.whatsapp || !shareState.device || !shareState.copy) throw new Error(`Share controls did not render as expected: ${JSON.stringify(shareState)}`);
+  const screenshot = await command("Page.captureScreenshot", { format: "png", captureBeyondViewport: true });
+  writeFileSync("/home/ubuntu/learning-compass-report-share.png", Buffer.from(screenshot.data, "base64"));
+  const whatsappUrl = await evaluate(`window.__shareUrl = ''; window.open = (url) => { window.__shareUrl = url; return null; }; Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('WhatsApp'))?.click(); window.__shareUrl`);
+  if (!whatsappUrl.startsWith('https://wa.me/?text=') || decodeURIComponent(whatsappUrl).includes('陳太') || decodeURIComponent(whatsappUrl).includes('港島')) throw new Error(`WhatsApp summary is not privacy-safe: ${whatsappUrl}`);
+  await evaluate(`Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('複製文字'))?.click()`);
+  await wait(250);
+  const copyStatus = await evaluate(`document.querySelector('.share-status')?.innerText ?? ''`);
+  if (!copyStatus) throw new Error("Copy-share action did not produce a visible status.");
   await evaluate(`Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('下載完整 PDF 報告'))?.click()`);
   for (let attempts = 0; attempts < 120; attempts += 1) {
     if (existsSync(downloadDir) && readdirSync(downloadDir).some((file) => file.endsWith(".pdf"))) break;
@@ -79,7 +89,7 @@ async function run() {
     const pageState = await evaluate("({ busy: document.body.innerText.includes('正在製作 PDF'), report: !!document.querySelector('.download-report') })");
     throw new Error(`PDF download was not created. ${JSON.stringify({ errors, pageState })}`);
   }
-  console.log(`Smoke test passed: report rendered and ${downloads[0]} downloaded.`);
+  console.log(`Smoke test passed: report rendered, share controls verified and ${downloads[0]} downloaded.`);
   socket.close();
   browser.kill("SIGTERM");
 }

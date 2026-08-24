@@ -14,6 +14,7 @@ import {
   Check,
   CheckCircle2,
   Compass,
+  Copy,
   Download,
   FileText,
   FlaskConical,
@@ -21,6 +22,7 @@ import {
   MapPin,
   MessageCircle,
   RefreshCw,
+  Share2,
   Sparkles,
 } from "lucide-react";
 import {
@@ -62,6 +64,7 @@ export default function Home() {
   const [studentName, setStudentName] = useState("");
   const [district, setDistrict] = useState("");
   const [pdfBusy, setPdfBusy] = useState(false);
+  const [shareStatus, setShareStatus] = useState("");
   const reportRef = useRef<HTMLElement | null>(null);
 
   const gradeInfo = GRADES.find((item) => item.id === grade) ?? null;
@@ -141,6 +144,39 @@ export default function Home() {
     }
   };
 
+  const shareText = gradeInfo && trackInfo ? `我剛完成學習航圖的分級免費評估：${gradeInfo.label}・${trackInfo.shortLabel}（20 題）。本次結果：${profile.title}。報告包含能力分項及兩星期起步建議。` : "";
+  const copyShareText = async () => {
+    if (!shareText) return;
+    try {
+      if (navigator.clipboard?.writeText) await navigator.clipboard.writeText(shareText);
+      else {
+        const textarea = document.createElement("textarea");
+        textarea.value = shareText;
+        textarea.style.position = "fixed";
+        textarea.style.opacity = "0";
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        textarea.remove();
+      }
+      setShareStatus("分享文字已複製");
+    } catch {
+      setShareStatus("未能自動複製，請手動選取分享文字");
+    }
+  };
+  const shareWhatsApp = () => {
+    if (!shareText) return;
+    window.open(`https://wa.me/?text=${encodeURIComponent(shareText)}`, "_blank", "noopener,noreferrer");
+    setShareStatus("已開啟 WhatsApp 分享視窗");
+  };
+  const shareToDevice = async () => {
+    if (!shareText) return;
+    if (navigator.share) {
+      try { await navigator.share({ title: "學習航圖免費評估", text: shareText }); setShareStatus("已開啟裝置分享選單"); return; } catch { setShareStatus(""); return; }
+    }
+    await copyShareText();
+  };
+
   return <main className="site-shell graded-site">
     <header className="site-header"><button className="brand-lockup" onClick={restart} aria-label="返回學習航圖首頁"><img src={LOGO_IMAGE} alt="學習航圖標誌" className="brand-mark" /><span><strong>學習航圖</strong><small>LEARNING COMPASS</small></span></button><div className="header-note"><span className="note-dot" />{screen === "landing" ? "分級免費評估" : `${gradeInfo?.label ?? ""} · ${trackInfo?.shortLabel ?? ""}`}</div></header>
 
@@ -159,6 +195,7 @@ export default function Home() {
 
     {screen === "report" && gradeInfo && trackInfo && <><section ref={reportRef} className="download-report" aria-labelledby="report-title"><div className="report-banner"><div className="report-brand"><img src={LOGO_IMAGE} alt="學習航圖" /><span><strong>學習航圖</strong><small>FREE ASSESSMENT REPORT</small></span></div><span>{reportDate}</span></div><div className="report-identity"><div><p className="eyebrow"><Sparkles size={16} /> 免費完整評估報告</p><h1 id="report-title">{studentName ? `${studentName} 的` : "你的"}{trackInfo.label}學習報告</h1><p>{gradeInfo.label} · {trackInfo.shortLabel} · 本次由 {poolSize} 題分級題庫中隨機抽取 20 題</p></div><div className="overall-score"><span>整體答對</span><strong>{score}<small>/20</small></strong><p>{Math.round(percentage * 100)}%</p></div></div><div className="report-overview"><article><span>本次表現區間</span><h2>{profile.title}</h2><p>{profile.note}</p></article><article><span>評估範圍</span><h2>4 個模組 · {abilityResults.length} 個能力面向</h2><p>基礎掌握、理解與應用、情境推理及整合表達均已納入本次隨機題組。</p></article></div><section className="report-section"><div className="section-title"><span>01</span><div><p className="eyebrow">四個模組</p><h2>答題結構概覽</h2></div></div><div className="module-score-grid">{moduleResults.map((module) => <article key={module.module}><span>{module.module}</span><strong>{module.correct}<small> / {module.total}</small></strong><p>{module.percentage >= 80 ? "表現穩定" : module.percentage >= 55 ? "建立中" : "可優先整理"}</p></article>)}</div></section><section className="report-section"><div className="section-title"><span>02</span><div><p className="eyebrow">能力分項</p><h2>本次最值得討論的面向</h2></div></div><div className="ability-report">{abilityResults.map((ability) => <div className="ability-row" key={ability.topic}><div><strong>{ability.topic}</strong><span>{ability.correct} / {ability.total} 題 · {ability.state}</span></div><div className="ability-track"><i style={{ width: `${ability.percentage}%` }} /></div></div>)}</div></section><section className="report-section plan-section"><div className="section-title"><span>03</span><div><p className="eyebrow">兩星期起步建議</p><h2>只選一至兩個重點，慢慢建立把握。</h2></div></div><div className="focus-list">{focusAreas.map((item, index) => <article key={item.topic}><span>0{index + 1}</span><div><h3>{item.topic}</h3><p>{item.percentage < 55 ? "先以有示範、可拆步驟的短練習整理核心概念；每次完成後說出做法和原因。" : "可把概念放進較接近閱讀、解題或表達情境的題目中，練習如何選擇方法。"}</p></div></article>)}</div><div className="report-disclaimer"><CheckCircle2 size={17} /><p><strong>報告限制：</strong>本結果只反映這次 20 題隨機題組的答題情況。中文及英文的寫作卷評估寫作基礎與組織能力，並不等同完整作文批改、校內成績或任何專業診斷。</p></div></section><footer className="pdf-footer"><span>學習航圖 · 分級免費評估</span><span>{district ? `${district} · ` : ""}僅供家庭學習規劃參考</span></footer></section><section className="download-actions" data-pdf-ignore="true"><div><p className="eyebrow">保存這份報告</p><h2>下載 PDF，方便和孩子、導師一起閱讀。</h2><p>PDF 由現時頁面在瀏覽器端產生，報告資料不會被傳送或保存。</p></div><div><button className="button button-primary" onClick={downloadPdf} disabled={pdfBusy}>{pdfBusy ? "正在製作 PDF…" : "下載完整 PDF 報告"} <Download size={18} /></button><button className="button button-ghost" onClick={restart}><RefreshCw size={17} /> 重新隨機抽題</button></div></section></>}
 
+    {screen === "report" && gradeInfo && trackInfo && <section className="report-share-panel" aria-labelledby="share-title"><div><p className="eyebrow"><Share2 size={16} /> 分享結果摘要</p><h2 id="share-title">把學習方向，分享給值得一起討論的人。</h2><p>分享內容只包括年級、試卷和整體結果，不包括學生稱呼、所在地區、逐題答案或 PDF 內容。</p></div><div className="share-controls"><button className="share-button share-button-whatsapp" onClick={shareWhatsApp}><MessageCircle size={18} /> WhatsApp</button><button className="share-button" onClick={shareToDevice}><Share2 size={18} /> 分享到其他 App</button><button className="share-button" onClick={copyShareText}><Copy size={17} /> 複製文字</button>{shareStatus && <span className="share-status"><CheckCircle2 size={15} /> {shareStatus}</span>}</div></section>}
     <footer className="site-footer"><span>© 學習航圖</span><span>小一至小六 · 中一至中三 · 分級隨機評估</span></footer>
   </main>;
 }
