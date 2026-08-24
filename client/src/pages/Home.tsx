@@ -20,6 +20,7 @@ import {
   Phone,
   Sparkles,
 } from "lucide-react";
+import { EXTENDED_QUESTIONS } from "@/data/extendedQuestions";
 
 type Stage = "landing" | "quiz" | "gate" | "report";
 type SchoolStage = "小學全科" | "升中面試" | "初中";
@@ -227,6 +228,11 @@ const ROUTES: RouteConfig[] = [
   },
 ];
 
+const FULL_ROUTES: RouteConfig[] = ROUTES.map((route) => ({
+  ...route,
+  questions: [...route.questions, ...(EXTENDED_QUESTIONS[route.id] ?? [])],
+}));
+
 const DISTRICTS = ["中西區", "灣仔區", "東區", "南區", "油尖旺區", "深水埗區", "九龍城區", "黃大仙區", "觀塘區", "葵青區", "荃灣區", "屯門區", "元朗區", "北區", "大埔區", "沙田區", "西貢區", "離島區"];
 
 const REGION_BY_DISTRICT: Record<string, Partner["region"]> = {
@@ -242,8 +248,9 @@ const PARTNERS: Partner[] = [
 ];
 
 function getProfile(score: number, route: RouteConfig) {
-  if (score === 5) return { title: "延伸潛能", lead: `在這份 ${route.subject} 小測驗中，孩子的基礎表現穩定，可以嘗試更有挑戰的應用與表達。`, action: "下一步可把已掌握的概念放進較真實的閱讀、解題或溝通情境中，逐步延伸深度。" };
-  if (score >= 3) return { title: "穩步提升", lead: `孩子已掌握部分 ${route.subject} 基礎，只要集中鞏固幾個環節，學習會更有把握。`, action: "建議以短而有目標的練習重溫相關概念，完成後回看步驟和原因，累積可見的進步。" };
+  const percentage = score / route.questions.length;
+  if (percentage >= 0.8) return { title: "延伸潛能", lead: `在這份 ${route.subject} 完整評估中，孩子的基礎表現穩定，可以嘗試更有挑戰的應用與表達。`, action: "下一步可把已掌握的概念放進較真實的閱讀、解題或溝通情境中，逐步延伸深度。" };
+  if (percentage >= 0.55) return { title: "穩步提升", lead: `孩子已掌握部分 ${route.subject} 基礎，只要集中鞏固幾個環節，學習會更有把握。`, action: "建議以短而有目標的練習重溫相關概念，完成後回看步驟和原因，累積可見的進步。" };
   return { title: "建立基礎", lead: `這份結果提示可先由 ${route.subject} 的核心概念開始，慢慢建立理解和信心。`, action: "可安排有明確步驟的小組或一對一練習，先把最需要的概念逐一整理，再逐步增加題目變化。" };
 }
 
@@ -256,7 +263,7 @@ function routeIcon(subject: string) {
 
 export default function Home() {
   const [stage, setStage] = useState<Stage>("landing");
-  const [activeRoute, setActiveRoute] = useState<RouteConfig>(ROUTES[1]);
+  const [activeRoute, setActiveRoute] = useState<RouteConfig>(FULL_ROUTES[1]);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<number[]>([]);
   const [formError, setFormError] = useState("");
@@ -278,7 +285,8 @@ export default function Home() {
   }, [activeRoute, form.district]);
 
   const startRoute = (route: RouteConfig) => {
-    setActiveRoute(route);
+    const fullRoute = FULL_ROUTES.find((candidate) => candidate.id === route.id) ?? route;
+    setActiveRoute(fullRoute);
     setQuestionIndex(0);
     setAnswers([]);
     setFormError("");
@@ -290,6 +298,19 @@ export default function Home() {
   const previousQuestion = () => { if (questionIndex > 0) setQuestionIndex((current) => current - 1); };
   const unlockReport = (event: FormEvent<HTMLFormElement>) => { event.preventDefault(); if (!form.district) { setFormError("請選擇所在區域，以便顯示較相關的支援選擇。"); return; } setFormError(""); setStage("report"); };
   const currentQuestion = activeRoute.questions[questionIndex];
+  const moduleResults = useMemo(() => [0, 1, 2].map((moduleIndex) => {
+    const start = moduleIndex * 5;
+    const questions = activeRoute.questions.slice(start, start + 5);
+    const correct = questions.reduce((total, question, offset) => total + (answers[start + offset] === question.correct ? 1 : 0), 0);
+    const ratio = correct / questions.length;
+    return { label: ["A · 基礎掌握", "B · 理解與應用", "C · 整合與推理"][moduleIndex], correct, total: questions.length, status: ratio >= 0.8 ? "表現穩定" : ratio >= 0.55 ? "正在建立" : "優先整理" };
+  }), [answers, activeRoute]);
+  const abilityResults = useMemo(() => Object.entries(activeRoute.insights).map(([topic, detail]) => {
+    const questions = activeRoute.questions.filter((question) => question.topic === topic);
+    const correct = questions.reduce((total, question) => total + (answers[activeRoute.questions.indexOf(question)] === question.correct ? 1 : 0), 0);
+    const ratio = questions.length ? correct / questions.length : 0;
+    return { topic, title: detail.title, correct, total: questions.length, percentage: Math.round(ratio * 100), status: ratio >= 0.8 ? "穩定" : ratio >= 0.55 ? "建立中" : "可優先整理" };
+  }).filter((item) => item.total > 0), [answers, activeRoute]);
 
   return (
     <main className="site-shell">
@@ -300,18 +321,18 @@ export default function Home() {
 
       {stage === "landing" && <>
         <section className="hero-section">
-          <div className="hero-copy"><p className="eyebrow"><Compass size={16} /> 為每一段學習整理下一步</p><h1>不只一科，<br />為孩子找到<em>對的起點</em>。</h1><p className="hero-lead">由小學中英數、升中面試到初中中英數與 Science，選擇適合孩子現階段的 5 題小測驗，整理一份可一起閱讀的學習航圖。</p><div className="hero-actions"><button className="button button-primary" onClick={() => document.getElementById("assessment-routes")?.scrollIntoView({ behavior: "smooth" })}>選擇評估路線 <ArrowRight size={18} /></button><span className="micro-note"><CheckCircle2 size={17} /> 不會為孩子貼標籤</span></div><div className="hero-stats"><div><strong>08</strong><span>學習路線</span></div><div><strong>05</strong><span>每科精選題</span></div><div><strong>03</strong><span>分析方向</span></div></div></div>
+          <div className="hero-copy"><p className="eyebrow"><Compass size={16} /> 為每一段學習整理下一步</p><h1>不只一科，<br />為孩子找到<em>對的起點</em>。</h1><p className="hero-lead">由小學中英數、升中面試到初中中英數與 Science，選擇適合孩子現階段的 15 題完整評估，整理一份可一起閱讀的學習航圖。</p><div className="hero-actions"><button className="button button-primary" onClick={() => document.getElementById("assessment-routes")?.scrollIntoView({ behavior: "smooth" })}>選擇評估路線 <ArrowRight size={18} /></button><span className="micro-note"><CheckCircle2 size={17} /> 不會為孩子貼標籤</span></div><div className="hero-stats"><div><strong>08</strong><span>學習路線</span></div><div><strong>15</strong><span>每科完整題</span></div><div><strong>03</strong><span>分析模組</span></div></div></div>
           <div className="hero-art"><img src={HERO_IMAGE} alt="家長與學生一起閱讀學習資料" /><div className="hero-annotation annotation-top"><span>08</span> 條學習航線</div><div className="hero-annotation annotation-bottom"><Sparkles size={16} /> 選擇適合的起點</div></div>
         </section>
 
         <section className="catalogue-section" id="assessment-routes" aria-labelledby="catalogue-title">
-          <div className="catalogue-heading"><p className="eyebrow">選擇你的評估路線</p><h2 id="catalogue-title">先由孩子所在的<br />學習階段出發。</h2><p>每條路線只需約 3 分鐘，完成後會顯示相應的學習重點和地區支援選擇。</p></div>
+          <div className="catalogue-heading"><p className="eyebrow">選擇你的評估路線</p><h2 id="catalogue-title">先由孩子所在的<br />學習階段出發。</h2><p>每條路線約需 10 至 13 分鐘，完成 15 題後會顯示能力分項、學習重點和地區支援選擇。</p></div>
           <div className="route-groups">
             {(["小學全科", "升中面試", "初中"] as SchoolStage[]).map((group) => <div className="route-group" key={group}><div className="route-group-title"><span>{group === "小學全科" ? "01" : group === "升中面試" ? "02" : "03"}</span><h3>{group}</h3><small>{group === "小學全科" ? "中 · 英 · 數" : group === "升中面試" ? "溝通與應對" : "中 · 英 · 數 · Science"}</small></div><div className="route-card-grid">{ROUTES.filter((route) => route.stage === group).map((route) => <button className="route-card" key={route.id} onClick={() => startRoute(route)}><span className="route-card-icon">{routeIcon(route.subject)}</span><span className="route-card-main"><strong>{route.subject}</strong><small>{route.summary}</small></span><ArrowRight size={17} /></button>)}</div></div>)}
           </div>
         </section>
 
-        <section className="route-preview" aria-labelledby="route-title"><div className="route-photo"><img src={ROUTE_IMAGE} alt="象徵學習方向的紙藝航線" /></div><div className="route-copy"><p className="eyebrow">不是考試，是一次整理</p><h2 id="route-title">從一條問題，走到一份<br />更容易討論的建議。</h2><div className="route-steps"><div><span>01</span><p><strong>選擇對應路線</strong>按小學、升中或初中階段，選擇中文、英文、數學、Science 或面試準備。</p></div><div><span>02</span><p><strong>完成 5 題小測驗</strong>從題目線索整理目前較值得優先討論的能力面向。</p></div><div><span>03</span><p><strong>探索支援選擇</strong>按科目和所在地區查看合作機構示範推薦。</p></div></div></div></section>
+        <section className="route-preview" aria-labelledby="route-title"><div className="route-photo"><img src={ROUTE_IMAGE} alt="象徵學習方向的紙藝航線" /></div><div className="route-copy"><p className="eyebrow">不是考試，是一次整理</p><h2 id="route-title">由 15 題完整評估，走到一份<br />更容易討論的建議。</h2><div className="route-steps"><div><span>01</span><p><strong>選擇對應路線</strong>按小學、升中或初中階段，選擇中文、英文、數學、Science 或面試準備。</p></div><div><span>02</span><p><strong>完成三段評估</strong>以 15 題題組整理基礎掌握、理解應用和整合推理表現。</p></div><div><span>03</span><p><strong>取得免費完整報告</strong>查看能力分項、兩星期起步建議及按科目配對的支援選擇。</p></div></div></div></section>
         <section className="trust-strip"><BookOpen size={22} /><p><strong>給家長的一句提醒：</strong> 這些小測驗只是一個起點，結果用來打開對話，而不是定義孩子。</p></section>
         <section className="session-callout"><div className="session-image"><img src={SESSION_IMAGE} alt="小組學習討論情景" /></div><div className="session-copy"><p className="eyebrow">按科目找對支援</p><h2>方向清楚，<br />練習才會更踏實。</h2><p>報告會結合所選科目與所在地區，展示可以進一步了解的合作支援選擇。此版本使用示範機構資料，正式上線前可替換為你的合作名單。</p><button className="text-button" onClick={() => document.getElementById("assessment-routes")?.scrollIntoView({ behavior: "smooth" })}>查看評估路線 <ArrowRight size={17} /></button></div></section>
       </>}
@@ -322,9 +343,10 @@ export default function Home() {
         {stage === "gate" && <div className="quiz-panel gate-stage"><div className="gate-intro"><span className="gate-icon"><LockKeyhole size={25} /></span><p className="eyebrow">{activeRoute.eyebrow} · 分析即將完成</p><h2>留下最少資料，<br />解鎖你的學習航圖。</h2><p>我們會用所在地區整理相關的 {activeRoute.subject} 合作支援選擇。此示範版本不會上載或儲存所填資料。</p></div><form className="lead-form" onSubmit={unlockReport}><label>家長稱呼<input value={form.parentName} onChange={(event) => setForm({ ...form, parentName: event.target.value })} placeholder="例如：陳太" /></label><label>WhatsApp 號碼<input inputMode="tel" value={form.whatsapp} onChange={(event) => setForm({ ...form, whatsapp: event.target.value })} placeholder="例如：9123 4567" /></label><div className="route-field"><span>所選路線</span><strong>{activeRoute.stage} · {activeRoute.subject}</strong></div><label>所在區域<select value={form.district} onChange={(event) => setForm({ ...form, district: event.target.value })}><option value="">請選擇</option>{DISTRICTS.map((district) => <option key={district}>{district}</option>)}</select></label>{formError && <p className="form-error">{formError}</p>}<div className="privacy-note"><LockKeyhole size={15} /><span><strong>示範版私隱提示：</strong>資料只用於本頁即時顯示，關閉頁面後不會保留。</span></div><button className="button button-primary button-wide" type="submit">解鎖我的分析報告 <ArrowRight size={17} /></button></form></div>}
       </section>}
 
-      {stage === "report" && <section className="report-shell"><div className="report-intro"><div><p className="eyebrow"><Sparkles size={16} /> {form.parentName} 的 {activeRoute.subject} 學習航圖</p><span className="report-route-badge">{activeRoute.stage} · {activeRoute.subject}</span><h1>{profile.title}</h1><p>{profile.lead}</p></div><div className="score-card"><span>{activeRoute.subject} 小測驗</span><strong>{score}<small>/ {activeRoute.questions.length}</small></strong><p>答對題數</p></div></div><div className="report-grid"><article className="report-summary"><div className="summary-photo"><img src={PROFILE_IMAGE} alt="學習檔案和紙張筆記" /></div><div className="summary-copy"><p className="eyebrow">航圖摘要</p><h2>現在最值得先走的一步</h2><p>{profile.action}</p><div className="summary-line"><span>評估路線</span><b>{activeRoute.stage} · {activeRoute.subject}</b></div><div className="summary-line"><span>建議方式</span><b>{score === activeRoute.questions.length ? "延伸式挑戰" : "循序式鞏固"}</b></div></div></article><article className="focus-card"><p className="eyebrow">可留意的面向</p>{focusTopics.length === 0 ? <div className="all-clear"><CheckCircle2 size={26} /><h3>這份基礎題目表現穩定</h3><p>可把下一步放在更具挑戰的情境應用、延伸閱讀或進階題型上。</p></div> : focusTopics.slice(0, 3).map((topic, index) => <div className="focus-item" key={topic}><span>0{index + 1}</span><div><h3>{activeRoute.insights[topic].title}</h3><p>{activeRoute.insights[topic].copy}</p></div></div>)}</article></div><section className="recommendation-section"><div className="recommendation-heading"><div><p className="eyebrow"><MapPin size={16} /> {form.district} · {activeRoute.subject} 支援選擇</p><h2>可進一步了解的<br />合作支援選擇。</h2></div><p>以下為<strong>示範資料</strong>，已按科目、學習階段和所在區域排序。請於正式上線前以真實合作補習社資料替換。</p></div><div className="partner-list">{recommendations.map((partner, index) => <article className="partner-card" key={partner.name}><div className="partner-index">0{index + 1}</div><div className="partner-main"><span className="demo-chip">合作資料示範</span><h3>{partner.name}</h3><p>{partner.focus}</p></div><dl><div><dt>適合年級</dt><dd>{partner.grades}</dd></div><div><dt>教學形式</dt><dd>{partner.format}</dd></div><div><dt>服務地區</dt><dd>{partner.districts.join("、")}</dd></div></dl><button className="partner-button" disabled><Phone size={16} /> 待加入聯絡連結</button></article>)}</div></section><div className="report-footer"><p><strong>溫馨提示：</strong>這份結果只反映本次 5 題 {activeRoute.subject} 小測驗的答題情況，適合作為親子討論學習方向的起點。</p><button className="button button-ghost" onClick={() => setStage("landing")}>選擇另一條路線 <ArrowRight size={17} /></button></div></section>}
+      {stage === "report" && <section className="report-shell"><div className="report-intro"><div><p className="eyebrow"><Sparkles size={16} /> {form.parentName} 的 {activeRoute.subject} 學習航圖</p><span className="report-route-badge">{activeRoute.stage} · {activeRoute.subject}</span><h1>{profile.title}</h1><p>{profile.lead}</p></div><div className="score-card"><span>{activeRoute.subject} 小測驗</span><strong>{score}<small>/ {activeRoute.questions.length}</small></strong><p>答對題數</p></div></div><div className="report-grid"><article className="report-summary"><div className="summary-photo"><img src={PROFILE_IMAGE} alt="學習檔案和紙張筆記" /></div><div className="summary-copy"><p className="eyebrow">航圖摘要</p><h2>現在最值得先走的一步</h2><p>{profile.action}</p><div className="summary-line"><span>評估路線</span><b>{activeRoute.stage} · {activeRoute.subject}</b></div><div className="summary-line"><span>建議方式</span><b>{score === activeRoute.questions.length ? "延伸式挑戰" : "循序式鞏固"}</b></div></div></article><article className="focus-card"><p className="eyebrow">可留意的面向</p>{focusTopics.length === 0 ? <div className="all-clear"><CheckCircle2 size={26} /><h3>這份基礎題目表現穩定</h3><p>可把下一步放在更具挑戰的情境應用、延伸閱讀或進階題型上。</p></div> : focusTopics.slice(0, 3).map((topic, index) => <div className="focus-item" key={topic}><span>0{index + 1}</span><div><h3>{activeRoute.insights[topic].title}</h3><p>{activeRoute.insights[topic].copy}</p></div></div>)}</article></div><section className="recommendation-section"><div className="recommendation-heading"><div><p className="eyebrow"><MapPin size={16} /> {form.district} · {activeRoute.subject} 支援選擇</p><h2>可進一步了解的<br />合作支援選擇。</h2></div><p>以下為<strong>示範資料</strong>，已按科目、學習階段和所在區域排序。請於正式上線前以真實合作補習社資料替換。</p></div><div className="partner-list">{recommendations.map((partner, index) => <article className="partner-card" key={partner.name}><div className="partner-index">0{index + 1}</div><div className="partner-main"><span className="demo-chip">合作資料示範</span><h3>{partner.name}</h3><p>{partner.focus}</p></div><dl><div><dt>適合年級</dt><dd>{partner.grades}</dd></div><div><dt>教學形式</dt><dd>{partner.format}</dd></div><div><dt>服務地區</dt><dd>{partner.districts.join("、")}</dd></div></dl><button className="partner-button" disabled><Phone size={16} /> 待加入聯絡連結</button></article>)}</div></section><div className="report-footer"><p><strong>溫馨提示：</strong>這份結果只反映本次 {activeRoute.questions.length} 題 {activeRoute.subject} 完整評估的答題情況，適合作為親子討論學習方向的起點。</p><button className="button button-ghost" onClick={() => setStage("landing")}>選擇另一條路線 <ArrowRight size={17} /></button></div></section>}
 
       {stage === "report" && <section className="report-action-panel" aria-labelledby="next-step-title"><div className="action-panel-heading"><p className="eyebrow"><Compass size={16} /> 完成報告後</p><h2 id="next-step-title">把結果變成下一步。</h2><p>這份小測驗只用作整理方向。可先由以下三步開始，和孩子一起決定合適的練習節奏。</p></div><div className="action-steps"><div><span>01</span><h3>先看答題摘要</h3><p>本次答對 <strong>{score} / {activeRoute.questions.length}</strong> 題；可留意的面向為 {focusTopics.length ? focusTopics.slice(0, 3).join("、") : "延伸應用"}。</p></div><div><span>02</span><h3>只選一個小目標</h3><p>先從一個面向安排短而有規律的練習，完成後再回顧孩子對題目的理解。</p></div><div><span>03</span><h3>理解推薦理由</h3><p>本頁建議按 <strong>{activeRoute.stage}、{activeRoute.subject} 及 {form.district}</strong> 排序；合作資料仍為示範，尚未代表可報讀名單。</p></div></div><button className="text-button" onClick={() => setStage("landing")}>選擇另一條學習路線 <ArrowRight size={17} /></button></section>}
+      {stage === "report" && <section className="free-report-band" aria-labelledby="free-report-title"><div className="free-report-heading"><div><p className="eyebrow"><Sparkles size={16} /> 免費完整評估報告</p><h2 id="free-report-title">15 題結果，拆成可行的學習地圖。</h2></div><p>你已完成三個能力模組。以下數據按本網站題庫整理，用作家庭討論及安排下一步練習的參考。</p></div><div className="module-score-grid">{moduleResults.map((module) => <article key={module.label}><span>{module.label}</span><strong>{module.correct}<small> / {module.total}</small></strong><p>{module.status}</p></article>)}</div><div className="ability-report"><div className="ability-report-heading"><h3>能力分項概覽</h3><span>答題表現區間</span></div>{abilityResults.map((ability) => <div className="ability-row" key={ability.topic}><div><strong>{ability.title}</strong><span>{ability.correct} / {ability.total} 題 · {ability.status}</span></div><div className="ability-track" aria-label={`${ability.title} ${ability.percentage}%`}><i style={{ width: `${ability.percentage}%` }} /></div></div>)}</div><div className="two-week-plan"><span>兩星期起步建議</span><p>先選擇一個「可優先整理」或「建立中」面向，每週安排 3 次、每次 15 至 20 分鐘的針對練習；第二週再用相近題型回顧是否更有把握。</p></div></section>}
       <footer className="site-footer"><span>© 學習航圖</span><span>中英數 · 升中面試 · Science · 示範版本</span></footer>
     </main>
   );
