@@ -5,6 +5,8 @@ const port = 9333;
 const downloadDir = "/home/ubuntu/Downloads/learning-compass-smoke";
 const profileDir = "/tmp/learning-compass-smoke-profile";
 const testTrack = process.env.SMOKE_TRACK ?? "中文閱讀";
+const answerIndex = Number(process.env.SMOKE_ANSWER_INDEX ?? 0);
+const expectRegionalSupport = process.env.SMOKE_EXPECT_REGIONAL_SUPPORT === "1";
 rmSync(downloadDir, { recursive: true, force: true });
 rmSync(profileDir, { recursive: true, force: true });
 mkdirSync(downloadDir, { recursive: true });
@@ -57,7 +59,7 @@ async function run() {
   await evaluate(`Array.from(document.querySelectorAll('.track-card')).find((button) => button.textContent?.includes(${JSON.stringify(testTrack)}))?.click()`);
   await wait(250);
   for (let index = 0; index < 20; index += 1) {
-    await evaluate(`document.querySelector('.answer-option')?.click()`);
+    await evaluate(`document.querySelectorAll('.answer-option')[${answerIndex}]?.click()`);
     await wait(65);
     await evaluate(`Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('${index === 19 ? "生成免費報告" : "下一題"}'))?.click()`);
     await wait(90);
@@ -74,6 +76,15 @@ async function run() {
     await wait(180);
     const focusState = await evaluate(`({ panel: !!document.querySelector('.focus-report'), recommendation: document.body.innerText.includes('合作支援示範推薦'), transparency: document.body.innerText.includes('透明度說明') })`);
     if (!focusState.panel || !focusState.recommendation || !focusState.transparency) throw new Error(`Weakness focus report did not render as expected: ${JSON.stringify(focusState)}`);
+  }
+  if (expectRegionalSupport) {
+    const regionalState = await evaluate(`({ panel: !!document.querySelector('.regional-support'), button: !!Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('九龍')), contact: !!Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('立即 WhatsApp 查詢')) })`);
+    if (!regionalState.panel || !regionalState.button || !regionalState.contact) throw new Error(`Regional support controls did not render as expected: ${JSON.stringify(regionalState)}`);
+    await evaluate(`Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.trim() === '九龍')?.click()`);
+    const regionText = await evaluate(`document.querySelector('.regional-support')?.innerText ?? ''`);
+    if (!regionText.includes('九龍')) throw new Error("Regional filter did not update the visible support cards.");
+    const supportUrl = await evaluate(`window.__supportUrl = ''; window.open = (url) => { window.__supportUrl = url; return null; }; Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('立即 WhatsApp 查詢'))?.click(); window.__supportUrl`);
+    if (!supportUrl.startsWith('https://wa.me/?text=') || !decodeURIComponent(supportUrl).includes('九龍') || decodeURIComponent(supportUrl).includes('陳太')) throw new Error(`Regional WhatsApp query is not correct: ${supportUrl}`);
   }
   const shareState = await evaluate(`({ panel: !!document.querySelector('.report-share-panel'), whatsapp: !!Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('WhatsApp')), device: !!Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('分享到其他 App')), copy: !!Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('複製文字')) })`);
   if (!shareState.panel || !shareState.whatsapp || !shareState.device || !shareState.copy) throw new Error(`Share controls did not render as expected: ${JSON.stringify(shareState)}`);

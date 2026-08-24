@@ -219,6 +219,87 @@ const PRIMARY_MATH_GRADE_BANKS: Record<"P1" | "P2" | "P3" | "P4" | "P5" | "P6", 
   ],
 };
 
+type PrimaryLanguageLevel = { zhWord: string; zhMeaning: string; zhPerson: string; zhAction: string; zhSentence: string; zhTopic: string; enWord: string; enMeaning: string; enSubject: string; enVerb: string; enTheme: string };
+const PRIMARY_LANGUAGE_LEVELS: Record<"P1" | "P2" | "P3" | "P4" | "P5" | "P6", PrimaryLanguageLevel> = {
+  P1: { zhWord: "快樂", zhMeaning: "開心", zhPerson: "小明", zhAction: "把玩具借給同學", zhSentence: "小狗在花園跑步。", zhTopic: "我的家人", enWord: "happy", enMeaning: "glad", enSubject: "Tom", enVerb: "plays", enTheme: "my pet" },
+  P2: { zhWord: "整潔", zhMeaning: "乾淨有條理", zhPerson: "小美", zhAction: "把圖書放回書架", zhSentence: "同學們在禮堂唱歌。", zhTopic: "一次旅行", enWord: "careful", enMeaning: "not making mistakes", enSubject: "Amy", enVerb: "reads", enTheme: "my school day" },
+  P3: { zhWord: "努力", zhMeaning: "認真不放棄", zhPerson: "阿朗", zhAction: "每天練習朗讀", zhSentence: "我們在操場進行接力賽。", zhTopic: "一次服務經驗", enWord: "proud", enMeaning: "pleased about doing something well", enSubject: "Kevin", enVerb: "studies", enTheme: "a helpful friend" },
+  P4: { zhWord: "周全", zhMeaning: "考慮得很仔細", zhPerson: "小敏", zhAction: "出發前查看天氣和路線", zhSentence: "閱讀能讓我們認識不同的想法。", zhTopic: "我喜愛的閱讀活動", enWord: "responsible", enMeaning: "reliable", enSubject: "Mia", enVerb: "organises", enTheme: "a class activity" },
+  P5: { zhWord: "堅持", zhMeaning: "持續努力不放棄", zhPerson: "嘉怡", zhAction: "遇到困難後修改計劃再嘗試", zhSentence: "合作能讓我們結合不同的長處。", zhTopic: "一個值得學習的人", enWord: "considerate", enMeaning: "thinking about other people", enSubject: "Jason", enVerb: "explains", enTheme: "a community project" },
+  P6: { zhWord: "審慎", zhMeaning: "仔細考慮後才決定", zhPerson: "子晴", zhAction: "比較資料後才提出建議", zhSentence: "清晰的溝通有助小組作出合適決定。", zhTopic: "我對校園生活的建議", enWord: "effective", enMeaning: "producing a successful result", enSubject: "Sophie", enVerb: "evaluates", enTheme: "an environmental proposal" },
+};
+
+function primaryChineseReadingSeeds(level: PrimaryLanguageLevel): QuestionSeed[] {
+  return [
+    { label: "字詞理解", topic: "字詞理解", question: `「${level.zhWord}」最接近下列哪一個意思？`, hint: "先從詞語的日常用法判斷。", options: [level.zhMeaning, "很匆忙", "不願意幫忙", "聲音很大"], correct: 0 },
+    { label: "詞語運用", topic: "字詞理解", question: `下列哪一句最適合使用「${level.zhWord}」？`, hint: "想想這個詞可以形容甚麼情況。", options: [`${level.zhPerson}完成工作後，桌面十分${level.zhWord}。`, `${level.zhPerson}聽見好消息，感到${level.zhWord}。`, `雨傘的顏色很${level.zhWord}。`, `這條路十分${level.zhWord}。`], correct: 1 },
+    { label: "訊息定位", topic: "訊息定位", question: `${level.zhPerson}${level.zhAction}。這段文字主要說明了甚麼？`, hint: "直接找出人物做了甚麼。", options: [`${level.zhPerson}在幫助或準備事情。`, `${level.zhPerson}不想參加活動。`, `${level.zhPerson}正在睡覺。`, `${level.zhPerson}忘記了所有事情。`], correct: 0 },
+    { label: "細節理解", topic: "訊息定位", question: `通告寫着「${level.zhTopic}分享會下午三時開始，參加者請在二時四十五分到達。」最遲何時到達？`, hint: "留意通告中的報到時間。", options: ["下午二時四十五分", "下午三時", "下午三時十五分", "下午四時"], correct: 0 },
+    { label: "人物推論", topic: "人物推論", question: `${level.zhPerson}${level.zhAction}，這最能反映他／她怎樣？`, hint: "從行動推想人物的特質。", options: ["有責任感", "粗心大意", "不願合作", "害怕嘗試"], correct: 0 },
+    { label: "原因推論", topic: "人物推論", question: `${level.zhPerson}先了解資料才作決定，最可能是因為？`, hint: "想想這種行動可帶來甚麼好處。", options: ["希望作出較合適的選擇", "不想知道內容", "想拖延時間", "沒有任何原因"], correct: 0 },
+    { label: "語境與修辭", topic: "語境與修辭", question: `「微風輕輕拍著樹葉」主要把微風寫成像甚麼？`, hint: "留意無生命的事物被賦予人的動作。", options: ["人", "石頭", "書本", "雨傘"], correct: 0 },
+    { label: "句意理解", topic: "語境與修辭", question: `「${level.zhSentence}」這句話中，最重要的訊息是甚麼？`, hint: "找出誰在甚麼地方做甚麼。", options: ["人物、地點和主要行動", "句子的字數", "所有標點名稱", "顏色的數量"], correct: 0 },
+    { label: "主旨辨認", topic: "整合閱讀", question: `文章先介紹${level.zhTopic}的準備方法，再說明參加後的收穫，主旨最可能是？`, hint: "主旨是作者最想帶出的中心訊息。", options: ["鼓勵讀者認真準備並參與活動", "介紹所有人的姓名", "比較不同天氣", "只描述食物"], correct: 0 },
+    { label: "段落關係", topic: "整合閱讀", question: "「先找出重點，再整理想法，最後寫下回應。」這段文字主要按甚麼方式組織？", hint: "留意動作的先後。", options: ["步驟順序", "人物對話", "地點轉換", "問題與答案"], correct: 0 },
+  ];
+}
+
+function primaryChineseWritingSeeds(level: PrimaryLanguageLevel): QuestionSeed[] {
+  return [
+    { label: "詞語運用", topic: "詞語運用", question: `要形容${level.zhPerson}做事${level.zhMeaning}，哪個詞最合適？`, hint: "選擇能準確反映人物態度的詞。", options: [level.zhWord, "混亂", "敷衍", "急躁"], correct: 0 },
+    { label: "詞語搭配", topic: "詞語運用", question: "下列哪個詞語搭配最自然？", hint: "留意動詞和名詞的常見配搭。", options: ["整理資料", "整理星星", "整理雨水", "整理聲音"], correct: 0 },
+    { label: "句子組織", topic: "句子組織", question: `哪一句語序最通順？`, hint: "先找主語、動作和其他資訊。", options: [level.zhSentence, "在我們跑步操場。", "活動同學們下午進行。", "閱讀不同想法認識能。"], correct: 0 },
+    { label: "標點運用", topic: "句子組織", question: "哪一句標點運用最合適？", hint: "說話內容前後要配合合適符號。", options: ["老師說：「請大家準時完成練習。」", "老師，說請大家：準時完成練習。", "老師說請大家準時完成練習？", "老師：說，請大家完成練習。"], correct: 0 },
+    { label: "段落中心", topic: "段落組織", question: `要寫「${level.zhTopic}」，哪一句最適合作中心句？`, hint: "中心句要直接點出段落重點。", options: [`${level.zhTopic}讓我學會從不同角度觀察和思考。`, "那天的天氣很好。", "我有一枝筆。", "很多事情都不同。"], correct: 0 },
+    { label: "例子支援", topic: "段落組織", question: "哪一個例子最能支持「合作能解決困難」？", hint: "例子要直接回應觀點。", options: ["小組分工後完成了複雜任務。", "操場很大。", "有人忘記帶水。", "大家各自等待。"], correct: 0 },
+    { label: "內容發展", topic: "內容發展", question: "要令記敘內容更具體，哪一項細節最有幫助？", hint: "選擇包含行動、感受或對話的細節。", options: [`我看到同學需要幫助，便主動協助，完成後感到安心。`, "活動很好。", "那天很多人。", "事情發生了。"], correct: 0 },
+    { label: "觀點發展", topic: "內容發展", question: "哪種寫法較有說服力？", hint: "觀點後加上理由和例子。", options: ["我支持安排閱讀時間，因為能累積知識，也可分享心得。", "我覺得可以。", "每個人不同。", "閱讀就是閱讀。"], correct: 0 },
+    { label: "連接表達", topic: "表達與修訂", question: "「我先搜集資料，____ 整理重點。」填入哪個詞最合適？", hint: "留意兩個動作的先後。", options: ["然後", "但是", "雖然", "因此"], correct: 0 },
+    { label: "修訂檢查", topic: "表達與修訂", question: "完成文章後，哪一項檢查最能提升完整性？", hint: "留意內容、例子和結語是否一致。", options: ["檢查中心句、例子和結語是否呼應", "只數字數", "刪去所有標點", "把每句寫得更長"], correct: 0 },
+  ];
+}
+
+function primaryEnglishReadingSeeds(level: PrimaryLanguageLevel): QuestionSeed[] {
+  return [
+    { label: "Vocabulary", topic: "Vocabulary", question: `The word “${level.enWord}” is closest in meaning to ____ .`, hint: "Choose the meaning that best matches the word.", options: [level.enMeaning, "very noisy", "always late", "easy to break"], correct: 0 },
+    { label: "Word in context", topic: "Vocabulary", question: `${level.enSubject} is ${level.enWord} when working on ${level.enTheme}. Which action shows this best?`, hint: "Look for an action that matches the word.", options: ["Checking work carefully and helping others", "Ignoring every instruction", "Leaving without a reason", "Never trying again"], correct: 0 },
+    { label: "Detail finding", topic: "Reading details", question: `A notice says the ${level.enTheme} starts at 10:30 and registration closes at 10:15. What should a student do?`, hint: "Find the earlier required time.", options: ["Register by 10:15", "Arrive after 10:30", "Wait until noon", "Bring nothing"], correct: 0 },
+    { label: "Main idea", topic: "Reading details", question: `A short text explains how to prepare for ${level.enTheme}. Its main purpose is to ____ .`, hint: "Think about what the writer wants readers to do.", options: ["give practical guidance", "tell a fantasy story", "sell a uniform", "describe a storm"], correct: 0 },
+    { label: "Inference", topic: "Reading inference", question: `${level.enSubject} ${level.enVerb} the plan before starting the task. What can we infer?`, hint: "Use the action as a clue.", options: ["The task matters to the student", "The student dislikes every task", "The plan is missing", "Nothing can be inferred"], correct: 0 },
+    { label: "Writer attitude", topic: "Reading inference", question: `The writer calls the activity “a useful chance to learn together”. The writer is most likely ____ .`, hint: "Notice the positive language.", options: ["supportive", "angry", "uninterested", "confused"], correct: 0 },
+    { label: "Reference word", topic: "Text connection", question: `“The class prepared a display. It was shown in the hall.” What does “It” refer to?`, hint: "Look back to the nearest suitable noun.", options: ["The display", "The hall", "The class", "The preparation"], correct: 0 },
+    { label: "Connector", topic: "Text connection", question: `${level.enSubject} practised regularly; ____ , the presentation became clearer.`, hint: "The second part shows a result.", options: ["therefore", "however", "although", "unless"], correct: 0 },
+    { label: "Reading purpose", topic: "Integrated reading", question: `A webpage gives steps, reminders and a sign-up link for ${level.enTheme}. It is mainly designed to ____ .`, hint: "Think about the reader’s next action.", options: ["invite people to take part", "sell a house", "teach swimming", "report a storm"], correct: 0 },
+    { label: "Evidence", topic: "Integrated reading", question: `Which detail best supports the idea that ${level.enSubject} enjoys learning?`, hint: "Choose evidence that shows interest through action.", options: [`${level.enSubject} asks questions and shares ideas with classmates.`, `${level.enSubject} owns a blue bag.`, `${level.enSubject} eats lunch at noon.`, `${level.enSubject} walks home.`], correct: 0 },
+  ];
+}
+
+function primaryEnglishWritingSeeds(level: PrimaryLanguageLevel): QuestionSeed[] {
+  return [
+    { label: "Sentence structure", topic: "Sentence structure", question: "Choose the most complete sentence.", hint: "Look for a clear subject and verb.", options: [`${level.enSubject} ${level.enVerb} the task carefully.`, `Because ${level.enSubject} careful.`, `${level.enVerb} the task.`, `The task carefully.`], correct: 0 },
+    { label: "Sentence order", topic: "Sentence structure", question: "Choose the sentence with the clearest word order.", hint: "An English sentence usually has a subject, a verb and extra information.", options: [`${level.enSubject} ${level.enVerb} ideas for ${level.enTheme}.`, `${level.enVerb} ${level.enSubject} ideas.`, `Ideas ${level.enSubject} for ${level.enVerb}.`, `For ${level.enTheme} ideas ${level.enVerb}.`], correct: 0 },
+    { label: "Language accuracy", topic: "Language accuracy", question: `${level.enSubject} ____ a short note yesterday.`, hint: "The time word tells you which tense to use.", options: ["wrote", "write", "writes", "writing"], correct: 0 },
+    { label: "Word choice", topic: "Language accuracy", question: "Please ____ your ideas clearly in the report.", hint: "Choose a verb related to communication.", options: ["express", "borrow", "sleep", "hide"], correct: 0 },
+    { label: "Paragraph focus", topic: "Paragraph organisation", question: `Which topic sentence best introduces a paragraph about ${level.enTheme}?`, hint: "A topic sentence should state the main idea.", options: [`${level.enTheme} can help students learn and work together.`, "The room has four windows.", "I have a pencil.", "Tuesday is a day."], correct: 0 },
+    { label: "Supporting detail", topic: "Paragraph organisation", question: "Which sentence best supports the idea that planning helps a group?", hint: "Choose a specific supporting example.", options: ["The group shared jobs and finished each step on time.", "Planning is a word.", "Some shoes are expensive.", "Everyone is different."], correct: 0 },
+    { label: "Linking", topic: "Paragraph organisation", question: "I checked my work carefully. ____ , I found two mistakes.", hint: "The second sentence follows from the first.", options: ["As a result", "Although", "Unless", "However"], correct: 0 },
+    { label: "Purpose and tone", topic: "Purpose and tone", question: "Which sentence is most suitable for an email to a teacher?", hint: "Use a polite and clear tone.", options: ["Could you please explain the homework deadline?", "Send me the answer now.", "I do not care.", "Your work is bad."], correct: 0 },
+    { label: "Audience awareness", topic: "Purpose and tone", question: "Which opening is most suitable for a message to classmates about an activity?", hint: "Choose a friendly and clear opening for the intended reader.", options: ["Hi everyone, please join our class activity on Friday.", "You must come now.", "I do not want to explain.", "This sentence has no purpose."], correct: 0 },
+    { label: "Revision", topic: "Revision and expression", question: "Which revision makes “The activity was good” more specific?", hint: "Add a meaningful action or result.", options: ["The activity helped classmates share ideas and solve a problem together.", "The activity was good good.", "The activity was an activity.", "It was good."], correct: 0 },
+    { label: "Integrated writing", topic: "Revision and expression", question: "Before submitting writing, which check is most useful?", hint: "Look beyond spelling alone.", options: ["Check if ideas, examples and conclusion match the purpose.", "Remove every full stop.", "Use the longest words.", "Change every sentence to a question."], correct: 0 },
+  ];
+}
+
+function primaryLanguageSeeds(track: TrackId, grade: GradeId): QuestionSeed[] | null {
+  if (!grade.startsWith("P")) return null;
+  const level = PRIMARY_LANGUAGE_LEVELS[grade as keyof typeof PRIMARY_LANGUAGE_LEVELS];
+  if (track === "chinese-reading") return primaryChineseReadingSeeds(level);
+  if (track === "chinese-writing") return primaryChineseWritingSeeds(level);
+  if (track === "english-reading") return primaryEnglishReadingSeeds(level);
+  if (track === "english-writing") return primaryEnglishWritingSeeds(level);
+  return null;
+}
+
 function shuffle<T>(items: T[]) {
   const copy = [...items];
   for (let index = copy.length - 1; index > 0; index -= 1) {
@@ -229,7 +310,8 @@ function shuffle<T>(items: T[]) {
 }
 
 export function buildQuestionPool(track: TrackId, grade: GradeId): AssessmentQuestion[] {
-  const seeds = track === "math" && grade.startsWith("P") ? PRIMARY_MATH_GRADE_BANKS[grade as keyof typeof PRIMARY_MATH_GRADE_BANKS] : BANKS[track];
+  const languageSeeds = primaryLanguageSeeds(track, grade);
+  const seeds = track === "math" && grade.startsWith("P") ? PRIMARY_MATH_GRADE_BANKS[grade as keyof typeof PRIMARY_MATH_GRADE_BANKS] : languageSeeds ?? BANKS[track];
   return seeds.flatMap((seed, seedIndex) => CONTEXTS.map((context, variant) => ({
     ...seed,
     id: `${track}-${grade}-${seedIndex}-${variant}`,
