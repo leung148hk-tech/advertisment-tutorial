@@ -1,6 +1,6 @@
 import { COOKIE_NAME } from "@shared/const";
 import { z } from "zod";
-import { createCentre, createParentLead, deleteCentre, listCentres, listFeaturedCentres, listParentLeads, setCentreActive, updateCentre } from "./db";
+import { createCentre, createParentLead, deleteCentre, listCentres, listFeaturedCentres, listFilteredParentLeads, setCentreActive, updateCentre, updateParentLeadFollowUp } from "./db";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { adminProcedure, publicProcedure, router } from "./_core/trpc";
@@ -16,6 +16,16 @@ export const leadInput = z.object({
   score: z.number().int().min(0).max(20),
   weaknessSummary: z.string().trim().min(1).max(2000),
   consent: z.literal(true, { error: "需要同意資料用於學習跟進" }),
+});
+
+export const leadFilterInput = z.object({
+  district: z.enum(DISTRICTS).optional(),
+  grade: z.enum(["小一", "小二", "小三", "小四", "小五", "小六", "中一", "中二", "中三"]).optional(),
+});
+export const leadManagementInput = z.object({
+  id: z.number().int().positive(),
+  followUpStatus: z.enum(["new", "contacted", "closed"]),
+  internalNote: z.string().trim().max(2000, "內部備註不可超過 2000 字").nullable(),
 });
 
 export const centreInput = z.object({
@@ -63,8 +73,12 @@ export const appRouter = router({
 
   // Parent contact data is never exposed publicly. These endpoints require adminProcedure.
   leads: router({
-    adminList: adminProcedure.query(() => listParentLeads()),
-    adminExport: adminProcedure.query(() => listParentLeads()),
+    adminList: adminProcedure.input(leadFilterInput.optional()).query(({ input }) => listFilteredParentLeads(input ?? {})),
+    adminExport: adminProcedure.input(leadFilterInput.optional()).query(({ input }) => listFilteredParentLeads(input ?? {})),
+    updateFollowUp: adminProcedure.input(leadManagementInput).mutation(async ({ input }) => {
+      await updateParentLeadFollowUp(input.id, input.followUpStatus, input.internalNote || null);
+      return { success: true } as const;
+    }),
   }),
 
   centres: router({

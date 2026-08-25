@@ -105,6 +105,22 @@ export async function listParentLeads() {
   return db.select().from(parentLeads).orderBy(desc(parentLeads.createdAt));
 }
 
+export type ParentLeadFilters = { district?: string; grade?: string };
+
+export async function listFilteredParentLeads(filters: ParentLeadFilters) {
+  const db = await getDb();
+  if (!db) return [];
+  const conditions = [filters.district ? eq(parentLeads.district, filters.district) : undefined, filters.grade ? eq(parentLeads.grade, filters.grade) : undefined].filter(Boolean);
+  if (!conditions.length) return db.select().from(parentLeads).orderBy(desc(parentLeads.createdAt));
+  return db.select().from(parentLeads).where(and(...conditions)).orderBy(desc(parentLeads.createdAt));
+}
+
+export async function updateParentLeadFollowUp(id: number, followUpStatus: "new" | "contacted" | "closed", internalNote: string | null) {
+  const db = await getDb();
+  if (!db) throw new Error("Database is unavailable");
+  await db.update(parentLeads).set({ followUpStatus, internalNote }).where(eq(parentLeads.id, id));
+}
+
 export async function listFeaturedCentres() {
   const db = await getDb();
   if (!db) return [];

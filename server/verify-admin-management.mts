@@ -5,6 +5,7 @@ import { createCentre, createParentLead, getDb } from "../server/db";
 import { appRouter } from "../server/routers";
 
 const leadMarker = "INTEGRATION_TEST_ADMIN_LEAD_20260825";
+const otherLeadMarker = "INTEGRATION_TEST_ADMIN_LEAD_OTHER_20260825";
 const centreMarker = "INTEGRATION_TEST_ADMIN_TOGGLE_20260825";
 const adminContext = { user: { id: 1, openId: "integration-admin", name: "Integration Admin", email: null, loginMethod: "test", role: "admin", createdAt: new Date(), updatedAt: new Date(), lastSignedIn: new Date() }, req: { protocol: "https", headers: {} }, res: {} } as never;
 const publicContext = { user: null, req: { protocol: "https", headers: {} }, res: {} } as never;
@@ -13,20 +14,27 @@ async function run() {
   const db = await getDb();
   if (!db) throw new Error("Database is unavailable for admin management verification.");
   await db.delete(parentLeads).where(eq(parentLeads.parentName, leadMarker));
+  await db.delete(parentLeads).where(eq(parentLeads.parentName, otherLeadMarker));
   await db.delete(tutoringCentres).where(eq(tutoringCentres.name, centreMarker));
   try {
     const admin = appRouter.createCaller(adminContext);
     const publicCaller = appRouter.createCaller(publicContext);
     let leadsForbidden = false;
+    let updateForbidden = false;
     let toggleForbidden = false;
     try { await publicCaller.leads.adminList(); } catch { leadsForbidden = true; }
+    try { await publicCaller.leads.updateFollowUp({ id: 1, followUpStatus: "contacted", internalNote: "未授權" }); } catch { updateForbidden = true; }
     try { await publicCaller.centres.setActive({ id: 1, isActive: false }); } catch { toggleForbidden = true; }
-    if (!leadsForbidden || !toggleForbidden) throw new Error("Non-admin caller reached a protected management procedure.");
+    if (!leadsForbidden || !updateForbidden || !toggleForbidden) throw new Error("Non-admin caller reached a protected management procedure.");
 
     await createParentLead({ parentName: leadMarker, phone: "91234567", district: "觀塘區", grade: "中一", track: "英文閱讀", score: 11, weaknessSummary: "受控匯出驗證", consentAt: new Date("2026-08-25T01:00:00.000Z") });
-    const listed = (await admin.leads.adminList()).find((lead) => lead.parentName === leadMarker);
-    const exported = (await admin.leads.adminExport()).find((lead) => lead.parentName === leadMarker);
-    if (!listed || !exported || listed.phone !== "91234567" || exported.weaknessSummary !== "受控匯出驗證") throw new Error("Admin lead listing/export did not return the expected authorised record.");
+    await createParentLead({ parentName: otherLeadMarker, phone: "91234568", district: "沙田區", grade: "中二", track: "數學", score: 9, weaknessSummary: "不應出現在篩選結果", consentAt: new Date("2026-08-25T01:05:00.000Z") });
+    const filtered = await admin.leads.adminList({ district: "觀塘區", grade: "中一" });
+    const listed = filtered.find((lead) => lead.parentName === leadMarker);
+    if (!listed || filtered.some((lead) => lead.parentName === otherLeadMarker) || listed.phone !== "91234567") throw new Error("Admin lead filter did not return only the expected authorised record.");
+    await admin.leads.updateFollowUp({ id: listed.id, followUpStatus: "contacted", internalNote: "已安排回電（受控驗證）。" });
+    const exported = (await admin.leads.adminExport({ district: "觀塘區", grade: "中一" })).find((lead) => lead.id === listed.id);
+    if (!exported || exported.followUpStatus !== "contacted" || exported.internalNote !== "已安排回電（受控驗證）。") throw new Error("Admin follow-up status or internal note was not persisted to filtered export.");
 
     const centreId = (await createCentre({ name: centreMarker, description: "受控補習社啟用狀態測試記錄，完成後會立即清除。", whatsapp: "91234567", website: null, district: "觀塘區", region: "九龍", subjects: "[\"英文\"]", supportedGrades: "[\"小四\"]", isActive: true, isFeatured: true })).insertId;
     await admin.centres.setActive({ id: Number(centreId), isActive: false });
@@ -36,9 +44,10 @@ async function run() {
     await admin.centres.setActive({ id: Number(centreId), isActive: true });
     const publicAfterEnable = await publicCaller.centres.featured();
     if (!publicAfterEnable.some((centre) => centre.id === Number(centreId))) throw new Error("Centre enable did not restore it to public featured results.");
-    console.log("Admin management verified: protected leads, authorised list/export, and active toggle public visibility passed.");
+    console.log("Admin management verified: protected leads, filters, status/note persistence, filtered export, and active toggle public visibility passed.");
   } finally {
     await db.delete(parentLeads).where(eq(parentLeads.parentName, leadMarker));
+    await db.delete(parentLeads).where(eq(parentLeads.parentName, otherLeadMarker));
     await db.delete(tutoringCentres).where(eq(tutoringCentres.name, centreMarker));
   }
 }

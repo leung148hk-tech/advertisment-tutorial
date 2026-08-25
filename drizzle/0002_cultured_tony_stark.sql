@@ -1,0 +1,1 @@
+ALTER TABLE `parent_leads` ADD `internalNote` text;

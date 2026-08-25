@@ -40,6 +40,8 @@ export const parentLeads = mysqlTable("parent_leads", {
   weaknessSummary: text("weaknessSummary").notNull(),
   consentAt: timestamp("consentAt").notNull(),
   followUpStatus: mysqlEnum("followUpStatus", ["new", "contacted", "closed"]).default("new").notNull(),
+  /** Private staff note. Never exposed through public procedures or shared reports. */
+  internalNote: text("internalNote"),
   createdAt: timestamp("createdAt").defaultNow().notNull(),
 }, (table) => [
   index("parent_leads_district_idx").on(table.district),
