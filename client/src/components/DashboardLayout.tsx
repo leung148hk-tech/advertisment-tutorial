@@ -62,10 +62,10 @@ export default function DashboardLayout({
         <div className="flex flex-col items-center gap-8 p-8 max-w-md w-full">
           <div className="flex flex-col items-center gap-6">
             <h1 className="text-2xl font-semibold tracking-tight text-center">
-              Sign in to continue
+              登入管理員帳戶
             </h1>
             <p className="text-sm text-muted-foreground text-center max-w-sm">
-              Access to this dashboard requires authentication. Continue to launch the login flow.
+              此管理頁需要登入。請繼續使用 Manus 帳戶登入；只有已設為管理員角色的帳戶可查看受保護資料。
             </p>
           </div>
           <Button
@@ -73,7 +73,7 @@ export default function DashboardLayout({
             size="lg"
             className="w-full shadow-lg hover:shadow-xl transition-all"
           >
-            Sign in
+              登入
           </Button>
         </div>
       </div>

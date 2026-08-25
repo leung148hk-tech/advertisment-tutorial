@@ -1,4 +1,4 @@
-import { and, desc, eq, inArray } from "drizzle-orm";
+import { and, desc, eq, gte, inArray, lte } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
 import { InsertParentLead, InsertTutoringCentre, InsertUser, parentLeads, tutoringCentres, users } from "../drizzle/schema";
 import { ENV } from './_core/env';
@@ -105,12 +105,12 @@ export async function listParentLeads() {
   return db.select().from(parentLeads).orderBy(desc(parentLeads.createdAt));
 }
 
-export type ParentLeadFilters = { district?: string; grade?: string; followUpStatus?: "new" | "contacted" | "closed" };
+export type ParentLeadFilters = { district?: string; grade?: string; followUpStatus?: "new" | "contacted" | "closed"; submittedFrom?: Date; submittedTo?: Date };
 
 export async function listFilteredParentLeads(filters: ParentLeadFilters) {
   const db = await getDb();
   if (!db) return [];
-  const conditions = [filters.district ? eq(parentLeads.district, filters.district) : undefined, filters.grade ? eq(parentLeads.grade, filters.grade) : undefined, filters.followUpStatus ? eq(parentLeads.followUpStatus, filters.followUpStatus) : undefined].filter(Boolean);
+  const conditions = [filters.district ? eq(parentLeads.district, filters.district) : undefined, filters.grade ? eq(parentLeads.grade, filters.grade) : undefined, filters.followUpStatus ? eq(parentLeads.followUpStatus, filters.followUpStatus) : undefined, filters.submittedFrom ? gte(parentLeads.createdAt, filters.submittedFrom) : undefined, filters.submittedTo ? lte(parentLeads.createdAt, filters.submittedTo) : undefined].filter(Boolean);
   if (!conditions.length) return db.select().from(parentLeads).orderBy(desc(parentLeads.createdAt));
   return db.select().from(parentLeads).where(and(...conditions)).orderBy(desc(parentLeads.createdAt));
 }

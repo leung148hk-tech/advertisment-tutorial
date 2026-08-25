@@ -53,7 +53,7 @@ describe("tutoring centre validation", () => {
 describe("parent lead management validation", () => {
   it("accepts an authorised status update with an internal note and valid filters", () => {
     expect(leadManagementInput.safeParse({ id: 12, followUpStatus: "contacted", internalNote: "已安排回電。" }).success).toBe(true);
-    expect(leadFilterInput.safeParse({ district: "觀塘區", grade: "中一", followUpStatus: "new" }).success).toBe(true);
+    expect(leadFilterInput.safeParse({ district: "觀塘區", grade: "中一", followUpStatus: "new", submittedFrom: "2026-08-01", submittedTo: "2026-08-31" }).success).toBe(true);
     expect(leadBulkStatusInput.safeParse({ ids: [1, 2], followUpStatus: "closed" }).success).toBe(true);
   });
 
@@ -63,6 +63,9 @@ describe("parent lead management validation", () => {
     expect(leadFilterInput.safeParse({ district: "香港", grade: "中一" }).success).toBe(false);
     expect(leadFilterInput.safeParse({ district: "觀塘區", grade: "中四" }).success).toBe(false);
     expect(leadFilterInput.safeParse({ followUpStatus: "pending" }).success).toBe(false);
+    expect(leadFilterInput.safeParse({ submittedFrom: "2026-02-30" }).success).toBe(false);
+    expect(leadFilterInput.safeParse({ submittedFrom: "2026/08/01" }).success).toBe(false);
+    expect(leadFilterInput.safeParse({ submittedFrom: "2026-08-31", submittedTo: "2026-08-01" }).success).toBe(false);
     expect(leadBulkStatusInput.safeParse({ ids: [], followUpStatus: "closed" }).success).toBe(false);
     expect(leadBulkStatusInput.safeParse({ ids: Array.from({ length: 101 }, (_, index) => index + 1), followUpStatus: "closed" }).success).toBe(false);
   });

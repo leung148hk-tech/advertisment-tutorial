@@ -7,6 +7,15 @@ import { adminProcedure, publicProcedure, router } from "./_core/trpc";
 
 export const DISTRICTS = ["中西區", "灣仔區", "東區", "南區", "油尖旺區", "深水埗區", "九龍城區", "黃大仙區", "觀塘區", "葵青區", "荃灣區", "屯門區", "元朗區", "北區", "大埔區", "沙田區", "西貢區", "離島區"] as const;
 const hkPhone = z.string().trim().transform((value) => value.replace(/[\s()-]/g, "")).refine((value) => /^(?:\+852)?[2-9]\d{7}$/.test(value), "請填寫有效香港電話，例如 9123 4567 或 +852 9123 4567");
+const isDateOnly = (value: string) => {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const [year, month, day] = value.split("-").map(Number);
+  const check = new Date(Date.UTC(year, month - 1, day));
+  return check.getUTCFullYear() === year && check.getUTCMonth() === month - 1 && check.getUTCDate() === day;
+};
+const hkDateOnly = z.string().refine(isDateOnly, "請選擇有效日期");
+const hongKongDayStart = (value: string) => new Date(`${value}T00:00:00.000+08:00`);
+const hongKongDayEnd = (value: string) => new Date(`${value}T23:59:59.999+08:00`);
 export const leadInput = z.object({
   parentName: z.string().trim().min(2, "請填寫家長稱呼").max(120),
   phone: hkPhone,
@@ -22,7 +31,9 @@ export const leadFilterInput = z.object({
   district: z.enum(DISTRICTS).optional(),
   grade: z.enum(["小一", "小二", "小三", "小四", "小五", "小六", "中一", "中二", "中三"]).optional(),
   followUpStatus: z.enum(["new", "contacted", "closed"]).optional(),
-});
+  submittedFrom: hkDateOnly.optional(),
+  submittedTo: hkDateOnly.optional(),
+}).refine((input) => !input.submittedFrom || !input.submittedTo || input.submittedFrom <= input.submittedTo, { message: "開始日期不可晚於結束日期", path: ["submittedTo"] });
 export const leadManagementInput = z.object({
   id: z.number().int().positive(),
   followUpStatus: z.enum(["new", "contacted", "closed"]),
@@ -78,8 +89,8 @@ export const appRouter = router({
 
   // Parent contact data is never exposed publicly. These endpoints require adminProcedure.
   leads: router({
-    adminList: adminProcedure.input(leadFilterInput.optional()).query(({ input }) => listFilteredParentLeads(input ?? {})),
-    adminExport: adminProcedure.input(leadFilterInput.optional()).query(({ input }) => listFilteredParentLeads(input ?? {})),
+    adminList: adminProcedure.input(leadFilterInput.optional()).query(({ input }) => listFilteredParentLeads({ district: input?.district, grade: input?.grade, followUpStatus: input?.followUpStatus, submittedFrom: input?.submittedFrom ? hongKongDayStart(input.submittedFrom) : undefined, submittedTo: input?.submittedTo ? hongKongDayEnd(input.submittedTo) : undefined })),
+    adminExport: adminProcedure.input(leadFilterInput.optional()).query(({ input }) => listFilteredParentLeads({ district: input?.district, grade: input?.grade, followUpStatus: input?.followUpStatus, submittedFrom: input?.submittedFrom ? hongKongDayStart(input.submittedFrom) : undefined, submittedTo: input?.submittedTo ? hongKongDayEnd(input.submittedTo) : undefined })),
     updateFollowUp: adminProcedure.input(leadManagementInput).mutation(async ({ input }) => {
       await updateParentLeadFollowUp(input.id, input.followUpStatus, input.internalNote || null);
       return { success: true } as const;
