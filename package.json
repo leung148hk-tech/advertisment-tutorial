@@ -12,6 +12,7 @@
     "verify:graded": "node --import tsx scripts/verify-graded-random.mjs",
     "verify:parent-lead-storage": "node --import tsx scripts/verify-parent-lead-storage.mts",
     "verify:centre-crud": "node --import tsx scripts/verify-centre-crud.mts",
+    "verify:admin-management": "node --import tsx server/verify-admin-management.mts",
     "smoke:graded-pdf": "node --import tsx scripts/smoke-graded-pdf.mjs",
     "format": "prettier --write .",
     "test": "vitest run",

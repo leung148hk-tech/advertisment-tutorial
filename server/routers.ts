@@ -1,6 +1,6 @@
 import { COOKIE_NAME } from "@shared/const";
 import { z } from "zod";
-import { createCentre, createParentLead, deleteCentre, listCentres, listFeaturedCentres, updateCentre } from "./db";
+import { createCentre, createParentLead, deleteCentre, listCentres, listFeaturedCentres, listParentLeads, setCentreActive, updateCentre } from "./db";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { adminProcedure, publicProcedure, router } from "./_core/trpc";
@@ -61,6 +61,12 @@ export const appRouter = router({
     }),
   }),
 
+  // Parent contact data is never exposed publicly. These endpoints require adminProcedure.
+  leads: router({
+    adminList: adminProcedure.query(() => listParentLeads()),
+    adminExport: adminProcedure.query(() => listParentLeads()),
+  }),
+
   centres: router({
     featured: publicProcedure.query(() => listFeaturedCentres()),
     adminList: adminProcedure.query(() => listCentres()),
@@ -70,6 +76,10 @@ export const appRouter = router({
     }),
     update: adminProcedure.input(z.object({ id: z.number().int().positive(), centre: centreInput })).mutation(async ({ input }) => {
       await updateCentre(input.id, { ...input.centre, website: input.centre.website || null, region: regionForDistrict(input.centre.district), subjects: JSON.stringify(input.centre.subjects), supportedGrades: JSON.stringify(input.centre.supportedGrades) });
+      return { success: true } as const;
+    }),
+    setActive: adminProcedure.input(z.object({ id: z.number().int().positive(), isActive: z.boolean() })).mutation(async ({ input }) => {
+      await setCentreActive(input.id, input.isActive);
       return { success: true } as const;
     }),
     remove: adminProcedure.input(z.object({ id: z.number().int().positive() })).mutation(async ({ input }) => {

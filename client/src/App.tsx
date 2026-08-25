@@ -6,6 +6,7 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import CentresAdmin from "./pages/CentresAdmin";
 import Home from "./pages/Home";
+import LeadsAdmin from "./pages/LeadsAdmin";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -13,6 +14,7 @@ function Router() {
     <Switch>
       <Route path={"/"} component={Home} />
       <Route path={"/admin/centres"} component={CentresAdmin} />
+      <Route path={"/admin/leads"} component={LeadsAdmin} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

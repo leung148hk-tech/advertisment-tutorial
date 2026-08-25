@@ -98,6 +98,13 @@ export async function createParentLead(lead: InsertParentLead) {
   return result[0];
 }
 
+/** This result includes parent-authorised contact data and must be admin-gated by its caller. */
+export async function listParentLeads() {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(parentLeads).orderBy(desc(parentLeads.createdAt));
+}
+
 export async function listFeaturedCentres() {
   const db = await getDb();
   if (!db) return [];
@@ -120,6 +127,10 @@ export async function updateCentre(id: number, centre: Partial<InsertTutoringCen
   const db = await getDb();
   if (!db) throw new Error("Database is unavailable");
   await db.update(tutoringCentres).set(centre).where(eq(tutoringCentres.id, id));
+}
+
+export async function setCentreActive(id: number, isActive: boolean) {
+  await updateCentre(id, { isActive });
 }
 
 export async function deleteCentre(id: number) {
