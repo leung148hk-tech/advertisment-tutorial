@@ -1,4 +1,4 @@
-import { index, int, mysqlEnum, mysqlTable, text, timestamp, varchar } from "drizzle-orm/mysql-core";
+import { boolean, index, int, mysqlEnum, mysqlTable, text, timestamp, varchar } from "drizzle-orm/mysql-core";
 
 /**
  * Core user table backing auth flow.
@@ -48,3 +48,26 @@ export const parentLeads = mysqlTable("parent_leads", {
 
 export type ParentLead = typeof parentLeads.$inferSelect;
 export type InsertParentLead = typeof parentLeads.$inferInsert;
+
+/** Administrator-managed, real partner-centre data. No customer ratings or reviews are stored. */
+export const tutoringCentres = mysqlTable("tutoring_centres", {
+  id: int("id").autoincrement().primaryKey(),
+  name: varchar("name", { length: 160 }).notNull(),
+  description: text("description").notNull(),
+  whatsapp: varchar("whatsapp", { length: 32 }).notNull(),
+  website: varchar("website", { length: 320 }),
+  district: varchar("district", { length: 32 }).notNull(),
+  region: varchar("region", { length: 16 }).notNull(),
+  subjects: text("subjects").notNull(),
+  supportedGrades: text("supportedGrades").notNull(),
+  isActive: boolean("isActive").default(true).notNull(),
+  isFeatured: boolean("isFeatured").default(false).notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+}, (table) => [
+  index("tutoring_centres_featured_idx").on(table.isFeatured, table.isActive),
+  index("tutoring_centres_district_idx").on(table.district),
+]);
+
+export type TutoringCentre = typeof tutoringCentres.$inferSelect;
+export type InsertTutoringCentre = typeof tutoringCentres.$inferInsert;

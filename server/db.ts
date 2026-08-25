@@ -1,6 +1,6 @@
-import { eq } from "drizzle-orm";
+import { and, desc, eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertParentLead, InsertUser, parentLeads, users } from "../drizzle/schema";
+import { InsertParentLead, InsertTutoringCentre, InsertUser, parentLeads, tutoringCentres, users } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -96,4 +96,34 @@ export async function createParentLead(lead: InsertParentLead) {
   }
   const result = await db.insert(parentLeads).values(lead);
   return result[0];
+}
+
+export async function listFeaturedCentres() {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(tutoringCentres).where(and(eq(tutoringCentres.isActive, true), eq(tutoringCentres.isFeatured, true))).orderBy(desc(tutoringCentres.updatedAt));
+}
+
+export async function listCentres() {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(tutoringCentres).orderBy(desc(tutoringCentres.updatedAt));
+}
+
+export async function createCentre(centre: InsertTutoringCentre) {
+  const db = await getDb();
+  if (!db) throw new Error("Database is unavailable");
+  return (await db.insert(tutoringCentres).values(centre))[0];
+}
+
+export async function updateCentre(id: number, centre: Partial<InsertTutoringCentre>) {
+  const db = await getDb();
+  if (!db) throw new Error("Database is unavailable");
+  await db.update(tutoringCentres).set(centre).where(eq(tutoringCentres.id, id));
+}
+
+export async function deleteCentre(id: number) {
+  const db = await getDb();
+  if (!db) throw new Error("Database is unavailable");
+  await db.delete(tutoringCentres).where(eq(tutoringCentres.id, id));
 }

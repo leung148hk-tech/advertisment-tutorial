@@ -11,7 +11,8 @@
     "verify:assessment": "node scripts/verify-assessment.mjs",
     "verify:graded": "node --import tsx scripts/verify-graded-random.mjs",
     "verify:parent-lead-storage": "node --import tsx scripts/verify-parent-lead-storage.mts",
-    "smoke:graded-pdf": "node scripts/smoke-graded-pdf.mjs",
+    "verify:centre-crud": "node --import tsx scripts/verify-centre-crud.mts",
+    "smoke:graded-pdf": "node --import tsx scripts/smoke-graded-pdf.mjs",
     "format": "prettier --write .",
     "test": "vitest run",
     "db:push": "drizzle-kit generate && drizzle-kit migrate"

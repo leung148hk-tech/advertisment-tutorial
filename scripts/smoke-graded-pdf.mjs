@@ -1,5 +1,9 @@
 import { spawn } from "node:child_process";
 import { existsSync, mkdirSync, readdirSync, rmSync, writeFileSync } from "node:fs";
+import "dotenv/config";
+import { eq } from "drizzle-orm";
+import { parentLeads } from "../drizzle/schema";
+import { getDb } from "../server/db";
 
 const port = 9333;
 const downloadDir = "/home/ubuntu/Downloads/learning-compass-smoke";
@@ -7,6 +11,7 @@ const profileDir = "/tmp/learning-compass-smoke-profile";
 const testTrack = process.env.SMOKE_TRACK ?? "中文閱讀";
 const answerIndex = Number(process.env.SMOKE_ANSWER_INDEX ?? 0);
 const expectRegionalSupport = process.env.SMOKE_EXPECT_REGIONAL_SUPPORT === "1";
+const smokeLeadName = "SMOKE_TEST_PARENT_20260825";
 rmSync(downloadDir, { recursive: true, force: true });
 rmSync(profileDir, { recursive: true, force: true });
 mkdirSync(downloadDir, { recursive: true });
@@ -17,6 +22,7 @@ const browser = spawn("chromium", [
 ], { stdio: "ignore" });
 
 const wait = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
+const cleanupSmokeLead = async () => { const db = await getDb(); if (db) await db.delete(parentLeads).where(eq(parentLeads.parentName, smokeLeadName)); };
 
 async function getTarget() {
   for (let attempts = 0; attempts < 30; attempts += 1) {
@@ -31,6 +37,8 @@ async function getTarget() {
 }
 
 async function run() {
+  await cleanupSmokeLead();
+  try {
   const target = await getTarget();
   const socket = new WebSocket(target.webSocketDebuggerUrl);
   await new Promise((resolve, reject) => { socket.addEventListener("open", resolve, { once: true }); socket.addEventListener("error", reject, { once: true }); });
@@ -72,12 +80,14 @@ async function run() {
     await wait(90);
   }
   await waitFor(`!!document.querySelector('.parent-lead-form')`, "parent follow-up form");
-  const leadFormState = await evaluate(`({ name: !!document.querySelector('.parent-lead-form input[placeholder="例如：陳太"]'), phone: !!document.querySelector('.parent-lead-form input[placeholder="例如：9123 4567"]'), districts: document.querySelectorAll('.parent-lead-form option').length === 19, consent: !!document.querySelector('.parent-lead-form input[type="checkbox"]') })`);
+  const leadFormState = await evaluate(`({ name: !!document.querySelector('.parent-lead-form input[placeholder="例如：陳太"]'), phone: !!document.querySelector('.parent-lead-form input[inputmode="tel"]'), districts: document.querySelectorAll('.parent-lead-form option').length === 19, consent: !!document.querySelector('.parent-lead-form input[type="checkbox"]') })`);
   if (!leadFormState.name || !leadFormState.phone || !leadFormState.districts || !leadFormState.consent) throw new Error(`Parent follow-up form is incomplete: ${JSON.stringify(leadFormState)}`);
-  await waitFor(`!!document.querySelector('.detail-stage button')`, "report transition button");
-  // This legacy transition is intentionally used only by the non-persistent smoke
-  // test. Real users see the parent-consent form before the report is released.
-  await evaluate(`document.querySelector('.detail-stage button')?.click()`);
+  await evaluate(`(() => { const phone = document.querySelector('.parent-lead-form input[inputmode="tel"]'); phone.value = '11234567'; phone.dispatchEvent(new Event('input', { bubbles: true })); phone.dispatchEvent(new FocusEvent('focusout', { bubbles: true })); })()`);
+  await waitFor(`!!document.querySelector('.lead-field-error')`, "Hong Kong phone inline validation");
+  await evaluate(`(() => { const setInput = (node, value) => { Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set.call(node, value); node.dispatchEvent(new Event('input', { bubbles: true })); }; const setSelect = (node, value) => { Object.getOwnPropertyDescriptor(HTMLSelectElement.prototype, 'value').set.call(node, value); node.dispatchEvent(new Event('change', { bubbles: true })); }; setInput(document.querySelector('.parent-lead-form input[placeholder="例如：陳太"]'), ${JSON.stringify(smokeLeadName)}); setInput(document.querySelector('.parent-lead-form input[inputmode="tel"]'), '+852 9123 4567'); setSelect(document.querySelector('.parent-lead-form select'), '觀塘區'); document.querySelector('.parent-lead-form input[type="checkbox"]')?.click(); })()`);
+  await waitFor(`!document.querySelector('.lead-field-error')`, "valid Hong Kong phone state");
+  await evaluate(`Array.from(document.querySelectorAll('.parent-lead-form button')).find((button) => button.textContent?.includes('提交並查看完整報告'))?.click()`);
+  await waitFor(`!!document.querySelector('.parent-lead-success')`, "lead submission success animation");
   await waitFor(`!!document.querySelector('.download-report')`, "complete report");
   const reportState = await evaluate(`({ report: !!document.querySelector('.download-report'), text: document.querySelector('.download-report')?.innerText.includes('20 題') ?? false, button: !!Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('下載完整 PDF 報告')) })`);
   if (!reportState.report || !reportState.text || !reportState.button) {
@@ -128,6 +138,9 @@ async function run() {
   console.log(`Smoke test passed for ${testTrack}: report rendered, share controls verified and ${downloads[0]} downloaded.`);
   socket.close();
   browser.kill("SIGTERM");
+  } finally {
+    await cleanupSmokeLead();
+  }
 }
 
-run().catch((error) => { browser.kill("SIGTERM"); console.error(error); process.exit(1); });
+run().then(() => process.exit(0)).catch((error) => { browser.kill("SIGTERM"); console.error(error); process.exit(1); });
