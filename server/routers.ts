@@ -1,6 +1,6 @@
 import { COOKIE_NAME } from "@shared/const";
 import { z } from "zod";
-import { createCentre, createParentLead, deleteCentre, listCentres, listFeaturedCentres, listFilteredParentLeads, setCentreActive, updateCentre, updateParentLeadFollowUp } from "./db";
+import { createCentre, createParentLead, deleteCentre, listCentres, listFeaturedCentres, listFilteredParentLeads, setCentreActive, updateCentre, updateParentLeadFollowUp, updateParentLeadStatuses } from "./db";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { adminProcedure, publicProcedure, router } from "./_core/trpc";
@@ -21,11 +21,16 @@ export const leadInput = z.object({
 export const leadFilterInput = z.object({
   district: z.enum(DISTRICTS).optional(),
   grade: z.enum(["小一", "小二", "小三", "小四", "小五", "小六", "中一", "中二", "中三"]).optional(),
+  followUpStatus: z.enum(["new", "contacted", "closed"]).optional(),
 });
 export const leadManagementInput = z.object({
   id: z.number().int().positive(),
   followUpStatus: z.enum(["new", "contacted", "closed"]),
   internalNote: z.string().trim().max(2000, "內部備註不可超過 2000 字").nullable(),
+});
+export const leadBulkStatusInput = z.object({
+  ids: z.array(z.number().int().positive()).min(1, "請至少選擇一筆家長資料").max(100, "每次最多可更新 100 筆資料"),
+  followUpStatus: z.enum(["new", "contacted", "closed"]),
 });
 
 export const centreInput = z.object({
@@ -78,6 +83,10 @@ export const appRouter = router({
     updateFollowUp: adminProcedure.input(leadManagementInput).mutation(async ({ input }) => {
       await updateParentLeadFollowUp(input.id, input.followUpStatus, input.internalNote || null);
       return { success: true } as const;
+    }),
+    bulkUpdateStatus: adminProcedure.input(leadBulkStatusInput).mutation(async ({ input }) => {
+      await updateParentLeadStatuses(input.ids, input.followUpStatus);
+      return { success: true, updatedCount: input.ids.length } as const;
     }),
   }),
 

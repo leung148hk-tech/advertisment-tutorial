@@ -1,4 +1,4 @@
-import { and, desc, eq } from "drizzle-orm";
+import { and, desc, eq, inArray } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
 import { InsertParentLead, InsertTutoringCentre, InsertUser, parentLeads, tutoringCentres, users } from "../drizzle/schema";
 import { ENV } from './_core/env';
@@ -105,12 +105,12 @@ export async function listParentLeads() {
   return db.select().from(parentLeads).orderBy(desc(parentLeads.createdAt));
 }
 
-export type ParentLeadFilters = { district?: string; grade?: string };
+export type ParentLeadFilters = { district?: string; grade?: string; followUpStatus?: "new" | "contacted" | "closed" };
 
 export async function listFilteredParentLeads(filters: ParentLeadFilters) {
   const db = await getDb();
   if (!db) return [];
-  const conditions = [filters.district ? eq(parentLeads.district, filters.district) : undefined, filters.grade ? eq(parentLeads.grade, filters.grade) : undefined].filter(Boolean);
+  const conditions = [filters.district ? eq(parentLeads.district, filters.district) : undefined, filters.grade ? eq(parentLeads.grade, filters.grade) : undefined, filters.followUpStatus ? eq(parentLeads.followUpStatus, filters.followUpStatus) : undefined].filter(Boolean);
   if (!conditions.length) return db.select().from(parentLeads).orderBy(desc(parentLeads.createdAt));
   return db.select().from(parentLeads).where(and(...conditions)).orderBy(desc(parentLeads.createdAt));
 }
@@ -119,6 +119,13 @@ export async function updateParentLeadFollowUp(id: number, followUpStatus: "new"
   const db = await getDb();
   if (!db) throw new Error("Database is unavailable");
   await db.update(parentLeads).set({ followUpStatus, internalNote }).where(eq(parentLeads.id, id));
+}
+
+/** Batch status updates intentionally leave internalNote untouched. */
+export async function updateParentLeadStatuses(ids: number[], followUpStatus: "new" | "contacted" | "closed") {
+  const db = await getDb();
+  if (!db) throw new Error("Database is unavailable");
+  await db.update(parentLeads).set({ followUpStatus }).where(inArray(parentLeads.id, ids));
 }
 
 export async function listFeaturedCentres() {

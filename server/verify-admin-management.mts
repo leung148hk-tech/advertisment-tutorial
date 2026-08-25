@@ -21,20 +21,33 @@ async function run() {
     const publicCaller = appRouter.createCaller(publicContext);
     let leadsForbidden = false;
     let updateForbidden = false;
+    let bulkForbidden = false;
     let toggleForbidden = false;
     try { await publicCaller.leads.adminList(); } catch { leadsForbidden = true; }
     try { await publicCaller.leads.updateFollowUp({ id: 1, followUpStatus: "contacted", internalNote: "未授權" }); } catch { updateForbidden = true; }
+    try { await publicCaller.leads.bulkUpdateStatus({ ids: [1, 2], followUpStatus: "closed" }); } catch { bulkForbidden = true; }
     try { await publicCaller.centres.setActive({ id: 1, isActive: false }); } catch { toggleForbidden = true; }
-    if (!leadsForbidden || !updateForbidden || !toggleForbidden) throw new Error("Non-admin caller reached a protected management procedure.");
+    if (!leadsForbidden || !updateForbidden || !bulkForbidden || !toggleForbidden) throw new Error("Non-admin caller reached a protected management procedure.");
 
     await createParentLead({ parentName: leadMarker, phone: "91234567", district: "觀塘區", grade: "中一", track: "英文閱讀", score: 11, weaknessSummary: "受控匯出驗證", consentAt: new Date("2026-08-25T01:00:00.000Z") });
-    await createParentLead({ parentName: otherLeadMarker, phone: "91234568", district: "沙田區", grade: "中二", track: "數學", score: 9, weaknessSummary: "不應出現在篩選結果", consentAt: new Date("2026-08-25T01:05:00.000Z") });
-    const filtered = await admin.leads.adminList({ district: "觀塘區", grade: "中一" });
+    await createParentLead({ parentName: otherLeadMarker, phone: "91234568", district: "沙田區", grade: "中二", track: "數學", score: 9, weaknessSummary: "不應出現在最初篩選結果", consentAt: new Date("2026-08-25T01:05:00.000Z") });
+    const filtered = await admin.leads.adminList({ district: "觀塘區", grade: "中一", followUpStatus: "new" });
     const listed = filtered.find((lead) => lead.parentName === leadMarker);
     if (!listed || filtered.some((lead) => lead.parentName === otherLeadMarker) || listed.phone !== "91234567") throw new Error("Admin lead filter did not return only the expected authorised record.");
     await admin.leads.updateFollowUp({ id: listed.id, followUpStatus: "contacted", internalNote: "已安排回電（受控驗證）。" });
-    const exported = (await admin.leads.adminExport({ district: "觀塘區", grade: "中一" })).find((lead) => lead.id === listed.id);
-    if (!exported || exported.followUpStatus !== "contacted" || exported.internalNote !== "已安排回電（受控驗證）。") throw new Error("Admin follow-up status or internal note was not persisted to filtered export.");
+    const exported = (await admin.leads.adminExport({ district: "觀塘區", grade: "中一", followUpStatus: "contacted" })).find((lead) => lead.id === listed.id);
+    if (!exported || exported.followUpStatus !== "contacted" || exported.internalNote !== "已安排回電（受控驗證）。") throw new Error("Individual follow-up update was not persisted to filtered export.");
+
+    const other = (await admin.leads.adminList({ district: "沙田區", grade: "中二", followUpStatus: "new" })).find((lead) => lead.parentName === otherLeadMarker);
+    if (!other) throw new Error("Second controlled lead was not available for bulk update.");
+    const bulkResult = await admin.leads.bulkUpdateStatus({ ids: [listed.id, other.id], followUpStatus: "closed" });
+    if (bulkResult.updatedCount !== 2) throw new Error("Bulk update did not report the expected selected record count.");
+    const closed = await admin.leads.adminList({ followUpStatus: "closed" });
+    const closedListed = closed.find((lead) => lead.id === listed.id);
+    const closedOther = closed.find((lead) => lead.id === other.id);
+    if (!closedListed || !closedOther || closedListed.internalNote !== "已安排回電（受控驗證）。" || closedOther.internalNote !== null) throw new Error("Bulk status update did not preserve internal notes or status-filtered results.");
+    const combined = await admin.leads.adminList({ district: "觀塘區", grade: "中一", followUpStatus: "closed" });
+    if (!combined.some((lead) => lead.id === listed.id) || combined.some((lead) => lead.id === other.id)) throw new Error("Combined district, grade, and status filter returned unexpected leads.");
 
     const centreId = (await createCentre({ name: centreMarker, description: "受控補習社啟用狀態測試記錄，完成後會立即清除。", whatsapp: "91234567", website: null, district: "觀塘區", region: "九龍", subjects: "[\"英文\"]", supportedGrades: "[\"小四\"]", isActive: true, isFeatured: true })).insertId;
     await admin.centres.setActive({ id: Number(centreId), isActive: false });
@@ -44,7 +57,7 @@ async function run() {
     await admin.centres.setActive({ id: Number(centreId), isActive: true });
     const publicAfterEnable = await publicCaller.centres.featured();
     if (!publicAfterEnable.some((centre) => centre.id === Number(centreId))) throw new Error("Centre enable did not restore it to public featured results.");
-    console.log("Admin management verified: protected leads, filters, status/note persistence, filtered export, and active toggle public visibility passed.");
+    console.log("Admin management verified: protected leads, combined filters, bulk status persistence, note preservation, and active toggle public visibility passed.");
   } finally {
     await db.delete(parentLeads).where(eq(parentLeads.parentName, leadMarker));
     await db.delete(parentLeads).where(eq(parentLeads.parentName, otherLeadMarker));
