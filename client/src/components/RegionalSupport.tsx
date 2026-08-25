@@ -1,26 +1,22 @@
-/** Learning Compass / 學習航圖: private, filterable next-step support cards. */
+/** Learning Compass / 學習航圖: eighteen-district, privacy-safe support cards. */
 import { CheckCircle2, MapPin, MessageCircle } from "lucide-react";
 import { useMemo, useState } from "react";
 
 type Ability = { topic: string; total: number; correct: number; percentage: number; state: string };
-type Region = "全部地區" | "港島" | "九龍" | "新界";
-const REGIONS: Region[] = ["全部地區", "港島", "九龍", "新界"];
+type DemoCentre = { district: string; region: string; name: string; coverage: string };
+const GROUPS = [{ region: "港島", items: ["中西區", "灣仔區", "東區", "南區"] }, { region: "九龍", items: ["油尖旺區", "深水埗區", "九龍城區", "黃大仙區", "觀塘區"] }, { region: "新界", items: ["葵青區", "荃灣區", "屯門區", "元朗區", "北區", "大埔區", "沙田區", "西貢區", "離島區"] }];
+const DISTRICT_TO_REGION = Object.fromEntries(GROUPS.flatMap((group) => group.items.map((item) => [item, group.region])));
+const DEMO_CENTRES: DemoCentre[] = GROUPS.flatMap((group) => group.items.map((district) => ({ district, region: group.region, name: `${district}學習支援中心（示範）`, coverage: `${district}及鄰近地區` })));
+function isReading(topic: string) { return /閱讀|Vocabulary|Reading comprehension|Reading details|Reading inference|Text connection|Integrated reading/.test(topic); }
+function isMath(topic: string) { return /數|代數|比例|Geometry|Statistics|Multi-step|Algebra|Ratio/.test(topic); }
+function supportFor(topic: string) { if (isMath(topic)) return { title: "數學考試支援", focus: `${topic}、常見題型與步驟檢查`, format: "小班應試策略練習", revision: "四天起步：重溫公式或概念；完成 5 題同類校內題；逐步寫出運算；最後以 2 題文字題檢查方法。" }; if (isReading(topic)) return { title: "閱讀理解支援", focus: `${topic}、關鍵詞、證據與作答策略`, format: "小組閱讀策略班", revision: "四天起步：圈出關鍵詞；回答誰、甚麼、為何；找出支持答案的句子；最後以一句完整說話回應題目。" }; return { title: "寫作與語基支援", focus: `${topic}、句子、段落與修訂`, format: "小班寫作基礎班", revision: "四天起步：寫中心句；補上一個具體例子；使用連接詞；讀出段落並修訂不清楚的表達。" }; }
 
-function isReading(topic: string) { return /閱讀|Vocabulary|Reading details|Reading inference|Text connection|Integrated reading/.test(topic); }
-function isMath(topic: string) { return /數|分數|比例|圖形|量度|時間|統計|資料|解題/.test(topic); }
-function supportFor(topic: string) {
-  if (isMath(topic)) return { title: "數學弱項支援（示範推薦）", focus: `${topic}、圖像化解題與步驟檢查`, format: "小班分步策略練習", revision: "四天起步：先以圖像或實物重溫概念；完成 5 題同類短題；把方法說給家長聽；最後做 2 題生活情境題並檢查步驟。" };
-  if (isReading(topic)) return { title: "閱讀理解支援（示範推薦）", focus: `${topic}、關鍵詞與證據尋找`, format: "小組閱讀策略班", revision: "四天起步：每天閱讀一小段文字；圈出關鍵詞；回答誰、甚麼、為何；找一句支持答案的證據；最後用自己的說話重述主旨。" };
-  return { title: "寫作基礎支援（示範推薦）", focus: `${topic}、句子、段落與修訂`, format: "小班寫作基礎班", revision: "四天起步：先寫一個中心句；加入一個具體例子；用連接詞串連句子；讀出文章並修訂不清楚的地方。" };
-}
-
-export default function RegionalSupport({ gradeLabel, trackLabel, abilities }: { gradeLabel: string; trackLabel: string; abilities: Ability[] }) {
-  const [region, setRegion] = useState<Region>("全部地區");
+export default function RegionalSupport({ gradeLabel, trackLabel, abilities, homeDistrict }: { gradeLabel: string; trackLabel: string; abilities: Ability[]; homeDistrict?: string }) {
+  const [region, setRegion] = useState(homeDistrict ? DISTRICT_TO_REGION[homeDistrict] ?? "全部地區" : "全部地區");
+  const [district, setDistrict] = useState(homeDistrict || "");
   const weakAreas = useMemo(() => abilities.filter((item) => item.correct < 2 && item.total >= 4), [abilities]);
-  const openWhatsApp = (topic: string) => {
-    const regionText = region === "全部地區" ? "港島、九龍或新界" : region;
-    const text = `你好，我想了解 ${gradeLabel}${trackLabel}「${topic}」的支援安排。希望查詢 ${regionText} 的課程資料。`;
-    window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer");
-  };
-  return <section className="regional-support" data-pdf-ignore="true"><div className="regional-heading"><div><p className="eyebrow"><MapPin size={16} /> 地區化弱項支援</p><h2>按弱項與居住地區，找下一步支援。</h2><p>以下只顯示本次符合弱項門檻的能力面向；所有機構資訊目前均為示範資料。</p></div><div className="region-filter" aria-label="選擇居住地區">{REGIONS.map((item) => <button key={item} className={region === item ? "region-chip region-chip-active" : "region-chip"} onClick={() => setRegion(item)}>{item}</button>)}</div></div>{weakAreas.length ? <div className="regional-support-grid">{weakAreas.map((area, index) => { const support = supportFor(area.topic); const serviceRegion = region === "全部地區" ? "港島、九龍、新界" : region; return <article className="regional-support-card" key={area.topic}><span>0{index + 1}</span><p className="demo-chip">合作支援示範推薦 · {serviceRegion}</p><h3>{area.topic}</h3><p className="regional-score">本次答對 <strong>{area.correct} / {area.total}</strong> 題</p><div className="revision-tip"><strong>針對性溫習建議</strong><p>{support.revision}</p></div><dl><div><dt>推薦支援</dt><dd>{support.title}</dd></div><div><dt>適合內容</dt><dd>{support.focus}</dd></div><div><dt>建議形式</dt><dd>{support.format}</dd></div></dl><button className="whatsapp-support-button" onClick={() => openWhatsApp(area.topic)}><MessageCircle size={17} /> 立即 WhatsApp 查詢（示範）</button></article>; })}</div> : <div className="regional-clear"><CheckCircle2 size={28} /><div><strong>本次沒有符合弱項門檻的面向</strong><p>可查看完整報告，並按孩子較感興趣的能力安排延伸練習。</p></div></div>}<p className="regional-transparency"><strong>合作資料說明：</strong> 地區篩選目前只調整示範支援範圍；尚未連結真實補習社名稱或 WhatsApp 號碼。按下查詢按鈕會開啟 WhatsApp 並預填不含學生個資的訊息，讓家長自行選擇對象及送出。</p></section>;
+  const visibleDistricts = region === "全部地區" ? GROUPS.flatMap((group) => group.items) : GROUPS.find((group) => group.region === region)?.items ?? [];
+  const matchedCentres = useMemo(() => DEMO_CENTRES.filter((centre) => district ? centre.district === district : visibleDistricts.includes(centre.district)), [district, visibleDistricts]);
+  const openWhatsApp = (topic: string, centre: DemoCentre) => { const text = `你好，我想了解 ${centre.name} 的 ${gradeLabel}${trackLabel}「${topic}」支援安排。希望查詢 ${centre.district} 的課程資料。`; window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, "_blank", "noopener,noreferrer"); };
+  return <section className="regional-support" data-pdf-ignore="true"><div className="regional-heading"><div><p className="eyebrow"><MapPin size={16} /> 十八區弱項支援</p><h2>按弱項與居住地區，找下一步支援。</h2><p>以下只顯示本次符合弱項門檻的能力面向；中心名稱、服務範圍及聯絡捷徑目前均為示範資料。</p></div><div className="region-filter"><div>{["全部地區", ...GROUPS.map((group) => group.region)].map((item) => <button key={item} className={region === item ? "region-chip region-chip-active" : "region-chip"} onClick={() => { setRegion(item); if (item !== "全部地區" && district && DISTRICT_TO_REGION[district] !== item) setDistrict(""); }}>{item}</button>)}</div><select aria-label="選擇香港十八區" value={district} onChange={(event) => setDistrict(event.target.value)}><option value="">{region === "全部地區" ? "所有十八區" : `所有${region}地區`}</option>{visibleDistricts.map((item) => <option key={item} value={item}>{item}</option>)}</select></div></div>{weakAreas.length && matchedCentres.length ? <div className="regional-support-grid">{weakAreas.map((area, index) => { const support = supportFor(area.topic); const centre = matchedCentres[index % matchedCentres.length]; return <article className="regional-support-card" key={area.topic}><span>0{index + 1}</span><p className="demo-chip">合作資料示範 · {centre.region}</p><h3>{area.topic}</h3><p className="regional-score">本次答對 <strong>{area.correct} / {area.total}</strong> 題</p><div className="revision-tip"><strong>針對性溫習建議</strong><p>{support.revision}</p></div><dl><div><dt>配對中心</dt><dd>{centre.name}</dd></div><div><dt>服務覆蓋</dt><dd>{centre.coverage}</dd></div><div><dt>推薦支援</dt><dd>{support.title}</dd></div><div><dt>適合內容</dt><dd>{support.focus}</dd></div><div><dt>建議形式</dt><dd>{support.format}</dd></div></dl><button className="whatsapp-support-button" onClick={() => openWhatsApp(area.topic, centre)}><MessageCircle size={17} /> 立即 WhatsApp 查詢（示範）</button></article>; })}</div> : <div className="regional-clear"><CheckCircle2 size={28} /><div><strong>{weakAreas.length ? "該地區暫未有示範支援資料" : "本次沒有符合弱項門檻的面向"}</strong><p>{weakAreas.length ? "請改選其他地區，或於正式上線時加入該區的真實合作資料。" : "可查看完整報告，並按孩子較感興趣的能力安排延伸練習。"}</p></div></div>}<p className="regional-transparency"><strong>合作資料說明：</strong> 十八區篩選會改變顯示的示範中心及服務覆蓋；這些資料不是實際補習社名單或可直接報讀的課程。按下查詢按鈕只會開啟 WhatsApp 並預填不含學生個資的訊息；加入真實合作資料與電話後，才可作正式轉介。</p></section>;
 }

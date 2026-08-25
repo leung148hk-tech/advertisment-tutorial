@@ -37,6 +37,7 @@ import {
   type TrackId,
 } from "@/data/gradedAssessment";
 import RegionalSupport from "@/components/RegionalSupport";
+import ParentLeadForm from "@/components/ParentLeadForm";
 
 type Screen = "landing" | "quiz" | "details" | "report";
 const MODULES: ModuleName[] = ["基礎掌握", "理解與應用", "情境推理", "整合表達"];
@@ -137,23 +138,40 @@ export default function Home() {
     setPdfBusy(true);
     try {
       await document.fonts?.ready;
+      const reportFooter = reportRef.current.querySelector<HTMLElement>(".pdf-footer");
+      const previousFooterDisplay = reportFooter?.style.display;
+      if (reportFooter) reportFooter.style.display = "none";
       const canvas = await html2canvas(reportRef.current, {
         scale: 2,
         backgroundColor: "#fbf8ee",
         useCORS: true,
         ignoreElements: (element) => (element as HTMLElement).dataset.pdfIgnore === "true" || element.tagName === "IMG",
       });
-      const image = canvas.toDataURL("image/png");
+      if (reportFooter) reportFooter.style.display = previousFooterDisplay ?? "";
       const pdf = new jsPDF("p", "mm", "a4");
       const pageWidth = pdf.internal.pageSize.getWidth();
       const pageHeight = pdf.internal.pageSize.getHeight();
       const margin = 10;
       const drawWidth = pageWidth - margin * 2;
-      const drawHeight = (canvas.height * drawWidth) / canvas.width;
-      const usableHeight = pageHeight - margin * 2;
-      for (let offset = 0; offset < drawHeight; offset += usableHeight) {
-        if (offset > 0) pdf.addPage();
-        pdf.addImage(image, "PNG", margin, margin - offset, drawWidth, drawHeight, undefined, "FAST");
+      const headerFooter = 13;
+      const pixelsPerMillimetre = canvas.width / drawWidth;
+      const sliceHeight = Math.floor((pageHeight - margin * 2 - headerFooter) * pixelsPerMillimetre);
+      let offset = 0;
+      let page = 1;
+      while (offset < canvas.height) {
+        const height = Math.min(sliceHeight, canvas.height - offset);
+        const pageCanvas = document.createElement("canvas");
+        pageCanvas.width = canvas.width;
+        pageCanvas.height = height;
+        pageCanvas.getContext("2d")?.drawImage(canvas, 0, offset, canvas.width, height, 0, 0, canvas.width, height);
+        if (page > 1) pdf.addPage();
+        pdf.addImage(pageCanvas.toDataURL("image/png"), "PNG", margin, margin, drawWidth, height / pixelsPerMillimetre, undefined, "FAST");
+        pdf.setFontSize(8);
+        pdf.setTextColor(69, 86, 78);
+        pdf.text("Learning Compass · Free Assessment Report", margin, pageHeight - 7);
+        pdf.text(`Page ${page}`, pageWidth - margin, pageHeight - 7, { align: "right" });
+        offset += height;
+        page += 1;
       }
       pdf.save(`學習航圖-${gradeInfo.label}-${trackInfo.shortLabel}-${new Date().toISOString().slice(0, 10)}.pdf`);
     } finally {
@@ -209,13 +227,14 @@ export default function Home() {
       {screen === "quiz" && current && <div className="quiz-panel"><div className="quiz-topline"><div><p className="eyebrow">{current.module} · {current.label}</p><span>第 {questionIndex + 1} / {questions.length} 題 · {current.difficulty} · {current.gradeBand}</span></div><div className="progress-line"><i style={{ width: `${((questionIndex + 1) / questions.length) * 100}%` }} /></div></div><div className="module-progress">{MODULES.map((module) => <span key={module} className={current.module === module ? "module-progress-active" : ""}>{module}</span>)}</div><div className="question-card"><span className="question-number">{String(questionIndex + 1).padStart(2, "0")}</span><h2>{current.question}</h2><p>{current.hint}</p><div className="answer-list" role="radiogroup" aria-label={current.question}>{current.options.map((option, index) => <button key={`${current.id}-${option}`} className={answers[current.id] === index ? "answer-option answer-option-selected" : "answer-option"} onClick={() => selectAnswer(index)} role="radio" aria-checked={answers[current.id] === index}><span className="answer-letter">{String.fromCharCode(65 + index)}</span><span>{option}</span>{answers[current.id] === index && <Check size={18} />}</button>)}</div></div><div className="quiz-actions"><button className="button button-ghost" onClick={previous} disabled={questionIndex === 0}><ArrowLeft size={17} /> 上一題</button><button className="button button-primary" onClick={next} disabled={answers[current.id] === undefined}>{questionIndex === questions.length - 1 ? "生成免費報告" : "下一題"} <ArrowRight size={17} /></button></div></div>}
       {screen === "details" && <div className="quiz-panel detail-stage"><div className="detail-icon"><Sparkles size={27} /></div><p className="eyebrow">20 題已完成 · 免費完整報告</p><h2>加上稱呼，<br />讓報告更易保存。</h2><p>稱呼和所在地區均為選填，只會用於當前瀏覽器頁面的報告及 PDF，不會在此版本中被傳送或儲存。</p><div className="detail-form"><label>學生或家長稱呼 <small>（選填）</small><input value={studentName} onChange={(event) => setStudentName(event.target.value)} placeholder="例如：陳同學／陳太" /></label><label>所在區域 <small>（選填）</small><select value={district} onChange={(event) => setDistrict(event.target.value)}><option value="">不需要提供</option>{["港島", "九龍", "新界"].map((item) => <option key={item}>{item}</option>)}</select></label><div className="detail-privacy"><CheckCircle2 size={16} /> <span>此免費版本即時生成報告；不要求 WhatsApp，亦不會保存所填資料。</span></div><button className="button button-primary button-wide" onClick={() => { setScreen("report"); window.scrollTo({ top: 0, behavior: "smooth" }); }}>查看並下載完整報告 <ArrowRight size={17} /></button></div></div>}
     </section>}
+    {screen === "details" && gradeInfo && trackInfo && <ParentLeadForm grade={gradeInfo.label} track={trackInfo.shortLabel} score={score} weaknessSummary={focusAreas.map((item) => `${item.topic}：${item.correct}/${item.total}`).join("；")} onComplete={(parentName, leadDistrict) => { setStudentName(parentName); setDistrict(leadDistrict); setScreen("report"); window.scrollTo({ top: 0, behavior: "smooth" }); }} />}
 
     {screen === "report" && gradeInfo && trackInfo && <><section ref={reportRef} className="download-report" aria-labelledby="report-title"><div className="report-banner"><div className="report-brand"><img src={LOGO_IMAGE} alt="學習航圖" /><span><strong>學習航圖</strong><small>FREE ASSESSMENT REPORT</small></span></div><span>{reportDate}</span></div><div className="report-identity"><div><p className="eyebrow"><Sparkles size={16} /> 免費完整評估報告</p><h1 id="report-title">{studentName ? `${studentName} 的` : "你的"}{trackInfo.label}學習報告</h1><p>{gradeInfo.label} · {trackInfo.shortLabel} · 本次由 {poolSize} 題分級題庫中隨機抽取 20 題</p></div><div className="overall-score"><span>整體答對</span><strong>{score}<small>/20</small></strong><p>{Math.round(percentage * 100)}%</p></div></div><div className="report-overview"><article><span>本次表現區間</span><h2>{profile.title}</h2><p>{profile.note}</p></article><article><span>評估範圍</span><h2>4 個模組 · {abilityResults.length} 個能力面向</h2><p>基礎掌握、理解與應用、情境推理及整合表達均已納入本次隨機題組。</p></article></div><section className="report-section"><div className="section-title"><span>01</span><div><p className="eyebrow">四個模組</p><h2>答題結構概覽</h2></div></div><div className="module-score-grid">{moduleResults.map((module) => <article key={module.module}><span>{module.module}</span><strong>{module.correct}<small> / {module.total}</small></strong><p>{module.percentage >= 80 ? "表現穩定" : module.percentage >= 55 ? "建立中" : "可優先整理"}</p></article>)}</div></section><section className="report-section"><div className="section-title"><span>02</span><div><p className="eyebrow">能力分項</p><h2>本次最值得討論的面向</h2></div></div><div className="ability-report">{abilityResults.map((ability) => <div className="ability-row" key={ability.topic}><div><strong>{ability.topic}</strong><span>{ability.correct} / {ability.total} 題 · {ability.state}</span></div><div className="ability-track"><i style={{ width: `${ability.percentage}%` }} /></div></div>)}</div></section><section className="report-section plan-section"><div className="section-title"><span>03</span><div><p className="eyebrow">兩星期起步建議</p><h2>只選一至兩個重點，慢慢建立把握。</h2></div></div><div className="focus-list">{focusAreas.map((item, index) => <article key={item.topic}><span>0{index + 1}</span><div><h3>{item.topic}</h3><p>{item.percentage < 55 ? "先以有示範、可拆步驟的短練習整理核心概念；每次完成後說出做法和原因。" : "可把概念放進較接近閱讀、解題或表達情境的題目中，練習如何選擇方法。"}</p></div></article>)}</div><div className="report-disclaimer"><CheckCircle2 size={17} /><p><strong>報告限制：</strong>本結果只反映這次 20 題隨機題組的答題情況。中文及英文的寫作卷評估寫作基礎與組織能力，並不等同完整作文批改、校內成績或任何專業診斷。</p></div></section><footer className="pdf-footer"><span>學習航圖 · 分級免費評估</span><span>{district ? `${district} · ` : ""}僅供家庭學習規劃參考</span></footer></section><section className="download-actions" data-pdf-ignore="true"><div><p className="eyebrow">保存這份報告</p><h2>下載 PDF，方便和孩子、導師一起閱讀。</h2><p>PDF 由現時頁面在瀏覽器端產生，報告資料不會被傳送或保存。</p></div><div><button className="button button-primary" onClick={downloadPdf} disabled={pdfBusy}>{pdfBusy ? "正在製作 PDF…" : "下載完整 PDF 報告"} <Download size={18} /></button><button className="button button-ghost" onClick={restart}><RefreshCw size={17} /> 重新隨機抽題</button></div></section></>}
 
     {screen === "report" && gradeInfo && trackInfo && <section className="report-share-panel" aria-labelledby="share-title"><div><p className="eyebrow"><Share2 size={16} /> 分享結果摘要</p><h2 id="share-title">把學習方向，分享給值得一起討論的人。</h2><p>分享內容只包括年級、試卷和整體結果，不包括學生稱呼、所在地區、逐題答案或 PDF 內容。</p></div><div className="share-controls"><button className="share-button share-button-whatsapp" onClick={shareWhatsApp}><MessageCircle size={18} /> WhatsApp</button><button className="share-button" onClick={shareToDevice}><Share2 size={18} /> 分享到其他 App</button><button className="share-button" onClick={copyShareText}><Copy size={17} /> 複製文字</button>{shareStatus && <span className="share-status"><CheckCircle2 size={15} /> {shareStatus}</span>}</div></section>}
     {screen === "report" && gradeInfo && trackInfo && isPrimaryMath && <section className="focus-mode-panel" data-pdf-ignore="true"><div><p className="eyebrow"><Sparkles size={16} /> 小學數學弱項精簡模式</p><h2>只看現在需要加強的數學面向。</h2><p>系統只會在某能力面向答對少於 2 題（共 4 題）時列為需要加強，避免一次偶然失誤被過度解讀。</p></div><button className={focusMode ? "button button-ghost" : "button button-primary"} onClick={() => setFocusMode((currentMode) => !currentMode)}>{focusMode ? "返回完整報告" : "開啟精簡弱項報告"} <ArrowRight size={17} /></button></section>}
     {screen === "report" && gradeInfo && isPrimaryMath && focusMode && <section className="focus-report" aria-labelledby="focus-report-title"><div className="focus-report-header"><p className="eyebrow"><MapPin size={16} /> {gradeInfo.label} · 小學數學</p><h2 id="focus-report-title">{weakAreas.length ? "集中處理這些弱項。" : "本次未見明顯弱項。"}</h2><p>{weakAreas.length ? "以下只保留需要加強的能力面向、短期練習重點及可進一步了解的支援類型。" : "孩子在本次各能力面向至少答對 2 題；可返回完整報告查看延伸練習方向。"}</p></div>{weakAreas.length ? <div className="focus-recommendation-grid">{weakAreas.map((area, index) => { const support = PRIMARY_MATH_SUPPORT[area.topic] ?? PRIMARY_MATH_SUPPORT["多步驟解題"]; return <article className="focus-recommendation-card" key={area.topic}><span>0{index + 1}</span><p className="demo-chip">合作支援示範推薦</p><h3>{area.topic}</h3><div className="focus-score"><strong>{area.correct} / {area.total}</strong><span>本次答對</span></div><p className="support-title">{support.title}</p><dl><div><dt>適合支援</dt><dd>{support.focus}</dd></div><div><dt>建議形式</dt><dd>{support.format}</dd></div><div><dt>起步方向</dt><dd>{support.next}</dd></div></dl><button className="partner-button" disabled><MapPin size={16} /> 待加入真實合作資料</button></article>; })}</div> : <div className="focus-clear"><CheckCircle2 size={28} /><div><strong>精簡模式暫時不需列出支援建議</strong><p>這不代表孩子不需要練習；只代表本次 20 題中未出現符合弱項門檻的能力面向。</p></div></div>}<p className="focus-transparency"><strong>透明度說明：</strong>以上為按弱項和年級排列的支援類型示範，並非真實補習社名單或報讀推薦。加入真實合作資料後，才會顯示實際中心、地區、名額和聯絡方式。</p></section>}
-    {screen === "report" && gradeInfo && trackInfo && gradeInfo.stage === "小學" && ["math", "chinese-reading", "chinese-writing", "english-reading", "english-writing"].includes(trackId) && <RegionalSupport gradeLabel={gradeInfo.label} trackLabel={trackInfo.shortLabel} abilities={abilityResults} />}
+    {screen === "report" && gradeInfo && trackInfo && ["math", "chinese-reading", "chinese-writing", "english-reading", "english-writing", "science"].includes(trackId) && <RegionalSupport gradeLabel={gradeInfo.label} trackLabel={trackInfo.shortLabel} abilities={abilityResults} homeDistrict={district} />}
     <footer className="site-footer"><span>© 學習航圖</span><span>小一至小六 · 中一至中三 · 分級隨機評估</span></footer>
   </main>;
 }

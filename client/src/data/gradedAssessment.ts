@@ -1,3 +1,5 @@
+import { getSecondaryExamSeeds } from "./secondaryExamBanks";
+
 /**
  * Learning Compass / 學習航圖
  * Design reminder: a calm, transparent diagnostic flow. Grade labels guide
@@ -21,7 +23,7 @@ export type AssessmentQuestion = {
   difficulty: "基礎" | "核心" | "進階";
 };
 
-type QuestionSeed = Omit<AssessmentQuestion, "id" | "grade" | "gradeBand" | "module" | "difficulty">;
+export type QuestionSeed = Omit<AssessmentQuestion, "id" | "grade" | "gradeBand" | "module" | "difficulty">;
 
 export const GRADES: { id: GradeId; label: string; stage: "小學" | "初中" }[] = [
   { id: "P1", label: "小一", stage: "小學" }, { id: "P2", label: "小二", stage: "小學" }, { id: "P3", label: "小三", stage: "小學" },
@@ -311,7 +313,8 @@ function shuffle<T>(items: T[]) {
 
 export function buildQuestionPool(track: TrackId, grade: GradeId): AssessmentQuestion[] {
   const languageSeeds = primaryLanguageSeeds(track, grade);
-  const seeds = track === "math" && grade.startsWith("P") ? PRIMARY_MATH_GRADE_BANKS[grade as keyof typeof PRIMARY_MATH_GRADE_BANKS] : languageSeeds ?? BANKS[track];
+  const secondarySeeds = grade.startsWith("S") ? getSecondaryExamSeeds(track as import("./secondaryExamBanks").SecondaryExamTrack, grade) : null;
+  const seeds = track === "math" && grade.startsWith("P") ? PRIMARY_MATH_GRADE_BANKS[grade as keyof typeof PRIMARY_MATH_GRADE_BANKS] : languageSeeds ?? secondarySeeds ?? BANKS[track];
   return seeds.flatMap((seed, seedIndex) => CONTEXTS.map((context, variant) => ({
     ...seed,
     id: `${track}-${grade}-${seedIndex}-${variant}`,

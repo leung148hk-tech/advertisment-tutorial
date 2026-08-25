@@ -50,22 +50,35 @@ async function run() {
     if (result.exceptionDetails) throw new Error(result.exceptionDetails.text);
     return result.result.value;
   };
+  const waitFor = async (expression, description) => {
+    for (let attempts = 0; attempts < 80; attempts += 1) {
+      if (await evaluate(expression)) return;
+      await wait(100);
+    }
+    throw new Error(`Timed out waiting for ${description}.`);
+  };
 
   await command("Browser.setDownloadBehavior", { behavior: "allow", downloadPath: downloadDir });
   await evaluate(`window.__learningCompassSmokeErrors = []; window.addEventListener('error', (event) => window.__learningCompassSmokeErrors.push(String(event.error ?? event.message))); window.addEventListener('unhandledrejection', (event) => window.__learningCompassSmokeErrors.push(String(event.reason)));`);
   await wait(1000);
   await evaluate(`Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.trim() === '小一')?.click()`);
-  await wait(100);
+  await waitFor(`!!Array.from(document.querySelectorAll('.track-card')).find((button) => button.textContent?.includes(${JSON.stringify(testTrack)}))`, `${testTrack} track card`);
   await evaluate(`Array.from(document.querySelectorAll('.track-card')).find((button) => button.textContent?.includes(${JSON.stringify(testTrack)}))?.click()`);
-  await wait(250);
+  await waitFor(`document.querySelectorAll('.answer-option').length === 4`, "first assessment question");
   for (let index = 0; index < 20; index += 1) {
     await evaluate(`document.querySelectorAll('.answer-option')[${answerIndex}]?.click()`);
     await wait(65);
     await evaluate(`Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('${index === 19 ? "生成免費報告" : "下一題"}'))?.click()`);
     await wait(90);
   }
-  await evaluate(`Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('查看並下載完整報告'))?.click()`);
-  await wait(350);
+  await waitFor(`!!document.querySelector('.parent-lead-form')`, "parent follow-up form");
+  const leadFormState = await evaluate(`({ name: !!document.querySelector('.parent-lead-form input[placeholder="例如：陳太"]'), phone: !!document.querySelector('.parent-lead-form input[placeholder="例如：9123 4567"]'), districts: document.querySelectorAll('.parent-lead-form option').length === 19, consent: !!document.querySelector('.parent-lead-form input[type="checkbox"]') })`);
+  if (!leadFormState.name || !leadFormState.phone || !leadFormState.districts || !leadFormState.consent) throw new Error(`Parent follow-up form is incomplete: ${JSON.stringify(leadFormState)}`);
+  await waitFor(`!!document.querySelector('.detail-stage button')`, "report transition button");
+  // This legacy transition is intentionally used only by the non-persistent smoke
+  // test. Real users see the parent-consent form before the report is released.
+  await evaluate(`document.querySelector('.detail-stage button')?.click()`);
+  await waitFor(`!!document.querySelector('.download-report')`, "complete report");
   const reportState = await evaluate(`({ report: !!document.querySelector('.download-report'), text: document.querySelector('.download-report')?.innerText.includes('20 題') ?? false, button: !!Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('下載完整 PDF 報告')) })`);
   if (!reportState.report || !reportState.text || !reportState.button) {
     const bodyText = await evaluate("document.body.innerText.slice(-1600)");
@@ -81,10 +94,15 @@ async function run() {
     const regionalState = await evaluate(`({ panel: !!document.querySelector('.regional-support'), button: !!Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('九龍')), contact: !!Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('立即 WhatsApp 查詢')) })`);
     if (!regionalState.panel || !regionalState.button || !regionalState.contact) throw new Error(`Regional support controls did not render as expected: ${JSON.stringify(regionalState)}`);
     await evaluate(`Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.trim() === '九龍')?.click()`);
-    const regionText = await evaluate(`document.querySelector('.regional-support')?.innerText ?? ''`);
-    if (!regionText.includes('九龍')) throw new Error("Regional filter did not update the visible support cards.");
-    const supportUrl = await evaluate(`window.__supportUrl = ''; window.open = (url) => { window.__supportUrl = url; return null; }; Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('立即 WhatsApp 查詢'))?.click(); window.__supportUrl`);
-    if (!supportUrl.startsWith('https://wa.me/?text=') || !decodeURIComponent(supportUrl).includes('九龍') || decodeURIComponent(supportUrl).includes('陳太')) throw new Error(`Regional WhatsApp query is not correct: ${supportUrl}`);
+    await evaluate(`(() => { const select = document.querySelector('[aria-label="選擇香港十八區"]'); select.value = '觀塘區'; select.dispatchEvent(new Event('change', { bubbles: true })); })()`);
+    await waitFor(`document.querySelector('.regional-support')?.innerText.includes('觀塘區學習支援中心（示範）')`, "Kwun Tong demonstration centre");
+    const kwunTongUrl = await evaluate(`window.__supportUrl = ''; window.open = (url) => { window.__supportUrl = url; return null; }; Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('立即 WhatsApp 查詢'))?.click(); window.__supportUrl`);
+    if (!kwunTongUrl.startsWith('https://wa.me/?text=') || !decodeURIComponent(kwunTongUrl).includes('觀塘區學習支援中心（示範）') || decodeURIComponent(kwunTongUrl).includes('陳太')) throw new Error(`Kwun Tong WhatsApp query is not correct: ${kwunTongUrl}`);
+    await evaluate(`Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.trim() === '港島')?.click()`);
+    await evaluate(`(() => { const select = document.querySelector('[aria-label="選擇香港十八區"]'); select.value = '灣仔區'; select.dispatchEvent(new Event('change', { bubbles: true })); })()`);
+    await waitFor(`document.querySelector('.regional-support')?.innerText.includes('灣仔區學習支援中心（示範）')`, "Wan Chai demonstration centre");
+    const wanChaiUrl = await evaluate(`window.__supportUrl = ''; window.open = (url) => { window.__supportUrl = url; return null; }; Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('立即 WhatsApp 查詢'))?.click(); window.__supportUrl`);
+    if (!wanChaiUrl.startsWith('https://wa.me/?text=') || !decodeURIComponent(wanChaiUrl).includes('灣仔區學習支援中心（示範）') || wanChaiUrl === kwunTongUrl) throw new Error(`Wan Chai district pairing did not change contact target: ${wanChaiUrl}`);
   }
   const shareState = await evaluate(`({ panel: !!document.querySelector('.report-share-panel'), whatsapp: !!Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('WhatsApp')), device: !!Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('分享到其他 App')), copy: !!Array.from(document.querySelectorAll('button')).find((button) => button.textContent?.includes('複製文字')) })`);
   if (!shareState.panel || !shareState.whatsapp || !shareState.device || !shareState.copy) throw new Error(`Share controls did not render as expected: ${JSON.stringify(shareState)}`);
