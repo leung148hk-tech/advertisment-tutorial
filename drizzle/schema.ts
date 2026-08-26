@@ -56,14 +56,20 @@ export const tutoringCentres = mysqlTable("tutoring_centres", {
   id: int("id").autoincrement().primaryKey(),
   name: varchar("name", { length: 160 }).notNull(),
   description: text("description").notNull(),
+  /** Private partner contact. Never returned through public centre queries. */
   whatsapp: varchar("whatsapp", { length: 32 }).notNull(),
   website: varchar("website", { length: 320 }),
+  address: varchar("address", { length: 320 }),
   district: varchar("district", { length: 32 }).notNull(),
   region: varchar("region", { length: 16 }).notNull(),
   subjects: text("subjects").notNull(),
   supportedGrades: text("supportedGrades").notNull(),
   isActive: boolean("isActive").default(true).notNull(),
   isFeatured: boolean("isFeatured").default(false).notNull(),
+  /** Explicit display control; public cards never reveal direct centre contacts. */
+  isPubliclyListed: boolean("isPubliclyListed").default(false).notNull(),
+  commissionArrangement: mysqlEnum("commissionArrangement", ["pending", "fixed", "percentage", "mixed"]).default("pending").notNull(),
+  privatePartnerNote: text("privatePartnerNote"),
   createdAt: timestamp("createdAt").defaultNow().notNull(),
   updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
 }, (table) => [
@@ -73,3 +79,35 @@ export const tutoringCentres = mysqlTable("tutoring_centres", {
 
 export type TutoringCentre = typeof tutoringCentres.$inferSelect;
 export type InsertTutoringCentre = typeof tutoringCentres.$inferInsert;
+
+/**
+ * A private, admin-managed referral record. The partner is contacted only after
+ * the parent has explicitly confirmed the selected centre.
+ */
+export const referrals = mysqlTable("referrals", {
+  id: int("id").autoincrement().primaryKey(),
+  referenceCode: varchar("referenceCode", { length: 32 }).notNull().unique(),
+  leadId: int("leadId").notNull(),
+  centreId: int("centreId").notNull(),
+  status: mysqlEnum("status", ["draft", "awaiting_parent_confirmation", "parent_confirmed", "shared_with_centre", "enrolment_pending", "enrolled", "cancelled", "expired"]).default("draft").notNull(),
+  /** Timestamp of the second, centre-specific consent obtained by the administrator. */
+  parentConfirmedAt: timestamp("parentConfirmedAt"),
+  sharedWithCentreAt: timestamp("sharedWithCentreAt"),
+  enrolledAt: timestamp("enrolledAt"),
+  commissionStatus: mysqlEnum("commissionStatus", ["not_discussed", "pending", "confirmed", "paid", "waived"]).default("not_discussed").notNull(),
+  /** Actual financial terms remain private and can remain unset until agreed. */
+  commissionAmountCents: int("commissionAmountCents"),
+  commissionCurrency: varchar("commissionCurrency", { length: 3 }).default("HKD").notNull(),
+  commissionPaidAt: timestamp("commissionPaidAt"),
+  commissionReference: varchar("commissionReference", { length: 120 }),
+  internalNote: text("internalNote"),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+}, (table) => [
+  index("referrals_lead_idx").on(table.leadId),
+  index("referrals_centre_status_idx").on(table.centreId, table.status),
+  index("referrals_commission_idx").on(table.commissionStatus, table.createdAt),
+]);
+
+export type Referral = typeof referrals.$inferSelect;
+export type InsertReferral = typeof referrals.$inferInsert;

@@ -52,7 +52,7 @@ async function run() {
     const datedExport = await admin.leads.adminExport({ submittedFrom: "2026-08-25", submittedTo: "2026-08-25", followUpStatus: "closed" });
     if (!dated.some((lead) => lead.id === listed.id) || dated.some((lead) => lead.id === other.id) || !datedExport.some((lead) => lead.id === listed.id) || datedExport.some((lead) => lead.id === other.id)) throw new Error("Hong Kong date range did not consistently constrain list and export results.");
 
-    const centreId = (await createCentre({ name: centreMarker, description: "受控補習社啟用狀態測試記錄，完成後會立即清除。", whatsapp: "91234567", website: null, district: "觀塘區", region: "九龍", subjects: "[\"英文\"]", supportedGrades: "[\"小四\"]", isActive: true, isFeatured: true })).insertId;
+    const centreId = (await createCentre({ name: centreMarker, description: "受控補習社啟用狀態測試記錄，完成後會立即清除。", whatsapp: "91234567", website: null, address: null, district: "觀塘區", region: "九龍", subjects: "[\"英文\"]", supportedGrades: "[\"小四\"]", isActive: true, isFeatured: true, isPubliclyListed: true, commissionArrangement: "pending", privatePartnerNote: null })).insertId;
     await admin.centres.setActive({ id: Number(centreId), isActive: false });
     const disabled = (await admin.centres.adminList()).find((centre) => centre.id === Number(centreId));
     const publicAfterDisable = await publicCaller.centres.featured();

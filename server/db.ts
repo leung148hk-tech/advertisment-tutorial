@@ -1,6 +1,6 @@
 import { and, desc, eq, gte, inArray, lte } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertParentLead, InsertTutoringCentre, InsertUser, parentLeads, tutoringCentres, users } from "../drizzle/schema";
+import { InsertParentLead, InsertReferral, InsertTutoringCentre, InsertUser, parentLeads, referrals, tutoringCentres, users } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -131,7 +131,19 @@ export async function updateParentLeadStatuses(ids: number[], followUpStatus: "n
 export async function listFeaturedCentres() {
   const db = await getDb();
   if (!db) return [];
-  return db.select().from(tutoringCentres).where(and(eq(tutoringCentres.isActive, true), eq(tutoringCentres.isFeatured, true))).orderBy(desc(tutoringCentres.updatedAt));
+  return db.select({
+    id: tutoringCentres.id,
+    name: tutoringCentres.name,
+    description: tutoringCentres.description,
+    district: tutoringCentres.district,
+    region: tutoringCentres.region,
+    subjects: tutoringCentres.subjects,
+    supportedGrades: tutoringCentres.supportedGrades,
+  }).from(tutoringCentres).where(and(
+    eq(tutoringCentres.isActive, true),
+    eq(tutoringCentres.isFeatured, true),
+    eq(tutoringCentres.isPubliclyListed, true),
+  )).orderBy(desc(tutoringCentres.updatedAt));
 }
 
 export async function listCentres() {
@@ -160,4 +172,73 @@ export async function deleteCentre(id: number) {
   const db = await getDb();
   if (!db) throw new Error("Database is unavailable");
   await db.delete(tutoringCentres).where(eq(tutoringCentres.id, id));
+}
+
+export async function getParentLeadById(id: number) {
+  const db = await getDb();
+  if (!db) throw new Error("Database is unavailable");
+  return (await db.select().from(parentLeads).where(eq(parentLeads.id, id)).limit(1))[0];
+}
+
+export async function getCentreById(id: number) {
+  const db = await getDb();
+  if (!db) throw new Error("Database is unavailable");
+  return (await db.select().from(tutoringCentres).where(eq(tutoringCentres.id, id)).limit(1))[0];
+}
+
+export type ReferralFilters = { centreId?: number; status?: "draft" | "awaiting_parent_confirmation" | "parent_confirmed" | "shared_with_centre" | "enrolment_pending" | "enrolled" | "cancelled" | "expired"; commissionStatus?: "not_discussed" | "pending" | "confirmed" | "paid" | "waived" };
+
+/** Includes contact data and is therefore only called behind adminProcedure. */
+export async function listReferrals(filters: ReferralFilters = {}) {
+  const db = await getDb();
+  if (!db) return [];
+  const conditions = [
+    filters.centreId ? eq(referrals.centreId, filters.centreId) : undefined,
+    filters.status ? eq(referrals.status, filters.status) : undefined,
+    filters.commissionStatus ? eq(referrals.commissionStatus, filters.commissionStatus) : undefined,
+  ].filter(Boolean);
+  const query = db.select({
+    id: referrals.id,
+    referenceCode: referrals.referenceCode,
+    leadId: referrals.leadId,
+    centreId: referrals.centreId,
+    status: referrals.status,
+    parentConfirmedAt: referrals.parentConfirmedAt,
+    sharedWithCentreAt: referrals.sharedWithCentreAt,
+    enrolledAt: referrals.enrolledAt,
+    commissionStatus: referrals.commissionStatus,
+    commissionAmountCents: referrals.commissionAmountCents,
+    commissionCurrency: referrals.commissionCurrency,
+    commissionPaidAt: referrals.commissionPaidAt,
+    commissionReference: referrals.commissionReference,
+    internalNote: referrals.internalNote,
+    createdAt: referrals.createdAt,
+    updatedAt: referrals.updatedAt,
+    parentName: parentLeads.parentName,
+    phone: parentLeads.phone,
+    district: parentLeads.district,
+    grade: parentLeads.grade,
+    track: parentLeads.track,
+    centreName: tutoringCentres.name,
+    centreDistrict: tutoringCentres.district,
+  }).from(referrals).innerJoin(parentLeads, eq(referrals.leadId, parentLeads.id)).innerJoin(tutoringCentres, eq(referrals.centreId, tutoringCentres.id));
+  return conditions.length ? query.where(and(...conditions)).orderBy(desc(referrals.createdAt)) : query.orderBy(desc(referrals.createdAt));
+}
+
+export async function createReferral(referral: InsertReferral) {
+  const db = await getDb();
+  if (!db) throw new Error("Database is unavailable");
+  return (await db.insert(referrals).values(referral))[0];
+}
+
+export async function getReferralById(id: number) {
+  const db = await getDb();
+  if (!db) throw new Error("Database is unavailable");
+  return (await db.select().from(referrals).where(eq(referrals.id, id)).limit(1))[0];
+}
+
+export async function updateReferral(id: number, referral: Partial<InsertReferral>) {
+  const db = await getDb();
+  if (!db) throw new Error("Database is unavailable");
+  await db.update(referrals).set(referral).where(eq(referrals.id, id));
 }

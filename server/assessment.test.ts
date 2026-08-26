@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { centreInput, leadBulkStatusInput, leadFilterInput, leadInput, leadManagementInput } from "./routers";
+import { appRouter, centreInput, leadBulkStatusInput, leadFilterInput, leadInput, leadManagementInput, referralCreateInput, referralFilterInput, referralUpdateInput } from "./routers";
 
 const validLead = {
   parentName: "陳太",
@@ -13,6 +13,11 @@ const validLead = {
 };
 
 describe("parent lead contact validation", () => {
+  it("exposes the configured central WhatsApp contact through the lightweight public contact endpoint", async () => {
+    const caller = appRouter.createCaller({ user: null, req: { protocol: "https", headers: {} }, res: {} } as never);
+    await expect(caller.assessment.centralContact()).resolves.toEqual({ whatsapp: "85268035342" });
+  });
+
   it("accepts a consented parent lead with a valid Hong Kong district and phone", () => {
     expect(leadInput.safeParse(validLead).success).toBe(true);
   });
@@ -36,11 +41,12 @@ describe("parent lead contact validation", () => {
 });
 
 describe("tutoring centre validation", () => {
-  const validCentre = { name: "示例教育中心", description: "這是一段超過十個字的中心服務介紹。", whatsapp: "9123 4567", website: "", district: "觀塘區", subjects: ["英文"], supportedGrades: ["小四"], isActive: true, isFeatured: false };
+  const validCentre = { name: "示例教育中心", description: "這是一段超過十個字的中心服務介紹。", whatsapp: "9123 4567", website: "", address: "觀塘示例中心 12 樓", district: "觀塘區", subjects: ["英文"], supportedGrades: ["小四"], isActive: true, isFeatured: false, isPubliclyListed: false, commissionArrangement: "pending" as const, privatePartnerNote: "合作條款待商議" };
 
-  it("accepts a complete centre input and normalises its WhatsApp number", () => {
+  it("accepts a complete centre input and normalises its private WhatsApp number", () => {
     const parsed = centreInput.parse(validCentre);
     expect(parsed.whatsapp).toBe("91234567");
+    expect(parsed.isPubliclyListed).toBe(false);
   });
 
   it("rejects an empty subject list, invalid WhatsApp number, or invalid website", () => {
@@ -68,5 +74,23 @@ describe("parent lead management validation", () => {
     expect(leadFilterInput.safeParse({ submittedFrom: "2026-08-31", submittedTo: "2026-08-01" }).success).toBe(false);
     expect(leadBulkStatusInput.safeParse({ ids: [], followUpStatus: "closed" }).success).toBe(false);
     expect(leadBulkStatusInput.safeParse({ ids: Array.from({ length: 101 }, (_, index) => index + 1), followUpStatus: "closed" }).success).toBe(false);
+  });
+});
+
+describe("central referral validation", () => {
+  const validUpdate = { id: 7, status: "parent_confirmed" as const, internalNote: "家長已在官方 WhatsApp 確認。", commissionStatus: "not_discussed" as const, commissionAmountCents: null, commissionReference: null };
+
+  it("accepts a private referral draft, filters, and a parent-confirmed update without financial terms", () => {
+    expect(referralCreateInput.safeParse({ leadId: 2, centreId: 3, internalNote: "等待家長確認。" }).success).toBe(true);
+    expect(referralFilterInput.safeParse({ status: "enrolment_pending", commissionStatus: "pending", centreId: 3 }).success).toBe(true);
+    expect(referralUpdateInput.safeParse(validUpdate).success).toBe(true);
+  });
+
+  it("rejects invalid referral identifiers, statuses, and unsafe commission data", () => {
+    expect(referralCreateInput.safeParse({ leadId: 0, centreId: 3 }).success).toBe(false);
+    expect(referralFilterInput.safeParse({ status: "shared" }).success).toBe(false);
+    expect(referralUpdateInput.safeParse({ ...validUpdate, commissionAmountCents: -1 }).success).toBe(false);
+    expect(referralUpdateInput.safeParse({ ...validUpdate, commissionReference: "x".repeat(121) }).success).toBe(false);
+    expect(referralUpdateInput.safeParse({ ...validUpdate, internalNote: "x".repeat(2001) }).success).toBe(false);
   });
 });

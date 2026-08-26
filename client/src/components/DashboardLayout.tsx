@@ -21,7 +21,7 @@ import {
 } from "@/components/ui/sidebar";
 import { startLogin } from "@/const";
 import { useIsMobile } from "@/hooks/useMobile";
-import { Building2, ContactRound, LogOut, PanelLeft } from "lucide-react";
+import { Building2, ContactRound, Handshake, LogOut, PanelLeft } from "lucide-react";
 import { CSSProperties, useEffect, useRef, useState } from "react";
 import { useLocation } from "wouter";
 import { DashboardLayoutSkeleton } from './DashboardLayoutSkeleton';
@@ -30,6 +30,7 @@ import { Button } from "./ui/button";
 const menuItems = [
   { icon: Building2, label: "補習社管理", path: "/admin/centres" },
   { icon: ContactRound, label: "家長跟進資料", path: "/admin/leads" },
+  { icon: Handshake, label: "中央轉介與對帳", path: "/admin/referrals" },
 ];
 
 const SIDEBAR_WIDTH_KEY = "sidebar-width";
