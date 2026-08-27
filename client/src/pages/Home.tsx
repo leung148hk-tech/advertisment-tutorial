@@ -41,9 +41,10 @@ import { PRIMARY_MATH_FRAMEWORK, type PrimaryMathGrade } from "@/data/primaryMat
 import RegionalSupport from "@/components/RegionalSupport";
 import ParentLeadForm from "@/components/ParentLeadForm";
 import FeaturedCentres from "@/components/FeaturedCentres";
+import { isGitHubPages, officialLogoUrl, officialSiteUrl } from "@/lib/siteMode";
 
 type Screen = "landing" | "quiz" | "details" | "report";
-const LOGO_IMAGE = "/manus-storage/learning-compass-mark_3de5f85b.png";
+const LOGO_IMAGE = isGitHubPages ? officialLogoUrl : "/manus-storage/learning-compass-mark_3de5f85b.png";
 const PRIMARY_MATH_SUPPORT: Record<string, { title: string; focus: string; format: string; next: string }> = {
   "數與運算": { title: "數感與運算支援（示範推薦）", focus: "加減乘除、位值、小數及估算", format: "小班分步練習", next: "以直式、心算策略和生活情境逐步鞏固運算過程。" },
   "比較與規律": { title: "數感與規律支援（示範推薦）", focus: "大小比較、排序及數字規律", format: "遊戲化小組", next: "由具體物件和數線開始，建立比較和找規律的語言。" },
@@ -155,7 +156,7 @@ export default function Home() {
   };
 
   const selectAnswer = (answer: number) => setAnswers((currentAnswers) => ({ ...currentAnswers, [current.id]: answer }));
-  const next = () => { if (questionIndex === questions.length - 1) setScreen("details"); else setQuestionIndex((index) => index + 1); window.scrollTo({ top: 0, behavior: "smooth" }); };
+  const next = () => { if (questionIndex === questions.length - 1) setScreen(isGitHubPages ? "report" : "details"); else setQuestionIndex((index) => index + 1); window.scrollTo({ top: 0, behavior: "smooth" }); };
   const previous = () => { if (questionIndex > 0) setQuestionIndex((index) => index - 1); };
   const restart = () => { setScreen("landing"); setTrackId(""); setQuestions([]); setAnswers({}); setFocusMode(false); window.scrollTo({ top: 0, behavior: "smooth" }); };
 
@@ -261,7 +262,8 @@ export default function Home() {
     {screen === "report" && gradeInfo && trackInfo && <section className="report-share-panel" aria-labelledby="share-title"><div><p className="eyebrow"><Share2 size={16} /> 分享結果摘要</p><h2 id="share-title">把學習方向，分享給值得一起討論的人。</h2><p>分享內容只包括年級、試卷和整體結果，不包括學生稱呼、所在地區、逐題答案或 PDF 內容。</p></div><div className="share-controls"><button className="share-button share-button-whatsapp" onClick={shareWhatsApp}><MessageCircle size={18} /> WhatsApp</button><button className="share-button" onClick={shareToDevice}><Share2 size={18} /> 分享到其他 App</button><button className="share-button" onClick={copyShareText}><Copy size={17} /> 複製文字</button>{shareStatus && <span className="share-status"><CheckCircle2 size={15} /> {shareStatus}</span>}</div></section>}
     {screen === "report" && gradeInfo && trackInfo && isPrimaryMath && <section className="focus-mode-panel" data-pdf-ignore="true"><div><p className="eyebrow"><Sparkles size={16} /> 小學數學弱項精簡模式</p><h2>只看現在需要加強的數學面向。</h2><p>系統只會在某能力面向答對少於 2 題（共 4 題）時列為需要加強，避免一次偶然失誤被過度解讀。</p></div><button className={focusMode ? "button button-ghost" : "button button-primary"} onClick={() => setFocusMode((currentMode) => !currentMode)}>{focusMode ? "返回完整報告" : "開啟精簡弱項報告"} <ArrowRight size={17} /></button></section>}
     {screen === "report" && gradeInfo && isPrimaryMath && focusMode && <section className="focus-report" aria-labelledby="focus-report-title"><div className="focus-report-header"><p className="eyebrow"><MapPin size={16} /> {gradeInfo.label} · 小學數學</p><h2 id="focus-report-title">{weakAreas.length ? "集中處理這些弱項。" : "本次未見明顯弱項。"}</h2><p>{weakAreas.length ? "以下只保留需要加強的能力面向、短期練習重點及可進一步了解的支援類型。" : "孩子在本次各能力面向至少答對 2 題；可返回完整報告查看延伸練習方向。"}</p></div>{weakAreas.length ? <div className="focus-recommendation-grid">{weakAreas.map((area, index) => { const support = primaryMathSupportForTopic(area.topic); return <article className="focus-recommendation-card" key={area.topic}><span>0{index + 1}</span><p className="demo-chip">合作支援示範推薦</p><h3>{area.topic}</h3><div className="focus-score"><strong>{area.correct} / {area.total}</strong><span>本次答對</span></div><p className="support-title">{support.title}</p><dl><div><dt>適合支援</dt><dd>{support.focus}</dd></div><div><dt>建議形式</dt><dd>{support.format}</dd></div><div><dt>起步方向</dt><dd>{support.next}</dd></div></dl><button className="partner-button" disabled><MapPin size={16} /> 待加入真實合作資料</button></article>; })}</div> : <div className="focus-clear"><CheckCircle2 size={28} /><div><strong>精簡模式暫時不需列出支援建議</strong><p>這不代表孩子不需要練習；只代表本次 20 題中未出現符合弱項門檻的能力面向。</p></div></div>}<p className="focus-transparency"><strong>透明度說明：</strong>以上為按弱項和年級排列的支援類型示範，並非真實補習社名單或報讀推薦。加入真實合作資料後，才會顯示實際中心、地區、名額和聯絡方式。</p></section>}
+    {screen === "report" && gradeInfo && trackInfo && isGitHubPages && <section className="assessment-promise" data-pdf-ignore="true"><BookOpen size={24} /><div><strong>需要個人跟進或正式轉介？</strong><p>GitHub Pages 不會收集或儲存家長個人資料。請前往學習航圖正式網站，在你同意後安全提交資料；只有你確認選定合作中心後，才會按安排分享最少必要資料。</p></div><a className="button button-primary" href={officialSiteUrl("/")}>前往正式網站安排跟進 <ArrowRight size={17} /></a></section>}
     {screen === "report" && gradeInfo && trackInfo && ["math", "chinese-reading", "english"].includes(trackId) && <RegionalSupport gradeLabel={gradeInfo.label} trackLabel={trackInfo.shortLabel} abilities={abilityResults} homeDistrict={district} />}
-    <footer className="site-footer"><span>© 學習航圖</span><span>小一至小六 · 分級隨機評估</span><a href="/admin/centres">管理合作資料</a></footer>
+    <footer className="site-footer"><span>© 學習航圖</span><span>小一至小六 · 分級隨機評估</span><a href={isGitHubPages ? officialSiteUrl("/admin/centres") : "/admin/centres"}>{isGitHubPages ? "正式網站管理資料" : "管理合作資料"}</a></footer>
   </main>;
 }
