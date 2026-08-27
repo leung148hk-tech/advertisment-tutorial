@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T13:20:32.377044+00:00",
+  "grade": "S1",
+  "track": "math",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 S1 mathematics items (Number and algebra). Both items are clear, have one unambiguous correct answer, and are grade-appropriate. Recommend PASS for both.\n\nPart 2/5: Both items are appropriate for S1 (junior secondary) and test basic ratio and percentage skills. Each has a single unambiguous correct answer and suitable distractors; no revision needed.\n\nPart 3/5: Both items are straightforward S1-level geometry/measure questions. Each has a single unambiguous correct answer and is grade-appropriate. Recommend keeping both items as given.\n\nPart 4/5: Reviewed 2 S1 math items (Statistics and data). Both items PASS: answers are correct, single best choices, and grade-appropriate with clear wording and acceptable distractors.\n\nPart 5/5: Two S1 mathematics items reviewed (linear expression evaluation and simple linear equation). Both items are correct, have a single best answer, and are appropriate in difficulty and language for S1.",
+    "reviews": [
+      {
+        "id": "math-S1-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Combine like terms: 3a + 5a = 8a; constant −2 remains. The option '8a − 2' is correct and unambiguous for S1.",
+        "recommendedQuestion": "Simplify 3a + 5a − 2.",
+        "recommendedOptions": [
+          "8a − 2",
+          "8a",
+          "15a − 2",
+          "6a − 2"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "math-S1-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Solve 4x − 3 = 17: add 3 to both sides to get 4x = 20, then divide by 4 to get x = 5. The option '5' is correct and unique.",
+        "recommendedQuestion": "Solve 4x − 3 = 17.",
+        "recommendedOptions": [
+          "4",
+          "5",
+          "7",
+          "20"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-S1-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "18 and 24 have highest common factor 6, so the ratio simplifies to 3:4. Options include common incorrect reductions (6:8, 9:12) and a reversed pair (2:3), making distractors plausible and non-misleading.",
+        "recommendedQuestion": "Simplify the ratio 18:24.",
+        "recommendedOptions": [
+          "3:4",
+          "6:8",
+          "9:12",
+          "2:3"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "math-S1-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "15% of 240 = 0.15 × 240 = 36. Options are plausible arithmetic results; the item is clear and unambiguous for the stated level.",
+        "recommendedQuestion": "Find 15% of 240.",
+        "recommendedOptions": [
+          "24",
+          "30",
+          "36",
+          "45"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-S1-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Angles on a straight line sum to 180°. x = 180° − 112° = 68°. The provided options include the correct answer (68°) and plausible distractors. The language and mathematics are suitable for S1.",
+        "recommendedQuestion": "Two angles on a straight line are x and 112°. Find x.",
+        "recommendedOptions": [
+          "58°",
+          "68°",
+          "78°",
+          "292°"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-S1-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Area of a triangle = 1/2 × base × height = 1/2 × 12 × 7 = 42 cm². The provided options include the correct value (42 cm²) and suitable distractors. The question and hint are appropriate for S1.",
+        "recommendedQuestion": "Find the area of a triangle with base 12 cm and height 7 cm.",
+        "recommendedOptions": [
+          "19 cm²",
+          "42 cm²",
+          "84 cm²",
+          "96 cm²"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-S1-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Mean = (5+7+8+12)/4 = 32/4 = 8. Options include plausible distractors (sum = 32, incorrect average = 8.5). The stem and hint are clear and suitable for S1.",
+        "recommendedQuestion": "Find the mean of 5, 7, 8 and 12.",
+        "recommendedOptions": [
+          "7",
+          "8",
+          "8.5",
+          "32"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-S1-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Difference = 18 - 11 = 7. The stem is simple and explicit (even though it mentions a bar chart, the numbers are given), and distractors are reasonable.",
+        "recommendedQuestion": "A bar chart shows 18 students chose A and 11 chose B. How many more chose A?",
+        "recommendedOptions": [
+          "7",
+          "11",
+          "18",
+          "29"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "math-S1-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Computation is straightforward: cost = 24 + 6×5 = 54. The provided correct option ($54) is correct. Distractors are plausible (e.g. $30 omits the fixed charge; $120 and $150 are simple miscalculations) and there is only one defensible answer. Language and mathematics are suitable for S1.",
+        "recommendedQuestion": "A taxi charges $24 plus $6 per kilometre. What is the cost of a 5 km trip?",
+        "recommendedOptions": [
+          "$30",
+          "$54",
+          "$120",
+          "$150"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-S1-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Let the number be x: 2x + 7 = 31 ⇒ 2x = 24 ⇒ x = 12. The provided correct option (12) is correct. Distractors are reasonable and there is a unique correct solution. Wording and algebra level fit S1 expectations.",
+        "recommendedQuestion": "A number is doubled and then increased by 7 to give 31. Find the number.",
+        "recommendedOptions": [
+          "10",
+          "12",
+          "15",
+          "19"
+        ],
+        "recommendedCorrect": 1
+      }
+    ]
+  }
+}

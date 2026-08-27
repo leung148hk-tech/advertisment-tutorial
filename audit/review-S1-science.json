@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T13:27:36.283422+00:00",
+  "grade": "S1",
+  "track": "science",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 S1 science items (scientific investigation). Both items are clear, age-appropriate, have one best answer, and pass without revision.\n\nPart 2/5: Both items are clear, syllabus-appropriate S1 life-science questions with one unambiguous best answer each. Recommend keeping original content.\n\nPart 3/5: Two simple S1 science items on states of matter and heat transfer. Both items are clear, age-appropriate, have one unambiguous best answer, and match the syllabus-level expectations.\n\nPart 4/5: Review of 2 S1 science items on Forces and Electricity. Both items are clear, age-appropriate, have one unambiguous best answer and suitable distractors. Recommend keeping original wording and answers.\n\nPart 5/5: All items are clear, age-appropriate for S1 science, and have a single best answer. No revisions required.",
+    "reviews": [
+      {
+        "id": "science-S1-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks which variable should be changed to compare fertilisers fairly. Changing the type of fertiliser is the single variable to vary for this investigation; the other options (plant species, light, pot size) are variables that should be kept constant. Distractors are plausible and the item matches S1 syllabus-level experimental design.",
+        "recommendedQuestion": "To compare fertilisers fairly, which variable should be changed?",
+        "recommendedOptions": [
+          "Type of fertiliser",
+          "Plant species",
+          "Amount of light",
+          "Pot size"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S1-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Measuring cylinders are designed for measuring liquid volume; the other instruments (thermometer, balance, stopwatch) measure temperature, mass, and time respectively. The item is clear and appropriate for S1.",
+        "recommendedQuestion": "Which instrument is best for measuring liquid volume?",
+        "recommendedOptions": [
+          "Measuring cylinder",
+          "Thermometer",
+          "Balance",
+          "Stopwatch"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S1-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The nucleus is the accepted cell structure that controls cell activities. The stem is unambiguous and age-appropriate. Distractors (cell wall, vacuole, chloroplast) are plausible for S1 learners and test understanding.",
+        "recommendedQuestion": "Which structure controls the activities of a cell?",
+        "recommendedOptions": [
+          "Nucleus",
+          "Cell wall",
+          "Vacuole",
+          "Chloroplast"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S1-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "For S1 level, the main purpose of photosynthesis is correctly stated as making glucose (a food/energy source for the plant). The distractors are clearly incorrect and appropriate for basic assessment.",
+        "recommendedQuestion": "What is the main purpose of photosynthesis?",
+        "recommendedOptions": [
+          "To make glucose",
+          "To produce soil",
+          "To absorb sound",
+          "To form metal"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S1-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks which process changes a liquid into a gas. 'Evaporation' is the correct and unambiguous choice for S1 level. Other options (freezing, condensation, melting) are clearly different phase changes. The stem and distractors are age-appropriate and syllabus-adjacent.",
+        "recommendedQuestion": "Which process changes a liquid into a gas?",
+        "recommendedOptions": [
+          "Evaporation",
+          "Freezing",
+          "Condensation",
+          "Melting"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S1-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks which material is usually the best thermal conductor. 'Copper' is a standard, syllabus-appropriate example of a good thermal conductor and is the best choice among the given options (wood, plastic, wool are poor conductors). Distractors are clear and distinct.",
+        "recommendedQuestion": "Which material is usually the best thermal conductor?",
+        "recommendedOptions": [
+          "Copper",
+          "Wood",
+          "Plastic",
+          "Wool"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S1-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem is clear for S1: a book on a table has balanced upward normal (table support) and downward weight (gravity). Distractors are clearly incorrect. Wording 'table support' is acceptable and matches curriculum language for normal/support force.",
+        "recommendedQuestion": "A book rests on a table. Which forces are balanced?",
+        "recommendedOptions": [
+          "Weight and table support",
+          "Friction and magnetism",
+          "Light and sound",
+          "Heat and electricity"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S1-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question clearly asks which component opens and closes a circuit; 'switch' is the single correct choice. Other options are plausible electrical components but do not perform that function, so distractors are reasonable for S1 level.",
+        "recommendedQuestion": "Which component is used to open and close a circuit?",
+        "recommendedOptions": [
+          "Switch",
+          "Cell",
+          "Bulb",
+          "Wire"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S1-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The independent variable is the one changed by the investigator; 'Heating time' is correct. Distractors are clearly incorrect and age-appropriate.",
+        "recommendedQuestion": "A graph shows temperature rising as heating time increases. What is the independent variable?",
+        "recommendedOptions": [
+          "Heating time",
+          "Temperature",
+          "Mass",
+          "Conclusion"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S1-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Repeating an experiment improves reliability (reduces random error and checks consistency). Other options are clearly incorrect or misleading for S1 level.",
+        "recommendedQuestion": "Why should an experiment be repeated?",
+        "recommendedOptions": [
+          "To improve reliability",
+          "To change all variables",
+          "To avoid recording data",
+          "To guarantee a result"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

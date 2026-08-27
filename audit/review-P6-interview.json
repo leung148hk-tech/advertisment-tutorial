@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T10:48:42.977510+00:00",
+  "grade": "P6",
+  "track": "interview",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Two P6 interview-skill items (self-introduction and listening). Both items are clear, age-appropriate, have one unambiguous best answer, and require no revision.\n\nPart 2/5: Both items are clear, unambiguous P6 interview-style multiple-choice questions about communication and collaboration. Each has a single best answer, age-appropriate language, and suitable difficulty for Grade P6. No revision required.\n\nPart 3/5: Two P6 interview items reviewed (collaboration and expression). Both items are age-appropriate, clear, and have a single best answer. Recommend passing without changes.\n\nPart 4/5: Both items are clear, age-appropriate P6 interview practice questions with an unambiguous single best answer. No revision needed.\n\nPart 5/5: Both P6 interview items are age-appropriate, have a single best answer, and match the stated basic difficulty. No revision needed.",
+    "reviews": [
+      {
+        "id": "interview-P6-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The second option is clearly the best choice for a P6 student: it models a short, structured and genuine self-introduction (greeting, name/school, one interest with an example). Other options are clearly weaker (too brief, boastful, or inappropriate). Wording and expectations suit the grade level.",
+        "recommendedQuestion": "Which self-introduction gives the clearest first impression?",
+        "recommendedOptions": [
+          "Only say your name and stop.",
+          "Greet, state your name and school, then share one genuine interest with an example.",
+          "List every award without context.",
+          "Ask the interviewer to answer first."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "interview-P6-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Asking politely for repetition or clarification is the best strategy for a P6 student when they do not understand a question. The distractors are clearly inappropriate (guessing, silence, or asking a friend). The item is unambiguous and suitable for the grade.",
+        "recommendedQuestion": "If you do not understand a question, what is the best response?",
+        "recommendedOptions": [
+          "Make up an answer immediately.",
+          "Ask politely for the question to be repeated or explained.",
+          "Stay silent until the interview ends.",
+          "Ask a friend to answer."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "interview-P6-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem is clear and directly assesses how to give a strong spoken response. Distractors are plausible but weaker; the second option (name area, explain why, give an example) is unambiguously the strongest answer and aligns with the supplied hint. Language and cognitive demand suit P6.",
+        "recommendedQuestion": "Which is the strongest way to answer “What do you enjoy learning?”",
+        "recommendedOptions": [
+          "Say only one subject name.",
+          "Name an area, explain why, and give one related experience.",
+          "Change the question.",
+          "Repeat “I don't know”."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "interview-P6-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The prompt tests respectful collaboration and inviting quieter members—an age-appropriate social skill for P6. The second option (invite and listen) is clearly the best action; other options are clearly inappropriate. Wording is simple and unambiguous.",
+        "recommendedQuestion": "In a group task, a quieter member has not spoken. What can you do?",
+        "recommendedOptions": [
+          "Ignore the person.",
+          "Invite the person to share an idea and listen carefully.",
+          "Tell everyone your idea is best.",
+          "End the discussion."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "interview-P6-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem is clear and age-appropriate. The hint matches the correct reasoning. Distractors are plausible but clearly inferior for a primary-6 student. There is a single unambiguous best answer: asking about the reason and comparing ideas calmly.",
+        "recommendedQuestion": "When a teammate disagrees with you, what should you do first?",
+        "recommendedOptions": [
+          "Say they are wrong.",
+          "Ask about their reason and compare ideas calmly.",
+          "Leave the group.",
+          "Speak louder."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "interview-P6-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question is simple and suitable for P6. The correct option (sit naturally and look at the speaker) is clearly the best; other options are clearly poor examples of supportive body language. No ambiguity.",
+        "recommendedQuestion": "Which body language supports clear communication?",
+        "recommendedOptions": [
+          "Look at the floor all the time.",
+          "Sit naturally and look at the speaker.",
+          "Keep checking a phone.",
+          "Turn away while speaking."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "interview-P6-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem is clear and asks how to respond to a common interview question. Option 2 (index 1) is the only constructive, honest, and age-appropriate response. Distractors are clearly inappropriate for an interview, so there is a single best answer.",
+        "recommendedQuestion": "How can you answer a question about something you want to improve?",
+        "recommendedOptions": [
+          "Say you have no area to improve.",
+          "Name one area and explain one action you are taking.",
+          "Blame classmates.",
+          "Refuse to respond."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "interview-P6-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question tests simple school-research awareness useful for interviews. Option 2 (index 1) correctly describes the benefit; other choices are clearly wrong or unrealistic, so the item has one defensible answer.",
+        "recommendedQuestion": "Why does learning about a secondary school before an interview help?",
+        "recommendedOptions": [
+          "It guarantees admission.",
+          "It helps you give specific reasons for applying and ask thoughtful questions.",
+          "It means no other preparation is needed.",
+          "It lets you memorise a uniform colour."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "interview-P6-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The second option (invite the classmate and check their preferred role) is clearly the most constructive and specific response. Other options are either avoidant or vague; while 'Tell others to stop talking' might intend to help, it is less appropriate than inviting and including the classmate.",
+        "recommendedQuestion": "You notice a classmate is left out during an activity. What is a constructive response?",
+        "recommendedOptions": [
+          "Pretend not to notice.",
+          "Invite the classmate to join and check what role they prefer.",
+          "Tell others to stop talking.",
+          "Leave the activity."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "interview-P6-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The second option (give a clear answer supported by a genuine experience) correctly describes how to be memorable without sounding rehearsed. The other choices describe unhelpful behaviours.",
+        "recommendedQuestion": "What makes an interview answer memorable without sounding rehearsed?",
+        "recommendedOptions": [
+          "Using the longest words possible.",
+          "Giving a clear answer supported by a genuine experience.",
+          "Speaking as fast as possible.",
+          "Reciting a script without listening."
+        ],
+        "recommendedCorrect": 1
+      }
+    ]
+  }
+}

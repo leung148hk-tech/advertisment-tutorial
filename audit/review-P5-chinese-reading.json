@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T10:26:11.569591+00:00",
+  "grade": "P5",
+  "track": "chinese-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Both items are appropriate for P5 Chinese vocabulary and usage. Each has a single best answer (index 0), clear wording, age-appropriate language, and plausible distractors. No revision needed.\n\nPart 2/5: 本批次包含 2 題 P5 中文閱讀（訊息定位/細節理解）。兩題題幹清楚、選項無二義且與年級能力相符，均可通過審核。\n\nPart 3/5: Two P5 Chinese-reading inference items reviewed. Both items are clear, age-appropriate, have a single best answer and plausible distractors, and match the stated difficulty. Recommend no changes.\n\nPart 4/5: Both items are clear, age-appropriate P5 reading items about context and rhetoric. Each has a single best answer, unambiguous wording, and suitable distractors. Recommend PASS for both.\n\nPart 5/5: 兩題均為小五閱讀整合能力的基礎題，題幹清晰、選項合理且單一最佳答案明確，適合該年級水平，建議保留原題目與選項。",
+    "reviews": [
+      {
+        "id": "chinese-reading-P5-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The meaning choice \"持續努力不放棄\" accurately matches 「堅持」. Distractors are clearly incorrect and age-appropriate. The stem is unambiguous and suitable for P5.",
+        "recommendedQuestion": "「堅持」最接近下列哪一個意思？",
+        "recommendedOptions": [
+          "持續努力不放棄",
+          "很匆忙",
+          "不願意幫忙",
+          "聲音很大"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Sentence 1 correctly demonstrates the use of 「堅持」 (to keep trying). The other options are ungrammatical or use 「堅持」 inappropriately, making the correct choice clear for P5 students.",
+        "recommendedQuestion": "下列哪一句最適合使用「堅持」？",
+        "recommendedOptions": [
+          "媽媽教我寫字時，我會堅持練習，直到寫得更好。",
+          "聽到好消息，他感到非常堅持。",
+          "這張桌子很堅持，搬不動也放不下。",
+          "這首歌很堅持，大家都跟着唱。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹要求找出「主要說明了甚麼」，選項 A 正好重述原句，其他選項與內容無關，故唯一最佳答案為選項 0。語言和認知負荷均符合 P5 水平。",
+        "recommendedQuestion": "嘉怡遇到困難後修改計劃再嘗試。這段文字主要說明了甚麼？",
+        "recommendedOptions": [
+          "嘉怡遇到困難後修改計劃再嘗試。",
+          "嘉怡不想參加活動。",
+          "嘉怡正在睡覺。",
+          "嘉怡不見了物品。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "通告明確寫出「參加者請在二時四十五分到達」，題目問「最遲何時到達？」直接對應，選項 A 為唯一正確答案。符合 P5 時間理解能力。",
+        "recommendedQuestion": "通告寫着「一個值得學習的人分享會下午三時開始，參加者請在二時四十五分到達。」最遲何時到達？",
+        "recommendedOptions": [
+          "下午二時四十五分",
+          "下午三時",
+          "下午三時十五分",
+          "下午四時"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目語意清晰：從行為（遇到困難後修改計劃再嘗試）可合理推論為有毅力。其他選項為明顯相反或不相關，為有效迷惑選項但不會造成多解。",
+        "recommendedQuestion": "嘉怡遇到困難後修改計劃再嘗試，這最能反映他／她怎樣？",
+        "recommendedOptions": [
+          "有毅力",
+          "害怕嘗試",
+          "容易放棄",
+          "不願接受別人意見"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目要求推論行為動機：先了解資料才作決定最合理的解釋是希望作出較合適的選擇。其他選項與該行為矛盾或不合邏輯，無多義性。",
+        "recommendedQuestion": "嘉怡先了解資料才作決定，最可能是因為？",
+        "recommendedOptions": [
+          "希望作出較合適的選擇",
+          "不想知道內容",
+          "想拖延時間",
+          "沒有任何原因"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The phrase '微風輕輕拍著樹葉' uses a human action ('拍') applied to wind, so the intended figure is a person. Distractors are clearly incorrect and age-appropriate. The hint aligns with the intended rhetorical device (擬人法).",
+        "recommendedQuestion": "「微風輕輕拍著樹葉」主要把微風寫成像甚麼？",
+        "recommendedOptions": [
+          "人",
+          "石頭",
+          "書本",
+          "雨傘"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence directly states that cooperation combines different strengths; option 1 captures that main message. Other choices misinterpret or narrow the meaning. Wording is clear and suitable for P5.",
+        "recommendedQuestion": "「合作能讓我們結合不同的長處。」這句話中，最重要的訊息是甚麼？",
+        "recommendedOptions": [
+          "合作可以把不同人的長處結合起來，做成更好的事情",
+          "合作是指大家在同一地方工作",
+          "合作就是每個人都單獨完成自己的任務",
+          "只有朋友之間才需要合作"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹描述文章內容（先介紹準備方法，再說明收穫），直接指向主旨為鼓勵認真準備並參與活動。其他選項與題意無關，為合格的干擾項，沒有二義性且語言適合小五程度。",
+        "recommendedQuestion": "文章先介紹一個值得學習的人的準備方法，再說明參加後的收穫，主旨最可能是？",
+        "recommendedOptions": [
+          "鼓勵讀者認真準備並參與活動",
+          "介紹所有人的姓名",
+          "比較不同天氣",
+          "只描述食物"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "句子以「先、再、最後」標示動作順序，明確屬於步驟或程序的組織方式；其他選項與句子結構不符，無歧義，適合小五理解。",
+        "recommendedQuestion": "「先找出重點，再整理想法，最後寫下回應。」這段文字主要按甚麼方式組織？",
+        "recommendedOptions": [
+          "步驟順序",
+          "人物對話",
+          "地點轉換",
+          "問題與答案"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

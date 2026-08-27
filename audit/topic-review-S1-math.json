@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-26T13:21:36.176926+00:00",
+  "grade": "S1",
+  "track": "math",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 items (each applies to three context variants). Both items coherently measure basic algebra skills and their metadata are appropriate.\n\nPart 2/5: Reviewed 2 items (each has two context-only variants). Both items measure straightforward basic skills and their metadata are coherent.\n\nPart 3/5: Reviewed 2 items (and their context-only variants). Both items measure straightforward geometry skills (supplementary angles and area of a triangle). The supplied topic, label and module are educationally coherent and appropriate for S1 baseline assessment — no changes required.\n\nPart 4/5: Reviewed 2 items (each has two context-only variants with identical metadata). Both items accurately measure the skills indicated by their metadata; no substantive changes required.\n\nPart 5/5: Reviewed 2 canonical S1 maths items (each has two context-only variants with identical metadata). Both items assess basic number-and-algebra skills at foundational level. No content errors requiring escalation were found; both metadata entries are educationally coherent.",
+    "reviews": [
+      {
+        "id": "math-S1-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to combine like terms in an algebraic expression (3a + 5a − 2 → 8a − 2). This is appropriately categorized as Number and algebra. The label 'Algebraic terms' reasonably describes the task (collecting like terms / simplifying expressions). The module '基礎掌握' fits the basic difficulty.",
+        "recommendedTopic": "Number and algebra",
+        "recommendedLabel": "Algebraic terms",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S1-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires solving a simple linear equation (4x − 3 = 17) using inverse operations. The label 'Linear equation' and topic 'Number and algebra' accurately describe the skill, and the module '基礎掌握' matches the basic difficulty.",
+        "recommendedTopic": "Number and algebra",
+        "recommendedLabel": "Linear equation",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S1-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires simplifying a ratio by dividing both terms by their highest common factor. The label 'Ratio', the topic 'Ratio and percentage' and the module '基礎掌握' accurately describe this basic skill.",
+        "recommendedTopic": "Ratio and percentage",
+        "recommendedLabel": "Ratio",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S1-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for computing a percentage of a quantity (15% of 240). The label 'Percentage', the topic 'Ratio and percentage' and the module '基礎掌握' correctly reflect the assessed skill.",
+        "recommendedTopic": "Ratio and percentage",
+        "recommendedLabel": "Percentage",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S1-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem asks for the supplementary angle to 112° (angles on a straight line sum to 180°). The skill is basic angle reasoning in geometry. 'Geometry and measure' as topic, 'Angles' as label, and '基礎掌握' (basic mastery) as module accurately describe the assessed skill and difficulty.",
+        "recommendedTopic": "Geometry and measure",
+        "recommendedLabel": "Angles",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S1-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question requires applying the area formula for a triangle (1/2 × base × height). This is basic geometry measurement. 'Geometry and measure' topic, 'Area' label, and '基礎掌握' module appropriately describe the skill and difficulty.",
+        "recommendedTopic": "Geometry and measure",
+        "recommendedLabel": "Area",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S1-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to compute the mean (average) of four numbers. The label 'Mean', topic 'Statistics and data', and module '基礎掌握' correctly describe the skill and difficulty.",
+        "recommendedTopic": "Statistics and data",
+        "recommendedLabel": "Mean",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S1-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires reading a bar chart (data reading) and finding the difference between two frequencies. The label 'Data reading', topic 'Statistics and data', and module '基礎掌握' appropriately describe the measured skill.",
+        "recommendedTopic": "Statistics and data",
+        "recommendedLabel": "Data reading",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S1-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to compute the cost using a fixed charge plus a per-kilometre rate (evaluate 24 + 6×5). This is evaluating a linear expression / linear function and requires simple arithmetic—matching the given topic, label and foundational module.",
+        "recommendedTopic": "Number and algebra — evaluate linear expressions",
+        "recommendedLabel": "Word problem",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S1-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires forming or solving the simple linear equation 2x + 7 = 31 (or using inverse operations). This directly matches the stated topic 'solve simple linear equations' and is appropriately labelled and placed in the basic mastery module.",
+        "recommendedTopic": "Number and algebra — solve simple linear equations",
+        "recommendedLabel": "Problem solving",
+        "recommendedModule": "基礎掌握"
+      }
+    ]
+  }
+}

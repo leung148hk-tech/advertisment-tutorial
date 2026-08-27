@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-27T01:17:19.712307+00:00",
+  "grade": "S3",
+  "track": "math",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 items (each has two context-only variants with identical metadata). Both items measure straightforward algebraic skills appropriate to the supplied topic, label and module. No substantive mismatches found; recommend no changes.\n\nPart 2/5: Reviewed 2 math items (S3). Both items measure basic computational skills: computing a percentage decrease and computing a rate (speed). Metadata are coherent and appropriate; no substantive changes required.\n\nPart 3/5: Reviewed 2 items (math-S3-4-0, math-S3-5-0). Both items' metadata appropriately describe the skill tested; no substantive changes needed.\n\nPart 4/5: Reviewed 2 items (each with two context-only variants). Both items measure straightforward skills in basic statistics/graphs and their metadata are educationally coherent and correctly labelled. Recommend no changes.\n\nPart 5/5: Reviewed 2 items (each has two context-only variants sharing metadata). Both items measure straightforward procedural algebra/sequence skills and their metadata are educationally coherent.",
+    "reviews": [
+      {
+        "id": "math-S3-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires recognising and applying the difference-of-squares factorisation to x^2 − 9. The topic 'Number and algebra', label 'Factorisation' and module '基礎掌握' accurately describe the skill and level assessed.",
+        "recommendedTopic": "Number and algebra",
+        "recommendedLabel": "Factorisation",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S3-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires solving a quadratic by factorising (x^2 − 5x = 0 → x(x−5)=0). The topic 'Number and algebra', label 'Quadratic equation' and module '基礎掌握' correctly represent the measured skill and its level.",
+        "recommendedTopic": "Number and algebra",
+        "recommendedLabel": "Quadratic equation",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S3-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires finding a percentage of an amount (10% of $200) and applying a percentage decrease to get the sale price. The label 'Percentage discount (percentage decrease)' accurately describes the skill. The topic 'Ratio and percentage' appropriately covers percentage calculation, and the module '基礎掌握' (basic mastery) is suitable for this core-level question.",
+        "recommendedTopic": "Ratio and percentage",
+        "recommendedLabel": "Percentage discount (percentage decrease)",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S3-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests computing average speed as a rate (distance ÷ time). The label 'Rates' correctly identifies the targeted skill. While the topic is given as 'Ratio and percentage', speed is a ratio and fits within that topic; the module '基礎掌握' is appropriate for this core skill.",
+        "recommendedTopic": "Ratio and percentage",
+        "recommendedLabel": "Rates",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S3-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses knowledge of the relationship between a central angle and an inscribed (circumference) angle subtending the same arc — a circle geometry concept. The label 'Circle geometry', topic 'Geometry and measure', and module '基礎掌握' correctly describe the skill and expected curricular level.",
+        "recommendedTopic": "Geometry and measure",
+        "recommendedLabel": "Circle geometry",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S3-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests basic trigonometric ratio (sine) in a right triangle using opposite and hypotenuse lengths. The label 'Trigonometry', topic 'Geometry and measure', and module '基礎掌握' accurately reflect the skill and curriculum placement.",
+        "recommendedTopic": "Geometry and measure",
+        "recommendedLabel": "Trigonometry",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S3-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to choose an appropriate graph for grouped continuous data (histogram). The topic 'Statistics and data' and the label 'Choosing a graph for grouped continuous data' accurately describe the assessed skill. The module '基礎掌握' (basic mastery) is appropriate for this core-level question.",
+        "recommendedTopic": "Statistics and data",
+        "recommendedLabel": "Choosing a graph for grouped continuous data",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S3-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses interpretation of correlation in a scatter graph (negative correlation). The topic 'Statistics and data' is appropriate and the label 'Scatter graph' reasonably identifies the focus. The module '基礎掌握' fits the core difficulty.",
+        "recommendedTopic": "Statistics and data",
+        "recommendedLabel": "Scatter graph",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S3-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to substitute n=10 into a given nth-term formula and compute the value. The label 'Evaluate a sequence formula' and topic 'Sequence term evaluation' accurately describe this skill. The module '基礎掌握' (basic mastery) is appropriate for this core-level task.",
+        "recommendedTopic": "Sequence term evaluation",
+        "recommendedLabel": "Evaluate a sequence formula",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S3-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires expanding and solving a one-variable linear equation. The topic 'Solve one-variable linear equations' and label 'Algebraic manipulation' both describe the required skill; the broader module '基礎掌握' is appropriate for a core algebra question.",
+        "recommendedTopic": "Solve one-variable linear equations",
+        "recommendedLabel": "Algebraic manipulation",
+        "recommendedModule": "基礎掌握"
+      }
+    ]
+  }
+}

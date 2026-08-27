@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T13:42:44.151973+00:00",
+  "grade": "S1",
+  "track": "chinese-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Two S1 Chinese vocabulary items reviewed (meaning of 妥當 and appropriate sentence usage). Both items are clear, have one unambiguous best answer, are grade-appropriate and of basic difficulty. Recommend passing without changes.\n\nPart 2/5: Two S1 Chinese reading items (modern-text comprehension and main-idea/evidence) were reviewed. Both items are clear, age-appropriate, have a single best answer, and match the claimed ability and difficulty. Recommend passing both without revision.\n\nPart 3/5: Two S1 classical-Chinese items about the phrase 「學而時習之，不亦說乎」 were reviewed. Both items are clear, have one unambiguous correct answer, are syllabus-appropriate and at the stated difficulty. Recommend passing both without change.\n\nPart 4/5: Reviewed 2 S1 Chinese-reading items (part 4). Both items are clear, unambiguous, age-appropriate, and have a single best answer. Recommend PASS for both.\n\nPart 5/5: 兩題皆清晰、無多義，選項雖為基礎層次但能清楚區分正誤，符合 S1 中文閱讀的篇章與評述能力，建議通過（PASS）。",
+    "reviews": [
+      {
+        "id": "chinese-reading-S1-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The target word 妥當 is well matched to the option 合適而周全. Distractors are clearly incorrect and age-appropriate. The item tests basic vocabulary meaning suitable for S1.",
+        "recommendedQuestion": "「妥當」最接近下列哪一個意思？",
+        "recommendedOptions": [
+          "合適而周全",
+          "非常匆忙",
+          "完全忽略",
+          "聲音響亮"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S1-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence 她先了解不同需要，再作出安排。best fits use of 妥當 (i.e., acting appropriately/carefully). Other options are clearly unsuitable, so there is a single best answer.",
+        "recommendedQuestion": "下列哪一句最適合使用「妥當」？",
+        "recommendedOptions": [
+          "他只憑印象作決定。",
+          "她先了解不同需要，再作出安排。",
+          "雨聲十分響亮。",
+          "操場非常寬闊。"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "chinese-reading-S1-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Stem is clear and concise. The sentence '先聽取同學意見，再安排活動細節' indicates a systematic approach that values input/evidence; option 0 ('有條理並重視根據') is the best and unambiguous choice. Distractors are plausible opposites or clearly wrong.",
+        "recommendedQuestion": "班長先聽取同學意見，再安排活動細節。 這段文字主要說明人物具備甚麼做事方式？",
+        "recommendedOptions": [
+          "有條理並重視根據",
+          "只重視速度",
+          "拒絕溝通",
+          "沒有計劃"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S1-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Asking how to support the inference '作者重視資料' is straightforward. Identifying cited examples or data directly supports that judgment; option 0 is clearly best. Other options are irrelevant and function as effective distractors.",
+        "recommendedQuestion": "閱讀說明文時，哪一種做法最能支持「作者重視資料」這個判斷？",
+        "recommendedOptions": [
+          "找出作者引用的例子或數據",
+          "只看篇幅長短",
+          "只數標點符號",
+          "只記人物姓名"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S1-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "In classical Chinese here 「說」 means 'to be pleased, joyful' rather than 'to speak'. The distractors (說話、解說、小說) are plausible for students familiar with modern usage but do not make another option defensible. Language level and focus on common 文言字 meanings suit S1.",
+        "recommendedQuestion": "「學而時習之，不亦說乎」中的「說」最接近哪一個意思？",
+        "recommendedOptions": [
+          "喜悅",
+          "說話",
+          "解說",
+          "小說"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S1-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence expresses that if one learns and regularly reviews, one will feel pleasure. Option 0 correctly captures this meaning. Other options are incorrect and not equally defensible. The item matches S1 expectations for comprehension of simple 文言句意.",
+        "recommendedQuestion": "「學而時習之，不亦說乎」主要表達甚麼意思？",
+        "recommendedOptions": [
+          "學習後能經常溫習，會感到喜悅",
+          "只要學習便不用溫習",
+          "學習一定比休息重要",
+          "只應聽別人講解"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S1-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹明確，句子把城市擬人化，四個選項為常見修辭手法且互為合理干擾選項，只有「擬人」符合句意。題目語言及難度符合中一水平。",
+        "recommendedQuestion": "「城市在晨光中慢慢醒來」主要運用了甚麼修辭手法？",
+        "recommendedOptions": [
+          "擬人",
+          "反問",
+          "排比",
+          "對偶"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S1-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目詢問使用具體例子的主要作用，選項中只有「令觀點更具體可信」正確且符合教學目標，其他選項為明顯錯誤干擾選項。語言和難度適合中一學生。",
+        "recommendedQuestion": "運用具體例子來支持觀點，主要有甚麼作用？",
+        "recommendedOptions": [
+          "令觀點更具體可信",
+          "令句子更短",
+          "避免說明原因",
+          "取代所有結論"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S1-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹明確詢問段落安排的條理性，選項一列出合乎篇章結構的步驟（交代事件→舉例→回應感受→反思），其他三項為明顯無條理或不完整的敘述，無二義性且符合 S1 能力預期。",
+        "recommendedQuestion": "若以「一次小組合作經驗」為題，哪個段落安排最有條理？",
+        "recommendedOptions": [
+          "交代事件、舉例說明、回應感受和反思",
+          "隨意列出詞語",
+          "重複同一句話",
+          "只寫結語"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S1-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目要求評述文章時的有根據回應方式；選項一（提出觀點並連結文本證據）明確對應評述技巧，其他選項要麼過於主觀、要麼偏離題意，故為單一最佳答案，且符合 S1 文本證據連結的教學重點。",
+        "recommendedQuestion": "評論文章時，哪一項最能顯示有根據的回應？",
+        "recommendedOptions": [
+          "說明觀點並連結文本證據",
+          "只說喜歡或不喜歡",
+          "重抄整段文字",
+          "不回應題目"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

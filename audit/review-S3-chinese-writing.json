@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-27T01:01:34.430948+00:00",
+  "grade": "S3",
+  "track": "chinese-writing",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 S3 Chinese-writing items (each has two context-only variants). Both items are clear, age-appropriate and have a single best answer; no revision needed.\n\nPart 2/5: Two S3 Chinese-writing items on paragraph organization and using examples. Both items are clear, age-appropriate, have one unambiguous best answer, and require no revision.\n\nPart 3/5: Reviewed 2 S3 Chinese-writing items (修辭與表達). Both items are clear, unambiguous, and appropriate for the grade; they pass without revision.\n\nPart 4/5: 已審核 2 項 S3 中文寫作題目（part 4 of 5）。兩題均清晰、針對寫作技能、干擾選項弱且不會誤導學生，難度與年級相符，建議維持原題不變。\n\nPart 5/5: 兩題均為應試寫作的實用技巧題，題幹清晰、選項差異明顯，適合中三程度。建議保留原題內容。",
+    "reviews": [
+      {
+        "id": "chinese-writing-S3-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹要求形容“做事仔細檢查和思考”。四個選項中只有「審視」符合“仔細檢查”的意思，其他三項（草率、混亂、浮誇）明顯不符。詞義清晰，對應單一最佳答案，符合中三語文水平。",
+        "recommendedQuestion": "要形容做事仔細檢查和思考，哪個詞最合適？",
+        "recommendedOptions": [
+          "審視",
+          "草率",
+          "混亂",
+          "浮誇"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S3-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "四個句子中只有「同學們積極討論並提出建議。」語法正確且通順。其餘句子存在語病：第二句把、被同用不當；第三句“十分很”冗贅；第四句語序錯誤或缺語（應為“我們已經完成了活動”或加指示成分）。題目清晰，單一最佳答案明確。",
+        "recommendedQuestion": "下列哪一句沒有語病？",
+        "recommendedOptions": [
+          "同學們積極討論並提出建議。",
+          "我把意見被老師聽取。",
+          "這個問題十分很複雜。",
+          "我們完成了已經活動。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S3-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The prompt asks for the best topic sentence for an essay titled “一個影響我的選擇”. Option 0 directly states the paragraph’s viewpoint and functions as a clear central sentence. The other options are irrelevant details and do not serve as centre sentences. Language and cognitive demand suit S3.",
+        "recommendedQuestion": "寫「一個影響我的選擇」時，哪一句最適合作段落中心句？",
+        "recommendedOptions": [
+          "這次經驗令我重新思考做決定時應重視的原則。",
+          "那天有很多人。",
+          "我看見一張桌子。",
+          "時間過得很快。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S3-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The thesis is “溝通有助解決分歧”. Option 0 gives a concrete example of listening to different opinions and agreeing on a plan, which directly supports the thesis. Other options are irrelevant. Suitably pitched for S3.",
+        "recommendedQuestion": "哪一個例子最能支持「溝通有助解決分歧」？",
+        "recommendedOptions": [
+          "小組先聽取不同意見，再訂出共同方案。",
+          "大家各自離開。",
+          "天氣突然轉冷。",
+          "課室有很多窗。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S3-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "選項一「記憶像一本隨時可翻閱的書。」使用「像」進行比喻，其他選項為陳述句，沒有比喻用法。題幹明確、無多義情況，對S3學生屬核心難度且符合課程要求。",
+        "recommendedQuestion": "哪一句運用了比喻？",
+        "recommendedOptions": [
+          "記憶像一本隨時可翻閱的書。",
+          "雨下得很大。",
+          "我走進課室。",
+          "同學正在討論。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S3-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "選項一語氣禮貌、清楚並附上理由，最適合作為給校長的建議書。其他選項語氣不當或無建設性，題目要求與提示一致，對S3學生屬核心且貼近寫作訓練重點。",
+        "recommendedQuestion": "給校長的建議書，哪一種語氣最合適？",
+        "recommendedOptions": [
+          "建議學校考慮增設閱讀時段，讓同學有較穩定的閱讀機會。",
+          "你一定要照做。",
+          "這件事很差。",
+          "我不想解釋。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S3-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹明確問如何把「我學會承擔責任」寫得更具體，正確選項具體列出行動、處理過程與反思，切合寫作要求。其他選項（重複題目、寫天氣、只列形容詞）為明顯不相關或弱干擾項，無歧義或多解情況，適合 S3 水平。",
+        "recommendedQuestion": "要把「我學會承擔責任」寫得更具體，應加入甚麼？",
+        "recommendedOptions": [
+          "我如何處理困難、作出甚麼行動和從中得到甚麼反思",
+          "只重複題目",
+          "只寫天氣",
+          "只列形容詞"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S3-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目詢問議論段落中觀點後最適合加入的內容，正確答案（理由、例子和回扣觀點）完整反映段落結構要求，其他選項為不相關或荒謬選項，不構成有效支撐，符合 S3 議論寫作教學要點。",
+        "recommendedQuestion": "議論段落中，觀點後最適合加入甚麼？",
+        "recommendedOptions": [
+          "理由、例子和回扣觀點",
+          "不相關的故事",
+          "完全相反的結論",
+          "空白句子"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S3-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目針對完成文章後的修訂策略，提示與題幹一致；正確選項明確指出檢查中心句、例子、連接詞與結語是否呼應題目，其他干擾選項不合理且明顯錯誤，故為單一最佳答案且適合中三程度。",
+        "recommendedQuestion": "完成文章後，哪一項修訂最有助提高考試表現？",
+        "recommendedOptions": [
+          "檢查中心句、例子、連接詞和結語是否呼應題目",
+          "只數字數",
+          "刪除所有標點",
+          "把每句改成問句"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S3-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目詢問限時寫作前的合適步驟，正確選項提出列出立場、兩個重點與例子並分配時間，符合寫作規劃常識；其餘選項均為不良或荒謬策略，故為單一最佳答案且適切於中三學生。",
+        "recommendedQuestion": "限時寫作前，哪一個步驟最合適？",
+        "recommendedOptions": [
+          "先列出立場、兩個重點和例子，再分配時間寫作",
+          "立即寫結語",
+          "只背誦題目",
+          "不看題目要求"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

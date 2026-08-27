@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-26T11:19:30.888381+00:00",
+  "grade": "P4",
+  "track": "math",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: 2 items reviewed (P4 math, items involve whole-number division and decimal addition). Both metadata entries accurately describe the measured skills and are educationally coherent; no substantive revisions required.\n\nPart 2/5: 已審核 2 項目（每項另有兩個僅含情境的變體，元資料相同）。兩題均為小四基礎數學題，元資料（標籤、主題、單元）與題目測量的能力一致，無需修改。\n\nPart 3/5: Reviewed 2 items (math-P4-4-0, math-P4-5-0). Both items measure straightforward measurement skills and their supplied metadata accurately describe the assessed skills. Recommend no changes.\n\nPart 4/5: 審閱 2 個題目（含各自的兩個情境變體）。兩題均衡量簡單的數據處理技能（計算平均數與從圖表讀出數據後求和），題目所標示的主題、標籤與模組皆與題目實際測量的能力一致，建議維持原有 metadata。\n\nPart 5/5: Reviewed 2 P4 math items (each has two context-only variants). Both items measure straightforward arithmetic application in real-life contexts (one multi-step money problem, one single-step multiplication). Metadata is coherent and educationally appropriate; no substantive revisions needed.",
+    "reviews": [
+      {
+        "id": "math-P4-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item measures integer division (division of a 4-digit number by a single-digit), testing mental arithmetic and place-value understanding. The topic '數與運算', label '大數運算' and module '基礎掌握' appropriately describe this skill at primary level.",
+        "recommendedTopic": "數與運算",
+        "recommendedLabel": "大數運算",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-P4-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item measures addition of decimals (aligning decimal points and performing column addition). The topic '數與運算', label '小數計算' and module '基礎掌握' accurately reflect the assessed skill.",
+        "recommendedTopic": "數與運算",
+        "recommendedLabel": "小數計算",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-P4-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目要求同分母分數相加（3/5 + 1/5），測量的是分數運算的基本技能。標籤“分數運算”、主題“分數與比例”、單元“理解與應用”均準確且教育上連貫。",
+        "recommendedTopic": "分數與比例",
+        "recommendedLabel": "分數運算",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P4-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目要求按比率放大（2:3，紅 6 粒求藍），測量的是按相同倍數放大比例的比例推理能力。標籤“比例初步”、主題“分數與比例”、單元“理解與應用”均恰當。",
+        "recommendedTopic": "分數與比例",
+        "recommendedLabel": "比例初步",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P4-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the area of a rectangle using length × width. The label '面積計算' (area calculation), topic '圖形與量度' (shapes and measurement) and module '理解與應用' (understanding and application) correctly describe the skill being assessed.",
+        "recommendedTopic": "圖形與量度",
+        "recommendedLabel": "面積計算",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P4-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires converting litres to millilitres (capacity conversion). The label '容量換算', topic '圖形與量度' (which covers measurement topics including capacity), and module '理解與應用' are appropriate.",
+        "recommendedTopic": "圖形與量度",
+        "recommendedLabel": "容量換算",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P4-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目要求計算三個分數的算術平均數，這明確屬於「數據與統計」範疇，標籤「平均數」精確描述被評估的技能，模組「理解與應用」適合基礎層次的計算題。",
+        "recommendedTopic": "數據與統計",
+        "recommendedLabel": "平均數",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P4-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目要求從圖表（列出的每日頁數）讀取數據並將三天頁數相加，屬於基礎的數據讀取與加法運算，歸於「數據與統計」合適，標籤與模組描述恰當。",
+        "recommendedTopic": "數據與統計",
+        "recommendedLabel": "圖表總和",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P4-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires a real-life multi-step calculation (multiply to find total cost, then subtract from payment to find change). The label '多步驟金錢題', topic '生活應用：單步與多步運算', and module '情境推理' accurately describe the skill.",
+        "recommendedTopic": "生活應用：單步與多步運算",
+        "recommendedLabel": "多步驟金錢題",
+        "recommendedModule": "情境推理"
+      },
+      {
+        "id": "math-P4-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses single-step multiplication in a measurement context. The label '單步乘法應用題', topic '生活應用：單步與多步運算', and module '情境推理' correctly reflect the required skill.",
+        "recommendedTopic": "生活應用：單步與多步運算",
+        "recommendedLabel": "單步乘法應用題",
+        "recommendedModule": "情境推理"
+      }
+    ]
+  }
+}

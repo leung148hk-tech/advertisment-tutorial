@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T10:15:00.775085+00:00",
+  "grade": "P4",
+  "track": "chinese-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Both P4 Chinese vocabulary items are clear, age-appropriate, have a single best answer, and match the claimed difficulty. Recommend PASS for both.\n\nPart 2/5: 兩題均屬小四閱讀理解的基礎題：一題為主旨擷取，一題為訊息定位（細節理解）。題幹清晰、語言合適，選項明確有單一最佳答案，建議保留原題不作修改。\n\nPart 3/5: 兩題均為基礎人物/原因推論題，選項明確且單一最佳答案明顯，適合小學四年級閱讀理解能力，建議全部通過（PASS）。\n\nPart 4/5: Both items are clear, age-appropriate P4 Chinese reading questions that test basic rhetorical/device recognition and sentence meaning. Each has a single best answer and requires no revision.\n\nPart 5/5: 本批次兩題均為小四閱讀理解之基礎題型，題幹清楚、選項合理且只有一個最佳答案，符合年級與能力指標，建議通過（PASS）。",
+    "reviews": [
+      {
+        "id": "chinese-reading-P4-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "『周全』在日常語境中意指考慮周到、全面或安排妥當。選項「考慮得很仔細」準確對應該詞義；其餘三個選項意思明顯不符，為合理干擾選項。題幹簡潔、提示恰當，符合小四詞語理解能力。",
+        "recommendedQuestion": "「周全」最接近下列哪一個意思？",
+        "recommendedOptions": [
+          "考慮得很仔細",
+          "很匆忙",
+          "不願意幫忙",
+          "聲音很大"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目要求選出最適合使用「周全」的一句話。選項「老師為郊遊作出周全的安排。」語義自然且符合『周全＝安排/考量周到』的用法；其他選項將『周全』錯誤用於聲音、味道或天空，構成明確干擾。題目語言和難度適合小四。",
+        "recommendedQuestion": "下列哪一句最適合使用「周全」？",
+        "recommendedOptions": [
+          "老師為郊遊作出周全的安排。",
+          "小明的聲音很周全。",
+          "這道菜的味道很周全。",
+          "天空的顏色很周全。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹短而明確，要求擷取主要意思。選項0是原句重述，為唯一符合題意的答案；其餘三個干擾選項與文本無關，能有效區分理解能力。語言與難度符合小四。",
+        "recommendedQuestion": "小敏出發前查看天氣和路線。這段文字主要說明了甚麼？",
+        "recommendedOptions": [
+          "小敏出發前查看天氣和路線。",
+          "小敏不想參加活動。",
+          "小敏正在睡覺。",
+          "小敏不見了物品。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "通告中明確寫出報到時間為二時四十五分，題目直接問最遲到達時間，選項0正確且為唯一直接對應的答案。選項設計符合小四訊息定位能力的評量目標。",
+        "recommendedQuestion": "通告寫着「我喜愛的閱讀活動分享會下午三時開始，參加者請在二時四十五分到達。」最遲何時到達？",
+        "recommendedOptions": [
+          "下午二時四十五分",
+          "下午三時",
+          "下午三時十五分",
+          "下午四時"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹描述小敏出發前查看天氣和路線，這個行為直接表現出事前準備和謹慎，選項「有準備」為唯一合適的推論。其他選項（粗心大意、不願合作、害怕嘗試）與該行為互相矛盾或無關，干擾選項明確且年級可理解。",
+        "recommendedQuestion": "小敏出發前查看天氣和路線，這最能反映他／她怎樣？",
+        "recommendedOptions": [
+          "有準備",
+          "粗心大意",
+          "不願合作",
+          "害怕嘗試"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹說明小敏先了解資料才作決定，這通常是為了做出較合適或較明智的選擇，因此「希望作出較合適的選擇」是最合邏輯且唯一合理的原因。其他選項（不想知道內容、想拖延時間、沒有任何原因）與行為不符或不合常理，為弱干擾項。",
+        "recommendedQuestion": "小敏先了解資料才作決定，最可能是因為？",
+        "recommendedOptions": [
+          "希望作出較合適的選擇",
+          "不想知道內容",
+          "想拖延時間",
+          "沒有任何原因"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The phrase “微風輕輕拍著樹葉” uses a human action (拍) to describe the breeze, so the intended rhetorical device is personification — treating the breeze as a person. Distractors are clearly inanimate and do not match the verb, so the correct choice is unambiguous.",
+        "recommendedQuestion": "「微風輕輕拍著樹葉」主要把微風寫成像甚麼？",
+        "recommendedOptions": [
+          "人",
+          "石頭",
+          "書本",
+          "雨傘"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence is a straightforward statement: reading helps us learn about different ideas. The first option restates the sentence and is the clear main meaning. Other options introduce unrelated or incorrect claims, so there is a single best answer.",
+        "recommendedQuestion": "「閱讀能讓我們認識不同的想法。」這句話的主要意思是甚麼？",
+        "recommendedOptions": [
+          "閱讀能讓我們認識不同的想法。",
+          "閱讀會讓我們變得更快樂。",
+          "閱讀只適合小朋友閱讀。",
+          "閱讀會讓書本很快破爛。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹描述文章先說準備方法再說收穫，主旨應為鼓勵讀者準備並參與活動；其他選項與文意無關，干擾選項明確且年級可理解。",
+        "recommendedQuestion": "文章先介紹我喜愛的閱讀活動的準備方法，再說明參加後的收穫，主旨最可能是？",
+        "recommendedOptions": [
+          "鼓勵讀者認真準備並參與活動",
+          "介紹所有人的姓名",
+          "比較不同天氣",
+          "只描述食物"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "句子列出三個按時間先後的步驟（先、再、最後），最符合「步驟順序」的組織方式；其他選項與句意不符，題目語言簡潔，適合小四學生。",
+        "recommendedQuestion": "「先找出重點，再整理想法，最後寫下回應。」這段文字主要按甚麼方式組織？",
+        "recommendedOptions": [
+          "步驟順序",
+          "人物對話",
+          "地點轉換",
+          "問題與答案"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

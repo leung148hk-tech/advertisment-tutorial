@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T10:28:53.427637+00:00",
+  "grade": "P5",
+  "track": "english-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Two P5 vocabulary items about the word “considerate”. Both items are clear, have an unambiguous single best answer appropriate for Primary 5, and can be passed without revision.\n\nPart 2/5: Both items are clear, age-appropriate P5 reading-detail/main-idea multiple-choice questions with one unambiguous best answer each. No revision needed.\n\nPart 3/5: Both items are clear, age-appropriate P5 inference questions with one defensible best answer each. No revision required.\n\nPart 4/5: Reviewed 2 P5 English-reading items (text-connection skills). Both items are clear, unambiguous and suitable for Primary 5; no revision needed.\n\nPart 5/5: Both items are clear, age-appropriate P5 integrated reading questions with one unambiguous correct answer each. No revision required.",
+    "reviews": [
+      {
+        "id": "english-reading-P5-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The target word 'considerate' is correctly matched to 'thinking about other people'. Distractors are simple and age-appropriate; there is one clear best choice and no ambiguity for P5 students.",
+        "recommendedQuestion": "The word “considerate” is closest in meaning to ____ .",
+        "recommendedOptions": [
+          "thinking about other people",
+          "very noisy",
+          "always late",
+          "easy to break"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P5-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The scenario asks which action shows someone being considerate. 'Checking work carefully and helping others' clearly demonstrates thoughtfulness and helpfulness. Other options describe unhelpful or negative behaviours, so there is one defensible answer for P5 students.",
+        "recommendedQuestion": "Jason is considerate when working on a community project. Which action shows this best?",
+        "recommendedOptions": [
+          "Checking work carefully and helping others",
+          "Ignoring every instruction",
+          "Leaving without a reason",
+          "Never trying again"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P5-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The notice gives two times; the earlier required time (registration closes at 10:15) is the action students must follow. The correct option ('Register by 10:15') is unambiguous and suitable for P5. Distractors are clearly incorrect for the context.",
+        "recommendedQuestion": "A notice says a school event starts at 10:30 and registration closes at 10:15. What should a student do?",
+        "recommendedOptions": [
+          "Register by 10:15",
+          "Arrive after 10:30",
+          "Wait until noon",
+          "Bring nothing"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P5-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "A short text that explains how to prepare for a community project aims to give practical guidance. Other options (fantasy story, sell a uniform, describe a storm) are unrelated and make the correct answer unambiguous for P5 readers.",
+        "recommendedQuestion": "A short text explains how to prepare for a community project. Its main purpose is to ____ .",
+        "recommendedOptions": [
+          "give practical guidance",
+          "tell a fantasy story",
+          "sell a uniform",
+          "describe a storm"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P5-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Explaining a plan before starting a task reasonably implies the task matters to Jason (or the student). Distractors are clearly incorrect or too extreme. Language and cognitive demand suit P5.",
+        "recommendedQuestion": "Jason explains the plan before starting the task. What can we infer?",
+        "recommendedOptions": [
+          "The task matters to the student",
+          "The student dislikes every task",
+          "The plan is missing",
+          "Nothing can be inferred"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P5-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Calling the activity “a useful chance to learn together” uses positive language that best matches a supportive attitude. Other choices are clearly contradicted by the phrase.",
+        "recommendedQuestion": "The writer calls the activity “a useful chance to learn together”. The writer is most likely ____ .",
+        "recommendedOptions": [
+          "supportive",
+          "angry",
+          "uninterested",
+          "confused"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P5-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Pronoun antecedent is clear and unambiguous: 'It' refers to the nearest suitable noun 'the display'. Distractors are plausible but incorrect. Language and cognitive demand are appropriate for P5.",
+        "recommendedQuestion": "“The class prepared a display. It was shown in the hall.” What does “It” refer to?",
+        "recommendedOptions": [
+          "The display",
+          "The hall",
+          "The class",
+          "The preparation"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P5-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence shows cause (practised) and result (presentation became clearer); 'therefore' correctly signals result. Other connectors do not fit the meaning. Structure and vocabulary suit P5.",
+        "recommendedQuestion": "Jason practised regularly; ____ , the presentation became clearer.",
+        "recommendedOptions": [
+          "therefore",
+          "however",
+          "although",
+          "unless"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P5-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The webpage elements (steps, reminders, sign-up link) clearly indicate the purpose is to get people to join a community project. Distractors are unrelated and unlikely to confuse P5 students.",
+        "recommendedQuestion": "A webpage gives steps, reminders and a sign-up link for a community project. It is mainly designed to ____ .",
+        "recommendedOptions": [
+          "invite people to take part",
+          "sell a house",
+          "teach swimming",
+          "report a storm"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P5-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The detail 'asks questions and shares ideas with classmates' directly shows active engagement and interest in learning. Other options are irrelevant facts and do not support the idea.",
+        "recommendedQuestion": "Which detail best supports the idea that Jason enjoys learning?",
+        "recommendedOptions": [
+          "Jason asks questions and shares ideas with classmates.",
+          "Jason owns a blue bag.",
+          "Jason eats lunch at noon.",
+          "Jason walks home."
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

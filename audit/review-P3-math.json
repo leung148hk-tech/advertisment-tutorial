@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T10:10:11.177861+00:00",
+  "grade": "P3",
+  "track": "math",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 P3 math items (three-digit addition and subtraction). Both items are correct, unambiguous, age-appropriate, and have a single best answer. Recommend keeping original content.\n\nPart 2/5: 兩題均為小三程度的基礎算術題，題幹清晰、選項合理且只有一個最佳答案。建議保留原題內容。\n\nPart 3/5: 本批次兩題（每題含兩個情境版本）均為小三數學範圍內的基礎題目，題幹清晰、選項合理且只有一個最佳答案，建議保留原題不作修改。\n\nPart 4/5: 本批次為小三數學題（數據與統計），兩題均為基礎題目，題幹清楚、選項合理，皆有唯一明確正確答案，難度與年級相符，建議通過（PASS）。\n\nPart 5/5: Two P3 mathematics items (multi-step/shop-problem and reverse operation) were reviewed. Both items are clear, age-appropriate, have a single best answer, and the supplied correct answers are correct. Recommend PASS for both.",
+    "reviews": [
+      {
+        "id": "math-P3-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Calculation 126 + 278 = 404 is correct (126+278 = 300+90+14 = 404). Options contain exactly one correct choice. Hint is suitable for P3 (add hundreds, tens, units). No ambiguity.",
+        "recommendedQuestion": "126 + 278 = ?",
+        "recommendedOptions": [
+          "394",
+          "404",
+          "414",
+          "424"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P3-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Calculation 704 − 256 = 448 is correct (704−256 = 704−200−50−6 = 448). Options contain exactly one correct choice. Hint about borrowing is appropriate for P3. No ambiguity.",
+        "recommendedQuestion": "704 − 256 = ?",
+        "recommendedOptions": [
+          "438",
+          "448",
+          "458",
+          "468"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P3-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "乘法題 7 × 8 的正確答案是 56。題目簡潔明確，提示（乘法口訣）與小三課程相符；干擾選項合理且不會導致多重可辯答案（48、54、64 為常見錯誤計算結果）。",
+        "recommendedQuestion": "7 × 8 = ?",
+        "recommendedOptions": [
+          "48",
+          "54",
+          "56",
+          "64"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-P3-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "同分母分數相加：1/4 + 2/4 = (1+2)/4 = 3/4。題目語句清楚，提示正確，干擾選項（1/6、2/8、3/8）合理且不造成多義性。",
+        "recommendedQuestion": "1/4 + 2/4 = ?",
+        "recommendedOptions": [
+          "1/6",
+          "2/8",
+          "3/4",
+          "3/8"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-P3-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "長方形周界 = 2 × (長 + 闊) = 2 × (5 + 3) = 16 厘米，選項中只有 16 厘米 為正確答案。題目語言與計算難度均適合小三「圖形與量度」課題。",
+        "recommendedQuestion": "一個長方形長 5 厘米、闊 3 厘米，周界是多少？",
+        "recommendedOptions": [
+          "8 厘米",
+          "15 厘米",
+          "16 厘米",
+          "20 厘米"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-P3-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "從 9:20 到 11:00 經過的時間為 1 小時 40 分（9:20→10:00 為 40 分，加上 10:00→11:00 的 1 小時），選項中只有「1 小時 40 分」正確。提示方法合適且易於小三理解。",
+        "recommendedQuestion": "由上午 9 時 20 分到上午 11 時，經過多少時間？",
+        "recommendedOptions": [
+          "1 小時 20 分",
+          "1 小時 40 分",
+          "2 小時",
+          "2 小時 20 分"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P3-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目要求比大小並相減：15 − 9 = 6。題幹無歧義，四個選項包含正確答案及合理錯誤干擾項（小差錯與把兩數相加的錯誤），符合小三程度。",
+        "recommendedQuestion": "長條圖中 A 組有 15 人，B 組有 9 人，兩組相差多少人？",
+        "recommendedOptions": [
+          "4 人",
+          "5 人",
+          "6 人",
+          "24 人"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-P3-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "平均數為總和除以人數： (4+6+8) ÷ 3 = 18 ÷ 3 = 6。題意明確，選項包含正確答案與常見誤答（如總和18），適合小三教學。",
+        "recommendedQuestion": "三位同學各有 4、6、8 張貼紙，平均每人有多少張？",
+        "recommendedOptions": [
+          "5 張",
+          "6 張",
+          "7 張",
+          "18 張"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P3-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Total stickers = 4 × 6 = 24. After giving away 5, remaining = 24 − 5 = 19. The correct option (19 張) is present and distractors are plausible. Language and hint are suitable for P3.",
+        "recommendedQuestion": "4 包貼紙每包 6 張，送了 5 張後還有多少張？",
+        "recommendedOptions": [
+          "17 張",
+          "19 張",
+          "21 張",
+          "24 張"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P3-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "If a number plus 18 equals 45, the original number = 45 − 18 = 27. The correct option (27) is available; distractors are reasonable. Language and hint are suitable for P3.",
+        "recommendedQuestion": "一個數加 18 後是 45，原來的數是多少？",
+        "recommendedOptions": [
+          "17",
+          "27",
+          "37",
+          "63"
+        ],
+        "recommendedCorrect": 1
+      }
+    ]
+  }
+}

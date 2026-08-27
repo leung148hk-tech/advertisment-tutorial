@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T10:17:51.998694+00:00",
+  "grade": "P4",
+  "track": "english-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Both P4 vocabulary items correctly test the meaning and use of 'responsible'. Items are clear, age-appropriate, unambiguous, and have a single best answer. Keep original wording and options.\n\nPart 2/5: Two P4 English reading detail/main-idea items. Both are clear, age-appropriate, have one unambiguous best answer and suitable distractors. Recommend passing as-is.\n\nPart 3/5: Two P4 reading-inference items reviewed. Both items are clear, age-appropriate, have a single best answer, and align with P4 inference skills. Recommend PASS for both.\n\nPart 4/5: Both items are clear, age-appropriate P4 reading items testing basic text connection (reference and connector). Each has one unambiguous best answer and fits the stated difficulty.\n\nPart 5/5: Both P4 integrated-reading items are clear, age-appropriate, and have one unambiguous best answer. No revision needed.",
+    "reviews": [
+      {
+        "id": "english-reading-P4-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The synonym 'reliable' is the clear and unambiguous best match for 'responsible'. Distractors are plausible but clearly incorrect for this meaning. Language and difficulty suit P4 learners.",
+        "recommendedQuestion": "The word “responsible” is closest in meaning to ____ .",
+        "recommendedOptions": [
+          "reliable",
+          "very noisy",
+          "always late",
+          "easy to break"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P4-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The scenario asks for an action that demonstrates being 'responsible'. 'Checking work carefully and helping others' is clearly the best and only appropriate choice. Other options depict irresponsible behaviour. Wording and context are suitable for P4.",
+        "recommendedQuestion": "Mia is responsible when working on a class activity. Which action shows this best?",
+        "recommendedOptions": [
+          "Checking work carefully and helping others",
+          "Ignoring every instruction",
+          "Leaving without a reason",
+          "Never trying again"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P4-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The notice gives two times; the student must act by the earlier required time (registration closes at 10:15). The correct option 'Register by 10:15' is the only sensible choice. Wording and distractors are simple and suitable for P4.",
+        "recommendedQuestion": "A notice says a school event starts at 10:30 and registration closes at 10:15. What should a student do?",
+        "recommendedOptions": [
+          "Register by 10:15",
+          "Arrive after 10:30",
+          "Wait until noon",
+          "Bring nothing"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P4-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "A short instructional text about preparing for a class activity has the clear main purpose of giving practical guidance. Other options (fantasy story, sell a uniform, describe a storm) are clearly unrelated, so there is one best answer suitable for P4.",
+        "recommendedQuestion": "A short text explains how to prepare for a class activity. Its main purpose is to ____ .",
+        "recommendedOptions": [
+          "give practical guidance",
+          "tell a fantasy story",
+          "sell a uniform",
+          "describe a storm"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P4-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence 'Mia organises the plan before starting the task' clearly implies Mia cares about the task or wants it done well. Distractors are implausible or contradictory. The item is simple and suitable for P4 inference practice.",
+        "recommendedQuestion": "Mia organises the plan before starting the task. What can we infer?",
+        "recommendedOptions": [
+          "The task matters to the student",
+          "The student dislikes every task",
+          "The plan is missing",
+          "Nothing can be inferred"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P4-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The phrase 'a useful chance to learn together' uses positive language showing the writer has a favourable, supportive attitude. The other options contradict that tone. This matches P4 level inference of writer's attitude.",
+        "recommendedQuestion": "The writer calls the activity “a useful chance to learn together”. The writer is most likely ____ .",
+        "recommendedOptions": [
+          "supportive",
+          "angry",
+          "uninterested",
+          "confused"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P4-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The pronoun 'It' clearly refers to the nearest suitable noun 'the display'. Distractors are plausible for young learners but only one is grammatically and contextually correct. The item matches P4 syllabus-level skills.",
+        "recommendedQuestion": "“The class prepared a display. It was shown in the hall.” What does “It” refer to?",
+        "recommendedOptions": [
+          "The display",
+          "The hall",
+          "The class",
+          "The preparation"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P4-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The connector that shows a result is 'therefore'. Other options express contrast or condition and do not fit the sentence meaning. The sentence is grammatically correct with 'therefore'.",
+        "recommendedQuestion": "Mia practised regularly; ____ , the presentation became clearer.",
+        "recommendedOptions": [
+          "therefore",
+          "however",
+          "although",
+          "unless"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P4-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The webpage elements (steps, reminders, sign-up link) clearly indicate the purpose is to invite participation. Distractors are irrelevant and implausible for the described webpage.",
+        "recommendedQuestion": "A webpage gives steps, reminders and a sign-up link for a class activity. It is mainly designed to ____ .",
+        "recommendedOptions": [
+          "invite people to take part",
+          "sell a house",
+          "teach swimming",
+          "report a storm"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P4-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The detail 'asks questions and shares ideas with classmates' directly shows interest in learning. Other options are irrelevant facts and do not support the idea.",
+        "recommendedQuestion": "Which detail best supports the idea that Mia enjoys learning?",
+        "recommendedOptions": [
+          "Mia asks questions and shares ideas with classmates.",
+          "Mia owns a blue bag.",
+          "Mia eats lunch at noon.",
+          "Mia walks home."
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

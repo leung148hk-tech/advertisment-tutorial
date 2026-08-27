@@ -1,0 +1,134 @@
+{
+  "generatedAt": "2026-08-26T11:49:25.494331+00:00",
+  "grade": "P6",
+  "track": "english-writing",
+  "canonicalQuestionCount": 11,
+  "variantQuestionCount": 33,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/6: Reviewed 2 items (and their context-only variants). Both items measure basic sentence-level grammar (completeness and word order) and their supplied metadata are educationally coherent.\n\nPart 2/6: Reviewed 2 items (each has two context-only variants). Both items accurately label the skill being assessed and use an appropriate module. No substantive metadata changes required.\n\nPart 3/6: Reviewed 2 P6 English-writing MC items (each has two context-only variants). Both items assess paragraph-level writing skills: selecting a topic sentence and selecting an appropriate supporting detail. Metadata is educationally coherent and aligned with the measured skills.\n\nPart 4/6: Reviewed 2 canonical items (each with two context-only variants). Both items measure the stated skills appropriately; no substantive metadata changes required.\n\nPart 5/6: Reviewed 2 items (each has two context-only variants). Both items measure straightforward writing skills and their metadata are appropriate.\n\nPart 6/6: Reviewed 1 item (applies to both context-only variants). All metadata fields accurately describe the skill assessed.",
+    "reviews": [
+      {
+        "id": "english-writing-P6-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify a complete sentence by recognising a clear subject and verb (sentence completeness). The current topic ('Sentence structure'), label ('Sentence structure') and module ('基礎掌握') accurately and coherently describe this basic sentence-level skill.",
+        "recommendedTopic": "Sentence structure",
+        "recommendedLabel": "Sentence structure",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-writing-P6-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses correct English word order (subject–verb–object and modifier placement). The label ('Sentence order'), topic ('Sentence structure') and module ('基礎掌握') appropriately describe this basic syntactic skill.",
+        "recommendedTopic": "Sentence structure",
+        "recommendedLabel": "Sentence order",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-writing-P6-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests correct verb tense (past simple) / language accuracy in verb forms. The existing topic and label ('Language accuracy') and module ('基礎掌握') coherently describe this basic grammar skill.",
+        "recommendedTopic": "Language accuracy",
+        "recommendedLabel": "Language accuracy",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-writing-P6-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses appropriate word/verb choice (vocabulary for communication). The given label ('Word choice') and topic ('Language accuracy') suitably describe the skill; the module ('基礎掌握') is appropriate for this basic-level item.",
+        "recommendedTopic": "Language accuracy",
+        "recommendedLabel": "Word choice",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-writing-P6-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to choose the best topic sentence introducing a paragraph, so the measured skill is identifying the main idea/topic sentence within paragraph organisation. The label 'Paragraph focus' and the topic 'Paragraph organisation' accurately describe this focus. The module '整合表達' (integrated expression/writing) is an appropriate higher-level grouping for this writing skill.",
+        "recommendedTopic": "Paragraph organisation",
+        "recommendedLabel": "Paragraph focus",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "english-writing-P6-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires choosing a specific supporting sentence that illustrates how planning helps a group, so it assesses the ability to identify supporting details/examples within paragraph organisation. The label 'Supporting detail', the topic 'Paragraph organisation', and the module '整合表達' correctly describe the skill and instructional domain.",
+        "recommendedTopic": "Paragraph organisation",
+        "recommendedLabel": "Supporting detail",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "english-writing-P6-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires choosing an appropriate linking expression that shows result/consequence. The label 'Linking' correctly names the tested skill. The topic 'Purpose, tone and linking' includes linking and is educationally coherent. The module '整合表達' (integrated expression) reasonably groups this skill.",
+        "recommendedTopic": "Purpose, tone and linking",
+        "recommendedLabel": "Linking",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "english-writing-P6-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses choosing an appropriate tone/register for an email (politeness and suitability). The label 'Purpose and tone' accurately names the skill. The topic 'Purpose, tone and linking' covers tone, and the module '整合表達' suitably groups communicative writing skills.",
+        "recommendedTopic": "Purpose, tone and linking",
+        "recommendedLabel": "Purpose and tone",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "english-writing-P6-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem asks students to choose an appropriate opening for a message to classmates, which assesses audience awareness and appropriate tone/purpose. The supplied label 'Audience awareness' and topic 'Purpose, tone and linking' correctly describe the skill. The module '整合表達' is an educationally coherent placement for a writing-choice task.",
+        "recommendedTopic": "Purpose, tone and linking",
+        "recommendedLabel": "Audience awareness",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "english-writing-P6-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires making a vague sentence more specific — a revision/editing skill. The label 'Revision' and topic 'Revision, editing and proofreading' accurately name the skill measured. The module '整合表達' is an appropriate classification for this writing/editing task.",
+        "recommendedTopic": "Revision, editing and proofreading",
+        "recommendedLabel": "Revision",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "english-writing-P6-10-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks which revision check is most useful before submitting writing, focusing on aligning ideas, examples and conclusion with the purpose (a higher-order revision skill). The supplied label and topic explicitly name revision/editing/proofreading, and the module '整合表達' (integrated expression) is an appropriate curricular placement for a writing-revision task.",
+        "recommendedTopic": "Revision, editing and proofreading",
+        "recommendedLabel": "Revision (editing and proofreading)",
+        "recommendedModule": "整合表達"
+      }
+    ]
+  }
+}

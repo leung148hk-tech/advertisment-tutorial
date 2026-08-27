@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-27T00:50:14.983333+00:00",
+  "grade": "S2",
+  "track": "math",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Both items are mathematically correct, unambiguous, and appropriate for S2. No changes required.\n\nPart 2/5: Two Secondary-2 math items (percentage change and direct proportion). Both items are clear, age-appropriate, have a single best answer, and the supplied answers are correct. No revision needed.\n\nPart 3/5: Reviewed 2 S2 math items (part 3 of 5). Both items are correct, age-appropriate, and have a single best answer. Recommend PASS for both.\n\nPart 4/5: 2 items reviewed (S2 math: Statistics and data). Both items are straightforward, age-appropriate, have a single best answer, and require no revision.\n\nPart 5/5: Reviewed 2 S2 math items (part 5 of 5). Both items are clear, unambiguous, age-appropriate, and have a single best answer. Recommend PASS for both.",
+    "reviews": [
+      {
+        "id": "math-S2-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Expansion (x+3)(x−2) multiplies to x^2 + x − 6. The provided correct option matches and distractors are distinct.",
+        "recommendedQuestion": "Expand (x + 3)(x − 2).",
+        "recommendedOptions": [
+          "x² + x − 6",
+          "x² + 5x − 6",
+          "x² − x − 6",
+          "x² − 6"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "math-S2-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Adding the two linear equations gives 2x = 12, so x = 6. The provided correct option is correct and unambiguous.",
+        "recommendedQuestion": "If x + y = 9 and x − y = 3, find x.",
+        "recommendedOptions": [
+          "3",
+          "4",
+          "6",
+          "12"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-S2-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Percentage increase = (92 - 80) ÷ 80 × 100% = 12/80 × 100% = 15%. Options are plausible distractors (mis-readings or common mistakes). The stem, hint and options are clear for S2.",
+        "recommendedQuestion": "A price rises from $80 to $92. What is the percentage increase?",
+        "recommendedOptions": [
+          "12%",
+          "15%",
+          "20%",
+          "115%"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-S2-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "y = kx with k = 18/6 = 3, so y = 3×10 = 30. The options include reasonable distractors and the stem and hint are suitable for S2.",
+        "recommendedQuestion": "y is directly proportional to x. If y=18 when x=6, find y when x=10.",
+        "recommendedOptions": [
+          "24",
+          "28",
+          "30",
+          "36"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-S2-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Using Pythagoras: hypotenuse = sqrt(6^2 + 8^2) = sqrt(100) = 10 cm. Options include one clear correct value and plausible distractors. Wording ('shorter sides') suitably indicates the two legs; no ambiguity for S2 level.",
+        "recommendedQuestion": "A right-angled triangle has shorter sides 6 cm and 8 cm. Find the hypotenuse.",
+        "recommendedOptions": [
+          "10 cm",
+          "12 cm",
+          "14 cm",
+          "48 cm"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "math-S2-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Volume of cuboid = 5 × 4 × 3 = 60 cm³. Correct option present and distractors are reasonable (non-multiples and smaller products). Clear instruction and appropriate for the grade.",
+        "recommendedQuestion": "Find the volume of a cuboid 5 cm by 4 cm by 3 cm.",
+        "recommendedOptions": [
+          "12 cm³",
+          "20 cm³",
+          "47 cm³",
+          "60 cm³"
+        ],
+        "recommendedCorrect": 3
+      },
+      {
+        "id": "math-S2-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Total counters = 3 + 5 = 8. Probability of red = favourable/total = 3/8. Distractors are common mistakes (3/5 might confuse number of reds with total, 5/8 swaps colours, 8/3 is >1).",
+        "recommendedQuestion": "A bag has 3 red and 5 blue counters. Find P(red).",
+        "recommendedOptions": [
+          "3/5",
+          "3/8",
+          "5/8",
+          "8/3"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-S2-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "List in order (already ordered). With 5 numbers the median is the middle (3rd) value = 7. Distractors include neighbouring values and the mean (8) as a trap.",
+        "recommendedQuestion": "Find the median of 4, 6, 7, 9, 11.",
+        "recommendedOptions": [
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-S2-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The cost model is linear: total cost = fixed cost + (cost per message) × number of messages, so 40 + 0.5m is correct. Distractors are clearly incorrect.",
+        "recommendedQuestion": "A mobile plan costs $40 plus $0.5 per message. Write an expression for m messages.",
+        "recommendedOptions": [
+          "40m + 0.5",
+          "40 + 0.5m",
+          "0.5(40 + m)",
+          "40 − 0.5m"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-S2-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Perimeter 34 = 2(l + w) ⇒ l + w = 17; with l = 10, w = 7. Options contain a single correct choice.",
+        "recommendedQuestion": "A rectangle has perimeter 34 cm and length 10 cm. Find its width.",
+        "recommendedOptions": [
+          "5 cm",
+          "7 cm",
+          "12 cm",
+          "17 cm"
+        ],
+        "recommendedCorrect": 1
+      }
+    ]
+  }
+}

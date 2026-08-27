@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-26T13:28:44.776946+00:00",
+  "grade": "S1",
+  "track": "science",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 items (each has two context-only variants with identical metadata; findings apply to all variants). Both items measure straightforward skills in planning/doing simple investigations and selecting appropriate apparatus.\n\nPart 2/5: Reviewed 2 items (plus two context-only variants each). Both items measure straightforward factual knowledge in life science and their supplied metadata are appropriate; no revisions required.\n\nPart 3/5: Reviewed 2 items (each has two context-only variants with identical metadata). Both items' metadata are appropriate and educationally coherent.\n\nPart 4/5: Reviewed 2 items. Both items measure straightforward Year 7 science concepts and their provided metadata accurately match the skills tested. Verdict: 2 PASS.\n\nPart 5/5: Reviewed 2 science S1 items (each applies to two context-only variants). Both items measure straightforward science-process skills and their metadata are educationally coherent. Recommend no substantive changes.",
+    "reviews": [
+      {
+        "id": "science-S1-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses understanding of a fair test and control of variables (identifying the variable to change — the independent variable). The label 'Fair test', topic 'Scientific investigation' and module '理解與應用' accurately describe this skill.",
+        "recommendedTopic": "Scientific investigation",
+        "recommendedLabel": "Fair test",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S1-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires selecting the correct scientific instrument for measuring liquid volume, so the label 'Measurement', topic 'Scientific investigation' and module '理解與應用' appropriately match the skill tested.",
+        "recommendedTopic": "Scientific investigation",
+        "recommendedLabel": "Measurement",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S1-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the organelle that controls cell activities (nucleus) — a basic factual question about cell structure. The label 'Cells', topic 'Life science' and module '理解與應用' (Understanding & Application) accurately reflect the skill measured.",
+        "recommendedTopic": "Life science",
+        "recommendedLabel": "Cells",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S1-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the main purpose of photosynthesis (to make glucose) — a basic factual question about plant nutrition. The label 'Nutrition', topic 'Life science' and module '理解與應用' appropriately describe the tested knowledge.",
+        "recommendedTopic": "Life science",
+        "recommendedLabel": "Nutrition",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S1-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify the process that converts a liquid to a gas (evaporation/boiling). This is a factual conceptual question about states of matter. The label 'States of matter' accurately names the skill. The topic 'Matter and energy' appropriately encompasses states of matter. The module '理解與應用' (understanding and application) fits the cognitive demand of recognising and applying a basic scientific concept.",
+        "recommendedTopic": "Matter and energy",
+        "recommendedLabel": "States of matter",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S1-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify which material is the best thermal conductor, testing knowledge of heat transfer and material properties. The label 'Heat transfer' correctly names the skill. The topic 'Matter and energy' suitably covers thermal conduction. The module '理解與應用' is appropriate for this basic conceptual/application item.",
+        "recommendedTopic": "Matter and energy",
+        "recommendedLabel": "Heat transfer",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S1-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses understanding of balanced forces (weight vs. support/normal force). The label 'Forces' precisely names the skill. The broader topic 'Forces and electricity' still coherently includes this item, and the module '理解與應用' (Understanding & Application) fits the cognitive demand.",
+        "recommendedTopic": "Forces and electricity",
+        "recommendedLabel": "Forces",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S1-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests identification of a circuit component and its function (opening/closing a circuit = switch). The label 'Electricity' is appropriate; the topic 'Forces and electricity' reasonably groups this item, and the module '理解與應用' matches the expected skill level.",
+        "recommendedTopic": "Forces and electricity",
+        "recommendedLabel": "Electricity",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S1-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify the independent variable from a graph/experiment, which is a data-interpretation/variables skill. The current label 'Data interpretation', topic 'Data and application' and module '理解與應用' appropriately describe the measured skill.",
+        "recommendedTopic": "Data and application",
+        "recommendedLabel": "Data interpretation",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S1-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item targets understanding of why experiments are repeated (reliability/replication), so the label 'Experimental design (reliability)' and topic 'Experimental design and reliability' match the measured skill. The module '情境推理' is educationally coherent for applying reasoning about experimental practice.",
+        "recommendedTopic": "Experimental design and reliability",
+        "recommendedLabel": "Experimental design (reliability)",
+        "recommendedModule": "情境推理"
+      }
+    ]
+  }
+}

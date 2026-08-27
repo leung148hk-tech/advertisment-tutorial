@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-27T01:10:01.855309+00:00",
+  "grade": "S3",
+  "track": "english-writing",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Two S3 grammar items reviewed (tense and subject–verb agreement). Both items are correct, unambiguous, and appropriate for the stated grade and difficulty; no revision needed.\n\nPart 2/5: Reviewed 2 S3 English-writing items (word choice and register). Both items are clear, unambiguous, have a single best answer and are grade-appropriate. Recommend keeping original wording and keys.\n\nPart 3/5: Reviewed two S3 English-writing multiple-choice items on paragraph organisation and identifying supporting details. Both items are clear, age-appropriate, have one defensible correct answer, and use plausible distractors. Recommend keeping the original items unchanged.\n\nPart 4/5: Both items are clear, age-appropriate S3 writing items with a single best answer. No revision required; keep original wording and options.\n\nPart 5/5: Reviewed 2 S3 English-writing items (Editing; Writing planning). Both items are valid and passed review with correct supplied answers.",
+    "reviews": [
+      {
+        "id": "english-writing-S3-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The time marker 'yesterday' requires a past-tense verb; only 'completed' fits grammatically. Distractors are clearly incorrect forms. The item matches S3 syllabus-level grammar and is unambiguous.",
+        "recommendedQuestion": "Jordan ____ the report yesterday.",
+        "recommendedOptions": [
+          "completed",
+          "complete",
+          "completes",
+          "completing"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-S3-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Only option 0, 'Each student has a clear role.', shows correct subject–verb agreement with singular 'each' + singular verb 'has'. Other options contain number mismatch or incorrect form. This is clear and suitable for S3.",
+        "recommendedQuestion": "Choose the grammatically correct sentence.",
+        "recommendedOptions": [
+          "Each student has a clear role.",
+          "Each student have a clear role.",
+          "Each students has a clear role.",
+          "Each student having a clear role."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-S3-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence gives positive evidence ('gives clear steps and evidence'), so 'effective' is clearly the best fit. Other options are clearly inappropriate in this context, so there is one unambiguous correct choice suitable for S3 vocabulary practice.",
+        "recommendedQuestion": "Which word best completes the sentence? ‘The proposal is ____ because it gives clear steps and evidence.’",
+        "recommendedOptions": [
+          "effective",
+          "careless",
+          "silent",
+          "ordinary"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-S3-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The first sentence uses polite, formal language appropriate for a teacher. The other options are rude, informal or inappropriate for a formal email. There is a single best choice that matches the register target for S3 students.",
+        "recommendedQuestion": "Which sentence is most suitable for a formal email to a teacher?",
+        "recommendedOptions": [
+          "Could you please clarify the deadline for the assignment?",
+          "Tell me the deadline now.",
+          "I do not care about it.",
+          "Your instructions are bad."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-S3-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks for a topic sentence about an environmental campaign and option 0 directly states a relevant central idea. The other options are unrelated sentences and serve as clear distractors. The item matches S3 expectations for topic-sentence identification.",
+        "recommendedQuestion": "Which topic sentence best introduces a paragraph about an environmental campaign?",
+        "recommendedOptions": [
+          "an environmental campaign can help students develop responsibility and cooperation.",
+          "The room has a clock.",
+          "I have a bag.",
+          "Wednesday is a day."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-S3-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The prompt asks for a sentence that best supports the idea that planning improves a project. Option 0 provides a specific supporting example (assigning roles, deadlines, and completing stages), while the other choices are general or irrelevant statements. This is a clear, grade-appropriate supporting-detail item.",
+        "recommendedQuestion": "Which sentence best supports the idea that planning improves a project?",
+        "recommendedOptions": [
+          "The group assigned roles, set deadlines, and completed each stage on time.",
+          "Planning is important.",
+          "Some projects are difficult.",
+          "Everyone has ideas."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-S3-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence pair signals a cause/consequence relation. \"As a result\" is the only option that correctly expresses that logical relation. Other choices (Although, Unless, Instead of) create contradiction, condition, or contrast and are therefore incorrect. Distractors are plausible for testing conjunction choice but do not create ambiguity. Wording and difficulty are appropriate for S3.",
+        "recommendedQuestion": "I compared the evidence carefully. ____ , I revised my conclusion.",
+        "recommendedOptions": [
+          "As a result",
+          "Although",
+          "Unless",
+          "Instead of"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-S3-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The target is to make a vague sentence precise. Option 0 supplies specific, measurable outcomes (students presenting evidence and responding to questions confidently), which makes the sentence precise. The other options are vague, irrelevant, or contain an obvious error (\"The activity was good good.\"). This is a clear, single-best-choice item suitable for S3.",
+        "recommendedQuestion": "Which revision makes ‘The activity was good’ more precise?",
+        "recommendedOptions": [
+          "The activity helped students present evidence and respond to questions confidently.",
+          "The activity was good good.",
+          "The activity happened.",
+          "It was nice."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-S3-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 1 (“Students can research, discussing, and present findings.”) breaks parallel structure by mixing verb forms (infinitive/base form 'research' and 'present' with a gerund 'discussing'). The other sentences are grammatical. The item tests parallelism clearly at an appropriate S3 level.",
+        "recommendedQuestion": "Which sentence needs correction?",
+        "recommendedOptions": [
+          "Students can research, discuss, and present their findings.",
+          "Students can research, discussing, and present findings.",
+          "Students research the topic carefully.",
+          "Students presented their ideas."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "english-writing-S3-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 (“List the purpose, audience, key points and supporting examples.”) is the clear, single best pre-writing step to prevent going off-topic. The other options are clearly poor strategies. The task aligns with S3 composition planning skills.",
+        "recommendedQuestion": "Before writing a composition, which step best prevents going off-topic?",
+        "recommendedOptions": [
+          "List the purpose, audience, key points and supporting examples.",
+          "Write the conclusion first without reading the task.",
+          "Use difficult words only.",
+          "Skip planning completely."
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

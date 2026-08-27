@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T14:02:42.169811+00:00",
+  "grade": "S2",
+  "track": "english-writing",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 items (each with two context-only variants). Both items are clear, unambiguous, age-appropriate for S2, and have a single best answer. Recommend PASS for both.\n\nPart 2/5: Both items are clear, age-appropriate S2 register/vocabulary questions with one unambiguous best answer each. No revision needed.\n\nPart 3/5: Reviewed 2 S2 English-writing items (paragraph organisation and supporting detail). Both items have a single clear best answer, age-appropriate content and difficulty, and use syllabus-adjacent skills (topic sentence selection and identifying supporting detail). Minor punctuation/capitalisation issues noted but they do not affect item validity.\n\nPart 4/5: Both items are appropriate for S2 English writing (cohesion and specificity). Each has a single best answer that matches the intended teaching point. No revisions needed.\n\nPart 5/5: Both items are clear, grade-appropriate S2 multiple-choice questions. Each has a single best answer and the supplied correct index is correct. Recommend keeping both items unchanged.",
+    "reviews": [
+      {
+        "id": "english-writing-S2-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence contains the past-time marker 'yesterday', so a past-tense verb is required. 'completed' is the correct simple past form. Other options are present tense or a participle and are therefore incorrect. Distractors are plausible but not ambiguous for the given time marker.",
+        "recommendedQuestion": "Mia ____ the report yesterday.",
+        "recommendedOptions": [
+          "completed",
+          "complete",
+          "completes",
+          "completing"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-S2-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The subject 'Each student' is singular, so it takes the singular verb 'has'. The first option is grammatically correct. The other options show subject-verb disagreement, incorrect pluralisation, or an incorrect verb form.",
+        "recommendedQuestion": "Choose the grammatically correct sentence.",
+        "recommendedOptions": [
+          "Each student has a clear role.",
+          "Each student have a clear role.",
+          "Each students has a clear role.",
+          "Each student having a clear role."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-S2-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence context is positive and points to a word meaning 'works well' — 'effective' is the only option that logically fits the reason given. Distractors are clearly inappropriate, and vocabulary and sentence structure suit S2.",
+        "recommendedQuestion": "Which word best completes the sentence? ‘The proposal is ____ because it gives clear steps and evidence.’",
+        "recommendedOptions": [
+          "effective",
+          "careless",
+          "silent",
+          "ordinary"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-S2-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The item tests register and tone. The first option is polite and suitable for a formal email to a teacher; the other options are impolite or inappropriate. The prompt and distractors are clear for S2 students.",
+        "recommendedQuestion": "Which sentence is most suitable for a formal email to a teacher?",
+        "recommendedOptions": [
+          "Could you please clarify the deadline for the assignment?",
+          "Tell me the deadline now.",
+          "I do not care about it.",
+          "Your instructions are bad."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-S2-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The first option states a clear central idea appropriate for a topic sentence about a community event. The other options are irrelevant details and do not introduce the paragraph. There is a single defensible answer and the item matches S2 writing syllabus expectations.",
+        "recommendedQuestion": "Which topic sentence best introduces a paragraph about a community event?",
+        "recommendedOptions": [
+          "a community event can help students develop responsibility and cooperation.",
+          "The room has a clock.",
+          "I have a bag.",
+          "Wednesday is a day."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-S2-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The first option gives a specific, concrete example showing how planning improved a project (roles assigned, deadlines set, stages completed), which directly supports the idea. The distractors are vague general statements and are not strong supporting details. The item is clear and syllabus-appropriate.",
+        "recommendedQuestion": "Which sentence best supports the idea that planning improves a project?",
+        "recommendedOptions": [
+          "The group assigned roles, set deadlines, and completed each stage on time.",
+          "Planning is important.",
+          "Some projects are difficult.",
+          "Everyone has ideas."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-S2-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence pair requires a cohesive device showing result. \"As a result\" correctly signals that the second sentence follows from the first. The other choices (Although, Unless, Instead of) do not express a cause–effect relation and are therefore incorrect but plausible distractors for this level.",
+        "recommendedQuestion": "I compared the evidence carefully. ____ , I revised my conclusion.",
+        "recommendedOptions": [
+          "As a result",
+          "Although",
+          "Unless",
+          "Instead of"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-S2-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The task asks for a more precise revision. The first option gives specific observable outcomes and behaviours (present evidence; respond to questions confidently), making it clearly more precise than the vague originals. The other options are either tautological or remain vague.",
+        "recommendedQuestion": "Which revision makes ‘The activity was good’ more precise?",
+        "recommendedOptions": [
+          "The activity helped students present evidence and respond to questions confidently.",
+          "The activity was good good.",
+          "The activity happened.",
+          "It was nice."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-S2-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 1 ('Students can research, discussing, and present findings.') violates parallel structure by mixing verb forms (infinitive/main verb + gerund + bare infinitive). The other options are grammatically correct. The supplied correct index (1) is correct.",
+        "recommendedQuestion": "Which sentence needs correction?",
+        "recommendedOptions": [
+          "Students can research, discuss, and present their findings.",
+          "Students can research, discussing, and present findings.",
+          "Students research the topic carefully.",
+          "Students presented their ideas."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "english-writing-S2-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 ('List the purpose, audience, key points and supporting examples.') is the most effective pre-writing step to prevent going off-topic. The other options recommend poor or counterproductive strategies. The supplied correct index (0) is correct.",
+        "recommendedQuestion": "Before writing a composition, which step best prevents going off-topic?",
+        "recommendedOptions": [
+          "List the purpose, audience, key points and supporting examples.",
+          "Write the conclusion first without reading the task.",
+          "Use difficult words only.",
+          "Skip planning completely."
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

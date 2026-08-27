@@ -1,0 +1,200 @@
+{
+  "generatedAt": "2026-08-26T10:08:33.304087+00:00",
+  "grade": "P3",
+  "track": "english-writing",
+  "canonicalQuestionCount": 11,
+  "variantQuestionCount": 33,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/6: Two Primary 3 English-writing sentence-structure items reviewed. Both items are clear, unambiguous, age-appropriate, and have a single best answer. No revision needed.\n\nPart 2/6: Reviewed two P3 English-writing multiple-choice items (language accuracy/word choice). Both items are clear, age-appropriate, have a single best answer, and align with the P3 syllabus. Recommend keeping both unchanged.\n\nPart 3/6: Both P3 English-writing items are clear, grade-appropriate, and have a single best answer that matches the target skill (identifying a topic sentence and identifying a supporting detail). No revision needed.\n\nPart 4/6: Two P3 English-writing items reviewed: one on linking words between sentences, one on purpose and tone for emailing a teacher. Both items are age-appropriate and have a single best answer when considering the provided hint and context.\n\nPart 5/6: Reviewed 2 P3 English-writing items (audience awareness and revision). Both items are clear, age-appropriate, have a single best answer, and the supplied correct answers are correct. Recommend keeping both items unchanged.\n\nPart 6/6: One P3 integrated-writing item reviewing a final-check strategy. The correct option is clear and age-appropriate; distractors are clearly wrong and absurd. Recommend keeping the item as written.",
+    "reviews": [
+      {
+        "id": "english-writing-P3-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem is clear for P3: students must identify the most complete sentence. Only option 0 has a clear subject (‘Kevin’), verb (‘reads’) and object/phrase, while the other options are sentence fragments. Distractors are plausible for this grade.",
+        "recommendedQuestion": "Choose the most complete sentence.",
+        "recommendedOptions": [
+          "Kevin reads the instructions carefully.",
+          "Because Kevin careful.",
+          "Reads the instructions.",
+          "The instructions carefully."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P3-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The task asks for clearest word order; option 0 follows the standard subject–verb–object–adverbial order suitable for P3. Other options contain incorrect word order or missing function words, making them clearly incorrect.",
+        "recommendedQuestion": "Choose the sentence with the clearest word order.",
+        "recommendedOptions": [
+          "Kevin helps a friend after school.",
+          "Helps Kevin a friend after school.",
+          "A friend Kevin helps after school.",
+          "After school friend Kevin helps a a."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P3-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The time adverb 'yesterday' clearly requires the simple past tense. 'wrote' is the only grammatically correct choice; other options are plausible distractors for P3 learners.",
+        "recommendedQuestion": "Kevin ____ a short note yesterday.",
+        "recommendedOptions": [
+          "wrote",
+          "write",
+          "writes",
+          "writing"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P3-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "'Please ____ your ideas clearly in the report.' correctly takes a communication verb. 'express' is the only sensible choice among the options; distractors are clearly incorrect for this context.",
+        "recommendedQuestion": "Please ____ your ideas clearly in the report.",
+        "recommendedOptions": [
+          "express",
+          "borrow",
+          "sleep",
+          "hide"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P3-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 is a clear topic sentence about a helpful friend and could begin a short writing on that subject. The other options are unrelated and cannot function as an opening sentence for that topic.",
+        "recommendedQuestion": "Which sentence could begin a short writing about a helpful friend?",
+        "recommendedOptions": [
+          "A helpful friend is kind and ready to help others.",
+          "The room has four windows.",
+          "I have a pencil.",
+          "Tuesday is a day."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P3-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 gives a specific example (shared jobs and finishing steps on time) that directly supports the idea that planning helps a group. The distractors are irrelevant to planning and therefore weak.",
+        "recommendedQuestion": "Which sentence best supports the idea that planning helps a group?",
+        "recommendedOptions": [
+          "The group shared jobs and finished each step on time.",
+          "Planning is a word.",
+          "Some shoes are expensive.",
+          "Everyone is different."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P3-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The hint says the second sentence follows from the first (consequence), so 'As a result' is the intended and best fit. Although 'However' could express a contrasting idea, the hint removes that ambiguity. Distractors are simple and appropriate for P3.",
+        "recommendedQuestion": "I checked my work carefully. ____ , I found two mistakes.",
+        "recommendedOptions": [
+          "As a result",
+          "Although",
+          "Unless",
+          "However"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P3-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 is clearly the polite, appropriate sentence for an email to a teacher. Other options are rude or inappropriate, so there is one unambiguous best choice for P3 students.",
+        "recommendedQuestion": "Which sentence is most suitable for an email to a teacher?",
+        "recommendedOptions": [
+          "Could you please explain the homework deadline?",
+          "Send me the answer now.",
+          "I do not care.",
+          "Your work is bad."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P3-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The target reader is classmates; the first option is a friendly, clear opening suitable for a class message. The other options are clearly inappropriate for the intended audience. Language and task are appropriate for Primary 3.",
+        "recommendedQuestion": "Which opening is most suitable for a message to classmates about an activity?",
+        "recommendedOptions": [
+          "Hi everyone, please join our class activity on Friday.",
+          "You must come now.",
+          "I do not want to explain.",
+          "This sentence has no purpose."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P3-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The first option makes the sentence specific by describing what happened and the result (classmates shared ideas and solved a problem). The other choices are vague, repetitive, or meaningless. This revision task fits P3 skills.",
+        "recommendedQuestion": "Which revision makes “The activity was good” more specific?",
+        "recommendedOptions": [
+          "The activity helped classmates share ideas and solve a problem together.",
+          "The activity was good good.",
+          "The activity was an activity.",
+          "It was good."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P3-10-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks which check is most useful before submitting writing; option 0 (checking that ideas, examples and conclusion match the purpose) directly addresses content and coherence and is the best single choice. The other options are clearly inappropriate (remove all full stops, use longest words, turn all sentences into questions), so there is no ambiguity. Wording is simple enough for P3 students, and the hint correctly directs attention beyond spelling.",
+        "recommendedQuestion": "Before submitting writing, which check is most useful?",
+        "recommendedOptions": [
+          "Check if ideas, examples and conclusion match the purpose.",
+          "Remove every full stop.",
+          "Use the longest words.",
+          "Change every sentence to a question."
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "generatedAt": "2026-08-26T10:45:48.104886+00:00",
+  "grade": "P6",
+  "track": "english-writing",
+  "canonicalQuestionCount": 11,
+  "variantQuestionCount": 33,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/6: Both items are clear, age-appropriate P6 sentence-structure questions with one unambiguous best answer each. No revisions needed.\n\nPart 2/6: Review of 2 P6 English-writing items (language accuracy and word choice). Both items are clear, age-appropriate, have one unambiguous best answer, and require no revision.\n\nPart 3/6: Reviewed 2 P6 English-writing items on paragraph organisation. Both items are clear, unambiguous, grade-appropriate, and have a single best answer. Recommend PASS for both.\n\nPart 4/6: Both P6 items are clear, age-appropriate, have a single best answer, and match the intended skills (linking and tone in writing). Recommend passing both without revision.\n\nPart 5/6: Two P6 English-writing items on audience awareness and revision. Both items are clear, age-appropriate, and have a single best answer; pass without changes.\n\nPart 6/6: One P6 integrated writing item reviewed. The item tests revision skills (checking content fits purpose). It is clear, age-appropriate, has one unambiguous best answer, and requires only basic syllabus-aligned knowledge. PASS.",
+    "reviews": [
+      {
+        "id": "english-writing-P6-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 is the only complete, grammatically correct sentence with a subject (Sophie), verb (evaluates) and adverb (carefully). All other options are sentence fragments or ungrammatical, so there is a single clear best choice.",
+        "recommendedQuestion": "Choose the most complete sentence.",
+        "recommendedOptions": [
+          "Sophie evaluates the task carefully.",
+          "Because Sophie careful.",
+          "evaluates the task.",
+          "The task carefully."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P6-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 is the only sentence with correct English word order (subject + verb + object/phrase). The other options present incorrect order or are ungrammatical, so the item has one clear correct answer.",
+        "recommendedQuestion": "Choose the sentence with the clearest word order.",
+        "recommendedOptions": [
+          "Sophie evaluates ideas for an environmental proposal.",
+          "evaluates Sophie ideas.",
+          "Ideas Sophie for evaluates.",
+          "For an environmental proposal ideas evaluates."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P6-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The time adverb 'yesterday' requires past tense; 'wrote' is the correct past-tense verb. The distractors are grammatically incorrect for the sentence. The item is clear and suitable for P6.",
+        "recommendedQuestion": "Sophie ____ a short note yesterday.",
+        "recommendedOptions": [
+          "wrote",
+          "write",
+          "writes",
+          "writing"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P6-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The verb 'express' correctly completes the polite request to communicate ideas clearly. Other options are unrelated and clearly wrong, so there is a single best choice appropriate for P6 vocabulary.",
+        "recommendedQuestion": "Please ____ your ideas clearly in the report.",
+        "recommendedOptions": [
+          "express",
+          "borrow",
+          "sleep",
+          "hide"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P6-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks for a topic sentence introducing an environmental proposal. Option 0 clearly states the main idea and is directly related to the topic; the other options are irrelevant distractors. Language and cognitive demand suit P6.",
+        "recommendedQuestion": "Which topic sentence best introduces a paragraph about an environmental proposal?",
+        "recommendedOptions": [
+          "An environmental proposal can help students improve their school community.",
+          "The room has four windows.",
+          "I have a pencil.",
+          "Tuesday is a day."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P6-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The prompt requests a supporting sentence that shows planning helps a group. Option 0 gives a specific example (shared jobs and timely completion) that directly supports the idea; other choices are irrelevant. Clear and suitable for P6.",
+        "recommendedQuestion": "Which sentence best supports the idea that planning helps a group?",
+        "recommendedOptions": [
+          "The group shared jobs and finished each step on time.",
+          "Planning is a word.",
+          "Some shoes are expensive.",
+          "Everyone is different."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P6-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The second sentence follows from the first, so a result connector is required. 'As a result' correctly shows the consequence. 'Although' and 'Unless' introduce contrasts/conditions and 'However' signals contrast, so they are incorrect. The distractors are plausible but clearly incorrect at P6 level.",
+        "recommendedQuestion": "We checked the facts carefully. ____ , our proposal was more accurate.",
+        "recommendedOptions": [
+          "As a result",
+          "Although",
+          "Unless",
+          "However"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P6-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 uses a polite, clear request suitable for emailing a teacher. The other options are impolite or inappropriate for a teacher email, so there is a single best choice.",
+        "recommendedQuestion": "Which sentence is most suitable for an email to a teacher?",
+        "recommendedOptions": [
+          "Could you please explain the homework deadline?",
+          "Send me the answer now.",
+          "I do not care.",
+          "Your work is bad."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P6-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem is clear and asks for a suitable opening for classmates. Option 0 is clearly the friendliest and most appropriate tone for a class message; the other options are evidently unsuitable. Distractors are simple but effective for P6 level.",
+        "recommendedQuestion": "Which opening is most suitable for a message to classmates about an activity?",
+        "recommendedOptions": [
+          "Hi everyone, please join our class activity on Friday.",
+          "You must come now.",
+          "I do not want to explain.",
+          "This sentence has no purpose."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P6-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The task asks for a more specific revision of a vague sentence. Option 0 adds concrete details about what made the activity good (sharing ideas and solving a problem), making it the clear best choice. Other options are vague, repetitive, or meaningless, suitable as distractors at this level.",
+        "recommendedQuestion": "Which revision makes “The activity was good” more specific?",
+        "recommendedOptions": [
+          "The activity helped classmates share ideas and solve a problem together.",
+          "The activity was good good.",
+          "The activity was an activity.",
+          "It was good."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P6-10-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks which check is most useful before submitting writing, and the hint directs students to look beyond spelling. Option 1 (Check if ideas, examples and conclusion match the purpose) directly tests revision for coherence and purpose — a key P6 writing skill. The other options are clearly inappropriate distractors (remove every full stop; use the longest words; change every sentence to a question), so there is a single best answer. Language and cognitive demand are suitable for Primary 6.",
+        "recommendedQuestion": "Before submitting writing, which check is most useful?",
+        "recommendedOptions": [
+          "Check if ideas, examples and conclusion match the purpose.",
+          "Remove every full stop.",
+          "Use the longest words.",
+          "Change every sentence to a question."
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-26T11:43:41.237259+00:00",
+  "grade": "P6",
+  "track": "chinese-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 items (P6 Chinese reading, part 1 of 5). Both items measure vocabulary knowledge (word meaning and word usage) and their supplied metadata (label, topic, module) are appropriate. Recommend no changes.\n\nPart 2/5: Reviewed 2 P6 Chinese-reading items (part 2 of 5). Both items measure the skills indicated by their metadata; no substantive revisions required.\n\nPart 3/5: Reviewed 2 items (P6 Chinese reading). Both items measure straightforward contextual inference about a person's trait or motive and their metadata are appropriate.\n\nPart 4/5: Reviewed 2 items (each has two context-only variants sharing metadata). Both items measure basic sentence-level reading skills (identifying a rhetorical device and understanding sentence meaning). No substantive metadata changes required.\n\nPart 5/5: Reviewed 2 items (P6 Chinese reading). Both items measure straightforward reading-comprehension skills (main idea identification and text-structure recognition). Metadata (label, topic, module) are educationally coherent and appropriately describe the measured skills.",
+    "reviews": [
+      {
+        "id": "chinese-reading-P6-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the closest meaning of the word 「審慎」, so it assesses vocabulary/word-meaning knowledge. The label '字詞理解', topic '字詞理解與運用', and module '基礎掌握' correctly describe this basic vocabulary comprehension task.",
+        "recommendedTopic": "字詞理解與運用",
+        "recommendedLabel": "字詞理解",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P6-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks which sentence appropriately uses 「審慎」, so it assesses vocabulary usage/contextual application. The label '詞語運用', topic '字詞理解與運用', and module '基礎掌握' accurately describe this skill.",
+        "recommendedTopic": "字詞理解與運用",
+        "recommendedLabel": "詞語運用",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P6-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the passage's main point (主旨大意). The label and topic ('主旨大意') correctly identify the skill; the module '理解與應用' is appropriate for comprehension tasks.",
+        "recommendedTopic": "主旨大意",
+        "recommendedLabel": "主旨大意",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P6-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires locating a specific detail (報到時間) in the notice. The topic '訊息定位', label '細節理解', and module '理解與應用' accurately describe the measured skill.",
+        "recommendedTopic": "訊息定位",
+        "recommendedLabel": "細節理解",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P6-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks students to infer a character trait from an action (comparing data before making a suggestion). The label '人物推論' correctly identifies person/trait inference; the topic '人物與原因推論' appropriately covers person-based inference; the module '情境推理' fits because the inference is drawn from situational behaviour.",
+        "recommendedTopic": "人物與原因推論",
+        "recommendedLabel": "人物推論",
+        "recommendedModule": "情境推理"
+      },
+      {
+        "id": "chinese-reading-P6-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem asks for the likely reason for an action (understanding data before deciding). The label '原因推論' correctly targets reason inference; the topic '人物與原因推論' appropriately includes reason-based questions; the module '情境推理' is suitable because students infer motive from the described situation.",
+        "recommendedTopic": "人物與原因推論",
+        "recommendedLabel": "原因推論",
+        "recommendedModule": "情境推理"
+      },
+      {
+        "id": "chinese-reading-P6-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks the student to recognise a rhetorical device (personification: 無生命事物被賦予人的動作). The label '修辭手法' correctly names this skill; the topic '語境、修辭與句意' and module '理解與應用' are appropriate for identifying rhetorical devices in context.",
+        "recommendedTopic": "語境、修辭與句意",
+        "recommendedLabel": "修辭手法",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P6-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires extracting the main message of a single sentence (句意理解 / paraphrasing the central idea). The label '句意理解', topic '語境、修辭與句意' and module '理解與應用' accurately describe the targeted skill.",
+        "recommendedTopic": "語境、修辭與句意",
+        "recommendedLabel": "句意理解",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P6-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks the student to infer the article's central message from its parts, which is main-idea identification. The label '主旨辨認' accurately names the skill. The topic '整合閱讀' (integrated reading) appropriately describes synthesising information across parts to find the main idea. The module '理解與應用' suitably categorises comprehension skills.",
+        "recommendedTopic": "整合閱讀",
+        "recommendedLabel": "主旨辨認",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P6-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to recognise the organizational pattern of a sentence sequence (steps/sequence). The label '段落組織' fits, as does the topic '文本結構' and the module '理解與應用' for a question about text organisation.",
+        "recommendedTopic": "文本結構",
+        "recommendedLabel": "段落組織",
+        "recommendedModule": "理解與應用"
+      }
+    ]
+  }
+}

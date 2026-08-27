@@ -1,0 +1,200 @@
+{
+  "generatedAt": "2026-08-26T10:21:20.147820+00:00",
+  "grade": "P4",
+  "track": "english-writing",
+  "canonicalQuestionCount": 11,
+  "variantQuestionCount": 33,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/6: Both items are clear, age-appropriate P4 sentence-structure multiple-choice questions. Each has a single best answer (option 0) and plausible distractors that are sentence fragments. No revision needed.\n\nPart 2/6: Both items are clear, unambiguous, and appropriate for P4. Each has a single best answer that matches the time/verb cues; no revision needed.\n\nPart 3/6: Both items are clear, age-appropriate P4 questions on paragraph organisation. Each has one unambiguous best answer and plausible distractors for this level. No revision needed.\n\nPart 4/6: Both items are clear, age-appropriate P4 items with one unambiguous best answer each. No revisions needed.\n\nPart 5/6: Both items are clear, age-appropriate P4 English-writing questions with a single best answer. Distractors are weak but acceptable for the grade level. No revisions needed.\n\nPart 6/6: One P4 integrated-writing item reviewed. The item asks which check is most useful before submitting writing. The stem, options and correct answer are clear, age-appropriate and aligned with the learning objective; no revision is needed.",
+    "reviews": [
+      {
+        "id": "english-writing-P4-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 is a complete sentence with a clear subject ('Mia'), verb ('organises') and adverbial ('carefully'). The other options are sentence fragments lacking a subject, verb, or correct structure and are therefore weak as complete sentences.",
+        "recommendedQuestion": "Choose the most complete sentence.",
+        "recommendedOptions": [
+          "Mia organises the task carefully.",
+          "Because Mia careful.",
+          "organises the task.",
+          "The task carefully."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P4-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 shows the clearest and correct English word order (subject + verb + object/adverbial). The other options scramble word order or omit necessary grammatical elements, making them incorrect.",
+        "recommendedQuestion": "Choose the sentence with the clearest word order.",
+        "recommendedOptions": [
+          "Mia organises ideas for a class activity.",
+          "organises Mia ideas.",
+          "Ideas Mia for organises.",
+          "For a class activity ideas organises."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P4-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The time word 'yesterday' requires past tense; 'wrote' is the only correct past-tense form. Distractors are plausible grammatical forms for contrast and are age-appropriate.",
+        "recommendedQuestion": "Mia ____ a short note yesterday.",
+        "recommendedOptions": [
+          "wrote",
+          "write",
+          "writes",
+          "writing"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P4-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The verb 'express' correctly completes the imperative request to communicate ideas. Other options are unrelated and serve as clear distractors for this level.",
+        "recommendedQuestion": "Please ____ your ideas clearly in the report.",
+        "recommendedOptions": [
+          "express",
+          "borrow",
+          "sleep",
+          "hide"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P4-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks for a topic sentence introducing a paragraph about a class activity. Option 0 states the main idea clearly and directly. Other options are irrelevant details and serve as clear distractors for P4.",
+        "recommendedQuestion": "Which topic sentence best introduces a paragraph about a class activity?",
+        "recommendedOptions": [
+          "A class activity can help students learn and work together.",
+          "The room has four windows.",
+          "I have a pencil.",
+          "Tuesday is a day."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P4-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks for a specific supporting sentence showing how planning helps a group. Option 0 gives a clear, concrete example (shared jobs, finished steps on time). Other choices are irrelevant and do not support the idea.",
+        "recommendedQuestion": "Which sentence best supports the idea that planning helps a group?",
+        "recommendedOptions": [
+          "The group shared jobs and finished each step on time.",
+          "Planning is a word.",
+          "Some shoes are expensive.",
+          "Everyone is different."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P4-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The blank requires a linking phrase showing consequence. 'As a result' correctly shows that finishing on time followed from making a list. 'Although' and 'However' show contrast; 'Unless' expresses a condition—none fit the intended cause/result relation.",
+        "recommendedQuestion": "I made a list. ____ , we finished on time.",
+        "recommendedOptions": [
+          "As a result",
+          "Although",
+          "Unless",
+          "However"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P4-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The item asks for a sentence suitable for emailing a teacher. Option 0 is a polite, clear request appropriate for a teacher; the other options are rude or informal and thus unsuitable.",
+        "recommendedQuestion": "Which sentence is most suitable for an email to a teacher?",
+        "recommendedOptions": [
+          "Could you please explain the homework deadline?",
+          "Send me the answer now.",
+          "I do not care.",
+          "Your work is bad."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P4-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem is clear and asks for an opening suitable for classmates. Option 0 is friendly, polite, and specific about the activity time—appropriate for a class message. Other options are inappropriate in tone or meaningless, so there is a single best answer.",
+        "recommendedQuestion": "Which opening is most suitable for a message to classmates about an activity?",
+        "recommendedOptions": [
+          "Hi everyone, please join our class activity on Friday.",
+          "You must come now.",
+          "I do not want to explain.",
+          "This sentence has no purpose."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P4-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks for a revision that makes a vague sentence more specific. Option 0 adds clear details about what made the activity good (sharing ideas and solving a problem), while the other options are either repetitive, meaningless, or remain vague. There is one clear best answer.",
+        "recommendedQuestion": "Which revision makes “The activity was good” more specific?",
+        "recommendedOptions": [
+          "The activity helped classmates share ideas and solve a problem together.",
+          "The activity was good good.",
+          "The activity was an activity.",
+          "It was good."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P4-10-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks for an overall revision check beyond spelling, which matches the hint. Option A correctly targets checking that ideas, examples and the conclusion match the writing purpose. The other options are implausible and function well as distractors for P4. Language is simple enough for Primary 4 and the item assesses an age-appropriate revision skill.",
+        "recommendedQuestion": "Before submitting writing, which check is most useful?",
+        "recommendedOptions": [
+          "Check if ideas, examples and conclusion match the purpose.",
+          "Remove every full stop.",
+          "Use the longest words.",
+          "Change every sentence to a question."
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

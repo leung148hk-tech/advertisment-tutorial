@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-26T13:40:43.454687+00:00",
+  "grade": "S2",
+  "track": "chinese-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 canonical items (each has two context-only variants). Both items measure vocabulary knowledge and usage; metadata is appropriate and educationally coherent. Verdict: PASS for both.\n\nPart 2/5: 審核 2 題現代文閱讀選擇題的 metadata。兩題均測驗閱讀理解中「由行動或證據推論作者／人物態度與寫作方法」的技能；標籤、主題與模組均與題幹要求一致，無需修訂。\n\nPart 3/5: Reviewed 2 items (each with two context-only variants) for metadata alignment. Both items correctly label the assessed skill as classical-Chinese vocabulary/sentence comprehension within basic classical-Chinese study and comprehension/application module. Recommend no changes.\n\nPart 4/5: Reviewed 2 items (each has two context-only variants sharing metadata). Both items correctly assess rhetorical/expressive skills and have appropriate topic, label and module assignments. Recommend no changes.\n\nPart 5/5: Reviewed 2 items (each has two context-only variants). Both items measure the skills their metadata claim and require no substantive changes.",
+    "reviews": [
+      {
+        "id": "chinese-reading-S2-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the closest meaning of the word 「顧及」 and requires students to identify the correct synonym from options. This is a straightforward vocabulary/word-meaning item. The label '語基與詞語' and topic '語基與詞語' accurately describe the skill, and the module '基礎掌握' is an appropriate classification.",
+        "recommendedTopic": "語基與詞語",
+        "recommendedLabel": "語基與詞語",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-S2-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks which sentence is most appropriate for using 「顧及」, testing vocabulary use in context (word choice/usage). The existing label '詞語運用', topic '語基與詞語', and module '基礎掌握' accurately reflect the assessed skill.",
+        "recommendedTopic": "語基與詞語",
+        "recommendedLabel": "詞語運用",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-S2-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹要求從人物行動歸納其做事方式（推論人物態度／方法），屬於現代文閱讀的理解與應用範疇。現有標籤“現代文理解”、主題“現代文閱讀”、模組“理解與應用”與實際評量技能一致，故通過。",
+        "recommendedTopic": "現代文閱讀",
+        "recommendedLabel": "現代文理解",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S2-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目測驗學生是否能找出支持關於「作者重視資料」判斷的文本證據，屬於主旨與證據辨認的閱讀技能。標籤“主旨與證據”、主題“現代文閱讀”、模組“理解與應用”均貼切，故通過。",
+        "recommendedTopic": "現代文閱讀",
+        "recommendedLabel": "主旨與證據",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S2-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the meaning of the classical character 「故」 in context, so it assesses word-level knowledge in classical Chinese. The label '文言實詞' (classical lexical item), topic '文言基礎', and module '理解與應用' accurately describe this skill.",
+        "recommendedTopic": "文言基礎",
+        "recommendedLabel": "文言實詞",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S2-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the main learning-method message of the sentence, assessing sentence-level comprehension in classical Chinese. The label '文言句意', topic '文言基礎', and module '理解與應用' are appropriate.",
+        "recommendedTopic": "文言基礎",
+        "recommendedLabel": "文言句意",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S2-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem asks students to identify the rhetorical device used in a phrase (personification). The topic and label '修辭與表達' and module '理解與應用' accurately describe this skill.",
+        "recommendedTopic": "修辭與表達",
+        "recommendedLabel": "修辭與表達",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S2-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the communicative/effect purpose of using concrete examples to support a viewpoint—an assessment of expression effect and rhetorical function. The metadata '修辭與表達' (topic), '表達效果' (label) and '理解與應用' (module) are appropriate.",
+        "recommendedTopic": "修辭與表達",
+        "recommendedLabel": "表達效果",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S2-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks students to identify the most logical paragraph arrangement (relationship among viewpoint, examples, reflection). The label '段落組織／篇章結構', topic '段落與篇章組織' and module '理解與應用' accurately describe this skill.",
+        "recommendedTopic": "段落與篇章組織",
+        "recommendedLabel": "段落組織／篇章結構",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S2-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests making a supported response by stating an opinion and linking it to textual evidence. The label '觀點回應與證據支持', topic '觀點與文本證據連結' and module '理解與應用' correctly identify the measured skill.",
+        "recommendedTopic": "觀點與文本證據連結",
+        "recommendedLabel": "觀點回應與證據支持",
+        "recommendedModule": "理解與應用"
+      }
+    ]
+  }
+}

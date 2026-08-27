@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-27T00:56:09.543400+00:00",
+  "grade": "S2",
+  "track": "science",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 S2 science items (variables and measurement accuracy). Both items are clear, unambiguous, have a single best answer appropriate for the grade and syllabus, and can be passed without changes.\n\nPart 2/5: Reviewed 2 S2 (science) items. Both items are clear, age-appropriate, have a single-best answer and require no revision; the supplied correct answers are correct. The same verdict applies to their two context-only variants.\n\nPart 3/5: Two S2 science items on particle model and chemical change. Both items are clear, age-appropriate, have one unambiguous best answer within the given options, and match S2 syllabus expectations.\n\nPart 4/5: Two S2 science items on Forces and electricity were reviewed. Both items are clear, age-appropriate, have a single best answer, and match syllabus-level expectations. No revisions needed.\n\nPart 5/5: Both items are clear, syllabus‑appropriate S2 science multiple‑choice questions about data handling and evidence. Each has a single best answer and age‑appropriate language; no revision is required.",
+    "reviews": [
+      {
+        "id": "science-S2-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "When investigating how wire length affects resistance, the wire's material and thickness must be kept constant so length is the only variable. The other options are clearly incorrect for the control variable. (Temperature could also be controlled in practice, but the given correct option is valid and age-appropriate.)",
+        "recommendedQuestion": "In an investigation of resistance, which should be kept constant when changing wire length?",
+        "recommendedOptions": [
+          "Wire material and thickness",
+          "Wire length",
+          "Measured resistance",
+          "Conclusion"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S2-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Reading the scale at eye level reduces parallax error and so improves accuracy of a temperature reading. The other choices would not improve accuracy (and some would worsen it). The item is clear and suitable for S2.",
+        "recommendedQuestion": "Which action improves the accuracy of a temperature reading?",
+        "recommendedOptions": [
+          "Read the scale at eye level",
+          "Use a larger beaker only",
+          "Guess the value",
+          "Skip repeats"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S2-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question unambiguously asks which vessel carries blood away from the heart; 'Artery' is the correct and single-best answer. Distractors are plausible for the level (vein, capillary) and one is an anatomical structure (alveolus) that is clearly not a vessel. The hint correctly directs focus to flow direction rather than oxygen content.",
+        "recommendedQuestion": "Which blood vessel carries blood away from the heart?",
+        "recommendedOptions": [
+          "Artery",
+          "Vein",
+          "Capillary",
+          "Alveolus"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S2-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "A producer in a food chain is an organism that makes its own food (autotroph); 'A green plant' is the clear and correct choice for this level. Other options (carnivore, decomposer, parasite) are correctly non-producers and serve as suitable distractors.",
+        "recommendedQuestion": "What is a producer in a food chain?",
+        "recommendedOptions": [
+          "A green plant",
+          "A carnivore",
+          "A decomposer only",
+          "A parasite"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S2-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The particle-model explanation ('large spaces between gas particles') correctly explains why gases are compressible; the distractors are clearly incorrect for S2 level. The stem is unambiguous and matches syllabus-level understanding.",
+        "recommendedQuestion": "Why can a gas be compressed more easily than a liquid?",
+        "recommendedOptions": [
+          "There are large spaces between gas particles",
+          "Gas particles have no mass",
+          "Liquids have no particles",
+          "Gas particles are larger"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S2-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Producing a gas is a common indicator of a chemical reaction at this level and is the only option that can indicate formation of a new substance here; the other choices describe physical changes. While gas formation can sometimes be physical (e.g. boiling), within the option set it is the best evidence of a chemical reaction.",
+        "recommendedQuestion": "Which is evidence of a chemical reaction?",
+        "recommendedOptions": [
+          "A gas is produced",
+          "Ice melts",
+          "Water evaporates",
+          "Salt dissolves"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S2-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The definition of pressure is correctly tested: pressure = force / area. Distractors (mass, volume, time) are plausible but clearly incorrect for the target formula at S2 level.",
+        "recommendedQuestion": "Pressure is calculated by force divided by ____ .",
+        "recommendedOptions": [
+          "area",
+          "mass",
+          "volume",
+          "time"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S2-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Using Ohm's law V = IR, R = V/I = 6 V ÷ 2 A = 3 Ω. Options include plausible distractors but only one correct calculation.",
+        "recommendedQuestion": "If V=6 V and I=2 A, what is R?",
+        "recommendedOptions": [
+          "3 Ω",
+          "4 Ω",
+          "8 Ω",
+          "12 Ω"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S2-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem clearly describes an anomalous result and the best immediate action is to check the method and repeat the reading. Distractors are obviously incorrect (deleting data, changing hypothesis, or ignoring results) so there is a single defensible choice. Wording is age‑appropriate and aligned with S2 science skills (data quality and repeatability).",
+        "recommendedQuestion": "A result differs greatly from the others. What is the best first action?",
+        "recommendedOptions": [
+          "Check the method and repeat the reading",
+          "Delete all data",
+          "Change the hypothesis",
+          "Ignore every result"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S2-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks why conclusions must be based on data; the correct answer is that data provide evidence to support claims. Distractors (making answers longer, avoiding variables, replacing experiments) are implausible and do not compete with the evidence‑based rationale. Language and concept are appropriate for S2.",
+        "recommendedQuestion": "Why must conclusions be based on data?",
+        "recommendedOptions": [
+          "To support claims with evidence",
+          "To make answers longer",
+          "To avoid variables",
+          "To replace experiments"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

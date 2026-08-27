@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-26T11:20:56.001814+00:00",
+  "grade": "P5",
+  "track": "chinese-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 items (each has two context-only variants). Both items measure vocabulary knowledge (meaning recognition and contextual usage). The supplied topic, label and module are appropriate; no substantive metadata changes needed. Verdict: PASS for both.\n\nPart 2/5: Reviewed 2 items for P5 Chinese reading (part 2 of 5). Both items' metadata appropriately match the skill actually tested; no revisions required.\n\nPart 3/5: Reviewed 2 items (P5 Chinese reading, part 3 of 5). Both items ask students to infer a character trait or the reason for a character's action from a short description, and the supplied metadata (label, topic, module) accurately reflect that skill.\n\nPart 4/5: Reviewed 2 items (P5 Chinese reading). Both items accurately labelled and categorised — no revision needed.\n\nPart 5/5: Reviewed 2 items for P5 Chinese reading. Both items measure straightforward reading-comprehension skills (main idea identification; text/paragraph organization). Metadata for both items is educationally coherent and accurately labels the measured skills. Recommend no changes.",
+    "reviews": [
+      {
+        "id": "chinese-reading-P5-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹問「『堅持』最接近哪一個意思？」並以選項提供不同釋義，明確測驗詞語的意義辨識能力。標籤「字詞理解」、主題「字詞理解與運用」及模組「基礎掌握」都恰當描述此技能。",
+        "recommendedTopic": "字詞理解與運用",
+        "recommendedLabel": "字詞理解",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P5-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹要求從句子中選出最適合使用『堅持』的一句，測驗學生在語境中運用詞語的能力。標籤「詞語運用」比單純的詞義辨識更精確，但現有主題「字詞理解與運用」與模組「基礎掌握」也都適切。",
+        "recommendedTopic": "字詞理解與運用",
+        "recommendedLabel": "詞語運用",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P5-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks for the main message conveyed by the sentence (identify what the person did). '訊息定位' (locating the information/message) and the label/module '訊息定位' / '理解與應用' fit the skill being assessed.",
+        "recommendedTopic": "訊息定位",
+        "recommendedLabel": "訊息定位",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P5-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires locating a specific detail (the latest arrival time) from a short notice. '訊息定位' as topic and '細節理解' as label under '理解與應用' accurately describe the skill.",
+        "recommendedTopic": "訊息定位",
+        "recommendedLabel": "細節理解",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P5-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to infer a character trait from an action (modifying a plan and trying again), which is precisely '人物推論' and fits within the broader topic '人物與原因推論' and the module '情境推理' (drawing inferences from situational behaviour).",
+        "recommendedTopic": "人物與原因推論",
+        "recommendedLabel": "人物推論",
+        "recommendedModule": "情境推理"
+      },
+      {
+        "id": "chinese-reading-P5-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to infer the likely reason for a character's behaviour (seeking information before deciding). This is correctly labelled '原因推論' and fits the topic '人物與原因推論' and module '情境推理' (inferring causes from actions).",
+        "recommendedTopic": "人物與原因推論",
+        "recommendedLabel": "原因推論",
+        "recommendedModule": "情境推理"
+      },
+      {
+        "id": "chinese-reading-P5-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to recognise a rhetorical device (inanimate object given human action), i.e. personification. The label '修辭手法', topic '語境、修辭與句意' and module '理解與應用' correctly describe this skill.",
+        "recommendedTopic": "語境、修辭與句意",
+        "recommendedLabel": "修辭手法",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P5-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires identifying the main message of a single sentence (sentence-level meaning). The label '句意理解', topic '語境、修辭與句意' and module '理解與應用' accurately reflect this skill.",
+        "recommendedTopic": "語境、修辭與句意",
+        "recommendedLabel": "句意理解",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P5-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to infer the article's central message from described content — this is clearly a main-idea (主旨辨認) task. The topic '整合閱讀' (integrative reading) and module '理解與應用' appropriately describe the comprehension skill required.",
+        "recommendedTopic": "整合閱讀",
+        "recommendedLabel": "主旨辨認",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P5-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to recognise the organisation/sequence of actions in a passage — a text-structure/paragraph-relationship skill. The label '段落關係', topic '整合閱讀', and module '理解與應用' accurately reflect the measured skill.",
+        "recommendedTopic": "整合閱讀",
+        "recommendedLabel": "段落關係",
+        "recommendedModule": "理解與應用"
+      }
+    ]
+  }
+}

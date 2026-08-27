@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T12:26:38.401796+00:00",
+  "grade": "S1",
+  "track": "chinese-writing",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 S1 Chinese-writing items (語基與詞語; 病句辨識). Both items are clear, have a single best answer, and are grade-appropriate. Recommend passing without changes.\n\nPart 2/5: Two S1 Chinese-writing items reviewed. Both items are clear, unambiguous, have a single best answer, and are appropriate for the S1 syllabus and ability level. Recommend keeping original wording and keys.\n\nPart 3/5: Reviewed 2 S1 Chinese-writing items (修辭運用; 語氣選擇). Both items are clear, unambiguous, grade-appropriate and have a single best answer; recommend passing without revision.\n\nPart 4/5: Both items are clear, age-appropriate S1 Chinese writing multiple-choice questions with one unambiguous best answer each. No revision needed.\n\nPart 5/5: Two S1 Chinese-writing items (revision and timed-writing strategy). Both have clear stems, one unambiguous best answer, age-appropriate language, and syllabus-adjacent content. Recommend passing without changes.",
+    "reviews": [
+      {
+        "id": "chinese-writing-S1-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "問句要求選出「形容做事合適而周全」的詞；「妥當」準確對應該語意。其餘選項（草率、混亂、浮誇）與題意相反或不相關，沒有歧義。難度與 S1 課程詞彙掌握程度相符，提示也恰當。",
+        "recommendedQuestion": "要形容做事合適而周全，哪個詞最合適？",
+        "recommendedOptions": [
+          "妥當",
+          "草率",
+          "混亂",
+          "浮誇"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S1-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "選項 A（同學們積極討論並提出建議。）語序與主謂賓搭配正確，無語病；其餘三句分別包含把字句與被動錯誤、重複副詞（十分很）以及語序錯置（完成了已經活動）等語病，故 A 為唯一最佳選項。題目與 S1 語文能力相符，難度適中。",
+        "recommendedQuestion": "下列哪一句沒有語病？",
+        "recommendedOptions": [
+          "同學們積極討論並提出建議。",
+          "我把意見被老師聽取。",
+          "這個問題十分很複雜。",
+          "我們完成了已經活動。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S1-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹明確要求段落中心句；選項0直接點出段落觀點並可作為總括句，其餘三項為細節或無關描寫，為弱干擾項。內容符合S1寫作能力與課程要求。",
+        "recommendedQuestion": "寫「一次小組合作經驗」時，哪一句最適合作段落中心句？",
+        "recommendedOptions": [
+          "這次經驗令我重新思考做決定時應重視的原則。",
+          "那天有很多人。",
+          "我看見一張桌子。",
+          "時間過得很快。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S1-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹要求選出能支持觀點的例子；選項0直接說明透過聆聽不同意見並訂出方案來解決分歧，最能支持觀點。其他選項與主題無關或為相反行為，為明確干擾項。",
+        "recommendedQuestion": "哪一個例子最能支持「溝通有助解決分歧」？",
+        "recommendedOptions": [
+          "小組先聽取不同意見，再訂出共同方案。",
+          "大家各自離開。",
+          "天氣突然轉冷。",
+          "課室有很多窗。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S1-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Item asks students to identify a simile (比喻). Only option 0 contains the comparative marker '像' and is clearly a simile; other options are plain statements. Age-appropriate vocabulary and concept for S1.",
+        "recommendedQuestion": "哪一句運用了比喻？",
+        "recommendedOptions": [
+          "記憶像一本隨時可翻閱的書。",
+          "雨下得很大。",
+          "我走進課室。",
+          "同學正在討論。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S1-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Question asks for the most appropriate tone for a suggestion letter to the principal. Option 0 is polite, clear and gives rationale; the other options are inappropriate (imperative, vague negative, or dismissive). Single best answer is unambiguous for S1.",
+        "recommendedQuestion": "給校長的建議書，哪一種語氣最合適？",
+        "recommendedOptions": [
+          "建議學校考慮增設閱讀時段，讓同學有較穩定的閱讀機會。",
+          "你一定要照做。",
+          "這件事很差。",
+          "我不想解釋。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S1-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks how to make the statement '我學會承擔責任' more specific. Option 0 (describing actions, handling difficulties and reflections) directly addresses concreteness; other options are clearly irrelevant. Language and cognitive demand suit S1.",
+        "recommendedQuestion": "要把「我學會承擔責任」寫得更具體，應加入甚麼？",
+        "recommendedOptions": [
+          "我如何處理困難、作出甚麼行動和從中得到甚麼反思",
+          "只重複題目",
+          "只寫天氣",
+          "只列形容詞"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S1-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks what to add after a viewpoint in an argumentative paragraph. Option 0 (reasons, examples and a return to the viewpoint) is the standard, complete structure for S1-level argument writing; distractors are irrelevant or clearly wrong.",
+        "recommendedQuestion": "議論段落中，觀點後最適合加入甚麼？",
+        "recommendedOptions": [
+          "理由、例子和回扣觀點",
+          "不相關的故事",
+          "完全相反的結論",
+          "空白句子"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S1-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Stem asks which revision most improves exam performance — directly linked to writing assessment skills. Correct option (checking topic sentences, examples, connectives and conclusion) is clearly the best and aligns with S1 writing syllabus. Distractors are clearly incorrect but remain simple and understandable for the target grade.",
+        "recommendedQuestion": "完成文章後，哪一項修訂最有助提高考試表現？",
+        "recommendedOptions": [
+          "檢查中心句、例子、連接詞和結語是否呼應題目",
+          "只數字數",
+          "刪除所有標點",
+          "把每句改成問句"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S1-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Stem asks for the best pre-writing step for a timed composition. The recommended option (list stance, two main points and examples, then allocate time) matches standard exam strategy taught at S1. Other options are inappropriate and clearly inferior for the target grade.",
+        "recommendedQuestion": "限時寫作前，哪一個步驟最合適？",
+        "recommendedOptions": [
+          "先列出立場、兩個重點和例子，再分配時間寫作",
+          "立即寫結語",
+          "只背誦題目",
+          "不看題目要求"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

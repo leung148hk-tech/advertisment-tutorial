@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T09:48:24.397667+00:00",
+  "grade": "P2",
+  "track": "english-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: 2 P2 English reading vocabulary items reviewed. Both items are age-appropriate, have a single best answer, and require no revision.\n\nPart 2/5: Reviewed 2 P2 English reading items (detail finding and main idea). Both items are clear, age-appropriate, have a single best answer, and the supplied correct answers are correct. Recommend no changes.\n\nPart 3/5: Both P2 inference items are clear, age-appropriate and have a single best answer. Minor wording note on item 1 (uses 'student' rather than 'Amy') but this does not make the item ambiguous.\n\nPart 4/5: Two P2 reading-items reviewed. Both items are clear, unambiguous, and have a single best answer appropriate for the stated grade and skill (pronoun/reference and connector for result). Recommend no changes.\n\nPart 5/5: Both P2 reading items are clear, age-appropriate, and have a single best answer. Keep original content for both items.",
+    "reviews": [
+      {
+        "id": "english-reading-P2-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The target meaning of “careful” (paying attention to avoid mistakes) is captured by option 0 'not making mistakes'. Distractors are clearly different and suitable for Primary 2 vocabulary practice.",
+        "recommendedQuestion": "The word “careful” is closest in meaning to ____ .",
+        "recommendedOptions": [
+          "not making mistakes",
+          "very noisy",
+          "always late",
+          "easy to break"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P2-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 'Checking her work carefully and helping others' best shows someone being careful at school. Although the option combines two actions, both are positive behaviours and the first clause directly matches 'careful'. Other options clearly contradict the meaning.",
+        "recommendedQuestion": "Amy is careful when she is at school. Which action shows this best?",
+        "recommendedOptions": [
+          "Checking her work carefully and helping others",
+          "Talking loudly during lessons",
+          "Running in the classroom",
+          "Ignoring the teacher's instructions"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P2-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The notice explicitly gives two times; the earliest required time is registration closing at 10:15, so 'Register by 10:15' is the clear correct choice. Distractors are clearly wrong for P2.",
+        "recommendedQuestion": "A notice says a school event starts at 10:30 and registration closes at 10:15. What should a student do?",
+        "recommendedOptions": [
+          "Register by 10:15",
+          "Arrive after 10:30",
+          "Wait until noon",
+          "Bring nothing"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P2-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "A text explaining how to prepare for a school day aims to give practical guidance. Other options (fantasy, selling, describing a storm) are clearly not the main purpose.",
+        "recommendedQuestion": "A short text explains how to prepare for a school day. Its main purpose is to ____ .",
+        "recommendedOptions": [
+          "give practical guidance",
+          "tell a fantasy story",
+          "sell a uniform",
+          "describe a storm"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P2-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The action 'reads the plan before starting the task' reasonably implies care or that the task matters to the student. Distractors are clearly incorrect. Language is simple enough for P2 though using 'student' instead of 'Amy' is a minor wording inconsistency that does not create ambiguity.",
+        "recommendedQuestion": "Amy reads the plan before starting the task. What can we infer?",
+        "recommendedOptions": [
+          "The task matters to the student",
+          "The student dislikes every task",
+          "The plan is missing",
+          "Nothing can be inferred"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P2-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Calling the activity 'a useful chance to learn together' shows positive attitude; 'supportive' is the clear single best choice. Other options contradict the positive wording.",
+        "recommendedQuestion": "The writer calls the activity “a useful chance to learn together”. The writer is most likely ____ .",
+        "recommendedOptions": [
+          "supportive",
+          "angry",
+          "uninterested",
+          "confused"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P2-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The pronoun 'It' clearly refers to the nearest suitable noun 'the display'. Distractors are plausible but not confusing for P2. The stem and hint are simple and age-appropriate.",
+        "recommendedQuestion": "“The class prepared a display. It was shown in the hall.” What does “It” refer to?",
+        "recommendedOptions": [
+          "The display",
+          "The hall",
+          "The class",
+          "The preparation"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P2-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The second clause shows a result, so the connective 'therefore' is the correct choice. Other options express contrast or condition and are not suitable. The sentence punctuation with an adverbial connector is acceptable.",
+        "recommendedQuestion": "Amy practised regularly; ____ , the presentation became clearer.",
+        "recommendedOptions": [
+          "therefore",
+          "however",
+          "although",
+          "unless"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P2-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The webpage elements (steps, reminders, sign-up link) clearly indicate the purpose is to get readers to take part. Distractors are implausible and unrelated. The language and task are suitable for P2.",
+        "recommendedQuestion": "A webpage gives steps, reminders and a sign-up link for a school event. It is mainly designed to ____ .",
+        "recommendedOptions": [
+          "invite people to take part",
+          "sell a house",
+          "teach swimming",
+          "report a storm"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P2-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The correct option shows actions (asking questions, sharing ideas) that directly support the idea that Amy enjoys learning. Other choices are irrelevant details and serve as effective distractors for this age.",
+        "recommendedQuestion": "Which detail best supports the idea that Amy enjoys learning?",
+        "recommendedOptions": [
+          "Amy asks questions and shares ideas with classmates.",
+          "Amy owns a blue bag.",
+          "Amy eats lunch at noon.",
+          "Amy walks home."
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

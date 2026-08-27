@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-27T01:23:09.881053+00:00",
+  "grade": "S3",
+  "track": "science",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Both items are clear, grade-appropriate S3 science multiple-choice questions with a single best answer and correct supplied keys. No revision needed.\n\nPart 2/5: Both items are clear, syllabus-appropriate S3 life-science questions with an unambiguous single best answer. No revisions needed.\n\nPart 3/5: Two S3 science items on acids/alkalis and exothermic reactions reviewed. Both items are clear, unambiguous, age-appropriate, and have a single best answer. Recommend keeping both items unchanged.\n\nPart 4/5: Two S3 science items on forces & electricity reviewed. Both items are correct, unambiguous, and appropriate for the stated grade and syllabus, so they pass without revision.\n\nPart 5/5: Both S3 science items are clear, age-appropriate, and have one unambiguous best answer. Keep original wording and options.",
+    "reviews": [
+      {
+        "id": "science-S3-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 is a clear, testable hypothesis predicting a relationship between variables; the other options are statements or opinions and not testable hypotheses. The stem is unambiguous and suitable for S3.",
+        "recommendedQuestion": "Which statement is a testable hypothesis?",
+        "recommendedOptions": [
+          "Increasing light intensity will increase photosynthesis rate up to a limit.",
+          "Plants are interesting.",
+          "Science is useful.",
+          "Light exists."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S3-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "A single trial mainly affects reliability (repeatability) of results; the other options are incorrect or nonsensical. The item matches the intended skill of evaluating experimental limitations.",
+        "recommendedQuestion": "Which limitation most affects an investigation with only one trial?",
+        "recommendedOptions": [
+          "Results may not be reliable",
+          "The variables disappear",
+          "The hypothesis becomes true",
+          "No data can be recorded"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S3-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question correctly targets heredity at a junior-secondary level. DNA is the molecule that carries hereditary information; the other options are unrelated to genetic information. Wording is clear and unambiguous for S3 students.",
+        "recommendedQuestion": "What carries hereditary information in a cell?",
+        "recommendedOptions": [
+          "DNA",
+          "Starch",
+          "Oxygen",
+          "Chlorophyll"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S3-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "This tests understanding of evaporative cooling. Sweating cools the body because evaporation of sweat removes heat (latent heat) from the skin. The other choices are incorrect or irrelevant, making the correct option unambiguous for S3 students.",
+        "recommendedQuestion": "Sweating helps maintain body temperature because evaporation ____ .",
+        "recommendedOptions": [
+          "removes heat from the skin",
+          "adds heat to the skin",
+          "stops blood flow",
+          "creates glucose"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S3-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "pH 3 is clearly acidic on the pH scale. Distractors (neutral, alkaline, salty) are distinct and do not create ambiguity for S3 students.",
+        "recommendedQuestion": "A solution with pH 3 is best described as ____ .",
+        "recommendedOptions": [
+          "acidic",
+          "neutral",
+          "alkaline",
+          "salty"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S3-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "In an exothermic reaction energy is released to the surroundings, causing them to warm. The options present a clear single-best answer and suitable distractors for S3 level.",
+        "recommendedQuestion": "In an exothermic reaction, the surroundings become warmer because energy is ____ .",
+        "recommendedOptions": [
+          "released",
+          "absorbed",
+          "destroyed",
+          "unchanged"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S3-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The correct answer is that the resultant force is zero (Newton's first law) when an object moves with constant velocity. The stem is clear and age-appropriate; distractors are simple but not misleading for S3 students. The provided hint aligns with the concept.",
+        "recommendedQuestion": "A car moves at constant velocity. What is true about the resultant force?",
+        "recommendedOptions": [
+          "It is zero",
+          "It increases",
+          "It equals the mass",
+          "It is always upward"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S3-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The blank correctly fills with I to give P = V × I (electrical power). The stem is straightforward and matches expected S3 formula knowledge; distractors are clearly incorrect.",
+        "recommendedQuestion": "Electrical power is calculated by V × ____ .",
+        "recommendedOptions": [
+          "I",
+          "R",
+          "t",
+          "m"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S3-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "A line graph that 'levels off' means the plotted quantity stops changing (slope ≈ 0), so 'The measured value has become constant' is the correct and unambiguous interpretation. Other options are distractors but not equally plausible given the phrasing 'most likely show.' Language and cognitive demand suit S3.",
+        "recommendedQuestion": "A line graph levels off after 5 minutes. What does this most likely show?",
+        "recommendedOptions": [
+          "The measured value has become constant",
+          "The instrument broke for certain",
+          "All variables are zero",
+          "The graph is invalid"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "science-S3-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The prompt asks for the strongest scientific conclusion. 'The data show a clear increase, supporting the predicted relationship.' names a pattern and links it to evidence, which is the expected form of a strong scientific conclusion. Other choices are vague, opinion-based, or overgeneralise, so option 0 is clearly best for S3 students.",
+        "recommendedQuestion": "Which answer is the strongest scientific conclusion?",
+        "recommendedOptions": [
+          "The data show a clear increase, supporting the predicted relationship.",
+          "I think it worked.",
+          "The experiment was fun.",
+          "The result must always be true."
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

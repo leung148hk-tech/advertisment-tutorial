@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T13:39:30.055211+00:00",
+  "grade": "S2",
+  "track": "chinese-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Two S2 Chinese-reading items test the meaning and appropriate usage of the verb '顧及'. Both items are clear, unambiguous, and have a single best answer; they are grade-appropriate and of basic difficulty.\n\nPart 2/5: Two S2 Chinese reading items reviewed. Both are clear, age-appropriate comprehension/inference questions with a single best answer (option 0). No revision needed; keep original wording and options.\n\nPart 3/5: 兩題皆以《論語》句子「溫故而知新，可以為師矣」為題，評估文言詞義與句意。兩題皆有明確單一正確答案、干擾選項合理且年級適切，建議通過原題不需修改。\n\nPart 4/5: Reviewed 2 items (修辭與表達；表達效果) for S2 Chinese reading. Both items are clear, have a single best answer, and are age-appropriate. Recommend PASS for both.\n\nPart 5/5: 兩題均為中二程度的閱讀與寫作結構題，題幹明確、選項清晰且只有一個合適答案。兩題內容與學習目標一致，建議保留原題。",
+    "reviews": [
+      {
+        "id": "chinese-reading-S2-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "「顧及」意為顧慮、考慮到各方面或某些因素，選項「考慮到各方面」最貼切；其他選項（非常匆忙、完全忽略、聲音響亮）語義不符，故原答案正確且選項設計清晰。",
+        "recommendedQuestion": "「顧及」最接近下列哪一個意思？",
+        "recommendedOptions": [
+          "考慮到各方面",
+          "非常匆忙",
+          "完全忽略",
+          "聲音響亮"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S2-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "句子「她先了解不同需要，再作出安排。」可改寫為「她先顧及不同需要，再作出安排」，語意和語境均適合使用「顧及」。其他句子不合用此詞，故原答案正確且題幹清晰。",
+        "recommendedQuestion": "下列哪一句最適合使用「顧及」？",
+        "recommendedOptions": [
+          "他只憑印象作決定。",
+          "她先了解不同需要，再作出安排。",
+          "雨聲十分響亮。",
+          "操場非常寬闊。"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "chinese-reading-S2-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Stem states the person compares different sources before giving an opinion, which directly supports the inference that the person is organised and values evidence. Distractors are clearly inconsistent with the stem and not defensible. The item is suitable for S2 reading-inference skills.",
+        "recommendedQuestion": "作者比較不同資料後，才提出自己的看法。 這段文字主要說明人物具備甚麼做事方式？",
+        "recommendedOptions": [
+          "有條理並重視根據",
+          "只重視速度",
+          "拒絕溝通",
+          "沒有計劃"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S2-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Question asks for an action that supports the judgement “author values evidence.” Finding cited examples or data directly supports that judgement; other options are irrelevant and implausible. Item aligns with S2 skills for using textual evidence.",
+        "recommendedQuestion": "閱讀說明文時，哪一種做法最能支持「作者重視資料」這個判斷？",
+        "recommendedOptions": [
+          "找出作者引用的例子或數據",
+          "只看篇幅長短",
+          "只數標點符號",
+          "只記人物姓名"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S2-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目問文言字「故」在句中的意思，正確選項為「舊有的知識」，與原句語意一致。其他三個選項（事故、故意、所以）為合理的干擾項，但不構成二義性。用詞與考查重點符合中二文言基礎教材。",
+        "recommendedQuestion": "「溫故而知新，可以為師矣」中的「故」最接近哪一個意思？",
+        "recommendedOptions": [
+          "舊有的知識",
+          "事故",
+          "故意",
+          "所以"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S2-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目要求從「溫故」與「知新」的關係理解學習方法，正確答案為「複習舊知識以獲得新理解」。其他選項皆為錯誤或極端的學習方法，能有效區分學生理解程度，符合中二程度的理解與應用題型。",
+        "recommendedQuestion": "「溫故而知新，可以為師矣」主要強調哪一種學習方法？",
+        "recommendedOptions": [
+          "複習舊知識以獲得新理解",
+          "只學習新內容",
+          "避免溫習",
+          "只背誦答案"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S2-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence “城市在晨光中慢慢醒來” clearly uses personification (擬人). The distractors are legitimate rhetorical terms but do not fit the stem. The hint matches the correct choice. No ambiguity.",
+        "recommendedQuestion": "「城市在晨光中慢慢醒來」主要運用了甚麼修辭手法？",
+        "recommendedOptions": [
+          "擬人",
+          "反問",
+          "排比",
+          "對偶"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S2-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Using concrete examples to support a point makes the point more specific and believable (令觀點更具體可信). Other options are clearly incorrect and do not create ambiguity.",
+        "recommendedQuestion": "運用具體例子來支持觀點，主要有甚麼作用？",
+        "recommendedOptions": [
+          "令觀點更具體可信",
+          "令句子更短",
+          "避免說明原因",
+          "取代所有結論"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S2-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目詢問段落安排的條理性，選項 A（交代事件、舉例說明、回應感受和反思）呈現由描述、證明到反思的合理順序，最符合題意；其他選項為明顯不當寫作方式。語言及概念均符合中二水平。",
+        "recommendedQuestion": "若以「我對校園生活的觀察」為題，哪個段落安排最有條理？",
+        "recommendedOptions": [
+          "交代事件、舉例說明、回應感受和反思",
+          "隨意列出詞語",
+          "重複同一句話",
+          "只寫結語"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S2-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目測驗評論回應是否有根據。選項 A（說明觀點並連結文本證據）清楚指出先有觀點再用文本證據支持，為評論寫作中的核心要求；其他選項均非合適做法。內容與中二課程閱讀能力匹配。",
+        "recommendedQuestion": "評論文章時，哪一項最能顯示有根據的回應？",
+        "recommendedOptions": [
+          "說明觀點並連結文本證據",
+          "只說喜歡或不喜歡",
+          "重抄整段文字",
+          "不回應題目"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

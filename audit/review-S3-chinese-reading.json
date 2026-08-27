@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-27T00:58:34.096776+00:00",
+  "grade": "S3",
+  "track": "chinese-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Both items are clear, age-appropriate S3 vocabulary/usage questions. Each has a single best answer and plausible distractors. Recommend PASS for both.\n\nPart 2/5: Both items are clear, age-appropriate S3 Chinese reading questions with an unambiguous single best answer. Distractors are simple but acceptable for the grade; no revision needed.\n\nPart 3/5: Both items assess understanding of the Analects phrase 「三人行，必有我師焉」. Items are clear, have one unambiguous best answer each, are syllabus-adjacent for S3, and require no revision.\n\nPart 4/5: Reviewed 2 items for S3 Chinese reading (修辭與表達). Both items are clear, unambiguous, grade-appropriate, and have a single best answer. Recommend passing both without revision.\n\nPart 5/5: Reviewed 2 S3 Chinese-reading items (part 5 of 5). Both items are clear, age-appropriate, and have a single best answer; no revision needed.",
+    "reviews": [
+      {
+        "id": "chinese-reading-S3-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The meaning of 「審視」 is accurately captured by 「仔細檢查和思考」. Other options are clearly incorrect and distractors are plausible for S3 level.",
+        "recommendedQuestion": "「審視」最接近下列哪一個意思？",
+        "recommendedOptions": [
+          "仔細檢查和思考",
+          "非常匆忙",
+          "完全忽略",
+          "聲音響亮"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S3-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Sentence 1 (她先了解不同需要，再作出安排。) can appropriately use 「審視」 (e.g. 審視不同需要), while other sentences are unrelated or opposite in meaning. The item tests contextual usage suitably for S3.",
+        "recommendedQuestion": "下列哪一句最適合使用「審視」？",
+        "recommendedOptions": [
+          "他只憑印象作決定。",
+          "她先了解不同需要，再作出安排。",
+          "雨聲十分響亮。",
+          "操場非常寬闊。"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "chinese-reading-S3-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Stem describes a sequence of listing phenomena then analysing causes/effects, which indicates a methodical, evidence-based way of working. Option 0 ('有條理並重視根據') directly matches this inference. Other options are clearly inconsistent with the described writing/behaviour. Language and cognitive demand suit S3.",
+        "recommendedQuestion": "文章先列出現象，再分析原因和影響。 這段文字主要說明人物具備甚麼做事方式？",
+        "recommendedOptions": [
+          "有條理並重視根據",
+          "只重視速度",
+          "拒絕溝通",
+          "沒有計劃"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S3-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "To support the judgement that '作者重視資料', the best practice is to find examples or data the author cites. Option 0 ('找出作者引用的例子或數據') is the clear correct choice; the other options are irrelevant and therefore weak distractors but acceptable at this level.",
+        "recommendedQuestion": "閱讀說明文時，哪一種做法最能支持「作者重視資料」這個判斷？",
+        "recommendedOptions": [
+          "找出作者引用的例子或數據",
+          "只看篇幅長短",
+          "只數標點符號",
+          "只記人物姓名"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S3-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks for the meaning of 文言字詞「師」 in the sentence. The correct sense is 'a person who can act as a teacher / someone worth learning from', which matches option 0. The distractors (only school teacher, military, ritual) are clearly incorrect in this context. Item is clear and appropriate for S3.",
+        "recommendedQuestion": "「三人行，必有我師焉」中的「師」最接近哪一個意思？",
+        "recommendedOptions": [
+          "可作為老師、值得學習的人",
+          "只指學校教師",
+          "軍隊",
+          "拜師禮儀"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S3-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The item probes the implied learning attitude in the sentence. The Analects passage promotes humility and learning from those around you, which is expressed by option 0. Other options contradict the meaning and are unsuitable. The question is clear and suitable for S3.",
+        "recommendedQuestion": "「三人行，必有我師焉」主要強調哪一種學習態度？",
+        "recommendedOptions": [
+          "虛心向身邊的人學習",
+          "只跟最優秀的人來往",
+          "不需要聽取別人意見",
+          "只重視自己的經驗"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S3-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹清晰，提示亦指向擬人化（把城市寫作像人醒來），選項中擬人為唯一正確且最直接的答案；干擾項合理且年級適切。",
+        "recommendedQuestion": "「城市在晨光中慢慢醒來」主要運用了甚麼修辭手法？",
+        "recommendedOptions": [
+          "擬人",
+          "反問",
+          "排比",
+          "對偶"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S3-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目問明運用具體例子的主要作用，首項「令觀點更具體可信」為明確且年級可理解的正確答案；其他選項為不相關或錯誤的干擾項。",
+        "recommendedQuestion": "運用具體例子來支持觀點，主要有甚麼作用？",
+        "recommendedOptions": [
+          "令觀點更具體可信",
+          "令句子更短",
+          "避免說明原因",
+          "取代所有結論"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S3-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks which paragraph arrangement is most logical for a personal-topic title. Option 0 (事件交代→舉例→回應感受與反思) is clearly the coherent structure; other options are clearly unsuitable as paragraph-arrangement choices. Language and cognitive demand suit S3.",
+        "recommendedQuestion": "若以「一個影響我的選擇」為題，哪個段落安排最有條理？",
+        "recommendedOptions": [
+          "交代事件、舉例說明、回應感受和反思",
+          "隨意列出詞語",
+          "重複同一句話",
+          "只寫結語"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-S3-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The item tests linking opinion with textual evidence. Option 0 (說明觀點並連結文本證據) is unambiguously the correct choice. Distractors (expressing only liking, verbatim copying, not responding) are clearly inferior. Item matches S3 expectations.",
+        "recommendedQuestion": "評論文章時，哪一項最能顯示有根據的回應？",
+        "recommendedOptions": [
+          "說明觀點並連結文本證據",
+          "只說喜歡或不喜歡",
+          "重抄整段文字",
+          "不回應題目"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

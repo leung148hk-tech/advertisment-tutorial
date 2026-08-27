@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T10:22:42.736292+00:00",
+  "grade": "P4",
+  "track": "math",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 P4 math items (each has two context-only variants). Both items are correct, age-appropriate, unambiguous, and have a single best answer. Recommend no changes.\n\nPart 2/5: Reviewed 2 P4 math items on fractions and ratio. Both items are correct, age-appropriate, unambiguous, and have a single best answer. Recommend keeping original content.\n\nPart 3/5: 本批次包含兩題小學四年級數學選擇題（每題另有兩個語境變體）；兩題均正確無歧義、與年級課程相符，建議直接通過。\n\nPart 4/5: 兩題皆為基礎的加法與平均數題，題幹清楚、選項合理且只有一個最佳答案，適合小四程度，建議全部通過(PASS)。\n\nPart 5/5: 本批次兩題均符合小學四年級數學能力，題幹明確、選項互為合理誘餌，答案唯一且年齡適切。建議通過（PASS）。",
+    "reviews": [
+      {
+        "id": "math-P4-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "4500 ÷ 9 = 500 is correct. The hint 'think 9 times what equals 4,500' is helpful and age-appropriate for P4. Distractors are plausible and there is no ambiguity. The same conclusion applies to the two context-only variants.",
+        "recommendedQuestion": "4,500 ÷ 9 = ?",
+        "recommendedOptions": [
+          "50",
+          "500",
+          "5,000",
+          "40,500"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P4-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "2.75 + 1.20 = 3.95 is correct. The hint about aligning decimal points is clear and suitable for P4. Options are reasonable distractors and the item is unambiguous. The same applies to its context-only variants.",
+        "recommendedQuestion": "2.75 + 1.20 = ?",
+        "recommendedOptions": [
+          "3.85",
+          "3.95",
+          "4.05",
+          "4.95"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P4-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "3/5 + 1/5 adds numerators with same denominator to give 4/5. Options include reasonable distractors; hint is appropriate for P4.",
+        "recommendedQuestion": "3/5 + 1/5 = ?",
+        "recommendedOptions": [
+          "3/10",
+          "4/5",
+          "4/10",
+          "1"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P4-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Ratio 2:3 with 6 red beads means scale factor 3, so blue = 3×3 = 9. Options and hint are suitable for P4.",
+        "recommendedQuestion": "紅珠和藍珠的數量比是 2：3。若有 6 粒紅珠，藍珠有多少粒？",
+        "recommendedOptions": [
+          "4 粒",
+          "6 粒",
+          "8 粒",
+          "9 粒"
+        ],
+        "recommendedCorrect": 3
+      },
+      {
+        "id": "math-P4-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹清楚，使用面積公式（面積 = 長 × 闊）計算得 8 × 6 = 48 平方厘米。四個選項中只有一個正確且其他選項為合理的錯誤干擾項。難度與四年級相符。",
+        "recommendedQuestion": "一個長方形長 8 厘米、闊 6 厘米，面積是多少？",
+        "recommendedOptions": [
+          "14 平方厘米",
+          "28 平方厘米",
+          "48 平方厘米",
+          "56 平方厘米"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-P4-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目為公升與毫升的換算（1 公升 = 1000 毫升），1.25 × 1000 = 1250 毫升。選項明確且僅有一個正確答案，難度符合四年級。",
+        "recommendedQuestion": "1.25 公升等於多少毫升？",
+        "recommendedOptions": [
+          "125 毫升",
+          "1,025 毫升",
+          "1,250 毫升",
+          "12,500 毫升"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-P4-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "平均數計算正確：(70+80+90)÷3=80。選項包含總和 240 與其他干擾選項，只有一個明確正確答案，題目語言與數學概念均符合小四程度。",
+        "recommendedQuestion": "三次小測驗分數是 70、80、90，平均分是多少？",
+        "recommendedOptions": [
+          "75",
+          "80",
+          "85",
+          "240"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P4-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "三天頁數相加：12+15+13=40。選項設定合理且只有一個正確答案，題幹與提示簡潔明確，適合小四學生。",
+        "recommendedQuestion": "圖表顯示星期一看了 12 頁、星期二看了 15 頁、星期三看了 13 頁，一共看了多少頁？",
+        "recommendedOptions": [
+          "30 頁",
+          "38 頁",
+          "40 頁",
+          "42 頁"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-P4-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "計算過程單一步驟：3 × $28 = $84，$100 − $84 = $16。題意清楚，提示適當，選項中只有 $16 正確，無模糊或多解情況。",
+        "recommendedQuestion": "一本書售 $28，買 3 本用 $100 付款，應找回多少錢？",
+        "recommendedOptions": [
+          "$14",
+          "$16",
+          "$72",
+          "$84"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P4-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "直接用乘法：4 × 35 = 140。題幹無歧義，選項包括 2、3、4 倍的干擾選項，符合四年級數量推理要求。",
+        "recommendedQuestion": "一條繩分成 4 段，每段 35 厘米，整條繩長多少厘米？",
+        "recommendedOptions": [
+          "39 厘米",
+          "70 厘米",
+          "105 厘米",
+          "140 厘米"
+        ],
+        "recommendedCorrect": 3
+      }
+    ]
+  }
+}

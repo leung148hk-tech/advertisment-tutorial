@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T10:16:28.570396+00:00",
+  "grade": "P4",
+  "track": "chinese-writing",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 P4 Chinese-writing items (each with two context-only variants). Both items are clear, age-appropriate, have a single best answer and suitable distractors. Recommend keeping original wording and options.\n\nPart 2/5: 2 items reviewed for P4 Chinese-writing (句子組織 / 標點運用). Both items are clear, age-appropriate, have one unambiguous best answer, and match the claimed difficulty. Recommend passing both without revision.\n\nPart 3/5: 兩題均清晰、與段落組織教學目標一致，選項無歧義且有明確單一最佳答案，難度與小四程度相符，建議通過。\n\nPart 4/5: Reviewed 2 P4 Chinese-writing items (part 4 of 5). Both items have a clear single-best answer, age-appropriate language, and suitable distractors; no revision needed.\n\nPart 5/5: Two P4 Chinese-writing items reviewed. Both items are clear, age-appropriate, have a single best answer and suitable distractors. Recommend PASS for both.",
+    "reviews": [
+      {
+        "id": "chinese-writing-P4-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Stem clearly asks for a word describing careful consideration. '周全' accurately conveys 'thorough/careful'; other options are antonyms or inappropriate. Wording and distractors are simple and suitable for P4.",
+        "recommendedQuestion": "要形容小敏做事考慮得很仔細，哪個詞最合適？",
+        "recommendedOptions": [
+          "周全",
+          "混亂",
+          "敷衍",
+          "急躁"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P4-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Asks for the most natural verb–noun collocation. '整理資料' is the natural choice; the other options are semantically odd and therefore effective distractors for P4 students.",
+        "recommendedQuestion": "下列哪個詞語搭配最自然？",
+        "recommendedOptions": [
+          "整理資料",
+          "整理星星",
+          "整理雨水",
+          "整理聲音"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P4-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Only option 0 has a correct, natural Chinese word order. Other options are ungrammatical or nonsensical. The task matches P4 sentence-organization skills and is straightforward.",
+        "recommendedQuestion": "哪一句語序最通順？",
+        "recommendedOptions": [
+          "閱讀能讓我們認識不同的想法。",
+          "在我們跑步操場。",
+          "活動同學們下午進行。",
+          "閱讀不同想法認識能。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P4-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 correctly uses quotation marks and punctuation for reported speech in Chinese. The other options misuse commas, colons, or question marks. This is suitable for P4 punctuation practice.",
+        "recommendedQuestion": "哪一句標點運用最合適？",
+        "recommendedOptions": [
+          "老師說：「請大家準時完成練習。」",
+          "老師，說請大家：準時完成練習。",
+          "老師說請大家準時完成練習？",
+          "老師：說，請大家完成練習。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P4-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹直接指出要寫主題「我喜愛的閱讀活動」，選項 A 明確作為中心句點出段落重點；其餘選項與主題無關，為適當且不誤導的小四用 distractors。語言簡潔，難度屬基礎，符合課程目標。",
+        "recommendedQuestion": "要寫「我喜愛的閱讀活動」，哪一句最適合作中心句？",
+        "recommendedOptions": [
+          "我喜愛的閱讀活動讓我學會從不同角度觀察和思考。",
+          "那天的天氣很好。",
+          "我有一枝筆。",
+          "很多事情都不同。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P4-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目要求找出能支持「合作能解決困難」的例子，選項 A（小組分工後完成了複雜任務）直接呼應主張並提供具體支持；其餘選項與主張無關且不構成支持，故為單一最佳答案。語言與概念均適合小四程度。",
+        "recommendedQuestion": "哪一個例子最能支持「合作能解決困難」？",
+        "recommendedOptions": [
+          "小組分工後完成了複雜任務。",
+          "操場很大。",
+          "有人忘記帶水。",
+          "大家各自等待。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P4-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks which detail makes a narrative more specific. Option 0 contains concrete action, feeling, and sequence, making it clearly the best choice. Other options are vague and not competitive. Language and cognitive demand match P4 expectations.",
+        "recommendedQuestion": "要令記敘內容更具體，哪一項細節最有幫助？",
+        "recommendedOptions": [
+          "我看到同學需要幫助，便主動協助，完成後感到安心。",
+          "活動很好。",
+          "那天很多人。",
+          "事情發生了。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P4-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The prompt asks which writing is more persuasive. Option 0 gives a clear stance plus reasons (knowledge accumulation, sharing), fitting the hint. Other options are short, vague, or irrelevant. Content and level suit P4.",
+        "recommendedQuestion": "哪種寫法較有說服力？",
+        "recommendedOptions": [
+          "我支持安排閱讀時間，因為能累積知識，也可分享心得。",
+          "我覺得可以。",
+          "每個人不同。",
+          "閱讀就是閱讀。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P4-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence asks for a word showing the sequence of two actions. 「然後」 is the clear, single-best choice. Other options (但是、雖然、因此) are contrast or causal connectives and do not fit the intended sequencing. Wording and vocabulary are suitable for P4.",
+        "recommendedQuestion": "「我先搜集資料，____ 整理重點。」填入哪個詞最合適？",
+        "recommendedOptions": [
+          "然後",
+          "但是",
+          "雖然",
+          "因此"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P4-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The best way to improve an essay's completeness is to check whether the topic sentence, examples, and conclusion echo each other. The other options are clearly inappropriate or counterproductive, making this a single-best-answer item suitable for P4.",
+        "recommendedQuestion": "完成文章後，哪一項檢查最能提升完整性？",
+        "recommendedOptions": [
+          "檢查中心句、例子和結語是否呼應",
+          "只數字數",
+          "刪去所有標點",
+          "把每句寫得更長"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

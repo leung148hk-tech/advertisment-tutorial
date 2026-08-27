@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T09:33:37.167465+00:00",
+  "grade": "P1",
+  "track": "english-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 P1 English-reading vocabulary items. Both items are clear, age-appropriate, have one unambiguous best answer, and align with expected P1 vocabulary and comprehension. Recommend PASS for both.\n\nPart 2/5: Both items are clear, unambiguous, and have a single best answer appropriate for Primary 1 reading. The wording, options, and cognitive demand match P1 expectations; no revision needed. (Verdict applies to each item's context-only variants as well.)\n\nPart 3/5: Both items are clear, age-appropriate P1 reading-inference questions with one unambiguous best answer. No revision needed.\n\nPart 4/5: Both items are clear, age-appropriate for P1, and have a single unambiguous correct answer. Keep the original wording and options.\n\nPart 5/5: Two P1 integrated-reading items reviewed. Both items are clear, age-appropriate, have one unambiguous best answer, and match the claimed difficulty and skill. Recommend no changes.",
+    "reviews": [
+      {
+        "id": "english-reading-P1-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The target word 'happy' is correctly matched with 'glad' as the closest meaning. The distractors are clearly incorrect and age-appropriate. The item is simple and suitable for Primary 1 vocabulary testing.",
+        "recommendedQuestion": "The word “happy” is closest in meaning to ____ .",
+        "recommendedOptions": [
+          "glad",
+          "very noisy",
+          "always late",
+          "easy to break"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The context question asks which action shows Tom is happy doing classwork. 'He smiles and tries his best.' is the clear, age-appropriate indicator of happiness and effort. Other options are implausible or contradictory, so there is a single best answer.",
+        "recommendedQuestion": "Tom is happy when doing class work. Which action shows this best?",
+        "recommendedOptions": [
+          "He smiles and tries his best.",
+          "He ignores the teacher.",
+          "He leaves the room for no reason.",
+          "He never tries again."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks for the earlier required time and the correct option 'Sign up by 10:15' is unambiguous and clearly the best choice. Distractors are obviously wrong for P1 and the language is simple.",
+        "recommendedQuestion": "A notice says the event starts at 10:30 and sign-up closes at 10:15. What should a student do?",
+        "recommendedOptions": [
+          "Sign up by 10:15",
+          "Arrive after 10:30",
+          "Wait until noon",
+          "Bring nothing"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks for the main purpose of a how-to text; 'tell you what to do' clearly matches instructional intent. Other options are unrelated and serve as effective distractors for P1 level.",
+        "recommendedQuestion": "A short text explains how to get ready for a class presentation. Its main purpose is to ____ .",
+        "recommendedOptions": [
+          "tell you what to do",
+          "tell a make-believe story",
+          "sell a uniform",
+          "describe a storm"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The action 'makes a plan before starting the task' reasonably implies Tom cares about the task or wants to do it well, so 'The task is important to Tom' is the single best inference. The distractors are clearly incorrect or contradictory.",
+        "recommendedQuestion": "Tom makes a plan before starting the task. What can we infer?",
+        "recommendedOptions": [
+          "The task is important to Tom",
+          "Tom dislikes every task",
+          "The plan is missing",
+          "We cannot infer anything"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The phrase 'a useful chance to learn together' is clearly positive; the writer is most likely happy about the activity. Other options conflict with the positive wording.",
+        "recommendedQuestion": "The writer calls the activity “a useful chance to learn together”. The writer is most likely ____ .",
+        "recommendedOptions": [
+          "happy about it",
+          "angry",
+          "not interested",
+          "confused"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The pronoun 'It' unambiguously refers back to the nearest suitable noun 'the display'. Distractors ('the hall', 'the class', 'the preparation') are plausible but incorrect, and the item is suitable for P1 with straightforward reasoning.",
+        "recommendedQuestion": "“The class prepared a display. It was shown in the hall.” What does “It” refer to?",
+        "recommendedOptions": [
+          "The display",
+          "The hall",
+          "The class",
+          "The preparation"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence shows cause/result: practising led to a clearer presentation. 'so' correctly links the cause to the result; the other options express contrast or condition and are inappropriate.",
+        "recommendedQuestion": "Tom practised every day, ____ the presentation became clearer.",
+        "recommendedOptions": [
+          "so",
+          "however",
+          "although",
+          "unless"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The webpage description (steps, reminders, sign-up link) clearly indicates the purpose is to invite people to join. Other choices are irrelevant to the context. Language and cognitive demand are suitable for P1.",
+        "recommendedQuestion": "A webpage gives steps, reminders and a sign-up link for a school event. It is mainly designed to ____ .",
+        "recommendedOptions": [
+          "invite people to join",
+          "sell a house",
+          "teach swimming",
+          "report a storm"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The detail 'Tom asks questions and shares ideas with classmates' directly shows active interest in learning; the other options are irrelevant. The item asks for evidence, which is suitable for P1 reading skills.",
+        "recommendedQuestion": "Which detail best supports the idea that Tom enjoys learning?",
+        "recommendedOptions": [
+          "Tom asks questions and shares ideas with classmates.",
+          "Tom owns a blue bag.",
+          "Tom eats lunch at noon.",
+          "Tom walks home."
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

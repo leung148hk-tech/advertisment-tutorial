@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T10:27:31.694861+00:00",
+  "grade": "P5",
+  "track": "chinese-writing",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: 兩題均為小學五年級詞語運用/搭配的基礎選擇題（每題另有兩個僅改情境的變體，答案與選項相同）。題幹清楚、選項互為對照，均有明確單一最佳答案，適合P5程度，建議保留原題目與選項。\n\nPart 2/5: Reviewed 2 P5 Chinese-writing items (句子組織 / 標點運用). Both items are clear, age-appropriate, have one unambiguous best answer, and can PASS without revision.\n\nPart 3/5: 兩題均屬小五作文段落組織基礎題目。題幹明確，選項清楚且只有一個最佳答案；兩題不需修訂，適合小五程度。\n\nPart 4/5: 兩題均評為通過（PASS）。兩題題幹清晰、單一最佳答案明確，所選正確項目（選項 0）與提示一致，難度與 P5 中文寫作（內容/觀點發展）相符。建議保留原題目與選項。\n\nPart 5/5: Two P5 Chinese-writing items reviewed. Both items are clear, age-appropriate, have a single best answer, and align with the stated difficulty. Recommend passing both without changes.",
+    "reviews": [
+      {
+        "id": "chinese-writing-P5-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目要求形容持續努力不放棄的態度，選項中“堅持”最貼切；其他選項（混亂、敷衍、急躁）與題意相反或不相關，無二義性，難度與詞彙量符合P5。",
+        "recommendedQuestion": "要形容嘉怡做事持續努力不放棄，哪個詞最合適？",
+        "recommendedOptions": [
+          "堅持",
+          "混亂",
+          "敷衍",
+          "急躁"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P5-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目考察常見詞語搭配。四個選項中“整理資料”是自然且常用的搭配；其餘選項語義或搭配不自然，故不存在多重合理答案，適合P5學生。",
+        "recommendedQuestion": "下列哪個詞語搭配最自然？",
+        "recommendedOptions": [
+          "整理資料",
+          "整理星星",
+          "整理雨水",
+          "整理聲音"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P5-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 is the only grammatically complete and natural sentence. Other options are ungrammatical or incomplete, so there is a single clear best choice for P5 students.",
+        "recommendedQuestion": "哪一句語序最通順？",
+        "recommendedOptions": [
+          "合作能讓我們結合不同的長處。",
+          "在我們跑步操場。",
+          "活動同學們下午進行。",
+          "閱讀不同想法認識能。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P5-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 correctly uses quotation marks for direct speech and places punctuation appropriately. The other options misuse commas/colons or wrong end punctuation, so there is one clear best answer for this level.",
+        "recommendedQuestion": "哪一句標點運用最合適？",
+        "recommendedOptions": [
+          "老師說：「請大家準時完成練習。」",
+          "老師，說請大家：準時完成練習。",
+          "老師說請大家準時完成練習？",
+          "老師：說，請大家完成練習。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P5-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目要求選出段落中心句，選項 A 直接點出段落重點且與題目主題「一個值得學習的人」貼切。其他三個選項與主題無關或過於籠統，無法作為中心句。",
+        "recommendedQuestion": "要寫「一個值得學習的人」，哪一句最適合作中心句？",
+        "recommendedOptions": [
+          "一個值得學習的人讓我學會從不同角度觀察和思考。",
+          "那天的天氣很好。",
+          "我有一枝筆。",
+          "很多事情都不同。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P5-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目要求選出最能支持「合作能解決困難」的例子，選項 A 描述小組分工後完成複雜任務，直接且具體地支持論點；其餘選項與合作解決困難無關或並非支持性例子。",
+        "recommendedQuestion": "哪一個例子最能支持「合作能解決困難」？",
+        "recommendedOptions": [
+          "小組分工後完成了複雜任務。",
+          "操場很大。",
+          "有人忘記帶水。",
+          "大家各自等待。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P5-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹要求選出能令記敘內容更具體的細節；選項 0 包含具體行動與感受（主動協助、感到安心），最符合提示，而其他選項語意籠統、缺乏具體細節，故答案明確且年級適切。",
+        "recommendedQuestion": "要令記敘內容更具體，哪一項細節最有幫助？",
+        "recommendedOptions": [
+          "我看到同學需要幫助，便主動協助，完成後感到安心。",
+          "活動很好。",
+          "那天很多人。",
+          "事情發生了。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P5-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目要求較有說服力的寫法；選項 0 陳述立場並給出理由（累積知識、分享心得），符合提示（觀點後加理由），其餘選項語焉不詳或無說服力，故為單一最佳答案且適合 P5 水平。",
+        "recommendedQuestion": "哪種寫法較有說服力？",
+        "recommendedOptions": [
+          "我支持安排閱讀時間，因為能累積知識，也可分享心得。",
+          "我覺得可以。",
+          "每個人不同。",
+          "閱讀就是閱讀。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P5-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence asks for a connective showing sequence; 「然後」 correctly and naturally expresses the next action. Other choices (但是, 雖然, 因此) do not match the indicated sequence given the hint. Distractors are clearly incorrect for P5.",
+        "recommendedQuestion": "「我先搜集資料，____ 整理重點。」填入哪個詞最合適？",
+        "recommendedOptions": [
+          "然後",
+          "但是",
+          "雖然",
+          "因此"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P5-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Checking whether the topic sentence, examples and conclusion echo one another directly improves the completeness and coherence of an essay. The other options are clearly inappropriate revision strategies for P5.",
+        "recommendedQuestion": "完成文章後，哪一項檢查最能提升完整性？",
+        "recommendedOptions": [
+          "檢查中心句、例子和結語是否呼應",
+          "只數字數",
+          "刪去所有標點",
+          "把每句寫得更長"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

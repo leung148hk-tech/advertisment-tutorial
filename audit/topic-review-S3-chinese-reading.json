@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-27T00:59:54.082923+00:00",
+  "grade": "S3",
+  "track": "chinese-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 items (and their context-only variants) for S3 Chinese reading. Both items measure vocabulary meaning/usage and metadata are appropriate.\n\nPart 2/5: Reviewed 2 items (each has two context-only variants). Both items measure close reading / inference and use of textual evidence; metadata is coherent and educationally appropriate. Verdict: 2 PASS.\n\nPart 3/5: 已檢視 2 項目（每項另含兩個僅有情境差異的變體，共適用於三個變體）。兩項目均衡量文言理解相關技能，標籤、主題及模組與題幹所測能力一致，無需修改。\n\nPart 4/5: Reviewed 2 items (each has two context-only variants with identical metadata). Both items measure recognition/understanding of rhetorical devices and their effects; the supplied topic, label and module accurately describe the skills measured.\n\nPart 5/5: Reviewed 2 items (each applies to its two context-only variants). Both items measure paragraph-level organisation and evidence-based response skills respectively; metadata are appropriate.",
+    "reviews": [
+      {
+        "id": "chinese-reading-S3-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹要求辨認詞語「審視」的近義或意義，測量的是詞語意義識別（詞彙理解）。標籤與主題“語基與詞語”以及模組“基礎掌握”都準確反映此技能。",
+        "recommendedTopic": "語基與詞語",
+        "recommendedLabel": "語基與詞語",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-S3-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目要求在語境中選擇最適合使用「審視」的一句，測量的是詞語運用與語境配搭能力。現有標籤“詞語運用”、主題“語基與詞語”與模組“基礎掌握”均與測量重點一致。",
+        "recommendedTopic": "語基與詞語",
+        "recommendedLabel": "詞語運用",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-S3-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to infer a character's manner of doing things from the text's organisation (phenomenon → causes/effects). This is a comprehension/inference task within modern-text reading. The provided topic (現代文閱讀), label (現代文理解) and module (理解與應用) accurately describe the skill.",
+        "recommendedTopic": "現代文閱讀",
+        "recommendedLabel": "現代文理解",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S3-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires identifying what evidence-based practice in reading (finding examples/data) supports a judgment about the author's priorities. This is reading-for-evidence / main-idea-and-evidence within modern-text comprehension. The topic (現代文閱讀), label (主旨與證據) and module (理解與應用) suitably match the assessed skill.",
+        "recommendedTopic": "現代文閱讀",
+        "recommendedLabel": "主旨與證據",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S3-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹要求判斷文言詞語「師」在句中的意義（語詞辨析、語境理解），屬於對文言實詞的理解與運用。既有標籤「文言實詞」、主題「文言基礎」與模組「理解與應用」準確描述所測技能。",
+        "recommendedTopic": "文言基礎",
+        "recommendedLabel": "文言實詞",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S3-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹問句意與所強調的學習態度，屬於對整句文意的理解與歸納（句意理解／主旨推論），故標籤「文言句意」、主題「文言基礎」與模組「理解與應用」均為恰當描述。",
+        "recommendedTopic": "文言基礎",
+        "recommendedLabel": "文言句意",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S3-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify the rhetorical device (擬人) used in a phrase — this is clearly a '修辭與表達' (rhetoric/figurative language) skill and fits the '理解與應用' module.",
+        "recommendedTopic": "修辭與表達",
+        "recommendedLabel": "修辭與表達",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S3-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests understanding of the effect/purpose of using concrete examples to support a point — this is appropriately classified as '修辭與表達' with the label '表達效果' and belongs in '理解與應用'.",
+        "recommendedTopic": "修辭與表達",
+        "recommendedLabel": "表達效果",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S3-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to choose the most logical paragraph arrangement for a personal-piece prompt, focusing on ordering of event, example, feeling and reflection. This is accurately described by the label '段落組織／篇章結構' and the topic '段落與篇章組織'. The module '理解與應用' correctly captures the required comprehension and application of textual organisation.",
+        "recommendedTopic": "段落與篇章組織",
+        "recommendedLabel": "段落組織／篇章結構",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S3-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests making a supported response in commentary by stating an opinion and linking it to textual evidence. The label '觀點回應與證據支持' and topic '觀點與文本證據連結' accurately name this skill, and the module '理解與應用' is appropriate for the comprehension and application involved.",
+        "recommendedTopic": "觀點與文本證據連結",
+        "recommendedLabel": "觀點回應與證據支持",
+        "recommendedModule": "理解與應用"
+      }
+    ]
+  }
+}

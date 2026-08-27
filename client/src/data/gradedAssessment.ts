@@ -7,12 +7,13 @@ import { getSecondaryExamSeeds } from "./secondaryExamBanks";
  */
 export type GradeId = "P1" | "P2" | "P3" | "P4" | "P5" | "P6" | "S1" | "S2" | "S3";
 export type TrackId = "chinese-reading" | "chinese-writing" | "english-reading" | "english-writing" | "math" | "science" | "interview";
-export type ModuleName = "基礎掌握" | "理解與應用" | "情境推理" | "整合表達";
+export type ModuleName = "基礎掌握" | "理解與應用" | "情境推理" | "整合表達" | "溝通與協作";
 
 export type AssessmentQuestion = {
   id: string;
   label: string;
   topic: string;
+  selectionGroup: string;
   question: string;
   hint: string;
   options: string[];
@@ -22,8 +23,7 @@ export type AssessmentQuestion = {
   module: ModuleName;
   difficulty: "基礎" | "核心" | "進階";
 };
-
-export type QuestionSeed = Omit<AssessmentQuestion, "id" | "grade" | "gradeBand" | "module" | "difficulty">;
+export type QuestionSeed = Omit<AssessmentQuestion, "id" | "grade" | "gradeBand" | "module" | "difficulty" | "selectionGroup"> & { selectionGroup?: string };
 
 export const GRADES: { id: GradeId; label: string; stage: "小學" | "初中" }[] = [
   { id: "P1", label: "小一", stage: "小學" }, { id: "P2", label: "小二", stage: "小學" }, { id: "P3", label: "小三", stage: "小學" },
@@ -41,7 +41,7 @@ export const TRACKS: { id: TrackId; label: string; shortLabel: string; descripti
   { id: "interview", label: "升中面試準備", shortLabel: "升中面試", description: "自我介紹、聆聽、應對、協作與表達", icon: "interview", allowedStages: ["小學"], grades: ["P5", "P6"] },
 ];
 
-const MODULES: ModuleName[] = ["基礎掌握", "理解與應用", "情境推理", "整合表達"];
+export const ASSESSMENT_MODULES: ModuleName[] = ["基礎掌握", "理解與應用", "情境推理", "整合表達", "溝通與協作"];
 const CONTEXTS = ["校園情境", "社區情境", "日常生活"];
 
 function gradeBand(grade: GradeId) {
@@ -55,6 +55,42 @@ function difficultyFor(grade: GradeId, variant: number): AssessmentQuestion["dif
   if (grade === "P1" || grade === "P2") return variant === 0 ? "基礎" : "核心";
   if (grade === "S2" || grade === "S3") return variant === 2 ? "進階" : "核心";
   return variant === 0 ? "基礎" : variant === 1 ? "核心" : "進階";
+}
+
+function moduleForSeed(track: TrackId, seed: QuestionSeed): ModuleName {
+  const skill = `${seed.topic} ${seed.label}`.toLowerCase();
+  if (track === "interview") return /introduction|interest|improve|school|memorable|response|reflection|自我|興趣|反思|學校|表達/.test(skill) ? "整合表達" : "溝通與協作";
+  if (track === "chinese-writing" && /內容發展|觀點發展|論證|寫作規劃|應試準備|應試策略/.test(skill)) return "整合表達";
+  if (track === "english-reading" && /writer's purpose|identifying writer/.test(skill)) return "理解與應用";
+  if (track === "english-reading" && /inference strategies/.test(skill)) return "理解與應用";
+  if (track === "english-writing" && /subject.?verb agreement|register and tone/.test(skill)) return "基礎掌握";
+  if (track === "english-writing" && /sentence specificity|precision in writing/.test(skill)) return "理解與應用";
+  if (track === "english-writing" && /parallelism/.test(skill)) return "理解與應用";
+  if (track === "english-writing" && /identifying supporting details|supporting detail/.test(skill)) return "理解與應用";
+  if (track === "chinese-reading" && /文本結構|段落組織/.test(skill)) return "理解與應用";
+  if (track === "math") {
+    if (/生活/.test(skill)) return "情境推理";
+    if (/資料|統計|平均|中位|圖表/.test(skill)) return "理解與應用";
+    if (/比例|百分|比率|代數|方程|幾何|量度|時間|金錢/.test(skill)) return "理解與應用";
+    return "基礎掌握";
+  }
+  if (track === "science") return /探究|inquiry|實驗|experiment/.test(skill) ? "情境推理" : "理解與應用";
+  if (/字詞|詞語|vocabulary|grammar|sentence|language accuracy|標點|句子組織|句子結構|語法|病句/.test(skill)) return "基礎掌握";
+  if (/訊息|細節|主旨|reading details|main idea|reading purpose|閱讀|connector|連接詞|連接表達/.test(skill)) return "理解與應用";
+  if (/reference word|pronoun|supporting evidence/.test(skill)) return "理解與應用";
+  if (/修辭|句意/.test(skill)) return "理解與應用";
+  if (/推論|inference|text connection|語境/.test(skill)) return "情境推理";
+  if (/段落|整合|paragraph|purpose|tone|audience|revision|表達/.test(skill)) return "整合表達";
+  return "理解與應用";
+}
+
+function selectionGroupForSeed(track: TrackId, grade: GradeId, seed: QuestionSeed, seedIndex: number, seedCount: number) {
+  const usesPrecisePrimaryGroups = grade.startsWith("P") && ["chinese-reading", "chinese-writing", "english-reading", "english-writing", "math", "interview"].includes(track);
+  if (!usesPrecisePrimaryGroups) return seed.selectionGroup ?? seed.topic;
+  const group = track === "english-writing" && seedCount === 11
+    ? ([0, 0, 1, 1, 2, 2, 3, 3, 3, 4, 4][seedIndex] ?? seedIndex)
+    : Math.floor(seedIndex / 2);
+  return `${track}-${group}`;
 }
 
 const BANKS: Record<TrackId, QuestionSeed[]> = {
@@ -133,16 +169,16 @@ const BANKS: Record<TrackId, QuestionSeed[]> = {
     { label: "Friction", topic: "Forces and motion", question: "A bicycle slows down when brakes are used mainly because of ____.", hint: "Think about contact between surfaces.", options: ["friction", "buoyancy", "magnetism", "loss of gravity"], correct: 0 },
   ],
   interview: [
-    { label: "Self introduction", topic: "Self introduction", question: "Which self-introduction gives the clearest first impression?", hint: "Choose a short, structured and genuine response.", options: ["Only say your name and stop.", "Greet, state your name and school, then share one genuine interest with an example.", "List every award without context.", "Ask the interviewer to answer first."], correct: 1 },
-    { label: "Listening", topic: "Listening and response", question: "If you do not understand a question, what is the best response?", hint: "Clarify politely instead of guessing.", options: ["Make up an answer immediately.", "Ask politely for the question to be repeated or explained.", "Stay silent until the interview ends.", "Ask a friend to answer."], correct: 1 },
-    { label: "Response structure", topic: "Listening and response", question: "Which is the strongest way to answer “What do you enjoy learning?”", hint: "A good answer includes a reason and an example.", options: ["Say only one subject name.", "Name an area, explain why, and give one related experience.", "Change the question.", "Repeat “I don't know”."], correct: 1 },
-    { label: "Teamwork", topic: "Collaboration", question: "In a group task, a quieter member has not spoken. What can you do?", hint: "Include others respectfully.", options: ["Ignore the person.", "Invite the person to share an idea and listen carefully.", "Tell everyone your idea is best.", "End the discussion."], correct: 1 },
-    { label: "Different views", topic: "Collaboration", question: "When a teammate disagrees with you, what should you do first?", hint: "Understand before responding.", options: ["Say they are wrong.", "Ask about their reason and compare ideas calmly.", "Leave the group.", "Speak louder."], correct: 1 },
-    { label: "Body language", topic: "Expression", question: "Which body language supports clear communication?", hint: "Choose a natural and respectful action.", options: ["Look at the floor all the time.", "Sit naturally and look at the speaker.", "Keep checking a phone.", "Turn away while speaking."], correct: 1 },
-    { label: "Reflection", topic: "Expression", question: "How can you answer a question about something you want to improve?", hint: "Be honest and show how you are working on it.", options: ["Say you have no area to improve.", "Name one area and explain one action you are taking.", "Blame classmates.", "Refuse to respond."], correct: 1 },
-    { label: "School knowledge", topic: "School awareness", question: "Why does learning about a secondary school before an interview help?", hint: "Connect what you know to your own interests.", options: ["It guarantees admission.", "It helps you give specific reasons for applying and ask thoughtful questions.", "It means no other preparation is needed.", "It lets you memorise a uniform colour."], correct: 1 },
-    { label: "Situation judgement", topic: "School awareness", question: "You notice a classmate is left out during an activity. What is a constructive response?", hint: "Show awareness and practical action.", options: ["Pretend not to notice.", "Invite the classmate to join and check what role they prefer.", "Tell others to stop talking.", "Leave the activity."], correct: 1 },
-    { label: "Integrated expression", topic: "Self introduction", question: "What makes an interview answer memorable without sounding rehearsed?", hint: "Use a real, relevant example.", options: ["Using the longest words possible.", "Giving a clear answer supported by a genuine experience.", "Speaking as fast as possible.", "Reciting a script without listening."], correct: 1 },
+    { label: "Self introduction", topic: "Self-introduction and authentic expression", question: "Which self-introduction gives the clearest first impression?", hint: "Choose a short, structured and genuine response.", options: ["Only say your name and stop.", "Greet, state your name and school, then share one genuine interest with an example.", "List every award without context.", "Ask the interviewer to answer first."], correct: 1 },
+    { label: "Listening", topic: "Listening and clarification", question: "If you do not understand a question, what is the best response?", hint: "Clarify politely instead of guessing.", options: ["Make up an answer immediately.", "Ask politely for the question to be repeated or explained.", "Stay silent until the interview ends.", "Ask a friend to answer."], correct: 1 },
+    { label: "Response structure", topic: "Interview communication: answering questions", question: "Which is the strongest way to answer “What do you enjoy learning?”", hint: "A good answer includes a reason and an example.", options: ["Say only one subject name.", "Name an area, explain why, and give one related experience.", "Change the question.", "Repeat “I don't know”."], correct: 1 },
+    { label: "Teamwork", topic: "Collaboration and inclusion", question: "In a group task, a quieter member has not spoken. What can you do?", hint: "Include others respectfully.", options: ["Ignore the person.", "Invite the person to share an idea and listen carefully.", "Tell everyone your idea is best.", "End the discussion."], correct: 1 },
+    { label: "Different views", topic: "Collaboration and disagreement", question: "When a teammate disagrees with you, what should you do first?", hint: "Understand before responding.", options: ["Say they are wrong.", "Ask about their reason and compare ideas calmly.", "Leave the group.", "Speak louder."], correct: 1 },
+    { label: "Body language", topic: "Non-verbal communication", question: "Which body language supports clear communication?", hint: "Choose a natural and respectful action.", options: ["Look at the floor all the time.", "Sit naturally and look at the speaker.", "Keep checking a phone.", "Turn away while speaking."], correct: 1 },
+    { label: "Reflection", topic: "Interview communication and self-reflection", question: "How can you answer a question about something you want to improve?", hint: "Be honest and show how you are working on it.", options: ["Say you have no area to improve.", "Name one area and explain one action you are taking.", "Blame classmates.", "Refuse to respond."], correct: 1 },
+    { label: "School knowledge", topic: "School awareness and motivation", question: "Why does learning about a secondary school before an interview help?", hint: "Connect what you know to your own interests.", options: ["It guarantees admission.", "It helps you give specific reasons for applying and ask thoughtful questions.", "It means no other preparation is needed.", "It lets you memorise a uniform colour."], correct: 1 },
+    { label: "Situation judgement", topic: "Peer inclusion and social awareness", question: "You notice a classmate is left out during an activity. What is a constructive response?", hint: "Show awareness and practical action.", options: ["Pretend not to notice.", "Invite the classmate to join and check what role they prefer.", "Tell others to stop talking.", "Leave the activity."], correct: 1 },
+    { label: "Integrated expression", topic: "Self-introduction and authentic expression", question: "What makes an interview answer memorable without sounding rehearsed?", hint: "Use a real, relevant example.", options: ["Using the longest words possible.", "Giving a clear answer supported by a genuine experience.", "Speaking as fast as possible.", "Reciting a script without listening."], correct: 1 },
   ],
 };
 
@@ -192,8 +228,8 @@ const PRIMARY_MATH_GRADE_BANKS: Record<"P1" | "P2" | "P3" | "P4" | "P5" | "P6", 
     { label: "容量換算", topic: "圖形與量度", question: "1.25 公升等於多少毫升？", hint: "1 公升等於 1,000 毫升。", options: ["125 毫升", "1,025 毫升", "1,250 毫升", "12,500 毫升"], correct: 2 },
     { label: "平均數", topic: "數據與統計", question: "三次小測驗分數是 70、80、90，平均分是多少？", hint: "把分數相加後除以次數。", options: ["75", "80", "85", "240"], correct: 1 },
     { label: "圖表總和", topic: "數據與統計", question: "圖表顯示星期一看了 12 頁、星期二看了 15 頁、星期三看了 13 頁，一共看了多少頁？", hint: "把三天的頁數相加。", options: ["30 頁", "38 頁", "40 頁", "42 頁"], correct: 2 },
-    { label: "多步驟金錢題", topic: "多步驟解題", question: "一本書售 $28，買 3 本用 $100 付款，應找回多少錢？", hint: "先計算三本書的總價。", options: ["$14", "$16", "$72", "$84"], correct: 1 },
-    { label: "數量推理", topic: "多步驟解題", question: "一條繩分成 4 段，每段 35 厘米，整條繩長多少厘米？", hint: "相同長度的段數可用乘法。", options: ["39 厘米", "70 厘米", "105 厘米", "140 厘米"], correct: 3 },
+    { label: "多步驟金錢題", topic: "生活應用：單步與多步運算", question: "一本書售 $28，買 3 本用 $100 付款，應找回多少錢？", hint: "先計算三本書的總價。", options: ["$14", "$16", "$72", "$84"], correct: 1 },
+    { label: "單步乘法應用題", topic: "生活應用：單步與多步運算", question: "一條繩分成 4 段，每段 35 厘米，整條繩長多少厘米？", hint: "相同長度的段數可用乘法。", options: ["39 厘米", "70 厘米", "105 厘米", "140 厘米"], correct: 3 },
   ],
   P5: [
     { label: "整數除法", topic: "數與運算", question: "7,560 ÷ 12 = ?", hint: "可先估算答案約有多少百。", options: ["63", "630", "6,300", "756"], correct: 1 },
@@ -204,19 +240,19 @@ const PRIMARY_MATH_GRADE_BANKS: Record<"P1" | "P2" | "P3" | "P4" | "P5" | "P6", 
     { label: "體積概念", topic: "圖形與量度", question: "長方體長 4 厘米、闊 3 厘米、高 2 厘米，體積是多少？", hint: "體積 = 長 × 闊 × 高。", options: ["9 立方厘米", "12 立方厘米", "18 立方厘米", "24 立方厘米"], correct: 3 },
     { label: "統計圖表", topic: "數據與統計", question: "圓形圖中一半代表 40 人，全體共有多少人？", hint: "一半是全體的二分之一。", options: ["20 人", "40 人", "60 人", "80 人"], correct: 3 },
     { label: "平均數應用", topic: "數據與統計", question: "四次測驗平均是 75 分，前三次共得 220 分，第四次得多少分？", hint: "先用平均數找出四次總分。", options: ["70 分", "75 分", "80 分", "85 分"], correct: 2 },
-    { label: "方程思維", topic: "多步驟解題", question: "3x + 5 = 20，x = ?", hint: "先減去 5，再除以 3。", options: ["3", "5", "7", "15"], correct: 1 },
-    { label: "比例生活題", topic: "多步驟解題", question: "果汁和水的比例是 1：4。若用了 3 杯果汁，需要多少杯水？", hint: "果汁由 1 變成 3，水也要按相同倍數改變。", options: ["4 杯", "7 杯", "9 杯", "12 杯"], correct: 3 },
+    { label: "方程思維", topic: "代數思維", question: "3x + 5 = 20，x = ?", hint: "先減去 5，再除以 3。", options: ["3", "5", "7", "15"], correct: 1 },
+    { label: "比例生活題", topic: "比例推理與比的應用", question: "果汁和水的比例是 1：4。若用了 3 杯果汁，需要多少杯水？", hint: "果汁由 1 變成 3，水也要按相同倍數改變。", options: ["4 杯", "7 杯", "9 杯", "12 杯"], correct: 3 },
   ],
   P6: [
-    { label: "整數與小數", topic: "數與運算", question: "3,600 ÷ 9 = ?", hint: "可用乘法檢查答案。", options: ["40", "400", "4,000", "32,400"], correct: 1 },
+    { label: "整數除法", topic: "數與運算", question: "3,600 ÷ 9 = ?", hint: "可用乘法檢查答案。", options: ["40", "400", "4,000", "32,400"], correct: 1 },
     { label: "小數除法", topic: "數與運算", question: "1.2 ÷ 0.3 = ?", hint: "把被除數和除數同時擴大 10 倍。", options: ["0.4", "4", "9", "40"], correct: 1 },
     { label: "比例應用", topic: "分數與比例", question: "麵粉和糖的比例是 5：2。若用了 10 杯麵粉，需要多少杯糖？", hint: "兩部分要同時按相同倍數放大。", options: ["2 杯", "4 杯", "5 杯", "8 杯"], correct: 1 },
-    { label: "折扣計算", topic: "分數與比例", question: "一件原價 $240 的物品減價 25%，減價後售價是多少？", hint: "先找出減去的金額，再由原價扣除。", options: ["$60", "$180", "$200", "$300"], correct: 1 },
+    { label: "折扣計算", topic: "百分數與應用", question: "一件原價 $240 的物品減價 25%，減價後售價是多少？", hint: "先找出減去的金額，再由原價扣除。", options: ["$60", "$180", "$200", "$300"], correct: 1 },
     { label: "立體圖形", topic: "圖形與量度", question: "長方體長 6 厘米、闊 4 厘米、高 3 厘米，體積是多少？", hint: "把三條邊長相乘。", options: ["13 立方厘米", "24 立方厘米", "48 立方厘米", "72 立方厘米"], correct: 3 },
-    { label: "速度概念", topic: "圖形與量度", question: "單車以每小時 12 公里行駛 1.5 小時，共行駛多少公里？", hint: "路程 = 速度 × 時間。", options: ["8 公里", "12 公里", "18 公里", "24 公里"], correct: 2 },
+    { label: "速度概念", topic: "速度與量度（速率與時間）", question: "單車以每小時 12 公里行駛 1.5 小時，共行駛多少公里？", hint: "路程 = 速度 × 時間。", options: ["8 公里", "12 公里", "18 公里", "24 公里"], correct: 2 },
     { label: "中位數", topic: "數據與統計", question: "數字 6、8、8、10、13 的中位數是多少？", hint: "把數據排好後找中間數。", options: ["6", "8", "9", "13"], correct: 1 },
     { label: "長條圖判讀", topic: "數據與統計", question: "長條圖顯示 12 名同學選擇美術、18 名同學選擇音樂。選擇音樂的同學多了多少人？", hint: "用較大數減去較小數。", options: ["4 人", "6 人", "12 人", "30 人"], correct: 1 },
-    { label: "代數思維", topic: "多步驟解題", question: "4x + 7 = 31，x = ?", hint: "先減去 7，再除以 4。", options: ["4", "5", "6", "8"], correct: 2 },
+    { label: "代數思維", topic: "一元一次方程式求解", question: "4x + 7 = 31，x = ?", hint: "先減去 7，再除以 4。", options: ["4", "5", "6", "8"], correct: 2 },
     { label: "綜合文字題", topic: "多步驟解題", question: "6 包鉛筆每包有 8 枝，送出 11 枝後，還有多少枝？", hint: "先計算全部數量，再減去送出的數量。", options: ["26 枝", "37 枝", "48 枝", "59 枝"], correct: 1 },
   ],
 };
@@ -232,63 +268,79 @@ const PRIMARY_LANGUAGE_LEVELS: Record<"P1" | "P2" | "P3" | "P4" | "P5" | "P6", P
 };
 
 function primaryChineseReadingSeeds(level: PrimaryLanguageLevel): QuestionSeed[] {
+  const isP2 = level.zhWord === "整潔";
+  const isP3 = level.zhWord === "努力";
+  const isP4 = level.zhWord === "周全";
+  const isP5 = level.zhWord === "堅持";
+  const isP6 = level.zhWord === "審慎";
   return [
-    { label: "字詞理解", topic: "字詞理解", question: `「${level.zhWord}」最接近下列哪一個意思？`, hint: "先從詞語的日常用法判斷。", options: [level.zhMeaning, "很匆忙", "不願意幫忙", "聲音很大"], correct: 0 },
-    { label: "詞語運用", topic: "字詞理解", question: `下列哪一句最適合使用「${level.zhWord}」？`, hint: "想想這個詞可以形容甚麼情況。", options: [`${level.zhPerson}完成工作後，桌面十分${level.zhWord}。`, `${level.zhPerson}聽見好消息，感到${level.zhWord}。`, `雨傘的顏色很${level.zhWord}。`, `這條路十分${level.zhWord}。`], correct: 1 },
-    { label: "訊息定位", topic: "訊息定位", question: `${level.zhPerson}${level.zhAction}。這段文字主要說明了甚麼？`, hint: "直接找出人物做了甚麼。", options: [`${level.zhPerson}在幫助或準備事情。`, `${level.zhPerson}不想參加活動。`, `${level.zhPerson}正在睡覺。`, `${level.zhPerson}忘記了所有事情。`], correct: 0 },
+    { label: "字詞理解", topic: "字詞理解與運用", question: `「${level.zhWord}」最接近下列哪一個意思？`, hint: "先從詞語的日常用法判斷。", options: [level.zhMeaning, "很匆忙", "不願意幫忙", "聲音很大"], correct: 0 },
+    { label: "詞語運用", topic: "字詞理解與運用", question: `下列哪一句最適合使用「${level.zhWord}」？`, hint: "想想這個詞可以形容甚麼情況。", options: isP2 ? ["媽媽把廚房打掃得十分整潔。", "小明聽到好消息，感到整潔。", "雨傘的顏色很整潔。", "這首歌的旋律很整潔。"] : isP3 ? ["阿朗每天努力學習，成績進步了。", "阿朗聽見好消息，感到努力。", "雨傘的顏色很努力。", "這條路走起來很努力。"] : isP4 ? ["老師為郊遊作出周全的安排。", "小明的聲音很周全。", "這道菜的味道很周全。", "天空的顏色很周全。"] : isP5 ? ["媽媽教我寫字時，我會堅持練習，直到寫得更好。", "聽到好消息，他感到非常堅持。", "這張桌子很堅持，搬不動也放不下。", "這首歌很堅持，大家都跟着唱。"] : isP6 ? ["面對重要的決定，他會審慎考慮。", "風景畫的色彩十分審慎。", "聽到玩笑後，他不禁感到審慎起來。", "這台機器的運轉聲音非常審慎。"] : [`${level.zhPerson}完成工作後，桌面十分${level.zhWord}。`, `${level.zhPerson}聽見好消息，感到${level.zhWord}。`, `雨傘的顏色很${level.zhWord}。`, `這條路十分${level.zhWord}。`], correct: isP2 || isP3 || isP4 || isP5 || isP6 ? 0 : 1 },
+    { label: "主旨大意", topic: "主旨大意", question: `${level.zhPerson}${level.zhAction}。這段文字主要說明了甚麼？`, hint: "直接找出人物做了甚麼。", options: [`${level.zhPerson}${level.zhAction}。`, `${level.zhPerson}不想參加活動。`, `${level.zhPerson}正在睡覺。`, `${level.zhPerson}不見了物品。`], correct: 0 },
     { label: "細節理解", topic: "訊息定位", question: `通告寫着「${level.zhTopic}分享會下午三時開始，參加者請在二時四十五分到達。」最遲何時到達？`, hint: "留意通告中的報到時間。", options: ["下午二時四十五分", "下午三時", "下午三時十五分", "下午四時"], correct: 0 },
-    { label: "人物推論", topic: "人物推論", question: `${level.zhPerson}${level.zhAction}，這最能反映他／她怎樣？`, hint: "從行動推想人物的特質。", options: ["有責任感", "粗心大意", "不願合作", "害怕嘗試"], correct: 0 },
-    { label: "原因推論", topic: "人物推論", question: `${level.zhPerson}先了解資料才作決定，最可能是因為？`, hint: "想想這種行動可帶來甚麼好處。", options: ["希望作出較合適的選擇", "不想知道內容", "想拖延時間", "沒有任何原因"], correct: 0 },
-    { label: "語境與修辭", topic: "語境與修辭", question: `「微風輕輕拍著樹葉」主要把微風寫成像甚麼？`, hint: "留意無生命的事物被賦予人的動作。", options: ["人", "石頭", "書本", "雨傘"], correct: 0 },
-    { label: "句意理解", topic: "語境與修辭", question: `「${level.zhSentence}」這句話中，最重要的訊息是甚麼？`, hint: "找出誰在甚麼地方做甚麼。", options: ["人物、地點和主要行動", "句子的字數", "所有標點名稱", "顏色的數量"], correct: 0 },
+    { label: "人物推論", topic: "人物與原因推論", question: `${level.zhPerson}${level.zhAction}，這最能反映他／她怎樣？`, hint: "從行動推想人物的特質。", options: isP2 ? ["有公德心", "粗心大意", "不願合作", "害怕嘗試"] : isP3 ? ["勤奮", "粗心大意", "不願合作", "害怕嘗試"] : isP4 ? ["有準備", "粗心大意", "不願合作", "害怕嘗試"] : isP5 ? ["有毅力", "害怕嘗試", "容易放棄", "不願接受別人意見"] : isP6 ? ["認真負責", "願意分享", "不願合作", "害怕嘗試"] : ["願意分享", "粗心大意", "不願合作", "害怕嘗試"], correct: 0 },
+    { label: "原因推論", topic: "人物與原因推論", question: `${level.zhPerson}先了解資料才作決定，最可能是因為？`, hint: "想想這種行動可帶來甚麼好處。", options: ["希望作出較合適的選擇", "不想知道內容", "想拖延時間", "沒有任何原因"], correct: 0 },
+    { label: "修辭手法", topic: "語境、修辭與句意", question: `「微風輕輕拍著樹葉」主要把微風寫成像甚麼？`, hint: "留意無生命的事物被賦予人的動作。", options: ["人", "石頭", "書本", "雨傘"], correct: 0 },
+    { label: "句意理解", topic: "語境、修辭與句意", question: isP4 ? `「${level.zhSentence}」這句話的主要意思是甚麼？` : `「${level.zhSentence}」這句話中，最重要的訊息是甚麼？`, hint: isP4 || isP5 || isP6 ? "直接找出句子要表達的意思。" : "找出誰在甚麼地方做甚麼。", options: isP4 ? [level.zhSentence, "閱讀會讓我們變得更快樂。", "閱讀只適合小朋友閱讀。", "閱讀會讓書本很快破爛。"] : isP5 ? ["合作可以把不同人的長處結合起來，做成更好的事情", "合作是指大家在同一地方工作", "合作就是每個人都單獨完成自己的任務", "只有朋友之間才需要合作"] : isP6 ? ["溝通要清晰，才能幫助小組作出合適的決定。", "小組應避免溝通，以免浪費時間。", "每個成員應單獨作決定，不必討論。", "做決定時只需聽從領導者的意見。"] : ["人物、地點和主要行動", "句子的字數", "所有標點名稱", "顏色的數量"], correct: 0 },
     { label: "主旨辨認", topic: "整合閱讀", question: `文章先介紹${level.zhTopic}的準備方法，再說明參加後的收穫，主旨最可能是？`, hint: "主旨是作者最想帶出的中心訊息。", options: ["鼓勵讀者認真準備並參與活動", "介紹所有人的姓名", "比較不同天氣", "只描述食物"], correct: 0 },
-    { label: "段落關係", topic: "整合閱讀", question: "「先找出重點，再整理想法，最後寫下回應。」這段文字主要按甚麼方式組織？", hint: "留意動作的先後。", options: ["步驟順序", "人物對話", "地點轉換", "問題與答案"], correct: 0 },
+    { label: "段落組織", topic: "文本結構", question: "「先找出重點，再整理想法，最後寫下回應。」這段文字主要按甚麼方式組織？", hint: "留意動作的先後。", options: ["步驟順序", "人物對話", "地點轉換", "問題與答案"], correct: 0 },
   ];
 }
 
 function primaryChineseWritingSeeds(level: PrimaryLanguageLevel): QuestionSeed[] {
+  const isP1 = level.zhTopic === "我的家人";
+  const isP6 = level.zhTopic === "我對校園生活的建議";
   return [
     { label: "詞語運用", topic: "詞語運用", question: `要形容${level.zhPerson}做事${level.zhMeaning}，哪個詞最合適？`, hint: "選擇能準確反映人物態度的詞。", options: [level.zhWord, "混亂", "敷衍", "急躁"], correct: 0 },
     { label: "詞語搭配", topic: "詞語運用", question: "下列哪個詞語搭配最自然？", hint: "留意動詞和名詞的常見配搭。", options: ["整理資料", "整理星星", "整理雨水", "整理聲音"], correct: 0 },
-    { label: "句子組織", topic: "句子組織", question: `哪一句語序最通順？`, hint: "先找主語、動作和其他資訊。", options: [level.zhSentence, "在我們跑步操場。", "活動同學們下午進行。", "閱讀不同想法認識能。"], correct: 0 },
-    { label: "標點運用", topic: "句子組織", question: "哪一句標點運用最合適？", hint: "說話內容前後要配合合適符號。", options: ["老師說：「請大家準時完成練習。」", "老師，說請大家：準時完成練習。", "老師說請大家準時完成練習？", "老師：說，請大家完成練習。"], correct: 0 },
-    { label: "段落中心", topic: "段落組織", question: `要寫「${level.zhTopic}」，哪一句最適合作中心句？`, hint: "中心句要直接點出段落重點。", options: [`${level.zhTopic}讓我學會從不同角度觀察和思考。`, "那天的天氣很好。", "我有一枝筆。", "很多事情都不同。"], correct: 0 },
-    { label: "例子支援", topic: "段落組織", question: "哪一個例子最能支持「合作能解決困難」？", hint: "例子要直接回應觀點。", options: ["小組分工後完成了複雜任務。", "操場很大。", "有人忘記帶水。", "大家各自等待。"], correct: 0 },
-    { label: "內容發展", topic: "內容發展", question: "要令記敘內容更具體，哪一項細節最有幫助？", hint: "選擇包含行動、感受或對話的細節。", options: [`我看到同學需要幫助，便主動協助，完成後感到安心。`, "活動很好。", "那天很多人。", "事情發生了。"], correct: 0 },
-    { label: "觀點發展", topic: "內容發展", question: "哪種寫法較有說服力？", hint: "觀點後加上理由和例子。", options: ["我支持安排閱讀時間，因為能累積知識，也可分享心得。", "我覺得可以。", "每個人不同。", "閱讀就是閱讀。"], correct: 0 },
-    { label: "連接表達", topic: "表達與修訂", question: "「我先搜集資料，____ 整理重點。」填入哪個詞最合適？", hint: "留意兩個動作的先後。", options: ["然後", "但是", "雖然", "因此"], correct: 0 },
-    { label: "修訂檢查", topic: "表達與修訂", question: "完成文章後，哪一項檢查最能提升完整性？", hint: "留意內容、例子和結語是否一致。", options: ["檢查中心句、例子和結語是否呼應", "只數字數", "刪去所有標點", "把每句寫得更長"], correct: 0 },
+    { label: "句子組織", topic: "句子準確性", question: `哪一句語序最通順？`, hint: "先找主語、動作和其他資訊。", options: [level.zhSentence, "在我們跑步操場。", "活動同學們下午進行。", "閱讀不同想法認識能。"], correct: 0 },
+    { label: "標點運用", topic: "句子準確性", question: "哪一句標點運用最合適？", hint: "說話內容前後要配合合適符號。", options: ["老師說：「請大家準時完成練習。」", "老師，說請大家：準時完成練習。", "老師說請大家準時完成練習？", "老師：說，請大家完成練習。"], correct: 0 },
+    { label: "段落中心", topic: "段落組織", question: isP1 ? "要寫「我的家人」，哪一句最適合作中心句？" : `要寫「${level.zhTopic}」，哪一句最適合作中心句？`, hint: "中心句要直接點出段落重點。", options: isP1 ? ["我愛我的家人。", "我今天吃了蘋果。", "這本書很有趣。", "我家附近有公園。"] : isP6 ? ["我對校園生活有幾點建議，希望能改善同學的學習和生活環境。", "那天的天氣很好。", "我有很多個人喜好。", "學校的操場很大。"] : [`${level.zhTopic}讓我學會從不同角度觀察和思考。`, "那天的天氣很好。", "我有一枝筆。", "很多事情都不同。"], correct: 0 },
+    { label: "例子支援", topic: "段落組織", question: "哪一個例子最能支持「合作能解決困難」？", hint: "例子要直接回應觀點。", options: isP1 ? ["我和同學一起搬書，終於搬到課室。", "我一個人玩遊戲。", "天氣變涼了。", "大家都不說話。"] : ["小組分工後完成了複雜任務。", "操場很大。", "有人忘記帶水。", "大家各自等待。"], correct: 0 },
+    { label: "內容發展（敘述細節）", topic: "內容與觀點發展", question: isP1 ? "要令故事更清楚，哪一項細節最有幫助？" : "要令記敘內容更具體，哪一項細節最有幫助？", hint: "選擇包含行動、感受或對話的細節。", options: isP1 ? ["我把水遞給口渴的同學，他說「謝謝你！」我很開心。", "活動很好玩。", "那天很多人。", "事情發生了。"] : [`我看到同學需要幫助，便主動協助，完成後感到安心。`, "活動很好。", "那天很多人。", "事情發生了。"], correct: 0 },
+    { label: "觀點發展與論證", topic: "內容與觀點發展", question: isP1 ? "想請同學每天閱讀，哪一句說得較清楚？" : "哪種寫法較有說服力？", hint: "觀點後加上理由和例子。", options: isP1 ? ["我們每天有閱讀時間，可以認識新故事，也能和同學分享。", "我覺得可以。", "每個人不同。", "閱讀就是閱讀。"] : ["我支持安排閱讀時間，因為能累積知識，也可分享心得。", "我覺得可以。", "每個人不同。", "閱讀就是閱讀。"], correct: 0 },
+    { label: "連接詞選擇", topic: "表達準確：連接詞", question: isP1 ? "「我先做功課，____ 玩遊戲。」填入哪個詞最合適？" : "「我先搜集資料，____ 整理重點。」填入哪個詞最合適？", hint: "留意兩個動作的先後。", options: ["然後", "但是", "雖然", "因此"], correct: 0 },
+    { label: "修訂檢查", topic: "表達準確：修訂與篇章銜接", question: isP1 ? "完成作文後，哪一項檢查最有幫助？" : "完成文章後，哪一項檢查最能提升完整性？", hint: isP1 ? "看看開頭、內容和結尾是否連在一起。" : "留意內容、例子和結語是否一致。", options: isP1 ? ["看看開頭、內容和結尾有沒有連在一起。", "只數字數。", "把所有標點刪掉。", "把每句都寫長一點。"] : ["檢查中心句、例子和結語是否呼應", "只數字數", "刪去所有標點", "把每句寫得更長"], correct: 0 },
   ];
 }
 
 function primaryEnglishReadingSeeds(level: PrimaryLanguageLevel): QuestionSeed[] {
+  const isP1 = level.enWord === "happy";
+  const isP2 = level.enWord === "careful";
+  const isP3 = level.enWord === "proud";
   return [
     { label: "Vocabulary", topic: "Vocabulary", question: `The word “${level.enWord}” is closest in meaning to ____ .`, hint: "Choose the meaning that best matches the word.", options: [level.enMeaning, "very noisy", "always late", "easy to break"], correct: 0 },
-    { label: "Word in context", topic: "Vocabulary", question: `${level.enSubject} is ${level.enWord} when working on ${level.enTheme}. Which action shows this best?`, hint: "Look for an action that matches the word.", options: ["Checking work carefully and helping others", "Ignoring every instruction", "Leaving without a reason", "Never trying again"], correct: 0 },
-    { label: "Detail finding", topic: "Reading details", question: `A notice says the ${level.enTheme} starts at 10:30 and registration closes at 10:15. What should a student do?`, hint: "Find the earlier required time.", options: ["Register by 10:15", "Arrive after 10:30", "Wait until noon", "Bring nothing"], correct: 0 },
-    { label: "Main idea", topic: "Reading details", question: `A short text explains how to prepare for ${level.enTheme}. Its main purpose is to ____ .`, hint: "Think about what the writer wants readers to do.", options: ["give practical guidance", "tell a fantasy story", "sell a uniform", "describe a storm"], correct: 0 },
-    { label: "Inference", topic: "Reading inference", question: `${level.enSubject} ${level.enVerb} the plan before starting the task. What can we infer?`, hint: "Use the action as a clue.", options: ["The task matters to the student", "The student dislikes every task", "The plan is missing", "Nothing can be inferred"], correct: 0 },
-    { label: "Writer attitude", topic: "Reading inference", question: `The writer calls the activity “a useful chance to learn together”. The writer is most likely ____ .`, hint: "Notice the positive language.", options: ["supportive", "angry", "uninterested", "confused"], correct: 0 },
-    { label: "Reference word", topic: "Text connection", question: `“The class prepared a display. It was shown in the hall.” What does “It” refer to?`, hint: "Look back to the nearest suitable noun.", options: ["The display", "The hall", "The class", "The preparation"], correct: 0 },
-    { label: "Connector", topic: "Text connection", question: `${level.enSubject} practised regularly; ____ , the presentation became clearer.`, hint: "The second part shows a result.", options: ["therefore", "however", "although", "unless"], correct: 0 },
-    { label: "Reading purpose", topic: "Integrated reading", question: `A webpage gives steps, reminders and a sign-up link for ${level.enTheme}. It is mainly designed to ____ .`, hint: "Think about the reader’s next action.", options: ["invite people to take part", "sell a house", "teach swimming", "report a storm"], correct: 0 },
-    { label: "Evidence", topic: "Integrated reading", question: `Which detail best supports the idea that ${level.enSubject} enjoys learning?`, hint: "Choose evidence that shows interest through action.", options: [`${level.enSubject} asks questions and shares ideas with classmates.`, `${level.enSubject} owns a blue bag.`, `${level.enSubject} eats lunch at noon.`, `${level.enSubject} walks home.`], correct: 0 },
+    { label: "Word in context", topic: "Vocabulary", question: isP1 ? `${level.enSubject} is happy when doing class work. Which action shows this best?` : isP2 ? "Amy is careful when she is at school. Which action shows this best?" : isP3 ? "Kevin feels proud when he helps a friend. Which action shows this best?" : `${level.enSubject} is ${level.enWord} when working on ${level.enTheme}. Which action shows this best?`, hint: "Look for an action that matches the word.", options: isP1 ? ["He smiles and tries his best.", "He ignores the teacher.", "He leaves the room for no reason.", "He never tries again."] : isP2 ? ["Checking her work carefully and helping others", "Talking loudly during lessons", "Running in the classroom", "Ignoring the teacher's instructions"] : isP3 ? ["He checks his work carefully and helps others.", "He ignores his friend.", "He leaves without saying sorry.", "He gives up trying."] : ["Checking work carefully and helping others", "Ignoring every instruction", "Leaving without a reason", "Never trying again"], correct: 0 },
+    { label: "Detail finding", topic: "Reading details and main idea", question: isP1 ? "A notice says the event starts at 10:30 and sign-up closes at 10:15. What should a student do?" : "A notice says a school event starts at 10:30 and registration closes at 10:15. What should a student do?", hint: "Find the earlier required time.", options: isP1 ? ["Sign up by 10:15", "Arrive after 10:30", "Wait until noon", "Bring nothing"] : ["Register by 10:15", "Arrive after 10:30", "Wait until noon", "Bring nothing"], correct: 0 },
+    { label: "Main idea", topic: "Reading details and main idea", question: isP1 ? "A short text explains how to get ready for a class presentation. Its main purpose is to ____ ." : isP2 ? "A short text explains how to prepare for a school day. Its main purpose is to ____ ." : isP3 ? "A short text tells steps for how to be a helpful friend. What is its main purpose?" : `A short text explains how to prepare for ${level.enTheme}. Its main purpose is to ____ .`, hint: "Think about what the writer wants readers to do.", options: isP1 ? ["tell you what to do", "tell a make-believe story", "sell a uniform", "describe a storm"] : isP3 ? ["Teach useful steps to help others", "Tell a make-believe story", "Sell something", "Describe the weather"] : ["give practical guidance", "tell a fantasy story", "sell a uniform", "describe a storm"], correct: 0 },
+    { label: "Inference", topic: "Reading inference", question: isP1 ? "Tom makes a plan before starting the task. What can we infer?" : `${level.enSubject} ${level.enVerb} the plan before starting the task. What can we infer?`, hint: "Use the action as a clue.", options: isP1 ? ["The task is important to Tom", "Tom dislikes every task", "The plan is missing", "We cannot infer anything"] : ["The task matters to the student", "The student dislikes every task", "The plan is missing", "Nothing can be inferred"], correct: 0 },
+    { label: "Writer attitude", topic: "Reading inference", question: `The writer calls the activity “a useful chance to learn together”. The writer is most likely ____ .`, hint: "Notice the positive language.", options: isP1 ? ["happy about it", "angry", "not interested", "confused"] : ["supportive", "angry", "uninterested", "confused"], correct: 0 },
+    { label: "Reference word", topic: "Text cohesion: reference and connectors", question: `“The class prepared a display. It was shown in the hall.” What does “It” refer to?`, hint: "Look back to the nearest suitable noun.", options: ["The display", "The hall", "The class", "The preparation"], correct: 0 },
+    { label: "Connector", topic: "Text cohesion: reference and connectors", question: isP1 ? "Tom practised every day, ____ the presentation became clearer." : `${level.enSubject} practised regularly; ____ , the presentation became clearer.`, hint: "The second part shows a result.", options: isP1 ? ["so", "however", "although", "unless"] : ["therefore", "however", "although", "unless"], correct: 0 },
+    { label: "Reading purpose", topic: "Integrated reading: purpose and evidence", question: isP1 || isP2 || isP3 ? "A webpage gives steps, reminders and a sign-up link for a school event. It is mainly designed to ____ ." : `A webpage gives steps, reminders and a sign-up link for ${level.enTheme}. It is mainly designed to ____ .`, hint: "Think about the reader’s next action.", options: isP1 ? ["invite people to join", "sell a house", "teach swimming", "report a storm"] : ["invite people to take part", "sell a house", "teach swimming", "report a storm"], correct: 0 },
+    { label: "Identify supporting evidence", topic: "Integrated reading: purpose and evidence", question: `Which detail best supports the idea that ${level.enSubject} enjoys learning?`, hint: "Choose evidence that shows interest through action.", options: [`${level.enSubject} asks questions and shares ideas with classmates.`, `${level.enSubject} owns a blue bag.`, `${level.enSubject} eats lunch at noon.`, `${level.enSubject} walks home.`], correct: 0 },
   ];
 }
 
 function primaryEnglishWritingSeeds(level: PrimaryLanguageLevel): QuestionSeed[] {
+  const isP1 = level.enWord === "happy";
+  const isP2 = level.enWord === "careful";
+  const isP3 = level.enWord === "proud";
+  const isP4 = level.enWord === "responsible";
+  const isP5 = level.enWord === "considerate";
+  const isP6 = level.enWord === "effective";
   return [
-    { label: "Sentence structure", topic: "Sentence structure", question: "Choose the most complete sentence.", hint: "Look for a clear subject and verb.", options: [`${level.enSubject} ${level.enVerb} the task carefully.`, `Because ${level.enSubject} careful.`, `${level.enVerb} the task.`, `The task carefully.`], correct: 0 },
-    { label: "Sentence order", topic: "Sentence structure", question: "Choose the sentence with the clearest word order.", hint: "An English sentence usually has a subject, a verb and extra information.", options: [`${level.enSubject} ${level.enVerb} ideas for ${level.enTheme}.`, `${level.enVerb} ${level.enSubject} ideas.`, `Ideas ${level.enSubject} for ${level.enVerb}.`, `For ${level.enTheme} ideas ${level.enVerb}.`], correct: 0 },
+    { label: "Sentence structure", topic: "Sentence structure", question: "Choose the most complete sentence.", hint: "Look for a clear subject and verb.", options: isP1 ? ["Tom kicks the ball.", "Because Tom careful.", "Kicks the ball.", "The ball carefully."] : isP2 ? ["Amy reads her book carefully.", "Because Amy careful.", "Reads her book.", "Her book carefully."] : isP3 ? ["Kevin reads the instructions carefully.", "Because Kevin careful.", "Reads the instructions.", "The instructions carefully."] : [`${level.enSubject} ${level.enVerb} the task carefully.`, `Because ${level.enSubject} careful.`, `${level.enVerb} the task.`, `The task carefully.`], correct: 0 },
+    { label: "Sentence order", topic: "Sentence structure", question: "Choose the sentence with the clearest word order.", hint: "An English sentence usually has a subject, a verb and extra information.", options: isP1 ? ["Tom plays with his dog.", "Plays Tom with his dog.", "With his dog Tom plays.", "His dog with Tom plays."] : isP2 ? ["Amy reads her book every day.", "Reads Amy her book every day.", "Her book Amy reads every day.", "Every day book Amy reads her."] : isP3 ? ["Kevin helps a friend after school.", "Helps Kevin a friend after school.", "A friend Kevin helps after school.", "After school friend Kevin helps a."] : [`${level.enSubject} ${level.enVerb} ideas for ${level.enTheme}.`, `${level.enVerb} ${level.enSubject} ideas.`, `Ideas ${level.enSubject} for ${level.enVerb}.`, `For ${level.enTheme} ideas ${level.enVerb}.`], correct: 0 },
     { label: "Language accuracy", topic: "Language accuracy", question: `${level.enSubject} ____ a short note yesterday.`, hint: "The time word tells you which tense to use.", options: ["wrote", "write", "writes", "writing"], correct: 0 },
-    { label: "Word choice", topic: "Language accuracy", question: "Please ____ your ideas clearly in the report.", hint: "Choose a verb related to communication.", options: ["express", "borrow", "sleep", "hide"], correct: 0 },
-    { label: "Paragraph focus", topic: "Paragraph organisation", question: `Which topic sentence best introduces a paragraph about ${level.enTheme}?`, hint: "A topic sentence should state the main idea.", options: [`${level.enTheme} can help students learn and work together.`, "The room has four windows.", "I have a pencil.", "Tuesday is a day."], correct: 0 },
-    { label: "Supporting detail", topic: "Paragraph organisation", question: "Which sentence best supports the idea that planning helps a group?", hint: "Choose a specific supporting example.", options: ["The group shared jobs and finished each step on time.", "Planning is a word.", "Some shoes are expensive.", "Everyone is different."], correct: 0 },
-    { label: "Linking", topic: "Paragraph organisation", question: "I checked my work carefully. ____ , I found two mistakes.", hint: "The second sentence follows from the first.", options: ["As a result", "Although", "Unless", "However"], correct: 0 },
-    { label: "Purpose and tone", topic: "Purpose and tone", question: "Which sentence is most suitable for an email to a teacher?", hint: "Use a polite and clear tone.", options: ["Could you please explain the homework deadline?", "Send me the answer now.", "I do not care.", "Your work is bad."], correct: 0 },
-    { label: "Audience awareness", topic: "Purpose and tone", question: "Which opening is most suitable for a message to classmates about an activity?", hint: "Choose a friendly and clear opening for the intended reader.", options: ["Hi everyone, please join our class activity on Friday.", "You must come now.", "I do not want to explain.", "This sentence has no purpose."], correct: 0 },
-    { label: "Revision", topic: "Revision and expression", question: "Which revision makes “The activity was good” more specific?", hint: "Add a meaningful action or result.", options: ["The activity helped classmates share ideas and solve a problem together.", "The activity was good good.", "The activity was an activity.", "It was good."], correct: 0 },
-    { label: "Integrated writing", topic: "Revision and expression", question: "Before submitting writing, which check is most useful?", hint: "Look beyond spelling alone.", options: ["Check if ideas, examples and conclusion match the purpose.", "Remove every full stop.", "Use the longest words.", "Change every sentence to a question."], correct: 0 },
+    { label: "Word choice", topic: "Language accuracy", question: isP1 || isP2 ? "Please ____ your ideas clearly." : "Please ____ your ideas clearly in the report.", hint: "Choose a verb related to communication.", options: isP1 || isP2 ? ["share", "borrow", "sleep", "hide"] : ["express", "borrow", "sleep", "hide"], correct: 0 },
+    { label: "Paragraph focus", topic: "Paragraph organisation", question: isP1 ? "Which sentence could begin a short writing about my pet?" : isP2 ? "Which sentence could begin a short writing about a school day?" : isP3 ? "Which sentence could begin a short writing about a helpful friend?" : `Which topic sentence best introduces a paragraph about ${level.enTheme}?`, hint: isP1 ? "Choose a sentence that is about the pet." : isP2 ? "Choose a sentence that is about a school day." : isP3 ? "Choose a sentence that is about a helpful friend." : "A topic sentence should state the main idea.", options: isP1 ? ["My pet is a small, friendly dog.", "The room has four windows.", "I have a pencil.", "Tuesday is a day."] : isP2 ? ["My school day is busy and fun.", "The room has four windows.", "I have a pencil.", "Tuesday is a day."] : isP3 ? ["A helpful friend is kind and ready to help others.", "The room has four windows.", "I have a pencil.", "Tuesday is a day."] : isP4 ? ["A class activity can help students learn and work together.", "The room has four windows.", "I have a pencil.", "Tuesday is a day."] : isP5 ? ["A community project can help students learn and work together.", "The room has four windows.", "I have a pencil.", "Tuesday is a day."] : isP6 ? ["An environmental proposal can help students improve their school community.", "The room has four windows.", "I have a pencil.", "Tuesday is a day."] : [`${level.enTheme} can help students learn and work together.`, "The room has four windows.", "I have a pencil.", "Tuesday is a day."], correct: 0 },
+    { label: "Supporting detail", topic: "Paragraph organisation", question: isP1 ? "Which sentence shows that planning helped the group?" : "Which sentence best supports the idea that planning helps a group?", hint: "Choose a specific supporting example.", options: isP1 ? ["We made a list and each person did one job, so we finished on time.", "Planning is a word.", "Some shoes are expensive.", "Everyone is different."] : ["The group shared jobs and finished each step on time.", "Planning is a word.", "Some shoes are expensive.", "Everyone is different."], correct: 0 },
+    { label: "Linking", topic: "Purpose, tone and linking", question: isP1 || isP2 ? "I put on my coat ____ it was cold." : isP4 ? "I made a list. ____ , we finished on time." : isP5 ? "I forgot to study for the test. ____ , I did not do well." : isP6 ? "We checked the facts carefully. ____ , our proposal was more accurate." : "I checked my work carefully. ____ , I found two mistakes.", hint: isP1 || isP2 ? "Choose the word that gives the reason." : "The second sentence follows from the first.", options: isP1 || isP2 ? ["because", "so", "but", "or"] : isP5 ? ["As a result", "But", "If", "When"] : ["As a result", "Although", "Unless", "However"], correct: 0 },
+    { label: "Purpose and tone", topic: "Purpose, tone and linking", question: "Which sentence is most suitable for an email to a teacher?", hint: "Use a polite and clear tone.", options: isP2 ? ["Can you please help me with my homework?", "Send me the answer now.", "I do not care.", "Your work is bad."] : ["Could you please explain the homework deadline?", "Send me the answer now.", "I do not care.", "Your work is bad."], correct: 0 },
+    { label: "Audience awareness", topic: "Purpose, tone and linking", question: "Which opening is most suitable for a message to classmates about an activity?", hint: "Choose a friendly and clear opening for the intended reader.", options: ["Hi everyone, please join our class activity on Friday.", "You must come now.", "I do not want to explain.", "This sentence has no purpose."], correct: 0 },
+    { label: "Revision", topic: "Revision, editing and proofreading", question: "Which revision makes “The activity was good” more specific?", hint: "Add a meaningful action or result.", options: isP1 || isP2 ? ["We played three fun games and made a big poster.", "The activity was good good.", "The activity was an activity.", "It was good."] : ["The activity helped classmates share ideas and solve a problem together.", "The activity was good good.", "The activity was an activity.", "It was good."], correct: 0 },
+    { label: "Revision (editing and proofreading)", topic: "Revision, editing and proofreading", question: isP1 || isP2 ? "Before you hand in your writing, what should you check?" : "Before submitting writing, which check is most useful?", hint: isP1 || isP2 ? "Look for a simple writing check." : "Look beyond spelling alone.", options: isP1 ? ["Check capital letters and full stops.", "Remove every full stop.", "Use the longest words.", "Change every sentence to a question."] : isP2 ? ["Check if your ideas, examples and ending match what you want to say.", "Remove every full stop.", "Use the longest words you can.", "Change every sentence into a question."] : ["Check if ideas, examples and conclusion match the purpose.", "Remove every full stop.", "Use the longest words.", "Change every sentence to a question."], correct: 0 },
   ];
 }
 
@@ -322,15 +374,16 @@ export function buildQuestionPool(track: TrackId, grade: GradeId): AssessmentQue
     hint: variant === 0 ? seed.hint : `${seed.hint} 請留意題目在${context}中的線索。`,
     grade,
     gradeBand: gradeBand(grade),
-    module: MODULES[(seedIndex + variant) % MODULES.length],
+    selectionGroup: selectionGroupForSeed(track, grade, seed, seedIndex, seeds.length),
+    module: moduleForSeed(track, seed),
     difficulty: difficultyFor(grade, variant),
   })));
 }
 
 export function randomAssessment(track: TrackId, grade: GradeId) {
   const pool = buildQuestionPool(track, grade);
-  const topics = Array.from(new Set(pool.map((question) => question.topic)));
-  const selected = topics.flatMap((topic) => shuffle(pool.filter((question) => question.topic === topic)).slice(0, 4));
+  const selectionGroups = Array.from(new Set(pool.map((question) => question.selectionGroup)));
+  const selected = selectionGroups.flatMap((selectionGroup) => shuffle(pool.filter((question) => question.selectionGroup === selectionGroup)).slice(0, 4));
   return shuffle(selected).slice(0, 20);
 }
 

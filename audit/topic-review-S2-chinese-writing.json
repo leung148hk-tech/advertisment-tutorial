@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-26T13:51:44.544521+00:00",
+  "grade": "S2",
+  "track": "chinese-writing",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 items (each with two context-only variants). Both items measure the skills indicated by their metadata and require no substantive changes.\n\nPart 2/5: Reviewed 2 items (each has two context-only variants). Both items measure paragraph-level writing skills; metadata is coherent and educationally appropriate. Recommend no substantive changes.\n\nPart 3/5: Reviewed 2 items (S2 Chinese writing). Both items measure recognition/application of rhetorical choices (simile identification and appropriate tone for a formal suggestion). Metadata fields are coherent and educationally appropriate; no substantive changes required.\n\nPart 4/5: Reviewed 2 items (each has two context-only variants). Both items measure specific writing-development skills (making content concrete; supporting/expanding an argument) and their metadata are educationally coherent and accurately labeled. Verdict: 2 PASS.\n\nPart 5/5: Reviewed 2 items (and their context-only variants). Both items assess specific writing exam skills (revision for task response/coherence; pre-writing planning and time allocation). Metadata are educationally coherent and accurately label the measured skills.",
+    "reviews": [
+      {
+        "id": "chinese-writing-S2-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to select the most appropriate word to describe a behaviour (詞語選擇/詞義辨識). The label '語基與詞語' and topic '語基與詞語' accurately describe this vocabulary/word-choice skill; the module '基礎掌握' is an appropriate classification.",
+        "recommendedTopic": "語基與詞語",
+        "recommendedLabel": "語基與詞語",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-writing-S2-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires identifying a grammatically correct sentence (病句辨識 / 句子結構與語法). The label '病句辨識', topic '句子結構與語法', and module '基礎掌握' correctly reflect the assessed skill.",
+        "recommendedTopic": "句子結構與語法",
+        "recommendedLabel": "病句辨識",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-writing-S2-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹要求選出最適合作為段落中心句的句子，核心技能是辨識段落中心句／段落組織。現有 label「段落組織」與 topic「篇章與寫作組織」直接對應，module「整合表達」在寫作教學上亦屬合理分類，故無需修改。",
+        "recommendedTopic": "篇章與寫作組織",
+        "recommendedLabel": "段落組織",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "chinese-writing-S2-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目要求從選項中挑出最能支持論點的事例，測量的是用例子支援觀點的能力（選擇有效證據/示例）。label「例子支援」準確，topic「篇章與寫作組織」及module「理解與應用」在寫作與閱讀的教學分類中也屬合理且一致。",
+        "recommendedTopic": "篇章與寫作組織",
+        "recommendedLabel": "例子支援",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-writing-S2-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify a simile (比喻). The labeled skill '修辭運用' and topic '修辭與表達' correctly describe recognition/application of rhetorical devices. The module '理解與應用' appropriately captures comprehension and application of language knowledge.",
+        "recommendedTopic": "修辭與表達",
+        "recommendedLabel": "修辭運用",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-writing-S2-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses choice of appropriate tone/register for writing to the principal. The label '語氣選擇', topic '修辭與表達', and module '理解與應用' accurately reflect the targeted communicative and rhetorical skill.",
+        "recommendedTopic": "修辭與表達",
+        "recommendedLabel": "語氣選擇",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-writing-S2-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks how to make the statement “我學會承擔責任” more specific by adding concrete actions, outcomes and reflection. This measures content development / elaboration in writing. The label '內容發展', topic '寫作發展' and module '整合表達' coherently describe that skill.",
+        "recommendedTopic": "寫作發展",
+        "recommendedLabel": "內容發展",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "chinese-writing-S2-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests argumentative paragraph development—adding reasons, examples and a return to the point to support a claim. The label '觀點深化', topic '觀點發展與論證' and module '整合表達' accurately reflect this skill.",
+        "recommendedTopic": "觀點發展與論證",
+        "recommendedLabel": "觀點深化",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "chinese-writing-S2-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem and hint target revision for task response and paragraph coherence. The label '修訂表達', topic '修訂與應試' and module '整合表達' appropriately describe this editing-for-exam-performance skill.",
+        "recommendedTopic": "修訂與應試",
+        "recommendedLabel": "修訂表達",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "chinese-writing-S2-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses pre-writing planning and time-allocation for timed writing tasks. The label '應試策略', topic '寫作規劃與應試準備' and module '整合表達' accurately reflect the skill being measured.",
+        "recommendedTopic": "寫作規劃與應試準備",
+        "recommendedLabel": "應試策略",
+        "recommendedModule": "整合表達"
+      }
+    ]
+  }
+}

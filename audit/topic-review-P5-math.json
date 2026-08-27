@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-26T11:35:18.361239+00:00",
+  "grade": "P5",
+  "track": "math",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 math items (P5). Both items assess basic number operations (integer division and decimal multiplication). Metadata is coherent and accurately describes the measured skills.\n\nPart 2/5: 審核 2 個小學五年級（P5）數學選擇題的 metadata。每題評估其實際測驗的能力與所提供的 label、topic、module 是否一致。每題有兩個 context-only 變體，metadata 相同，結論同樣適用於所有變體。\n\nPart 3/5: Reviewed 2 math items (P5). Both items assess straightforward application of geometric measurement formulae and their metadata are appropriate. Recommend PASS for both.\n\nPart 4/5: 共審核 2 題（每題另有兩個僅含情境之變體，元資料相同）。兩題皆與題幹、提示與選項所評量之數學技能相符，均判定 PASS，無需修訂。\n\nPart 5/5: Reviewed 2 items (each has two context-only variants sharing metadata). Both items measure the skills described in their stems and the provided topic, label and module are appropriate; no substantive metadata changes required.",
+    "reviews": [
+      {
+        "id": "math-P5-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires performing multi-digit integer division (7,560 ÷ 12), which is accurately described by the topic '數與運算' and the label '整數除法'. The module '基礎掌握' appropriately indicates a foundational skill.",
+        "recommendedTopic": "數與運算",
+        "recommendedLabel": "整數除法",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-P5-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item measures decimal multiplication (multiplying a decimal by 0.5 / halving), correctly captured by the topic '數與運算' and the label '小數運算'. The module '基礎掌握' is appropriate for this foundational skill.",
+        "recommendedTopic": "數與運算",
+        "recommendedLabel": "小數運算",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-P5-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目要求將異分母分數通分後相減（3/4 − 1/8），測驗的是「異分母分數的通分與減法運算」。提供的 label「異分母分數」、topic「分數與比例」及 module「理解與應用」均準確描述該能力，難度標示為「基礎」也合適。",
+        "recommendedTopic": "分數與比例",
+        "recommendedLabel": "異分母分數（通分與減法）",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P5-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目要求計算某數的百分比（240 的 25%），測驗的是將百分比轉為分數或小數並求部分量。提供的 label「百分比」、topic「分數與比例」及 module「理解與應用」準確反映該技能，難度「基礎」適切。",
+        "recommendedTopic": "分數與比例",
+        "recommendedLabel": "百分比（求某數的百分比）",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P5-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目要求學生套用三角形面積公式（底 × 高 ÷ 2）計算數值，屬於平面圖形與量度的基本應用。提示、選項與正答一致，難度標示為「基礎」恰當。",
+        "recommendedTopic": "圖形與量度",
+        "recommendedLabel": "三角形面積",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P5-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目要求學生使用長方體體積公式（長 × 闊 × 高）直接計算，屬於立體圖形的量度應用。提示、選項與正答一致，難度標示為「基礎」恰當。標籤「體積概念」可接受（聚焦於體積計算的應用）。",
+        "recommendedTopic": "圖形與量度",
+        "recommendedLabel": "體積概念",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P5-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目要求從圓形圖所給的分率（「一半代表 40 人」）推算整體人數，測驗的是解讀圓形圖中分數/比例與整體之間的關係（簡單的比例推理與統計圖表閱讀）。所給的標籤「統計圖表」、主題「數據與統計」與模組「理解與應用」均恰當反映此技能。",
+        "recommendedTopic": "數據與統計",
+        "recommendedLabel": "統計圖表",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P5-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目要求運用平均數的定義（平均 × 次數 = 總和）計算第四次測驗的分數，屬於平均數的應用與基本代數運算，與所給標籤「平均數應用」、主題「數據與統計」及模組「理解與應用」一致。",
+        "recommendedTopic": "數據與統計",
+        "recommendedLabel": "平均數應用",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P5-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks the student to solve a simple linear equation (3x + 5 = 20). This directly assesses basic algebraic thinking and equation-solving (subtract then divide), which aligns with the label '方程思維', the topic '代數思維', and the module '理解與應用'. Difficulty '基礎' is appropriate.",
+        "recommendedTopic": "代數思維",
+        "recommendedLabel": "方程思維",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P5-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires scaling a given ratio (1:4) to match a changed quantity (juice from 1 to 3), i.e. straightforward proportional reasoning. The label '比例生活題', topic '比例推理與比的應用', and module '情境推理' correctly describe the skill and context. Difficulty '基礎' is appropriate.",
+        "recommendedTopic": "比例推理與比的應用",
+        "recommendedLabel": "比例生活題",
+        "recommendedModule": "情境推理"
+      }
+    ]
+  }
+}

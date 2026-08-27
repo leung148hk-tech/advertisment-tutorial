@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T13:50:09.715602+00:00",
+  "grade": "S2",
+  "track": "chinese-writing",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/10: Reviewed one S2 Chinese-writing vocabulary item. Item is clear, age-appropriate, has a single best answer and plausible distractors. Recommendation: PASS without revision.\n\nPart 2/10: 檢視 1 題（含兩個僅改變情境的變體）——題目為 S2 中文寫作「病句辨識」。題目語句明確，唯一正確選項為第 1 項，判定為 PASS。\n\nPart 3/10: Reviewed 1 S2 Chinese-writing item (段落組織). Item is clear, age-appropriate, and has one best answer. Verdict: PASS.\n\nPart 4/10: Item asks which example best supports the statement \"溝通有助解決分歧.\" Options include one clear supporting example and three irrelevant/contradictory distractors. The correct key is clear and age-appropriate for S2.\n\nPart 5/10: Item is clear, unambiguous and appropriate for S2 Chinese writing: one sentence uses an explicit simile ('像'), distractors are literal sentences. No revision needed.\n\nPart 6/10: Item tests appropriate S2 ability to choose polite, clear, reasoned tone for a suggestion to the principal. Options are unambiguous and have a single best answer. Recommend passing without revision.\n\nPart 7/10: One S2 Chinese-writing item reviewed. The item asks how to make the statement 「我學會承擔責任」 more specific. The correct choice is the option that asks for concrete actions, handling difficulties and reflections. Item is age-appropriate, unambiguous and uses suitable distractors.\n\nPart 8/10: Reviewed one S2 Chinese-writing item on developing viewpoints in argumentative paragraphs. The stem is clear, age-appropriate and aligns with the syllabus. The correct answer is unambiguous. Recommend no changes.\n\nPart 9/10: 該題語意明確、選項設計合理且唯一最佳答案，適合中二程度的寫作應試技巧檢核，建議保留原題目與選項。\n\nPart 10/10: One S2 Chinese-writing item on pre-timed-writing strategy. The stem is clear; option 0 is the best answer and age-appropriate. No revision needed.",
+    "reviews": [
+      {
+        "id": "chinese-writing-S2-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The prompt asks for a word meaning to consider various aspects when doing things. “顧及” precisely means to take into account or consider (others/aspects). The distractors (“草率” — careless, “混亂” — chaotic, “浮誇” — exaggerated) are clearly inappropriate, so there is one unambiguous best choice.",
+        "recommendedQuestion": "要形容做事考慮到各方面，哪個詞最合適？",
+        "recommendedOptions": [
+          "顧及",
+          "草率",
+          "混亂",
+          "浮誇"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S2-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "選項 1「同學們積極討論並提出建議。」主語和動詞、賓語搭配正確、語序自然，沒有語病。其他三項各有明顯病句：\n- 選項 2「我把意見被老師聽取。」誤用「把」字句與被動語態並列，應改為「我的意見被老師聽取」或「我把意見交給老師」。\n- 選項 3「這個問題十分很複雜。」存在程度副詞疊用（十分、很），應刪去一個，如「十分複雜」或「很複雜」。\n- 選項 4「我們完成了已經活動。」語序錯誤並且「完成了已經活動」不通，應改為「我們已經完成了活動」或「我們完成了這項活動」。\n以上錯誤在中二 (S2) 課程範圍內可判定，故本題有單一最佳答案且難度適中。",
+        "recommendedQuestion": "下列哪一句沒有語病？",
+        "recommendedOptions": [
+          "同學們積極討論並提出建議。",
+          "我把意見被老師聽取。",
+          "這個問題十分很複雜。",
+          "我們完成了已經活動。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S2-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks for the most suitable paragraph topic sentence for an observational piece about campus life. Option 0 explicitly states a clear viewpoint/reflection (suitable as a central sentence). The other options are mere details or irrelevant generalities and cannot serve as a paragraph's main idea. There is a single best answer and no ambiguity. The language and cognitive demand are appropriate for Secondary 2.",
+        "recommendedQuestion": "寫「我對校園生活的觀察」時，哪一句最適合作段落中心句？",
+        "recommendedOptions": [
+          "這次經驗令我重新思考做決定時應重視的原則。",
+          "那天有很多人。",
+          "我看見一張桌子。",
+          "時間過得很快。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S2-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 explicitly shows listening to different opinions and then agreeing on a common plan, which directly supports the claim that communication helps resolve disagreements. The other options are irrelevant or contrary (leaving, weather, windows) and do not support the statement. The language and cognitive demand are suitable for S2.",
+        "recommendedQuestion": "哪一個例子最能支持「溝通有助解決分歧」？",
+        "recommendedOptions": [
+          "小組先聽取不同意見，再訂出共同方案。",
+          "大家各自離開。",
+          "天氣突然轉冷。",
+          "課室有很多窗。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S2-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 1 ('記憶像一本隨時可翻閱的書。') explicitly uses 比喻 with '像' comparing 記憶 and 書. Other options are literal statements and do not function as metaphors or similes. The hint matches the task and the language level is suitable for S2.",
+        "recommendedQuestion": "哪一句運用了比喻？",
+        "recommendedOptions": [
+          "記憶像一本隨時可翻閱的書。",
+          "雨下得很大。",
+          "我走進課室。",
+          "同學正在討論。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S2-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem is clear and age-appropriate for Secondary 2. The hint aligns with the expected features (politeness, clarity, reason). Option 0 is the only choice that uses a polite, clear, and reasoned tone suitable for a suggestion to the principal. The other distractors are clearly inappropriate (imperative, negative judgement without constructive language, dismissive) so there is no plausible alternate correct answer. Wording is simple and syllabus-adjacent.",
+        "recommendedQuestion": "給校長的建議書，哪一種語氣最合適？",
+        "recommendedOptions": [
+          "建議學校考慮增設閱讀時段，讓同學有較穩定的閱讀機會。",
+          "你一定要照做。",
+          "這件事很差。",
+          "我不想解釋。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S2-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks for how to make a claim about learning responsibility more concrete. Option 0 (describe how you handled difficulties, the actions you took, and what you reflected on) is clearly the best and most specific choice. Other options are clearly irrelevant distractors. Language and cognitive demand match S2 writing-development expectations.",
+        "recommendedQuestion": "要把「我學會承擔責任」寫得更具體，應加入甚麼？",
+        "recommendedOptions": [
+          "我如何處理困難、作出甚麼行動和從中得到甚麼反思",
+          "只重複題目",
+          "只寫天氣",
+          "只列形容詞"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S2-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks what best follows a viewpoint in an argumentative paragraph. The supplied correct option ('理由、例子和回扣觀點') correctly reflects standard paragraph structure (claim, supporting reasons/examples, and a concluding link back). The stem is clear, the distractors are clearly incorrect for S2 level, and the item aligns with the '整合表達' module and the provided hint.",
+        "recommendedQuestion": "議論段落中，觀點後最適合加入甚麼？",
+        "recommendedOptions": [
+          "理由、例子和回扣觀點",
+          "不相關的故事",
+          "完全相反的結論",
+          "空白句子"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S2-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹清楚詢問「完成文章後應做的修訂」，提示也指向檢查是否回應題目與段落連貫性。選項1具體涵蓋中心句、例子、連接詞與結語，最能提升考試表現；其餘三項為不合適或荒謬的修訂方法，故唯一正確且無二義性。語言與認知要求符合中二水平。",
+        "recommendedQuestion": "完成文章後，哪一項修訂最有助提高考試表現？",
+        "recommendedOptions": [
+          "檢查中心句、例子、連接詞和結語是否呼應題目",
+          "只數字數",
+          "刪除所有標點",
+          "把每句改成問句"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-S2-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目詢問限時寫作前最合適的步驟。選項 0（先列出立場、兩個重點和例子，再分配時間寫作）明確對應寫作規劃與時間分配，是有效避免偏題與管理時間的做法；其餘選項（立即寫結語、只背誦題目、不看題目要求）均不合適或會增加失誤風險，因此第一選項為單一最佳答案。",
+        "recommendedQuestion": "限時寫作前，哪一個步驟最合適？",
+        "recommendedOptions": [
+          "先列出立場、兩個重點和例子，再分配時間寫作",
+          "立即寫結語",
+          "只背誦題目",
+          "不看題目要求"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

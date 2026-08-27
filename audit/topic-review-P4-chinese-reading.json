@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-26T11:00:17.774448+00:00",
+  "grade": "P4",
+  "track": "chinese-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 items (plus two context-only variants each). Both items measure vocabulary knowledge and usage; their label, topic and module metadata are appropriate. Recommend PASS for both.\n\nPart 2/5: Reviewed 2 items (each has two context-only variants). Both items measure literal information retrieval/details from short texts; metadata is appropriate and coherent. Verdict: 2 PASS.\n\nPart 3/5: Reviewed 2 P4 Chinese-reading items (part 3 of 5). Both items require making inferences from a character's actions (one about personal trait, one about cause/reason). Metadata (label, topic, module) correctly describe the skills assessed; no substantive changes needed.\n\nPart 4/5: Reviewed 2 canonical items (each with two context-only variants) for P4 Chinese reading, part 4. Both items measure the skills indicated by their metadata and require no substantive changes.\n\nPart 5/5: Reviewed 2 items (each with two context-only variants). Both items measure the labeled reading comprehension skills appropriately; no substantive metadata changes required.",
+    "reviews": [
+      {
+        "id": "chinese-reading-P4-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the closest meaning of the word 「周全」, assessing word-meaning recognition (vocabulary). The label '字詞理解', topic '字詞理解與運用', and module '基礎掌握' accurately describe this skill.",
+        "recommendedTopic": "字詞理解與運用",
+        "recommendedLabel": "字詞理解",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P4-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks which sentence appropriately uses 「周全」, assessing vocabulary-in-context and word usage/collocation. The label '詞語運用', topic '字詞理解與運用', and module '基礎掌握' accurately reflect the measured skill.",
+        "recommendedTopic": "字詞理解與運用",
+        "recommendedLabel": "詞語運用",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P4-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify what the sentence explicitly states (locating the information/main idea of a single-sentence passage). The topic '訊息定位', label '訊息定位' and module '理解與應用' correctly describe this literal information-retrieval skill.",
+        "recommendedTopic": "訊息定位",
+        "recommendedLabel": "訊息定位",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires extracting a specific detail (the latest arrival time) from a short announcement. Both '訊息定位' (topic) and '細節理解' (label) accurately describe the skill of locating explicit textual details; the module '理解與應用' is also appropriate.",
+        "recommendedTopic": "訊息定位",
+        "recommendedLabel": "細節理解",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹要求由行為推論人物特質（查看天氣和路線→有準備），即人物推論／人物與原因推論，屬於情境推理能力。提供的 label、topic 和 module 精確且教育上合適。",
+        "recommendedTopic": "人物與原因推論",
+        "recommendedLabel": "人物推論",
+        "recommendedModule": "情境推理"
+      },
+      {
+        "id": "chinese-reading-P4-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹要求推論行為背後的原因（先了解資料才決定→希望作出較合適的選擇），即原因推論，屬於人物與原因推論範疇，適合作為情境推理題目。現有 metadata 與實際測量的技能一致。",
+        "recommendedTopic": "人物與原因推論",
+        "recommendedLabel": "原因推論",
+        "recommendedModule": "情境推理"
+      },
+      {
+        "id": "chinese-reading-P4-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to recognise a rhetorical device (personification) in a sentence. The label '修辭手法', topic '語境、修辭與句意' and module '理解與應用' accurately describe this skill at a basic level.",
+        "recommendedTopic": "語境、修辭與句意",
+        "recommendedLabel": "修辭手法 (擬人)",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires straightforward sentence-level comprehension (identifying the main meaning). The label '句意理解', topic '語境、修辭與句意' and module '理解與應用' suitably match the measured skill.",
+        "recommendedTopic": "語境、修辭與句意",
+        "recommendedLabel": "句意理解",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify the main idea/central message of a short passage. The label '主旨辨認', topic '整合閱讀' and module '理解與應用' correctly describe this skill and its instructional level.",
+        "recommendedTopic": "整合閱讀",
+        "recommendedLabel": "主旨辨認",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to recognise the organisational pattern (sequence of steps). The label '段落關係' and topic '整合閱讀' within the '理解與應用' module accurately reflect recognising text structure/sequence.",
+        "recommendedTopic": "整合閱讀",
+        "recommendedLabel": "段落關係",
+        "recommendedModule": "理解與應用"
+      }
+    ]
+  }
+}

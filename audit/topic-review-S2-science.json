@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-27T00:56:58.999618+00:00",
+  "grade": "S2",
+  "track": "science",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 science S2 items (each has two context-only variants). Both items measure basic experimental design and measurement skills and their provided metadata are appropriate.\n\nPart 2/5: Reviewed 2 S2 science items (each has identical context-only variants). Both items assess basic life-science knowledge about human body systems and ecology respectively. Metadata largely aligns with the content and cognitive demand.\n\nPart 3/5: Reviewed 2 items (science-S2-4-0, science-S2-5-0). Both items measure straightforward content understanding and application within topics of matter and chemical change. Metadata is appropriate; no substantive changes required.\n\nPart 4/5: Reviewed 2 items (each has two context-only variants). Both items measure straightforward S2 science factual/formula application and their metadata are appropriate.\n\nPart 5/5: Reviewed 2 items (each has two context-only variants). Metadata fields for both items accurately reflect the actual skill measured; no substantive changes required.",
+    "reviews": [
+      {
+        "id": "science-S2-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem asks which factor must be kept constant when changing wire length, directly assessing understanding of control variables in an experiment. The label 'Variables' correctly names the skill. The topic 'Scientific investigation' and module '理解與應用' (understanding and application) appropriately describe experimental design knowledge and its application.",
+        "recommendedTopic": "Scientific investigation",
+        "recommendedLabel": "Variables",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S2-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question tests correct measurement technique to improve accuracy (avoiding parallax error). The label 'Accuracy' fits the skill being assessed. The topic 'Scientific investigation' and module '理解與應用' suitably categorise measurement practice within scientific methods.",
+        "recommendedTopic": "Scientific investigation",
+        "recommendedLabel": "Accuracy",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S2-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify which blood vessel carries blood away from the heart, which is a factual understanding of the circulatory (human) system. The label 'Human systems', topic 'Life science', and module '理解與應用' (understanding and application) accurately describe the skill and cognitive level.",
+        "recommendedTopic": "Life science",
+        "recommendedLabel": "Human systems",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S2-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the definition/identification of a 'producer' in a food chain, testing basic ecological knowledge. 'Ecology' as the label, 'Life science' as the topic, and '理解與應用' as the module correctly reflect the content and cognitive demand.",
+        "recommendedTopic": "Life science",
+        "recommendedLabel": "Ecology",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S2-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses understanding and application of the particle model to explain compressibility of states of matter (spacing between particles). The label 'Particle model', topic 'Matter and energy', and module '理解與應用' appropriately describe the skill measured.",
+        "recommendedTopic": "Matter and energy",
+        "recommendedLabel": "Particle model",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S2-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires recognising evidence of a chemical change (formation of a new substance, e.g. gas evolution). The label 'Chemical change', topic 'Matter and energy', and module '理解與應用' correctly represent the assessed skill.",
+        "recommendedTopic": "Matter and energy",
+        "recommendedLabel": "Chemical change",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S2-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the quantity in the pressure formula (pressure = force/area). This is a basic concept in mechanics (pressure) and fits within a combined 'Forces and electricity' topic. The label 'Pressure' correctly names the targeted concept. The module '理解與應用' (understanding and application) appropriately describes the skill of recalling and applying a formula.",
+        "recommendedTopic": "Forces and electricity",
+        "recommendedLabel": "Pressure",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S2-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests applying Ohm's law (V = IR) to calculate resistance, a basic electricity circuit calculation. The broader topic 'Forces and electricity' suitably includes electricity. The label 'Circuit calculation' accurately describes the task (calculating R from V and I). The module '理解與應用' correctly reflects using a formula to solve a numeric problem.",
+        "recommendedTopic": "Forces and electricity",
+        "recommendedLabel": "Circuit calculation",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S2-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks what to do when one experimental result is anomalous (identify and check an outlier by reviewing method and repeating the measurement). The label 'Data interpretation', topic 'Data and application', and module '理解與應用' appropriately describe this skill.",
+        "recommendedTopic": "Data and application",
+        "recommendedLabel": "Data interpretation",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S2-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses why conclusions must be grounded in evidence from data. The label 'Drawing conclusions from data', topic 'Evidence-based reasoning', and module '理解與應用' correctly represent this measurement.",
+        "recommendedTopic": "Evidence-based reasoning",
+        "recommendedLabel": "Drawing conclusions from data",
+        "recommendedModule": "理解與應用"
+      }
+    ]
+  }
+}

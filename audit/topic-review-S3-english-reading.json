@@ -1,0 +1,134 @@
+{
+  "generatedAt": "2026-08-27T01:08:26.860277+00:00",
+  "grade": "S3",
+  "track": "english-reading",
+  "canonicalQuestionCount": 11,
+  "variantQuestionCount": 33,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/6: Reviewed 2 items (each with two context-only variants). Both items test grammar-focused knowledge of verb forms/tense (past perfect and present-simple in conditionals). The supplied topic, label and module are appropriate for each item.\n\nPart 2/6: Reviewed 2 items (each with context-only variants). Both items measure word-meaning in context (vocabulary). Supplied label, topic and module accurately describe the assessed skill; no changes required.\n\nPart 3/6: Reviewed 2 items (each with two context-only variants, total coverage 6 variants). Both items' supplied metadata align with the actual reading skills the stems measure; no substantive changes required.\n\nPart 4/6: Reviewed 2 items (each has two context-only variants with identical metadata). Both items measure the skills their metadata claim and require no substantive changes.\n\nPart 5/6: Reviewed 2 English reading items (S3). Both items assess core reading comprehension skills and have metadata that accurately reflects the measured skills.\n\nPart 6/6: Reviewed 1 item (plus its two context-only variants). The item asks for an effective pre-answering strategy for inference questions and tests reading/inference strategy knowledge.",
+    "reviews": [
+      {
+        "id": "english-reading-S3-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses correct use of past perfect auxiliary ('had') to indicate an action completed before another past action. 'Grammar and tense' and the module '基礎掌握' accurately describe this basic grammar skill.",
+        "recommendedTopic": "Grammar and tense",
+        "recommendedLabel": "Grammar and tense",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-S3-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests use of the present-simple in a first conditional clause ('If the evidence is not clear...'). This falls under grammar/tense knowledge, so the provided topic, label and module are appropriate.",
+        "recommendedTopic": "Grammar and tense",
+        "recommendedLabel": "Grammar and tense",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-S3-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks which action matches the adjective 'effective' (selecting behaviour that corresponds to the word). This is a vocabulary-in-context task requiring students to infer word meaning from usage. The label 'Vocabulary in context', topic 'Vocabulary and context', and module '基礎掌握' are appropriate.",
+        "recommendedTopic": "Vocabulary and context",
+        "recommendedLabel": "Vocabulary in context",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-S3-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the closest meaning of the word 'contrast' (comprehension of word meaning in context). This directly assesses vocabulary knowledge and fits the provided label, topic and module.",
+        "recommendedTopic": "Vocabulary and context",
+        "recommendedLabel": "Vocabulary in context",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-S3-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question requires locating an explicit detail (the required action and deadline). The label 'Reading detail', topic 'Reading comprehension', and module '理解與應用' accurately describe the skill being tested.",
+        "recommendedTopic": "Reading comprehension",
+        "recommendedLabel": "Reading detail",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-reading-S3-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks the student to draw a plausible inference from an action (checking sources before deciding). The label 'Reading inference', topic 'Reading comprehension', and module '情境推理' correctly identify the targeted skill.",
+        "recommendedTopic": "Reading comprehension",
+        "recommendedLabel": "Reading inference",
+        "recommendedModule": "情境推理"
+      },
+      {
+        "id": "english-reading-S3-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify how a passage is organised (problem followed by examples and a solution). The topic 'Text organisation', the label 'Text structure (organisation) identification', and the module '理解與應用' accurately describe the skill.",
+        "recommendedTopic": "Text organisation",
+        "recommendedLabel": "Text structure (organisation) identification",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-reading-S3-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests selection of an appropriate cohesive connector indicating result/consequence. The topic 'Cohesive devices and connectors', the label 'Connector choice (linking words)', and the module '理解與應用' correctly represent the measured skill.",
+        "recommendedTopic": "Cohesive devices and connectors",
+        "recommendedLabel": "Connector choice (linking words)",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-reading-S3-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify the main purpose of a webpage that gives facts, examples and action steps. This directly measures ability to identify writer's purpose / author's intent, matching the label and topic. The module '理解與應用' (comprehension and application) is appropriate.",
+        "recommendedTopic": "Identifying writer's purpose",
+        "recommendedLabel": "Writer purpose",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-reading-S3-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires selecting the textual detail that best supports a given claim about success. This measures selecting supporting evidence/details, so the provided label, topic and module are accurate.",
+        "recommendedTopic": "Selecting textual evidence and supporting details",
+        "recommendedLabel": "Evidence selection",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-reading-S3-10-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks which strategy to use before answering an inference question and tests students' ability to use textual clues to make inferences. The supplied topic 'Inference strategies (reading comprehension)' correctly names the tested skill. The label 'Test-taking strategy' appropriately describes the focus on strategy rather than content knowledge. The module '理解與應用' (understanding and application) is an educationally coherent placement for a comprehension strategy item.",
+        "recommendedTopic": "Inference strategies (reading comprehension)",
+        "recommendedLabel": "Test-taking strategy",
+        "recommendedModule": "理解與應用"
+      }
+    ]
+  }
+}

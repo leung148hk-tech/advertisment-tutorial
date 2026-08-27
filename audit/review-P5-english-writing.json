@@ -1,0 +1,200 @@
+{
+  "generatedAt": "2026-08-26T10:32:05.195917+00:00",
+  "grade": "P5",
+  "track": "english-writing",
+  "canonicalQuestionCount": 11,
+  "variantQuestionCount": 33,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/6: Reviewed 2 P5 English-writing items (each has two context-only variants). Both items are clear, age-appropriate and have a single best answer; recommend keeping the original content.\n\nPart 2/6: Two P5 English-writing items (language accuracy / word choice). Both items are clear, age-appropriate, have one unambiguous best answer, and align with expected P5 syllabus. Recommend passing both without changes.\n\nPart 3/6: Both items are clear, age-appropriate P5 paragraph-organisation questions with one unambiguous best answer each. No revision needed.\n\nPart 4/6: Two P5 English writing items (linking and purpose/tone). Both items are clear, age-appropriate, and have a single best answer that matches P5 syllabus expectations for paragraph linking and polite register in emails.\n\nPart 5/6: Both items are clear, age-appropriate P5 multiple-choice questions with one unambiguous best answer. The verdicts apply to each item and their context-only variants.\n\nPart 6/6: Single P5 integrated writing item about revision checks. Item is clear, age-appropriate, has one unambiguous best answer and plausible distractors; no revision needed.",
+    "reviews": [
+      {
+        "id": "english-writing-P5-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 is the only fully grammatical sentence with a clear subject ('Jason'), verb ('explains') and adverb ('carefully'). The other options are sentence fragments or lack a proper subject/verb.",
+        "recommendedQuestion": "Choose the most complete sentence.",
+        "recommendedOptions": [
+          "Jason explains the task carefully.",
+          "Because Jason careful.",
+          "explains the task.",
+          "The task carefully."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P5-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 presents the correct subject-verb-object word order ('Jason explains ideas for a community project'). The other choices have incorrect word order and are ungrammatical.",
+        "recommendedQuestion": "Choose the sentence with the clearest word order.",
+        "recommendedOptions": [
+          "Jason explains ideas for a community project.",
+          "explains Jason ideas.",
+          "Ideas Jason for explains.",
+          "For a community project ideas explains."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P5-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence contains the past-time marker 'yesterday', so the past simple 'wrote' is the only grammatically correct choice. Distractors are plausible for testing tense knowledge. Language and vocabulary are suitable for P5.",
+        "recommendedQuestion": "Jason ____ a short note yesterday.",
+        "recommendedOptions": [
+          "wrote",
+          "write",
+          "writes",
+          "writing"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P5-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The imperative 'Please ____ your ideas clearly in the report.' requires a verb related to communication; 'express' is the correct and natural choice. Other options are clearly unrelated, making a single best answer clear for P5.",
+        "recommendedQuestion": "Please ____ your ideas clearly in the report.",
+        "recommendedOptions": [
+          "express",
+          "borrow",
+          "sleep",
+          "hide"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P5-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks for a topic sentence introducing a paragraph about a community project. Option 0 directly states the main idea and is clearly the best topic sentence; the other options are irrelevant details. Language and cognitive demand suit P5.",
+        "recommendedQuestion": "Which topic sentence best introduces a paragraph about a community project?",
+        "recommendedOptions": [
+          "A community project can help students learn and work together.",
+          "The room has four windows.",
+          "I have a pencil.",
+          "Tuesday is a day."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P5-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks for a supporting sentence showing that planning helps a group. Option 0 gives a concrete example of shared tasks and timely completion, which directly supports the idea. Other options are unrelated or too general.",
+        "recommendedQuestion": "Which sentence best supports the idea that planning helps a group?",
+        "recommendedOptions": [
+          "The group shared jobs and finished each step on time.",
+          "Planning is a word.",
+          "Some shoes are expensive.",
+          "Everyone is different."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P5-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence pair shows a cause–effect relationship. 'As a result' correctly signals the consequence of forgetting to study. The distractors ('But', 'If', 'When') are grammatically possible in other contexts but do not express the intended meaning here, so there is a single best answer appropriate for P5 students.",
+        "recommendedQuestion": "I forgot to study for the test. ____ , I did not do well.",
+        "recommendedOptions": [
+          "As a result",
+          "But",
+          "If",
+          "When"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P5-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The task assesses tone and purpose for writing an email to a teacher. 'Could you please explain the homework deadline?' is polite, clear, and appropriate for correspondence with a teacher. The other options are rude or inappropriate, making the first option the single best choice for P5 students.",
+        "recommendedQuestion": "Which sentence is most suitable for an email to a teacher?",
+        "recommendedOptions": [
+          "Could you please explain the homework deadline?",
+          "Send me the answer now.",
+          "I do not care.",
+          "Your work is bad."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P5-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The first option is a friendly, clear opening suitable for classmates. The other options are clearly inappropriate for a classmates message. Language and tone are appropriate for P5.",
+        "recommendedQuestion": "Which opening is most suitable for a message to classmates about an activity?",
+        "recommendedOptions": [
+          "Hi everyone, please join our class activity on Friday.",
+          "You must come now.",
+          "I do not want to explain.",
+          "This sentence has no purpose."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P5-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The first option makes the vague statement specific by giving details about what made the activity good (sharing ideas and solving a problem). Other choices are either repetitive, meaningless, or more vague.",
+        "recommendedQuestion": "Which revision makes “The activity was good” more specific?",
+        "recommendedOptions": [
+          "The activity helped classmates share ideas and solve a problem together.",
+          "The activity was good good.",
+          "The activity was an activity.",
+          "It was good."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P5-10-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks a clear, age-appropriate question about what to check before submitting writing. Option 0 is the only sensible, curriculum-aligned choice; the other options are clearly unsuitable. Language is simple and fits P5 level.",
+        "recommendedQuestion": "Before submitting writing, which check is most useful?",
+        "recommendedOptions": [
+          "Check if ideas, examples and conclusion match the purpose.",
+          "Remove every full stop.",
+          "Use the longest words.",
+          "Change every sentence to a question."
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

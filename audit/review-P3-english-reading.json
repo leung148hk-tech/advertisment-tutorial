@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T10:05:03.482856+00:00",
+  "grade": "P3",
+  "track": "english-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Two P3 vocabulary items about the word \"proud.\" Both items are clear, age-appropriate, have one best answer, and align with basic vocabulary and context-usage expectations for Primary 3.\n\nPart 2/5: Both P3 reading items are clear, age-appropriate, have one unambiguous best answer, and align with basic comprehension skills. Keep original wording and options.\n\nPart 3/5: Two P3 reading-inference items reviewed. Both items are clear, age-appropriate, have one defensible answer each, and require no revision.\n\nPart 4/5: Both items are clear, age-appropriate P3 reading items that test reference and connector understanding. Each has one unambiguous correct answer and can pass without revision.\n\nPart 5/5: Two P3 integrated-reading items reviewed. Both items are clear, age-appropriate, have one unambiguous best answer, and align with the stated skill (reading purpose and finding supporting evidence). Recommend passing both without changes.",
+    "reviews": [
+      {
+        "id": "english-reading-P3-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The target word 'proud' is tested with a simple synonym explanation suitable for P3. Distractors are clearly incorrect and the correct option ('pleased about doing something well') is unambiguous.",
+        "recommendedQuestion": "The word “proud” is closest in meaning to ____ .",
+        "recommendedOptions": [
+          "pleased about doing something well",
+          "very noisy",
+          "always late",
+          "easy to break"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P3-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The contextual item asks which action shows Kevin feeling proud when he helps a friend. The correct option clearly demonstrates helping and positive behavior; other options are clearly inconsistent with 'proud.' Wording is age-appropriate.",
+        "recommendedQuestion": "Kevin feels proud when he helps a friend. Which action shows this best?",
+        "recommendedOptions": [
+          "He checks his work carefully and helps others.",
+          "He ignores his friend.",
+          "He leaves without saying sorry.",
+          "He gives up trying."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P3-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The notice asks for the earlier required time (registration closes at 10:15). Option 'Register by 10:15' is the clear, single best choice; distractors are plausible but wrong. Wording is simple and suitable for P3.",
+        "recommendedQuestion": "A notice says a school event starts at 10:30 and registration closes at 10:15. What should a student do?",
+        "recommendedOptions": [
+          "Register by 10:15",
+          "Arrive after 10:30",
+          "Wait until noon",
+          "Bring nothing"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P3-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The text that lists steps to be a helpful friend has the primary purpose of teaching helpful actions. 'Teach useful steps to help others' is the clear main idea; other options are unrelated purposes. Language and cognitive demand suit P3.",
+        "recommendedQuestion": "A short text tells steps for how to be a helpful friend. What is its main purpose?",
+        "recommendedOptions": [
+          "Teach useful steps to help others",
+          "Tell a make-believe story",
+          "Sell something",
+          "Describe the weather"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P3-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "From 'Kevin studies the plan before starting the task' we can reasonably infer that the task matters to him (he prepares). Other options are clearly contradicted or irrelevant, and the distractors are simple and age-appropriate.",
+        "recommendedQuestion": "Kevin studies the plan before starting the task. What can we infer?",
+        "recommendedOptions": [
+          "The task matters to the student",
+          "The student dislikes every task",
+          "The plan is missing",
+          "Nothing can be inferred"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P3-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The phrase 'a useful chance to learn together' uses positive language showing a favourable attitude; 'supportive' is the clear best match. The other choices (angry, uninterested, confused) are inconsistent with the wording.",
+        "recommendedQuestion": "The writer calls the activity “a useful chance to learn together”. The writer is most likely ____ .",
+        "recommendedOptions": [
+          "supportive",
+          "angry",
+          "uninterested",
+          "confused"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P3-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The pronoun 'It' clearly refers to the nearest suitable noun 'the display' and no other option is a defensible antecedent given the sentence. The hint is suitable for P3.",
+        "recommendedQuestion": "“The class prepared a display. It was shown in the hall.” What does “It” refer to?",
+        "recommendedOptions": [
+          "The display",
+          "The hall",
+          "The class",
+          "The preparation"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P3-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The second clause gives a result of practising regularly, so 'therefore' is the only option that fits logically and grammatically. Other choices do not produce a coherent meaning.",
+        "recommendedQuestion": "Kevin practised regularly; ____ , the presentation became clearer.",
+        "recommendedOptions": [
+          "therefore",
+          "however",
+          "although",
+          "unless"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P3-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The webpage description (steps, reminders, sign-up link) clearly indicates the page's purpose is to invite people to take part. The distractors are unrelated and implausible, and language is suitable for P3.",
+        "recommendedQuestion": "A webpage gives steps, reminders and a sign-up link for a school event. It is mainly designed to ____ .",
+        "recommendedOptions": [
+          "invite people to take part",
+          "sell a house",
+          "teach swimming",
+          "report a storm"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P3-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The statement 'Kevin asks questions and shares ideas with classmates.' directly shows active engagement and interest in learning. Other choices are irrelevant details. The item matches P3 skills for identifying evidence.",
+        "recommendedQuestion": "Which detail best supports the idea that Kevin enjoys learning?",
+        "recommendedOptions": [
+          "Kevin asks questions and shares ideas with classmates.",
+          "Kevin owns a blue bag.",
+          "Kevin eats lunch at noon.",
+          "Kevin walks home."
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-26T13:44:00.798212+00:00",
+  "grade": "S1",
+  "track": "chinese-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 items (and their two context-only variants each) for S1 Chinese reading. Both items measure basic vocabulary knowledge/usage and their metadata accurately reflect that skill. Recommend PASS for both.\n\nPart 2/5: Reviewed 2 items (grade S1, Chinese reading track). Both items measure basic modern-text reading comprehension skills and their supplied metadata are appropriate. Verdict: 2 PASS.\n\nPart 3/5: Reviewed 2 items (each has two context-only variants). Both items PASS: metadata (label, topic, module) accurately describe the skill each question measures.\n\nPart 4/5: Reviewed 2 items (each has two context-only variants). Both items' metadata appropriately describe the skill being assessed; no substantive revisions needed.\n\nPart 5/5: Reviewed 2 items from chinese-reading S1. Both items measure paragraph/organisation and evidence-linked response skills appropriate for the supplied metadata. No substantive mismatches found; recommend PASS for both.",
+    "reviews": [
+      {
+        "id": "chinese-reading-S1-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the closest meaning of the word 「妥當」, which assesses vocabulary knowledge/word meaning. The topic '語基與詞語', label '語基與詞語' and module '基礎掌握' accurately describe this basic vocabulary recognition task.",
+        "recommendedTopic": "語基與詞語",
+        "recommendedLabel": "語基與詞語",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-S1-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires selecting the sentence in which 『妥當』 is most appropriately used, assessing vocabulary usage in context. The topic '語基與詞語', label '詞語運用', and module '基礎掌握' correctly reflect this skill.",
+        "recommendedTopic": "語基與詞語",
+        "recommendedLabel": "詞語運用",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-S1-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks students to infer a character's working style from a short description of actions (從人物行動歸納態度). This is a basic reading-comprehension inference skill about character/attitude in a modern text. The supplied topic ('現代文閱讀'), label ('現代文理解') and module ('理解與應用') accurately describe this skill at an appropriate level of specificity.",
+        "recommendedTopic": "現代文閱讀",
+        "recommendedLabel": "現代文理解",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S1-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks which practice best supports the judgement that '作者重視資料' — i.e., identifying textual evidence/authorial method in an expository text. This tests the ability to locate and use evidence in a text (主旨與證據), so the topic ('現代文閱讀'), label ('主旨與證據') and module ('理解與應用') are appropriate and not misleading.",
+        "recommendedTopic": "現代文閱讀",
+        "recommendedLabel": "主旨與證據",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S1-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests the lexical meaning of a classical-Chinese word in context (文言實詞). The supplied label '文言實詞', topic '文言基礎' and module '理解與應用' correctly characterize this skill.",
+        "recommendedTopic": "文言基礎",
+        "recommendedLabel": "文言實詞",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S1-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses sentence-level comprehension of a classical-Chinese sentence (文言句意). The label '文言句意', topic '文言基礎' and module '理解與應用' accurately reflect the skill measured.",
+        "recommendedTopic": "文言基礎",
+        "recommendedLabel": "文言句意",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S1-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹要求學生辨認句子所用的修辭手法（把城市擬人化），屬於辨識修辭/修辭與表達的基本能力。現有的 topic/label (“修辭與表達”) 與模組 (“理解與應用”) 均準確且教育上恰當。",
+        "recommendedTopic": "修辭與表達",
+        "recommendedLabel": "修辭與表達",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S1-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目測量學生理解使用具體例子支持觀點的表達效果（使觀點更具體且可信）。現有的 topic (“修辭與表達”)、label (“表達效果”) 及模組 (“理解與應用”) 能準確描述此技能，無需修改。",
+        "recommendedTopic": "修辭與表達",
+        "recommendedLabel": "表達效果",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S1-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks students to choose the most logical paragraph arrangement for a recount of a group collaboration, focusing on the relationship among viewpoint, examples and reflection. This directly assesses paragraph/paragraph-organization skills as labelled.",
+        "recommendedTopic": "段落與篇章組織",
+        "recommendedLabel": "段落組織／篇章結構",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-S1-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item evaluates the ability to support an opinion with textual evidence (propose a view then cite/explain text), which matches the given label and topic about linking viewpoints to textual evidence.",
+        "recommendedTopic": "觀點與文本證據連結",
+        "recommendedLabel": "觀點回應與證據支持",
+        "recommendedModule": "理解與應用"
+      }
+    ]
+  }
+}

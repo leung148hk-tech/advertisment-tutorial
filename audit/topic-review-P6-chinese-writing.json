@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-26T11:45:40.735406+00:00",
+  "grade": "P6",
+  "track": "chinese-writing",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 items (each has two context-only variants with identical metadata). Both items measure basic Chinese vocabulary/word-usage skills and their metadata are appropriate; recommend no changes.\n\nPart 2/5: 審核 2 項目：全部通過。兩題均測量所標示的語文基礎技能，標籤與主題及模組一致且教育上可接受。\n\nPart 3/5: 檢視2項目（每項有兩個變體）之元資料。兩項目測驗的實際測驗技能與原先提供的標籤、題目分類與單元在教育意義上均一致，建議維持現有元資料。\n\nPart 4/5: Reviewed 2 items (each has two context-only variants). Both items measure targeted aspects of writing (use of concrete narrative details; providing reasons/examples to support an opinion). Metadata is coherent and educationally appropriate — no substantive changes required.\n\nPart 5/5: Reviewed 2 items (each has two context-only variants). Both items measure the stated skills and metadata are appropriate; no revision required.",
+    "reviews": [
+      {
+        "id": "chinese-writing-P6-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹要求從候選詞中選出最能表達“仔細考慮後才決定”的形容詞，測驗的是詞義理解與詞語選擇（詞語運用）。標籤“詞語運用”、主題“詞語運用”及模組“基礎掌握”與該題技能對應恰當。",
+        "recommendedTopic": "詞語運用",
+        "recommendedLabel": "詞語運用",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-writing-P6-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹要求判斷哪一個詞語搭配最自然，重點在詞語搭配與常用搭配的認知，標籤“詞語搭配”與主題“詞語運用”均合理，模組“基礎掌握”亦合適。",
+        "recommendedTopic": "詞語運用",
+        "recommendedLabel": "詞語搭配",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-writing-P6-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹問「哪一句語序最通順？」並提示找主語、動作和其他資訊，選項為語序或語法不順的句子，實際評估的是句子語序與語法正確性（句子組織/句子準確性）。標籤「句子組織」、主題「句子準確性」和模組「基礎掌握」與題目要求一致。",
+        "recommendedTopic": "句子準確性",
+        "recommendedLabel": "句子組織",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-writing-P6-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹問「哪一句標點運用最合適？」並以引號、逗號等選項變體考察標點在引述語及句子中的正確使用，實際技能為標點運用。標籤「標點運用」、主題「句子準確性」與模組「基礎掌握」都恰當地描述了該評量焦點。",
+        "recommendedTopic": "句子準確性",
+        "recommendedLabel": "標點運用",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-writing-P6-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹要求選出最適合作為段落中心句的一句話，測量的是辨認段落的中心思想/主題句（即段落組織與主旨表達）。現有標籤「段落中心」直接命名該技能；主題「段落組織」與單元「整合表達」均與寫作中確定段落主旨與組織的教學目標相符，故元資料恰當。",
+        "recommendedTopic": "段落組織",
+        "recommendedLabel": "段落中心",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "chinese-writing-P6-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹要求選出最能支持論點的例子，測量的是辨識或選用支援性例子的能力（用以強化段落或論述的細節）。標籤「例子支援」明確指出此技能；主題「段落組織」與單元「整合表達」同樣合理，因為舉例和支撐論點屬於段落發展與整合表達的一部分。",
+        "recommendedTopic": "段落組織",
+        "recommendedLabel": "例子支援",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "chinese-writing-P6-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify the most concrete narrative detail (action and feeling) to make a recount more specific. The label '內容發展（敘述細節）' accurately names this skill; the topic '內容與觀點發展' and module '整合表達' are educationally coherent for a writing-item focusing on content development.",
+        "recommendedTopic": "內容與觀點發展",
+        "recommendedLabel": "內容發展（敘述細節）",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "chinese-writing-P6-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item measures the ability to make an opinion persuasive by adding reasons/examples. The label '觀點發展與論證' correctly describes this skill; the topic and module are appropriate for an item that assesses opinion development and argument support in writing.",
+        "recommendedTopic": "內容與觀點發展",
+        "recommendedLabel": "觀點發展與論證",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "chinese-writing-P6-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹要求選出表示動作先後的連接詞；標籤“連接詞選擇”、主題“表達準確：連接詞”及模組“理解與應用”準確描述了該項語文技能（理解並應用適當連接詞以表達先後關係）。",
+        "recommendedTopic": "表達準確：連接詞",
+        "recommendedLabel": "連接詞選擇",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-writing-P6-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹與提示要求完成文章後進行檢查以提升完整性，重點在修訂（檢查中心句、例子與結語的一致性）與篇章銜接；標籤“修訂檢查”、主題“表達準確：修訂與篇章銜接”及模組“整合表達”恰當反映該寫作修訂技能。",
+        "recommendedTopic": "表達準確：修訂與篇章銜接",
+        "recommendedLabel": "修訂檢查",
+        "recommendedModule": "整合表達"
+      }
+    ]
+  }
+}

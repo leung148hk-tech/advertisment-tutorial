@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T09:59:42.898161+00:00",
+  "grade": "P3",
+  "track": "chinese-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Two P3 Chinese-reading items on the word 「努力」. Both items are clear, age-appropriate, have one unambiguous best answer (index 0), and test basic vocabulary understanding and correct usage. Recommend keeping both items as-is.\n\nPart 2/5: Reviewed 2 P3 Chinese-reading items (part 2 of 5). Both items are clear, grade-appropriate, and have a single best answer. Recommend keeping original wording and options.\n\nPart 3/5: Both P3 Chinese-reading inference items are clear, age-appropriate, and have a single best answer. No revision needed.\n\nPart 4/5: Two P3 Chinese reading items (context & rhetoric; sentence comprehension). Both items are clear, age-appropriate, have a single best answer, and match the claimed ability and difficulty. Recommend passing both without changes.\n\nPart 5/5: Both items are clear, age-appropriate P3 Chinese reading questions. Each has a single best answer, correct supplied key, and suitable distractors and difficulty.",
+    "reviews": [
+      {
+        "id": "chinese-reading-P3-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The meaning-choice item clearly asks for the closest meaning of 「努力」. The correct option (認真不放棄) is unambiguous and distractors are clearly incorrect and age-appropriate.",
+        "recommendedQuestion": "「努力」最接近下列哪一個意思？",
+        "recommendedOptions": [
+          "認真不放棄",
+          "很匆忙",
+          "不願意幫忙",
+          "聲音很大"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence-selection item appropriately tests correct usage of 「努力」. Only the first sentence uses the word naturally and correctly; other options are nonsensical uses, suitable distractors for P3.",
+        "recommendedQuestion": "下列哪一句最適合使用「努力」？",
+        "recommendedOptions": [
+          "阿朗每天努力學習，成績進步了。",
+          "阿朗聽見好消息，感到努力。",
+          "雨傘的顏色很努力。",
+          "這條路走起來很努力。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem states a simple fact ('阿朗每天練習朗讀。') and option 1 exactly matches that main idea. Other options are unrelated, so there is a single clear answer suitable for P3.",
+        "recommendedQuestion": "阿朗每天練習朗讀。這段文字主要說明了甚麼？",
+        "recommendedOptions": [
+          "阿朗每天練習朗讀。",
+          "阿朗不想參加活動。",
+          "阿朗正在睡覺。",
+          "阿朗不見了物品。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The notice asks participants to arrive at 2:45pm; the latest acceptable arrival time is clearly 下午二時四十五分. Distractors are clearly incorrect.",
+        "recommendedQuestion": "通告寫着「一次服務經驗分享會下午三時開始，參加者請在二時四十五分到達。」最遲何時到達？",
+        "recommendedOptions": [
+          "下午二時四十五分",
+          "下午三時",
+          "下午三時十五分",
+          "下午四時"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The action '每天練習朗讀' straightforwardly indicates diligence. The other options ('粗心大意', '不願合作', '害怕嘗試') do not fit the behaviour. Distractors are plausible but clearly inferior for P3 level.",
+        "recommendedQuestion": "阿朗每天練習朗讀，這最能反映他／她怎樣？",
+        "recommendedOptions": [
+          "勤奮",
+          "粗心大意",
+          "不願合作",
+          "害怕嘗試"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "先了解資料再作決定 most likely shows a desire to make a better or more suitable choice. Other options contradict the behaviour or are implausible (e.g. '不想知道內容').",
+        "recommendedQuestion": "阿朗先了解資料才作決定，最可能是因為？",
+        "recommendedOptions": [
+          "希望作出較合適的選擇",
+          "不想知道內容",
+          "想拖延時間",
+          "沒有任何原因"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence uses personification—an inanimate wind is given a human action (“拍著”). The correct choice '人' is unambiguous for P3. Distractors are plausible in being inanimate but the hint directs to a human comparison. Wording and vocabulary are age-appropriate.",
+        "recommendedQuestion": "「微風輕輕拍著樹葉」主要把微風寫成像甚麼？",
+        "recommendedOptions": [
+          "人",
+          "石頭",
+          "書本",
+          "雨傘"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks for the main message of a simple sentence. Option 1 ('人物、地點和主要行動') correctly summarizes the core information (who, where, what). Other options are irrelevant to sentence meaning. Clear and suitable for P3.",
+        "recommendedQuestion": "「我們在操場進行接力賽。」這句話中，最重要的訊息是甚麼？",
+        "recommendedOptions": [
+          "人物、地點和主要行動",
+          "句子的字數",
+          "所有標點名稱",
+          "顏色的數量"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹描述文章先說準備方法再說參加收穫，最合適的主旨是鼓勵讀者準備並參與活動。其他選項與題意無關，干擾項簡潔且明顯不符，對P3為合適難度。",
+        "recommendedQuestion": "文章先介紹一次服務經驗的準備方法，再說明參加後的收穫，主旨最可能是？",
+        "recommendedOptions": [
+          "鼓勵讀者認真準備並參與活動",
+          "介紹所有人的姓名",
+          "比較不同天氣",
+          "只描述食物"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "句子按先後順序列出三個動作（先、再、最後），最恰當的組織方式為「步驟順序」。其他選項與語句結構無關，符合P3理解能力。",
+        "recommendedQuestion": "「先找出重點，再整理想法，最後寫下回應。」這段文字主要按甚麼方式組織？",
+        "recommendedOptions": [
+          "步驟順序",
+          "人物對話",
+          "地點轉換",
+          "問題與答案"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

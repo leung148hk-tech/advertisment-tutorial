@@ -1,0 +1,307 @@
+{
+  "questionCount": 1527,
+  "groupCount": 50,
+  "structuralIssues": 0,
+  "groups": {
+    "P1:chinese-reading": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P1:chinese-writing": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P1:english-reading": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P1:english-writing": {
+      "pool": 33,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P1:math": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P2:chinese-reading": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P2:chinese-writing": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P2:english-reading": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P2:english-writing": {
+      "pool": 33,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P2:math": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P3:chinese-reading": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P3:chinese-writing": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P3:english-reading": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P3:english-writing": {
+      "pool": 33,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P3:math": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P4:chinese-reading": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P4:chinese-writing": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P4:english-reading": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P4:english-writing": {
+      "pool": 33,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P4:math": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P5:chinese-reading": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P5:chinese-writing": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P5:english-reading": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P5:english-writing": {
+      "pool": 33,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P5:math": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P5:interview": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P6:chinese-reading": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P6:chinese-writing": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P6:english-reading": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P6:english-writing": {
+      "pool": 33,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P6:math": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "P6:interview": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "S1:chinese-reading": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "S1:chinese-writing": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "S1:english-reading": {
+      "pool": 33,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "S1:english-writing": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "S1:math": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "S1:science": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "S2:chinese-reading": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "S2:chinese-writing": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "S2:english-reading": {
+      "pool": 33,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "S2:english-writing": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "S2:math": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "S2:science": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "S3:chinese-reading": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "S3:chinese-writing": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "S3:english-reading": {
+      "pool": 33,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "S3:english-writing": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "S3:math": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    },
+    "S3:science": {
+      "pool": 30,
+      "sample": 20,
+      "topics": 5,
+      "issues": 0
+    }
+  }
+}

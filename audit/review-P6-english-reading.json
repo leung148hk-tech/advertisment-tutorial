@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T10:42:31.606445+00:00",
+  "grade": "P6",
+  "track": "english-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Both P6 vocabulary items are clear, unambiguous, age-appropriate, and have a single best answer. No revision needed.\n\nPart 2/5: Two P6 English reading detail/main-idea items reviewed. Both items are clear, grade-appropriate, have one unambiguous best answer, and match the stated difficulty. Recommend PASS for both.\n\nPart 3/5: Both items are clear, age-appropriate P6 reading-inference questions with one unambiguous best answer each. Recommended to keep the original wording and answer keys.\n\nPart 4/5: Two P6 English reading items (pronoun reference and linking word) were reviewed. Both items are clear, have a single best answer, are age-appropriate and align with expected syllabus skills. Recommend passing both without changes.\n\nPart 5/5: Both items are clear, age-appropriate P6 reading questions with one unambiguous best answer each. No revision needed.",
+    "reviews": [
+      {
+        "id": "english-reading-P6-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The target word 'effective' clearly matches 'producing a successful result.' The distractors are obviously incorrect for P6 level, so there is a single best choice and no ambiguity.",
+        "recommendedQuestion": "The word “effective” is closest in meaning to ____ .",
+        "recommendedOptions": [
+          "producing a successful result",
+          "very noisy",
+          "always late",
+          "easy to break"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P6-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The context item asks for an action that demonstrates being 'effective.' 'Checking work carefully and helping others' best shows producing good results; the other options are clearly unsuitable, so the item is unambiguous and suitable for P6.",
+        "recommendedQuestion": "Sophie is effective when working on an environmental proposal. Which action shows this best?",
+        "recommendedOptions": [
+          "Checking work carefully and helping others",
+          "Ignoring every instruction",
+          "Leaving without a reason",
+          "Never trying again"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P6-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The notice gives two times; the earlier required time is clearly registration closing at 10:15, so 'Register by 10:15' is the single best answer. Distractors are implausible. Language and cognitive demand are suitable for P6.",
+        "recommendedQuestion": "A notice says a school event starts at 10:30 and registration closes at 10:15. What should a student do?",
+        "recommendedOptions": [
+          "Register by 10:15",
+          "Arrive after 10:30",
+          "Wait until noon",
+          "Bring nothing"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P6-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The text's stated purpose ('how to prepare for an environmental proposal') makes 'give practical guidance' clearly the main purpose. Other options are unrelated and implausible, so there is one clear best answer. Wording and cognitive level fit P6.",
+        "recommendedQuestion": "A short text explains how to prepare for an environmental proposal. Its main purpose is to ____ .",
+        "recommendedOptions": [
+          "give practical guidance",
+          "tell a fantasy story",
+          "sell a uniform",
+          "describe a storm"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P6-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The action 'evaluates the plan before starting the task' reasonably implies Sophie cares about the task and wants it done well, so 'The task matters to the student' is the best inference. The other options are contradicted or inferior.",
+        "recommendedQuestion": "Sophie evaluates the plan before starting the task. What can we infer?",
+        "recommendedOptions": [
+          "The task matters to the student",
+          "The student dislikes every task",
+          "The plan is missing",
+          "Nothing can be inferred"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P6-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The phrase 'a useful chance to learn together' is positive and shows approval; 'supportive' is the clear writer attitude. Other choices conflict with the positive wording.",
+        "recommendedQuestion": "The writer calls the activity “a useful chance to learn together”. The writer is most likely ____ .",
+        "recommendedOptions": [
+          "supportive",
+          "angry",
+          "uninterested",
+          "confused"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P6-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The pronoun 'It' refers to the nearest suitable noun that matches in meaning and number: 'a display'. 'The hall' and 'the class' are possible locations/agents but do not match the pronoun reference here; 'the preparation' is an abstract noun not introduced as a separate object. Therefore 'The display' is the clear antecedent.",
+        "recommendedQuestion": "“The class prepared a display. It was shown in the hall.” What does “It” refer to?",
+        "recommendedOptions": [
+          "The display",
+          "The hall",
+          "The class",
+          "The preparation"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P6-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The second clause states a result of Sophie practising regularly, so a result connector is required. 'Therefore' fits and correctly links cause to effect. 'However' shows contrast, 'although' introduces a concession and needs a clause, and 'unless' is conditional—none of these express the result needed here.",
+        "recommendedQuestion": "Sophie practised regularly; ____ , the presentation became clearer.",
+        "recommendedOptions": [
+          "therefore",
+          "however",
+          "although",
+          "unless"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P6-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The webpage description (steps, reminders, sign-up link for an environmental proposal) clearly indicates the purpose is to invite people to take part. Distractors are unrelated and not plausible, so there is a single best answer and the language is suitable for P6.",
+        "recommendedQuestion": "A webpage gives steps, reminders and a sign-up link for an environmental proposal. It is mainly designed to ____ .",
+        "recommendedOptions": [
+          "invite people to take part",
+          "sell a house",
+          "teach swimming",
+          "report a storm"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P6-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The detail 'Sophie asks questions and shares ideas with classmates' is strong evidence of enjoying learning. Other options are irrelevant facts and do not support the idea, so the item has one clear correct choice and is suitable for the grade.",
+        "recommendedQuestion": "Which detail best supports the idea that Sophie enjoys learning?",
+        "recommendedOptions": [
+          "Sophie asks questions and shares ideas with classmates.",
+          "Sophie owns a blue bag.",
+          "Sophie eats lunch at noon.",
+          "Sophie walks home."
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

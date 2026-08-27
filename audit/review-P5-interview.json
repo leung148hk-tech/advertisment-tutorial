@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T10:34:20.701569+00:00",
+  "grade": "P5",
+  "track": "interview",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Two P5 interview items reviewed. Both items are clear, age-appropriate, have one unambiguous best answer and suitable distractors. Recommend passing both without revision.\n\nPart 2/5: Reviewed 2 P5 interview-style items (part 2 of 5). Both items are clear, age-appropriate, have a single best answer, and can be passed without revision.\n\nPart 3/5: Both items are clear, age-appropriate P5 interview questions about collaboration and communication. Each has one unambiguous best answer and plausible distractors. Recommend passing both without revision.\n\nPart 4/5: Two P5 interview-preparation items (Reflection and School awareness) reviewed. Both items are clear, age-appropriate, have one best answer, and align with the stated difficulty and module. Recommend passing without changes.\n\nPart 5/5: Both items are appropriate for P5 interview practice. Each has a clear single-best answer, age-appropriate wording, and plausible distractors. Recommend passing both without revision.",
+    "reviews": [
+      {
+        "id": "interview-P5-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem is clear and age-appropriate for P5. Option 2 (index 1) is the most complete, structured and genuine approach to self-introduction; other options are clearly weaker distractors. No ambiguity or multiple defensible answers.",
+        "recommendedQuestion": "Which self-introduction gives the clearest first impression?",
+        "recommendedOptions": [
+          "Only say your name and stop.",
+          "Greet, state your name and school, then share one genuine interest with an example.",
+          "List every award without context.",
+          "Ask the interviewer to answer first."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "interview-P5-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Clear P5-level listening skill item. Asking politely to repeat or explain is the safest, most appropriate response; other options are obviously unsuitable. Distractors are plausible but not misleading.",
+        "recommendedQuestion": "If you do not understand a question, what is the best response?",
+        "recommendedOptions": [
+          "Make up an answer immediately.",
+          "Ask politely for the question to be repeated or explained.",
+          "Stay silent until the interview ends.",
+          "Ask a friend to answer."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "interview-P5-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem is clear and age-appropriate for P5. The distractors are weak and clearly inferior; the best response (name an area, explain why, and give one related experience) matches the hint and teaching objective. No ambiguity and only one defensible answer.",
+        "recommendedQuestion": "Which is the strongest way to answer “What do you enjoy learning?”",
+        "recommendedOptions": [
+          "Say only one subject name.",
+          "Name an area, explain why, and give one related experience.",
+          "Change the question.",
+          "Repeat “I don't know”."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "interview-P5-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Clear situational prompt for collaboration skills at P5 level. The correct option (invite the person to share an idea and listen carefully) is unambiguous and aligns with the hint and learning goals. Distractors are clearly inappropriate.",
+        "recommendedQuestion": "In a group task, a quieter member has not spoken. What can you do?",
+        "recommendedOptions": [
+          "Ignore the person.",
+          "Invite the person to share an idea and listen carefully.",
+          "Tell everyone your idea is best.",
+          "End the discussion."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "interview-P5-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem is clear and concise for P5. The second option is the appropriate first action when a teammate disagrees; other options are clearly unsuitable and serve as plausible distractors. Language and the provided hint are age-appropriate.",
+        "recommendedQuestion": "When a teammate disagrees with you, what should you do first?",
+        "recommendedOptions": [
+          "Say they are wrong.",
+          "Ask about their reason and compare ideas calmly.",
+          "Leave the group.",
+          "Speak louder."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "interview-P5-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question is simple and suitable for P5. Option two clearly models respectful, attentive body language; the other options are inappropriate and function well as distractors. Wording is age-appropriate and unambiguous.",
+        "recommendedQuestion": "Which body language supports clear communication?",
+        "recommendedOptions": [
+          "Look at the floor all the time.",
+          "Sit naturally and look at the speaker.",
+          "Keep checking a phone.",
+          "Turn away while speaking."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "interview-P5-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem is clear and age-appropriate. Option 2 (index 1) is the unambiguous best response for an interview question about improvement; distractors are clearly inappropriate and not plausible. The item matches the stated ability and difficulty.",
+        "recommendedQuestion": "How can you answer a question about something you want to improve?",
+        "recommendedOptions": [
+          "Say you have no area to improve.",
+          "Name one area and explain one action you are taking.",
+          "Blame classmates.",
+          "Refuse to respond."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "interview-P5-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question tests interview preparation skills relevant to P5. Option 2 (index 1) is the clear, defensible best choice; other options are implausible or incorrect. Language and content suit the grade and module.",
+        "recommendedQuestion": "Why does learning about a secondary school before an interview help?",
+        "recommendedOptions": [
+          "It guarantees admission.",
+          "It helps you give specific reasons for applying and ask thoughtful questions.",
+          "It means no other preparation is needed.",
+          "It lets you memorise a uniform colour."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "interview-P5-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem tests social awareness and constructive action suitable for P5. The second option (invite the classmate and check their preferred role) is clearly the most constructive and age-appropriate response. Distractors are clearly inferior and do not create a second defensible answer.",
+        "recommendedQuestion": "You notice a classmate is left out during an activity. What is a constructive response?",
+        "recommendedOptions": [
+          "Pretend not to notice.",
+          "Invite the classmate to join and check what role they prefer.",
+          "Tell others to stop talking.",
+          "Leave the activity."
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "interview-P5-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The item assesses how to give a natural, memorable interview answer—suitable for P5 communication skills. The option about giving a clear answer supported by a genuine experience is the single best choice. Other options describe behaviours that would make answers less effective.",
+        "recommendedQuestion": "What makes an interview answer memorable without sounding rehearsed?",
+        "recommendedOptions": [
+          "Using the longest words possible.",
+          "Giving a clear answer supported by a genuine experience.",
+          "Speaking as fast as possible.",
+          "Reciting a script without listening."
+        ],
+        "recommendedCorrect": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T10:47:14.974223+00:00",
+  "grade": "P6",
+  "track": "math",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Both items are correct, unambiguous, and appropriate for P6 arithmetic practice. Keep original wording and options.\n\nPart 2/5: 本批次為小六數學（分數與比例）兩題複核。兩題均為基礎應用題，題幹清楚、選項合理且只有一個明確正確答案，故均通過審核。\n\nPart 3/5: 兩題均為P6基礎計算題（長方體體積與速度 × 時間 求路程）。題幹、選項與答案明確，沒有模糊或多解情況，難度與能力標示適切，建議全部通過（PASS）。\n\nPart 4/5: Two P6 data-and-statistics items (median and simple subtraction from a bar-chart) were reviewed. Both items are clear, have one unambiguous correct choice, and are age-appropriate; recommend pass without changes.\n\nPart 5/5: All items are clear, unambiguous, mathematically correct and appropriate for P6. Both items PASS review.",
+    "reviews": [
+      {
+        "id": "math-P6-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "3600 ÷ 9 = 400 is correct; only one defensible answer; distractors are numeric and plausible. Language and level suit P6.",
+        "recommendedQuestion": "3,600 ÷ 9 = ?",
+        "recommendedOptions": [
+          "40",
+          "400",
+          "4,000",
+          "32,400"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P6-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "1.2 ÷ 0.3 = 4 is correct (scale both by 10 to get 12 ÷ 3). Only one correct choice; hint is suitable for P6.",
+        "recommendedQuestion": "1.2 ÷ 0.3 = ?",
+        "recommendedOptions": [
+          "0.4",
+          "4",
+          "9",
+          "40"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P6-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹明確指明麵粉與糖比例為 5：2，給定麵粉 10 杯，按比例放大（乘以 2），糖為 4 杯。選項完整且只一個正確答案，干擾選項合理且年級適切。",
+        "recommendedQuestion": "麵粉和糖的比例是 5：2。若用了 10 杯麵粉，需要多少杯糖？",
+        "recommendedOptions": [
+          "2 杯",
+          "4 杯",
+          "5 杯",
+          "8 杯"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P6-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "原價 $240，減價 25% 即減 $60，售價為 $180。題目表述明確，計算步驟屬小六常見的百分率應用，選項含正確答案且無二義性。",
+        "recommendedQuestion": "一件原價 $240 的物品減價 25%，減價後售價是多少？",
+        "recommendedOptions": [
+          "$60",
+          "$180",
+          "$200",
+          "$300"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P6-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "長方體體積公式為長 × 闊 × 高。6 × 4 × 3 = 72，唯一正確選項為「72 立方厘米」。選項分布合理，無歧義，符合P6基礎題目要求。",
+        "recommendedQuestion": "長方體長 6 厘米、闊 4 厘米、高 3 厘米，體積是多少？",
+        "recommendedOptions": [
+          "13 立方厘米",
+          "24 立方厘米",
+          "48 立方厘米",
+          "72 立方厘米"
+        ],
+        "recommendedCorrect": 3
+      },
+      {
+        "id": "math-P6-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "路程 = 速度 × 時間。12 (公里/小時) × 1.5 (小時) = 18 公里，唯一正確選項為「18 公里」。題意與單位清晰，適合P6能力範圍。",
+        "recommendedQuestion": "單車以每小時 12 公里行駛 1.5 小時，共行駛多少公里？",
+        "recommendedOptions": [
+          "8 公里",
+          "12 公里",
+          "18 公里",
+          "24 公里"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-P6-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The median of the sorted list 6, 8, 8, 10, 13 is the middle value 8. Only one option matches this, the distractors are plausible but not misleading. Language and skill demand are appropriate for P6.",
+        "recommendedQuestion": "數字 6、8、8、10、13 的中位數是多少？",
+        "recommendedOptions": [
+          "6",
+          "8",
+          "9",
+          "13"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P6-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Difference between 18 and 12 is 6. The question is unambiguous and requires a simple subtraction appropriate for P6.",
+        "recommendedQuestion": "長條圖顯示 12 名同學選擇美術、18 名同學選擇音樂。選擇音樂的同學多了多少人？",
+        "recommendedOptions": [
+          "4 人",
+          "6 人",
+          "12 人",
+          "30 人"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P6-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "方程式 4x + 7 = 31 唯一解為 x = 6。題目清晰，提示合適，選項包含合理的誘答（未正確步驟或計算錯誤），難度與 P6 算式解題相符。",
+        "recommendedQuestion": "4x + 7 = 31，x = ?",
+        "recommendedOptions": [
+          "4",
+          "5",
+          "6",
+          "8"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-P6-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "總數為 6×8 = 48，扣除 11 後為 37 枝。題意明確且無二義性，選項包括常見計算錯誤（未扣減、錯加或其他乘法錯誤），難度適合 P6。",
+        "recommendedQuestion": "6 包鉛筆每包有 8 枝，送出 11 枝後，還有多少枝？",
+        "recommendedOptions": [
+          "26 枝",
+          "37 枝",
+          "48 枝",
+          "59 枝"
+        ],
+        "recommendedCorrect": 1
+      }
+    ]
+  }
+}

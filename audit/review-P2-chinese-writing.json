@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T09:44:30.371511+00:00",
+  "grade": "P2",
+  "track": "chinese-writing",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: 兩題均為小學二年級詞語運用題，題幹清晰、選項明確且只有一個最佳答案，難度與詞彙水準均符合 P2 要求，建議通過（PASS）。\n\nPart 2/5: Both items are clear, age-appropriate P2 Chinese-writing questions with one unambiguous best answer each. Keep original wording and options.\n\nPart 3/5: 已審核 2 項題目（P2 中文寫作第3部分）。兩題均通過（PASS）：題幹清晰、每題有唯一最佳答案且難度與年級相符。\n\nPart 4/5: 本批次包含兩題小二寫作（內容發展、觀點發展）。兩題均有明確且唯一最佳選項，選項語言與年級相符，題目要求與提示一致，建議保留原題目與選項（均判定通過）。\n\nPart 5/5: 本批次包含兩題小學二年級（P2）中文寫作測驗題，均為表達與修訂範疇，題目簡潔、選項清晰，皆為單一最佳答案，語境與年級相符，建議全部通過（PASS）。",
+    "reviews": [
+      {
+        "id": "chinese-writing-P2-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹要求形容「做事乾淨有條理」，「整潔」為最準確的描述。其餘三個選項語義不符（混亂、敷衍、急躁），干擾但不具迷惑性，詞彙難度適合 P2。",
+        "recommendedQuestion": "要形容小美做事乾淨有條理，哪個詞最合適？",
+        "recommendedOptions": [
+          "整潔",
+          "混亂",
+          "敷衍",
+          "急躁"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P2-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目考查詞語搭配常識，「整理資料」為自然、常見的搭配；其他選項（整理星星、整理雨水、整理聲音）語義不通或不自然，故為適切的干擾選項。",
+        "recommendedQuestion": "下列哪個詞語搭配最自然？",
+        "recommendedOptions": [
+          "整理資料",
+          "整理星星",
+          "整理雨水",
+          "整理聲音"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P2-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks which sentence has the most natural word order. Option 0 (同學們在禮堂唱歌。) is the only fully grammatical, complete sentence. The other options are fragments or have incorrect word order, which are plausible distractors for P2 learners. Language and cognitive demand match P2 syllabus.",
+        "recommendedQuestion": "哪一句語序最通順？",
+        "recommendedOptions": [
+          "同學們在禮堂唱歌。",
+          "在我們跑步操場。",
+          "活動同學們下午進行。",
+          "閱讀不同想法認識能。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P2-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The item tests correct punctuation for reported speech. Option 0 (老師說：「請大家準時完成練習。」) correctly uses the quotation marks and full stop; the other choices show incorrect or inconsistent punctuation. This is an appropriate P2 punctuation question with a single clear answer.",
+        "recommendedQuestion": "哪一句標點運用最合適？",
+        "recommendedOptions": [
+          "老師說：「請大家準時完成練習。」",
+          "老師，說請大家：準時完成練習。",
+          "老師說請大家準時完成練習？",
+          "老師：說，請大家完成練習。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P2-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹明確要求選出段落中心句；選項一直接點出主旨，其他選項與「一次旅行」主題無關或過於籠統，故只有選項一為最佳答案。語言與認知要求適合 P2。",
+        "recommendedQuestion": "要寫「一次旅行」，哪一句最適合作中心句？",
+        "recommendedOptions": [
+          "一次旅行讓我學會從不同角度觀察和思考。",
+          "那天的天氣很好。",
+          "我有一枝筆。",
+          "很多事情都不同。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P2-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目要求選出能支持「合作能解決困難」的例子；選項一描述分工合作完成複雜任務，直接支持觀點，其他選項與合作無關或不具支持力，故答案明確且唯一直觀。",
+        "recommendedQuestion": "哪一個例子最能支持「合作能解決困難」？",
+        "recommendedOptions": [
+          "小組分工後完成了複雜任務。",
+          "操場很大。",
+          "有人忘記帶水。",
+          "大家各自等待。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P2-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "選項 A 提供具體行動（主動協助）與感受（完成後感到安心），符合提示要求；其餘選項過於籠統，無助於使記敘更具體。",
+        "recommendedQuestion": "要令記敘內容更具體，哪一項細節最有幫助？",
+        "recommendedOptions": [
+          "我看到同學需要幫助，便主動協助，完成後感到安心。",
+          "活動很好。",
+          "那天很多人。",
+          "事情發生了。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P2-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "選項 A 陳述立場並給出理由（累積知識、分享心得），具說服力且與提示一致；其他選項過於簡短或模糊，不構成有力論證。",
+        "recommendedQuestion": "哪種寫法較有說服力？",
+        "recommendedOptions": [
+          "我支持安排閱讀時間，因為能累積知識，也可分享心得。",
+          "我覺得可以。",
+          "每個人不同。",
+          "閱讀就是閱讀。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P2-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "句子要表達兩個動作的先後關係，「然後」最合適。其他選項（但是、雖然、因此）與語意不符或改變句子關係，且對小二程度而言詞彙與語法均合適且不含歧義。",
+        "recommendedQuestion": "「我先搜集資料，____ 整理重點。」填入哪個詞最合適？",
+        "recommendedOptions": [
+          "然後",
+          "但是",
+          "雖然",
+          "因此"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P2-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目問完成文章後哪項檢查最能提升完整性，首項「檢查中心句、例子和結語是否呼應」直接對應完整性檢查，其他選項明顯不合適。選項設計簡單明確，適合小二。",
+        "recommendedQuestion": "完成文章後，哪一項檢查最能提升完整性？",
+        "recommendedOptions": [
+          "檢查中心句、例子和結語是否呼應",
+          "只數字數",
+          "刪去所有標點",
+          "把每句寫得更長"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

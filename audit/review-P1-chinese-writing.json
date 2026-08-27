@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T09:32:03.615557+00:00",
+  "grade": "P1",
+  "track": "chinese-writing",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Both P1 vocabulary items are clear, age-appropriate, have a single best answer, and require no revision.\n\nPart 2/5: Review of 2 P1 Chinese-writing multiple-choice items (sentence order and punctuation). Both items are clear, have one best answer, and are appropriate for P1-level basic language skills.\n\nPart 3/5: 兩題皆為小一程度的段落組織題，題幹清晰、選項語言簡單且具辨別性。兩題各有一個明確且年級適切的最佳答案，建議保留原題。\n\nPart 4/5: Both P1 Chinese-writing items are clear, age-appropriate, and have a single best answer (option 0). No revision needed; keep original wording and options.\n\nPart 5/5: 本批次包含兩題小一中文寫作基礎題，內容貼合能力指標、選項清晰且唯一最佳答案，建議保留原題不作修改。",
+    "reviews": [
+      {
+        "id": "chinese-writing-P1-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks which word best describes Xiao Ming doing things happily. '快樂' directly matches '開心'. The other choices have clearly different meanings (混亂, 敷衍, 急躁), so there is one unambiguous best answer and the language is suitable for P1.",
+        "recommendedQuestion": "要形容小明做事開心，哪個詞最合適？",
+        "recommendedOptions": [
+          "快樂",
+          "混亂",
+          "敷衍",
+          "急躁"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P1-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The item asks which collocation is most natural. '整理資料' is a common, natural phrase. The other options pair '整理' with unlikely objects for a child (星星, 雨水, 聲音), so there is a single clear correct choice. Wording and difficulty are suitable for P1.",
+        "recommendedQuestion": "下列哪個詞語搭配最自然？",
+        "recommendedOptions": [
+          "整理資料",
+          "整理星星",
+          "整理雨水",
+          "整理聲音"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P1-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 (“小狗在花園跑步。”) is a complete, grammatically correct sentence with clear subject, verb and location. Options 1, 2 and 3 are ungrammatical or have incorrect word order (fragments or scrambled phrases), so there is a single best answer. Vocabulary and sentence complexity are suitable for P1.",
+        "recommendedQuestion": "哪一句語序最通順？",
+        "recommendedOptions": [
+          "小狗在花園跑步。",
+          "在我們跑步操場。",
+          "活動同學們下午進行。",
+          "閱讀不同想法認識能。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P1-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 (“老師說：「請大家準時完成練習。」”) correctly uses quotation marks to mark reported speech and places the full stop inside the quote—this is the standard punctuation for direct speech. The other options misuse commas/colons or a question mark, making them incorrect. The task is basic punctuation recognition suitable for early primary level.",
+        "recommendedQuestion": "哪一句標點運用最合適？",
+        "recommendedOptions": [
+          "老師說：「請大家準時完成練習。」",
+          "老師，說請大家：準時完成練習。",
+          "老師說請大家準時完成練習？",
+          "老師：說，請大家完成練習。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P1-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹要求選出寫「我的家人」段落的中心句，選項「我愛我的家人。」直接點出段落重點，其他選項與主題無關，干擾度低且適合小一語言能力。",
+        "recommendedQuestion": "要寫「我的家人」，哪一句最適合作中心句？",
+        "recommendedOptions": [
+          "我愛我的家人。",
+          "我今天吃了蘋果。",
+          "這本書很有趣。",
+          "我家附近有公園。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P1-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目要求找出能支持「合作能解決困難」的例子。選項「我和同學一起搬書，終於搬到課室。」直接說明合作解決了搬運的困難，是明確且年級適切的支持例子；其他選項與主題無關。",
+        "recommendedQuestion": "哪一個例子最能支持「合作能解決困難」？",
+        "recommendedOptions": [
+          "我和同學一起搬書，終於搬到課室。",
+          "我一個人玩遊戲。",
+          "天氣變涼了。",
+          "大家都不說話。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P1-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "選項 0 包含具體行動（把水遞給同學）、對話（「謝謝你！」）和感受（我很開心），最能令故事清楚；其餘選項過於籠統或無具體細節，符合題目提示。",
+        "recommendedQuestion": "要令故事更清楚，哪一項細節最有幫助？",
+        "recommendedOptions": [
+          "我把水遞給口渴的同學，他說「謝謝你！」我很開心。",
+          "活動很好玩。",
+          "那天很多人。",
+          "事情發生了。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P1-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "選項 0 陳述了具體理由（認識新故事、和同學分享），比其他籠統或模糊的句子更能清楚表達請同學每天閱讀的觀點，符合提示要求。",
+        "recommendedQuestion": "想請同學每天閱讀，哪一句說得較清楚？",
+        "recommendedOptions": [
+          "我們每天有閱讀時間，可以認識新故事，也能和同學分享。",
+          "我覺得可以。",
+          "每個人不同。",
+          "閱讀就是閱讀。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P1-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹簡短明確，提示指示動作先後順序，選項中「然後」最合適且與其他三個連詞意義不同，無歧義，符合小一水平。",
+        "recommendedQuestion": "「我先做功課，____ 玩遊戲。」填入哪個詞最合適？",
+        "recommendedOptions": [
+          "然後",
+          "但是",
+          "雖然",
+          "因此"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P1-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目詢問完成作文後的檢查方法，正確選項清楚、貼合寫作修訂要點；其他選項為不良或不相關做法，適合小一學生辨識。",
+        "recommendedQuestion": "完成作文後，哪一項檢查最有幫助？",
+        "recommendedOptions": [
+          "看看開頭、內容和結尾有沒有連在一起。",
+          "只數字數。",
+          "把所有標點刪掉。",
+          "把每句都寫長一點。"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

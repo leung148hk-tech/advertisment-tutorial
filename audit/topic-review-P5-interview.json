@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-26T11:40:02.523816+00:00",
+  "grade": "P5",
+  "track": "interview",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 items (P5 interview track). Both items measure pragmatic interview communication skills (self-introduction and request for clarification). Metadata for both items is coherent and educationally appropriate; no substantive changes required.\n\nPart 2/5: Reviewed 2 items (each has two context-only variants). Both items measure the metadata-aligned skills and require no substantive changes.\n\nPart 3/5: Reviewed 2 items (each has two context-only variants with identical metadata). Both items assess interpersonal communication skills appropriate to Grade P5 interview tasks. Metadata for both items is coherent and educationally accurate.\n\nPart 4/5: Reviewed 2 items (each has two context-only variants with identical metadata). Both items measure interview preparation/communication skills appropriate for P5 and have accurate metadata. Verdict: 2 PASS.\n\nPart 5/5: Reviewed 2 items (each has two context-only variants) for P5 interview track. Both items measure social/communication skills and their metadata accurately describe the targeted skills.",
+    "reviews": [
+      {
+        "id": "interview-P5-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem asks students to choose the clearest self-introduction, which tests ability to produce a short, structured and authentic self-introduction for an interview. The label 'Self introduction', topic 'Self-introduction and authentic expression' and module '整合表達' (integrated expression) accurately describe this communicative speaking skill.",
+        "recommendedTopic": "Self-introduction and authentic expression",
+        "recommendedLabel": "Self introduction",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "interview-P5-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses listening behaviour and how to request clarification in an interview context. The label 'Listening', topic 'Listening and clarification', and module '溝通與協作' (communication and collaboration) accurately reflect the intended listening/interaction skill.",
+        "recommendedTopic": "Listening and clarification",
+        "recommendedLabel": "Listening",
+        "recommendedModule": "溝通與協作"
+      },
+      {
+        "id": "interview-P5-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks for the strongest way to answer a typical interview/personal question by structuring a response with area, reason and example. The label 'Response structure' accurately names the skill of organising an answer. The topic 'Interview communication: answering questions' and module '整合表達' are coherent and appropriate to the task.",
+        "recommendedTopic": "Interview communication: answering questions",
+        "recommendedLabel": "Response structure",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "interview-P5-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses inclusive teamwork skills (inviting quieter members and listening). The label 'Teamwork', topic 'Collaboration and inclusion', and module '溝通與協作' correctly describe the measured skill and are educationally coherent.",
+        "recommendedTopic": "Collaboration and inclusion",
+        "recommendedLabel": "Teamwork",
+        "recommendedModule": "溝通與協作"
+      },
+      {
+        "id": "interview-P5-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem asks how to respond when a teammate disagrees, targeting active listening, calm comparison of ideas and conflict-resolution within teamwork. The label 'Different views', topic 'Collaboration and disagreement', and module '溝通與協作' accurately describe this skill.",
+        "recommendedTopic": "Collaboration and disagreement",
+        "recommendedLabel": "Different views",
+        "recommendedModule": "溝通與協作"
+      },
+      {
+        "id": "interview-P5-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks students to choose appropriate body language that supports communication (eye contact, natural posture), so the label 'Body language', topic 'Non-verbal communication', and module '溝通與協作' accurately reflect the measured skill.",
+        "recommendedTopic": "Non-verbal communication",
+        "recommendedLabel": "Body language",
+        "recommendedModule": "溝通與協作"
+      },
+      {
+        "id": "interview-P5-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks how to answer a question about an area for improvement in an interview, assessing the candidate's ability to reflect honestly and communicate one weakness plus a corrective action. The supplied topic ('Interview communication and self-reflection'), label ('Reflection') and module ('整合表達') correctly describe the skill and instructional area.",
+        "recommendedTopic": "Interview communication and self-reflection",
+        "recommendedLabel": "Reflection",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "interview-P5-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses preparation for a school interview by linking prior research about a school to motives and question-asking—i.e., school awareness and motivation in interview contexts. The provided topic ('School awareness and motivation'), label ('School knowledge') and module ('整合表達') accurately represent the assessed skill.",
+        "recommendedTopic": "School awareness and motivation",
+        "recommendedLabel": "School knowledge",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "interview-P5-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem asks for a constructive response to a peer being excluded, measuring situation judgement, empathy and practical peer-inclusion behaviour. The label 'Situation judgement', topic 'Peer inclusion and social awareness' and module '溝通與協作' (communication & collaboration) accurately describe this skill.",
+        "recommendedTopic": "Peer inclusion and social awareness",
+        "recommendedLabel": "Situation judgement",
+        "recommendedModule": "溝通與協作"
+      },
+      {
+        "id": "interview-P5-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question targets how to express oneself in an interview authentically using examples — an integrated expressive/interview communication skill. The label 'Integrated expression', topic 'Self-introduction and authentic expression' and module '整合表達' correctly identify the assessed skill.",
+        "recommendedTopic": "Self-introduction and authentic expression",
+        "recommendedLabel": "Integrated expression",
+        "recommendedModule": "整合表達"
+      }
+    ]
+  }
+}

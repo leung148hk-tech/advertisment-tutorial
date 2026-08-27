@@ -1,0 +1,200 @@
+{
+  "generatedAt": "2026-08-26T14:00:24.676097+00:00",
+  "grade": "S2",
+  "track": "english-reading",
+  "canonicalQuestionCount": 11,
+  "variantQuestionCount": 33,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/6: Two S2 grammar-and-tense items reviewed. Both items are correct, have a single best answer, are age-appropriate, and match the required syllabus level.\n\nPart 2/6: Both items are clear, age-appropriate S2 vocabulary-in-context questions with one unambiguous best answer each. No revisions needed.\n\nPart 3/6: Two S2 English reading multiple-choice items reviewed. Both items are clear, age-appropriate, have a single best answer, and require no revision. Keep original wording and options.\n\nPart 4/6: Two S2 English reading items (text organisation and connector choice). Both are clear, age-appropriate, have one unambiguous best answer, and align with the syllabus. Recommend keeping both items as written.\n\nPart 5/6: Both items are clear, grade-appropriate S2 reading questions with one unambiguous best answer each. No revision needed.\n\nPart 6/6: One S2 English-reading multiple-choice item (inference strategy) reviewed. The item is clear, age-appropriate, has one best answer, and aligns with the stated skill.",
+    "reviews": [
+      {
+        "id": "english-reading-S2-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence requires the past perfect auxiliary to show an action completed before another past action. 'Had' + past participle ('had already prepared') is correct; other options are grammatically inappropriate here.",
+        "recommendedQuestion": "By the time the meeting started, Mia ____ already prepared the presentation.",
+        "recommendedOptions": [
+          "had",
+          "was",
+          "has",
+          "will have"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S2-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "This is a first conditional sentence requiring the present simple in the 'if' clause. 'If the evidence is not clear, the team will revise...' is correct; other choices do not fit the first conditional structure.",
+        "recommendedQuestion": "If the evidence ____ clear, the team will revise its conclusion.",
+        "recommendedOptions": [
+          "is not",
+          "will not be",
+          "was not",
+          "not being"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S2-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks for an action that matches the adjective 'responsible.' Only the first option expresses the positive behaviour of a responsible student; the other options are clear opposites. Wording is simple and suitable for S2.",
+        "recommendedQuestion": "A responsible student is likely to ____ .",
+        "recommendedOptions": [
+          "complete tasks carefully and reliably",
+          "ignore all instructions",
+          "arrive without preparation",
+          "avoid every responsibility"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S2-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks for a synonym of 'contrast' in context. 'Compare differences' conveys the intended meaning (showing differences) and is the only option that fits. Other options are clearly incorrect.",
+        "recommendedQuestion": "The word ‘contrast’ in a reading passage is closest in meaning to ____ .",
+        "recommendedOptions": [
+          "compare differences",
+          "repeat exactly",
+          "hide information",
+          "make smaller"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S2-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem is unambiguous and tests a simple reading-for-detail skill appropriate for S2. The correct action (register by 3:45 p.m.) is directly supported by the notice. Distractors are clearly wrong and plausible enough to be functional.",
+        "recommendedQuestion": "A notice says registration for a community event closes at 3:45 p.m. What should students do?",
+        "recommendedOptions": [
+          "Register by 3:45 p.m.",
+          "Arrive after 4:00 p.m.",
+          "Wait for the next day",
+          "Ignore the notice"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S2-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The item assesses a basic inference skill: checking several sources implies wanting to make a well-supported or informed decision. The correct option is the only defensible inference at S2 level; other choices contradict the stem.",
+        "recommendedQuestion": "Mia checked several sources before making a decision. What can we infer?",
+        "recommendedOptions": [
+          "The student wanted a well-supported decision",
+          "The student had no interest",
+          "The sources were missing",
+          "The task was cancelled"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S2-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem clearly describes a sequence (problem, examples, then solution); the best match among options is 'Problem–evidence–solution'. Distractors are clearly wrong for S2 level. The item tests text-organisation appropriately.",
+        "recommendedQuestion": "The writer presents a problem, gives two examples, and then suggests a solution. How is the text organised?",
+        "recommendedOptions": [
+          "Problem–evidence–solution",
+          "Time order only",
+          "A dialogue",
+          "A list of definitions"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S2-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence requires a connector showing a result. 'Therefore' is the correct and natural choice; other options (although, unless, meanwhile) do not express result. The punctuation with a semicolon and following comma is acceptable.",
+        "recommendedQuestion": "Which connector best completes the sentence? ‘The evidence was limited; ____, the conclusion should be treated carefully.’",
+        "recommendedOptions": [
+          "therefore",
+          "although",
+          "unless",
+          "meanwhile"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S2-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The webpage description (facts, examples, action steps) clearly indicates informing readers and encouraging them to act. Other options are irrelevant. The stem is unambiguous and suitable for S2.",
+        "recommendedQuestion": "A webpage gives facts, examples and action steps for a community event. Its main purpose is to ____ .",
+        "recommendedOptions": [
+          "inform and encourage action",
+          "tell a fictional story",
+          "advertise a uniform",
+          "describe a holiday"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S2-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The first option gives specific evidence (goal achieved and participant feedback) that directly supports the statement of success; the other choices are irrelevant details and poor distractors but clearly incorrect.",
+        "recommendedQuestion": "Which detail best supports the statement that a project was successful?",
+        "recommendedOptions": [
+          "It achieved its planned goal and participants gave specific positive feedback.",
+          "It happened on a Tuesday.",
+          "The room had windows.",
+          "The poster used blue ink."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S2-10-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem is clear and directly tests a reading-inference strategy appropriate for Secondary 2. Option 0 is the clearly best strategy (use textual clues and connect them to the question). Distractors are implausible or obviously incorrect; there is no reasonable alternative interpretation that would make another option correct.",
+        "recommendedQuestion": "Before answering an inference question, which strategy is most effective?",
+        "recommendedOptions": [
+          "Underline clues and connect them to the question.",
+          "Choose the longest option immediately.",
+          "Ignore the passage.",
+          "Translate every word first."
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

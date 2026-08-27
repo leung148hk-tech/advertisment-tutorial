@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T09:30:08.438438+00:00",
+  "grade": "P1",
+  "track": "math",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Two P1 arithmetic items (one addition, one subtraction). Both items are clear, age-appropriate, have one unambiguous correct answer, and match the supplied answers. Recommend keeping original content.\n\nPart 2/5: Reviewed 2 P1 math items (comparison and number pattern). Both items are correct, age-appropriate, and unambiguous. Recommend keeping original items and answers.\n\nPart 3/5: 已檢視 2 題 P1 數學題（圖形與量度）。兩題均清晰、單一正答且與年級相符，建議均通過（PASS）。\n\nPart 4/5: Reviewed 2 P1 math items (time & money). Both items are clear, have a single best answer, and are appropriate for P1. Recommend keeping the original wording and options unchanged.\n\nPart 5/5: 本批兩題均屬小一水平的基礎加減與比較題；題幹明確、選項合理、唯一最佳答案，建議保留原題。",
+    "reviews": [
+      {
+        "id": "math-P1-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "8 + 7 = 15 is correct. The hint '可先湊成 10，再繼續計算。' is age-appropriate and supports an efficient P1 strategy. All four options are plausible distractors for this level and there is a single clear best answer.",
+        "recommendedQuestion": "8 + 7 = ?",
+        "recommendedOptions": [
+          "14",
+          "15",
+          "16",
+          "17"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P1-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "17 − 9 = 8 is correct. The hint '由 17 向後數 9 步。' is suitable for P1 learners practising subtraction across ten. Options are reasonable distractors and there is a single clear best answer.",
+        "recommendedQuestion": "17 − 9 = ?",
+        "recommendedOptions": [
+          "7",
+          "8",
+          "9",
+          "10"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P1-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "All options are two-digit numbers; 16 is clearly the largest (tens digit 1 for all, units 6 is largest). The hint is suitable for P1. No ambiguity in wording or choices.",
+        "recommendedQuestion": "下列哪一個數最大？",
+        "recommendedOptions": [
+          "12",
+          "16",
+          "15",
+          "13"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P1-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Sequence increases by 2 each time. The next number after 8 is 10. Options include only one correct choice, clear for P1 level.",
+        "recommendedQuestion": "2、4、6、8、____，下一個數是甚麼？",
+        "recommendedOptions": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P1-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目問哪個圖形有三條直邊，選項明確且只有「三角形」符合。其他選項邊數明顯不同（圓形無直邊，正方形和長方形各有四條直邊）。語言與難度均合適 P1。",
+        "recommendedQuestion": "哪一個圖形有三條直邊？",
+        "recommendedOptions": [
+          "圓形",
+          "三角形",
+          "正方形",
+          "長方形"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P1-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目詢問哪樣物件較適合用厘米量度，鉛筆為短物件，常用厘米衡量，其他選項（課室、操場、巴士路程）通常用米或公里。選項針對性強且無二義性，適合 P1。",
+        "recommendedQuestion": "下列哪一樣物件較適合用厘米量度？",
+        "recommendedOptions": [
+          "課室長度",
+          "鉛筆長度",
+          "操場長度",
+          "巴士路程"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P1-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Minute hand at 12 means exactly an o'clock. Hour hand at 4 corresponds to 4 時 (4:00). Options include clear distractors (3 時, 4 時半, 12 時).",
+        "recommendedQuestion": "分針指向 12，時針指向 4，是甚麼時間？",
+        "recommendedOptions": [
+          "3 時",
+          "4 時",
+          "4 時半",
+          "12 時"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P1-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Simple addition within 10: $5 + $4 = $9. Distractors are plausible but only one correct sum.",
+        "recommendedQuestion": "一個麵包 $5，一盒牛奶 $4，一共要多少錢？",
+        "recommendedOptions": [
+          "$1",
+          "$8",
+          "$9",
+          "$10"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-P1-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目要求比較兩個數量的差：6 - 3 = 3。選項中只有「3 個」正確；其他選項為常見誤解（差值錯算、誤取總數或誤讀單一數量），為合格的干擾項。",
+        "recommendedQuestion": "圖表顯示紅色氣球有 6 個，藍色氣球有 3 個。紅色氣球多多少個？",
+        "recommendedOptions": [
+          "2 個",
+          "3 個",
+          "6 個",
+          "9 個"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P1-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "簡單減法應用題：9 - 4 = 5。選項「5 粒」為唯一正確答案；其他選項為常見錯誤答案（誤為剩餘數、相加或保留數），難度與小一程度相符。",
+        "recommendedQuestion": "小明有 9 粒糖，送了 4 粒給朋友，還有多少粒？",
+        "recommendedOptions": [
+          "4 粒",
+          "5 粒",
+          "6 粒",
+          "13 粒"
+        ],
+        "recommendedCorrect": 1
+      }
+    ]
+  }
+}

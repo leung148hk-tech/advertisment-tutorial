@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T09:38:50.558931+00:00",
+  "grade": "P1",
+  "track": "chinese-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 P1 Chinese-reading items (vocabulary meaning and usage). Both items are clear, age-appropriate, and have a single best answer. Recommend keeping original content.\n\nPart 2/5: 兩題均為小一中文閱讀、訊息定位與細節理解的基礎題，題幹清晰、選項單一最佳答案、符合年級能力，建議保留原題。\n\nPart 3/5: 兩題皆為小學生一年級合適的簡短人物/原因推論題，選項清楚，均只有一個最能支持的答案，建議通過。\n\nPart 4/5: 兩題均為小一中文閱讀理解，題幹清晰、選項明確且單一最佳答案，難度與年級相符，建議通過（PASS）。\n\nPart 5/5: 此批次兩題皆為小一中文閱讀基礎題，題意清楚、選項合理且只有一個最佳答案，均達到年級與能力層級要求，建議通過。",
+    "reviews": [
+      {
+        "id": "chinese-reading-P1-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "『快樂』的最接近意思是『開心』。其他選項與詞義無關，沒有造成二選一或模糊情況。用語和難度適合小一學生。",
+        "recommendedQuestion": "「快樂」最接近下列哪一個意思？",
+        "recommendedOptions": [
+          "開心",
+          "很匆忙",
+          "不願意幫忙",
+          "聲音很大"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "選項中只有「小明聽見好消息，感到快樂。」正確描述人感到快樂的情況。其他句子對小一而言語意不通或不自然，沒有造成多解性。",
+        "recommendedQuestion": "下列哪一句最適合使用「快樂」？",
+        "recommendedOptions": [
+          "小明完成工作後，桌面十分快樂。",
+          "小明聽見好消息，感到快樂。",
+          "雨傘的顏色很快樂。",
+          "這條路十分快樂。"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "chinese-reading-P1-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹簡短明確（段落即為「小明把玩具借給同學。」），問句直接要求找出人物做了甚麼，四個選項中只有第一項正確且表述與題幹完全一致，無歧義，適合小一程度。",
+        "recommendedQuestion": "小明把玩具借給同學。這段文字主要說明了甚麼？",
+        "recommendedOptions": [
+          "小明把玩具借給同學。",
+          "小明不想參加活動。",
+          "小明正在睡覺。",
+          "小明不見了物品。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "通告明確寫出報到時間「二時四十五分」，問最遲何時到達，應選報到時間本身。選項清楚且只有一個正確答案，符合小一閱讀理解水平。",
+        "recommendedQuestion": "通告寫着「我的家人分享會下午三時開始，參加者請在二時四十五分到達。」最遲何時到達？",
+        "recommendedOptions": [
+          "下午二時四十五分",
+          "下午三時",
+          "下午三時十五分",
+          "下午四時"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹直接根據行為（把玩具借給同學）推論人物特質。四個選項中只有「願意分享」能合理且直接反映該行為，其他選項與行為不符。語言簡明，適合P1水平，干擾項簡單但有效。",
+        "recommendedQuestion": "小明把玩具借給同學，這最能反映他／她怎樣？",
+        "recommendedOptions": [
+          "願意分享",
+          "粗心大意",
+          "不願合作",
+          "害怕嘗試"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹描述先了解資料再決定的行為，最合理的原因是為了作出較合適的選擇。其他選項與該行為矛盾或不合邏輯。語句簡潔，符合P1理解與應用層級。",
+        "recommendedQuestion": "小明先了解資料才作決定，最可能是因為？",
+        "recommendedOptions": [
+          "希望作出較合適的選擇",
+          "不想知道內容",
+          "想拖延時間",
+          "沒有任何原因"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹「微風輕輕拍著樹葉」明確運用了擬人手法，把微風描寫成具有拍打動作的存在。選項中只有「人」為合理的擬人對象，其他選項為無生命物，故單一最佳答案清晰且符合小一識讀能力。提示也恰當地引導學生注意擬人用法。",
+        "recommendedQuestion": "「微風輕輕拍著樹葉」主要把微風寫成像甚麼？",
+        "recommendedOptions": [
+          "人",
+          "石頭",
+          "書本",
+          "雨傘"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "句子「小狗在花園跑步。」為基本句意理解題，主要訊息為『誰（小狗）在何處（花園）做何事（跑步）』。選項中只有第一項對應此三要素，其他選項與句意無關，適合小一學生練習找出句子重點。",
+        "recommendedQuestion": "「小狗在花園跑步。」這句話中，最重要的訊息是甚麼？",
+        "recommendedOptions": [
+          "人物、地點和主要行動",
+          "句子的字數",
+          "所有標點名稱",
+          "顏色的數量"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹明確描述文章先後內容（先介紹準備方法，再說明參加後收穫），四個選項中只有「鼓勵讀者認真準備並參與活動」符合整體主旨。用詞與概念適合小一理解，無二義性。",
+        "recommendedQuestion": "文章先介紹我的家人的準備方法，再說明參加後的收穫，主旨最可能是？",
+        "recommendedOptions": [
+          "鼓勵讀者認真準備並參與活動",
+          "介紹所有人的姓名",
+          "比較不同天氣",
+          "只描述食物"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "句中有明顯時間先後詞（先、再、最後），指出一連串步驟的順序。四個選項中只有「步驟順序」貼切且單一最佳，語言與認知要求符合小一水平。",
+        "recommendedQuestion": "「先找出重點，再整理想法，最後寫下回應。」這段文字主要按甚麼方式組織？",
+        "recommendedOptions": [
+          "步驟順序",
+          "人物對話",
+          "地點轉換",
+          "問題與答案"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

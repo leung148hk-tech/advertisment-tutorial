@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T09:55:33.765286+00:00",
+  "grade": "P2",
+  "track": "math",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Both items are clear, age-appropriate P2 arithmetic questions with a single best answer. No revision needed.\n\nPart 2/5: 審核 2 項 P2 數學題目（乘除與分組）。兩題均清晰、難度與年級相符，答案與干擾選項合理，建議通過 (PASS)。\n\nPart 3/5: 本批次包含 2 題 P2 數學題（每題另有兩個僅作情境變體）。兩題題幹清晰、選項明確，正確答案與給定答案一致，難度與年級相符，建議直接通過。\n\nPart 4/5: 此批次包含兩題小二數學題：第一題為時間加法（2:30 加 1 小時），第二題為找贖（20 減 13）。兩題均有唯一且明確的正確答案、選項合理且難度符合小二程度，建議通過（PASS）。\n\nPart 5/5: 此批次包含 2 題，皆為基礎乘除與減法應用題；題幹清晰、選項合理、唯一直答案明確，適合 P2 學生，建議通過（PASS）。",
+    "reviews": [
+      {
+        "id": "math-P2-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "32 + 45 = 77. The stem is unambiguous, the hint is helpful and suitable for P2, and all distractors are plausible but incorrect.",
+        "recommendedQuestion": "32 + 45 = ?",
+        "recommendedOptions": [
+          "67",
+          "77",
+          "87",
+          "97"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P2-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "63 − 28 = 35. The question is clear, the hint suggests a valid P2 strategy (subtract 20 then 8), and there is a single unambiguous correct choice.",
+        "recommendedQuestion": "63 − 28 = ?",
+        "recommendedOptions": [
+          "25",
+          "35",
+          "45",
+          "55"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P2-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目描述清楚（4 組每組 6 粒），可直接用乘法 4×6＝24。選項涵蓋合理干擾，不會造成多解或語意模糊，難度適合小二。",
+        "recommendedQuestion": "4 組，每組有 6 粒糖，一共有多少粒？",
+        "recommendedOptions": [
+          "10 粒",
+          "20 粒",
+          "24 粒",
+          "28 粒"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-P2-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目為平均分配情境，計算 18 ÷ 3＝6，選項包含合理干擾值且無歧義，符合小二除法基礎學習目標。",
+        "recommendedQuestion": "18 枝鉛筆平均分給 3 位同學，每人有多少枝？",
+        "recommendedOptions": [
+          "5 枝",
+          "6 枝",
+          "7 枝",
+          "9 枝"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P2-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目問將圓平均分成 2 份取 1 份，明確指向「一半」，選項 1/2 為唯一正確答案；表述簡潔，符合 P2 半分概念教學。選項雖有干擾項（如 2/2），但不造成歧義。",
+        "recommendedQuestion": "把一個圓平均分成 2 份，取其中 1 份，表示多少？",
+        "recommendedOptions": [
+          "1/4",
+          "1/2",
+          "2/1",
+          "2/2"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P2-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目考查米與厘米的基本換算，1 米 = 100 厘米 為標準小學常識；選項設置清晰，僅一個正確答案，適合 P2 水平。",
+        "recommendedQuestion": "1 米等於多少厘米？",
+        "recommendedOptions": [
+          "10 厘米",
+          "50 厘米",
+          "100 厘米",
+          "1,000 厘米"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-P2-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "2時30分加一小時等於3時30分。題目文字清楚，選項包含正確答案且沒有可能造成混淆的同程度干擾選項，難度符合小二時間概念（整點與半點、整小時相加）。",
+        "recommendedQuestion": "下午 2 時半再過 1 小時，是甚麼時間？",
+        "recommendedOptions": [
+          "下午 2 時 30 分",
+          "下午 3 時",
+          "下午 3 時 30 分",
+          "下午 4 時"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-P2-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "付20元買13元的書，應找回20−13=7元。題目語句簡潔，選項包含正確答案且其餘選項為合理干擾，符合小二金錢運算能力範圍。",
+        "recommendedQuestion": "一本簿售 $13，用 $20 付款，應找回多少錢？",
+        "recommendedOptions": [
+          "$5",
+          "$6",
+          "$7",
+          "$8"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-P2-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目敘述清楚：每個星星代表 2 人，4 個星星即 4 × 2 = 8 人。選項包含多個 distractor，但僅有一個正確答案，難度符合 P2。",
+        "recommendedQuestion": "象形圖中每個星星代表 2 人。若有 4 個星星，表示多少人？",
+        "recommendedOptions": [
+          "6 人",
+          "8 人",
+          "10 人",
+          "12 人"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P2-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "兩步驟問題：先算 3 × 4 = 12，再減去 2 得到 10。題目語言與步驟符合 P2 能力，選項設計合理且只有一個正確答案。",
+        "recommendedQuestion": "媽媽買了 3 包餅乾，每包 4 塊，吃了 2 塊後還有多少塊？",
+        "recommendedOptions": [
+          "8 塊",
+          "10 塊",
+          "12 塊",
+          "14 塊"
+        ],
+        "recommendedCorrect": 1
+      }
+    ]
+  }
+}

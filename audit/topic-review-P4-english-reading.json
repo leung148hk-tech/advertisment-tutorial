@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-26T11:13:02.127495+00:00",
+  "grade": "P4",
+  "track": "english-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 items (each with two context-only variants). Both items measure basic vocabulary knowledge and their metadata are appropriate.\n\nPart 2/5: Reviewed 2 items (each has two context-only variants with identical metadata). Both items accurately measure the skills indicated by their metadata and require no substantive changes.\n\nPart 3/5: Reviewed 2 items (each has two context-only variants). Both items measure simple reading inference skills about motivation/attitude and their supplied metadata are appropriate.\n\nPart 4/5: Reviewed 2 items (each has two context-only variants with identical metadata) for P4 English reading. Both items assess cohesive devices: pronoun reference and connector usage. Metadata (label, topic, module) accurately reflect the skill measured and are educationally coherent; no substantive changes required.\n\nPart 5/5: Reviewed 2 items (each has two context-only variants) for P4 English reading. Both items measure straightforward comprehension skills and their supplied metadata (label, topic, module) are appropriate. No substantive changes required.",
+    "reviews": [
+      {
+        "id": "english-reading-P4-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the closest meaning of a single word ('responsible') in isolation, so it tests vocabulary/synonym knowledge. The label 'Vocabulary', topic 'Vocabulary' and module '基礎掌握' (basic mastery) accurately describe the assessed skill and difficulty.",
+        "recommendedTopic": "Vocabulary",
+        "recommendedLabel": "Vocabulary",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-P4-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires inferring the meaning of 'responsible' from a contextual sentence and selecting the action that demonstrates it. This is a word-in-context vocabulary task. The label 'Word in context', topic 'Vocabulary' and module '基礎掌握' are appropriate.",
+        "recommendedTopic": "Vocabulary",
+        "recommendedLabel": "Word in context",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-P4-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks the student to extract a specific time-related detail from a notice and infer the required action. \"Detail finding\" and the broader topic \"Reading details and main idea\" correctly describe the skill; the module \"理解與應用\" (comprehension and application) is also appropriate.",
+        "recommendedTopic": "Reading details and main idea",
+        "recommendedLabel": "Detail finding",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-reading-P4-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires identifying the main purpose of an instructional text. The label \"Main idea\", the topic \"Reading details and main idea\", and the module \"理解與應用\" accurately reflect what the question measures.",
+        "recommendedTopic": "Reading details and main idea",
+        "recommendedLabel": "Main idea",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-reading-P4-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks the student to infer a character's motivation from an action (organising a plan). The label 'Inference', topic 'Reading inference' and module '情境推理' (situational inference) accurately describe this skill.",
+        "recommendedTopic": "Reading inference",
+        "recommendedLabel": "Inference",
+        "recommendedModule": "情境推理"
+      },
+      {
+        "id": "english-reading-P4-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires inferring the writer's attitude/tone from phrasing ('a useful chance to learn together'). The label 'Writer attitude', topic 'Reading inference' and module '情境推理' suitably reflect the assessed skill.",
+        "recommendedTopic": "Reading inference",
+        "recommendedLabel": "Writer attitude",
+        "recommendedModule": "情境推理"
+      },
+      {
+        "id": "english-reading-P4-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify the antecedent of the pronoun 'It', i.e. a pronoun reference/ textual cohesion skill. The label 'Reference word' correctly names the tested skill. The topic 'Text cohesion: reference and connectors' accurately groups the skill, and the module '理解與應用' (Understanding and Application) is an appropriate curriculum grouping.",
+        "recommendedTopic": "Text cohesion: reference and connectors",
+        "recommendedLabel": "Reference word",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-reading-P4-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests the student's ability to choose an appropriate connector showing result ('therefore'), so the label 'Connector' and the topic 'Text cohesion: reference and connectors' correctly describe the skill. The module '理解與應用' suitably categorises the task.",
+        "recommendedTopic": "Text cohesion: reference and connectors",
+        "recommendedLabel": "Connector",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-reading-P4-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks the student to identify the main purpose of a webpage (what action the reader is expected to take). The label 'Reading purpose', the topic 'Integrated reading: purpose and evidence', and the module '理解與應用' accurately describe this skill.",
+        "recommendedTopic": "Integrated reading: purpose and evidence",
+        "recommendedLabel": "Reading purpose",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-reading-P4-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires selecting a detail that supports an inferred idea about a character (finding supporting evidence for a reading inference). The label 'Identify supporting evidence', the topic 'Integrated reading: purpose and evidence', and the module '理解與應用' appropriately name the skill.",
+        "recommendedTopic": "Integrated reading: purpose and evidence",
+        "recommendedLabel": "Identify supporting evidence",
+        "recommendedModule": "理解與應用"
+      }
+    ]
+  }
+}

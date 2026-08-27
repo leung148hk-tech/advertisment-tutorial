@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-26T11:54:18.306490+00:00",
+  "grade": "P6",
+  "track": "math",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed two P6 math items (integer and decimal division). Both items test basic division skills and have appropriate metadata labels, topics and module assignments. No revisions required.\n\nPart 2/5: Reviewed 2 math P6 items (part 2 of 5). Both items measure straightforward procedural application of ratio and percentage respectively. Metadata fields for topic, label and module are appropriate — PASS for both.\n\nPart 3/5: Reviewed 2 items (P6 math, part 3 of 5). Both items assess straightforward procedural calculations and their supplied metadata are educationally coherent and appropriate.\n\nPart 4/5: Reviewed 2 items (each has two context-only variants = 6 total variants). Verdicts: 2 PASS, 0 REVISE, 0 ESCALATE.\n\nPart 5/5: Reviewed 2 items (each has two context-only variants). Both items measure straightforward primary-level arithmetic/algebra skills. Metadata fields are appropriate and educationally coherent; no substantive mislabeling found.",
+    "reviews": [
+      {
+        "id": "math-P6-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires performing integer division (3,600 ÷ 9) and checking by multiplication. The provided topic '數與運算', label '整數除法', and module '基礎掌握' accurately describe the skill and difficulty level.",
+        "recommendedTopic": "數與運算",
+        "recommendedLabel": "整數除法",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-P6-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires dividing decimals (1.2 ÷ 0.3) by scaling both numbers, as indicated by the hint. The provided topic '數與運算', label '小數除法', and module '基礎掌握' accurately describe the skill and difficulty level.",
+        "recommendedTopic": "數與運算",
+        "recommendedLabel": "小數除法",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-P6-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目要求按比例放大並求另一項數量（5:2 比例，已知一項求另一項），實際測量技能為應用比例關係。所給標籤「比例應用」、主題「分數與比例」及模組「理解與應用」均貼切且教育上可接受。",
+        "recommendedTopic": "分數與比例",
+        "recommendedLabel": "比例應用",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P6-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目要求計算百分比減價後的售價，測量技能為計算百分數（求百分之某數）及應用於折扣問題。所給標籤「折扣計算」、主題「百分數與應用」及模組「理解與應用」皆準確。",
+        "recommendedTopic": "百分數與應用",
+        "recommendedLabel": "折扣計算",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P6-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目要求計算長方體的體積 (V = 長 × 闊 × 高)，屬於立體圖形的體積計算，題幹、提示與選項一致。所給的主題「圖形與量度」、標籤「立體圖形」及模組「理解與應用」均能恰當描述該測量目標。",
+        "recommendedTopic": "圖形與量度",
+        "recommendedLabel": "立體圖形（體積計算）",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P6-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目要求應用速度與時間的關係計算路程 (路程 = 速度 × 時間)，題幹、提示與選項一致。所給的主題「速度與量度（速率與時間）」、標籤「速度概念」及模組「理解與應用」均能恰當描述該測量目標。",
+        "recommendedTopic": "速度與量度（速率與時間）",
+        "recommendedLabel": "速度概念（速率與時間的應用）",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P6-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the median of a small data set. The label '中位數' (median), topic '數據與統計' (data & statistics) and module '理解與應用' (understanding & application) accurately describe the skill being tested.",
+        "recommendedTopic": "數據與統計",
+        "recommendedLabel": "中位數",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P6-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires reading values from a bar-chart context and computing the difference (subtraction). The label '長條圖判讀' (bar-chart interpretation), topic '數據與統計', and module '理解與應用' accurately reflect the assessed skill.",
+        "recommendedTopic": "數據與統計",
+        "recommendedLabel": "長條圖判讀",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P6-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目要求解一元一次方程式，題幹、提示與選項一致地測量代數式求解能力。標籤「代數思維」與主題「一元一次方程式求解」以及模組「理解與應用」均恰當且教學上可接受。",
+        "recommendedTopic": "一元一次方程式求解",
+        "recommendedLabel": "代數思維",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "math-P6-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目需要先乘後減，屬於多步驟算術應用題。標籤「綜合文字題」、主題「多步驟解題」與模組「基礎掌握」準確反映所測技能。",
+        "recommendedTopic": "多步驟解題",
+        "recommendedLabel": "綜合文字題",
+        "recommendedModule": "基礎掌握"
+      }
+    ]
+  }
+}

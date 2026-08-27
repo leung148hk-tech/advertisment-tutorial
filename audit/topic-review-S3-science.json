@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-27T01:23:59.157824+00:00",
+  "grade": "S3",
+  "track": "science",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 items (each has two context-only variants with identical metadata). Both items measure skills within scientific investigation and their supplied topic and module are appropriate. Labels are acceptable for curriculum-level categorisation.\n\nPart 2/5: Reviewed 2 items (each has two context-only variants with identical metadata). Both items measure straightforward life-science conceptual knowledge and their supplied metadata are appropriate; no revisions required.\n\nPart 3/5: Reviewed 2 science S3 items (part 3 of 5). Both items measure straightforward conceptual understanding of basic chemistry (pH and exothermic energy transfer). Metadata fields (label, topic, module) are educationally coherent and appropriately matched to the item stems.\n\nPart 4/5: Reviewed two S3 science items (part 4 of 5). Both items measure straightforward core physics knowledge (balanced forces/resultant force and electrical power formula). The supplied label and module are appropriate; the topic is broad but educationally coherent and not misleading. Recommend keeping the current metadata.\n\nPart 5/5: Reviewed 2 items (each has two context-only variants). Both items measure data-reading and evidence-based reasoning skills; their supplied topic, label and module are educationally coherent and appropriate. Recommend no changes.",
+    "reviews": [
+      {
+        "id": "science-S3-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to recognise a testable hypothesis (predicting a relationship between variables), which falls squarely under 'Scientific investigation'. The label 'Planning investigation' reasonably covers hypothesis formulation as part of planning; the module '理解與應用' (Understanding and Application) is appropriate.",
+        "recommendedTopic": "Scientific investigation",
+        "recommendedLabel": "Planning investigation",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S3-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses understanding of an experimental limitation (need for replication to ensure reliability), which is correctly classified under 'Scientific investigation'. The label 'Evaluation' suitably describes judging limitations; the module '理解與應用' fits.",
+        "recommendedTopic": "Scientific investigation",
+        "recommendedLabel": "Evaluation",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S3-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for recall/recognition of the molecule that carries hereditary information (DNA). This is a basic genetics fact within life science and fits the given label 'Genetics', topic 'Life science', and module '理解與應用' (understanding and application).",
+        "recommendedTopic": "Life science",
+        "recommendedLabel": "Genetics",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S3-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses conceptual understanding of thermoregulation/homeostasis (evaporative cooling). The label 'Homeostasis', topic 'Life science', and module '理解與應用' appropriately describe the skill measured.",
+        "recommendedTopic": "Life science",
+        "recommendedLabel": "Homeostasis",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S3-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses recognition of acidity using the pH scale (acid vs neutral vs alkaline). Label 'Acids and alkalis' accurately names the skill. Topic 'Matter and energy' is an acceptable broad grouping for chemical properties of matter. Module '理解與應用' (understanding and application) fits the cognitive demand.",
+        "recommendedTopic": "Matter and energy",
+        "recommendedLabel": "Acids and alkalis",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S3-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests understanding of energy transfer in chemical reactions (exothermic reactions release energy). Label 'Energy change' correctly describes the focus. Topic 'Matter and energy' appropriately groups reaction energetics. Module '理解與應用' matches the required conceptual application.",
+        "recommendedTopic": "Matter and energy",
+        "recommendedLabel": "Energy change",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S3-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses understanding of resultant force for an object moving at constant velocity (balanced forces / Newton's first law). The label 'Motion' correctly names the focus. The topic 'Forces and electricity' is broad but includes forces and is not misleading. The module '理解與應用' fits the cognitive demand.",
+        "recommendedTopic": "Forces and electricity",
+        "recommendedLabel": "Motion",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S3-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests recall/application of the electrical power relation P = V × I. The label 'Electrical power' accurately names the skill. The topic 'Forces and electricity' appropriately includes electricity. The module '理解與應用' matches the required understanding/application level.",
+        "recommendedTopic": "Forces and electricity",
+        "recommendedLabel": "Electrical power",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S3-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to interpret the meaning of a line graph that 'levels off' (recognising a steady/constant value). The label 'Graph interpretation', topic 'Data and application' and module '理解與應用' accurately describe this data-reading skill.",
+        "recommendedTopic": "Data and application",
+        "recommendedLabel": "Graph interpretation",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "science-S3-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires judging which statement is the strongest scientific conclusion based on data (evidence-based interpretation). The label 'Scientific application', topic 'Data and application' and module '理解與應用' appropriately reflect the skill of drawing conclusions from experimental results.",
+        "recommendedTopic": "Data and application",
+        "recommendedLabel": "Scientific application",
+        "recommendedModule": "理解與應用"
+      }
+    ]
+  }
+}

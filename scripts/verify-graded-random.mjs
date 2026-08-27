@@ -7,12 +7,17 @@ for (const grade of GRADES) {
   for (const track of tracks) {
     const questions = randomAssessment(track.id, grade.id);
     const uniqueIds = new Set(questions.map((question) => question.id));
-    const topicCounts = new Map();
-    for (const question of questions) topicCounts.set(question.topic, (topicCounts.get(question.topic) ?? 0) + 1);
+    const selectionGroupCounts = new Map();
+    const reportedTopics = new Set();
+    for (const question of questions) {
+      selectionGroupCounts.set(question.selectionGroup, (selectionGroupCounts.get(question.selectionGroup) ?? 0) + 1);
+      reportedTopics.add(question.topic);
+    }
     if (questions.length !== 20) throw new Error(`${grade.id} ${track.id}: expected 20 questions, found ${questions.length}.`);
     if (uniqueIds.size !== 20) throw new Error(`${grade.id} ${track.id}: duplicate questions were selected.`);
-    if (topicCounts.size !== 5 || [...topicCounts.values()].some((count) => count !== 4)) throw new Error(`${grade.id} ${track.id}: topic coverage is not balanced.`);
-    records.push({ grade: grade.label, paper: track.shortLabel, questions: questions.length, topics: topicCounts.size });
+    if (selectionGroupCounts.size !== 5 || [...selectionGroupCounts.values()].some((count) => count !== 4)) throw new Error(`${grade.id} ${track.id}: selection-group coverage is not balanced.`);
+    if ([...reportedTopics].some((topic) => !topic.trim())) throw new Error(`${grade.id} ${track.id}: a reported ability topic is blank.`);
+    records.push({ grade: grade.label, paper: track.shortLabel, questions: questions.length, selectionGroups: selectionGroupCounts.size, reportedTopics: reportedTopics.size });
   }
 }
 

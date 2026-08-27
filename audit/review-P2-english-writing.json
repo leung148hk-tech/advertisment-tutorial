@@ -1,0 +1,200 @@
+{
+  "generatedAt": "2026-08-26T09:53:43.616022+00:00",
+  "grade": "P2",
+  "track": "english-writing",
+  "canonicalQuestionCount": 11,
+  "variantQuestionCount": 33,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/6: Both P2 items test basic sentence structure and word order. Each has one clear correct choice and age-appropriate language. No revisions needed.\n\nPart 2/6: Both items are simple, age-appropriate P2 language tasks that correctly target past-tense formation and verb choice in imperatives. Each has one clear best answer and suitable distractors; no revision needed.\n\nPart 3/6: Reviewed 2 P2 English-writing items (paragraph organisation). Both items are clear, age-appropriate, have a single best answer, and require no revision.\n\nPart 4/6: Two P2 English-writing items (linking word to show reason; choosing a polite sentence for emailing a teacher). Both items are clear, age-appropriate, have one best answer, and require no revision.\n\nPart 5/6: Both items are clear, age-appropriate P2 English writing questions testing audience awareness and revision for specificity. Each has one unambiguous best answer and acceptable distractors for the grade level. Recommend passing both without changes.\n\nPart 6/6: Reviewed 1 P2 integrated writing item (and its two context variants). Item is clear, age-appropriate, has one unambiguous best answer and suitable distractors. Recommend keeping original content.",
+    "reviews": [
+      {
+        "id": "english-writing-P2-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Item asks for the most complete sentence. Option 0 is a grammatically complete sentence (subject + verb + object + adverb). All other options are sentence fragments or ungrammatical, so there is one clear best answer suitable for P2.",
+        "recommendedQuestion": "Choose the most complete sentence.",
+        "recommendedOptions": [
+          "Amy reads her book carefully.",
+          "Because Amy careful.",
+          "Reads her book.",
+          "Her book carefully."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P2-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Item asks for the sentence with the clearest word order. Option 0 follows the standard subject–verb–object order and is the only grammatically correct choice. Distractors show incorrect or awkward word order appropriate for teaching this point.",
+        "recommendedQuestion": "Choose the sentence with the clearest word order.",
+        "recommendedOptions": [
+          "Amy reads her book every day.",
+          "Reads Amy her book every day.",
+          "Her book Amy reads every day.",
+          "Every day book Amy reads her."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P2-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The time word 'yesterday' requires past simple. 'Wrote' is the correct past-tense form; other options are present or non-finite forms and are implausible as answers for P2 learners.",
+        "recommendedQuestion": "Amy ____ a short note yesterday.",
+        "recommendedOptions": [
+          "wrote",
+          "write",
+          "writes",
+          "writing"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P2-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "In the imperative 'Please ____ your ideas clearly,' 'share' is the appropriate verb relating to communication. Other choices are unrelated actions and distractors are plausible but weak, which is acceptable at this level.",
+        "recommendedQuestion": "Please ____ your ideas clearly.",
+        "recommendedOptions": [
+          "share",
+          "borrow",
+          "sleep",
+          "hide"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P2-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The prompt asks for a sentence that could begin a short writing about a school day. Option 0 ('My school day is busy and fun.') directly introduces the topic and is appropriate as an opening. The other options are off-topic or too specific. Distractors are simple and age-appropriate.",
+        "recommendedQuestion": "Which sentence could begin a short writing about a school day?",
+        "recommendedOptions": [
+          "My school day is busy and fun.",
+          "The room has four windows.",
+          "I have a pencil.",
+          "Tuesday is a day."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P2-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The prompt asks for the sentence that best supports the idea that planning helps a group. Option 0 ('The group shared jobs and finished each step on time.') gives a clear, specific example showing planning led to efficient group work. Other options are irrelevant or generic. The item matches P2 expectations.",
+        "recommendedQuestion": "Which sentence best supports the idea that planning helps a group?",
+        "recommendedOptions": [
+          "The group shared jobs and finished each step on time.",
+          "Planning is a word.",
+          "Some shoes are expensive.",
+          "Everyone is different."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P2-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Sentence 'I put on my coat ____ it was cold.' correctly requires a reason word. 'because' is the only option that fits the syntax and meaning here; other choices are ungrammatical or change meaning. The hint matches the task and the item is suitable for P2.",
+        "recommendedQuestion": "I put on my coat ____ it was cold.",
+        "recommendedOptions": [
+          "because",
+          "so",
+          "but",
+          "or"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P2-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The task asks pupils to choose the most suitable sentence for an email to a teacher. The first option is polite and clear; the other three are rude, demanding, or dismissive and therefore inappropriate. No ambiguity or overlap among options.",
+        "recommendedQuestion": "Which sentence is most suitable for an email to a teacher?",
+        "recommendedOptions": [
+          "Can you please help me with my homework?",
+          "Send me the answer now.",
+          "I do not care.",
+          "Your work is bad."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P2-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks for a suitable opening to classmates about an activity. Option 0 is friendly and clear for classmates; the other options are inappropriate or irrelevant. Language and tone are appropriate for Primary 2.",
+        "recommendedQuestion": "Which opening is most suitable for a message to classmates about an activity?",
+        "recommendedOptions": [
+          "Hi everyone, please join our class activity on Friday.",
+          "You must come now.",
+          "I do not want to explain.",
+          "This sentence has no purpose."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P2-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The task asks for a revision that makes 'The activity was good' more specific. Option 0 adds concrete details (what was done), which is age-appropriate for P2. Other choices are vague or unhelpful.",
+        "recommendedQuestion": "Which revision makes “The activity was good” more specific?",
+        "recommendedOptions": [
+          "We played three fun games and made a big poster.",
+          "The activity was good good.",
+          "The activity was an activity.",
+          "It was good."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P2-10-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem is clear and age-appropriate for Primary 2. Option 0 correctly identifies a sensible final check for a short piece of writing (checking ideas, examples and ending). The other options are obviously incorrect and serve as plausible distractors for this level. There is only one defensible answer.",
+        "recommendedQuestion": "Before you hand in your writing, what should you check?",
+        "recommendedOptions": [
+          "Check if your ideas, examples and ending match what you want to say.",
+          "Remove every full stop.",
+          "Use the longest words you can.",
+          "Change every sentence into a question."
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

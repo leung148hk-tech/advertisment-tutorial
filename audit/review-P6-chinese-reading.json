@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T10:37:46.149888+00:00",
+  "grade": "P6",
+  "track": "chinese-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Two P6 Chinese vocabulary/use items reviewed. Both items correctly target the meaning and use of the word 「審慎」, have clear distractors, a single best answer, and are appropriate in difficulty and language for Primary 6. Recommend keeping both items unchanged.\n\nPart 2/5: Reviewed 2 P6 Chinese reading items (message locating and detail understanding). Both items are clear, unambiguous, have a single best answer, and are appropriate for P6. Recommend passing both without changes.\n\nPart 3/5: 兩題均為小六閱讀中常見的人物與原因推論題。題幹清晰、選項具誤導性但單一最佳答案明確，符合小六程度，建議通過（PASS）。\n\nPart 4/5: Both items are clear, age-appropriate P6 Chinese reading questions testing figurative language and sentence main idea. Each has a single best answer and aligns with the specified module and difficulty.\n\nPart 5/5: 兩題皆為小六閱讀理解基礎題，題幹、選項清晰、單一最佳答案明確，符合年級與題型要求，建議通過（PASS）。",
+    "reviews": [
+      {
+        "id": "chinese-reading-P6-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "「審慎」意指謹慎、慎重，最貼切的選項是「仔細考慮後才決定」。其他三個選項（很匆忙、不願意幫忙、聲音很大）與詞義無關，沒有歧義，適合P6詞語理解題型。",
+        "recommendedQuestion": "「審慎」最接近下列哪一個意思？",
+        "recommendedOptions": [
+          "仔細考慮後才決定",
+          "很匆忙",
+          "不願意幫忙",
+          "聲音很大"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "選句題目正確檢核「審慎」的用法。句子「面對重要的決定，他會審慎考慮。」自然且符合詞義（謹慎地考慮）；其餘選項在語意或搭配上不通順或不合適，因此只有一個最適當選項。",
+        "recommendedQuestion": "下列哪一句最適合使用「審慎」？",
+        "recommendedOptions": [
+          "面對重要的決定，他會審慎考慮。",
+          "風景畫的色彩十分審慎。",
+          "聽到玩笑後，他不禁感到審慎起來。",
+          "這台機器的運轉聲音非常審慎。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹清晰，問「這段文字主要說明了甚麼？」四個選項中只有第一項與題幹原句一致，其他為明顯無關之干擾項。題目對小六程度的訊息定位能力合適且沒有二義性。",
+        "recommendedQuestion": "子晴比較資料後才提出建議。這段文字主要說明了甚麼？",
+        "recommendedOptions": [
+          "子晴比較資料後才提出建議。",
+          "子晴不想參加活動。",
+          "子晴正在睡覺。",
+          "子晴不見了物品。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹引用通告明確寫出報到時間「二時四十五分」，問題直接問「最遲何時到達？」唯一正確且無歧義的選項為下午二時四十五分，符合小六閱讀細節定位能力。",
+        "recommendedQuestion": "通告寫着「我對校園生活的建議分享會下午三時開始，參加者請在二時四十五分到達。」最遲何時到達？",
+        "recommendedOptions": [
+          "下午二時四十五分",
+          "下午三時",
+          "下午三時十五分",
+          "下午四時"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹直接從行為（比較資料後才提出建議）推論性格特質，四個選項中「認真負責」最貼切，其他選項與行為不符或牽強。語言與認知要求適合小六。",
+        "recommendedQuestion": "子晴比較資料後才提出建議，這最能反映他／她怎樣？",
+        "recommendedOptions": [
+          "認真負責",
+          "願意分享",
+          "不願合作",
+          "害怕嘗試"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹詢問行為背後的可能原因，選項中「希望作出較合適的選擇」直接說明先了解資料的正當動機，其他選項與行為相悖或不合邏輯。難度與表述均合適小六學生。",
+        "recommendedQuestion": "子晴先了解資料才作決定，最可能是因為？",
+        "recommendedOptions": [
+          "希望作出較合適的選擇",
+          "不想知道內容",
+          "想拖延時間",
+          "沒有任何原因"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks about personification: '微風輕輕拍著樹葉' attributes a human action to the wind. Option '人' is the clear, single best answer. Language is simple and suitable for P6; distractors are plausible but not misleading.",
+        "recommendedQuestion": "「微風輕輕拍著樹葉」主要把微風寫成像甚麼？",
+        "recommendedOptions": [
+          "人",
+          "石頭",
+          "書本",
+          "雨傘"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence's main message is that clear communication helps a group make appropriate decisions. Option 0 restates this directly. Other options contradict or distort the original meaning. Wording and cognitive demand suit P6 curriculum.",
+        "recommendedQuestion": "「清晰的溝通有助小組作出合適決定。」這句話中，最重要的訊息是甚麼？",
+        "recommendedOptions": [
+          "溝通要清晰，才能幫助小組作出合適的決定。",
+          "小組應避免溝通，以免浪費時間。",
+          "每個成員應單獨作決定，不必討論。",
+          "做決定時只需聽從領導者的意見。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹指出先介紹準備方法、再說明參加後收穫，選項中只有「鼓勵讀者認真準備並參與活動」與此主旨一致；其他選項與文章內容不相關，為明確的誘答錯誤選項。語言與認知要求符合小六水平。",
+        "recommendedQuestion": "文章先介紹我對校園生活的建議的準備方法，再說明參加後的收穫，主旨最可能是？",
+        "recommendedOptions": [
+          "鼓勵讀者認真準備並參與活動",
+          "介紹所有人的姓名",
+          "比較不同天氣",
+          "只描述食物"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "句子列出三個按時間先後的動作（先、再、最後），明顯為步驟順序的組織方式；其他選項不符。題目簡潔，符合小六閱讀段落結構判斷能力。",
+        "recommendedQuestion": "「先找出重點，再整理想法，最後寫下回應。」這段文字主要按甚麼方式組織？",
+        "recommendedOptions": [
+          "步驟順序",
+          "人物對話",
+          "地點轉換",
+          "問題與答案"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

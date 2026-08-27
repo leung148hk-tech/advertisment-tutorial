@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T10:41:24.021864+00:00",
+  "grade": "P6",
+  "track": "chinese-writing",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 P6 Chinese-writing items (詞語運用 / 詞語搭配). Both items pass as clear, age-appropriate, and having a single best answer.\n\nPart 2/5: Two P6 Chinese-writing items (句子組織 and 標點運用). Both items have a clear single best answer, age-appropriate language level, and distractors that are obviously incorrect. Minor stylistic note on item 1 (missing 的) does not make it unsuitable for P6; keep original content.\n\nPart 3/5: Both P6 Chinese-writing items are clear, age-appropriate, align with the stated topics (paragraph topic sentence and supporting example), have one unambiguous best answer (option 0), and require no revision.\n\nPart 4/5: Reviewed 2 P6 Chinese-writing items (content/觀點發展). Both items are clear, age-appropriate, have one best answer, and pass without revision.\n\nPart 5/5: Both P6 Chinese-writing items are clear, age-appropriate and have one unambiguous best answer. No revisions needed.",
+    "reviews": [
+      {
+        "id": "chinese-writing-P6-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹明確要求形容「做事仔細考慮後才決定」，「審慎」最能準確反映此態度；其餘選項含義明顯不符，因此無二義性，適合P6程度。",
+        "recommendedQuestion": "要形容子晴做事仔細考慮後才決定，哪個詞最合適？",
+        "recommendedOptions": [
+          "審慎",
+          "混亂",
+          "敷衍",
+          "急躁"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P6-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目測試常見詞語搭配（collocation）。在四項中「整理資料」為自然且常見的搭配，其他選項為不合常理或不自然的搭配，故答案明確且適合P6學生。",
+        "recommendedQuestion": "下列哪個詞語搭配最自然？",
+        "recommendedOptions": [
+          "整理資料",
+          "整理星星",
+          "整理雨水",
+          "整理聲音"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P6-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "選項1（清晰的溝通有助小組作出合適決定。）在語序上最通順，主語、動作和受詞排列清楚。其他選項為片語或語序錯誤（片段、動詞位置不當或詞序混亂），因此選項1為唯一最佳答案.（備註：句中可加「的」成為「合適的決定」，但此改動屬語詞細節，不影響本題針對語序的比較。）",
+        "recommendedQuestion": "哪一句語序最通順？",
+        "recommendedOptions": [
+          "清晰的溝通有助小組作出合適決定。",
+          "在我們跑步操場。",
+          "活動同學們下午進行。",
+          "閱讀不同想法認識能。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P6-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "選項1（老師說：「請大家準時完成練習。」）正確使用引號來標示直接引語，且語句與標點配合自然。其餘選項均有標點錯置或把陳述句誤作疑問句，故選項1為唯一正確選擇。",
+        "recommendedQuestion": "哪一句標點運用最合適？",
+        "recommendedOptions": [
+          "老師說：「請大家準時完成練習。」",
+          "老師，說請大家：準時完成練習。",
+          "老師說請大家準時完成練習？",
+          "老師：說，請大家完成練習。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P6-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks for the best topic/central sentence for the prompt '我對校園生活的建議'. Option 0 explicitly states the main idea and purpose of the paragraph. The other options are irrelevant details and serve as appropriate distractors.",
+        "recommendedQuestion": "要寫「我對校園生活的建議」，哪一句最適合作中心句？",
+        "recommendedOptions": [
+          "我對校園生活有幾點建議，希望能改善同學的學習和生活環境。",
+          "那天的天氣很好。",
+          "我有很多個人喜好。",
+          "學校的操場很大。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P6-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The prompt asks which example best supports the claim '合作能解決困難'. Option 0 ('小組分工後完成了複雜任務。') directly shows cooperation solving a difficult task. Other options are unrelated and serve as clear distractors.",
+        "recommendedQuestion": "哪一個例子最能支持「合作能解決困難」？",
+        "recommendedOptions": [
+          "小組分工後完成了複雜任務。",
+          "操場很大。",
+          "有人忘記帶水。",
+          "大家各自等待。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P6-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The first option provides concrete narrative detail (action and feeling), which directly answers the prompt asking for a detail that makes narration more specific. The other options are vague and weak distractors. The item is clear and suitable for P6.",
+        "recommendedQuestion": "要令記敘內容更具體，哪一項細節最有幫助？",
+        "recommendedOptions": [
+          "我看到同學需要幫助，便主動協助，完成後感到安心。",
+          "活動很好。",
+          "那天很多人。",
+          "事情發生了。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P6-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The first option presents a clear viewpoint with reasons and examples, making it the most persuasive. The other options are vague or unsubstantiated. This matches P6 expectations for developing persuasive writing.",
+        "recommendedQuestion": "哪種寫法較有說服力？",
+        "recommendedOptions": [
+          "我支持安排閱讀時間，因為能累積知識，也可分享心得。",
+          "我覺得可以。",
+          "每個人不同。",
+          "閱讀就是閱讀。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P6-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence asks for a word indicating sequence of two actions. “然後” correctly expresses the intended order. The other choices are inappropriate connectors (但、雖然 = contrast; 因此 = result/causal, less natural here). Distractors are plausible but clearly incorrect for the given hint.",
+        "recommendedQuestion": "「我先搜集資料，____ 整理重點。」填入哪個詞最合適？",
+        "recommendedOptions": [
+          "然後",
+          "但是",
+          "雖然",
+          "因此"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-writing-P6-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The best check to improve completeness is to ensure the topic sentence, examples and conclusion align. The correct option directly matches the hint. Other options are obviously inappropriate revision strategies for completeness.",
+        "recommendedQuestion": "完成文章後，哪一項檢查最能提升完整性？",
+        "recommendedOptions": [
+          "檢查中心句、例子和結語是否呼應",
+          "只數字數",
+          "刪去所有標點",
+          "把每句寫得更長"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

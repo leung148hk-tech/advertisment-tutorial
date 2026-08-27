@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-26T09:43:04.149966+00:00",
+  "grade": "P2",
+  "track": "chinese-reading",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Two P2 Chinese reading vocabulary items testing the word 「整潔」. Both items are clear, age-appropriate, have one unambiguous best answer, and use suitable distractors for Primary 2.\n\nPart 2/5: 本批次 2 題檢視：均通過。題目清晰、選項合理、答案明確且符合 P2 能力水平。\n\nPart 3/5: Two P2 Chinese-reading items reviewed. Both items are clear, age-appropriate, have one unambiguous best answer, and match the claimed difficulty. Recommend passing without changes.\n\nPart 4/5: 兩題均清晰、無歧義，正確答案明確且適合小二程度。建議保留原題目與選項不作修改。\n\nPart 5/5: 兩題皆為小學二年級閱讀理解（主旨與段落關係）基礎題目。題幹清晰、選項合理、唯一最佳答案明確，難度與年級相符，建議通過。",
+    "reviews": [
+      {
+        "id": "chinese-reading-P2-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The meaning choice '乾淨有條理' correctly matches 『整潔』. Other options are clearly incorrect for P2 learners. The stem is unambiguous and uses age-appropriate language.",
+        "recommendedQuestion": "「整潔」最接近下列哪一個意思？",
+        "recommendedOptions": [
+          "乾淨有條理",
+          "很匆忙",
+          "不願意幫忙",
+          "聲音很大"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Sentence A ('媽媽把廚房打掃得十分整潔。') is the only natural and correct use of 『整潔』 for P2. The other sentences are ungrammatical or use the word in an unlikely way for this grade, providing clear distractors.",
+        "recommendedQuestion": "下列哪一句最適合使用「整潔」？",
+        "recommendedOptions": [
+          "媽媽把廚房打掃得十分整潔。",
+          "小明聽到好消息，感到整潔。",
+          "雨傘的顏色很整潔。",
+          "這首歌的旋律很整潔。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "句子為直接陳述「小美把圖書放回書架。」問題要求找出主要說明，選項 0 與原句完全一致，其他選項與句意不符，無歧義，適合 P2 水平。",
+        "recommendedQuestion": "小美把圖書放回書架。這段文字主要說明了甚麼？",
+        "recommendedOptions": [
+          "小美把圖書放回書架。",
+          "小美不想參加活動。",
+          "小美正在睡覺。",
+          "小美不見了物品。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "通告明確寫出報到時間「二時四十五分」，問最遲何時到達，選項 0 為正確且唯一可接受的答案。語言和推理解難度符合 P2。",
+        "recommendedQuestion": "通告寫着「一次旅行分享會下午三時開始，參加者請在二時四十五分到達。」最遲何時到達？",
+        "recommendedOptions": [
+          "下午二時四十五分",
+          "下午三時",
+          "下午三時十五分",
+          "下午四時"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹清楚：把圖書放回書架是具體行為，四個選項中只有「有公德心」能合理從此行為推論出來；其他選項與行為矛盾或不相關。語言與推理深度符合P2程度，選項分布良好。",
+        "recommendedQuestion": "小美把圖書放回書架，這最能反映他／她怎樣？",
+        "recommendedOptions": [
+          "有公德心",
+          "粗心大意",
+          "不願合作",
+          "害怕嘗試"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目描述小美先了解資料才作決定，最合理的原因是希望作出較合適的選擇。其他三個選項與行為動機不符（例如不想知道內容與先了解資料矛盾）。語言簡單明確，適合P2水平。",
+        "recommendedQuestion": "小美先了解資料才作決定，最可能是因為？",
+        "recommendedOptions": [
+          "希望作出較合適的選擇",
+          "不想知道內容",
+          "想拖延時間",
+          "沒有任何原因"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "句子使用擬人手法（「拍著」為人的動作），問法明確地問把微風寫成像甚麼，選項中「人」為唯一合適答案，其他為明顯干擾項，符合小二語文理解能力與難度。",
+        "recommendedQuestion": "「微風輕輕拍著樹葉」主要把微風寫成像甚麼？",
+        "recommendedOptions": [
+          "人",
+          "石頭",
+          "書本",
+          "雨傘"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目要求找出句子最重要的訊息（誰、在哪裡、做甚麼），選項第一項正確且直接對應句子資訊；其他選項與句意無關，題目符合小二整合句意的能力。",
+        "recommendedQuestion": "「同學們在禮堂唱歌。」這句話中，最重要的訊息是甚麼？",
+        "recommendedOptions": [
+          "人物、地點和主要行動",
+          "句子的字數",
+          "所有標點名稱",
+          "顏色的數量"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹描述文章先講準備方法、再說收穫，最合乎邏輯的主旨是鼓勵讀者認真準備並參與活動。其他選項與題意無關，無二義性，語言與概念符合P2程度。",
+        "recommendedQuestion": "文章先介紹一次旅行的準備方法，再說明參加後的收穫，主旨最可能是？",
+        "recommendedOptions": [
+          "鼓勵讀者認真準備並參與活動",
+          "介紹所有人的姓名",
+          "比較不同天氣",
+          "只描述食物"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "句子以「先……再……最後……」表達動作的先後順序，故以「步驟順序」為主要組織方式。其他選項不符合句子結構，題目直接且適合P2。",
+        "recommendedQuestion": "「先找出重點，再整理想法，最後寫下回應。」這段文字主要按甚麼方式組織？",
+        "recommendedOptions": [
+          "步驟順序",
+          "人物對話",
+          "地點轉換",
+          "問題與答案"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

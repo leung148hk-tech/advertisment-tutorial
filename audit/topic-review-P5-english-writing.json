@@ -1,0 +1,134 @@
+{
+  "generatedAt": "2026-08-26T11:32:38.064912+00:00",
+  "grade": "P5",
+  "track": "english-writing",
+  "canonicalQuestionCount": 11,
+  "variantQuestionCount": 33,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/6: Reviewed 2 items (P5 English writing). Both items measure basic sentence-level syntax (completeness and word order). Supplied topic, label and module are educationally coherent and accurate for each item — no metadata changes required.\n\nPart 2/6: Reviewed 2 items (P5 English writing, part 2 of 6). Both items measure basic sentence-level grammar/vocabulary and their metadata are educationally coherent. Recommend no substantive changes.\n\nPart 3/6: Reviewed 2 items (each applies to associated context-only variants). Both items measure paragraph-level writing skills (topic sentence identification and supporting-detail selection). Metadata is coherent and educationally appropriate.\n\nPart 4/6: Reviewed 2 canonical items (each has two context-only variants; findings apply to all three variants per item). Both items measure linking/cohesion and tone/register appropriateness and their metadata are educationally coherent.\n\nPart 5/6: Reviewed 2 items (P5 English writing). Both items have metadata that coherently match the skill tested and require no substantive changes.\n\nPart 6/6: One P5 English writing item reviewed. The item asks students to choose the most useful pre-submission check (content-purpose alignment). Label, topic and module accurately describe the revision/editing skill assessed. No metadata changes required.",
+    "reviews": [
+      {
+        "id": "english-writing-P5-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify the most complete sentence by recognising a clear subject and verb (sentence completeness/subject-verb structure). The label 'Sentence structure', topic 'Sentence structure' and module '基礎掌握' correctly describe this basic syntactic skill.",
+        "recommendedTopic": "Sentence structure",
+        "recommendedLabel": "Sentence structure",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-writing-P5-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses correct English word order (subject-verb-(object/phrases)) and the ability to choose a sentence with clear syntactic ordering. The label 'Sentence order', topic 'Sentence structure' and module '基礎掌握' appropriately reflect the measured skill.",
+        "recommendedTopic": "Sentence structure",
+        "recommendedLabel": "Sentence order",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-writing-P5-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem tests selection of the correct past-tense verb form (sentence-level grammar/verb tense). The topic 'Language accuracy', label 'Language accuracy' and module '基礎掌握' accurately describe this basic grammar skill.",
+        "recommendedTopic": "Language accuracy",
+        "recommendedLabel": "Language accuracy",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-writing-P5-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses choosing an appropriate verb (word choice/vocabulary for communication). The label 'Word choice' and broader topic 'Language accuracy' with module '基礎掌握' are appropriate and educationally coherent.",
+        "recommendedTopic": "Language accuracy",
+        "recommendedLabel": "Word choice",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-writing-P5-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem asks students to choose the best topic sentence that states the main idea of a paragraph about a community project. This directly assesses identification of a topic sentence/paragraph focus. The label 'Paragraph focus', the topic 'Paragraph organisation', and the module '整合表達' accurately describe the skill and instructional context.",
+        "recommendedTopic": "Paragraph organisation",
+        "recommendedLabel": "Paragraph focus",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "english-writing-P5-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the sentence that best supports a stated idea, assessing selection of a supporting detail for a paragraph. The label 'Supporting detail', the topic 'Paragraph organisation', and the module '整合表達' appropriately match the assessed skill.",
+        "recommendedTopic": "Paragraph organisation",
+        "recommendedLabel": "Supporting detail",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "english-writing-P5-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem asks students to choose an appropriate connective that shows cause-and-effect (result). This tests knowledge of cohesive devices/linking adverbs. The label 'Linking', topic 'Purpose, tone and linking' and module '整合表達' accurately describe that skill at an appropriate granularity.",
+        "recommendedTopic": "Linking (cause and effect / cohesive devices)",
+        "recommendedLabel": "Linking",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "english-writing-P5-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires choosing a sentence appropriate in tone and register for an email to a teacher, testing audience-awareness and polite/formal tone. The label 'Purpose and tone', topic 'Purpose, tone and linking' and module '整合表達' correctly represent this skill.",
+        "recommendedTopic": "Purpose and tone (register/appropriateness)",
+        "recommendedLabel": "Purpose and tone",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "english-writing-P5-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to choose an appropriate opening for a message to classmates, directly assessing audience awareness and appropriate tone/register. The supplied topic 'Purpose, tone and linking' and label 'Audience awareness' accurately describe the skill. The module '整合表達' (integrated expression) is an educationally coherent placement.",
+        "recommendedTopic": "Purpose, tone and linking",
+        "recommendedLabel": "Audience awareness",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "english-writing-P5-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to revise a vague sentence to be more specific, assessing revision/editing for specificity and clarity. The topic 'Revision, editing and proofreading' and label 'Revision' accurately name the tested skill. The module '整合表達' is appropriate.",
+        "recommendedTopic": "Revision, editing and proofreading",
+        "recommendedLabel": "Revision",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "english-writing-P5-10-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses revision/editing and proofreading focused on checking content against purpose (ideas, examples, conclusion). The provided label and topic explicitly name this skill, and the module '整合表達' (integrated expression) is an appropriate curricular grouping for revision skills.",
+        "recommendedTopic": "Revision, editing and proofreading",
+        "recommendedLabel": "Revision (editing and proofreading)",
+        "recommendedModule": "整合表達"
+      }
+    ]
+  }
+}

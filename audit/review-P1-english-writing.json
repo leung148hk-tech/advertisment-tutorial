@@ -1,0 +1,200 @@
+{
+  "generatedAt": "2026-08-26T09:37:22.787812+00:00",
+  "grade": "P1",
+  "track": "english-writing",
+  "canonicalQuestionCount": 11,
+  "variantQuestionCount": 33,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/6: 2 items reviewed for P1 English-writing (sentence structure). Both items are clear, age-appropriate, have one unambiguous best answer, and require no revision. Verdict: PASS for both (same verdict applies to their context-only variants).\n\nPart 2/6: Reviewed 2 P1 English-writing items (Language accuracy / Word choice). Both items are clear, have a single best answer, and are grade-appropriate. Recommend passing both without changes.\n\nPart 3/6: Two P1 English-writing multiple-choice items reviewed. Both items are clear, age-appropriate, have one unambiguous best answer, and require no revision.\n\nPart 4/6: Reviewed 2 P1 English-writing items (linking and purpose/tone). Both items are clear, age-appropriate, have a single best answer, and require no revision.\n\nPart 5/6: Two P1 English-writing items (audience awareness and revision) were reviewed. Both items are clear, age-appropriate, syllabus-adjacent, and have one unambiguous best answer. Recommended to keep original content as-is.\n\nPart 6/6: All items reviewed are simple P1 writing checks about punctuation and capitalization. Items are clear, age-appropriate, and have a single best answer.",
+    "reviews": [
+      {
+        "id": "english-writing-P1-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks for the most complete sentence; only option 0 ('Tom kicks the ball.') is a full sentence with a clear subject and verb. Other options are fragments or incomplete and thus unambiguous for P1. The vocabulary and hint are age-appropriate.",
+        "recommendedQuestion": "Choose the most complete sentence.",
+        "recommendedOptions": [
+          "Tom kicks the ball.",
+          "Because Tom careful.",
+          "Kicks the ball.",
+          "The ball carefully."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P1-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The item asks for the clearest word order; option 0 ('Tom plays with his dog.') follows the typical subject–verb–object/adverbial order and is the only grammatically correct choice. Distractors show incorrect word order suitable for testing this concept at P1.",
+        "recommendedQuestion": "Choose the sentence with the clearest word order.",
+        "recommendedOptions": [
+          "Tom plays with his dog.",
+          "Plays Tom with his dog.",
+          "With his dog Tom plays.",
+          "His dog with Tom plays."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P1-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The time adverb 'yesterday' requires the past simple form. 'wrote' is the correct past-tense verb. Other options are present or participle forms and are not appropriate. No ambiguity; suitable for P1 learners.",
+        "recommendedQuestion": "Tom ____ a short note yesterday.",
+        "recommendedOptions": [
+          "wrote",
+          "write",
+          "writes",
+          "writing"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P1-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Imperative with 'Please' takes the base verb. 'share' is the correct verb related to communication; the other choices are unrelated actions. Clear single best answer and appropriate vocabulary for P1.",
+        "recommendedQuestion": "Please ____ your ideas clearly.",
+        "recommendedOptions": [
+          "share",
+          "borrow",
+          "sleep",
+          "hide"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P1-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem is simple and appropriate for P1. Only the first option is about a pet and clearly fits as a sentence that could begin a short piece about \"my pet.\" The distractors are unrelated and unlikely to confuse P1 students.",
+        "recommendedQuestion": "Which sentence could begin a short writing about my pet?",
+        "recommendedOptions": [
+          "My pet is a small, friendly dog.",
+          "The room has four windows.",
+          "I have a pencil.",
+          "Tuesday is a day."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P1-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks which sentence shows that planning helped the group. The first option explicitly links planning (made a list, each person did one job) to a positive outcome (finished on time). Other options are unrelated. Language and length are suitable for P1 comprehension.",
+        "recommendedQuestion": "Which sentence shows that planning helped the group?",
+        "recommendedOptions": [
+          "We made a list and each person did one job, so we finished on time.",
+          "Planning is a word.",
+          "Some shoes are expensive.",
+          "Everyone is different."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P1-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "'I opened my umbrella ____ it was raining.' unambiguously tests a reason link word. 'because' is the correct and age-appropriate choice; other options are clearly incorrect.",
+        "recommendedQuestion": "I opened my umbrella ____ it was raining.",
+        "recommendedOptions": [
+          "because",
+          "so",
+          "but",
+          "or"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P1-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Asking which sentence is suitable for an email to a teacher tests tone and politeness. The first option is clearly the polite, appropriate choice for a P1-level prompt.",
+        "recommendedQuestion": "Which sentence is most suitable for an email to a teacher?",
+        "recommendedOptions": [
+          "Could you please explain the homework deadline?",
+          "Send me the answer now.",
+          "I do not care.",
+          "Your work is bad."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P1-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem clearly asks for a friendly opening for classmates. Option 0 is the only polite, relevant opening; other options are inappropriate or irrelevant. Language is simple and suitable for P1. Distractors are clearly weaker, so there is a single best answer.",
+        "recommendedQuestion": "Which opening is most suitable for a message to classmates about an activity?",
+        "recommendedOptions": [
+          "Hi everyone, please join our class activity on Friday.",
+          "You must come now.",
+          "I do not want to explain.",
+          "This sentence has no purpose."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P1-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The task asks for a more specific revision; Option 0 provides concrete details (games and a poster) and is clearly more specific than the vague alternatives. Wording is simple enough for P1; distractors are implausible or do not improve specificity.",
+        "recommendedQuestion": "Which revision makes “The activity was good” more specific?",
+        "recommendedOptions": [
+          "We played three fun games and made a big poster.",
+          "The activity was good good.",
+          "The activity was an activity.",
+          "It was good."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-writing-P1-10-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks a clear, age-appropriate pre-submission check. Option 0 ('Check capital letters and full stops.') is the unambiguous best choice for P1. Distractors are clearly incorrect and plausible as naive mistakes, so the item assesses the intended skill without ambiguity.",
+        "recommendedQuestion": "Before you hand in your writing, what should you check?",
+        "recommendedOptions": [
+          "Check capital letters and full stops.",
+          "Remove every full stop.",
+          "Use the longest words.",
+          "Change every sentence to a question."
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-26T11:30:13.908238+00:00",
+  "grade": "P5",
+  "track": "chinese-writing",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 items (and their context-only variants). Both items assess basic Chinese vocabulary usage appropriate for P5; metadata is coherent and accurate. Recommendations: keep current topic/labels/modules.\n\nPart 2/5: Reviewed 2 items (P5, Chinese writing). Both items measure sentence-level mechanics and are judged to have metadata that accurately reflects the assessed skill.\n\nPart 3/5: 檢視兩題小學五年級中文寫作多選題的元資料。兩題分別測驗：1) 辨認段落中心句；2) 選出支持論點的例子。標籤、題目主題與單元均與題幹要求一致，無需修改。\n\nPart 4/5: 已檢視 2 項題目。兩題均正確對應其所測技能（內容發展／觀點與論證），標籤、主題及模組均具教育適切性，建議均為 PASS。\n\nPart 5/5: Reviewed 2 items (each has two context-only variants sharing metadata). Both items measure the stated skills and metadata are educationally coherent.",
+    "reviews": [
+      {
+        "id": "chinese-writing-P5-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to choose the correct word that describes a character's persistent attitude. This clearly assesses vocabulary usage/word choice (詞語運用). The label, topic and module (詞語運用 / 基礎掌握) accurately reflect the measured skill at an appropriate difficulty for P5.",
+        "recommendedTopic": "詞語運用",
+        "recommendedLabel": "詞語運用",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-writing-P5-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item targets natural verb–noun collocation (詞語搭配), asking which phrase is the most natural. The provided label (詞語搭配) names the specific skill; the topic (詞語運用) and module (基礎掌握) are coherent and appropriate for the assessed skill and level.",
+        "recommendedTopic": "詞語運用",
+        "recommendedLabel": "詞語搭配",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-writing-P5-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to choose the most natural word order by identifying subject, verb and other components. This assesses sentence-level syntax/word order (sentence accuracy), which matches the topic '句子準確性', the label '句子組織' and the module '基礎掌握'.",
+        "recommendedTopic": "句子準確性",
+        "recommendedLabel": "句子組織",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-writing-P5-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires choosing the sentence with correct punctuation for reported speech (use of saying verb and quotation marks), which is a sentence-level mechanics skill. The label '標點運用' directly names the skill; the broader topic '句子準確性' reasonably covers punctuation as part of sentence accuracy. The module '基礎掌握' is appropriate.",
+        "recommendedTopic": "句子準確性",
+        "recommendedLabel": "標點運用",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-writing-P5-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹要求學生從給定選項中選出最適合作為段落中心句的一句，實際測驗的技能是辨認段落的中心句／主旨。標籤「段落中心」直接對應，主題「段落組織」與單元「整合表達」在小學寫作課綱下亦屬教育上合理的分類，故維持原元資料。",
+        "recommendedTopic": "段落組織",
+        "recommendedLabel": "段落中心",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "chinese-writing-P5-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹要求選出最能支持論點「合作能解決困難」的例子，實際測驗的技能是判斷證據/例子是否直接支援觀點（段落內的論證與支援）。標籤「例子支援」精確，主題「段落組織」與單元「整合表達」也與寫作中的論證與段落安排一致，故維持原元資料。",
+        "recommendedTopic": "段落組織",
+        "recommendedLabel": "例子支援",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "chinese-writing-P5-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹要求選出能使記敘更具體的細節，實際測量學生對敘述性細節（行動、感受、對話）辨識與運用能力。標籤「內容發展（敘述細節）」、主題「內容與觀點發展」及模組「整合表達」都與此技能一致且教育上可接受。",
+        "recommendedTopic": "內容與觀點發展",
+        "recommendedLabel": "內容發展（敘述細節）",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "chinese-writing-P5-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹要求選出較有說服力的寫法，測量學生辨別是否在觀點後提出理由與例子的能力（觀點發展與論證）。標籤「觀點發展與論證」、主題「內容與觀點發展」及模組「整合表達」均恰當。",
+        "recommendedTopic": "內容與觀點發展",
+        "recommendedLabel": "觀點發展與論證",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "chinese-writing-P5-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to choose the correct connective to show sequence. The label '連接詞選擇', topic '表達準確：連接詞' and module '理解與應用' accurately reflect the assessed skill (appropriate use of connectives in context).",
+        "recommendedTopic": "表達準確：連接詞",
+        "recommendedLabel": "連接詞選擇",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-writing-P5-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses revision skills—checking coherence among topic sentence, examples and conclusion. The label '修訂檢查', topic '表達準確：修訂與篇章銜接' and module '整合表達' appropriately describe the measured skill (revision for cohesion and completeness).",
+        "recommendedTopic": "表達準確：修訂與篇章銜接",
+        "recommendedLabel": "修訂檢查",
+        "recommendedModule": "整合表達"
+      }
+    ]
+  }
+}

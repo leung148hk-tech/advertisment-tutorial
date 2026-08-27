@@ -1,0 +1,200 @@
+{
+  "generatedAt": "2026-08-27T01:07:24.401053+00:00",
+  "grade": "S3",
+  "track": "english-reading",
+  "canonicalQuestionCount": 11,
+  "variantQuestionCount": 33,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/6: Both items test core grammar/tense knowledge appropriate for S3. Each has one clear correct answer, unambiguous stems, and plausible distractors. Recommend passing both without changes.\n\nPart 2/6: Two S3 vocabulary-in-context items reviewing meaning of adjectives/verbs. Both items are clear, age-appropriate, and have a single best answer; no revision needed.\n\nPart 3/6: Two short reading-comprehension items for S3. Both ask for a simple detail/inference from a short statement and have one clear best answer. Items are clear, unambiguous, and age-appropriate; no revision required.\n\nPart 4/6: Reviewed 2 items (Text-structure identification and Connector choice). Both items are clear, have a single best answer, are grade-appropriate for S3, and require no revision.\n\nPart 5/6: 2 items reviewed (writer's purpose; evidence selection). Both items are clear, have one unambiguous best answer, and are appropriate for S3 reading comprehension. Recommend keeping both items and their options unchanged.\n\nPart 6/6: One S3 English reading (inference strategy) item reviewed. The item is clear, unambiguous, and age-appropriate; it passes without revision.",
+    "reviews": [
+      {
+        "id": "english-reading-S3-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence requires past perfect to show an action completed before another past action: 'had already evaluated' is correct. Distractors are plausible but clearly incorrect in this context. Wording is clear and age-appropriate.",
+        "recommendedQuestion": "By the time the meeting started, Jordan ____ already evaluated the proposal.",
+        "recommendedOptions": [
+          "had",
+          "was",
+          "has",
+          "will have"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S3-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "This is a standard first conditional structure requiring the present simple in the if-clause: 'If the evidence is not clear...' is correct. Other options are ungrammatical or mismatch conditional forms. Stem and choices are clear for S3 level.",
+        "recommendedQuestion": "If the evidence ____ clear, the team will revise its conclusion.",
+        "recommendedOptions": [
+          "is not",
+          "will not be",
+          "was not",
+          "not being"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S3-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks for an action matching the adjective 'effective student'. Option 0 ('complete tasks carefully and reliably') is the clear, single best match. Distractors are implausible and clearly opposite in meaning, so the item is unambiguous and suitable for S3.",
+        "recommendedQuestion": "An effective student is likely to ____ .",
+        "recommendedOptions": [
+          "complete tasks carefully and reliably",
+          "ignore all instructions",
+          "arrive without preparation",
+          "avoid every responsibility"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S3-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "In context, 'contrast' means to show differences or 'compare differences'. Option 0 is the correct and unambiguous choice; other choices are unrelated meanings. The item matches expected vocabulary skills for S3.",
+        "recommendedQuestion": "The word ‘contrast’ in a reading passage is closest in meaning to ____ .",
+        "recommendedOptions": [
+          "compare differences",
+          "repeat exactly",
+          "hide information",
+          "make smaller"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S3-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The notice explicitly gives a closing time, so the only reasonable action is to register by 3:45 p.m. The stem is clear, distractors are clearly wrong, and the item matches S3 reading-detail expectations.",
+        "recommendedQuestion": "A notice says registration for an environmental campaign closes at 3:45 p.m. What should students do?",
+        "recommendedOptions": [
+          "Register by 3:45 p.m.",
+          "Arrive after 4:00 p.m.",
+          "Wait for the next day",
+          "Ignore the notice"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S3-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Checking several sources before deciding reasonably supports the inference that Jordan wanted a well-supported decision. Other options contradict the stated action or are unsupported.",
+        "recommendedQuestion": "Jordan checked several sources before making a decision. What can we infer?",
+        "recommendedOptions": [
+          "The student wanted a well-supported decision",
+          "The student had no interest",
+          "The sources were missing",
+          "The task was cancelled"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S3-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sequence described (problem, two examples as supporting evidence, then a solution) matches 'Problem–evidence–solution' unambiguously. Other options are clearly incorrect for the described organisation.",
+        "recommendedQuestion": "The writer presents a problem, gives two examples, and then suggests a solution. How is the text organised?",
+        "recommendedOptions": [
+          "Problem–evidence–solution",
+          "Time order only",
+          "A dialogue",
+          "A list of definitions"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S3-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The second clause expresses a result, so 'therefore' is the correct connector. The other choices ('although', 'unless', 'meanwhile') do not express a result and are ungrammatical or inappropriate after the semicolon here.",
+        "recommendedQuestion": "Which connector best completes the sentence? ‘The evidence was limited; ____, the conclusion should be treated carefully.’",
+        "recommendedOptions": [
+          "therefore",
+          "although",
+          "unless",
+          "meanwhile"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S3-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem gives clear clues: 'facts, examples and action steps' for an environmental campaign signal both information and a call to action. The other options are clearly unrelated. Distractors are implausible, so there is one defensible best answer.",
+        "recommendedQuestion": "A webpage gives facts, examples and action steps for an environmental campaign. Its main purpose is to ____ .",
+        "recommendedOptions": [
+          "inform and encourage action",
+          "tell a fictional story",
+          "advertise a uniform",
+          "describe a holiday"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S3-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Only the first option gives direct evidence of success (meeting planned goals and positive participant feedback). The other choices are irrelevant details and do not support the claim that the project was successful.",
+        "recommendedQuestion": "Which detail best supports the statement that a project was successful?",
+        "recommendedOptions": [
+          "It achieved its planned goal and participants gave specific positive feedback.",
+          "It happened on a Tuesday.",
+          "The room had windows.",
+          "The poster used blue ink."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-S3-10-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks for a test-taking strategy suitable for answering inference questions; option 0 ('Underline clues and connect them to the question.') is clearly the best and is supported by the hint. The other options give obviously poor strategies (choosing the longest option, ignoring the passage, translating every word) and do not compete as plausible correct answers at the S3 level. The item is unambiguous, aligns with syllabus-level inference skills, and the distractors are realistic but clearly incorrect.",
+        "recommendedQuestion": "Before answering an inference question, which strategy is most effective?",
+        "recommendedOptions": [
+          "Underline clues and connect them to the question.",
+          "Choose the longest option immediately.",
+          "Ignore the passage.",
+          "Translate every word first."
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

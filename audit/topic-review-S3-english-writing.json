@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-27T01:11:14.041270+00:00",
+  "grade": "S3",
+  "track": "english-writing",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 items (each has two context-only variants with identical metadata). Both items measure straightforward grammar skills and their supplied metadata are appropriate.\n\nPart 2/5: Reviewed 2 English-writing items (S3, part 2 of 5). Both items assess straightforward aspects of language use: appropriate word selection in context and register/formality for audience. Metadata largely aligns with the measured skills; no substantive changes required.\n\nPart 3/5: Reviewed 2 items (and their context-only variants) for alignment between the assessed skill in the stem/hint/options and the supplied label, topic and module. Both items appropriately label the tested skills and have coherent module assignments.\n\nPart 4/5: Reviewed 2 items (each applies to two context-only variants). Both items measure targeted sentence-level writing skills (use of cohesive connectors; revising vague statements for specificity). Metadata fields are appropriate; no substantive revisions required.\n\nPart 5/5: Reviewed 2 English-writing S3 items (editing and pre-writing planning). Both items measure the skills indicated by their metadata and require no substantive changes.",
+    "reviews": [
+      {
+        "id": "english-writing-S3-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem and hint require selecting the correct past-tense verb form. The supplied topic and label 'Grammar and tense' accurately describe the skill (specifically past simple tense), and the module '基礎掌握' (basic mastery) is appropriate for this core-level item.",
+        "recommendedTopic": "Grammar and tense",
+        "recommendedLabel": "Grammar and tense",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-writing-S3-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The task tests subject–verb agreement (recognising that 'each' takes a singular verb). The current topic and label 'Subject–verb agreement' correctly name the tested skill, and '基礎掌握' suits a core-level grammar item.",
+        "recommendedTopic": "Subject–verb agreement",
+        "recommendedLabel": "Subject–verb agreement",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-writing-S3-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to choose the best word to complete a sentence based on meaning and context. This directly measures vocabulary/word-choice ability. The provided label 'Word choice' and topic 'Vocabulary and context' accurately describe the skill; the module '基礎掌握' is appropriate for a core-level vocabulary item.",
+        "recommendedTopic": "Vocabulary and context",
+        "recommendedLabel": "Word choice",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-writing-S3-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires selecting the sentence that fits a formal register and audience (a teacher). This assesses understanding of register/tone and audience-appropriate phrasing. The label 'Register' and the topic 'Register and tone (formality and audience)' correctly describe the measured skill; the module '基礎掌握' suits this core-level pragmatic language item.",
+        "recommendedTopic": "Register and tone (formality and audience)",
+        "recommendedLabel": "Register",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-writing-S3-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to select the best topic sentence introducing a paragraph about an environmental campaign, which is directly about paragraph organisation and identifying a central idea. The label and topic accurately describe this skill. The module '整合表達' (integrated expression) is an acceptable, coherent placement for a writing/paragraph-organisation task.",
+        "recommendedTopic": "Paragraph organisation",
+        "recommendedLabel": "Paragraph organisation",
+        "recommendedModule": "整合表達"
+      },
+      {
+        "id": "english-writing-S3-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires identifying a specific supporting detail that backs up the claim that planning improves a project. The label 'Supporting detail' and topic 'Identifying supporting details' accurately reflect the measured skill. The module '理解與應用' (comprehension and application) is appropriate for this reading/writing comprehension task.",
+        "recommendedTopic": "Identifying supporting details",
+        "recommendedLabel": "Supporting detail",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-writing-S3-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses choice of an appropriate connective to show cause/consequence (cohesion). The label 'Cohesion', topic 'Writing expression', and module '理解與應用' coherently describe the skill.",
+        "recommendedTopic": "Writing expression",
+        "recommendedLabel": "Cohesion",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-writing-S3-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires revising a vague sentence to be specific and concrete, matching the label 'Precision and specificity (revising vague statements)' and topic 'Sentence specificity and precision in writing'. The module '理解與應用' is appropriate.",
+        "recommendedTopic": "Sentence specificity and precision in writing",
+        "recommendedLabel": "Precision and specificity (revising vague statements)",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-writing-S3-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify a sentence that violates parallel structure. The label 'Editing', topic 'Sentence structure — parallelism (editing)', and module '理解與應用' accurately describe the targeted skill (editing for parallelism within sentence lists/verb phrases).",
+        "recommendedTopic": "Sentence structure — parallelism (editing)",
+        "recommendedLabel": "Editing",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-writing-S3-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks which pre-writing step best prevents going off-topic by planning purpose, audience, key points and examples. The label 'Writing planning (pre-writing) strategy', topic 'Pre-writing planning and composition planning', and module '理解與應用' correctly reflect the skill being assessed (planning a composition to stay on topic).",
+        "recommendedTopic": "Pre-writing planning and composition planning",
+        "recommendedLabel": "Writing planning (pre-writing) strategy",
+        "recommendedModule": "理解與應用"
+      }
+    ]
+  }
+}

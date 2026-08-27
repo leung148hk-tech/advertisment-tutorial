@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-08-27T01:16:37.283024+00:00",
+  "grade": "S3",
+  "track": "math",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: 2 S3 math items (factorisation and simple quadratic solving). Both items are correct, unambiguous, and appropriate for the grade. Recommend PASS for both.\n\nPart 2/5: Reviewed 2 S3 math items (each has two context-only variants). Both items are correct, unambiguous, age-appropriate and at an appropriate difficulty for the grade. Recommend passing both without changes.\n\nPart 3/5: Both items are correct, age-appropriate for S3, unambiguous, and match the supplied answers and difficulty. Recommend PASS for both items (same verdict applies to their two context-only variants).\n\nPart 4/5: Both items are clear, age-appropriate S3 statistics questions with a single unambiguous correct answer. No revision needed.\n\nPart 5/5: Reviewed 2 S3 math items (each has two context-only variants). Both items are correct, unambiguous, and grade-appropriate. Recommend PASS for both.",
+    "reviews": [
+      {
+        "id": "math-S3-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "x^2 − 9 is a standard difference of squares; (x − 3)(x + 3) is the correct factorisation. Distractors are plausible incorrect factorisations and there is a single unambiguous best answer. Language and maths level suit S3.",
+        "recommendedQuestion": "Factorise x² − 9.",
+        "recommendedOptions": [
+          "(x − 3)(x + 3)",
+          "(x − 9)(x + 1)",
+          "x(x − 9)",
+          "(x − 3)²"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "math-S3-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "x² − 5x = x(x − 5) = 0 gives solutions x = 0 or x = 5. The supplied correct option is correct, distractors are clearly wrong and there is one best answer. Suitable for S3.",
+        "recommendedQuestion": "Solve x² − 5x = 0.",
+        "recommendedOptions": [
+          "x=0 or 5",
+          "x=−5 only",
+          "x=5 only",
+          "x=25"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "math-S3-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sale price is 90% of $200 = $180. Options are clear and distractors are plausible (e.g. $20 = 10% only, $220 = increase). Language and maths level suit S3.",
+        "recommendedQuestion": "A $200 item is reduced by 10%. Find the sale price.",
+        "recommendedOptions": [
+          "$20",
+          "$180",
+          "$190",
+          "$220"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-S3-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Average speed = distance ÷ time = 150 ÷ 2.5 = 60 km/h. Distractors are reasonable and the item is unambiguous for S3.",
+        "recommendedQuestion": "A car travels 150 km in 2.5 h. Find its average speed.",
+        "recommendedOptions": [
+          "50 km/h",
+          "60 km/h",
+          "75 km/h",
+          "375 km/h"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-S3-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The circle theorem (angle at centre is twice the angle at the circumference standing on the same arc) is correctly applied: 100° at centre gives 50° at circumference. Wording is clear and appropriate for S3.",
+        "recommendedQuestion": "The angle at the centre is 100°. What is the angle at the circumference standing on the same arc?",
+        "recommendedOptions": [
+          "25°",
+          "50°",
+          "100°",
+          "200°"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-S3-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "sin θ = opposite ÷ hypotenuse = 6/10 = 3/5. The stem implies the side opposite θ is 6, which is standard phrasing; options include common distractors. Suitable for S3.",
+        "recommendedQuestion": "In a right triangle, opposite=6 and hypotenuse=10. Find sin θ.",
+        "recommendedOptions": [
+          "3/5",
+          "5/3",
+          "4/5",
+          "5/4"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "math-S3-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The correct choice is 'Histogram' for grouped continuous data. The stem is unambiguous, distractors are plausible at this level, and the item matches S3 statistics expectations.",
+        "recommendedQuestion": "Which graph is most suitable for grouped continuous data?",
+        "recommendedOptions": [
+          "Histogram",
+          "Pie chart",
+          "Pictogram",
+          "Line of best fit only"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "math-S3-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "A strong negative correlation on a scatter graph means one variable tends to decrease as the other increases. The stem and options are clear and suitable for S3.",
+        "recommendedQuestion": "A scatter graph has a strong negative correlation. What does this mean?",
+        "recommendedOptions": [
+          "One tends to decrease as the other increases",
+          "Both always increase",
+          "There is no relationship",
+          "Values are all equal"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "math-S3-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Substitute n = 10 into 4n − 1 gives 4×10 − 1 = 39. Options are distinct and distractors are simple arithmetic errors.",
+        "recommendedQuestion": "A sequence has nth term 4n − 1. Find the 10th term.",
+        "recommendedOptions": [
+          "29",
+          "39",
+          "40",
+          "41"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-S3-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Expand and solve: 2(x − 3) = 3x + 4 → 2x − 6 = 3x + 4 → −x = 10 → x = −10. Distractors are simple sign or arithmetic mistakes.",
+        "recommendedQuestion": "Solve 2(x − 3)=3x+4.",
+        "recommendedOptions": [
+          "x=−10",
+          "x=−2",
+          "x=2",
+          "x=10"
+        ],
+        "recommendedCorrect": 0
+      }
+    ]
+  }
+}

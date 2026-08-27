@@ -1,0 +1,173 @@
+{
+  "generatedAt": "2026-08-26T10:33:12.159103+00:00",
+  "grade": "P5",
+  "track": "math",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 P5 math items (each with two context-only variants). Both items are correct, have a single best answer, and are grade-appropriate. Recommend no changes.\n\nPart 2/5: Both items are correct, unambiguous, and appropriate for P5. Keep original wording and options.\n\nPart 3/5: Reviewed 2 P5 maths items on geometry/measurement. Both items are correct, unambiguous, and grade-appropriate. Recommend no changes.\n\nPart 4/5: Reviewed 2 P5 mathematics items on data and statistics. Both items are clear, unambiguous, grade-appropriate, and have a single best answer. Recommend passing without changes.\n\nPart 5/5: 審核 2 題（每題含兩個情境變體）。兩題均正確、唯一最佳答案且適合 P5 程度，建議通過 (PASS)。",
+    "reviews": [
+      {
+        "id": "math-P5-0-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Calculation 7,560 ÷ 12 = 630 is correct. The options are plausible distractors for common place-value or digit-shift errors. Item matches P5 syllabus on whole-number division and is at an appropriate difficulty for '基礎'.",
+        "recommendedQuestion": "",
+        "recommendedOptions": [],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "math-P5-1-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "4.8 × 0.5 = 2.4 is correct. The hint '乘以 0.5 等於取一半' is helpful and age-appropriate. Distractors reflect common decimal errors and do not create ambiguity.",
+        "recommendedQuestion": "",
+        "recommendedOptions": [],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "math-P5-2-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "3/4 = 6/8, 6/8 − 1/8 = 5/8. The stem, hint and distractors are clear and age-appropriate.",
+        "recommendedQuestion": "3/4 − 1/8 = ?",
+        "recommendedOptions": [
+          "1/8",
+          "3/8",
+          "5/8",
+          "7/8"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-P5-3-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "25% = 1/4, and 1/4 of 240 is 60. The question and hint are clear for P5.",
+        "recommendedQuestion": "$240 的 25% 是多少？",
+        "recommendedOptions": [
+          "$25",
+          "$40",
+          "$60",
+          "$180"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-P5-4-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Calculation uses the correct formula (area = base × height ÷ 2). Numerical computation 10 × 6 ÷ 2 = 30 is correct. Options include a single clear correct choice and units are appropriate (平方厘米).",
+        "recommendedQuestion": "一個三角形底 10 厘米、高 6 厘米，面積是多少？",
+        "recommendedOptions": [
+          "16 平方厘米",
+          "30 平方厘米",
+          "60 平方厘米",
+          "80 平方厘米"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P5-5-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Volume formula (length × width × height) applied correctly: 4 × 3 × 2 = 24. Options present a single correct choice with matching units (立方厘米).",
+        "recommendedQuestion": "長方體長 4 厘米、闊 3 厘米、高 2 厘米，體積是多少？",
+        "recommendedOptions": [
+          "9 立方厘米",
+          "12 立方厘米",
+          "18 立方厘米",
+          "24 立方厘米"
+        ],
+        "recommendedCorrect": 3
+      },
+      {
+        "id": "math-P5-6-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "If one half (1/2) represents 40 people, the whole (1) is 40 × 2 = 80. Options are plausible distractors and the stem is unambiguous for P5 level.",
+        "recommendedQuestion": "圓形圖中一半代表 40 人，全體共有多少人？",
+        "recommendedOptions": [
+          "20 人",
+          "40 人",
+          "60 人",
+          "80 人"
+        ],
+        "recommendedCorrect": 3
+      },
+      {
+        "id": "math-P5-7-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Total for four tests = 4 × 75 = 300. The fourth score = 300 − 220 = 80. The stem, hint and options are clear and suitable for P5.",
+        "recommendedQuestion": "四次測驗平均是 75 分，前三次共得 220 分，第四次得多少分？",
+        "recommendedOptions": [
+          "70 分",
+          "75 分",
+          "80 分",
+          "85 分"
+        ],
+        "recommendedCorrect": 2
+      },
+      {
+        "id": "math-P5-8-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "3x + 5 = 20 的唯一正確解為 x = 5。提示（先減去 5，再除以 3）與小五課程水平相符，干擾選項合理且無二義性。",
+        "recommendedQuestion": "3x + 5 = 20，x = ?",
+        "recommendedOptions": [
+          "3",
+          "5",
+          "7",
+          "15"
+        ],
+        "recommendedCorrect": 1
+      },
+      {
+        "id": "math-P5-9-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "比例 1:4 放大 3 倍後水為 4×3 = 12 杯。題目直接且貼近日常情境，為小五應掌握的比例應用題，選項無歧義。",
+        "recommendedQuestion": "果汁和水的比例是 1：4。若用了 3 杯果汁，需要多少杯水？",
+        "recommendedOptions": [
+          "4 杯",
+          "7 杯",
+          "9 杯",
+          "12 杯"
+        ],
+        "recommendedCorrect": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "generatedAt": "2026-08-27T00:51:01.187239+00:00",
+  "grade": "S2",
+  "track": "math",
+  "canonicalQuestionCount": 10,
+  "variantQuestionCount": 30,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/5: Reviewed 2 items (each representing three variants). Both items measure straightforward S2 algebra skills and their supplied metadata are appropriate.\n\nPart 2/5: Reviewed 2 items (plus their context-only variants). Both items' metadata correctly describe the skills tested and require no substantive changes.\n\nPart 3/5: Reviewed 2 items for S2 math (part 3 of 5). Both items measure straightforward geometry skills and their metadata are appropriate. Recommend no changes.\n\nPart 4/5: Reviewed 2 items (each has two context-only variants with identical metadata). Both items measure straightforward descriptive/probability skills and their metadata are appropriate. No revisions required.\n\nPart 5/5: Reviewed 2 items: 2 PASS, 0 REVISE, 0 ESCALATE. Metadata for both items accurately describe the mathematical skills assessed (forming linear expressions/cost models and using perimeter formula to find a missing dimension).",
+    "reviews": [
+      {
+        "id": "math-S2-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks the student to expand the product of two linear expressions (multiply brackets). The label 'Expansion' correctly names this skill. The topic 'Number and algebra' is appropriate for algebraic manipulation, and the module '基礎掌握' (basic mastery) fits the straightforward difficulty.",
+        "recommendedTopic": "Number and algebra",
+        "recommendedLabel": "Expansion",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S2-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires solving a pair of linear simultaneous equations by adding to eliminate a variable. The label 'Simultaneous equations' accurately describes the assessed skill. The topic 'Number and algebra' and module '基礎掌握' are appropriate for this core algebra task.",
+        "recommendedTopic": "Number and algebra",
+        "recommendedLabel": "Simultaneous equations",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S2-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the percentage increase given an original and new price, which is correctly described by the label 'Percentage change' and the topic 'Ratio and percentage'. The module '基礎掌握' (basic mastery) is appropriate for this straightforward calculation.",
+        "recommendedTopic": "Ratio and percentage",
+        "recommendedLabel": "Percentage change",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S2-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires using direct proportionality to find a missing value, so the label 'Direct proportion' and topic 'Ratio and proportion' accurately reflect the skill. The '基礎掌握' module is suitable for this level.",
+        "recommendedTopic": "Ratio and proportion",
+        "recommendedLabel": "Direct proportion",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S2-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem and hint require use of the Pythagorean theorem to find a hypotenuse. The topic 'Geometry and measure', label 'Pythagoras' (interpretable as Pythagorean theorem), and module '基礎掌握' accurately describe the tested skill and level.",
+        "recommendedTopic": "Geometry and measure",
+        "recommendedLabel": "Pythagoras",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S2-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The task asks for the volume of a cuboid using length×width×height. The topic 'Geometry and measure', label 'Volume', and module '基礎掌握' correctly reflect the skill and expected competency.",
+        "recommendedTopic": "Geometry and measure",
+        "recommendedLabel": "Volume",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S2-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses basic probability by counting favourable vs total outcomes. The label 'Probability', topic 'Statistics and data', and module '基礎掌握' correctly describe the skill and difficulty.",
+        "recommendedTopic": "Statistics and data",
+        "recommendedLabel": "Probability",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S2-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses finding the median of a small data set. The label 'Median', topic 'Statistics and data', and module '基礎掌握' accurately reflect the tested skill.",
+        "recommendedTopic": "Statistics and data",
+        "recommendedLabel": "Median",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S2-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem asks students to form a linear expression representing total cost as fixed cost plus variable cost (0.5 per message). The provided topic 'Forming linear expressions and cost models' and label 'Linear expression (cost model)' correctly name the skill. Module '基礎掌握' is appropriate for a core foundational task.",
+        "recommendedTopic": "Forming linear expressions and cost models",
+        "recommendedLabel": "Linear expression (cost model)",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "math-S2-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires using the perimeter formula 2l + 2w = P to solve for a missing side. The topic 'Perimeter: finding a missing dimension' and label 'Perimeter of rectangle / find width' accurately describe the task. Module '基礎掌握' is suitable for this core skill.",
+        "recommendedTopic": "Perimeter: finding a missing dimension",
+        "recommendedLabel": "Perimeter of rectangle / find width",
+        "recommendedModule": "基礎掌握"
+      }
+    ]
+  }
+}
