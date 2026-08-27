@@ -133,4 +133,4 @@
 - [x] 重整初中與英文讀寫相關的資料層、渲染及審核測試，保存更新後題庫、逐題覆核與範圍文件。
 - [x] 完成型別、題庫、抽題、測試、PDF 與 production build 驗證。
 - [x] 執行並保存小學專用範圍的 production build、PDF／分享 smoke test 與首頁實際預覽，驗證報告和分享流程不再接受初中資料。
-- [ ] 保存本輪範圍精簡的交付前 checkpoint，然後以 fresh clone、差異檢查、commit 及 push 安全同步至 GitHub。
+- [x] 保存本輪範圍精簡的交付前 checkpoint，然後以 fresh clone、差異檢查、commit 及 push 安全同步至 GitHub。
