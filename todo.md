@@ -139,4 +139,4 @@
 - [x] 為每條替換題保存題幹、四個選項、正解、年級適切性及範疇／分組覆核紀錄。
 - [x] 新增防回歸檢查，確保小學中文閱讀題庫日後不會加入看圖或依賴未提供圖片的題目。
 - [x] 完成小學中文題庫、隨機抽題、型別、測試、PDF 與 production build 驗證。
-- [ ] 保存中文純文字題替換的交付前 checkpoint，然後以 fresh clone、差異檢查、commit 及 push 同步至 GitHub。
+- [x] 保存中文純文字題替換的交付前 checkpoint，然後以 fresh clone、差異檢查、commit 及 push 同步至 GitHub。
