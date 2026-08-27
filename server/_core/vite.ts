@@ -20,8 +20,30 @@ export async function setupVite(app: Express, server: Server) {
     appType: "custom",
   });
 
+  // The managed preview browser blocks Vite's default internal `/@fs` import
+  // used by the HMR client. Source modules only require this small API for
+  // optional hot callbacks, so a no-op client keeps the dev preview executable.
+  app.get("/@vite/client", (_req, res) => {
+    res.type("js").send(`
+      export function createHotContext() {
+        return { accept() {}, dispose() {}, prune() {}, decline() {}, invalidate() {}, on() {}, send() {} };
+      }
+      export function injectQuery(url) { return url; }
+      export function updateStyle() {}
+      export function removeStyle() {}
+      export const ErrorOverlay = class {};
+    `);
+  });
+
   app.use(vite.middlewares);
   app.use("*", async (req, res, next) => {
+    // The SPA fallback is only for browser navigations. Let Vite answer module
+    // requests (for example /src/* and /vite-cache/*) and leave API requests
+    // to their registered handlers rather than accidentally returning HTML.
+    if (req.method !== "GET" || !req.headers.accept?.includes("text/html")) {
+      return next();
+    }
+
     const url = req.originalUrl;
 
     try {

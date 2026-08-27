@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-26T09:59:42.898161+00:00",
+  "generatedAt": "2026-08-27T04:13:06.805938+00:00",
   "grade": "P3",
   "track": "chinese-reading",
-  "canonicalQuestionCount": 10,
-  "variantQuestionCount": 30,
+  "canonicalQuestionCount": 25,
+  "variantQuestionCount": 25,
   "model": "gpt-5-mini",
   "review": {
-    "batchSummary": "Part 1/5: Two P3 Chinese-reading items on the word 「努力」. Both items are clear, age-appropriate, have one unambiguous best answer (index 0), and test basic vocabulary understanding and correct usage. Recommend keeping both items as-is.\n\nPart 2/5: Reviewed 2 P3 Chinese-reading items (part 2 of 5). Both items are clear, grade-appropriate, and have a single best answer. Recommend keeping original wording and options.\n\nPart 3/5: Both P3 Chinese-reading inference items are clear, age-appropriate, and have a single best answer. No revision needed.\n\nPart 4/5: Two P3 Chinese reading items (context & rhetoric; sentence comprehension). Both items are clear, age-appropriate, have a single best answer, and match the claimed ability and difficulty. Recommend passing both without changes.\n\nPart 5/5: Both items are clear, age-appropriate P3 Chinese reading questions. Each has a single best answer, correct supplied key, and suitable distractors and difficulty.",
+    "batchSummary": "Part 1/25: Reviewed 1 P3 Chinese-reading item on idiom meaning. Item is clear, age-appropriate, and has one unambiguous correct answer; recommend passing without changes.\n\nPart 2/25: 1 item reviewed for P3 Chinese reading (成語運用). The item is clear, age-appropriate, and has one unambiguous best answer. Recommendation: PASS.\n\nPart 3/25: 1 item reviewed for P3 Chinese reading (錯別字辨識). The item is clear, age-appropriate, has one unambiguous correct answer and suitable distractors. Recommend passing without changes.\n\nPart 4/25: Reviewed 1 P3 Chinese-reading vocabulary item (詞義理解). Item is clear, age-appropriate, single best answer correct; recommend keeping original.\n\nPart 5/25: 1 item reviewed for P3 Chinese-reading (詞語搭配). The item is clear, age-appropriate, has a single best answer, and matches the claimed ability. Recommend passing without changes.\n\nPart 6/25: Reviewed 1 P3 Chinese-reading item on 因果複句; item is clear, age-appropriate, single-best answer, and passes.\n\nPart 7/25: One P3 Chinese-reading multiple-choice item testing sequential conjunctions. The item is clear, age-appropriate, has one unambiguous best answer, and suitable distractors. Recommend keeping the original.\n\nPart 8/25: Reviewed 1 P3 Chinese-reading item (punctuation). Item is clear, unambiguous, and grade-appropriate. Correct answer and single best choice confirmed.\n\nPart 9/25: 1 item reviewed for P3 Chinese reading (punctuation: 書名號). The item is clear, age-appropriate, unambiguous, and has a single best answer. Recommend PASS.\n\nPart 10/25: Reviewed 1 P3 Chinese-reading item on identifying a place name. Item is clear, unambiguous, and grade-appropriate — PASS.\n\nPart 11/25: 1 item reviewed for P3 Chinese reading (center-sentence identification). The item is clear, age-appropriate, has one unambiguous best answer, and aligns with the syllabus-level skill of identifying a paragraph's main idea.\n\nPart 12/25: 1 item reviewed. Item is clear, age-appropriate for P3, single best answer present. PASS.\n\nPart 13/25: 1 題審核：小學三年級中文閱讀題，測試段落大意。題目清晰、選項明確，正確答案無爭議，建議通過。\n\nPart 14/25: Reviewed 1 P3 Chinese-reading item on paragraph order. Item is clear, age-appropriate, and has a single best answer; recommend passing without change.\n\nPart 15/25: 此批次包含一題小學三年級中文閱讀理解題（段落題目）。題幹清楚，正確答案明確，適合該年級的理解難度，建議通過。\n\nPart 16/25: Reviewed 1 P3 Chinese-reading item on narrative order (倒敘). Item is clear, age-appropriate, and has one unambiguous correct answer; recommend keeping as is.\n\nPart 17/25: Reviewed 1 P3 Chinese-reading item (通知閱讀). The item is clear, age-appropriate, has a single unambiguous answer, and matches the claimed difficulty. Recommendation: PASS with no changes.\n\nPart 18/25: All items reviewed: 1 item. Item is clear, age-appropriate, has a single best answer and matches P3 syllabus; no revision needed.\n\nPart 19/25: One P3 Chinese-reading item reviewed. Item is clear, age-appropriate, and has a single best answer; no revision required.\n\nPart 20/25: 1 item reviewed for P3 Chinese reading (倒敘與實用文閱讀). The item is clear, age-appropriate, and has one unambiguous correct answer. Recommend keeping the original without changes.\n\nPart 21/25: Reviewed 1 P3 Chinese-reading item on basic rhetorical device (對偶). Item is clear, unambiguous, and appropriate for the grade.\n\nPart 22/25: Reviewed 1 P3 Chinese-reading item on reduplication (疊字). Item is clear, age-appropriate, has one unambiguous best answer, and can be kept as is.\n\nPart 23/25: Reviewed 1 item (P3 Chinese reading). The item is clear, age-appropriate, and has a single unambiguous correct answer; no revision needed.\n\nPart 24/25: 1 item reviewed (P3 Chinese reading). The item is clear, grade-appropriate, and has one unambiguous correct answer. Recommend keeping the original content.\n\nPart 25/25: Reviewed 1 item (P3 Chinese reading). Item is clear, age-appropriate, has a single unambiguous correct answer, and passes.",
     "reviews": [
       {
         "id": "chinese-reading-P3-0-0",
@@ -15,13 +15,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The meaning-choice item clearly asks for the closest meaning of 「努力」. The correct option (認真不放棄) is unambiguous and distractors are clearly incorrect and age-appropriate.",
-        "recommendedQuestion": "「努力」最接近下列哪一個意思？",
+        "reason": "The idiom 「專心一致」 clearly means to focus attention on one thing. The hint is helpful and age-appropriate for Primary 3. Distractors are plausible but clearly incorrect; there is one unambiguous best answer (選項 0). Vocabulary and sentence structure suit the stated grade and module.",
+        "recommendedQuestion": "「專心一致」最接近下列哪一個意思？",
         "recommendedOptions": [
-          "認真不放棄",
-          "很匆忙",
-          "不願意幫忙",
-          "聲音很大"
+          "集中精神做事",
+          "很多人一起說話",
+          "把東西排整齊",
+          "每天都去旅行"
         ],
         "recommendedCorrect": 0
       },
@@ -32,13 +32,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The sentence-selection item appropriately tests correct usage of 「努力」. Only the first sentence uses the word naturally and correctly; other options are nonsensical uses, suitable distractors for P3.",
-        "recommendedQuestion": "下列哪一句最適合使用「努力」？",
+        "reason": "「一心一意」意指專心、全心全意地做一件事。選項 1「小芳一心一意地完成圖畫。」正確且語意自然；選項 2 雖然語法可行，但語意不如選項 1 自然（搬桌子通常不用成語強調專注），選項 3 和 4 為語意不通的錯誤選項。題幹清楚、詞義提示恰當，且難度適合 P3。",
+        "recommendedQuestion": "下列哪一句最適合使用「一心一意」？",
         "recommendedOptions": [
-          "阿朗每天努力學習，成績進步了。",
-          "阿朗聽見好消息，感到努力。",
-          "雨傘的顏色很努力。",
-          "這條路走起來很努力。"
+          "小芳一心一意地完成圖畫。",
+          "小芳一心一意地把桌子搬走。",
+          "今天的天氣一心一意。",
+          "花園裏開滿一心一意。"
         ],
         "recommendedCorrect": 0
       },
@@ -49,13 +49,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The stem states a simple fact ('阿朗每天練習朗讀。') and option 1 exactly matches that main idea. Other options are unrelated, so there is a single clear answer suitable for P3.",
-        "recommendedQuestion": "阿朗每天練習朗讀。這段文字主要說明了甚麼？",
+        "reason": "The correct option is 已經 (index 0). The other options contain incorrect characters: 以經 uses 以 instead of 已; 已京 uses 京 (wrong character) instead of 經; 以京 has both characters wrong. The stem is unambiguous and suitable for P3 vocabulary recognition.",
+        "recommendedQuestion": "下列哪一個詞語沒有錯別字？",
         "recommendedOptions": [
-          "阿朗每天練習朗讀。",
-          "阿朗不想參加活動。",
-          "阿朗正在睡覺。",
-          "阿朗不見了物品。"
+          "已經",
+          "以經",
+          "已京",
+          "以京"
         ],
         "recommendedCorrect": 0
       },
@@ -66,13 +66,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The notice asks participants to arrive at 2:45pm; the latest acceptable arrival time is clearly 下午二時四十五分. Distractors are clearly incorrect.",
-        "recommendedQuestion": "通告寫着「一次服務經驗分享會下午三時開始，參加者請在二時四十五分到達。」最遲何時到達？",
+        "reason": "『茂盛』用於形容植物生長得多且有生氣、繁茂，選項「生長得又多又好」正確且與提示一致。其他三個選項（沒有葉子、剛被剪掉、顏色很暗）均與詞義無關，辨別明確且難度適合P3基礎題目。",
+        "recommendedQuestion": "花園裏的花草長得很「茂盛」。「茂盛」最接近甚麼意思？",
         "recommendedOptions": [
-          "下午二時四十五分",
-          "下午三時",
-          "下午三時十五分",
-          "下午四時"
+          "生長得又多又好",
+          "完全沒有葉子",
+          "剛剛被剪掉",
+          "顏色很暗"
         ],
         "recommendedCorrect": 0
       },
@@ -83,13 +83,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The action '每天練習朗讀' straightforwardly indicates diligence. The other options ('粗心大意', '不願合作', '害怕嘗試') do not fit the behaviour. Distractors are plausible but clearly inferior for P3 level.",
-        "recommendedQuestion": "阿朗每天練習朗讀，這最能反映他／她怎樣？",
+        "reason": "All options use the verb 欣賞 with different nouns. '欣賞風景' is the natural collocation taught at primary levels. The other options ('欣賞書包', '欣賞雨水', '欣賞鉛筆盒') are unnatural in everyday usage; a more acceptable variant for rain would be '欣賞雨景'. The stem is unambiguous and suitable for P3 vocabulary practice.",
+        "recommendedQuestion": "下列哪一個詞語搭配最自然？",
         "recommendedOptions": [
-          "勤奮",
-          "粗心大意",
-          "不願合作",
-          "害怕嘗試"
+          "欣賞風景",
+          "欣賞書包",
+          "欣賞雨水",
+          "欣賞鉛筆盒"
         ],
         "recommendedCorrect": 0
       },
@@ -100,13 +100,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "先了解資料再作決定 most likely shows a desire to make a better or more suitable choice. Other options contradict the behaviour or are implausible (e.g. '不想知道內容').",
-        "recommendedQuestion": "阿朗先了解資料才作決定，最可能是因為？",
+        "reason": "The sentence sets up a cause ('因為天氣炎熱') and requires a result conjunction. '所以' correctly links cause to result. The other options ('但是','如果','雖然') are grammatically incompatible as the intended connector. Distractors are plausible for this grade and not misleading.",
+        "recommendedQuestion": "「因為天氣炎熱，____ 同學們都帶了水樽。」填入哪一個詞最合適？",
         "recommendedOptions": [
-          "希望作出較合適的選擇",
-          "不想知道內容",
-          "想拖延時間",
-          "沒有任何原因"
+          "所以",
+          "但是",
+          "如果",
+          "雖然"
         ],
         "recommendedCorrect": 0
       },
@@ -117,13 +117,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The sentence uses personification—an inanimate wind is given a human action (“拍著”). The correct choice '人' is unambiguous for P3. Distractors are plausible in being inanimate but the hint directs to a human comparison. Wording and vocabulary are age-appropriate.",
-        "recommendedQuestion": "「微風輕輕拍著樹葉」主要把微風寫成像甚麼？",
+        "reason": "The sentence requires a word that shows sequence of two actions. “然後” correctly indicates that completing homework follows revising the text. Other options (因為, 可是, 雖然) create causal or contrast meanings and do not fit the temporal sequence; there is a single clear best choice. Vocabulary and structure are appropriate for Primary 3; distractors are plausible and educational.",
+        "recommendedQuestion": "「小英先溫習課文，____ 完成功課。」填入哪一個詞最合適？",
         "recommendedOptions": [
-          "人",
-          "石頭",
-          "書本",
-          "雨傘"
+          "然後",
+          "因為",
+          "可是",
+          "雖然"
         ],
         "recommendedCorrect": 0
       },
@@ -134,13 +134,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The question asks for the main message of a simple sentence. Option 1 ('人物、地點和主要行動') correctly summarizes the core information (who, where, what). Other options are irrelevant to sentence meaning. Clear and suitable for P3.",
-        "recommendedQuestion": "「我們在操場進行接力賽。」這句話中，最重要的訊息是甚麼？",
+        "reason": "The 頓號（、） is used to separate items in a list. In Chinese, items are separated by 頓號, and one normally does not place a 頓號 before the coordinating word '和'. Option 0 correctly places a 頓號 between the first two items and omits it before '和', so it is the best and unambiguous choice. The other options misuse the 頓號 or place it in the wrong position.",
+        "recommendedQuestion": "下列哪一句的頓號（、）用得最合適？",
         "recommendedOptions": [
-          "人物、地點和主要行動",
-          "句子的字數",
-          "所有標點名稱",
-          "顏色的數量"
+          "文具盒裏有鉛筆、原子筆和尺。",
+          "文具盒、裏有鉛筆原子筆和尺。",
+          "文具盒裏、有鉛筆原子筆和尺。",
+          "文具盒裏有鉛筆原子筆、和尺。"
         ],
         "recommendedCorrect": 0
       },
@@ -151,13 +151,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹描述文章先說準備方法再說參加收穫，最合適的主旨是鼓勵讀者準備並參與活動。其他選項與題意無關，干擾項簡潔且明顯不符，對P3為合適難度。",
-        "recommendedQuestion": "文章先介紹一次服務經驗的準備方法，再說明參加後的收穫，主旨最可能是？",
+        "reason": "書名號《》是標示書籍名稱的標點符號。選項一「我正在讀《小王子》。》正確使用了書名號；選項二使用雙引號「」通常用於引述或強調詞語；選項三〈〉不是標準用於書名的書名號；選項四使用括號（），也不適合標示書名。只有選項一是最合適的用法，沒有歧義。",
+        "recommendedQuestion": "下列哪一句的書名號用得最合適？",
         "recommendedOptions": [
-          "鼓勵讀者認真準備並參與活動",
-          "介紹所有人的姓名",
-          "比較不同天氣",
-          "只描述食物"
+          "我正在讀《小王子》。",
+          "我正在讀「小王子」。",
+          "我正在讀〈小王子〉。",
+          "我正在讀（小王子）。"
         ],
         "recommendedCorrect": 0
       },
@@ -168,13 +168,268 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "句子按先後順序列出三個動作（先、再、最後），最恰當的組織方式為「步驟順序」。其他選項與語句結構無關，符合P3理解能力。",
-        "recommendedQuestion": "「先找出重點，再整理想法，最後寫下回應。」這段文字主要按甚麼方式組織？",
+        "reason": "題幹清晰，選項中只有「香港」為地方名稱（專有名詞）；其他選項為普通名詞或形容詞/動名詞，沒有歧義。題目難度符合小三識別專名的教學目標，與主題「專名」相符。",
+        "recommendedQuestion": "下列哪一個是地方名稱？",
         "recommendedOptions": [
-          "步驟順序",
-          "人物對話",
-          "地點轉換",
-          "問題與答案"
+          "香港",
+          "書包",
+          "跑步",
+          "快樂"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-10-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The first sentence states the main idea (library is a quiet and convenient place to read), while the second sentence gives supporting detail (types of books). Other options are irrelevant. The supplied correct index (0) is correct and unambiguous for P3 students.",
+        "recommendedQuestion": "「圖書館是一個安靜又方便閱讀的地方。裏面有很多故事書和知識書。」哪一句最適合作這段的中心句？",
+        "recommendedOptions": [
+          "圖書館是一個安靜又方便閱讀的地方。",
+          "裏面有很多故事書和知識書。",
+          "我昨天帶了雨傘。",
+          "操場上有人踢球。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-11-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目明確問哪一句支持中心意思「運動對身體有好處」。選項1（每天跑步能令身體更健康。）直接支持該中心意思；其餘三項與中心意思無關，沒有多重合理答案，語言與難度均適合P3。",
+        "recommendedQuestion": "哪一句最能支持「運動對身體有好處」這個中心意思？",
+        "recommendedOptions": [
+          "每天跑步能令身體更健康。",
+          "我的書包是藍色的。",
+          "今天是星期三。",
+          "課室有六扇窗。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-12-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹列出阿明每天餵小貓、梳毛及清潔睡墊等行為，集中說明照顧小貓的事，選項 (A)「阿明照顧小貓」直接對應段落主旨；其他三個選項與段落內容無關，無模糊或多解情形。語詞與認知要求符合 P3 水平，難度為基礎且與單元（理解與應用）相符。",
+        "recommendedQuestion": "短文寫阿明每天準時餵小貓、替牠梳毛和清潔睡墊。這段主要寫甚麼？",
+        "recommendedOptions": [
+          "阿明照顧小貓",
+          "阿明到海邊游泳",
+          "阿明學習畫畫",
+          "阿明參加比賽"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-13-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks which sequence is most logical for writing an introduction to a school garden. The hint correctly guides students to introduce the place first, then describe sights, then give feelings. Option 0 (介紹花園→寫花草→說感受) follows that logical order and is clearly the best choice. Distractors are plausibly incorrect for this prompt, and there is no ambiguity or multiple defensible answers. Language and cognitive demand are appropriate for Primary 3.",
+        "recommendedQuestion": "寫一段介紹校園花園的文字，哪個次序較合理？",
+        "recommendedOptions": [
+          "介紹花園→寫花草→說感受",
+          "說感受→介紹花園→寫花草",
+          "寫花草→結尾→介紹花園",
+          "結尾→寫花草→介紹花園"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-14-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹說明段落介紹如何把舊報紙、膠樽和鋁罐分類回收。四個選項中只有「垃圾分類回收」能概括段落主要內容，其他三項與回收無關，沒有造成二義性，語言和概念符合小三程度。",
+        "recommendedQuestion": "一段文字介紹如何把舊報紙、膠樽和鋁罐分類回收。哪個題目最合適？",
+        "recommendedOptions": [
+          "垃圾分類回收",
+          "我的新同學",
+          "一次旅行",
+          "雨天的街道"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-15-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem clearly describes an instance where the text begins with a later event and then recounts earlier events, which precisely matches 倒敘 (flashback/retrograde narration). The distractors (順敘, 對話, 說明) are plausible for P3 students but not correct here. Language and cognitive demand are suitable for Primary 3.",
+        "recommendedQuestion": "文章一開始寫「想起昨天得獎的一刻，我仍然很興奮」，然後才交代比賽經過。這種寫法最接近甚麼？",
+        "recommendedOptions": [
+          "倒敘",
+          "順敘",
+          "對話",
+          "說明"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-16-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks students to extract the stated arrival time from a short notice. The correct option (下午二時四十五分) directly matches the notice. Wording is simple and suitable for Primary 3; distractors are plausible times but do not match the notice.",
+        "recommendedQuestion": "通知：『星期五下午三時在禮堂舉行音樂會，參加者請在二時四十五分到達。』參加者最遲何時到達？",
+        "recommendedOptions": [
+          "下午二時四十五分",
+          "下午三時",
+          "下午三時十五分",
+          "下午四時"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-17-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The short note clearly states whereabouts and return time. The correct option ('交代去向和回家時間') is unambiguous and suitable for P3 readers. Distractors are clearly irrelevant.",
+        "recommendedQuestion": "便條寫着：『媽媽，我到圖書館還書，六時回家。小敏』這張便條主要是用來做甚麼？",
+        "recommendedOptions": [
+          "交代去向和回家時間",
+          "邀請媽媽看電影",
+          "介紹一本新書",
+          "訂購午餐"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-18-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The salutation '親愛的表姐：' explicitly identifies the recipient as the writer's female maternal/paternal cousin (表姐). The distractors (老師、校長、郵差) are clearly incorrect. Language and cognitive demand are suitable for P3.",
+        "recommendedQuestion": "信的開頭寫「親愛的表姐：」，這封信最可能寫給誰？",
+        "recommendedOptions": [
+          "表姐",
+          "老師",
+          "校長",
+          "郵差"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-19-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The notification sentence explicitly lists the required items (剪刀和膠水). The stem asks directly what students should bring—there is one clear, unambiguous answer. Vocabulary and sentence structure are suitable for Primary 3. Distractors are plausible but clearly incorrect and not misleading.",
+        "recommendedQuestion": "通知說『請同學帶備剪刀和膠水，參加手工班。』同學應帶甚麼？",
+        "recommendedOptions": [
+          "剪刀和膠水",
+          "雨傘和水樽",
+          "課本和字典",
+          "足球和球拍"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-20-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence 「天對地，雨對風」 places pairs of opposing/parallel words, which matches the rhetorical device 對偶. Distractors (問句、比喻、書信) are clearly different in form and meaning. The stem, hint, and options are unambiguous and suitable for Primary 3.",
+        "recommendedQuestion": "「天對地，雨對風」把兩組意思相對的詞語排在一起，最接近哪種寫法？",
+        "recommendedOptions": [
+          "對偶",
+          "問句",
+          "比喻",
+          "書信"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-21-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "「青青」用作疊字，表示顏色很青且有生氣、鮮嫩的樣子。選項一「又青又有生氣」準確表達了疊字的意思；其餘選項（非常高大、完全枯黃、正在唱歌）與詞義不符，題意清晰且無二義性，符合小三程度的閱讀理解要求。",
+        "recommendedQuestion": "「小草青青」中的「青青」最能寫出小草怎樣？",
+        "recommendedOptions": [
+          "又青又有生氣",
+          "非常高大",
+          "完全枯黃",
+          "正在唱歌"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-22-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The line \"少小離家老大回\" uses the first-person narrator (hint clarifies “我” is the poet). The question asks who returned to the hometown; the poet himself is the only correct interpretation. Distractors are clearly incorrect and age-appropriate.",
+        "recommendedQuestion": "「少小離家老大回」寫的是誰回到故鄉？",
+        "recommendedOptions": [
+          "詩人自己",
+          "詩人的老師",
+          "詩人的朋友",
+          "一隻小鳥"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-23-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks which thing '沒有改變' according to the line '鄉音無改鬢毛衰'. The phrase '鄉音無改' explicitly states the hometown accent has not changed, so option 0 is clearly correct. Distractors are plausible but not defensible. Language and cognitive demand are appropriate for Primary 3.",
+        "recommendedQuestion": "「鄉音無改鬢毛衰」中，甚麼沒有改變？",
+        "recommendedOptions": [
+          "說話的鄉音",
+          "頭髮的顏色",
+          "居住的房子",
+          "旅途的天氣"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P3-24-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The task asks pupils to identify the line that has seven characters. Counting characters shows only '少小離家老大回' has seven characters; the other options have 5 or 4 characters. The stem, hint, and options are unambiguous and suitable for P3.",
+        "recommendedQuestion": "下列哪一句有七個字，較符合七言詩一句的形式？",
+        "recommendedOptions": [
+          "少小離家老大回",
+          "鵝鵝鵝曲項",
+          "床前明月",
+          "小雨沙沙落"
         ],
         "recommendedCorrect": 0
       }

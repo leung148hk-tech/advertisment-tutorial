@@ -1,0 +1,288 @@
+{
+  "generatedAt": "2026-08-27T04:03:17.262331+00:00",
+  "grade": "P2",
+  "track": "chinese-reading",
+  "canonicalQuestionCount": 25,
+  "variantQuestionCount": 25,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/13: Reviewed 2 P2 Chinese reading items (synonym and antonym recognition). Both items' labels and topics accurately describe the skill tested; modules are educationally coherent.\n\nPart 2/13: Reviewed 2 P2 Chinese-reading items (part 2 of 13). Both items correctly labelled and filed; no changes required.\n\nPart 3/13: Reviewed 2 items (P2 Chinese reading, part 3 of 13). Both items accurately match the described P2 parent domains, labels and module; no changes required.\n\nPart 4/13: Reviewed 2 P2 Chinese-reading items (sentence-type identification). Both items correctly test recognition of sentence types and align with the supplied P2 parent domain and metadata.\n\nPart 5/13: 已審核 2 項 P2 中文閱讀題目：兩項皆與「句式與標點運用」主題、標籤與模組一致，建議維持原有標記 (PASS)。\n\nPart 6/13: Reviewed 2 P2 Chinese reading items (part 6 of 13). Both items measure skills consistent with their supplied metadata. Recommend no changes.\n\nPart 7/13: Reviewed 2 P2 Chinese-reading items (part 7 of 13). Both items measure paragraph/main‑idea and sequencing skills aligned to the P2 domain and use an appropriate instructional module. Recommend no changes.\n\nPart 8/13: Reviewed 2 P2 Chinese-reading items (part 8 of 13). Both items measure the labelled skills and use an appropriate P2 topic and module; no substantive metadata changes needed.\n\nPart 9/13: Reviewed 2 P2 Chinese-reading items (part 9 of 13). Both items appropriately labelled and placed; no substantive metadata changes required.\n\nPart 10/13: Reviewed 2 P2 Chinese-reading items (part 10 of 13). Both items measure straightforward narrative-comprehension skills in the '看圖與敘事閱讀' domain; their supplied labels and module are appropriate. Recommend no changes.\n\nPart 11/13: Reviewed 2 P2 Chinese-reading items (part 11). Both items test recognition of basic rhetorical devices (排比 and 反覆) and their metadata correctly align with the P2 parent domain and module.\n\nPart 12/13: Reviewed 2 P2 Chinese-reading items (part 12 of 13). Both items appropriately target recognition and understanding of imagery/time in a five-character classical poem and metadata are coherent.\n\nPart 13/13: Reviewed 1 P2 Chinese reading item (part 13 of 13). All metadata fields accurately describe the skill tested; no changes required.",
+    "reviews": [
+      {
+        "id": "chinese-reading-P2-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to choose a word with the closest meaning to 「高興」, which directly tests synonym recognition. The topic '詞義辨析與查字典' is the correct P2 parent domain. The module '理解與應用' appropriately describes the comprehension/application skill.",
+        "recommendedTopic": "詞義辨析與查字典",
+        "recommendedLabel": "近義詞辨識",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires selecting the antonym of 「高」, directly testing antonym recognition. The topic '詞義辨析與查字典' matches the P2 domain for word-meaning analysis. '理解與應用' is an appropriate module classification.",
+        "recommendedTopic": "詞義辨析與查字典",
+        "recommendedLabel": "反義詞辨識",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests the ability to identify the radical (部首) of the character '跑' to look up its meaning — this is exactly '查字典' using 部首. The provided topic '詞義辨析與查字典', label '部首查字典', and module '理解與應用' accurately describe the skill.",
+        "recommendedTopic": "詞義辨析與查字典",
+        "recommendedLabel": "部首查字典",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses using stroke-count lookup when the radical is unknown (數筆畫查字典). The topic '詞義辨析與查字典', label '筆畫查字典', and module '理解與應用' correctly reflect the tested skill.",
+        "recommendedTopic": "詞義辨析與查字典",
+        "recommendedLabel": "筆畫查字典",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify words that express mood (emotion vocabulary). This is a vocabulary/word-meaning classification skill, which fits the P2 parent domain '詞義辨析與查字典'. The label '詞語分類' correctly names the subskill and the module '理解與應用' is an appropriate instructional descriptor.",
+        "recommendedTopic": "詞義辨析與查字典",
+        "recommendedLabel": "詞語分類",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires identifying a declarative sentence, which is a sentence-type/grammar recognition task and aligns with the P2 parent domain '句式與標點運用'. The label '陳述句辨識' accurately describes the measured skill and '理解與應用' is an appropriate module.",
+        "recommendedTopic": "句式與標點運用",
+        "recommendedLabel": "陳述句辨識",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify an interrogative sentence. This directly assesses sentence-type recognition, which fits P2's '句式與標點運用'. The label '疑問句辨識' precisely names the subskill, and the module '理解與應用' is appropriate for this basic recognition task.",
+        "recommendedTopic": "句式與標點運用",
+        "recommendedLabel": "疑問句辨識",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify an imperative (request) sentence. This is a sentence-type recognition task matching P2's '句式與標點運用'. The label '祈使句辨識' accurately names the subskill, and '理解與應用' is an appropriate module.",
+        "recommendedTopic": "句式與標點運用",
+        "recommendedLabel": "祈使句辨識",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹測驗冒號與引號在直接引語中的正確用法，與標註的父題目「句式與標點運用」以及精確標籤「冒號與引號運用」完全一致；模組「理解與應用」也適切反映所需技能。",
+        "recommendedTopic": "句式與標點運用",
+        "recommendedLabel": "冒號與引號運用",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹在察覺並解釋引號的作用（標示說話內容），與父題目「句式與標點運用」及標籤「引號作用」相符；模組「理解與應用」亦恰當。",
+        "recommendedTopic": "句式與標點運用",
+        "recommendedLabel": "引號作用",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-10-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks for the main idea of a short paragraph (who and what happened). The label '段落大意' correctly names the subskill and the topic '段落大意與順敘' is the appropriate P2 parent domain. The module '理解與應用' is educationally coherent for this comprehension task.",
+        "recommendedTopic": "段落大意與順敘",
+        "recommendedLabel": "段落大意",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-11-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests understanding of sequence (last action). The label '順敘次序' accurately names the subskill and the topic '段落大意與順敘' matches the P2 parent domain. The module '理解與應用' fits this comprehension/sequence task.",
+        "recommendedTopic": "段落大意與順敘",
+        "recommendedLabel": "順敘次序",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-12-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to order morning activities (sequence of events). The P2 parent domain '段落大意與順敘' explicitly includes ordering/sequence skills; the label '事情先後' accurately names the tested skill. The module '理解與應用' is an appropriate instructional grouping.",
+        "recommendedTopic": "段落大意與順敘",
+        "recommendedLabel": "事情先後",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-13-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires selecting a suitable title that captures the main idea of a short passage about caring for goldfish. This fits the P2 domain '段落大意與順敘' (main idea/ordering). The label '段落題目' correctly names the specific skill; the module '理解與應用' is appropriate.",
+        "recommendedTopic": "段落大意與順敘",
+        "recommendedLabel": "段落題目",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-14-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to choose a sequencing connective for an ordered series of actions, which is a direct test of順敘 (sequence) vocabulary. The topic '段落大意與順敘' correctly identifies the P2 domain, the label '順敘詞語' precisely names the subskill, and the module '理解與應用' is educationally coherent for this item.",
+        "recommendedTopic": "段落大意與順敘",
+        "recommendedLabel": "順敘詞語",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-15-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires identifying who is performing an action from a short picture/text description, which fits the P2 '看圖與敘事閱讀' domain. The label '看圖找人物' accurately describes the specific skill, and '理解與應用' is an appropriate module classification.",
+        "recommendedTopic": "看圖與敘事閱讀",
+        "recommendedLabel": "看圖找人物",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-16-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks the student to locate a character's position from short picture text ('媽媽在廚房洗菜…媽媽在哪裏？'), which is a basic looking-at-picture / reading-for-details task. The supplied topic '看圖與敘事閱讀' correctly names the parent domain for P2. The label '看圖找地點' precisely describes the skill (finding location from a picture/text). The module '理解與應用' is an educationally coherent placement for this comprehension task.",
+        "recommendedTopic": "看圖與敘事閱讀",
+        "recommendedLabel": "看圖找地點",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-17-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires identifying the cause in a short narrative ('上學時下起大雨，小安打開雨傘…小安為甚麼打開雨傘？'), which fits P2's narrative comprehension domain. The topic '看圖與敘事閱讀' correctly captures this. The label '敘事起因' accurately names the specific skill (recognising cause in a narrative). The module '理解與應用' is an appropriate categorisation for extracting stated reasons from text.",
+        "recommendedTopic": "看圖與敘事閱讀",
+        "recommendedLabel": "敘事起因",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-18-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem asks for the final event in a short narrative, which is a direct test of identifying the story's outcome. The topic '看圖與敘事閱讀' and the label '敘事結果' correctly name this skill, and the module '理解與應用' suitably describes the comprehension task.",
+        "recommendedTopic": "看圖與敘事閱讀",
+        "recommendedLabel": "敘事結果",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-19-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks which actions the character performed (washing the lunchbox and putting it back), so it assesses recognition of人物行動 within a short narrative. The topic and label match the skill, and '理解與應用' is an appropriate module classification.",
+        "recommendedTopic": "看圖與敘事閱讀",
+        "recommendedLabel": "人物行動",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-20-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem asks students to identify the writing technique that links similar elements ('有的...有的...'), which is recognition of 排比 (parallelism). The label '排比初步' accurately names this subskill. The topic '修辭與五言絕句' is an allowed P2 parent domain that includes rhetorical devices, and the module '理解與應用' suits the item.",
+        "recommendedTopic": "修辭與五言絕句",
+        "recommendedLabel": "排比初步",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-21-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks why a phrase is repeated ('快來呀，快來呀'), testing recognition of the rhetorical device 反覆 (repetition) and its pragmatic effect (strengthening invitation). The label '反覆初步' correctly names this subskill. The topic '修辭與五言絕句' is appropriate for rhetorical-device items at P2, and '理解與應用' fits the cognitive demand.",
+        "recommendedTopic": "修辭與五言絕句",
+        "recommendedLabel": "反覆初步",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-22-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks the time of day described by the line from a five-character poem, which is a literal-reading skill about imagery/time in classical verse. The topic '修辭與五言絕句' correctly names the parent domain for P2, the label '古詩時間' precisely describes the subskill, and the module '理解與應用' fits the comprehension task.",
+        "recommendedTopic": "修辭與五言絕句",
+        "recommendedLabel": "古詩時間",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-23-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks what the moonlight is likened to in the poem (identifying the image/metaphor), which falls under rhetorical devices and imagery in five-character verse. The provided topic, label ('古詩畫面'), and module ('理解與應用') accurately reflect the skill tested.",
+        "recommendedTopic": "修辭與五言絕句",
+        "recommendedLabel": "古詩畫面",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P2-24-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks for a literal identification of the image mentioned in a line from a five-character poem (五言), so it tests recognition of poem imagery within the P2 parent domain '修辭與五言絕句'. The label '古詩景物' correctly names the specific skill (identifying scenery/object in an ancient poem). The module '理解與應用' appropriately describes the cognitive demand (comprehension and simple application). No metadata changes needed.",
+        "recommendedTopic": "修辭與五言絕句",
+        "recommendedLabel": "古詩景物",
+        "recommendedModule": "理解與應用"
+      }
+    ]
+  }
+}

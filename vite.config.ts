@@ -163,6 +163,7 @@ export default defineConfig({
   },
   envDir: path.resolve(import.meta.dirname),
   root: path.resolve(import.meta.dirname, "client"),
+  cacheDir: path.resolve(import.meta.dirname, "client", "vite-cache"),
   publicDir: path.resolve(import.meta.dirname, "client", "public"),
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
@@ -181,7 +182,7 @@ export default defineConfig({
     ],
     fs: {
       strict: true,
-      deny: ["**/.*"],
+      deny: ["**/.git/**", "**/.env", "**/.env.*"],
     },
   },
 });

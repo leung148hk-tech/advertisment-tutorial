@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-26T11:20:56.001814+00:00",
+  "generatedAt": "2026-08-27T04:41:16.059009+00:00",
   "grade": "P5",
   "track": "chinese-reading",
-  "canonicalQuestionCount": 10,
-  "variantQuestionCount": 30,
+  "canonicalQuestionCount": 25,
+  "variantQuestionCount": 25,
   "model": "gpt-5-mini",
   "review": {
-    "batchSummary": "Part 1/5: Reviewed 2 items (each has two context-only variants). Both items measure vocabulary knowledge (meaning recognition and contextual usage). The supplied topic, label and module are appropriate; no substantive metadata changes needed. Verdict: PASS for both.\n\nPart 2/5: Reviewed 2 items for P5 Chinese reading (part 2 of 5). Both items' metadata appropriately match the skill actually tested; no revisions required.\n\nPart 3/5: Reviewed 2 items (P5 Chinese reading, part 3 of 5). Both items ask students to infer a character trait or the reason for a character's action from a short description, and the supplied metadata (label, topic, module) accurately reflect that skill.\n\nPart 4/5: Reviewed 2 items (P5 Chinese reading). Both items accurately labelled and categorised — no revision needed.\n\nPart 5/5: Reviewed 2 items for P5 Chinese reading. Both items measure straightforward reading-comprehension skills (main idea identification; text/paragraph organization). Metadata for both items is educationally coherent and accurately labels the measured skills. Recommend no changes.",
+    "batchSummary": "Part 1/13: Reviewed 2 P5 Chinese reading items (part 1 of 13). Both items correctly assess recognition of word sentiment (positive/negative/neutral) and their metadata is appropriate.\n\nPart 2/13: Reviewed 2 P5 Chinese-reading items (part 2 of 13). Both items correctly mapped to the given P5 parent domain and have accurate labels and module assignments. Recommend no changes.\n\nPart 3/13: Reviewed 2 P5 Chinese-reading items (part 3 of 13). Both items accurately label the skill being tested and use appropriate P5 parent domains and module names. Recommend no changes.\n\nPart 4/13: 已審核 2 項 P5 中文閱讀題目元資料：2 項均通過（PASS）。\n\nPart 5/13: Reviewed 2 P5 Chinese-reading items (part 5 of 13). Both items correctly labelled and assigned to the given P5 parent domain and module; no revision needed.\n\nPart 6/13: Reviewed 2 P5 Chinese reading items (part 6 of 13). Both items measure skills aligned to the P5 parent domain '要點歸納與思想感情' and their labels and modules are appropriate. Recommend PASS for both.\n\nPart 7/13: Reviewed 2 P5 Chinese reading items (part 7 of 13). Both items correctly target the stated P5 parent domain and have appropriate labels and module assignments. Recommend no changes.\n\nPart 8/13: Reviewed 2 P5 Chinese reading items (part 8 of 13). Both items' metadata appropriately match the actual skills tested; no changes recommended.\n\nPart 9/13: Reviewed 2 P5 Chinese-reading items (part 9 of 13). Both items measure skills that align with their supplied topic, label and module and are judged PASS.\n\nPart 10/13: Reviewed 2 P5 Chinese-reading items (part 10 of 13). Both items' topic, label and module metadata appropriately match the skill actually measured; both PASS.\n\nPart 11/13: Reviewed 2 P5 Chinese reading items (part 11 of 13). Both items correctly align with the P5 parent domain for律詩, labels accurately describe the tested subskills, and the module '理解與應用' is appropriate. Recommend no changes.\n\nPart 12/13: Reviewed 2 P5 Chinese reading items (part 12 of 13). Both items align with the stated P5 parent domain and metadata; no substantive revisions needed.\n\nPart 13/13: Reviewed 1 P5 Chinese reading item(s). All metadata fields appear appropriate for the skill tested.",
     "reviews": [
       {
         "id": "chinese-reading-P5-0-0",
@@ -14,9 +14,9 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "題幹問「『堅持』最接近哪一個意思？」並以選項提供不同釋義，明確測驗詞語的意義辨識能力。標籤「字詞理解」、主題「字詞理解與運用」及模組「基礎掌握」都恰當描述此技能。",
-        "recommendedTopic": "字詞理解與運用",
-        "recommendedLabel": "字詞理解",
+        "reason": "The item asks students to identify the affective connotation of a word (是否稱讚), which directly matches the P5 parent domain '詞語感情色彩與詞義' and the label '褒義詞'. The module '基礎掌握' is an appropriate classification for a basic connotation recognition task.",
+        "recommendedTopic": "詞語感情色彩與詞義",
+        "recommendedLabel": "褒義詞",
         "recommendedModule": "基礎掌握"
       },
       {
@@ -25,9 +25,9 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "題幹要求從句子中選出最適合使用『堅持』的一句，測驗學生在語境中運用詞語的能力。標籤「詞語運用」比單純的詞義辨識更精確，但現有主題「字詞理解與運用」與模組「基礎掌握」也都適切。",
-        "recommendedTopic": "字詞理解與運用",
-        "recommendedLabel": "詞語運用",
+        "reason": "The item requires identifying negative connotation (是否批評) of a word, which fits the P5 domain '詞語感情色彩與詞義' and the label '貶義詞'. The module '基礎掌握' appropriately reflects the item's basic difficulty.",
+        "recommendedTopic": "詞語感情色彩與詞義",
+        "recommendedLabel": "貶義詞",
         "recommendedModule": "基礎掌握"
       },
       {
@@ -36,10 +36,10 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "The question asks for the main message conveyed by the sentence (identify what the person did). '訊息定位' (locating the information/message) and the label/module '訊息定位' / '理解與應用' fit the skill being assessed.",
-        "recommendedTopic": "訊息定位",
-        "recommendedLabel": "訊息定位",
-        "recommendedModule": "理解與應用"
+        "reason": "題幹要求學生判斷詞語的感情色彩（辨識中性詞），這與 P5 的父題『詞語感情色彩與詞義』一致；標籤『中性詞』精確描述要測的子技能；模組『基礎掌握』也適合基礎辨識題型。",
+        "recommendedTopic": "詞語感情色彩與詞義",
+        "recommendedLabel": "中性詞",
+        "recommendedModule": "基礎掌握"
       },
       {
         "id": "chinese-reading-P5-3-0",
@@ -47,10 +47,10 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "The item requires locating a specific detail (the latest arrival time) from a short notice. '訊息定位' as topic and '細節理解' as label under '理解與應用' accurately describe the skill.",
-        "recommendedTopic": "訊息定位",
-        "recommendedLabel": "細節理解",
-        "recommendedModule": "理解與應用"
+        "reason": "題幹要求根據語境判斷詞義（『尖銳』在此句中的意思），屬於 P5 父題『詞語感情色彩與詞義』範疇；標籤『語境詞義』恰當；模組『基礎掌握』也合適。",
+        "recommendedTopic": "詞語感情色彩與詞義",
+        "recommendedLabel": "語境詞義",
+        "recommendedModule": "基礎掌握"
       },
       {
         "id": "chinese-reading-P5-4-0",
@@ -58,10 +58,10 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "The item asks students to infer a character trait from an action (modifying a plan and trying again), which is precisely '人物推論' and fits within the broader topic '人物與原因推論' and the module '情境推理' (drawing inferences from situational behaviour).",
-        "recommendedTopic": "人物與原因推論",
-        "recommendedLabel": "人物推論",
-        "recommendedModule": "情境推理"
+        "reason": "The item asks students to choose a positively connoted word meaning 'responsible' (盡責). This tests recognition of word meaning and evaluative (positive/negative) connotation, which aligns with the P5 parent domain '詞語感情色彩與詞義' and the specific subskill '褒貶運用'. The module '基礎掌握' is an appropriate classification.",
+        "recommendedTopic": "詞語感情色彩與詞義",
+        "recommendedLabel": "褒貶運用",
+        "recommendedModule": "基礎掌握"
       },
       {
         "id": "chinese-reading-P5-5-0",
@@ -69,10 +69,10 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "The item asks students to infer the likely reason for a character's behaviour (seeking information before deciding). This is correctly labelled '原因推論' and fits the topic '人物與原因推論' and module '情境推理' (inferring causes from actions).",
-        "recommendedTopic": "人物與原因推論",
-        "recommendedLabel": "原因推論",
-        "recommendedModule": "情境推理"
+        "reason": "The item requires selecting the correct connective for a conditional-result sentence ('只要...，____能逐步掌握...'), testing understanding of condition-result conjunctions. This fits the P5 domain '條件假設複句與破折號' and the subskill label '條件複句'. The module '基礎掌握' is appropriate.",
+        "recommendedTopic": "條件假設複句與破折號",
+        "recommendedLabel": "條件複句",
+        "recommendedModule": "基礎掌握"
       },
       {
         "id": "chinese-reading-P5-6-0",
@@ -80,10 +80,10 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "The item asks students to recognise a rhetorical device (inanimate object given human action), i.e. personification. The label '修辭手法', topic '語境、修辭與句意' and module '理解與應用' correctly describe this skill.",
-        "recommendedTopic": "語境、修辭與句意",
-        "recommendedLabel": "修辭手法",
-        "recommendedModule": "理解與應用"
+        "reason": "題幹要求在條件句「如果……，____遠足便會改期。」中選出合適的結果連接詞，屬於判斷假設複句中結果語氣的能力。所給主題「條件假設複句與破折號」包含此技能，標籤「假設複句」準確描述題目聚焦，難度與模組（基礎掌握）一致。",
+        "recommendedTopic": "條件假設複句與破折號",
+        "recommendedLabel": "假設複句",
+        "recommendedModule": "基礎掌握"
       },
       {
         "id": "chinese-reading-P5-7-0",
@@ -91,10 +91,10 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "The item requires identifying the main message of a single sentence (sentence-level meaning). The label '句意理解', topic '語境、修辭與句意' and module '理解與應用' accurately reflect this skill.",
-        "recommendedTopic": "語境、修辭與句意",
-        "recommendedLabel": "句意理解",
-        "recommendedModule": "理解與應用"
+        "reason": "題幹詢問破折號在句中作用（補充說明名稱），屬於破折號標點的功能辨識，正屬於所列主題「條件假設複句與破折號」中的破折號部分。標籤「破折號作用」直接且恰當地描述題目測驗的子技能，模組與難度標示合理。",
+        "recommendedTopic": "條件假設複句與破折號",
+        "recommendedLabel": "破折號作用",
+        "recommendedModule": "基礎掌握"
       },
       {
         "id": "chinese-reading-P5-8-0",
@@ -102,10 +102,10 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "The item asks students to infer the article's central message from described content — this is clearly a main-idea (主旨辨認) task. The topic '整合閱讀' (integrative reading) and module '理解與應用' appropriately describe the comprehension skill required.",
-        "recommendedTopic": "整合閱讀",
-        "recommendedLabel": "主旨辨認",
-        "recommendedModule": "理解與應用"
+        "reason": "The item asks students to identify a conditional (條件) complex sentence. The topic '條件假設複句與破折號' and label '條件句判斷' accurately describe the assessed skill; module '基礎掌握' is appropriate.",
+        "recommendedTopic": "條件假設複句與破折號",
+        "recommendedLabel": "條件句判斷",
+        "recommendedModule": "基礎掌握"
       },
       {
         "id": "chinese-reading-P5-9-0",
@@ -113,10 +113,175 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "The item asks students to recognise the organisation/sequence of actions in a passage — a text-structure/paragraph-relationship skill. The label '段落關係', topic '整合閱讀', and module '理解與應用' accurately reflect the measured skill.",
-        "recommendedTopic": "整合閱讀",
-        "recommendedLabel": "段落關係",
+        "reason": "The question tests recognition of a hypothetical situation signalled by '假如'. The topic and label correctly identify this skill within the P5 domain; module '基礎掌握' is suitable.",
+        "recommendedTopic": "條件假設複句與破折號",
+        "recommendedLabel": "假設情況",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P5-10-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks the student to condense several actions into a single main idea (summarise the key point about volunteers). This directly tests '要點歸納' within the P5 parent domain '要點歸納與思想感情'. The label '要點歸納' correctly names the precise skill, and the module '理解與應用' is an appropriate categorisation for a comprehension-and-summary task.",
+        "recommendedTopic": "要點歸納與思想感情",
+        "recommendedLabel": "要點歸納",
         "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P5-11-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks what emotion or feeling the scenery evokes (景物襯托甚麼), which tests recognising expressed feelings via imagery — fitting the '思想感情' element of the P5 parent domain. The label '借景抒情' accurately identifies the rhetorical device being tested, and '理解與應用' suitably describes the cognitive demand.",
+        "recommendedTopic": "要點歸納與思想感情",
+        "recommendedLabel": "借景抒情",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P5-12-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the feeling expressed by the phrase “新學期充滿希望,” so it assesses the author's emotion/attitude. The provided topic '要點歸納與思想感情' (a P5 parent domain) correctly covers identifying feelings, the label '作者感情' accurately names the specific skill, and the module '理解與應用' is an appropriate instructional category.",
+        "recommendedTopic": "要點歸納與思想感情",
+        "recommendedLabel": "作者感情",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P5-13-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the main idea of a passage urging water/electricity saving, so it assesses paragraph/main-idea identification. The topic '要點歸納與思想感情' correctly encompasses extracting main points, the label '段落要點' precisely names the skill, and the module '理解與應用' is appropriate.",
+        "recommendedTopic": "要點歸納與思想感情",
+        "recommendedLabel": "段落要點",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P5-14-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks the student to infer the essay's emotional theme from a repeated image (old tree), which is exactly within P5 '要點歸納與思想感情'. The label '抒情線索' (detecting lyrical/emotional clues) correctly names the subskill. The module '理解與應用' is appropriate.",
+        "recommendedTopic": "要點歸納與思想感情",
+        "recommendedLabel": "抒情線索",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P5-15-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires identifying the author's argumentative claim from a sentence advocating action, fitting P5 '議論與散文閱讀'. The label '議論觀點' accurately describes the skill tested. The module '理解與應用' is suitable.",
+        "recommendedTopic": "議論與散文閱讀",
+        "recommendedLabel": "議論觀點",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P5-16-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify a reason that directly supports the viewpoint (步行上學有好處), which is precisely argument/evidence identification. The label 論據辨識 correctly names the subskill. The parent topic 議論與散文閱讀 is the appropriate P5 domain for recognising arguments in persuasive text. The module 理解與應用 accurately reflects the comprehension/application cognitive demand.",
+        "recommendedTopic": "議論與散文閱讀",
+        "recommendedLabel": "論據辨識",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P5-17-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the communicative function of a rhetorical question (反問), so the label 反問作用 correctly specifies the micro-skill. The parent topic 議論與散文閱讀 appropriately covers rhetorical devices in argumentative/prose texts at P5. The module 理解與應用 suits the task of identifying function and applying that understanding.",
+        "recommendedTopic": "議論與散文閱讀",
+        "recommendedLabel": "反問作用",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P5-18-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify the rhetorical method used in a short argumentative sentence (ask-and-answer). This is a rhetorical device recognition task, which fits the P5 parent domain '議論與散文閱讀'. The label '設問作用' precisely names the tested subskill (recognising the function of 設問). The module '理解與應用' correctly reflects understanding and applying rhetorical knowledge.",
+        "recommendedTopic": "議論與散文閱讀",
+        "recommendedLabel": "設問作用",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P5-19-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the contextual meaning of '書聲', a word-meaning-in-context task. This aligns with the P5 parent domain '詞語感情色彩與詞義'. The label '詞義辨析' accurately names the subskill. The module '基礎掌握' is appropriate for a core vocabulary comprehension question.",
+        "recommendedTopic": "詞語感情色彩與詞義",
+        "recommendedLabel": "詞義辨析",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P5-20-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the typical number of lines in a 律詩, which directly tests knowledge of律詩格式. The label '律詩句數' precisely names the skill and the topic '律詩格式、文化與內容理解' is the correct P5 parent domain. '理解與應用' suits this knowledge-question.",
+        "recommendedTopic": "律詩格式、文化與內容理解",
+        "recommendedLabel": "律詩句數",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P5-21-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests the concept of 對仗 in 律詩 (matching line length and parts of speech), so the label '律詩對仗' and the P5 topic '律詩格式、文化與內容理解' are accurate. The module '理解與應用' is appropriate for this conceptual recognition task.",
+        "recommendedTopic": "律詩格式、文化與內容理解",
+        "recommendedLabel": "律詩對仗",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P5-22-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks what result is produced by similar end sounds in lines of a poem (押韻), which directly matches the label '律詩押韻' and fits the P5 parent domain '律詩格式、文化與內容理解'. The module '理解與應用' is appropriate for identifying the effect of rhyme.",
+        "recommendedTopic": "律詩格式、文化與內容理解",
+        "recommendedLabel": "律詩押韻",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P5-23-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks what emotion is being evoked by the lines, which tests understanding of poetic feeling and content. This fits the P5 parent domain '律詩格式、文化與內容理解' and the label '詩歌感情'; the module '理解與應用' is appropriate.",
+        "recommendedTopic": "律詩格式、文化與內容理解",
+        "recommendedLabel": "詩歌感情",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P5-24-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the meaning of the phrase \"家書抵萬金,\" testing vocabulary/idiom interpretation in a poetic/literary context. The provided topic (詞語感情色彩與詞義) correctly names the parent-domain skill for P5; the label (詩句詞義) precisely identifies the subskill being assessed; and the module (基礎掌握) is appropriate for a core-level meaning-recognition question.",
+        "recommendedTopic": "詞語感情色彩與詞義",
+        "recommendedLabel": "詩句詞義",
+        "recommendedModule": "基礎掌握"
       }
     ]
   }

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { ASSESSMENT_MODULES, buildQuestionPool, randomAssessment } from "./gradedAssessment";
+import { ASSESSMENT_MODULES, buildQuestionPool, randomAssessment, TRACKS } from "./gradedAssessment";
 
 describe("assessment module reporting", () => {
   it("exposes all five report modules, including communication and collaboration", () => {
@@ -16,6 +16,24 @@ describe("assessment module reporting", () => {
     expect([...groupCounts.values()]).toEqual([4, 4, 4, 4, 4]);
     expect(questions.some((question) => question.module === "溝通與協作")).toBe(true);
     expect(questions.every((question) => ASSESSMENT_MODULES.includes(question.module))).toBe(true);
+  });
+
+  it("uses five unique Chinese-reading domains per primary grade and removes the primary Chinese-writing entry", () => {
+    expect(TRACKS.find((track) => track.id === "chinese-writing")?.grades).toEqual(["S1", "S2", "S3"]);
+    for (const grade of ["P1", "P2", "P3", "P4", "P5", "P6"] as const) {
+      const pool = buildQuestionPool("chinese-reading", grade);
+      const questions = randomAssessment("chinese-reading", grade);
+      const groupCounts = new Map<string, number>();
+      for (const question of questions) groupCounts.set(question.selectionGroup, (groupCounts.get(question.selectionGroup) ?? 0) + 1);
+      expect(pool).toHaveLength(25);
+      expect(new Set(pool.map((question) => question.question)).size).toBe(25);
+      expect(new Set(pool.map((question) => question.topic)).size).toBe(5);
+      expect(new Set(pool.map((question) => question.selectionGroup)).size).toBe(5);
+      expect(questions).toHaveLength(20);
+      expect(groupCounts.size).toBe(5);
+      expect([...groupCounts.values()].sort()).toEqual([4, 4, 4, 4, 4]);
+      expect(pool.some((question) => question.topic.includes("情境推理"))).toBe(false);
+    }
   });
 
   it("keeps S1–S3 classical sentence questions and answers aligned to each grade", () => {

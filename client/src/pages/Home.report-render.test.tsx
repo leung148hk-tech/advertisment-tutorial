@@ -4,6 +4,7 @@ import { cleanup, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { ASSESSMENT_MODULES, randomAssessment, type AssessmentQuestion, type GradeId } from "@/data/gradedAssessment";
+import { PRIMARY_CHINESE_READING_FRAMEWORK } from "@/data/primaryChineseReadingFramework";
 
 vi.mock("@/components/FeaturedCentres", () => ({ default: () => null }));
 vi.mock("@/components/RegionalSupport", () => ({ default: () => null }));
@@ -89,5 +90,45 @@ describe("Home interview report module rendering", () => {
     expect(scorePairs.reduce((total, pair) => total + Number(pair?.[2] ?? 0), 0)).toBe(20);
     expect(scorePairs.reduce((total, pair) => total + Number(pair?.[1] ?? 0), 0)).toBe(Number(summary.match(/\d+/)?.[0] ?? 0));
     for (const module of ASSESSMENT_MODULES) expect(displayedScores.get(module)).toEqual(expectedScores.get(module));
+  });
+});
+
+async function openPrimaryChineseReadingReport(grade: "小一" | "小六") {
+  window.scrollTo = vi.fn();
+  const gradeId: GradeId = grade === "小一" ? "P1" : "P6";
+  const randomSpy = vi.spyOn(Math, "random");
+  randomSpy.mockImplementation(deterministicRandom());
+  const user = userEvent.setup();
+  const view = render(<Home />);
+
+  await user.click(screen.getByRole("button", { name: grade }));
+  expect(screen.queryByRole("button", { name: /^中文寫作/ })).toBeNull();
+  expect(screen.getByText("25 題獨立題庫 · 閱讀理解")).toBeTruthy();
+  await user.click(screen.getByRole("button", { name: /^中文閱讀/ }));
+  for (let index = 0; index < 20; index += 1) {
+    await user.click(screen.getAllByRole("radio")[0]);
+    await user.click(screen.getByRole("button", { name: index === 19 ? "生成免費報告" : "下一題" }));
+  }
+  await user.click(screen.getByRole("button", { name: "完成測驗資料" }));
+  const report = view.container.querySelector<HTMLElement>(".download-report");
+  if (!report) throw new Error("Expected the completed primary Chinese-reading report to render.");
+  randomSpy.mockRestore();
+  return { gradeId, report };
+}
+
+describe("Home primary Chinese-reading report rendering", () => {
+  it.each(["小一", "小六"] as const)("renders the authorised five Chinese-reading domains for %s without generic reasoning modules", async (grade) => {
+    const { gradeId, report } = await openPrimaryChineseReadingReport(grade);
+    const expectedDomains = PRIMARY_CHINESE_READING_FRAMEWORK[gradeId as "P1" | "P6"].domains.map((domain) => domain.label);
+    const cards = report.querySelectorAll(".module-score-grid > article");
+    const displayedDomains = Array.from(cards, (card) => card.querySelector("span")?.textContent ?? "");
+
+    expect(within(report).getByText("5 個中文閱讀範疇")).toBeTruthy();
+    expect(within(report).getByText("中文閱讀範疇概覽")).toBeTruthy();
+    expect(within(report).queryByText("情境推理")).toBeNull();
+    expect(within(report).queryByText("5 個模組")).toBeNull();
+    expect(cards).toHaveLength(5);
+    expect(displayedDomains).toEqual(expectedDomains);
+    expect(Array.from(cards, (card) => card.textContent ?? "").every((text) => /\/\s*4/.test(text))).toBe(true);
   });
 });

@@ -1,0 +1,288 @@
+{
+  "generatedAt": "2026-08-27T04:15:21.497041+00:00",
+  "grade": "P3",
+  "track": "chinese-reading",
+  "canonicalQuestionCount": 25,
+  "variantQuestionCount": 25,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/25: Reviewed 1 P3 Chinese reading item(s). All metadata fields accurately describe the skill tested.\n\nPart 2/25: 1 item reviewed for P3 Chinese reading (part 2 of 25). All metadata fields were checked for alignment with the skill measured by the item.\n\nPart 3/25: Reviewed 1 item (P3 Chinese reading). All metadata fields are appropriate for the skill tested.\n\nPart 4/25: Reviewed 1 item: 1 PASS.\n\nPart 5/25: Reviewed 1 item for P3 Chinese reading (part 5). 1 PASS, 0 REVISE, 0 ESCALATE.\n\nPart 6/25: Reviewed 1 P3 Chinese reading item (part 6 of 25).\n\nPart 7/25: Reviewed 1 P3 Chinese reading item (part 7 of 25).\n\nPart 8/25: Reviewed 1 item (P3 Chinese reading). 1 PASS, 0 REVISE, 0 ESCALATE.\n\nPart 9/25: Reviewed 1 P3 Chinese-reading item (part 9 of 25).\n\nPart 10/25: Reviewed 1 item for P3 Chinese reading. Item assesses identification of a place-name (proper noun); metadata aligns with stem and options.\n\nPart 11/25: Reviewed 1 P3 Chinese reading item (part 11 of 25).\n\nPart 12/25: Reviewed 1 P3 Chinese reading item (part 12). Metadata appropriately matches the skill tested; no changes recommended.\n\nPart 13/25: Reviewed 1 item for P3 Chinese reading (part 13 of 25): metadata aligns with the skill measured; PASS.\n\nPart 14/25: Reviewed 1 P3 Chinese-reading item (part 14 of 25).\n\nPart 15/25: Reviewed 1 P3 Chinese-reading item(s). The item's topic, label and module correctly match the skill tested (identifying main idea / choosing a suitable paragraph title). Recommend PASS for the metadata.\n\nPart 16/25: Reviewed 1 item for P3 Chinese reading (part 16 of 25): 1 PASS, 0 REVISE, 0 ESCALATE.\n\nPart 17/25: Reviewed 1 P3 Chinese-reading item (part 17). Item tests locating explicit time information in a notice (practical text). Metadata correctly identifies the parent domain, specific subskill, and module level.\n\nPart 18/25: Reviewed 1 item (P3 Chinese reading). Metadata accurately reflects the skill tested.\n\nPart 19/25: 1 item reviewed for P3 Chinese reading. The item's label, topic and module correctly describe the skill tested: identifying the recipient of a letter from its salutation (practical-text reading comprehension). No changes needed.\n\nPart 20/25: Reviewed 1 P3 Chinese-reading item. Metadata accurately describes the skill tested; no changes needed.\n\nPart 21/25: Reviewed 1 item for P3 Chinese reading (part 21 of 25): 1 PASS, 0 REVISE, 0 ESCALATE.\n\nPart 22/25: Reviewed 1 P3 Chinese-reading item; metadata accurately reflects the skill tested.\n\nPart 23/25: Reviewed 1 item: 1 PASS.\n\nPart 24/25: 1 item reviewed for P3 Chinese reading. All metadata fields (topic, label, module) appropriately match the skill required by the item; no revisions needed.\n\nPart 25/25: Reviewed 1 item: 1 PASS. Metadata aligns with the skill the item measures.",
+    "reviews": [
+      {
+        "id": "chinese-reading-P3-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the meaning of a 成語 (idiom), which directly tests vocabulary/idiom knowledge. The provided P3 parent topic '詞彙、成語與字詞辨錯' matches this skill. The label '成語意思' precisely names the subskill. The module '基礎掌握' is appropriate for a basic-level meaning-recognition item.",
+        "recommendedTopic": "詞彙、成語與字詞辨錯",
+        "recommendedLabel": "成語意思",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P3-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to select the sentence that correctly uses the idiom 「一心一意」, so it assesses idiom/vocabulary usage. The supplied topic '詞彙、成語與字詞辨錯' directly corresponds to idiom and word usage at P3. The label '成語運用' accurately names the precise skill. '基礎掌握' is an appropriate, coherent module classification for this straightforward item.",
+        "recommendedTopic": "詞彙、成語與字詞辨錯",
+        "recommendedLabel": "成語運用",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P3-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹與提示要求學生從四個選項中辨認哪一個沒有錯別字，實測的是字形辨識與錯別字識別能力，這正屬於 P3 範疇的「詞彙、成語與字詞辨錯」。標籤「錯別字辨識」精確描述該項技能；模組「基礎掌握」與題目難度（基礎）相符。",
+        "recommendedTopic": "詞彙、成語與字詞辨錯",
+        "recommendedLabel": "錯別字辨識",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P3-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the meaning of the word 「茂盛」, so it tests vocabulary/word-meaning knowledge. That maps directly to the P3 parent domain '詞彙、成語與字詞辨錯' and the label '詞義理解'. The module '基礎掌握' appropriately describes the basic-level difficulty and skill.",
+        "recommendedTopic": "詞彙、成語與字詞辨錯",
+        "recommendedLabel": "詞義理解",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P3-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem asks students to choose the most natural word collocation (verb-noun pairing), which is a vocabulary/word-use task and aligns with the P3 parent domain '詞彙、成語與字詞辨錯'. The label '詞語搭配' correctly names the specific subskill tested. The module '基礎掌握' is an educationally coherent classification for this fundamental vocabulary item.",
+        "recommendedTopic": "詞彙、成語與字詞辨錯",
+        "recommendedLabel": "詞語搭配",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P3-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to choose an appropriate cause–effect conjunction to complete a sentence where the first clause gives a cause and the second clause gives the result. This directly assesses recognition/use of 因果複句, which fits the provided label and the P3 parent domain '複句、標點與專名'. The module '基礎掌握' is an educationally coherent description of the expected skill level.",
+        "recommendedTopic": "複句、標點與專名",
+        "recommendedLabel": "因果複句",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P3-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to choose the correct conjunction indicating temporal sequence (two actions in order). This is a straightforward test of selecting a sequential/承接複句 connective, so the label '承接複句' and the topic '複句、標點與專名' appropriately describe the skill. The module '基礎掌握' fits the simple difficulty of the item.",
+        "recommendedTopic": "複句、標點與專名",
+        "recommendedLabel": "承接複句",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P3-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify correct use of the Chinese enumerative comma (頓號). The provided topic '複句、標點與專名' explicitly includes punctuation (標點), so it correctly names the tested domain. The label '頓號運用' precisely describes the subskill. The module '基礎掌握' aligns with the item's basic difficulty and hint. No changes needed.",
+        "recommendedTopic": "複句、標點與專名",
+        "recommendedLabel": "頓號運用",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P3-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to choose the sentence with the correct use of Chinese book-title marks, so the precise skill is '書名號運用' (use of title marks). The topic '複句、標點與專名' explicitly includes punctuation use, matching the tested skill and aligning with the P3 parent domains. The module '基礎掌握' is appropriate for this straightforward punctuation recognition task.",
+        "recommendedTopic": "複句、標點與專名",
+        "recommendedLabel": "書名號運用",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P3-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks students to identify a place name (proper noun). The label '專名辨識' precisely names that skill. The P3 parent topic '複句、標點與專名' includes 專名, so the topic correctly classifies the item. The module '基礎掌握' appropriately reflects the basic level of the task.",
+        "recommendedTopic": "複句、標點與專名",
+        "recommendedLabel": "專名辨識",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P3-10-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to choose the sentence that best serves as the paragraph's main idea, which directly assesses '中心句辨識' within the P3 parent domain '中心句與段落組織'. The provided label accurately names the specific skill. The module '理解與應用' is an appropriate, educationally coherent description of the cognitive demand (reading comprehension and application).",
+        "recommendedTopic": "中心句與段落組織",
+        "recommendedLabel": "中心句辨識",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P3-11-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks the student to identify which sentence supports a given central idea, which is precisely a 'supporting detail' task within the P3 parent domain '中心句與段落組織'. The module '理解與應用' appropriately describes the cognitive demand.",
+        "recommendedTopic": "中心句與段落組織",
+        "recommendedLabel": "支持細節",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P3-12-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks for the main idea of a short paragraph describing repeated actions (feeding, grooming, cleaning) — this directly assesses paragraph main idea / central sentence recognition and paragraph organization. The supplied topic '中心句與段落組織' and label '段落大意' accurately name the skill. The module '理解與應用' is educationally coherent for a comprehension task.",
+        "recommendedTopic": "中心句與段落組織",
+        "recommendedLabel": "段落大意",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P3-13-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to choose a logical order for composing a short paragraph describing a school garden, so it assesses paragraph organisation and sequencing. The supplied topic '中心句與段落組織' correctly names the P3 parent domain. The label '段落次序' precisely matches the subskill tested (ordering content within a paragraph). The module '理解與應用' is educationally coherent for this task because the item requires comprehension of writing structure and application of ordering principles.",
+        "recommendedTopic": "中心句與段落組織",
+        "recommendedLabel": "段落次序",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P3-14-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks the student to select a title that best summarizes a paragraph about sorting old newspapers, plastic bottles and aluminium cans—this directly assesses '中心句與段落組織' (identifying main idea/organising paragraphs). The label '段落題目' accurately names the concrete task (choosing a paragraph title). The module '理解與應用' fits the cognitive demand of understanding and applying comprehension to select an appropriate heading.",
+        "recommendedTopic": "中心句與段落組織",
+        "recommendedLabel": "段落題目",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P3-15-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks students to recognise the narrative device of presenting the effect before the sequence of events (a flashback). The label '倒敘辨識' precisely names that skill. The topic '倒敘與實用文閱讀' is one of the P3 parent domains and appropriately covers this item. The module '理解與應用' is an educationally coherent descriptor for this comprehension/application task.",
+        "recommendedTopic": "倒敘與實用文閱讀",
+        "recommendedLabel": "倒敘辨識",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P3-16-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question requires extracting a specific detail (reporting time) from a notice, which is exactly '實用文閱讀' within the P3 parent domain '倒敘與實用文閱讀'. The label '通知閱讀' accurately names the subskill, and the module '理解與應用' fits the cognitive demand of locating and understanding explicit information.",
+        "recommendedTopic": "倒敘與實用文閱讀",
+        "recommendedLabel": "通知閱讀",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P3-17-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify the main purpose of a short practical note (便條), which falls under the P3 parent domain '倒敘與實用文閱讀' and is precisely described by the label '便條目的'. The module '理解與應用' appropriately describes the cognitive demand of understanding and applying the note's message.",
+        "recommendedTopic": "倒敘與實用文閱讀",
+        "recommendedLabel": "便條目的",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P3-18-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks students to identify the recipient from the salutation \"親愛的表姐：\", which is a practical-text (書信) reading comprehension task. This fits the P3 parent domain \"倒敘與實用文閱讀\" and the specific label \"書信對象\" accurately names the tested subskill. The module \"理解與應用\" appropriately describes the cognitive demand (comprehension/application).",
+        "recommendedTopic": "倒敘與實用文閱讀",
+        "recommendedLabel": "書信對象",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P3-19-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks the student to locate explicit items listed in a notice and select the correct supplies — a straightforward practical-text detail question. This matches the P3 parent domain '倒敘與實用文閱讀' and the specific subskill label '通知事項'. The module '理解與應用' appropriately describes the expected comprehension-and-application task.",
+        "recommendedTopic": "倒敘與實用文閱讀",
+        "recommendedLabel": "通知事項",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P3-20-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify the rhetorical form shown by paired, opposing phrases (“天對地，雨對風”), which is precisely recognition of 對偶 (antithesis/parallelism). This is a subskill of the P3 parent domain 修辭與七言絕句, so the supplied topic is appropriate. The label '對偶初步' correctly names the specific skill tested. The module '理解與應用' fits the cognitive demand of recognizing and applying the rhetorical category. All metadata fields accurately reflect the item.",
+        "recommendedTopic": "修辭與七言絕句",
+        "recommendedLabel": "對偶初步",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P3-21-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem asks for the effect of the reduplicated adjective “青青,” so the precise skill is recognizing the作用 of 疊字 (a修辭手法). The supplied topic '修辭與七言絕句' correctly includes 修辭 for P3, the label '疊字作用' names the exact subskill, and the module '理解與應用' is an appropriate descriptor for this comprehension/application task.",
+        "recommendedTopic": "修辭與七言絕句",
+        "recommendedLabel": "疊字作用",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P3-22-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks who '我' (the speaker) in the line of a seven-character quatrain is — identifying the poem's speaker is a人物辨識 (person identification) task within the domain 修辭與七言絕句. The module 理解與應用 appropriately describes comprehension/application of the line.",
+        "recommendedTopic": "修辭與七言絕句",
+        "recommendedLabel": "人物辨識",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P3-23-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks the student to identify a specific detail from a 七言絕句 line ('鄉音無改鬢毛衰'), i.e. what has not changed (the speaker's accent). The topic '修辭與七言絕句' is an appropriate parent domain for this poetic line, the label '細節辨識' accurately names the precise skill of extracting a detail from the text, and the module '理解與應用' coherently describes the cognitive demand.",
+        "recommendedTopic": "修辭與七言絕句",
+        "recommendedLabel": "細節辨識",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P3-24-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to count characters to identify a seven-character line, which directly assesses knowledge of seven-character verse (修辭與七言絕句). The label '七言句字數辨識' accurately names the specific skill. The module '理解與應用' is an appropriate broad descriptor of the cognitive demand.",
+        "recommendedTopic": "修辭與七言絕句",
+        "recommendedLabel": "七言句字數辨識",
+        "recommendedModule": "理解與應用"
+      }
+    ]
+  }
+}

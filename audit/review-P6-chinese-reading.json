@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-26T10:37:46.149888+00:00",
+  "generatedAt": "2026-08-27T04:43:16.797341+00:00",
   "grade": "P6",
   "track": "chinese-reading",
-  "canonicalQuestionCount": 10,
-  "variantQuestionCount": 30,
+  "canonicalQuestionCount": 25,
+  "variantQuestionCount": 25,
   "model": "gpt-5-mini",
   "review": {
-    "batchSummary": "Part 1/5: Two P6 Chinese vocabulary/use items reviewed. Both items correctly target the meaning and use of the word 「審慎」, have clear distractors, a single best answer, and are appropriate in difficulty and language for Primary 6. Recommend keeping both items unchanged.\n\nPart 2/5: Reviewed 2 P6 Chinese reading items (message locating and detail understanding). Both items are clear, unambiguous, have a single best answer, and are appropriate for P6. Recommend passing both without changes.\n\nPart 3/5: 兩題均為小六閱讀中常見的人物與原因推論題。題幹清晰、選項具誤導性但單一最佳答案明確，符合小六程度，建議通過（PASS）。\n\nPart 4/5: Both items are clear, age-appropriate P6 Chinese reading questions testing figurative language and sentence main idea. Each has a single best answer and aligns with the specified module and difficulty.\n\nPart 5/5: 兩題皆為小六閱讀理解基礎題，題幹、選項清晰、單一最佳答案明確，符合年級與題型要求，建議通過（PASS）。",
+    "batchSummary": "Part 1/13: Reviewed 2 P6 Chinese-reading items on idiom/proverb usage. Both items are clear, age-appropriate, have a single best answer, and match the indicated difficulty and module.\n\nPart 2/13: 本批次 2 題均為小六水平的成語/歇後語理解，題幹清晰、選項明確、只有一個最佳答案，建議通過。\n\nPart 3/13: Reviewed 2 P6 Chinese-reading items (part 3 of 13). Both items are clear, have a single best answer, and are appropriate for the grade and stated skill level — marked PASS.\n\nPart 4/13: Reviewed 2 P6 Chinese-reading items on 讓步遞進複句與標點. Both items are correct, unambiguous, grade-appropriate and have a single best answer. Recommend keeping original items unchanged.\n\nPart 5/13: Reviewed 2 P6 Chinese-reading items (part 5 of 13). Both items are clear, have a single best answer, and are grade-appropriate. Recommend retaining original items as provided.\n\nPart 6/13: 兩題均為小六中文閱讀理解的基礎比較與文本證據題。兩題題幹明確、唯一最佳答案清晰，選項簡潔且年齡適切，適合本年級的能力範疇。\n\nPart 7/13: Two P6 Chinese reading items (comparison of claim/reason and comparing main idea) were reviewed. Both items are clear, have one unambiguous best answer, are appropriate for P6, and require no revision.\n\nPart 8/13: Reviewed 2 P6 Chinese-reading items. Both items PASS: stems clear, single best answers, age-appropriate and syllabus-adjacent; no revision needed.\n\nPart 9/13: Reviewed 2 P6 Chinese-reading items on 文言實詞 and 雙關. Both items are accurate, unambiguous, grade-appropriate, and have a single best answer. Recommend PASS for both.\n\nPart 10/13: Reviewed 2 P6 Chinese-reading items (parts of rhetoric and fable meaning). Both items are accurate, unambiguous, and grade-appropriate; accept as-is.\n\nPart 11/13: Reviewed 2 P6 Chinese-reading items on Song ci appreciation. Both items are clear, age-appropriate, have one best answer, and pass without revision.\n\nPart 12/13: 本批次包含 2 題，皆為小六古詩賞析。題幹語言簡潔、針對詩句意象出題，四個選項中有明顯最佳答案，符合年級能力與課程重點，建議通過。\n\nPart 13/13: 1 item (P6 Chinese reading, 古詩宋詞賞析). The item is clear, age-appropriate, has one unambiguous best answer and aligns with the syllabus theme of imagery in classical poetry. Recommend PASS without changes.",
     "reviews": [
       {
         "id": "chinese-reading-P6-0-0",
@@ -15,13 +15,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "「審慎」意指謹慎、慎重，最貼切的選項是「仔細考慮後才決定」。其他三個選項（很匆忙、不願意幫忙、聲音很大）與詞義無關，沒有歧義，適合P6詞語理解題型。",
-        "recommendedQuestion": "「審慎」最接近下列哪一個意思？",
+        "reason": "The stem asks which sentence best uses the idiom '持之以恆' (to persist over time). Option 0 correctly and naturally shows long-term practice; other options are nonsensical uses. Distractors are clearly wrong for P6 level.",
+        "recommendedQuestion": "哪句最適合用「持之以恆」？",
         "recommendedOptions": [
-          "仔細考慮後才決定",
-          "很匆忙",
-          "不願意幫忙",
-          "聲音很大"
+          "他每天練琴，持之以恆。",
+          "他持之以恆地睡着。",
+          "雨天持之以恆。",
+          "書包很持之以恆。"
         ],
         "recommendedCorrect": 0
       },
@@ -32,13 +32,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "選句題目正確檢核「審慎」的用法。句子「面對重要的決定，他會審慎考慮。」自然且符合詞義（謹慎地考慮）；其餘選項在語意或搭配上不通順或不合適，因此只有一個最適當選項。",
-        "recommendedQuestion": "下列哪一句最適合使用「審慎」？",
+        "reason": "The proverb '一分耕耘，一分收穫' expresses that effort leads to results. Option 0 matches this meaning directly; other options contradict the proverb. Item is clear and suitable for P6.",
+        "recommendedQuestion": "「一分耕耘，一分收穫」說明甚麼？",
         "recommendedOptions": [
-          "面對重要的決定，他會審慎考慮。",
-          "風景畫的色彩十分審慎。",
-          "聽到玩笑後，他不禁感到審慎起來。",
-          "這台機器的運轉聲音非常審慎。"
+          "努力才有成果",
+          "運氣最重要",
+          "不用付出",
+          "只要等待"
         ],
         "recommendedCorrect": 0
       },
@@ -49,13 +49,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹清晰，問「這段文字主要說明了甚麼？」四個選項中只有第一項與題幹原句一致，其他為明顯無關之干擾項。題目對小六程度的訊息定位能力合適且沒有二義性。",
-        "recommendedQuestion": "子晴比較資料後才提出建議。這段文字主要說明了甚麼？",
+        "reason": "「馬馬虎虎」常用作形容做事不認真、不仔細。題幹與提示（根據表現判斷）明確，四個選項中只有「不仔細」合適，無歧義。",
+        "recommendedQuestion": "「馬馬虎虎檢查功課」的意思是甚麼？",
         "recommendedOptions": [
-          "子晴比較資料後才提出建議。",
-          "子晴不想參加活動。",
-          "子晴正在睡覺。",
-          "子晴不見了物品。"
+          "不仔細",
+          "很勇敢",
+          "很安靜",
+          "很準時"
         ],
         "recommendedCorrect": 0
       },
@@ -66,13 +66,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹引用通告明確寫出報到時間「二時四十五分」，問題直接問「最遲何時到達？」唯一正確且無歧義的選項為下午二時四十五分，符合小六閱讀細節定位能力。",
-        "recommendedQuestion": "通告寫着「我對校園生活的建議分享會下午三時開始，參加者請在二時四十五分到達。」最遲何時到達？",
+        "reason": "歇後語「芝麻開花——節節高」用來祝願事業或學業步步高升、持續進步。題目與提示一致，唯一正確選項為「不斷進步」。",
+        "recommendedQuestion": "「芝麻開花——節節高」祝願甚麼？",
         "recommendedOptions": [
-          "下午二時四十五分",
-          "下午三時",
-          "下午三時十五分",
-          "下午四時"
+          "不斷進步",
+          "永遠不變",
+          "立刻休息",
+          "四處旅行"
         ],
         "recommendedCorrect": 0
       },
@@ -83,13 +83,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹直接從行為（比較資料後才提出建議）推論性格特質，四個選項中「認真負責」最貼切，其他選項與行為不符或牽強。語言與認知要求適合小六。",
-        "recommendedQuestion": "子晴比較資料後才提出建議，這最能反映他／她怎樣？",
+        "reason": "The sentence '把問題看清楚' uses '看' in the sense of '理解和分析'. Distractors are distinct and plausible alternate meanings of '看'. The correct index (0) is unambiguous and suitable for P6.",
+        "recommendedQuestion": "「把問題看清楚」中的「看」最接近甚麼？",
         "recommendedOptions": [
-          "認真負責",
-          "願意分享",
-          "不願合作",
-          "害怕嘗試"
+          "理解和分析",
+          "照相",
+          "探望病人",
+          "看守物品"
         ],
         "recommendedCorrect": 0
       },
@@ -100,13 +100,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹詢問行為背後的可能原因，選項中「希望作出較合適的選擇」直接說明先了解資料的正當動機，其他選項與行為相悖或不合邏輯。難度與表述均合適小六學生。",
-        "recommendedQuestion": "子晴先了解資料才作決定，最可能是因為？",
+        "reason": "The concessive construction '即使...，...也...' requires a subject after the comma. '我們' is the only option that fits grammatically and logically. Other choices are conjunctions or causal words and do not fit the blank.",
+        "recommendedQuestion": "「即使遇困難，____也不輕易放棄。」填哪詞？",
         "recommendedOptions": [
-          "希望作出較合適的選擇",
-          "不想知道內容",
-          "想拖延時間",
-          "沒有任何原因"
+          "我們",
+          "所以",
+          "但是",
+          "因為"
         ],
         "recommendedCorrect": 0
       },
@@ -117,13 +117,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The stem asks about personification: '微風輕輕拍著樹葉' attributes a human action to the wind. Option '人' is the clear, single best answer. Language is simple and suitable for P6; distractors are plausible but not misleading.",
-        "recommendedQuestion": "「微風輕輕拍著樹葉」主要把微風寫成像甚麼？",
+        "reason": "The sentence '他不但準時交功課，____主動幫人。' correctly calls for a connective that shows progression. '不但...而且...' is the standard collocation. Other options ('但是', '如果', '因為') are clearly inappropriate here. The item is clear and suitable for P6.",
+        "recommendedQuestion": "「他不但準時交功課，____主動幫人。」填哪詞？",
         "recommendedOptions": [
-          "人",
-          "石頭",
-          "書本",
-          "雨傘"
+          "而且",
+          "但是",
+          "如果",
+          "因為"
         ],
         "recommendedCorrect": 0
       },
@@ -134,13 +134,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The sentence's main message is that clear communication helps a group make appropriate decisions. Option 0 restates this directly. Other options contradict or distort the original meaning. Wording and cognitive demand suit P6 curriculum.",
-        "recommendedQuestion": "「清晰的溝通有助小組作出合適決定。」這句話中，最重要的訊息是甚麼？",
+        "reason": "Option 0 '老師說：「請按時交功課。」' correctly uses the quotation marks and places the full stop inside the quotes for reported speech. The other options contain punctuation errors and are clearly incorrect. The item is clear and suitable for P6.",
+        "recommendedQuestion": "哪句標點最合適？",
         "recommendedOptions": [
-          "溝通要清晰，才能幫助小組作出合適的決定。",
-          "小組應避免溝通，以免浪費時間。",
-          "每個成員應單獨作決定，不必討論。",
-          "做決定時只需聽從領導者的意見。"
+          "老師說：「請按時交功課。」",
+          "老師說「：請交功課。」",
+          "老師：說，「請交功課」。",
+          "老師說，請「交功課。」"
         ],
         "recommendedCorrect": 0
       },
@@ -151,13 +151,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹指出先介紹準備方法、再說明參加後收穫，選項中只有「鼓勵讀者認真準備並參與活動」與此主旨一致；其他選項與文章內容不相關，為明確的誘答錯誤選項。語言與認知要求符合小六水平。",
-        "recommendedQuestion": "文章先介紹我對校園生活的建議的準備方法，再說明參加後的收穫，主旨最可能是？",
+        "reason": "Question asks students to identify a concessive (讓步) sentence. Options are distinct and only the first sentence ('雖然路遠，他仍準時到達。') correctly expresses a concession. Distractors test other basic clause relations (因果、條件、並列) appropriate for P6.",
+        "recommendedQuestion": "哪句表達讓步關係？",
         "recommendedOptions": [
-          "鼓勵讀者認真準備並參與活動",
-          "介紹所有人的姓名",
-          "比較不同天氣",
-          "只描述食物"
+          "雖然路遠，他仍準時到達。",
+          "因為路遠，所以遲到。",
+          "如果路遠，就乘車。",
+          "一邊走一邊談。"
         ],
         "recommendedCorrect": 0
       },
@@ -168,13 +168,268 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "句子列出三個按時間先後的動作（先、再、最後），明顯為步驟順序的組織方式；其他選項不符。題目簡潔，符合小六閱讀段落結構判斷能力。",
-        "recommendedQuestion": "「先找出重點，再整理想法，最後寫下回應。」這段文字主要按甚麼方式組織？",
+        "reason": "Asks meaning of the correlative conjunction '不但……而且……'. The correct interpretation is 遞進關係 (progressive/additive). Other options are plausible conjunction types but are clearly incorrect, so the item has a single best answer and suits P6 syllabus.",
+        "recommendedQuestion": "「不但……而且……」表達甚麼？",
         "recommendedOptions": [
-          "步驟順序",
-          "人物對話",
-          "地點轉換",
-          "問題與答案"
+          "遞進關係",
+          "因果關係",
+          "轉折關係",
+          "假設關係"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-10-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹問兩篇主張不同載體（紙本與電子書）但共同關注的議題。四個選項中只有「閱讀習慣」與書籍載體直接相關，為唯一合理答案。題目語言和難度符合P6的閱讀比較要求，干擾項（運動比賽、天氣、烹飪）明顯無關，辨別度良好。",
+        "recommendedQuestion": "甲文主張紙本書，乙文主張電子書，兩文共同關注甚麼？",
+        "recommendedOptions": [
+          "閱讀習慣",
+          "運動比賽",
+          "天氣",
+          "烹飪"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-11-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目要求找出支持「步行有助健康」的直接證據。四個選項中只有「步行增加每天活動量。」明確說明有助健康，為直接且唯一的證據。其他選項與健康無關，干擾合理且明顯，符合P6文本證據題型。",
+        "recommendedQuestion": "支持「步行有助健康」的直接證據是甚麼？",
+        "recommendedOptions": [
+          "步行增加每天活動量。",
+          "步行鞋有不同顏色。",
+          "路邊有商店。",
+          "星期日不上課。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-12-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence '應設閱讀角，因為能專心閱讀。' clearly separates claim and reason. '能專心閱讀' is the supporting reason. Distractors are obviously incorrect for this question and age level.",
+        "recommendedQuestion": "「應設閱讀角，因為能專心閱讀。」哪部分是理由？",
+        "recommendedOptions": [
+          "能專心閱讀",
+          "應設閱讀角",
+          "安靜兩字",
+          "同學名字"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-13-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Both speakers discuss ways to save (water and electricity), so their shared claim is to cherish or conserve resources. Other options are irrelevant.",
+        "recommendedQuestion": "甲談節水，乙談節電，主張有何相同？",
+        "recommendedOptions": [
+          "珍惜資源",
+          "購買電器",
+          "增加用量",
+          "只談天氣"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-14-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 gives a direct causal reason why campuses should plant more trees (shade and improved air), which directly supports the claim. The other options are irrelevant or non-causal and therefore weak as evidence. The stem, hint and options are clear and suitable for P6.",
+        "recommendedQuestion": "支持「校園應多種樹」最直接的是甚麼？",
+        "recommendedOptions": [
+          "樹木提供遮蔭和改善空氣。",
+          "樹葉有形狀。",
+          "有人愛綠色。",
+          "操場有圍欄。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-15-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The classical sentence expresses that learning and regularly reviewing it brings pleasure (「說」=悅/快樂). Option 0 correctly captures this meaning. Other options misinterpret the sentence. This is appropriate for P6 exposure to simple 文言句意.",
+        "recommendedQuestion": "「學而時習之，不亦說乎」主要說甚麼？",
+        "recommendedOptions": [
+          "常溫習很愉快",
+          "只玩樂便快樂",
+          "不用學習",
+          "只考前溫習"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-16-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "『三人行，必有我師焉』中的「師」意指可作為學習對象的人（可向其學習的人），選項「值得學習的人」準確且其他選項明顯為干擾項，題目與小六語文程度相符。",
+        "recommendedQuestion": "「三人行，必有我師焉」的「師」最接近甚麼？",
+        "recommendedOptions": [
+          "值得學習的人",
+          "軍隊",
+          "課室",
+          "禮物"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-17-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹描述『一句話同時有兩層相關意思』正是「雙關」的定義。其餘選項（排比、設問、對偶）與題意不符，題目清晰且符合小六程度。",
+        "recommendedQuestion": "一句話同時有兩層相關意思，叫甚麼？",
+        "recommendedOptions": [
+          "雙關",
+          "排比",
+          "設問",
+          "對偶"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-18-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence repeats the final word of the first clause as the opening of the next clause — this is the rhetorical device 頂真 (anadiplosis). Distractors are plausible but not correct. Language and concept are suitable for P6.",
+        "recommendedQuestion": "「知識帶來力量，力量帶來改變。」用甚麼手法？",
+        "recommendedOptions": [
+          "頂真",
+          "借代",
+          "比喻",
+          "誇張"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-19-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The moral of the fable 守株待兔 is that one should not rely on luck or wait passively for success. Option 0 correctly states this. Other options are clearly wrong for the intended lesson. Content is suitable for P6.",
+        "recommendedQuestion": "「守株待兔」告訴我們甚麼？",
+        "recommendedOptions": [
+          "不能只靠僥倖等待",
+          "要常種樹",
+          "兔子都撞樹",
+          "不用努力"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-20-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The phrase evokes drinking and looking at the sky/moon; option 0 directly matches the image. Other options are irrelevant distractors, so a single clear best answer exists.",
+        "recommendedQuestion": "「把酒問青天」最容易想像甚麼？",
+        "recommendedOptions": [
+          "舉杯望月問天",
+          "雨中跑步",
+          "課室看書",
+          "海底游泳"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-21-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The line expresses a wish for loved ones to remain safe and to share the moon despite distance; option 0 captures this sentiment. Other options are clearly unsuitable.",
+        "recommendedQuestion": "「但願人長久，千里共嬋娟」表達甚麼願望？",
+        "recommendedOptions": [
+          "彼此平安共賞明月",
+          "永不回家",
+          "討厭親人",
+          "只想金錢"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-22-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目引自古詩中的具體意象（大漠、長河、落日），選項中「開闊壯麗邊塞景色」正確且無二義。其他選項明顯不符詩意，對小六學生而言屬基礎理解題，恰當。",
+        "recommendedQuestion": "「大漠孤煙直，長河落日圓」描寫甚麼？",
+        "recommendedOptions": [
+          "開闊壯麗邊塞景色",
+          "熱鬧市集",
+          "狹小房間",
+          "雨天課室"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-23-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目要求學生從形容詞（孤、直、長、圓）的角度理解詩句的表現效果。選項中「畫面鮮明開闊」最能反映這些字塑造的空間感和視覺效果，其他選項與詞語效果無關，為單一最佳答案，符合小六閱讀能力。",
+        "recommendedQuestion": "「孤、直、長、圓」描寫景物有何效果？",
+        "recommendedOptions": [
+          "畫面鮮明開闊",
+          "人物更多",
+          "表示問題",
+          "列出時間"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P6-24-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks a common, syllabus-aligned literary motif (the moon in classical poetry). The correct option '思念和祝福' is the unambiguous, age-appropriate answer. Distractors are clearly irrelevant, so there is one defensible choice. Language and cognitive demand suit P6.",
+        "recommendedQuestion": "古詩詞明月常寄託甚麼？",
+        "recommendedOptions": [
+          "思念和祝福",
+          "憤怒打鬥",
+          "購物計劃",
+          "運動規則"
         ],
         "recommendedCorrect": 0
       }

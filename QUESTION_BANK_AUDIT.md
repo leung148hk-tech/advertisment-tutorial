@@ -2,7 +2,7 @@
 
 ## 校對目標與範圍
 
-本紀錄用於逐題審核所有可抽取的題目，包括小一至小六中文閱讀、中文寫作、英文閱讀、英文寫作、數學；小五及小六升中面試；以及中一至中三中文閱讀、中文寫作、英文閱讀、英文寫作、數學及 Science。每個題目在題庫中有三個情境變體，均須完成答案、選項、語句、能力面向、難度與年級適切性審核。
+本紀錄用於逐題審核所有現時可抽取的題目，包括小一至小六中文閱讀、英文閱讀、英文寫作、數學；小五及小六升中面試；以及中一至中三中文閱讀、中文寫作、英文閱讀、英文寫作、數學及 Science。除小學中文閱讀的重整題庫外，舊題庫多以三個情境變體儲存；小學中文閱讀現為每級 25 條獨立題目，不採用情境字尾變體。小學中文寫作已停止提供，以下早期寫作覆核條目只保留作歷史審核紀錄。
 
 ## 審核準則
 
@@ -28,6 +28,7 @@
 | C | 小三中文、英文、數學 | 小三已完成 | 五份小三試卷均已逐題覆核；修訂後原題全數通過，所有情境變體均通過結構及 20 題隨機抽題驗證。 |
 | D | 小四至小六及升中面試 | 已完成 | 答案、選項、難度、年級、`topic`、`label` 與模組均已逐題覆核；五模組（包括「溝通與協作」）已在小五／小六升中面試完整 report render 測試中逐卡比對題數與答對數。 |
 | E | 中一至中三中英數 Science | 已完成 | 中一至中三的中文閱讀、中文寫作、英文閱讀、英文寫作、數學及 Science 均已逐題完成答案、唯一性、年級難度及能力面向覆核；十八個 grade-track 組別的答案及 metadata 審核檔均為 `nonPass: []`。 |
+| F | 小一至小六中文閱讀重整 | 已完成 | 舊有三變體中文閱讀題庫已由每級 25 條獨立題目取代；各級五個公開範疇、五個內部分組、20 題均衡抽取、答案／唯一性／年級／metadata 及無重覆題幹覆核，均見 `PRIMARY_CHINESE_READING_AUDIT.md`。 |
 
 ## 已完成逐題審核
 
@@ -123,7 +124,7 @@
 
 中一至中三的十八個 grade-track 組別現設有 `pnpm verify:secondary-answer-keys` 固定 canonical 答案簽章驗證，覆蓋題幹、選項、正確索引、答案文字、公開 `topic`、`selectionGroup` 及 `module`，防止已簽核的內容在後續修改時無意漂移。
 
-全庫最終品質門檻已通過：`pnpm audit:questions`（1,527 題、50 組、結構問題 0）、`pnpm verify:graded`（全部 50 份可用測驗各 20 題、五個內部分組各 4 題）、`pnpm check`、`pnpm test`（9 個測試檔、40 項測試）、`pnpm smoke:graded-pdf`、`pnpm build`、`pnpm verify:admin-management` 及 `pnpm verify:central-referrals`。以上只證明本平台題庫與流程已通過內部回歸檢查，並不構成正式校內評估、學習診斷或與個別學校教材的完全對齊聲明。
+全庫最終品質門檻已通過：`pnpm audit:questions`（1,317 題、44 組、結構問題 0）、`pnpm verify:graded`（全部 44 份可用測驗各 20 題、五個內部分組各 4 題）、`node --import tsx scripts/audit-primary-chinese-reading.mts`（小一至小六每級 25 條不同題幹、重覆題幹 0）、`pnpm verify:secondary-answer-keys`、`pnpm check`、`pnpm test`（10 個測試檔、46 項測試）、`pnpm smoke:graded-pdf`、`pnpm build`、`pnpm verify:admin-management` 及 `pnpm verify:central-referrals`。以上只證明本平台題庫與流程已通過內部回歸檢查，並不構成正式校內評估、學習診斷或與個別學校教材的完全對齊聲明。
 
 ## 可重複檢查
 

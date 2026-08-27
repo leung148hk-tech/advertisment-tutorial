@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-26T09:38:50.558931+00:00",
+  "generatedAt": "2026-08-27T03:50:59.174055+00:00",
   "grade": "P1",
   "track": "chinese-reading",
-  "canonicalQuestionCount": 10,
-  "variantQuestionCount": 30,
+  "canonicalQuestionCount": 25,
+  "variantQuestionCount": 25,
   "model": "gpt-5-mini",
   "review": {
-    "batchSummary": "Part 1/5: Reviewed 2 P1 Chinese-reading items (vocabulary meaning and usage). Both items are clear, age-appropriate, and have a single best answer. Recommend keeping original content.\n\nPart 2/5: 兩題均為小一中文閱讀、訊息定位與細節理解的基礎題，題幹清晰、選項單一最佳答案、符合年級能力，建議保留原題。\n\nPart 3/5: 兩題皆為小學生一年級合適的簡短人物/原因推論題，選項清楚，均只有一個最能支持的答案，建議通過。\n\nPart 4/5: 兩題均為小一中文閱讀理解，題幹清晰、選項明確且單一最佳答案，難度與年級相符，建議通過（PASS）。\n\nPart 5/5: 此批次兩題皆為小一中文閱讀基礎題，題意清楚、選項合理且只有一個最佳答案，均達到年級與能力層級要求，建議通過。",
+    "batchSummary": "Part 1/13: 兩題皆為小一程度的字形與筆畫／部件基礎題，題幹明確、選項無歧義，答案正確且單一最適答案，建議通過（PASS）。\n\nPart 2/13: Both P1 Chinese-reading items are age-appropriate, unambiguous, and have a single clear correct answer. No revision required.\n\nPart 3/13: Reviewed 2 P1 Chinese-reading items (part 3 of 13). Both items are clear, age-appropriate, have a single best answer, and match the claimed difficulty/skill level. Recommend keeping both without change.\n\nPart 4/13: Two P1 Chinese-reading items reviewed. Both items are clear, age-appropriate, have one unambiguous best answer, and align with the claimed ability level. No revisions needed.\n\nPart 5/13: Reviewed 2 P1 Chinese-reading items (part 5 of 13). Both items are clear, age-appropriate, have one unambiguous correct answer, and use syllabus-adjacent content. Recommend passing both without changes.\n\nPart 6/13: Reviewed 2 P1 Chinese-reading items (basic punctuation). Both items are clear, age-appropriate, and have a single best answer. Marked PASS for each with the original content retained.\n\nPart 7/13: Reviewed 2 P1 Chinese-reading punctuation items (感嘆號與逗號使用). Both items are clear, age-appropriate, have a single best answer, and match the supplied correct answer. Recommend PASS for both.\n\nPart 8/13: Reviewed 2 P1 Chinese-reading items (part 8 of 13). Both items are clear, age-appropriate, have one unambiguous correct answer, and align with the stated topic and difficulty.\n\nPart 9/13: Reviewed 2 P1 Chinese-reading items (兒歌與童話閱讀). Both items are clear, unambiguous, grade-appropriate, and have a single best answer based on explicit time/place words in the short texts. Recommend no revisions.\n\nPart 10/13: Two Primary 1 Chinese reading items reviewed. Both items are simple literal comprehension questions appropriate for P1, each has a single unambiguous correct answer and suitable distractors. Recommend passing both without changes.\n\nPart 11/13: 已審核 2 題 P1 中文閱讀題目（簡單修辭）。兩題均明確、符合 P1 程度，皆有單一最佳答案，建議通過。\n\nPart 12/13: 2 items reviewed for P1 Chinese-reading (古詩相關). Both items are clear, unambiguous, age-appropriate, and have a single best answer. Recommend passing both without change.\n\nPart 13/13: One P1 Chinese reading item reviewed. The item is clear, age-appropriate, and has a single best answer; no revision needed.",
     "reviews": [
       {
         "id": "chinese-reading-P1-0-0",
@@ -15,15 +15,15 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "『快樂』的最接近意思是『開心』。其他選項與詞義無關，沒有造成二選一或模糊情況。用語和難度適合小一學生。",
-        "recommendedQuestion": "「快樂」最接近下列哪一個意思？",
+        "reason": "「木」的標準筆順為橫、豎、撇、捺，第二筆為豎。題目語言簡潔、提示清楚，選項無歧義，適合小一學生。",
+        "recommendedQuestion": "「木」字的第二筆是甚麼？",
         "recommendedOptions": [
-          "開心",
-          "很匆忙",
-          "不願意幫忙",
-          "聲音很大"
+          "橫",
+          "豎",
+          "撇",
+          "捺"
         ],
-        "recommendedCorrect": 0
+        "recommendedCorrect": 1
       },
       {
         "id": "chinese-reading-P1-1-0",
@@ -32,15 +32,15 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "選項中只有「小明聽見好消息，感到快樂。」正確描述人感到快樂的情況。其他句子對小一而言語意不通或不自然，沒有造成多解性。",
-        "recommendedQuestion": "下列哪一句最適合使用「快樂」？",
+        "reason": "「明」字由『日』和『月』組成。題目要求把字拆開，選項清楚且只有一個正確答案，符合小一水平。",
+        "recommendedQuestion": "「明」字由哪兩個字組成？",
         "recommendedOptions": [
-          "小明完成工作後，桌面十分快樂。",
-          "小明聽見好消息，感到快樂。",
-          "雨傘的顏色很快樂。",
-          "這條路十分快樂。"
+          "日和月",
+          "人和木",
+          "口和木",
+          "山和水"
         ],
-        "recommendedCorrect": 1
+        "recommendedCorrect": 0
       },
       {
         "id": "chinese-reading-P1-2-0",
@@ -49,13 +49,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹簡短明確（段落即為「小明把玩具借給同學。」），問句直接要求找出人物做了甚麼，四個選項中只有第一項正確且表述與題幹完全一致，無歧義，適合小一程度。",
-        "recommendedQuestion": "小明把玩具借給同學。這段文字主要說明了甚麼？",
+        "reason": "Only 唱 has the 口部首 (口+昌). 林 (木部首), 明 (日部首), 語 (言部首) are clearly different. The stem is clear and suitable for P1.",
+        "recommendedQuestion": "下列哪一個字的部首是「口」？",
         "recommendedOptions": [
-          "小明把玩具借給同學。",
-          "小明不想參加活動。",
-          "小明正在睡覺。",
-          "小明不見了物品。"
+          "唱",
+          "林",
+          "明",
+          "語"
         ],
         "recommendedCorrect": 0
       },
@@ -66,13 +66,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "通告明確寫出報到時間「二時四十五分」，問最遲何時到達，應選報到時間本身。選項清楚且只有一個正確答案，符合小一閱讀理解水平。",
-        "recommendedQuestion": "通告寫着「我的家人分享會下午三時開始，參加者請在二時四十五分到達。」最遲何時到達？",
+        "reason": "The character 「山」 is an象形字 that resembles 山峰 (mountain peaks). Other options (雨傘, 小鳥, 書本) are not visually similar, so the item is unambiguous for P1.",
+        "recommendedQuestion": "「山」字的字形最像下列哪一樣事物？",
         "recommendedOptions": [
-          "下午二時四十五分",
-          "下午三時",
-          "下午三時十五分",
-          "下午四時"
+          "山峰",
+          "雨傘",
+          "小鳥",
+          "書本"
         ],
         "recommendedCorrect": 0
       },
@@ -83,13 +83,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹直接根據行為（把玩具借給同學）推論人物特質。四個選項中只有「願意分享」能合理且直接反映該行為，其他選項與行為不符。語言簡明，適合P1水平，干擾項簡單但有效。",
-        "recommendedQuestion": "小明把玩具借給同學，這最能反映他／她怎樣？",
+        "reason": "The character 休 is pictophonetic: '人'倚靠於'木'，表示人靠樹而息，最接近「休息」。 Distractors (跑步、唱歌、游水) are clearly different actions and appropriate for P1 children to distinguish.",
+        "recommendedQuestion": "「休」字有一個「人」和一個「木」，最接近哪個意思？",
         "recommendedOptions": [
-          "願意分享",
-          "粗心大意",
-          "不願合作",
-          "害怕嘗試"
+          "休息",
+          "跑步",
+          "唱歌",
+          "游水"
         ],
         "recommendedCorrect": 0
       },
@@ -100,13 +100,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹描述先了解資料再決定的行為，最合理的原因是為了作出較合適的選擇。其他選項與該行為矛盾或不合邏輯。語句簡潔，符合P1理解與應用層級。",
-        "recommendedQuestion": "小明先了解資料才作決定，最可能是因為？",
+        "reason": "『快樂』與『開心』是近義詞; other options (匆忙、安靜、寒冷) are different senses and serve as suitable distractors for P1 level.",
+        "recommendedQuestion": "「快樂」最接近下列哪一個意思？",
         "recommendedOptions": [
-          "希望作出較合適的選擇",
-          "不想知道內容",
-          "想拖延時間",
-          "沒有任何原因"
+          "開心",
+          "匆忙",
+          "安靜",
+          "寒冷"
         ],
         "recommendedCorrect": 0
       },
@@ -117,13 +117,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹「微風輕輕拍著樹葉」明確運用了擬人手法，把微風描寫成具有拍打動作的存在。選項中只有「人」為合理的擬人對象，其他選項為無生命物，故單一最佳答案清晰且符合小一識讀能力。提示也恰當地引導學生注意擬人用法。",
-        "recommendedQuestion": "「微風輕輕拍著樹葉」主要把微風寫成像甚麼？",
+        "reason": "The word 「整潔」 describes something clean and orderly. Only the first option correctly and naturally uses 整潔 to describe a desk. Other options are semantically inappropriate or nonsensical for this adjective.",
+        "recommendedQuestion": "下列哪一句最適合使用「整潔」？",
         "recommendedOptions": [
-          "人",
-          "石頭",
-          "書本",
-          "雨傘"
+          "書桌收拾得很整潔。",
+          "笑聲聽起來很整潔。",
+          "雨傘跑得很整潔。",
+          "太陽唱得很整潔。"
         ],
         "recommendedCorrect": 0
       },
@@ -134,13 +134,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "句子「小狗在花園跑步。」為基本句意理解題，主要訊息為『誰（小狗）在何處（花園）做何事（跑步）』。選項中只有第一項對應此三要素，其他選項與句意無關，適合小一學生練習找出句子重點。",
-        "recommendedQuestion": "「小狗在花園跑步。」這句話中，最重要的訊息是甚麼？",
+        "reason": "The sentence 「小鳥飛走了。」 clearly identifies the subject (小鳥) and the action (飛走). The first option matches this; the other options present different actions not stated in the sentence.",
+        "recommendedQuestion": "「小鳥飛走了。」句中誰做了甚麼？",
         "recommendedOptions": [
-          "人物、地點和主要行動",
-          "句子的字數",
-          "所有標點名稱",
-          "顏色的數量"
+          "小鳥飛走",
+          "小鳥睡覺",
+          "小鳥唱歌",
+          "小鳥吃飯"
         ],
         "recommendedCorrect": 0
       },
@@ -151,13 +151,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹明確描述文章先後內容（先介紹準備方法，再說明參加後收穫），四個選項中只有「鼓勵讀者認真準備並參與活動」符合整體主旨。用詞與概念適合小一理解，無二義性。",
-        "recommendedQuestion": "文章先介紹我的家人的準備方法，再說明參加後的收穫，主旨最可能是？",
+        "reason": "The question asks which item is most suitable for use in rain — '雨傘' is clearly the best and unambiguous choice for P1. Distractors (鉛筆、枕頭、足球) are irrelevant and appropriate for this level. Wording and hint are simple and age-appropriate.",
+        "recommendedQuestion": "下列哪一樣物品最適合在下雨時使用？",
         "recommendedOptions": [
-          "鼓勵讀者認真準備並參與活動",
-          "介紹所有人的姓名",
-          "比較不同天氣",
-          "只描述食物"
+          "雨傘",
+          "鉛筆",
+          "枕頭",
+          "足球"
         ],
         "recommendedCorrect": 0
       },
@@ -168,13 +168,268 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "句中有明顯時間先後詞（先、再、最後），指出一連串步驟的順序。四個選項中只有「步驟順序」貼切且單一最佳，語言與認知要求符合小一水平。",
-        "recommendedQuestion": "「先找出重點，再整理想法，最後寫下回應。」這段文字主要按甚麼方式組織？",
+        "reason": "The task is to reorder given fragments into a clear, simple sentence. '小明在操場跑步。' is the natural, canonical word order for P1 learners. Other choices are ungrammatical or unnatural for this level, so there is a single best answer.",
+        "recommendedQuestion": "把「小明／在操場／跑步」排成通順的句子，應選哪一句？",
         "recommendedOptions": [
-          "步驟順序",
-          "人物對話",
-          "地點轉換",
-          "問題與答案"
+          "小明在操場跑步。",
+          "在操場小明跑步。",
+          "跑步小明在操場。",
+          "操場跑步在小明。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-10-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 '今天是星期一。' is a complete declarative sentence and correctly ends with a full stop. The other options place the句號 inside the word or between characters, which is incorrect punctuation for a simple sentence at P1 level.",
+        "recommendedQuestion": "下列哪一句的句號用得最合適？",
+        "recommendedOptions": [
+          "今天是星期一。",
+          "今天。是星期一",
+          "今。天是星期一",
+          "今天是。星期一"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-11-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Option 0 '你今天好嗎？' is a direct question asking about someone's condition and naturally takes a question mark. Although sentences 2–4 could be questions in some contexts, the hint focuses on asking people, making option 0 the clearest and unambiguous choice for P1.",
+        "recommendedQuestion": "下列哪一句句尾最適合用問號？",
+        "recommendedOptions": [
+          "你今天好嗎？",
+          "我今天很好？",
+          "太陽出來了？",
+          "小鳥正在飛？"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-12-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks which sentence most suitably ends with an exclamation mark. The first option ('小心！地上很滑！') expresses a warning and strong feeling, which matches the hint about surprise or reminder; the other options are neutral statements and not as appropriate. For P1 level this is clear and unambiguous.",
+        "recommendedQuestion": "下列哪一句最適合在句尾用感嘆號？",
+        "recommendedOptions": [
+          "小心！地上很滑！",
+          "我有一枝筆！",
+          "今天是星期二！",
+          "書包在椅子上！"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-13-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The correct placement of a comma is after the time phrase '放學後' to show a short pause: '放學後，我和媽媽回家。' The other options place the comma incorrectly and would confuse young readers. Suitable for P1 as a basic punctuation exercise.",
+        "recommendedQuestion": "下列哪一句的逗號用得最合適？",
+        "recommendedOptions": [
+          "放學後，我和媽媽回家。",
+          "放，學後我和媽媽回家。",
+          "放學後我，和媽媽回家。",
+          "放學後我和，媽媽回家。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-14-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem and hint are clear for P1. Option 0 '小狗在花園跑步。' is a complete, grammatically correct sentence. Other options are incomplete or nonsensical for this grade level.",
+        "recommendedQuestion": "下列哪一句是完整而通順的句子？",
+        "recommendedOptions": [
+          "小狗在花園跑步。",
+          "在花園小狗。",
+          "跑步的花園。",
+          "小狗在。"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-15-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The short passage clearly identifies 小兔 as the story's protagonist. The distractors (小鳥、水樽、大樹) are plausible but only 小兔 is the main character mentioned, so the item has a single best answer and is suitable for P1.",
+        "recommendedQuestion": "童話：小兔帶着水樽到公園。牠看見小鳥在樹上唱歌。故事中的主角是誰？",
+        "recommendedOptions": [
+          "小兔",
+          "小鳥",
+          "水樽",
+          "大樹"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-16-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹包含明確時間詞「早上」與「太陽剛剛出來」，選項中只有「早上」與之對應，無二義性，符合P1閱讀理解基礎題型。",
+        "recommendedQuestion": "短文：早上，爸爸送樂樂上學。太陽剛剛出來。故事在甚麼時候發生？",
+        "recommendedOptions": [
+          "早上",
+          "中午",
+          "晚上",
+          "半夜"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-17-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹明確說明「小狗在花園追皮球」，選項只有「花園」符合，題目直觀且適合P1學生練習地點詞辨識。",
+        "recommendedQuestion": "短文：小狗在花園追皮球，妹妹站在旁邊拍手。小狗在哪裏追皮球？",
+        "recommendedOptions": [
+          "花園",
+          "課室",
+          "廚房",
+          "巴士上"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-18-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks for a literal detail directly stated in the nursery rhyme line. The correct option '花兒上' is clearly supported by the text. Distractors are simple and age-appropriate.",
+        "recommendedQuestion": "兒歌：小雨點，沙沙沙，落在花兒上。小雨點落在哪裏？",
+        "recommendedOptions": [
+          "花兒上",
+          "書桌上",
+          "操場上",
+          "帽子裏"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-19-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The short passage states explicitly what 阿康 did. Option '撿起鉛筆交還同學' matches the passage exactly. Other options are clearly incorrect for P1 readers.",
+        "recommendedQuestion": "短文：阿康看見同學的鉛筆掉在地上，便撿起來交還給他。阿康做了甚麼？",
+        "recommendedOptions": [
+          "撿起鉛筆交還同學",
+          "把鉛筆藏起來",
+          "借走鉛筆回家",
+          "在地上畫畫"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-20-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹清晰，使用擬人『拍着』一詞把微風比作人，選項中只有「人」合適，無歧義，適合 P1 水平。",
+        "recommendedQuestion": "「微風輕輕拍着樹葉。」這句話把微風寫得像甚麼？",
+        "recommendedOptions": [
+          "人",
+          "石頭",
+          "書本",
+          "雨傘"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-21-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題句『白雲像棉花』為明確比喻句，問題直接問被比作的事物，選項中只有「棉花」正確且無二義，適合 P1 程度。",
+        "recommendedQuestion": "「白雲像棉花。」白雲被比作甚麼？",
+        "recommendedOptions": [
+          "棉花",
+          "雨傘",
+          "小草",
+          "書包"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-22-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹直接引用古詩首句「鵝，鵝，鵝」，小一學生可從第一字判斷動物為「鵝」。選項明確且只有一個合理答案，干擾項（小狗、金魚、小貓）均不符詩句，提示亦恰當。",
+        "recommendedQuestion": "古詩「鵝，鵝，鵝，曲項向天歌」寫的是哪一種動物？",
+        "recommendedOptions": [
+          "鵝",
+          "小狗",
+          "金魚",
+          "小貓"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-23-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "詩句「白毛浮綠水」含有兩個顏色字「白」與「綠」，對小一學生來說可直接辨認。選項中只有「白色和綠色」符合詩句，無歧義。",
+        "recommendedQuestion": "「白毛浮綠水」主要寫出鵝的哪兩種顏色？",
+        "recommendedOptions": [
+          "白色和綠色",
+          "紅色和黃色",
+          "藍色和黑色",
+          "紫色和橙色"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P1-24-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The onomatopoeic word 「沙沙」 commonly represents the sound of light rain or rustling. In the phrase 「小雨沙沙」 the surrounding words make the rain interpretation unambiguous, so option 0 is the single best answer. Distractors (跑步的聲音, 唱歌的聲音, 笑聲) are implausible in this context. Language and cognitive demand are appropriate for Primary 1.",
+        "recommendedQuestion": "兒歌中的「小雨沙沙」，「沙沙」最能寫出甚麼？",
+        "recommendedOptions": [
+          "下雨的聲音",
+          "跑步的聲音",
+          "唱歌的聲音",
+          "笑聲"
         ],
         "recommendedCorrect": 0
       }

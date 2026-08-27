@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-26T10:15:00.775085+00:00",
+  "generatedAt": "2026-08-27T04:22:52.026836+00:00",
   "grade": "P4",
   "track": "chinese-reading",
-  "canonicalQuestionCount": 10,
-  "variantQuestionCount": 30,
+  "canonicalQuestionCount": 25,
+  "variantQuestionCount": 25,
   "model": "gpt-5-mini",
   "review": {
-    "batchSummary": "Part 1/5: Both P4 Chinese vocabulary items are clear, age-appropriate, have a single best answer, and match the claimed difficulty. Recommend PASS for both.\n\nPart 2/5: 兩題均屬小四閱讀理解的基礎題：一題為主旨擷取，一題為訊息定位（細節理解）。題幹清晰、語言合適，選項明確有單一最佳答案，建議保留原題不作修改。\n\nPart 3/5: 兩題均為基礎人物/原因推論題，選項明確且單一最佳答案明顯，適合小學四年級閱讀理解能力，建議全部通過（PASS）。\n\nPart 4/5: Both items are clear, age-appropriate P4 Chinese reading questions that test basic rhetorical/device recognition and sentence meaning. Each has a single best answer and requires no revision.\n\nPart 5/5: 本批次兩題均為小四閱讀理解之基礎題型，題幹清楚、選項合理且只有一個最佳答案，符合年級與能力指標，建議通過（PASS）。",
+    "batchSummary": "Part 1/13: 2 items reviewed for P4 Chinese-reading (part 1). Both items are clear, age-appropriate, have a single best answer, and match the stated skill focus. Recommend PASS for both without change.\n\nPart 2/13: Two P4 Chinese reading idiom items reviewed. Both items are clear, age-appropriate, have one unambiguous best answer, and match the stated difficulty. Recommend passing both without change.\n\nPart 3/13: Reviewed 2 P4 Chinese-reading items (詞語辨析與轉折複句). Both items are clear, age-appropriate, have a single best answer, and the supplied correct answers are correct. Recommend PASS for both.\n\nPart 4/13: Reviewed 2 P4 Chinese-reading items on advanced punctuation (分號與省略號). Both items are clear, have a single best answer, and are grade-appropriate; no revisions required.\n\nPart 5/13: 本批次兩題均為轉折複句與關聯詞的基礎題，內容清晰、選項分明、單一最佳答案明確，適合小四程度。建議保留原題目與選項。\n\nPart 6/13: Both items are clear P4-level reading-comprehension questions about fables/myths with unambiguous correct answers and age-appropriate language. Recommend passing both without changes.\n\nPart 7/13: Reviewed 2 P4 Chinese-reading items (part 7 of 13). Both items are clear, age-appropriate, have a single best answer, and pass without revision.\n\nPart 8/13: Reviewed 2 P4 Chinese-reading items (文體辨識 and 擬人辨識). Both items are clear, age-appropriate, have a single best answer, and are passed without revision.\n\nPart 9/13: Reviewed 2 P4 Chinese-reading items on rhetorical devices and narrative openings. Both items are clear, age-appropriate, have one unambiguous best answer, and align with P4 syllabus expectations. Recommend passing both without revision.\n\nPart 10/13: 兩題均為小四閱讀理解中合適的篇章結構題目：題幹明確、選項清晰且只有一個最佳答案，難度與學習年級相稱，建議保留原題。\n\nPart 11/13: Two P4 Chinese-reading items on classical poem feelings and festival customs. Both items are clear, have one unambiguous correct answer, age-appropriate vocabulary and difficulty, and use suitable distractors. Recommend passing both unchanged.\n\nPart 12/13: 兩題均為理解古詩常用詞語與感受的基礎題，題幹清晰、選項明確，適合小四程度，均有單一最佳答案。\n\nPart 13/13: Reviewed 1 P4 Chinese-reading item. The item is clear, grade-appropriate, has one unambiguous best answer, and requires no change. Verdict: PASS.",
     "reviews": [
       {
         "id": "chinese-reading-P4-0-0",
@@ -15,13 +15,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "『周全』在日常語境中意指考慮周到、全面或安排妥當。選項「考慮得很仔細」準確對應該詞義；其餘三個選項意思明顯不符，為合理干擾選項。題幹簡潔、提示恰當，符合小四詞語理解能力。",
-        "recommendedQuestion": "「周全」最接近下列哪一個意思？",
+        "reason": "The prompt asks which character shares the same pronunciation as 「留」. Option 「流」 is the clear and unambiguous homophone (same Mandarin/Cantonese reading as intended). Distractors are distinct in sound and appropriate for P4. The hint and difficulty level are suitable.",
+        "recommendedQuestion": "「留」和下列哪一個字讀音相同？",
         "recommendedOptions": [
-          "考慮得很仔細",
-          "很匆忙",
-          "不願意幫忙",
-          "聲音很大"
+          "流",
+          "山",
+          "水",
+          "雷"
         ],
         "recommendedCorrect": 0
       },
@@ -32,13 +32,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題目要求選出最適合使用「周全」的一句話。選項「老師為郊遊作出周全的安排。」語義自然且符合『周全＝安排/考量周到』的用法；其他選項將『周全』錯誤用於聲音、味道或天空，構成明確干擾。題目語言和難度適合小四。",
-        "recommendedQuestion": "下列哪一句最適合使用「周全」？",
+        "reason": "The question asks which pair of characters are most similar in shape. 「已、己」 are widely recognised as shape-similar and are clearly the best choice. Other pairs are visually distinct, so there is one defensible answer. The item is suitable for P4 and the hint matches the task.",
+        "recommendedQuestion": "下列哪一組字的字形最相近？",
         "recommendedOptions": [
-          "老師為郊遊作出周全的安排。",
-          "小明的聲音很周全。",
-          "這道菜的味道很周全。",
-          "天空的顏色很周全。"
+          "已、己",
+          "天、地",
+          "山、水",
+          "大、小"
         ],
         "recommendedCorrect": 0
       },
@@ -49,13 +49,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹短而明確，要求擷取主要意思。選項0是原句重述，為唯一符合題意的答案；其餘三個干擾選項與文本無關，能有效區分理解能力。語言與難度符合小四。",
-        "recommendedQuestion": "小敏出發前查看天氣和路線。這段文字主要說明了甚麼？",
+        "reason": "『全神貫注』 means to concentrate all one's attention. Options are simple and age-appropriate; distractors are clearly incorrect. There is one unambiguous best answer.",
+        "recommendedQuestion": "「全神貫注」最接近下列哪一個意思？",
         "recommendedOptions": [
-          "小敏出發前查看天氣和路線。",
-          "小敏不想參加活動。",
-          "小敏正在睡覺。",
-          "小敏不見了物品。"
+          "集中全部精神",
+          "到處走動",
+          "非常吵鬧",
+          "立刻睡覺"
         ],
         "recommendedCorrect": 0
       },
@@ -66,13 +66,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "通告中明確寫出報到時間為二時四十五分，題目直接問最遲到達時間，選項0正確且為唯一直接對應的答案。選項設計符合小四訊息定位能力的評量目標。",
-        "recommendedQuestion": "通告寫着「我喜愛的閱讀活動分享會下午三時開始，參加者請在二時四十五分到達。」最遲何時到達？",
+        "reason": "『津津有味』 describes enjoying or being very interested in something (e.g. listening to a story, eating). The first option is the only natural collocation; other options are semantically odd.",
+        "recommendedQuestion": "下列哪一句最適合使用「津津有味」？",
         "recommendedOptions": [
-          "下午二時四十五分",
-          "下午三時",
-          "下午三時十五分",
-          "下午四時"
+          "弟弟津津有味地聽故事。",
+          "弟弟津津有味地關上門。",
+          "弟弟的書包很津津有味。",
+          "今天的天氣津津有味。"
         ],
         "recommendedCorrect": 0
       },
@@ -83,13 +83,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹描述小敏出發前查看天氣和路線，這個行為直接表現出事前準備和謹慎，選項「有準備」為唯一合適的推論。其他選項（粗心大意、不願合作、害怕嘗試）與該行為互相矛盾或無關，干擾選項明確且年級可理解。",
-        "recommendedQuestion": "小敏出發前查看天氣和路線，這最能反映他／她怎樣？",
+        "reason": "The contrast between 細心 and 小心 is clear; 細心 implies doing tasks carefully and thoroughly. Option 0 ('完成後逐項檢查功課') best demonstrates careful, thorough behaviour. Distractors are clearly incorrect and age-appropriate.",
+        "recommendedQuestion": "「細心」和「小心」都有留意的意思。哪一種做法較能表現「細心」？",
         "recommendedOptions": [
-          "有準備",
-          "粗心大意",
-          "不願合作",
-          "害怕嘗試"
+          "完成後逐項檢查功課",
+          "匆忙交功課",
+          "不看題目就回答",
+          "把書本留在家中"
         ],
         "recommendedCorrect": 0
       },
@@ -100,13 +100,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹說明小敏先了解資料才作決定，這通常是為了做出較合適或較明智的選擇，因此「希望作出較合適的選擇」是最合邏輯且唯一合理的原因。其他選項（不想知道內容、想拖延時間、沒有任何原因）與行為不符或不合常理，為弱干擾項。",
-        "recommendedQuestion": "小敏先了解資料才作決定，最可能是因為？",
+        "reason": "The sentence shows a contrast introduced by '雖然', so a contrasting conjunction like '但是' is appropriate. Other options ('所以', '因為', '如果') do not express the needed contrast. The item is clear and suitable for P4.",
+        "recommendedQuestion": "「雖然下着雨，____ 運動會仍然照常舉行。」填入哪一個詞最合適？",
         "recommendedOptions": [
-          "希望作出較合適的選擇",
-          "不想知道內容",
-          "想拖延時間",
-          "沒有任何原因"
+          "但是",
+          "所以",
+          "因為",
+          "如果"
         ],
         "recommendedCorrect": 0
       },
@@ -117,13 +117,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The phrase “微風輕輕拍著樹葉” uses a human action (拍) to describe the breeze, so the intended rhetorical device is personification — treating the breeze as a person. Distractors are clearly inanimate and do not match the verb, so the correct choice is unambiguous.",
-        "recommendedQuestion": "「微風輕輕拍著樹葉」主要把微風寫成像甚麼？",
+        "reason": "選項 0「早上我溫習；下午我做練習。」正確地以分號分開兩個獨立但關係密切的分句，其他選項將分號放在不合適的位置或拆分詞語，導致語句不通。題幹清晰、提示適切，符合 P4 標準的標點教學範圍。",
+        "recommendedQuestion": "下列哪一句的分號用得最合適？",
         "recommendedOptions": [
-          "人",
-          "石頭",
-          "書本",
-          "雨傘"
+          "早上我溫習；下午我做練習。",
+          "早上；我溫習下午我做練習。",
+          "早上我；溫習下午我做練習。",
+          "早上我溫習下午；我做練習。"
         ],
         "recommendedCorrect": 0
       },
@@ -134,13 +134,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The sentence is a straightforward statement: reading helps us learn about different ideas. The first option restates the sentence and is the clear main meaning. Other options introduce unrelated or incorrect claims, so there is a single best answer.",
-        "recommendedQuestion": "「閱讀能讓我們認識不同的想法。」這句話的主要意思是甚麼？",
+        "reason": "「我想了很久……還是決定參加。」中的省略號表示語句的停頓與未盡之意，選項 0 正確。題目簡潔，提示（留意說話時的停頓）與答案直接對應，適合 P4 學習進階標點用法。",
+        "recommendedQuestion": "「我想了很久……還是決定參加。」省略號主要表示甚麼？",
         "recommendedOptions": [
-          "閱讀能讓我們認識不同的想法。",
-          "閱讀會讓我們變得更快樂。",
-          "閱讀只適合小朋友閱讀。",
-          "閱讀會讓書本很快破爛。"
+          "語句停頓和未盡的意思",
+          "提出問題",
+          "標示書名",
+          "列舉物品"
         ],
         "recommendedCorrect": 0
       },
@@ -151,13 +151,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹描述文章先說準備方法再說收穫，主旨應為鼓勵讀者準備並參與活動；其他選項與文意無關，干擾選項明確且年級可理解。",
-        "recommendedQuestion": "文章先介紹我喜愛的閱讀活動的準備方法，再說明參加後的收穫，主旨最可能是？",
+        "reason": "題幹清楚問「哪一句是轉折複句」，選項一「雖然很累，但是他仍完成練習。」明顯包含轉折關聯詞（雖然...但是...），其餘選項為單句或祈使句，與題意不符。題目語言與難度適合小四。",
+        "recommendedQuestion": "下列哪一句是轉折複句？",
         "recommendedOptions": [
-          "鼓勵讀者認真準備並參與活動",
-          "介紹所有人的姓名",
-          "比較不同天氣",
-          "只描述食物"
+          "雖然很累，但是他仍完成練習。",
+          "他每天早上跑步。",
+          "請你關上窗戶。",
+          "天空飄着白雲。"
         ],
         "recommendedCorrect": 0
       },
@@ -168,13 +168,268 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "句子列出三個按時間先後的步驟（先、再、最後），最符合「步驟順序」的組織方式；其他選項與句意不符，題目語言簡潔，適合小四學生。",
-        "recommendedQuestion": "「先找出重點，再整理想法，最後寫下回應。」這段文字主要按甚麼方式組織？",
+        "reason": "句子表示「即使路程很遠，結果仍然不變」，最合適的關聯詞為轉折關係（雖然……但是……）。其他選項（因為…所以、如果…就、一邊…一邊…）分別表示因果、條件、同時進行，均不符合句意。題目與難度皆適合小四。",
+        "recommendedQuestion": "「____ 路程很遠，小敏也會準時到達。」填入哪一組詞最合適？",
         "recommendedOptions": [
-          "步驟順序",
-          "人物對話",
-          "地點轉換",
-          "問題與答案"
+          "雖然……但是……",
+          "因為……所以……",
+          "如果……就……",
+          "一邊……一邊……"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-10-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem describes the classic crow-and-pitcher fable and the correct moral—thinking to solve problems—is directly reflected in option 0. Distractors are obviously wrong for P4 students.",
+        "recommendedQuestion": "寓言中烏鴉看見水瓶裏的水很低，便把小石頭放進瓶裏喝到水。這個故事最想說明甚麼？",
+        "recommendedOptions": [
+          "遇到困難要動腦筋想辦法",
+          "口渴時不要喝水",
+          "石頭一定很甜",
+          "烏鴉不會飛"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-11-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The myth of Houyi shooting down extra suns is conventionally told as an act to save people from scorching heat; option 0 correctly identifies the beneficiaries. Other options are irrelevant.",
+        "recommendedQuestion": "神話故事中，后羿射下多個太陽，是為了幫助誰？",
+        "recommendedOptions": [
+          "受酷熱影響的百姓",
+          "海裏的魚",
+          "天上的星星",
+          "森林裏的鳥"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-12-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence explicitly uses a familiar object (小汽車) to compare weight, so the correct explanation method is '作比較'. Options are distinct and age-appropriate; no ambiguity.",
+        "recommendedQuestion": "「鯨魚的心臟大約有一輛小汽車那麼重。」主要運用了甚麼說明方法？",
+        "recommendedOptions": [
+          "作比較",
+          "講故事",
+          "提問題",
+          "寫對話"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-13-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem lists the four life stages in order and asks which comes first. '卵' is unambiguous and suitable for P4 level.",
+        "recommendedQuestion": "說明文介紹蝴蝶成長的四個階段：卵、幼蟲、蛹、成蟲。蝴蝶先經歷哪一個階段？",
+        "recommendedOptions": [
+          "卵",
+          "幼蟲",
+          "蛹",
+          "成蟲"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-14-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹明確詢問哪一類文章用來介紹事物特徵和知識，選項中只有「說明文」符合定義，選項清楚、無歧義，適合小學四年級能力要求。",
+        "recommendedQuestion": "下列哪一類文章主要用來介紹事物的特徵和知識？",
+        "recommendedOptions": [
+          "說明文",
+          "詩歌",
+          "日記",
+          "書信"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-15-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "句子「小溪唱着歌，快樂地向前跑。」把無生命的事物賦予人的動作和情感，明顯屬於擬人手法，選項明確且只有一個正確答案，符合四年級閱讀修辭識別能力。",
+        "recommendedQuestion": "「小溪唱着歌，快樂地向前跑。」主要運用了甚麼修辭手法？",
+        "recommendedOptions": [
+          "擬人",
+          "比喻",
+          "對偶",
+          "設問"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-16-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence『他的聲音大得把屋頂也震動了。』uses deliberate overstatement to describe the voice, which is the rhetorical device 誇張 (hyperbole). The distractors (排比, 引用, 反問) are clearly different devices, so there is a single best answer suitable for P4.",
+        "recommendedQuestion": "「他的聲音大得把屋頂也震動了。」主要運用了甚麼手法？",
+        "recommendedOptions": [
+          "誇張",
+          "排比",
+          "引用",
+          "反問"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-17-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Stating time, place and characters at the start of a narrative gives readers the story background. The other options are implausible as functions of an opening. This matches P4 expectations about text structure.",
+        "recommendedQuestion": "一篇記敘文的開頭先交代時間、地點和人物，主要有甚麼作用？",
+        "recommendedOptions": [
+          "讓讀者了解故事背景",
+          "重複故事結尾",
+          "列出所有生字",
+          "不讓讀者明白內容"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-18-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹清楚描述先寫樹木、再寫花、最後寫小鳥的安排，與「按觀察景物的次序」直接對應。其他選項明顯不符，干擾項簡潔且符合小四程度。",
+        "recommendedQuestion": "一段先寫公園的樹木，再寫花朵，最後寫小鳥，這段主要按甚麼方法安排？",
+        "recommendedOptions": [
+          "按觀察景物的次序",
+          "按問題和答案",
+          "按人物對話",
+          "按時間倒退"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-19-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "結尾句「這次經驗令我明白要珍惜時間」屬於總結感受或收穫，首選答案明確且其他三個選項不具迷惑性，適合小四學生理解篇章結尾作用。",
+        "recommendedQuestion": "記敘文結尾寫「這次經驗令我明白要珍惜時間」，主要有甚麼作用？",
+        "recommendedOptions": [
+          "總結感受和收穫",
+          "介紹新人物",
+          "說明天氣",
+          "列出地點"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-20-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "句中「思親」直指思念親人的情感，選項中只有「思念親人」符合詩句含意；其他三項為明顯干擾選項。語言與難度均適合小四。",
+        "recommendedQuestion": "「獨在異鄉為異客，每逢佳節倍思親」最能表現詩人甚麼心情？",
+        "recommendedOptions": [
+          "思念親人",
+          "討厭節日",
+          "害怕旅行",
+          "喜歡下雨"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-21-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "詩句提到「登高」與「插茱萸」，對應重陽節登高佩茱萸的習俗，選項中只有「登高插茱萸」正確且不含模糊表述。語言與難度適合小四。",
+        "recommendedQuestion": "「遙知兄弟登高處，遍插茱萸少一人」寫的是甚麼節日習俗？",
+        "recommendedOptions": [
+          "登高插茱萸",
+          "賞月吃月餅",
+          "賽龍舟",
+          "放煙花"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-22-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "「異客」在古詩語境中常指身在異地、離鄉的人（旅居外地或他鄉之客）。題幹簡潔，提示恰當，四個選項中只有「身在外地的人」符合詩義，無歧義，難度與小四語文理解能力相符。",
+        "recommendedQuestion": "詩句中的「異客」最接近指甚麼人？",
+        "recommendedOptions": [
+          "身在外地的人",
+          "家中的客人",
+          "賣東西的人",
+          "寫詩的老師"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-23-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "句中「倍」表示加倍、更加，形容在佳節時思念親人的程度更強烈。題幹與提示都直接，選項中只有「更加強烈」正確且無模糊空間，適合小四閱讀理解訓練。",
+        "recommendedQuestion": "「每逢佳節倍思親」中的「倍」最能表現思念親人的程度怎樣？",
+        "recommendedOptions": [
+          "更加強烈",
+          "完全沒有",
+          "慢慢減少",
+          "不太清楚"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P4-24-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The phrase「登高處」literally means going to a higher place; the only option that matches this image is '人們走到高處遠望'. The distractors are clearly unrelated. Language and cognitive demand are suitable for Primary 4.",
+        "recommendedQuestion": "讀古詩時，從「登高處」可以想像到甚麼畫面？",
+        "recommendedOptions": [
+          "人們走到高處遠望",
+          "人們在課室寫字",
+          "人們在海底游泳",
+          "人們在廚房煮飯"
         ],
         "recommendedCorrect": 0
       }

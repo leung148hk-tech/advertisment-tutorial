@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-26T11:00:17.774448+00:00",
+  "generatedAt": "2026-08-27T04:24:30.495167+00:00",
   "grade": "P4",
   "track": "chinese-reading",
-  "canonicalQuestionCount": 10,
-  "variantQuestionCount": 30,
+  "canonicalQuestionCount": 25,
+  "variantQuestionCount": 25,
   "model": "gpt-5-mini",
   "review": {
-    "batchSummary": "Part 1/5: Reviewed 2 items (plus two context-only variants each). Both items measure vocabulary knowledge and usage; their label, topic and module metadata are appropriate. Recommend PASS for both.\n\nPart 2/5: Reviewed 2 items (each has two context-only variants). Both items measure literal information retrieval/details from short texts; metadata is appropriate and coherent. Verdict: 2 PASS.\n\nPart 3/5: Reviewed 2 P4 Chinese-reading items (part 3 of 5). Both items require making inferences from a character's actions (one about personal trait, one about cause/reason). Metadata (label, topic, module) correctly describe the skills assessed; no substantive changes needed.\n\nPart 4/5: Reviewed 2 canonical items (each with two context-only variants) for P4 Chinese reading, part 4. Both items measure the skills indicated by their metadata and require no substantive changes.\n\nPart 5/5: Reviewed 2 items (each with two context-only variants). Both items measure the labeled reading comprehension skills appropriately; no substantive metadata changes required.",
+    "batchSummary": "Part 1/13: Reviewed 2 items for P4 Chinese reading. Both items PASS: topic, label and module accurately describe the skills tested.\n\nPart 2/13: Reviewed 2 P4 Chinese reading items (part 2 of 13). Both items appropriately labelled and assigned to the supplied P4 topic and module.\n\nPart 3/13: Reviewed 2 P4 Chinese-reading items (part 3 of 13). Both items' topic, label and module appropriately match the skill tested — PASS for both.\n\nPart 4/13: Reviewed 2 P4 Chinese-reading items (punctuation subskills). Both items correctly target advanced punctuation within P4 curriculum and require no metadata changes.\n\nPart 5/13: Reviewed 2 P4 Chinese reading items (part 5 of 13). Both items assess recognition and use of concessive/contrastive complex sentences (轉折複句) within the P4 reading domain. Metadata is appropriate.\n\nPart 6/13: Reviewed 2 P4 Chinese-reading items (part 6 of 13). Both items align with the P4 parent domain and their labels and module correctly describe the tested skills. Recommend no changes.\n\nPart 7/13: Reviewed 2 P4 Chinese reading items (part 7 of 13). Both items align with the supplied P4 parent domain and the stated subskills and module; no changes recommended.\n\nPart 8/13: Reviewed 2 P4 Chinese-reading items (part 8 of 13). Both items' topic, label and module accurately match the skill measured — 2 PASS.\n\nPart 9/13: Reviewed 2 P4 Chinese reading items (part 9 of 13). Both items correctly map to the given P4 parent domain and have appropriate labels and module assignments. Recommend no changes.\n\nPart 10/13: Reviewed 2 P4 Chinese reading items. Both items measure paragraph/篇章 organizational and rhetorical-function skills matching the supplied parent domain and metadata; no change needed.\n\nPart 11/13: Reviewed 2 P4 Chinese reading items (古詩理解). Both items correctly target 七言絕句與文學感受 and their labels/modules match the skills measured; no revision needed.\n\nPart 12/13: 已檢視 2 項 P4 中文閱讀題目。兩項的題目目的與標註一致，建議全部通過 (PASS)。\n\nPart 13/13: Reviewed 1 item for P4 Chinese reading. All metadata fields accurately match the skill assessed; no changes required.",
     "reviews": [
       {
         "id": "chinese-reading-P4-0-0",
@@ -14,9 +14,9 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "The item asks for the closest meaning of the word 「周全」, assessing word-meaning recognition (vocabulary). The label '字詞理解', topic '字詞理解與運用', and module '基礎掌握' accurately describe this skill.",
-        "recommendedTopic": "字詞理解與運用",
-        "recommendedLabel": "字詞理解",
+        "reason": "The stem asks which character shares the same pronunciation as 「留」, so it assesses identification of homophones/same-sound characters. The topic '字形、字音與詞義辨析' and label '同音字辨識' correctly name this skill; '基礎掌握' is an appropriate module.",
+        "recommendedTopic": "字形、字音與詞義辨析",
+        "recommendedLabel": "同音字辨識",
         "recommendedModule": "基礎掌握"
       },
       {
@@ -25,9 +25,9 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "The item asks which sentence appropriately uses 「周全」, assessing vocabulary-in-context and word usage/collocation. The label '詞語運用', topic '字詞理解與運用', and module '基礎掌握' accurately reflect the measured skill.",
-        "recommendedTopic": "字詞理解與運用",
-        "recommendedLabel": "詞語運用",
+        "reason": "The item asks which pair of characters are most similar in form, assessing ability to recognise visually similar characters. The topic '字形、字音與詞義辨析' and label '形近字辨識' accurately reflect the tested skill; '基礎掌握' is suitable.",
+        "recommendedTopic": "字形、字音與詞義辨析",
+        "recommendedLabel": "形近字辨識",
         "recommendedModule": "基礎掌握"
       },
       {
@@ -36,10 +36,10 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "The item asks students to identify what the sentence explicitly states (locating the information/main idea of a single-sentence passage). The topic '訊息定位', label '訊息定位' and module '理解與應用' correctly describe this literal information-retrieval skill.",
-        "recommendedTopic": "訊息定位",
-        "recommendedLabel": "訊息定位",
-        "recommendedModule": "理解與應用"
+        "reason": "The item asks for the meaning of the idiom 「全神貫注」 and tests understanding of word meaning/idiom in context. The label '成語意思' correctly names the tested subskill. The topic '字形、字音與詞義辨析' (which includes 詞義辨析) is educationally coherent for this skill. The module '基礎掌握' fits the basic difficulty.",
+        "recommendedTopic": "字形、字音與詞義辨析",
+        "recommendedLabel": "成語意思",
+        "recommendedModule": "基礎掌握"
       },
       {
         "id": "chinese-reading-P4-3-0",
@@ -47,10 +47,10 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "The item requires extracting a specific detail (the latest arrival time) from a short announcement. Both '訊息定位' (topic) and '細節理解' (label) accurately describe the skill of locating explicit textual details; the module '理解與應用' is also appropriate.",
-        "recommendedTopic": "訊息定位",
-        "recommendedLabel": "細節理解",
-        "recommendedModule": "理解與應用"
+        "reason": "The item asks which sentence appropriately uses the idiom '津津有味', testing idiom collocation/usage. The label '成語搭配' accurately describes the skill. The topic '字形、字音與詞義辨析' suitably covers詞義與用法. The module '基礎掌握' matches the basic level.",
+        "recommendedTopic": "字形、字音與詞義辨析",
+        "recommendedLabel": "成語搭配",
+        "recommendedModule": "基礎掌握"
       },
       {
         "id": "chinese-reading-P4-4-0",
@@ -58,10 +58,10 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "題幹要求由行為推論人物特質（查看天氣和路線→有準備），即人物推論／人物與原因推論，屬於情境推理能力。提供的 label、topic 和 module 精確且教育上合適。",
-        "recommendedTopic": "人物與原因推論",
-        "recommendedLabel": "人物推論",
-        "recommendedModule": "情境推理"
+        "reason": "The item asks students to distinguish nuance between near-synonyms (細心 vs 小心) and choose the action that best matches 細心. The label '詞語辨析（近義詞）' accurately names the precise skill, and the topic '字形、字音與詞義辨析' aligns with the P4 parent domain. The module '基礎掌握' is an educationally coherent classification for this vocabulary-level item.",
+        "recommendedTopic": "字形、字音與詞義辨析",
+        "recommendedLabel": "詞語辨析（近義詞）",
+        "recommendedModule": "基礎掌握"
       },
       {
         "id": "chinese-reading-P4-5-0",
@@ -69,10 +69,10 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "題幹要求推論行為背後的原因（先了解資料才決定→希望作出較合適的選擇），即原因推論，屬於人物與原因推論範疇，適合作為情境推理題目。現有 metadata 與實際測量的技能一致。",
-        "recommendedTopic": "人物與原因推論",
-        "recommendedLabel": "原因推論",
-        "recommendedModule": "情境推理"
+        "reason": "The item tests use of a contrasting conjunction in a complex sentence introduced by '雖然...', so the label '轉折複句' correctly identifies the targeted grammar point. The topic '轉折複句與進階標點' is the P4 parent domain that covers this skill, and '基礎掌握' suitably describes the skill level.",
+        "recommendedTopic": "轉折複句與進階標點",
+        "recommendedLabel": "轉折複句",
+        "recommendedModule": "基礎掌握"
       },
       {
         "id": "chinese-reading-P4-6-0",
@@ -80,10 +80,10 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "The item asks students to recognise a rhetorical device (personification) in a sentence. The label '修辭手法', topic '語境、修辭與句意' and module '理解與應用' accurately describe this skill at a basic level.",
-        "recommendedTopic": "語境、修辭與句意",
-        "recommendedLabel": "修辭手法 (擬人)",
-        "recommendedModule": "理解與應用"
+        "reason": "題幹要求判斷分號的正確用法，屬於標點符號運用，與 P4 的「轉折複句與進階標點」父領域一致；標籤「分號運用」精確指向該測驗焦點；模組「基礎掌握」合適。",
+        "recommendedTopic": "轉折複句與進階標點",
+        "recommendedLabel": "分號運用",
+        "recommendedModule": "基礎掌握"
       },
       {
         "id": "chinese-reading-P4-7-0",
@@ -91,10 +91,10 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "The item requires straightforward sentence-level comprehension (identifying the main meaning). The label '句意理解', topic '語境、修辭與句意' and module '理解與應用' suitably match the measured skill.",
-        "recommendedTopic": "語境、修辭與句意",
-        "recommendedLabel": "句意理解",
-        "recommendedModule": "理解與應用"
+        "reason": "題幹詢問省略號的主要表示功能（語句停頓與未盡之意），屬於標點理解，符合 P4 父領域「轉折複句與進階標點」；標籤「省略號作用」與測驗內容相符；模組適當。",
+        "recommendedTopic": "轉折複句與進階標點",
+        "recommendedLabel": "省略號作用",
+        "recommendedModule": "基礎掌握"
       },
       {
         "id": "chinese-reading-P4-8-0",
@@ -102,10 +102,10 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "The item asks students to identify the main idea/central message of a short passage. The label '主旨辨認', topic '整合閱讀' and module '理解與應用' correctly describe this skill and its instructional level.",
-        "recommendedTopic": "整合閱讀",
-        "recommendedLabel": "主旨辨認",
-        "recommendedModule": "理解與應用"
+        "reason": "題幹要求辨認哪一句為轉折複句（前後意思相反或對比），貼合P4指定的「轉折複句與進階標點」領域。標籤「複句判斷」準確表述該題測驗的技能（判斷複句類型）；模組與難度標示為基礎也合理。",
+        "recommendedTopic": "轉折複句與進階標點",
+        "recommendedLabel": "複句判斷",
+        "recommendedModule": "基礎掌握"
       },
       {
         "id": "chinese-reading-P4-9-0",
@@ -113,9 +113,174 @@
         "topicMatches": true,
         "labelMatches": true,
         "moduleMatches": true,
-        "reason": "The item asks students to recognise the organisational pattern (sequence of steps). The label '段落關係' and topic '整合閱讀' within the '理解與應用' module accurately reflect recognising text structure/sequence.",
-        "recommendedTopic": "整合閱讀",
-        "recommendedLabel": "段落關係",
+        "reason": "題目要求填入合適的關聯詞以表達「即使…仍然…」的轉折語意，直接測驗轉折複句中關聯詞的選擇，屬於P4「轉折複句與進階標點」範疇。標籤「關聯詞選擇」明確描述該項技能；模組與難度（基礎/核心）標示合適。",
+        "recommendedTopic": "轉折複句與進階標點",
+        "recommendedLabel": "關聯詞選擇",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P4-10-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the moral of a fable (infer main message from the story), which fits the P4 parent domain '寓言、神話與說明文'. The label '寓言寓意' correctly names the specific skill, and '理解與應用' is an appropriate module classification.",
+        "recommendedTopic": "寓言、神話與說明文",
+        "recommendedLabel": "寓言寓意",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-11-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires identifying whom the mythic action was meant to help (recognising character purpose/beneficiary), matching the P4 domain '寓言、神話與說明文'. The label '人物目的與受益者' and module '理解與應用' accurately describe the measured skill.",
+        "recommendedTopic": "寓言、神話與說明文",
+        "recommendedLabel": "人物目的與受益者",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-12-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks which explanatory method is used (comparison), which is a skill within the P4 parent domain '寓言、神話與說明文' and matches the label '說明方法'. The module '理解與應用' correctly describes the cognitive demand.",
+        "recommendedTopic": "寓言、神話與說明文",
+        "recommendedLabel": "說明方法",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-13-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires locating explicit factual information in an explanatory text (the first stage of butterfly development), which fits the P4 domain '寓言、神話與說明文' and the label '說明文訊息'. The module '理解與應用' is appropriate.",
+        "recommendedTopic": "寓言、神話與說明文",
+        "recommendedLabel": "說明文訊息",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-14-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify a text type that explains features and knowledge, which fits the P4 parent domain '寓言、神話與說明文' and the specific subskill '文體辨識'. The module '理解與應用' is appropriate for this comprehension/application task.",
+        "recommendedTopic": "寓言、神話與說明文",
+        "recommendedLabel": "文體辨識",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-15-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires recognizing the use of personification, matching the P4 domain '修辭與篇章結構' and the precise subskill '擬人辨識'. The module '理解與應用' suits this basic rhetorical-recognition question.",
+        "recommendedTopic": "修辭與篇章結構",
+        "recommendedLabel": "擬人辨識",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-16-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify a rhetorical device (hyperbole). The topic '修辭與篇章結構' (which includes 修辭) correctly describes the tested skill. The label '誇張辨識' precisely names the subskill. The module '理解與應用' is appropriate for recognising and applying rhetorical knowledge.",
+        "recommendedTopic": "修辭與篇章結構",
+        "recommendedLabel": "誇張辨識",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-17-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses understanding of the function of a narrative opening (setting time, place, characters). This fits the P4 parent domain '修辭與篇章結構' (篇章結構). The label '開頭作用' accurately describes the skill tested, and '理解與應用' is an appropriate module.",
+        "recommendedTopic": "修辭與篇章結構",
+        "recommendedLabel": "開頭作用",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-18-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify the paragraph's arrangement method (order of describing observed scenery). This is clearly a skill in 修辭與篇章結構 and the label 段落組織／安排方法 precisely names the subskill. 模塊 理解與應用 is an appropriate classification.",
+        "recommendedTopic": "修辭與篇章結構",
+        "recommendedLabel": "段落組織／安排方法",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-19-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests the function of a narrative ending (summarising feeling/lesson), which falls under 修辭與篇章結構. The label 結尾作用 accurately names the specific skill. 模塊 理解與應用 correctly describes the cognitive demand.",
+        "recommendedTopic": "修辭與篇章結構",
+        "recommendedLabel": "結尾作用",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-20-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks for the poet's feeling expressed in a seven-character quatrain line. This directly assesses literary feeling/mood in classical poetry, which matches the P4 parent domain 七言絕句與文學感受. The label 古詩心情 (poem mood) accurately names the specific skill, and 理解與應用 is an appropriate module.",
+        "recommendedTopic": "七言絕句與文學感受",
+        "recommendedLabel": "古詩心情",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-21-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks which festival/custom is described by the poem line (登高 and 插茱萸), which assesses knowledge of cultural references in seven-character quatrains—aligned with 七言絕句與文學感受. The label 古詩節日 correctly specifies the subskill, and 理解與應用 fits the task.",
+        "recommendedTopic": "七言絕句與文學感受",
+        "recommendedLabel": "古詩節日",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-22-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹詢問詩中詞語「異客」指的是哪類人物，實際測量的是在古詩語境中辨識人物身分／詞義（文學感受與理解層面）。標題「古詩人物」與所屬父題「七言絕句與文學感受」均恰當，且題目屬於理解與應用層次，故 metadata 合宜。",
+        "recommendedTopic": "七言絕句與文學感受",
+        "recommendedLabel": "古詩人物",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-23-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目要求理解詩句中「倍」的語意，評估的是詞義在詩句中表現的感受與程度，屬於文學感受與詞義辨析範疇。標籤「詩句感受」、父題「七言絕句與文學感受」以及模組「理解與應用」均與題意相符。",
+        "recommendedTopic": "七言絕句與文學感受",
+        "recommendedLabel": "詩句感受",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P4-24-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks the student to imagine the literary image evoked by the phrase 「登高處」 in a classical-poetry context, which is precisely a literary-sense/imagery task. The provided P4 parent domain '七言絕句與文學感受' is appropriate for this item, the label '文學畫面' correctly names the subskill (identifying/visualising poetic imagery), and the module '理解與應用' fits the comprehension-and-application nature of the task.",
+        "recommendedTopic": "七言絕句與文學感受",
+        "recommendedLabel": "文學畫面",
         "recommendedModule": "理解與應用"
       }
     ]

@@ -1,0 +1,288 @@
+{
+  "generatedAt": "2026-08-27T03:53:02.324144+00:00",
+  "grade": "P1",
+  "track": "chinese-reading",
+  "canonicalQuestionCount": 25,
+  "variantQuestionCount": 25,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/13: Reviewed 2 P1 Chinese reading items. Both items PASS: their topics, labels and modules align with the skill required by the stems.\n\nPart 2/13: Reviewed 2 P1 Chinese reading items (part 2 of 13). Both items measure 字形-related skills and metadata are appropriate: PASS for both.\n\nPart 3/13: Reviewed 2 P1 Chinese reading items (part 3 of 13). Both items appropriately align with their supplied topic, label and module.\n\nPart 4/13: Reviewed 2 P1 Chinese reading items (part 4 of 13). Both items align with the P1 domain “字詞與基本句子”; labels and modules are appropriate. Recommend no changes.\n\nPart 5/13: Reviewed 2 P1 Chinese-reading items (part 5 of 13). Both items' metadata appropriately match the skills assessed; recommend no changes.\n\nPart 6/13: Reviewed 2 P1 Chinese reading items (part 6 of 13). Both items correctly target basic punctuation and sentence structure for P1; metadata is appropriate.\n\nPart 7/13: Reviewed 2 P1 Chinese reading items (part 7 of 13). Both items accurately target basic punctuation and sentence-use skills for P1; no metadata changes needed.\n\nPart 8/13: 2 items reviewed for P1 Chinese reading. Both items' metadata correctly match the skills tested and require no change.\n\nPart 9/13: Reviewed 2 P1 Chinese-reading items (part 9 of 13). Both items correctly target basic information-finding skills in simple texts (time and place). Topics, labels and module are appropriate for P1 reading comprehension.\n\nPart 10/13: Reviewed 2 P1 Chinese reading items (兒歌與童話閱讀). Both items' topic, label and module accurately describe the skill tested; no changes recommended.\n\nPart 11/13: Reviewed 2 P1 Chinese-reading items (part 11). Both items assess identification of simple rhetorical devices and their metadata align with P1 curriculum domains. Recommend no changes.\n\nPart 12/13: Reviewed 2 P1 Chinese-reading items (part 12 of 13). Both items are correctly classified and require no change.\n\nPart 13/13: Reviewed 1 item: 1 PASS.",
+    "reviews": [
+      {
+        "id": "chinese-reading-P1-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks for the second stroke of the character 「木」, which directly measures knowledge of stroke order. The topic '字形、筆畫與部首' correctly names the domain. The label '筆畫順序' precisely describes the subskill. The module '基礎掌握' is an educationally coherent classification for this foundational item.",
+        "recommendedTopic": "字形、筆畫與部首",
+        "recommendedLabel": "筆畫順序",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P1-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks which two components form the character 『明』, so it assesses recognition of character parts/components. The topic '字形、筆畫與部首' is appropriate. The label '部件辨識' accurately names the tested skill. The module '基礎掌握' suitably categorises this elementary character-structure task.",
+        "recommendedTopic": "字形、筆畫與部首",
+        "recommendedLabel": "部件辨識",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P1-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify the radical (部首) of a character, which is clearly a 字形、筆畫與部首 skill. The label '部首辨識' accurately names the subskill and '基礎掌握' is an appropriate module for this basic recognition task.",
+        "recommendedTopic": "字形、筆畫與部首",
+        "recommendedLabel": "部首辨識",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P1-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks which object the pictographic character '山' resembles, testing recognition of 字形/象形字. The topic '字形、筆畫與部首' and label '象形字初步' accurately describe the tested skill; '基礎掌握' is appropriate for this entry-level task.",
+        "recommendedTopic": "字形、筆畫與部首",
+        "recommendedLabel": "象形字初步",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P1-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the meaning suggested by the character components (人 + 木 → 休息). This assesses knowledge of character shape/radical and basic character meaning, which fits the P1 domain '字形、筆畫與部首' and the label '字義初步'. '基礎掌握' is an appropriate module.",
+        "recommendedTopic": "字形、筆畫與部首",
+        "recommendedLabel": "字義初步",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P1-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests the meaning of the word '快樂' (vocabulary/word-meaning recognition). This aligns with the P1 domain '字詞與基本句子' and the label '詞義理解'. '基礎掌握' is suitable.",
+        "recommendedTopic": "字詞與基本句子",
+        "recommendedLabel": "詞義理解",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P1-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for appropriate usage of the adjective 「整潔」, which tests word meaning and usage within simple sentences — this fits P1’s parent domain 字詞與基本句子. The label “詞語應用” accurately names the subskill; the module “基礎掌握” is an appropriate classification for a basic-level item.",
+        "recommendedTopic": "字詞與基本句子",
+        "recommendedLabel": "詞語應用",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P1-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires identification of subject and action in a simple sentence (“誰做甚麼”), which is a basic sentence-comprehension skill under 字詞與基本句子. The label and module correctly describe the tested skill and difficulty.",
+        "recommendedTopic": "字詞與基本句子",
+        "recommendedLabel": "誰做甚麼",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P1-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks which object is appropriate to use when it rains, testing basic word meaning and object-function recognition — a subskill of '字詞與基本句子'. The label '物品用途辨識' accurately names the measured skill. '基礎掌握' is an appropriate module for this simple vocabulary/item-recognition task.",
+        "recommendedTopic": "字詞與基本句子",
+        "recommendedLabel": "物品用途辨識",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P1-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to order sentence fragments into a coherent sentence, which fits the '字詞與基本句子' domain. The label '句子排列' correctly describes the assessed skill. '基礎掌握' is appropriate for this core sentence-construction task.",
+        "recommendedTopic": "字詞與基本句子",
+        "recommendedLabel": "句子排列",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P1-10-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題幹要求判斷句號的正確使用，標籤「句號運用」準確，主題列為P1允許的「基本標點與句式」，模組屬於基礎掌握合適。",
+        "recommendedTopic": "基本標點與句式",
+        "recommendedLabel": "句號運用",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P1-11-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "題目測量問號的正確運用，標籤「問號運用」與P1的「基本標點與句式」主題相符，模組標示為基礎掌握適切。",
+        "recommendedTopic": "基本標點與句式",
+        "recommendedLabel": "問號運用",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P1-12-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem asks which sentence should end with an exclamation mark, so the tested skill is punctuation use. The topic '基本標點與句式' (basic punctuation and sentence patterns) correctly names the parent domain for P1; the label '感嘆號運用' precisely identifies the subskill; '基礎掌握' is an appropriate module.",
+        "recommendedTopic": "基本標點與句式",
+        "recommendedLabel": "感嘆號運用",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P1-13-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses correct placement of a comma in a simple sentence, matching the P1 parent domain '基本標點與句式'. The label '逗號運用' correctly specifies the subskill and '基礎掌握' is appropriate for the difficulty.",
+        "recommendedTopic": "基本標點與句式",
+        "recommendedLabel": "逗號運用",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P1-14-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify a complete, grammatical sentence — this is a sentence-structure/marking skill. The topic '基本標點與句式' appropriately names the parent domain; the label '完整句子' correctly specifies the precise subskill. The module '基礎掌握' is educationally coherent for this core-level item.",
+        "recommendedTopic": "基本標點與句式",
+        "recommendedLabel": "完整句子",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "chinese-reading-P1-15-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question requires identifying the story's main character from a short童話, matching the '兒歌與童話閱讀' domain. The label '人物辨識' precisely describes the tested skill, and '理解與應用' is an appropriate module for this basic comprehension task.",
+        "recommendedTopic": "兒歌與童話閱讀",
+        "recommendedLabel": "人物辨識",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P1-16-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks the student to identify a time expression from a short passage (直接找出時間詞). This is a simple reading-comprehension task appropriate to the P1 parent domain 兒歌與童話閱讀; the label 時間訊息 precisely names the subskill. 理解與應用 is an appropriate module classification.",
+        "recommendedTopic": "兒歌與童話閱讀",
+        "recommendedLabel": "時間訊息",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P1-17-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires locating a place word in a short text (找出表示地方的詞), testing identification of location information. This matches the P1 domain 兒歌與童話閱讀 and the precise label 地點訊息. 理解與應用 is an appropriate module label.",
+        "recommendedTopic": "兒歌與童話閱讀",
+        "recommendedLabel": "地點訊息",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P1-18-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item is a short nursery rhyme asking for an explicitly stated detail. The topic '兒歌與童話閱讀' correctly identifies the genre for P1; the label '直接訊息' (direct information) precisely describes the skill of locating literal information; the module '理解與應用' is an appropriate generic categorisation.",
+        "recommendedTopic": "兒歌與童話閱讀",
+        "recommendedLabel": "直接訊息",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P1-19-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The short narrative asks what action the character performed. The topic '兒歌與童話閱讀' fits P1 narrative reading; the label '事件理解' (event understanding) accurately names the skill of identifying a character's action; the module '理解與應用' is appropriate.",
+        "recommendedTopic": "兒歌與童話閱讀",
+        "recommendedLabel": "事件理解",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P1-20-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks the student to recognise personification (擬人) in a sentence. The topic '簡單修辭與古詩' correctly places this within P1's simple rhetorical devices domain. The label '擬人初步' accurately names the precise subskill tested. The module '理解與應用' appropriately describes the comprehension/application task.",
+        "recommendedTopic": "簡單修辭與古詩",
+        "recommendedLabel": "擬人初步",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P1-21-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks the student to identify a basic simile (比喻). The topic '簡單修辭與古詩' fits P1's simple rhetorical devices domain. The label '比喻初步' correctly names the tested subskill. The module '理解與應用' suitably describes the comprehension/application demand.",
+        "recommendedTopic": "簡單修辭與古詩",
+        "recommendedLabel": "比喻初步",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P1-22-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks learners to identify the animal named in a well-known line of a poem, which fits the P1 subskill '古詩動物' and the parent domain '簡單修辭與古詩'. '理解與應用' is an appropriate cognitive module for recognizing meaning from the text.",
+        "recommendedTopic": "簡單修辭與古詩",
+        "recommendedLabel": "古詩動物",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P1-23-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires identifying colour words in a poem line to describe the picture, matching the P1 subskill '古詩畫面' within '簡單修辭與古詩'. '理解與應用' correctly describes the cognitive demand.",
+        "recommendedTopic": "簡單修辭與古詩",
+        "recommendedLabel": "古詩畫面",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "chinese-reading-P1-24-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to recognise an onomatopoeic reduplicated word ('沙沙') and match it to the sound of rain. The label '擬聲詞辨識（疊字）' precisely names that subskill. The topic '簡單修辭與古詩' (simple rhetoric and classical poems) appropriately covers recognition of simple rhetorical devices in P1, and the module '理解與應用' fits the cognitive demand.",
+        "recommendedTopic": "簡單修辭與古詩",
+        "recommendedLabel": "擬聲詞辨識（疊字）",
+        "recommendedModule": "理解與應用"
+      }
+    ]
+  }
+}

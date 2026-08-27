@@ -1,0 +1,150 @@
+{
+  "generatedAt": "2026-08-27T05:24:30.971Z",
+  "scope": "小一至小六中文閱讀",
+  "finding": "同一題幹只附加情境字尾會被視為重覆，不能作為獨立評核題。",
+  "inventory": {
+    "P1": {
+      "questionCount": 25,
+      "uniqueDisplayedStems": 25,
+      "repeatedStemCount": 0,
+      "repeatedStems": [],
+      "topics": [
+        "字形、筆畫與部首",
+        "字詞與基本句子",
+        "基本標點與句式",
+        "兒歌與童話閱讀",
+        "簡單修辭與古詩"
+      ],
+      "modules": [
+        "基礎掌握",
+        "理解與應用"
+      ],
+      "selectionGroups": [
+        "primary-chinese-reading-P1-0",
+        "primary-chinese-reading-P1-1",
+        "primary-chinese-reading-P1-2",
+        "primary-chinese-reading-P1-3",
+        "primary-chinese-reading-P1-4"
+      ]
+    },
+    "P2": {
+      "questionCount": 25,
+      "uniqueDisplayedStems": 25,
+      "repeatedStemCount": 0,
+      "repeatedStems": [],
+      "topics": [
+        "詞義辨析與查字典",
+        "句式與標點運用",
+        "段落大意與順敘",
+        "看圖與敘事閱讀",
+        "修辭與五言絕句"
+      ],
+      "modules": [
+        "理解與應用"
+      ],
+      "selectionGroups": [
+        "primary-chinese-reading-P2-0",
+        "primary-chinese-reading-P2-1",
+        "primary-chinese-reading-P2-2",
+        "primary-chinese-reading-P2-3",
+        "primary-chinese-reading-P2-4"
+      ]
+    },
+    "P3": {
+      "questionCount": 25,
+      "uniqueDisplayedStems": 25,
+      "repeatedStemCount": 0,
+      "repeatedStems": [],
+      "topics": [
+        "詞彙、成語與字詞辨錯",
+        "複句、標點與專名",
+        "中心句與段落組織",
+        "倒敘與實用文閱讀",
+        "修辭與七言絕句"
+      ],
+      "modules": [
+        "基礎掌握",
+        "理解與應用"
+      ],
+      "selectionGroups": [
+        "primary-chinese-reading-P3-0",
+        "primary-chinese-reading-P3-1",
+        "primary-chinese-reading-P3-2",
+        "primary-chinese-reading-P3-3",
+        "primary-chinese-reading-P3-4"
+      ]
+    },
+    "P4": {
+      "questionCount": 25,
+      "uniqueDisplayedStems": 25,
+      "repeatedStemCount": 0,
+      "repeatedStems": [],
+      "topics": [
+        "字形、字音與詞義辨析",
+        "轉折複句與進階標點",
+        "寓言、神話與說明文",
+        "修辭與篇章結構",
+        "七言絕句與文學感受"
+      ],
+      "modules": [
+        "基礎掌握",
+        "理解與應用"
+      ],
+      "selectionGroups": [
+        "primary-chinese-reading-P4-0",
+        "primary-chinese-reading-P4-1",
+        "primary-chinese-reading-P4-2",
+        "primary-chinese-reading-P4-3",
+        "primary-chinese-reading-P4-4"
+      ]
+    },
+    "P5": {
+      "questionCount": 25,
+      "uniqueDisplayedStems": 25,
+      "repeatedStemCount": 0,
+      "repeatedStems": [],
+      "topics": [
+        "詞語感情色彩與詞義",
+        "條件假設複句與破折號",
+        "要點歸納與思想感情",
+        "議論與散文閱讀",
+        "律詩格式、文化與內容理解"
+      ],
+      "modules": [
+        "基礎掌握",
+        "理解與應用"
+      ],
+      "selectionGroups": [
+        "primary-chinese-reading-P5-0",
+        "primary-chinese-reading-P5-1",
+        "primary-chinese-reading-P5-2",
+        "primary-chinese-reading-P5-3",
+        "primary-chinese-reading-P5-4"
+      ]
+    },
+    "P6": {
+      "questionCount": 25,
+      "uniqueDisplayedStems": 25,
+      "repeatedStemCount": 0,
+      "repeatedStems": [],
+      "topics": [
+        "熟語與多義詞運用",
+        "讓步遞進複句與標點",
+        "比較閱讀與觀點證據",
+        "淺易文言與進階修辭",
+        "古詩宋詞賞析"
+      ],
+      "modules": [
+        "基礎掌握",
+        "理解與應用"
+      ],
+      "selectionGroups": [
+        "primary-chinese-reading-P6-0",
+        "primary-chinese-reading-P6-1",
+        "primary-chinese-reading-P6-2",
+        "primary-chinese-reading-P6-3",
+        "primary-chinese-reading-P6-4"
+      ]
+    }
+  }
+}

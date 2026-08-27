@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-26T10:26:11.569591+00:00",
+  "generatedAt": "2026-08-27T04:39:34.857514+00:00",
   "grade": "P5",
   "track": "chinese-reading",
-  "canonicalQuestionCount": 10,
-  "variantQuestionCount": 30,
+  "canonicalQuestionCount": 25,
+  "variantQuestionCount": 25,
   "model": "gpt-5-mini",
   "review": {
-    "batchSummary": "Part 1/5: Both items are appropriate for P5 Chinese vocabulary and usage. Each has a single best answer (index 0), clear wording, age-appropriate language, and plausible distractors. No revision needed.\n\nPart 2/5: 本批次包含 2 題 P5 中文閱讀（訊息定位/細節理解）。兩題題幹清楚、選項無二義且與年級能力相符，均可通過審核。\n\nPart 3/5: Two P5 Chinese-reading inference items reviewed. Both items are clear, age-appropriate, have a single best answer and plausible distractors, and match the stated difficulty. Recommend no changes.\n\nPart 4/5: Both items are clear, age-appropriate P5 reading items about context and rhetoric. Each has a single best answer, unambiguous wording, and suitable distractors. Recommend PASS for both.\n\nPart 5/5: 兩題均為小五閱讀整合能力的基礎題，題幹清晰、選項合理且單一最佳答案明確，適合該年級水平，建議保留原題目與選項。",
+    "batchSummary": "Part 1/13: 審核 2 題 P5 中文閱讀（詞語感情色彩）。兩題皆為基礎、單一最佳答案、與小學五年級程度相符，均可通過原題。\n\nPart 2/13: 已審核 2 題（P5 中文閱讀）。兩題均符合題意、只有一個最佳答案，難度與用詞均與五年級程度相符，建議通過（PASS）。\n\nPart 3/13: Reviewed 2 P5 Chinese-reading items (part 3). Both items are clear, age-appropriate, have a single best answer and match the syllabus; recommend passing without changes.\n\nPart 4/13: 本批次兩題均為P5程度、語句清晰、選項合理，答案明確，適合直接使用，建議通過。\n\nPart 5/13: Reviewed 2 P5 Chinese-reading items on conditional/hypothetical clauses. Both items are clear, age-appropriate, have one best answer, and match the claimed difficulty. Recommend keeping original content.\n\nPart 6/13: Reviewed 2 P5 Chinese-reading items (part 6). Both items are clear, grade-appropriate, and have a single best answer; recommend passing without changes.\n\nPart 7/13: Reviewed 2 P5 Chinese-reading items (part 7). Both items are clear, age-appropriate, have a single best answer, and match the supplied correct answers — recommend PASS for both.\n\nPart 8/13: Reviewed 2 P5 Chinese-reading items (part 8). Both items are clear, age-appropriate, have a single best answer, and require no revision.\n\nPart 9/13: Reviewed 2 P5 Chinese-reading items on argument recognition and rhetorical question function. Both items are clear, age-appropriate, have a single best answer, and require no revision.\n\nPart 10/13: 2 items reviewed for P5 Chinese reading (part 10). Both items are clear, age-appropriate, have a single best answer, and match the claimed difficulty. Recommend keeping both items unchanged.\n\nPart 11/13: 本批次兩題均為基礎閱讀理解，題幹清楚、選項明確，正答唯一且符合小五課綱常識，建議通過。\n\nPart 12/13: 兩題均為基礎層次的詩歌理解題目，題幹清晰，選項明確且只有一個最佳答案，符合小五中文閱讀能力預期，建議通過。\n\nPart 13/13: 1 item reviewed for P5 Chinese reading (詞語感情色彩與詞義). The item is clear, age-appropriate, and has a single best answer. Recommend passing without changes.",
     "reviews": [
       {
         "id": "chinese-reading-P5-0-0",
@@ -15,13 +15,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The meaning choice \"持續努力不放棄\" accurately matches 「堅持」. Distractors are clearly incorrect and age-appropriate. The stem is unambiguous and suitable for P5.",
-        "recommendedQuestion": "「堅持」最接近下列哪一個意思？",
+        "reason": "「盡責」語義為盡心盡力做好本分，帶有稱讚或正面評價，屬褒義。題幹清晰無歧義，選項合理。",
+        "recommendedQuestion": "「盡責」這個詞帶有哪種感情色彩？",
         "recommendedOptions": [
-          "持續努力不放棄",
-          "很匆忙",
-          "不願意幫忙",
-          "聲音很大"
+          "褒義",
+          "貶義",
+          "中性",
+          "兩可"
         ],
         "recommendedCorrect": 0
       },
@@ -32,13 +32,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "Sentence 1 correctly demonstrates the use of 「堅持」 (to keep trying). The other options are ungrammatical or use 「堅持」 inappropriately, making the correct choice clear for P5 students.",
-        "recommendedQuestion": "下列哪一句最適合使用「堅持」？",
+        "reason": "「敷衍」表示做事不認真、應付了事，帶有負面評價，屬貶義。題目直接、提示恰當，選項無問題。",
+        "recommendedQuestion": "「敷衍」這個詞帶有哪種感情色彩？",
         "recommendedOptions": [
-          "媽媽教我寫字時，我會堅持練習，直到寫得更好。",
-          "聽到好消息，他感到非常堅持。",
-          "這張桌子很堅持，搬不動也放不下。",
-          "這首歌很堅持，大家都跟着唱。"
+          "貶義",
+          "褒義",
+          "中性",
+          "兩可"
         ],
         "recommendedCorrect": 0
       },
@@ -49,13 +49,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹要求找出「主要說明了甚麼」，選項 A 正好重述原句，其他選項與內容無關，故唯一最佳答案為選項 0。語言和認知負荷均符合 P5 水平。",
-        "recommendedQuestion": "嘉怡遇到困難後修改計劃再嘗試。這段文字主要說明了甚麼？",
+        "reason": "選項中「書桌」為中性名詞，不含褒貶；其他選項「英勇」帶褒義、「自私」「懶惰」帶貶義。題幹清晰，干擾選項明確且符合年級詞彙範圍。",
+        "recommendedQuestion": "下列哪個詞通常屬中性詞？",
         "recommendedOptions": [
-          "嘉怡遇到困難後修改計劃再嘗試。",
-          "嘉怡不想參加活動。",
-          "嘉怡正在睡覺。",
-          "嘉怡不見了物品。"
+          "書桌",
+          "英勇",
+          "自私",
+          "懶惰"
         ],
         "recommendedCorrect": 0
       },
@@ -66,13 +66,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "通告明確寫出「參加者請在二時四十五分到達」，題目問「最遲何時到達？」直接對應，選項 A 為唯一正確答案。符合 P5 時間理解能力。",
-        "recommendedQuestion": "通告寫着「一個值得學習的人分享會下午三時開始，參加者請在二時四十五分到達。」最遲何時到達？",
+        "reason": "在語境「他的說話十分尖銳，令同學不舒服。」中，「尖銳」指言詞尖刻、刺耳，最接近「言詞直接刺耳」。其他選項與語境不符。題目表述清楚，適合五年級。",
+        "recommendedQuestion": "「他的說話十分尖銳，令同學不舒服。」「尖銳」最接近甚麼意思？",
         "recommendedOptions": [
-          "下午二時四十五分",
-          "下午三時",
-          "下午三時十五分",
-          "下午四時"
+          "言詞直接刺耳",
+          "聲音輕柔",
+          "樣子快樂",
+          "動作緩慢"
         ],
         "recommendedCorrect": 0
       },
@@ -83,13 +83,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題目語意清晰：從行為（遇到困難後修改計劃再嘗試）可合理推論為有毅力。其他選項為明顯相反或不相關，為有效迷惑選項但不會造成多解。",
-        "recommendedQuestion": "嘉怡遇到困難後修改計劃再嘗試，這最能反映他／她怎樣？",
+        "reason": "The stem clearly asks for a positive word to praise responsibility. '盡責' is the correct and unambiguous positive choice. Distractors ('魯莽', '自私', '敷衍') are all negative and appropriate as wrong options. Language level matches P5.",
+        "recommendedQuestion": "要稱讚同學有責任感，選哪個詞最合適？",
         "recommendedOptions": [
-          "有毅力",
-          "害怕嘗試",
-          "容易放棄",
-          "不願接受別人意見"
+          "盡責",
+          "魯莽",
+          "自私",
+          "敷衍"
         ],
         "recommendedCorrect": 0
       },
@@ -100,13 +100,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題目要求推論行為動機：先了解資料才作決定最合理的解釋是希望作出較合適的選擇。其他選項與該行為矛盾或不合邏輯，無多義性。",
-        "recommendedQuestion": "嘉怡先了解資料才作決定，最可能是因為？",
+        "reason": "The sentence tests the conditional-result pattern '只要……就……'. '就' is the correct connector. Other choices ('但是','雖然','卻') express contrast and do not fit the conditional-result structure. The item is clear and suitable for P5.",
+        "recommendedQuestion": "「只要每天溫習，____能逐步掌握課文。」填哪個詞？",
         "recommendedOptions": [
-          "希望作出較合適的選擇",
-          "不想知道內容",
-          "想拖延時間",
-          "沒有任何原因"
+          "就",
+          "但是",
+          "雖然",
+          "卻"
         ],
         "recommendedCorrect": 0
       },
@@ -117,13 +117,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The phrase '微風輕輕拍著樹葉' uses a human action ('拍') applied to wind, so the intended figure is a person. Distractors are clearly incorrect and age-appropriate. The hint aligns with the intended rhetorical device (擬人法).",
-        "recommendedQuestion": "「微風輕輕拍著樹葉」主要把微風寫成像甚麼？",
+        "reason": "句型為條件假設句，常用連接詞為「那麼」引出結果。「如果明天下雨，那麼遠足便會改期。」語法自然，其他選項或不合語境（「所以」用於結論但語序不佳；「可是、不過」表示轉折）。",
+        "recommendedQuestion": "「如果明天下雨，____遠足便會改期。」填哪個詞？",
         "recommendedOptions": [
-          "人",
-          "石頭",
-          "書本",
-          "雨傘"
+          "那麼",
+          "所以",
+          "可是",
+          "不過"
         ],
         "recommendedCorrect": 0
       },
@@ -134,13 +134,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The sentence directly states that cooperation combines different strengths; option 1 captures that main message. Other choices misinterpret or narrow the meaning. Wording is clear and suitable for P5.",
-        "recommendedQuestion": "「合作能讓我們結合不同的長處。」這句話中，最重要的訊息是甚麼？",
+        "reason": "破折號在此用來插入補充說明，說明「我最期待的活動」是「校際朗誦比賽」。選項「補充說明名稱」正確，其他選項與句意不符。",
+        "recommendedQuestion": "「我最期待的活動——校際朗誦比賽——快開始了。」破折號作用是甚麼？",
         "recommendedOptions": [
-          "合作可以把不同人的長處結合起來，做成更好的事情",
-          "合作是指大家在同一地方工作",
-          "合作就是每個人都單獨完成自己的任務",
-          "只有朋友之間才需要合作"
+          "補充說明名稱",
+          "表示問題",
+          "分開詞語",
+          "標示書名"
         ],
         "recommendedCorrect": 0
       },
@@ -151,13 +151,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹描述文章內容（先介紹準備方法，再說明收穫），直接指向主旨為鼓勵認真準備並參與活動。其他選項與題意無關，為合格的干擾項，沒有二義性且語言適合小五程度。",
-        "recommendedQuestion": "文章先介紹一個值得學習的人的準備方法，再說明參加後的收穫，主旨最可能是？",
+        "reason": "Option 0 contains a conditional complex sentence with a condition（只要…）and a result（就能…）. The other options are simple sentences or imperatives. Language and difficulty suit P5.",
+        "recommendedQuestion": "下列哪一句是條件複句？",
         "recommendedOptions": [
-          "鼓勵讀者認真準備並參與活動",
-          "介紹所有人的姓名",
-          "比較不同天氣",
-          "只描述食物"
+          "只要守規則，就能安全使用器材。",
+          "天氣很好，我們去公園。",
+          "他跑得很快。",
+          "請你安靜。"
         ],
         "recommendedCorrect": 0
       },
@@ -168,13 +168,268 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "句子以「先、再、最後」標示動作順序，明確屬於步驟或程序的組織方式；其他選項與句子結構不符，無歧義，適合小五理解。",
-        "recommendedQuestion": "「先找出重點，再整理想法，最後寫下回應。」這段文字主要按甚麼方式組織？",
+        "reason": "The sentence begins with 「假如」, which signals a hypothetical situation. Option 0 correctly identifies this; other distractors are not plausible answers for what the sentence mainly提出. Wording and concept are suitable for P5.",
+        "recommendedQuestion": "「假如你是班長，你會怎樣安排工作？」主要提出甚麼？",
         "recommendedOptions": [
-          "步驟順序",
-          "人物對話",
-          "地點轉換",
-          "問題與答案"
+          "假設情況",
+          "既有事實",
+          "書名",
+          "並列詞"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-10-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目要求用一句概括多個行動（探望、陪伴、協助購物），選項「關心和支援長者」恰當地涵蓋所有行動；其他選項與句意無關。表述簡潔、年級合適且無二義性。",
+        "recommendedQuestion": "義工探望長者、陪伴聊天和協助購物。最合適的要點是甚麼？",
+        "recommendedOptions": [
+          "關心和支援長者",
+          "喜歡買玩具",
+          "每天上學",
+          "商場關門"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-11-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "句子用夕陽映照安靜海面引發對快畢業同學的聯想，表達情感為對同學的不捨；其他選項與語境無關，題意明確且符合五年級閱讀推斷能力。",
+        "recommendedQuestion": "「夕陽映着安靜的海面，我想起快畢業的同學。」景物襯托甚麼？",
+        "recommendedOptions": [
+          "對同學的不捨",
+          "海水鹹味",
+          "遊戲規則",
+          "課本內容"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-12-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The phrase “充滿希望” clearly conveys positive expectation. All distractors are implausible given the stem, so there is a single best answer. Language and cognitive demand fit P5 reading comprehension.",
+        "recommendedQuestion": "「新學期充滿希望」主要表達甚麼？",
+        "recommendedOptions": [
+          "對新學期的期待",
+          "對校園厭惡",
+          "害怕下雨",
+          "憤怒考試"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-13-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem states the text discusses saving water and electricity and calls for action; the clear main idea is conserving resources in daily life. Distractors are clearly wrong and the language is suitable for P5.",
+        "recommendedQuestion": "文字寫節水、節電，並呼籲大家實行。主要意思是甚麼？",
+        "recommendedOptions": [
+          "生活要節約資源",
+          "購買更多電器",
+          "只有學校要省水",
+          "下雨不用關燈"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-14-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹指出散文多次寫老樹陪伴作者成長，重複描寫作為抒情線索，最貼切的主題是對童年陪伴的懷念。其他選項（樹木價格、種樹步驟、天氣預報）與文意無關，沒有二義性。",
+        "recommendedQuestion": "散文多次寫老樹陪伴作者成長，突出甚麼？",
+        "recommendedOptions": [
+          "對童年陪伴的懷念",
+          "樹木價格",
+          "種樹步驟",
+          "天氣預報"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-15-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "句子直接表明作者的主張：「學校應多舉辦閱讀活動」。其他選項與句子內容不符或荒誕，故本題有明確且唯一的最佳答案，難度符合P5理解層級。",
+        "recommendedQuestion": "「閱讀能擴闊眼界，學校應多舉辦閱讀活動。」作者觀點是甚麼？",
+        "recommendedOptions": [
+          "學校應多舉辦閱讀活動",
+          "閱讀只適合成人",
+          "眼界是一種運動",
+          "取消所有活動"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-16-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The stem asks for a reason that directly supports the claim ‘步行上學有好處’. '可增加日常活動量' is clearly the relevant supporting reason; other choices are irrelevant. Distractors are simple and suitable for P5.",
+        "recommendedQuestion": "支持「步行上學有好處」的理由是甚麼？",
+        "recommendedOptions": [
+          "可增加日常活動量",
+          "書包是藍色",
+          "星期一早會",
+          "校門有大樹"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-17-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The rhetorical question '難道我們不應珍惜食物嗎？' is used to strengthen the claim that we should value food. The correct option is unambiguous and appropriate for P5 level.",
+        "recommendedQuestion": "「難道我們不應珍惜食物嗎？」主要作用是甚麼？",
+        "recommendedOptions": [
+          "加強珍惜食物主張",
+          "真的不知道答案",
+          "介紹人物",
+          "表示時間"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-18-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence uses a question followed by an answer—this is 設問 (rhetorical/question-and-answer). Distractors are clearly different devices. Item is clear and suitable for P5.",
+        "recommendedQuestion": "「為甚麼要守時？因為守時是尊重別人。」運用甚麼方法？",
+        "recommendedOptions": [
+          "設問",
+          "比喻",
+          "擬人",
+          "對偶"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-19-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "「書聲」在語境中指讀書時發出的聲音（同學朗讀的聲音）。其他選項與上下文不符. Item is straightforward and suitable for P5.",
+        "recommendedQuestion": "「校園響起琅琅書聲」中的「書聲」指甚麼？",
+        "recommendedOptions": [
+          "同學朗讀的聲音",
+          "書本重量",
+          "校鐘聲",
+          "風聲"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-20-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "律詩是古典詩的一種，通常為八句的固定格律，題目與選項清晰，無二義性，適合小五程度的詩歌格式理解。",
+        "recommendedQuestion": "一首律詩通常有多少句？",
+        "recommendedOptions": [
+          "八句",
+          "四句",
+          "六句",
+          "十句"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-21-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題目描述的是詩句間字數相同、詞性相對應的修辭特點，標準術語為「對仗」，選項明確，適合小五。",
+        "recommendedQuestion": "律詩中兩句字數相同、詞性相近，稱為甚麼？",
+        "recommendedOptions": [
+          "對仗",
+          "設問",
+          "敘述",
+          "引號"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-22-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹簡短明確，聚焦「詩句末尾讀音相近」的語音現象，選項中只有「押韻節奏感」正確且直接。語言與知識水準符合小五程度，無歧義或弱選項問題。",
+        "recommendedQuestion": "詩句末尾讀音相近，主要形成甚麼？",
+        "recommendedOptions": [
+          "押韻節奏感",
+          "改變人物",
+          "增加標點",
+          "說明地點"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-23-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "引用的詩句「感時花濺淚，恨別鳥驚心」明顯表達憂傷與離別情緒，選項中唯一合適答案為「憂傷和離別之情」。題目語境明確，適合小五閱讀理解程度。",
+        "recommendedQuestion": "「感時花濺淚，恨別鳥驚心」襯托甚麼？",
+        "recommendedOptions": [
+          "憂傷和離別之情",
+          "節日熱鬧",
+          "田園豐收",
+          "遊戲快樂"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P5-24-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The idiom 「家書抵萬金」 clearly means that a letter from home is extremely precious; the hint supports this. Distractors are implausible and only one option correctly matches the idiom. Language and concept are appropriate for Primary 5.",
+        "recommendedQuestion": "「家書抵萬金」最能表現家書怎樣？",
+        "recommendedOptions": [
+          "十分珍貴",
+          "毫無用處",
+          "容易取得",
+          "只值一元"
         ],
         "recommendedCorrect": 0
       }

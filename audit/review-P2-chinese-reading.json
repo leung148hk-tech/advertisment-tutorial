@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-26T09:43:04.149966+00:00",
+  "generatedAt": "2026-08-27T04:01:02.633955+00:00",
   "grade": "P2",
   "track": "chinese-reading",
-  "canonicalQuestionCount": 10,
-  "variantQuestionCount": 30,
+  "canonicalQuestionCount": 25,
+  "variantQuestionCount": 25,
   "model": "gpt-5-mini",
   "review": {
-    "batchSummary": "Part 1/5: Two P2 Chinese reading vocabulary items testing the word 「整潔」. Both items are clear, age-appropriate, have one unambiguous best answer, and use suitable distractors for Primary 2.\n\nPart 2/5: 本批次 2 題檢視：均通過。題目清晰、選項合理、答案明確且符合 P2 能力水平。\n\nPart 3/5: Two P2 Chinese-reading items reviewed. Both items are clear, age-appropriate, have one unambiguous best answer, and match the claimed difficulty. Recommend passing without changes.\n\nPart 4/5: 兩題均清晰、無歧義，正確答案明確且適合小二程度。建議保留原題目與選項不作修改。\n\nPart 5/5: 兩題皆為小學二年級閱讀理解（主旨與段落關係）基礎題目。題幹清晰、選項合理、唯一最佳答案明確，難度與年級相符，建議通過。",
+    "batchSummary": "Part 1/13: Reviewed 2 P2 Chinese-reading items (近義詞辨識 and 反義詞辨識). Both items are age-appropriate, unambiguous, and have a single best answer. Recommend keeping original content.\n\nPart 2/13: Reviewed 2 P2 Chinese-reading items on dictionary lookup. Both items are clear, age-appropriate, have a single best answer, and require no revision.\n\nPart 3/13: Reviewed 2 P2 Chinese-reading items (part 3). Both items are clear, have one unambiguous correct answer, and are age-appropriate. Recommend PASS for both.\n\nPart 4/13: 兩題皆為小二程度的句式辨識題，題幹清楚、選項具區別性，答案無爭議，適合基礎練習與評量。\n\nPart 5/13: Reviewed 2 P2 Chinese-reading items on punctuation/quotation marks. Both items are clear, age-appropriate, have a single best answer, and require no revision.\n\nPart 6/13: Two P2 Chinese-reading items reviewed. Both items are clear, age-appropriate, have a single best answer, and align with the expected syllabus focus on main idea and sequence. Recommend passing both without change.\n\nPart 7/13: Two P2 Chinese-reading items (順序題與段落題目). Both items are clear, age-appropriate, unambiguous, and have a single best answer. Recommend passing both without changes.\n\nPart 8/13: Reviewed 2 P2 Chinese reading items (part 8 of 13). Both items are clear, unambiguous, grade-appropriate, and have a single best answer. Recommend passing both without change.\n\nPart 9/13: Reviewed 2 P2 Chinese reading items (看圖與敘事閱讀). Both items are clear, age-appropriate, have a single best answer, and require no revision.\n\nPart 10/13: Reviewed 2 P2 Chinese-reading items (part 10). Both items are clear, age-appropriate reading-comprehension questions with an unambiguous single best answer. No revisions needed.\n\nPart 11/13: Reviewed 2 P2 Chinese-reading items (修辭). Both items are clear, age-appropriate, and have a single best answer; no revision needed.\n\nPart 12/13: Both P2 items are clear, age-appropriate comprehension questions about the same couplet from a five-character quatrain. Each has one unambiguous best answer, simple distractors, and matches the stated difficulty and module.\n\nPart 13/13: Reviewed 1 item for P2 Chinese reading. The item is clear, age-appropriate, unambiguous, and requires no revision.",
     "reviews": [
       {
         "id": "chinese-reading-P2-0-0",
@@ -15,13 +15,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The meaning choice '乾淨有條理' correctly matches 『整潔』. Other options are clearly incorrect for P2 learners. The stem is unambiguous and uses age-appropriate language.",
-        "recommendedQuestion": "「整潔」最接近下列哪一個意思？",
+        "reason": "The stem asks for a near-synonym of 「高興」 with a clear hint about receiving a gift. 「快樂」 is the unmistakably closest meaning. Distractors (安靜, 寒冷, 辛苦) are clearly incorrect for P2 level. Language and cognitive demand are suitable for Primary 2.",
+        "recommendedQuestion": "「高興」和下列哪一個詞意思最接近？",
         "recommendedOptions": [
-          "乾淨有條理",
-          "很匆忙",
-          "不願意幫忙",
-          "聲音很大"
+          "快樂",
+          "安靜",
+          "寒冷",
+          "辛苦"
         ],
         "recommendedCorrect": 0
       },
@@ -32,13 +32,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "Sentence A ('媽媽把廚房打掃得十分整潔。') is the only natural and correct use of 『整潔』 for P2. The other sentences are ungrammatical or use the word in an unlikely way for this grade, providing clear distractors.",
-        "recommendedQuestion": "下列哪一句最適合使用「整潔」？",
+        "reason": "The question asks for the antonym of 「高」. Among the options, 「低」 is the clear and correct opposite. Other choices (大, 長, 遠) are unrelated comparatives. The item is straightforward and suitable for Primary 2.",
+        "recommendedQuestion": "「高」的反義詞是甚麼？",
         "recommendedOptions": [
-          "媽媽把廚房打掃得十分整潔。",
-          "小明聽到好消息，感到整潔。",
-          "雨傘的顏色很整潔。",
-          "這首歌的旋律很整潔。"
+          "低",
+          "大",
+          "長",
+          "遠"
         ],
         "recommendedCorrect": 0
       },
@@ -49,13 +49,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "句子為直接陳述「小美把圖書放回書架。」問題要求找出主要說明，選項 0 與原句完全一致，其他選項與句意不符，無歧義，適合 P2 水平。",
-        "recommendedQuestion": "小美把圖書放回書架。這段文字主要說明了甚麼？",
+        "reason": "題幹清晰，提示與選項相關且無二義。『跑』字的部首是足（左邊的部件），選項及正確答案正確且適合小二程度。",
+        "recommendedQuestion": "想查「跑」字的意思，可以先查哪一個部首？",
         "recommendedOptions": [
-          "小美把圖書放回書架。",
-          "小美不想參加活動。",
-          "小美正在睡覺。",
-          "小美不見了物品。"
+          "足",
+          "包",
+          "口",
+          "木"
         ],
         "recommendedCorrect": 0
       },
@@ -66,13 +66,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "通告明確寫出報到時間「二時四十五分」，問最遲何時到達，選項 0 為正確且唯一可接受的答案。語言和推理解難度符合 P2。",
-        "recommendedQuestion": "通告寫着「一次旅行分享會下午三時開始，參加者請在二時四十五分到達。」最遲何時到達？",
+        "reason": "題目教導使用筆畫查字典的方法，選項中只有「數筆畫」符合查字典的實務，語言與概念均符合小二水平。",
+        "recommendedQuestion": "如果不知道「明」字的部首，可用甚麼方法查字典？",
         "recommendedOptions": [
-          "下午二時四十五分",
-          "下午三時",
-          "下午三時十五分",
-          "下午四時"
+          "數筆畫",
+          "背詩歌",
+          "看圖畫",
+          "問天氣"
         ],
         "recommendedCorrect": 0
       },
@@ -83,13 +83,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹清楚：把圖書放回書架是具體行為，四個選項中只有「有公德心」能合理從此行為推論出來；其他選項與行為矛盾或不相關。語言與推理深度符合P2程度，選項分布良好。",
-        "recommendedQuestion": "小美把圖書放回書架，這最能反映他／她怎樣？",
+        "reason": "The stem is clear and unambiguous for P2. All distractors are clearly in different semantic categories (furniture, actions, colours), so only option 0 (開心、難過) correctly represents feelings. Hint is helpful and level-appropriate.",
+        "recommendedQuestion": "下列哪一組都是表示心情的詞語？",
         "recommendedOptions": [
-          "有公德心",
-          "粗心大意",
-          "不願合作",
-          "害怕嘗試"
+          "開心、難過",
+          "桌子、椅子",
+          "跑步、跳繩",
+          "紅色、藍色"
         ],
         "recommendedCorrect": 0
       },
@@ -100,13 +100,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題目描述小美先了解資料才作決定，最合理的原因是希望作出較合適的選擇。其他三個選項與行為動機不符（例如不想知道內容與先了解資料矛盾）。語言簡單明確，適合P2水平。",
-        "recommendedQuestion": "小美先了解資料才作決定，最可能是因為？",
+        "reason": "The item tests recognition of sentence types (陳述句) at a P2 level. Option 0 is the only declarative sentence; other options are clearly a question or imperatives. Language and difficulty suit the grade.",
+        "recommendedQuestion": "下列哪一句是陳述句？",
         "recommendedOptions": [
-          "希望作出較合適的選擇",
-          "不想知道內容",
-          "想拖延時間",
-          "沒有任何原因"
+          "今天的天氣很好。",
+          "你今天好嗎？",
+          "請排好隊！",
+          "快點關門！"
         ],
         "recommendedCorrect": 0
       },
@@ -117,13 +117,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "句子使用擬人手法（「拍著」為人的動作），問法明確地問把微風寫成像甚麼，選項中「人」為唯一合適答案，其他為明顯干擾項，符合小二語文理解能力與難度。",
-        "recommendedQuestion": "「微風輕輕拍著樹葉」主要把微風寫成像甚麼？",
+        "reason": "題目要求辨識疑問句，選項中的「你看過這本書嗎？」以疑問詞和問號表明疑問，其他選項為陳述句或祈使句/感嘆句。題目語言和難度符合小二程度，沒有歧義。",
+        "recommendedQuestion": "下列哪一句是疑問句？",
         "recommendedOptions": [
-          "人",
-          "石頭",
-          "書本",
-          "雨傘"
+          "你看過這本書嗎？",
+          "我看過這本書。",
+          "請你看這本書。",
+          "這本書真有趣！"
         ],
         "recommendedCorrect": 0
       },
@@ -134,13 +134,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題目要求找出句子最重要的訊息（誰、在哪裡、做甚麼），選項第一項正確且直接對應句子資訊；其他選項與句意無關，題目符合小二整合句意的能力。",
-        "recommendedQuestion": "「同學們在禮堂唱歌。」這句話中，最重要的訊息是甚麼？",
+        "reason": "題目要求辨識祈使句（請別人做事）。選項「請把功課放在桌上。」明確為請求/指示句；其他選項為陳述或疑問或感嘆，無歧義。題材與表述適合小二學生。",
+        "recommendedQuestion": "下列哪一句是請別人做事的祈使句？",
         "recommendedOptions": [
-          "人物、地點和主要行動",
-          "句子的字數",
-          "所有標點名稱",
-          "顏色的數量"
+          "請把功課放在桌上。",
+          "功課放在桌上。",
+          "功課放在哪裏？",
+          "功課真多！"
         ],
         "recommendedCorrect": 0
       },
@@ -151,13 +151,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "題幹描述文章先講準備方法、再說收穫，最合乎邏輯的主旨是鼓勵讀者認真準備並參與活動。其他選項與題意無關，無二義性，語言與概念符合P2程度。",
-        "recommendedQuestion": "文章先介紹一次旅行的準備方法，再說明參加後的收穫，主旨最可能是？",
+        "reason": "The stem is unambiguous for P2 and tests correct use of colon and quotation marks. Distractors are plausible errors for learners (misplaced colon, wrong placement of quotes). The supplied correct option (0) is clearly best.",
+        "recommendedQuestion": "下列哪一句的冒號和引號用得最合適？",
         "recommendedOptions": [
-          "鼓勵讀者認真準備並參與活動",
-          "介紹所有人的姓名",
-          "比較不同天氣",
-          "只描述食物"
+          "老師說：「明天要帶圖畫簿。」",
+          "老師：說「明天要帶圖畫簿。」",
+          "老師說，明天：「要帶圖畫簿。」",
+          "老師「說：明天要帶圖畫簿。」"
         ],
         "recommendedCorrect": 0
       },
@@ -168,13 +168,268 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "句子以「先……再……最後……」表達動作的先後順序，故以「步驟順序」為主要組織方式。其他選項不符合句子結構，題目直接且適合P2。",
-        "recommendedQuestion": "「先找出重點，再整理想法，最後寫下回應。」這段文字主要按甚麼方式組織？",
+        "reason": "Clear question on the function of quotation marks at P2 level. The correct choice (標示說話內容) is unambiguous; other options are clearly incorrect and serve as good distractors.",
+        "recommendedQuestion": "「請安靜。」一句中的引號主要有甚麼作用？",
         "recommendedOptions": [
-          "步驟順序",
-          "人物對話",
-          "地點轉換",
-          "問題與答案"
+          "標示說話內容",
+          "表示問題",
+          "分開兩個詞",
+          "表示停頓"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-10-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "短文簡短明確，題目詢問段落大意（人物、地點、主要事情）。四個選項中只有「文文和爸爸在公園放風箏」涵蓋了人物、地點與主要事件，無二義性，符合小二程度的理解與應用。",
+        "recommendedQuestion": "短文：星期日早上，文文和爸爸到公園放風箏。風箏飛得很高，他們都很開心。這段主要寫甚麼？",
+        "recommendedOptions": [
+          "文文和爸爸在公園放風箏",
+          "文文在課室做功課",
+          "爸爸在家煮午飯",
+          "公園下了一場大雨"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-11-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "短文以順序詞（先、然後、最後）描述日常活動，題目問「最後」發生的事。選項中只有「背起書包上學」是最後發生的動作，題意清晰且符合小二學生能力。",
+        "recommendedQuestion": "短文：小英先洗手，然後吃早餐，最後背起書包上學。小英最後做甚麼？",
+        "recommendedOptions": [
+          "背起書包上學",
+          "洗手",
+          "吃早餐",
+          "做功課"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-12-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹清晰，提示恰當。選項中唯一合理的生活次序為「起床→穿校服→上學」，沒有多個可辯護答案，符合小二理解能力與課程範圍。",
+        "recommendedQuestion": "下列哪一個次序最合適？①穿校服 ②起床 ③上學",
+        "recommendedOptions": [
+          "②→①→③",
+          "①→③→②",
+          "③→②→①",
+          "②→③→①"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-13-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "短文重點為餵金魚、換水與觀察金魚，題目「照顧金魚」能準確概括主旨；其他選項與內容無關，題目和選項對小二學生而言清楚且適切。",
+        "recommendedQuestion": "短文寫小明每天餵金魚、換水和觀察金魚游泳。哪一個題目最合適？",
+        "recommendedOptions": [
+          "照顧金魚",
+          "我的新書包",
+          "下雨天上學",
+          "操場上的比賽"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-14-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence asks for a sequential connector between actions. 「然後」 correctly shows the next step; other options are logically inappropriate. This is suitable for P2 vocabulary and understanding of sequence words.",
+        "recommendedQuestion": "「先洗菜，____ 切菜，最後煮菜。」填入哪一個詞最合適？",
+        "recommendedOptions": [
+          "然後",
+          "可是",
+          "因為",
+          "如果"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-15-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The picture text explicitly states 小美和小強 are kicking the ball while the teacher watches. The question directly asks who is doing the action; the correct choice is unambiguous.",
+        "recommendedQuestion": "看圖文字：操場上，小美和小強正在踢足球，老師在旁邊看着。誰正在踢足球？",
+        "recommendedOptions": [
+          "小美和小強",
+          "老師",
+          "校長",
+          "家長"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-16-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "題幹清楚描述場景（媽媽在廚房洗菜，弟弟在客廳看書），問題直接詢問媽媽在何處，四個選項中只有「廚房」與文意相符；干擾項（客廳、花園、課室）對小二學生而言合理且不會造成二義性。",
+        "recommendedQuestion": "看圖文字：媽媽在廚房洗菜，弟弟在客廳看書。媽媽在哪裏？",
+        "recommendedOptions": [
+          "廚房",
+          "客廳",
+          "花園",
+          "課室"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-17-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "短文第一句寫明「上學時下起大雨」，第二句描述小安打開雨傘未被淋濕，題目問原因，唯一合理且直接對應的選項為「因為下起大雨」。其他選項與文意無關，題目簡潔明確，適合小二程度。",
+        "recommendedQuestion": "短文：上學時下起大雨，小安打開雨傘，沒有被雨淋濕。小安為甚麼打開雨傘？",
+        "recommendedOptions": [
+          "因為下起大雨",
+          "因為太陽很猛烈",
+          "因為要放風箏",
+          "因為要睡覺"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-18-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "短文敘述小玲幫奶奶把報紙拿進屋，奶奶笑着說謝謝。題目問最後發生甚麼，選項中「奶奶向小玲道謝」直接對應原文，其他選項與短文無關，沒有歧義。",
+        "recommendedQuestion": "短文：小玲幫奶奶把報紙拿進屋，奶奶笑着說謝謝。最後發生了甚麼？",
+        "recommendedOptions": [
+          "奶奶向小玲道謝",
+          "小玲買了一把雨傘",
+          "奶奶到公園跑步",
+          "報紙飛到天上"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-19-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "短文說明阿傑午飯後把餐盒洗乾淨並放回書包。題目問阿傑做了甚麼，首項「洗餐盒並放回書包」完整且直接對應原句，其他選項與短文不符，無歧義。",
+        "recommendedQuestion": "短文：午飯後，阿傑把餐盒洗乾淨，放回書包。阿傑做了甚麼？",
+        "recommendedOptions": [
+          "洗餐盒並放回書包",
+          "把餐盒送給同學",
+          "在餐盒上畫畫",
+          "把餐盒留在桌上"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-20-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "句中以「有的⋯有的⋯有的⋯」把多個相似動作並列，屬於排比（平行列舉）的修辭，用法明確且適合小二理解，其他選項不符。",
+        "recommendedQuestion": "「下課了，同學們有的跳繩，有的拍球，有的跑步。」這句話把多個相似的內容連在一起，最接近哪種寫法？",
+        "recommendedOptions": [
+          "排比",
+          "問句",
+          "對話",
+          "書名號"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-21-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "重複「快來呀」是為了加強邀請的語氣，對小二學生來說直接且易懂；其他選項與句意不符。",
+        "recommendedQuestion": "「快來呀，快來呀，公園很熱鬧！」重複「快來呀」主要是為了甚麼？",
+        "recommendedOptions": [
+          "加強邀請的語氣",
+          "說明時間",
+          "標示書名",
+          "表示問題"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-22-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The line mentions moonlight shining before the bed, which clearly indicates night. Language and concept are suitable for Primary 2; distractors are simple and distinct.",
+        "recommendedQuestion": "「床前明月光，疑是地上霜。」寫的是甚麼時候的景象？",
+        "recommendedOptions": [
+          "晚上",
+          "早上",
+          "中午",
+          "下午"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-23-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The phrase '疑是地上霜' explicitly compares moonlight on the ground to frost, so '地上的霜' is the clear metaphor. Item is straightforward for P2 readers.",
+        "recommendedQuestion": "「疑是地上霜」把月光看成甚麼？",
+        "recommendedOptions": [
+          "地上的霜",
+          "天上的雲",
+          "河裏的水",
+          "樹上的花"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "chinese-reading-P2-24-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks a simple literal comprehension of the line 「舉頭望明月」 and directly maps to the correct option '明月'. Distractors are simple, plausible but incorrect nouns suitable for P2. The stem is unambiguous and aligned with the stated topic and grade level.",
+        "recommendedQuestion": "「舉頭望明月」中，詩人抬頭看見甚麼？",
+        "recommendedOptions": [
+          "明月",
+          "太陽",
+          "白雲",
+          "大海"
         ],
         "recommendedCorrect": 0
       }

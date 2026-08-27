@@ -25,16 +25,27 @@ root = Path(__file__).resolve().parents[1]
 inventory_path = root / "audit" / "question-bank-inventory.json"
 inventory = json.loads(inventory_path.read_text())
 
-# Variant 0 is the canonical source item. Variants 1 and 2 only append a context
-# label, and the structural inventory separately confirms their options and answer
-# indexes remain identical.
-questions = [
+# Most legacy banks use three context variants per logical source item. Standalone
+# banks, including the rebuilt P1–P6 Chinese-reading pools, store each source item
+# only once. Use the inventory rather than assuming a three-variant expansion.
+all_questions = [
     item
     for item in inventory["questions"]
-    if item["grade"] == grade and item["id"].startswith(f"{track}-{grade}-") and item["id"].endswith("-0")
+    if item["grade"] == grade and item["id"].startswith(f"{track}-{grade}-")
+]
+questions = [
+    item
+    for item in all_questions
+    if item["id"].endswith("-0")
 ]
 if not questions:
     raise SystemExit(f"No canonical questions found for {grade} {track}")
+has_context_variants = len(all_questions) > len(questions)
+variant_instruction = (
+    "Every listed item has context-only variants with the same answer/options; your verdict applies to all listed variants unless the item itself needs revision."
+    if has_context_variants
+    else "Each listed item is an independent standalone question. Review every item on its own merits."
+)
 
 schema = {
     "name": "question_batch_review",
@@ -77,7 +88,7 @@ def review_chunk(items: list[dict], part: int, total_parts: int) -> dict:
         "messages": [
             {"role": "system", "content": system},
             {"role": "user", "content": json.dumps({
-                "task": "Review this portion of one grade-track batch. Every listed item has two context-only variants with the same answer/options; your verdict applies to all three variants unless the item itself needs revision.",
+                "task": f"Review this portion of one grade-track batch. {variant_instruction}",
                 "grade": grade,
                 "track": track,
                 "part": f"{part} of {total_parts}",
@@ -120,11 +131,11 @@ output = {
     "grade": grade,
     "track": track,
     "canonicalQuestionCount": len(questions),
-    "variantQuestionCount": len(questions) * 3,
+    "variantQuestionCount": len(all_questions),
     "model": review_model,
     "review": review,
 }
 output_path = root / "audit" / f"review-{grade}-{track}.json"
 output_path.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n")
 print(f"Wrote {output_path.relative_to(root)}")
-print(f"Reviewed {len(questions)} canonical items / {len(questions) * 3} context variants.")
+print(f"Reviewed {len(questions)} canonical items / {len(all_questions)} stored questions.")
