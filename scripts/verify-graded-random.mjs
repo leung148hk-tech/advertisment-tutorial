@@ -15,7 +15,9 @@ for (const grade of GRADES) {
     }
     if (questions.length !== 20) throw new Error(`${grade.id} ${track.id}: expected 20 questions, found ${questions.length}.`);
     if (uniqueIds.size !== 20) throw new Error(`${grade.id} ${track.id}: duplicate questions were selected.`);
-    if (selectionGroupCounts.size !== 5 || [...selectionGroupCounts.values()].some((count) => count !== 4)) throw new Error(`${grade.id} ${track.id}: selection-group coverage is not balanced.`);
+    const expectedGroupCount = track.id === "english" ? 10 : 5;
+    const expectedPerGroup = track.id === "english" ? 2 : 4;
+    if (selectionGroupCounts.size !== expectedGroupCount || [...selectionGroupCounts.values()].some((count) => count !== expectedPerGroup)) throw new Error(`${grade.id} ${track.id}: selection-group coverage is not balanced.`);
     if ([...reportedTopics].some((topic) => !topic.trim())) throw new Error(`${grade.id} ${track.id}: a reported ability topic is blank.`);
     records.push({ grade: grade.label, paper: track.shortLabel, questions: questions.length, selectionGroups: selectionGroupCounts.size, reportedTopics: reportedTopics.size });
   }

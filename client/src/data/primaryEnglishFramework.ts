@@ -145,3 +145,11 @@ export function primaryEnglishSelectionGroup(grade: PrimaryEnglishGrade, track: 
 export function primaryEnglishDomains(grade: PrimaryEnglishGrade, track: PrimaryEnglishTrack) {
   return PRIMARY_ENGLISH_FRAMEWORK[grade][track === "english-reading" ? "readingDomains" : "writingDomains"];
 }
+
+export function primaryEnglishCombinedDomains(grade: PrimaryEnglishGrade) {
+  const framework = PRIMARY_ENGLISH_FRAMEWORK[grade];
+  return [
+    ...framework.readingDomains.map((domain) => ({ ...domain, label: `閱讀：${domain.label}` })),
+    ...framework.writingDomains.map((domain) => ({ ...domain, label: `寫作基礎：${domain.label}` })),
+  ];
+}

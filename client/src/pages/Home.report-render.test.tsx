@@ -5,7 +5,7 @@ import userEvent from "@testing-library/user-event";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { ASSESSMENT_MODULES, randomAssessment, type AssessmentQuestion, type GradeId } from "@/data/gradedAssessment";
 import { PRIMARY_CHINESE_READING_FRAMEWORK } from "@/data/primaryChineseReadingFramework";
-import { PRIMARY_ENGLISH_FRAMEWORK, type PrimaryEnglishTrack } from "@/data/primaryEnglishFramework";
+import { primaryEnglishCombinedDomains } from "@/data/primaryEnglishFramework";
 import { PRIMARY_MATH_FRAMEWORK } from "@/data/primaryMathFramework";
 
 vi.mock("@/components/FeaturedCentres", () => ({ default: () => null }));
@@ -106,7 +106,7 @@ async function openPrimaryChineseReadingReport(grade: "小一" | "小六") {
   await user.click(screen.getByRole("button", { name: grade }));
   expect(screen.queryByRole("button", { name: /^中文寫作/ })).toBeNull();
   const chineseReadingCard = screen.getByRole("button", { name: /^中文閱讀/ });
-  expect(within(chineseReadingCard).getByText("25 題獨立題庫 · 閱讀理解")).toBeTruthy();
+  expect(within(chineseReadingCard).getByText("25 題獨立題庫 · 分級閱讀能力")).toBeTruthy();
   await user.click(chineseReadingCard);
   for (let index = 0; index < 20; index += 1) {
     await user.click(screen.getAllByRole("radio")[0]);
@@ -136,7 +136,7 @@ describe("Home primary Chinese-reading report rendering", () => {
   });
 });
 
-async function openPrimaryEnglishReport(grade: "小一" | "小六", track: PrimaryEnglishTrack) {
+async function openPrimaryEnglishReport(grade: "小一" | "小六") {
   window.scrollTo = vi.fn();
   const gradeId: GradeId = grade === "小一" ? "P1" : "P6";
   const randomSpy = vi.spyOn(Math, "random");
@@ -145,8 +145,10 @@ async function openPrimaryEnglishReport(grade: "小一" | "小六", track: Prima
   const view = render(<Home />);
 
   await user.click(screen.getByRole("button", { name: grade }));
-  const trackCard = screen.getByRole("button", { name: track === "english-reading" ? /^英文閱讀/ : /^英文寫作/ });
-  expect(within(trackCard).getByText(`25 題獨立題庫 · ${track === "english-reading" ? "閱讀理解" : "寫作基礎與組織"}`)).toBeTruthy();
+  expect(screen.queryByRole("button", { name: /^英文閱讀/ })).toBeNull();
+  expect(screen.queryByRole("button", { name: /^英文寫作/ })).toBeNull();
+  const trackCard = screen.getByRole("button", { name: /英文/ });
+  expect(within(trackCard).getByText("50 題讀寫獨立題庫 · 閱讀與寫作基礎")).toBeTruthy();
   await user.click(trackCard);
   for (let index = 0; index < 20; index += 1) {
     await user.click(screen.getAllByRole("radio")[0]);
@@ -160,24 +162,21 @@ async function openPrimaryEnglishReport(grade: "小一" | "小六", track: Prima
 }
 
 describe("Home primary English framework rendering", () => {
-  it.each([
-    ["小一", "english-writing", "英文寫作基礎範疇"],
-    ["小六", "english-reading", "英文閱讀範疇"],
-  ] as const)("renders five grade-specific domains for %s %s", async (grade, track, domainNoun) => {
-    const { gradeId, report } = await openPrimaryEnglishReport(grade, track);
-    const framework = PRIMARY_ENGLISH_FRAMEWORK[gradeId as "P1" | "P6"];
-    const expectedDomains = framework[track === "english-reading" ? "readingDomains" : "writingDomains"].map((domain) => domain.label);
+  it.each(["小一", "小六"] as const)("renders ten grade-specific reading and writing-foundation domains for %s", async (grade) => {
+    const { gradeId, report } = await openPrimaryEnglishReport(grade);
+    const expectedDomains = primaryEnglishCombinedDomains(gradeId as "P1" | "P6").map((domain) => domain.label);
     const cards = report.querySelectorAll(".module-score-grid > article");
     const displayedDomains = Array.from(cards, (card) => card.querySelector("span")?.textContent ?? "");
 
-    expect(within(report).getByText(`5 個${domainNoun}`)).toBeTruthy();
-    expect(within(report).getByText(`${domainNoun}概覽`)).toBeTruthy();
+    expect(within(report).getByText("10 個英文範疇（閱讀與寫作基礎）")).toBeTruthy();
+    expect(within(report).getByText("英文範疇（閱讀與寫作基礎）概覽")).toBeTruthy();
     expect(within(report).queryByText("情境推理")).toBeNull();
-    expect(within(report).queryByText("5 個模組")).toBeNull();
-    expect(cards).toHaveLength(5);
+    expect(within(report).queryByText("英文閱讀範疇")).toBeNull();
+    expect(within(report).queryByText("英文寫作基礎範疇")).toBeNull();
+    expect(cards).toHaveLength(10);
     expect(displayedDomains).toEqual(expectedDomains);
-    expect(Array.from(cards, (card) => card.textContent ?? "").every((text) => /\/\s*4/.test(text))).toBe(true);
-    if (track === "english-writing") expect(within(report).getByText(/寫作字數教學目標約為 10–20 words/)).toBeTruthy();
+    expect(Array.from(cards, (card) => card.textContent ?? "").every((text) => /\/\s*2/.test(text))).toBe(true);
+    expect(within(report).getByText(/寫作字數教學目標約為/)).toBeTruthy();
   });
 });
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T06:42:43.662Z",
+  "generatedAt": "2026-08-27T07:16:25.831Z",
   "audit": [
     {
       "grade": "P1",
@@ -28,11 +28,11 @@
       },
       "sampledQuestionCount": 20,
       "sampledGroupCounts": {
-        "primary-math-P1-0": 4,
-        "primary-math-P1-3": 4,
         "primary-math-P1-2": 4,
         "primary-math-P1-4": 4,
-        "primary-math-P1-1": 4
+        "primary-math-P1-0": 4,
+        "primary-math-P1-1": 4,
+        "primary-math-P1-3": 4
       },
       "correctOptionPositions": [
         0,
@@ -795,11 +795,11 @@
       },
       "sampledQuestionCount": 20,
       "sampledGroupCounts": {
+        "primary-math-P2-1": 4,
         "primary-math-P2-0": 4,
-        "primary-math-P2-4": 4,
         "primary-math-P2-3": 4,
-        "primary-math-P2-2": 4,
-        "primary-math-P2-1": 4
+        "primary-math-P2-4": 4,
+        "primary-math-P2-2": 4
       },
       "correctOptionPositions": [
         0,
@@ -1562,10 +1562,10 @@
       },
       "sampledQuestionCount": 20,
       "sampledGroupCounts": {
+        "primary-math-P3-0": 4,
+        "primary-math-P3-3": 4,
         "primary-math-P3-1": 4,
         "primary-math-P3-2": 4,
-        "primary-math-P3-3": 4,
-        "primary-math-P3-0": 4,
         "primary-math-P3-4": 4
       },
       "correctOptionPositions": [
@@ -2329,11 +2329,11 @@
       },
       "sampledQuestionCount": 20,
       "sampledGroupCounts": {
-        "primary-math-P4-2": 4,
-        "primary-math-P4-4": 4,
+        "primary-math-P4-0": 4,
         "primary-math-P4-1": 4,
         "primary-math-P4-3": 4,
-        "primary-math-P4-0": 4
+        "primary-math-P4-2": 4,
+        "primary-math-P4-4": 4
       },
       "correctOptionPositions": [
         0,
@@ -3096,10 +3096,10 @@
       },
       "sampledQuestionCount": 20,
       "sampledGroupCounts": {
-        "primary-math-P5-0": 4,
         "primary-math-P5-4": 4,
-        "primary-math-P5-2": 4,
         "primary-math-P5-3": 4,
+        "primary-math-P5-2": 4,
+        "primary-math-P5-0": 4,
         "primary-math-P5-1": 4
       },
       "correctOptionPositions": [
@@ -3864,10 +3864,10 @@
       "sampledQuestionCount": 20,
       "sampledGroupCounts": {
         "primary-math-P6-3": 4,
-        "primary-math-P6-4": 4,
         "primary-math-P6-2": 4,
-        "primary-math-P6-1": 4,
-        "primary-math-P6-0": 4
+        "primary-math-P6-4": 4,
+        "primary-math-P6-0": 4,
+        "primary-math-P6-1": 4
       },
       "correctOptionPositions": [
         0,

@@ -38,7 +38,7 @@
 
 執行 `pnpm audit:primary-math` 可重新產生逐題覆核表和 JSON 結構盤點。資料層測試會檢查 25 題獨立題幹、五範疇、五組均衡抽題、四個答案位置與僅使用「基礎掌握／理解與應用」兩種數學報告模組。首頁互動測試則檢查小一與小六的選卷卡、作答進度和報告五範疇。
 
-本次交付前已通過：`pnpm audit:primary-math`、`pnpm audit:primary-english`、`pnpm audit:questions`（1,209 題、44 個年級—評估卷組別、結構問題 0）、`pnpm verify:graded`、小學中文閱讀盤點、初中答案鍵驗證、`pnpm check`、`pnpm test`（12 個測試檔、58 項測試）、PDF smoke test、production build、管理員流程驗證及中央轉介流程驗證。
+本次範圍精簡後已通過：`pnpm audit:primary-math`、`pnpm audit:primary-english`、`pnpm audit:questions`（660 題、20 個年級—評估卷組別、結構問題 0）及 `pnpm verify:graded`。最終交付前會再執行型別、完整測試、PDF smoke test、production build、管理員流程及中央轉介流程驗證。
 
 ## References
 

@@ -19,20 +19,19 @@ async function run() {
     try { await publicCaller.centres.adminList(); } catch { forbidden = true; }
     if (!forbidden) throw new Error("Non-admin caller was not rejected from centre management.");
 
-    await admin.centres.create({ name: marker, description: "受控測試用的真實資料驗證描述，完成後會立即刪除。", whatsapp: "91234567", website: "", district: "觀塘區", subjects: ["英文"], supportedGrades: ["小四"], isActive: true, isFeatured: false });
+    await admin.centres.create({ name: marker, description: "受控測試用的真實資料驗證描述，完成後會立即刪除。", whatsapp: "91234567", website: "", district: "觀塘區", subjects: ["英文"], supportedGrades: ["小四"], isActive: true, isPubliclyListed: false, isFeatured: false, commissionArrangement: "pending" });
     const created = (await admin.centres.adminList()).find((centre) => centre.name === marker);
-    if (!created || created.region !== "九龍" || created.isFeatured || !created.isActive) throw new Error("Centre creation did not persist expected district and status fields.");
+    if (!created || created.region !== "九龍" || created.isFeatured || !created.isActive || created.isPubliclyListed) throw new Error("Centre creation did not persist expected district, privacy, and status fields.");
 
-    await admin.centres.update({ id: created.id, centre: { name: marker, description: "受控測試用的更新描述，完成後會立即刪除。", whatsapp: "+852 9123 4567", website: "https://example.com", district: "灣仔區", subjects: ["英文", "中文"], supportedGrades: ["小四", "小五"], isActive: true, isFeatured: true } });
+    await admin.centres.update({ id: created.id, centre: { name: marker, description: "受控測試用的更新描述，完成後會立即刪除。", whatsapp: "+852 9123 4567", website: "https://example.com", district: "灣仔區", subjects: ["英文", "中文"], supportedGrades: ["小四", "小五"], isActive: true, isPubliclyListed: true, isFeatured: true, commissionArrangement: "pending" } });
     const updated = (await admin.centres.adminList()).find((centre) => centre.id === created.id);
-    if (!updated || updated.region !== "港島" || updated.district !== "灣仔區" || !updated.isFeatured || !updated.isActive || updated.website !== "https://example.com") throw new Error("Centre update did not persist expected region, featured, active, or website fields.");
+    if (!updated || updated.region !== "港島" || updated.district !== "灣仔區" || !updated.isPubliclyListed || !updated.isFeatured || !updated.isActive || updated.website !== "https://example.com") throw new Error("Centre update did not persist expected region, public listing, featured, active, or website fields.");
     const featured = await publicCaller.centres.featured();
-    if (!featured.some((centre) => centre.id === created.id)) throw new Error("Enabled featured centre was not returned by the public carousel query.");
+    if (!featured.some((centre) => centre.id === created.id)) throw new Error("Enabled public featured centre was not returned by the public carousel query.");
 
     await admin.centres.remove({ id: created.id });
-    const removed = (await admin.centres.adminList()).find((centre) => centre.id === created.id);
-    if (removed) throw new Error("Centre deletion did not remove the record.");
-    console.log("Centre CRUD verified: non-admin rejected; create, update, public featured visibility, district change, and deletion passed.");
+    if ((await admin.centres.adminList()).some((centre) => centre.id === created.id)) throw new Error("Centre deletion did not remove the record.");
+    console.log("Centre CRUD verified: non-admin rejected; private creation, public approval, featured visibility, district change, and deletion passed.");
   } finally {
     await db.delete(tutoringCentres).where(eq(tutoringCentres.name, marker));
   }
