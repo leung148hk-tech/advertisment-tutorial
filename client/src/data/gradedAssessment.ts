@@ -95,7 +95,7 @@ const PRIMARY_CHINESE_READING_BANKS: Partial<Record<"P1" | "P2" | "P3" | "P4" | 
     { selectionGroup: primaryChineseSelectionGroup("P2", 0), label: "近義詞辨識", topic: "詞義辨析與查字典", question: "「高興」和下列哪一個詞意思最接近？", hint: "想想收到禮物時的心情。", options: ["快樂", "安靜", "寒冷", "辛苦"], correct: 0 },
     { selectionGroup: primaryChineseSelectionGroup("P2", 0), label: "反義詞辨識", topic: "詞義辨析與查字典", question: "「高」的反義詞是甚麼？", hint: "想想相反的意思。", options: ["低", "大", "長", "遠"], correct: 0 },
     { selectionGroup: primaryChineseSelectionGroup("P2", 0), label: "部首查字典", topic: "詞義辨析與查字典", question: "想查「跑」字的意思，可以先查哪一個部首？", hint: "看看「跑」字左邊的部件。", options: ["足", "包", "口", "木"], correct: 0 },
-    { selectionGroup: primaryChineseSelectionGroup("P2", 0), label: "筆畫查字典", topic: "詞義辨析與查字典", question: "如果不知道「明」字的部首，可用甚麼方法查字典？", hint: "字典也可按筆畫數查找。", options: ["數筆畫", "背詩歌", "看圖畫", "問天氣"], correct: 0 },
+    { selectionGroup: primaryChineseSelectionGroup("P2", 0), label: "筆畫查字典", topic: "詞義辨析與查字典", question: "如果不知道「明」字的部首，可用甚麼方法查字典？", hint: "字典也可按筆畫數查找。", options: ["數筆畫", "背詩歌", "唱歌", "問天氣"], correct: 0 },
     { selectionGroup: primaryChineseSelectionGroup("P2", 0), label: "詞語分類", topic: "詞義辨析與查字典", question: "下列哪一組都是表示心情的詞語？", hint: "心情是心裏的感受。", options: ["開心、難過", "桌子、椅子", "跑步、跳繩", "紅色、藍色"], correct: 0 },
 
     { selectionGroup: primaryChineseSelectionGroup("P2", 1), label: "陳述句辨識", topic: "句式與標點運用", question: "下列哪一句是陳述句？", hint: "陳述句用來說明一件事情。", options: ["今天的天氣很好。", "你今天好嗎？", "請排好隊！", "快點關門！"], correct: 0 },
@@ -110,11 +110,11 @@ const PRIMARY_CHINESE_READING_BANKS: Partial<Record<"P1" | "P2" | "P3" | "P4" | 
     { selectionGroup: primaryChineseSelectionGroup("P2", 2), label: "段落題目", topic: "段落大意與順敘", question: "短文寫小明每天餵金魚、換水和觀察金魚游泳。哪一個題目最合適？", hint: "題目要概括整段最主要的內容。", options: ["照顧金魚", "我的新書包", "下雨天上學", "操場上的比賽"], correct: 0 },
     { selectionGroup: primaryChineseSelectionGroup("P2", 2), label: "順敘詞語", topic: "段落大意與順敘", question: "「先洗菜，____ 切菜，最後煮菜。」填入哪一個詞最合適？", hint: "想想事情按次序發生時常用的詞。", options: ["然後", "可是", "因為", "如果"], correct: 0 },
 
-    { selectionGroup: primaryChineseSelectionGroup("P2", 3), label: "看圖找人物", topic: "看圖與敘事閱讀", question: "看圖文字：操場上，小美和小強正在踢足球，老師在旁邊看着。誰正在踢足球？", hint: "直接找出正在做這個動作的人。", options: ["小美和小強", "老師", "校長", "家長"], correct: 0 },
-    { selectionGroup: primaryChineseSelectionGroup("P2", 3), label: "看圖找地點", topic: "看圖與敘事閱讀", question: "看圖文字：媽媽在廚房洗菜，弟弟在客廳看書。媽媽在哪裏？", hint: "找出媽媽所在的地方。", options: ["廚房", "客廳", "花園", "課室"], correct: 0 },
-    { selectionGroup: primaryChineseSelectionGroup("P2", 3), label: "敘事起因", topic: "看圖與敘事閱讀", question: "短文：上學時下起大雨，小安打開雨傘，沒有被雨淋濕。小安為甚麼打開雨傘？", hint: "答案在第一句。", options: ["因為下起大雨", "因為太陽很猛烈", "因為要放風箏", "因為要睡覺"], correct: 0 },
-    { selectionGroup: primaryChineseSelectionGroup("P2", 3), label: "敘事結果", topic: "看圖與敘事閱讀", question: "短文：小玲幫奶奶把報紙拿進屋，奶奶笑着說謝謝。最後發生了甚麼？", hint: "找出故事最後的事情。", options: ["奶奶向小玲道謝", "小玲買了一把雨傘", "奶奶到公園跑步", "報紙飛到天上"], correct: 0 },
-    { selectionGroup: primaryChineseSelectionGroup("P2", 3), label: "人物行動", topic: "看圖與敘事閱讀", question: "短文：午飯後，阿傑把餐盒洗乾淨，放回書包。阿傑做了甚麼？", hint: "找出阿傑完成的兩個動作。", options: ["洗餐盒並放回書包", "把餐盒送給同學", "在餐盒上畫畫", "把餐盒留在桌上"], correct: 0 },
+    { selectionGroup: primaryChineseSelectionGroup("P2", 3), label: "短文找事件", topic: "敘事閱讀與順敘", question: "短文：小美和小強在操場踢足球，老師站在旁邊看着。他們兩人正在做甚麼？", hint: "直接找出小美和小強正在做的事。", options: ["踢足球", "看書", "洗菜", "畫畫"], correct: 0 },
+    { selectionGroup: primaryChineseSelectionGroup("P2", 3), label: "短文找地點", topic: "敘事閱讀與順敘", question: "短文：放學後，媽媽在廚房洗菜，弟弟在客廳看書。媽媽在哪裏？", hint: "找出短文中媽媽所在的地方。", options: ["廚房", "客廳", "花園", "課室"], correct: 0 },
+    { selectionGroup: primaryChineseSelectionGroup("P2", 3), label: "敘事起因", topic: "敘事閱讀與順敘", question: "短文：上學時下起大雨，小安打開雨傘，沒有被雨淋濕。小安為甚麼打開雨傘？", hint: "答案在第一句。", options: ["因為下起大雨", "因為太陽很猛烈", "因為要放風箏", "因為要睡覺"], correct: 0 },
+    { selectionGroup: primaryChineseSelectionGroup("P2", 3), label: "敘事結果", topic: "敘事閱讀與順敘", question: "短文：小玲幫奶奶把報紙拿進屋，奶奶笑着說謝謝。最後發生了甚麼？", hint: "找出故事最後的事情。", options: ["奶奶向小玲道謝", "小玲買了一把雨傘", "奶奶到公園跑步", "報紙飛到天上"], correct: 0 },
+    { selectionGroup: primaryChineseSelectionGroup("P2", 3), label: "人物行動", topic: "敘事閱讀與順敘", question: "短文：午飯後，阿傑把餐盒洗乾淨，放回書包。阿傑做了甚麼？", hint: "找出阿傑完成的兩個動作。", options: ["洗餐盒並放回書包", "把餐盒送給同學", "在餐盒上畫畫", "把餐盒留在桌上"], correct: 0 },
 
     { selectionGroup: primaryChineseSelectionGroup("P2", 4), label: "排比初步", topic: "修辭與五言絕句", question: "「下課了，同學們有的跳繩，有的拍球，有的跑步。」這句話把多個相似的內容連在一起，最接近哪種寫法？", hint: "留意「有的……有的……有的……」重複出現。", options: ["排比", "問句", "對話", "書名號"], correct: 0 },
     { selectionGroup: primaryChineseSelectionGroup("P2", 4), label: "反覆初步", topic: "修辭與五言絕句", question: "「快來呀，快來呀，公園很熱鬧！」重複「快來呀」主要是為了甚麼？", hint: "重複一句話可加強語氣。", options: ["加強邀請的語氣", "說明時間", "標示書名", "表示問題"], correct: 0 },

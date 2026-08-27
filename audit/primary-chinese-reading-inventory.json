@@ -1,13 +1,15 @@
 {
-  "generatedAt": "2026-08-27T07:16:26.123Z",
+  "generatedAt": "2026-08-27T07:28:23.341Z",
   "scope": "小一至小六中文閱讀",
-  "finding": "同一題幹只附加情境字尾會被視為重覆，不能作為獨立評核題。",
+  "finding": "同一題幹只附加情境字尾會被視為重覆；題幹不得要求學生觀看未提供的圖片或插圖。",
   "inventory": {
     "P1": {
       "questionCount": 25,
       "uniqueDisplayedStems": 25,
       "repeatedStemCount": 0,
       "repeatedStems": [],
+      "imageDependentQuestionCount": 0,
+      "imageDependentQuestions": [],
       "topics": [
         "字形、筆畫與部首",
         "字詞與基本句子",
@@ -32,11 +34,13 @@
       "uniqueDisplayedStems": 25,
       "repeatedStemCount": 0,
       "repeatedStems": [],
+      "imageDependentQuestionCount": 0,
+      "imageDependentQuestions": [],
       "topics": [
         "詞義辨析與查字典",
         "句式與標點運用",
         "段落大意與順敘",
-        "看圖與敘事閱讀",
+        "敘事閱讀與順敘",
         "修辭與五言絕句"
       ],
       "modules": [
@@ -55,6 +59,8 @@
       "uniqueDisplayedStems": 25,
       "repeatedStemCount": 0,
       "repeatedStems": [],
+      "imageDependentQuestionCount": 0,
+      "imageDependentQuestions": [],
       "topics": [
         "詞彙、成語與字詞辨錯",
         "複句、標點與專名",
@@ -79,6 +85,8 @@
       "uniqueDisplayedStems": 25,
       "repeatedStemCount": 0,
       "repeatedStems": [],
+      "imageDependentQuestionCount": 0,
+      "imageDependentQuestions": [],
       "topics": [
         "字形、字音與詞義辨析",
         "轉折複句與進階標點",
@@ -103,6 +111,8 @@
       "uniqueDisplayedStems": 25,
       "repeatedStemCount": 0,
       "repeatedStems": [],
+      "imageDependentQuestionCount": 0,
+      "imageDependentQuestions": [],
       "topics": [
         "詞語感情色彩與詞義",
         "條件假設複句與破折號",
@@ -127,6 +137,8 @@
       "uniqueDisplayedStems": 25,
       "repeatedStemCount": 0,
       "repeatedStems": [],
+      "imageDependentQuestionCount": 0,
+      "imageDependentQuestions": [],
       "topics": [
         "熟語與多義詞運用",
         "讓步遞進複句與標點",

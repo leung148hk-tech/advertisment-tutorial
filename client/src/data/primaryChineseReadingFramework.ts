@@ -36,12 +36,12 @@ export const PRIMARY_CHINESE_READING_FRAMEWORK: Record<PrimaryChineseGrade, Prim
   },
   P2: {
     stage: "初小",
-    description: "字詞積累與看圖閱讀：由句子理解延展到段落大意、順敘與五言絕句。",
+    description: "字詞積累與敘事閱讀：由句子理解延展到段落大意、順敘與五言絕句。",
     domains: [
       { id: "vocabulary", label: "詞義辨析與查字典", focus: "近義詞、反義詞、詞語分類及按部首／筆畫查字典" },
       { id: "sentence-punctuation", label: "句式與標點運用", focus: "陳述、疑問、祈使句及冒號、引號" },
       { id: "paragraph", label: "段落大意與順敘", focus: "簡淺敘述段落大意及事情先後" },
-      { id: "narrative", label: "看圖與敘事閱讀", focus: "人物、地點、事件和順敘線索" },
+      { id: "narrative", label: "敘事閱讀與順敘", focus: "短文中的人物、地點、事件和順敘線索" },
       { id: "literature", label: "修辭與五言絕句", focus: "排比、反覆的初步辨識及《靜夜思》等誦讀理解" },
     ],
   },

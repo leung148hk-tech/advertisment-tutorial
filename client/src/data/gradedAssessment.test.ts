@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { ASSESSMENT_MODULES, buildQuestionPool, GRADES, randomAssessment, TRACKS, trackForGrade } from "./gradedAssessment";
 import { primaryEnglishCombinedDomains } from "./primaryEnglishFramework";
+import { PRIMARY_CHINESE_READING_FRAMEWORK } from "./primaryChineseReadingFramework";
 import { PRIMARY_MATH_FRAMEWORK } from "./primaryMathFramework";
 
 const PRIMARY_GRADES = ["P1", "P2", "P3", "P4", "P5", "P6"] as const;
@@ -34,10 +35,12 @@ describe("primary-only assessment catalogue", () => {
     for (const grade of PRIMARY_GRADES) {
       const pool = buildQuestionPool("chinese-reading", grade);
       const assessment = randomAssessment("chinese-reading", grade);
+      const expectedDomains = PRIMARY_CHINESE_READING_FRAMEWORK[grade].domains.map((domain) => domain.label);
       expect(pool).toHaveLength(25);
       expect(new Set(pool.map((item) => item.question)).size).toBe(25);
-      expect(new Set(pool.map((item) => item.topic)).size).toBe(5);
+      expect(new Set(pool.map((item) => item.topic))).toEqual(new Set(expectedDomains));
       expect(new Set(pool.map((item) => item.selectionGroup)).size).toBe(5);
+      expect(pool.some((item) => /(?:^|：)看圖|圖中|根據(?:圖片|插圖|圖畫)/.test(item.question))).toBe(false);
       expect(assessment).toHaveLength(20);
       expect([...countBySelectionGroup(assessment).values()].sort()).toEqual([4, 4, 4, 4, 4]);
     }
