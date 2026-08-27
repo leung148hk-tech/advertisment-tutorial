@@ -38,6 +38,7 @@ import {
 } from "@/data/gradedAssessment";
 import { PRIMARY_CHINESE_READING_FRAMEWORK, type PrimaryChineseGrade } from "@/data/primaryChineseReadingFramework";
 import { PRIMARY_ENGLISH_FRAMEWORK, type PrimaryEnglishGrade, type PrimaryEnglishTrack } from "@/data/primaryEnglishFramework";
+import { PRIMARY_MATH_FRAMEWORK, type PrimaryMathGrade } from "@/data/primaryMathFramework";
 import RegionalSupport from "@/components/RegionalSupport";
 import ParentLeadForm from "@/components/ParentLeadForm";
 import FeaturedCentres from "@/components/FeaturedCentres";
@@ -56,6 +57,14 @@ const PRIMARY_MATH_SUPPORT: Record<string, { title: string; focus: string; forma
   "資料與生活解題": { title: "生活解題支援（示範推薦）", focus: "圖表比較與兩步驟生活題", format: "小班策略練習", next: "先圈出已知資料和問題所問，再把文字轉換成清晰算式。" },
   "多步驟解題": { title: "綜合解題支援（示範推薦）", focus: "方程思維、多步驟及綜合文字題", format: "進階解題小組", next: "練習拆開題目、規劃算式順序，並以逆向運算檢查結果。" },
 };
+
+function primaryMathSupportForTopic(topic: string) {
+  if (/數與|加減|乘除|分數|小數|百分|因數|倍數/.test(topic)) return PRIMARY_MATH_SUPPORT["數與運算"]!;
+  if (/圖形|三角形|方位|面積|周界|圓與|坐標|體積|立方|速度|時間|單位/.test(topic)) return PRIMARY_MATH_SUPPORT["圖形與量度"]!;
+  if (/象形圖|長條圖|數據|資料|平均|圓形圖|折線圖/.test(topic)) return PRIMARY_MATH_SUPPORT["數據與統計"]!;
+  if (/代數|方程/.test(topic)) return PRIMARY_MATH_SUPPORT["多步驟解題"]!;
+  return PRIMARY_MATH_SUPPORT["多步驟解題"]!;
+}
 
 function trackIcon(icon: string) {
   if (icon === "math") return <Calculator size={20} />;
@@ -105,10 +114,13 @@ export default function Home() {
   const primaryEnglishDescription = primaryEnglishFramework && primaryEnglishTrack
     ? `${primaryEnglishFramework.progression}${primaryEnglishTrack === "english-writing" ? ` 寫作字數教學目標約為 ${primaryEnglishFramework.writingOutputTarget}；本卷評估寫作準備、語言選擇及修訂，不等同完整作文批改。` : ""}`
     : "";
-  const usesPrimaryCurriculumDomains = isPrimaryChineseReading || Boolean(primaryEnglishTrack);
-  const reportStructureLabels = primaryChineseDomains?.map((domain) => domain.label) ?? primaryEnglishDomains?.map((domain) => domain.label) ?? ASSESSMENT_MODULES;
-  const reportStructureNoun = isPrimaryChineseReading ? "中文閱讀範疇" : primaryEnglishTrack === "english-reading" ? "英文閱讀範疇" : primaryEnglishTrack === "english-writing" ? "英文寫作基礎範疇" : "模組";
-  const reportStructureDescription = isPrimaryChineseReading ? primaryChineseDescription : primaryEnglishTrack ? primaryEnglishDescription : "基礎掌握、理解與應用、情境推理、整合表達及溝通與協作均已納入本次隨機題組。";
+  const primaryMathGrade: PrimaryMathGrade | null = gradeInfo?.stage === "小學" && trackId === "math" ? gradeInfo.id as PrimaryMathGrade : null;
+  const primaryMathDomains = primaryMathGrade ? PRIMARY_MATH_FRAMEWORK[primaryMathGrade] : null;
+  const primaryMathDescription = primaryMathGrade ? "本卷按本級數學五大能力範疇抽取題目，涵蓋運算、概念、圖表或具明確資料的應用，並非 IQ 測驗。" : "";
+  const usesPrimaryCurriculumDomains = isPrimaryChineseReading || Boolean(primaryEnglishTrack) || Boolean(primaryMathGrade);
+  const reportStructureLabels = primaryChineseDomains?.map((domain) => domain.label) ?? primaryEnglishDomains?.map((domain) => domain.label) ?? primaryMathDomains?.map((domain) => domain.label) ?? ASSESSMENT_MODULES;
+  const reportStructureNoun = isPrimaryChineseReading ? "中文閱讀範疇" : primaryEnglishTrack === "english-reading" ? "英文閱讀範疇" : primaryEnglishTrack === "english-writing" ? "英文寫作基礎範疇" : primaryMathGrade ? "數學能力範疇" : "模組";
+  const reportStructureDescription = isPrimaryChineseReading ? primaryChineseDescription : primaryEnglishTrack ? primaryEnglishDescription : primaryMathGrade ? primaryMathDescription : "基礎掌握、理解與應用、情境推理、整合表達及溝通與協作均已納入本次隨機題組。";
 
   const moduleResults = useMemo(() => reportStructureLabels.map((module) => {
     const items = questions.filter((question) => usesPrimaryCurriculumDomains ? question.topic === module : question.module === module);
@@ -239,7 +251,7 @@ export default function Home() {
       <FeaturedCentres />
 
       <section className="selection-section" aria-labelledby="grade-title"><div className="selection-intro"><p className="eyebrow">第一步 · 選擇年級</p><h2 id="grade-title">由孩子現在的<br />年級開始。</h2><p>年級會決定可選評估及報告使用的難度語言。小學中文只提供閱讀評估；英文提供閱讀及寫作；初中另有中文寫作、Science 和相應的數學科，並保留小五、小六升中面試評估。</p></div><div className="selection-body"><div className="grade-groups"><div><span>小學</span><div>{GRADES.filter((item) => item.stage === "小學").map((item) => <button key={item.id} className={grade === item.id ? "grade-chip grade-chip-active" : "grade-chip"} onClick={() => selectGrade(item.id)}>{item.label}</button>)}</div></div><div><span>初中</span><div>{GRADES.filter((item) => item.stage === "初中").map((item) => <button key={item.id} className={grade === item.id ? "grade-chip grade-chip-active" : "grade-chip"} onClick={() => selectGrade(item.id)}>{item.label}</button>)}</div></div></div>
-        {gradeInfo ? <div className="track-choice"><div className="track-choice-heading"><div><p className="eyebrow">第二步 · 選擇評估卷</p><h3>{gradeInfo.label} 可選的學習評估</h3></div><span><RefreshCw size={14} /> 每次由分級題庫隨機抽取 20 題</span></div><div className="track-card-grid">{availableTracks.map((track) => <button key={track.id} className="track-card" onClick={() => start(track.id)}><span className="track-icon">{trackIcon(track.icon)}</span><span><strong>{track.shortLabel}</strong><small>{track.description}</small><em>{gradeInfo.stage === "小學" && ["chinese-reading", "english-reading", "english-writing"].includes(track.id) ? `25 題獨立題庫 · ${track.id === "english-writing" ? "寫作基礎與組織" : "閱讀理解"}` : track.id.includes("writing") ? "寫作基礎與組織" : track.id.includes("reading") ? "閱讀理解" : "20 題完整評估"}</em></span><ArrowRight size={18} /></button>)}</div></div> : <div className="track-empty"><Compass size={25} /><strong>請先選擇孩子年級</strong><p>系統會顯示對應的閱讀、寫作及學科評估。</p></div>}</div></section>
+        {gradeInfo ? <div className="track-choice"><div className="track-choice-heading"><div><p className="eyebrow">第二步 · 選擇評估卷</p><h3>{gradeInfo.label} 可選的學習評估</h3></div><span><RefreshCw size={14} /> 每次由分級題庫隨機抽取 20 題</span></div><div className="track-card-grid">{availableTracks.map((track) => <button key={track.id} className="track-card" onClick={() => start(track.id)}><span className="track-icon">{trackIcon(track.icon)}</span><span><strong>{track.shortLabel}</strong><small>{track.description}</small><em>{gradeInfo.stage === "小學" && ["chinese-reading", "english-reading", "english-writing"].includes(track.id) ? `25 題獨立題庫 · ${track.id === "english-writing" ? "寫作基礎與組織" : "閱讀理解"}` : gradeInfo.stage === "小學" && track.id === "math" ? "25 題獨立題庫 · 分級數學能力" : track.id.includes("writing") ? "寫作基礎與組織" : track.id.includes("reading") ? "閱讀理解" : "20 題完整評估"}</em></span><ArrowRight size={18} /></button>)}</div></div> : <div className="track-empty"><Compass size={25} /><strong>請先選擇孩子年級</strong><p>系統會顯示對應的閱讀、寫作及學科評估。</p></div>}</div></section>
       <section className="assessment-promise"><BookOpen size={24} /><div><strong>關於免費報告</strong><p>本評估會整理本次隨機題組中的能力線索，不會代替學校評核、正式作文批改或專業診斷。報告適合作為家長與孩子討論下一步的起點。</p></div></section>
     </>}
 
@@ -252,7 +264,7 @@ export default function Home() {
 
     {screen === "report" && gradeInfo && trackInfo && <section className="report-share-panel" aria-labelledby="share-title"><div><p className="eyebrow"><Share2 size={16} /> 分享結果摘要</p><h2 id="share-title">把學習方向，分享給值得一起討論的人。</h2><p>分享內容只包括年級、試卷和整體結果，不包括學生稱呼、所在地區、逐題答案或 PDF 內容。</p></div><div className="share-controls"><button className="share-button share-button-whatsapp" onClick={shareWhatsApp}><MessageCircle size={18} /> WhatsApp</button><button className="share-button" onClick={shareToDevice}><Share2 size={18} /> 分享到其他 App</button><button className="share-button" onClick={copyShareText}><Copy size={17} /> 複製文字</button>{shareStatus && <span className="share-status"><CheckCircle2 size={15} /> {shareStatus}</span>}</div></section>}
     {screen === "report" && gradeInfo && trackInfo && isPrimaryMath && <section className="focus-mode-panel" data-pdf-ignore="true"><div><p className="eyebrow"><Sparkles size={16} /> 小學數學弱項精簡模式</p><h2>只看現在需要加強的數學面向。</h2><p>系統只會在某能力面向答對少於 2 題（共 4 題）時列為需要加強，避免一次偶然失誤被過度解讀。</p></div><button className={focusMode ? "button button-ghost" : "button button-primary"} onClick={() => setFocusMode((currentMode) => !currentMode)}>{focusMode ? "返回完整報告" : "開啟精簡弱項報告"} <ArrowRight size={17} /></button></section>}
-    {screen === "report" && gradeInfo && isPrimaryMath && focusMode && <section className="focus-report" aria-labelledby="focus-report-title"><div className="focus-report-header"><p className="eyebrow"><MapPin size={16} /> {gradeInfo.label} · 小學數學</p><h2 id="focus-report-title">{weakAreas.length ? "集中處理這些弱項。" : "本次未見明顯弱項。"}</h2><p>{weakAreas.length ? "以下只保留需要加強的能力面向、短期練習重點及可進一步了解的支援類型。" : "孩子在本次各能力面向至少答對 2 題；可返回完整報告查看延伸練習方向。"}</p></div>{weakAreas.length ? <div className="focus-recommendation-grid">{weakAreas.map((area, index) => { const support = PRIMARY_MATH_SUPPORT[area.topic] ?? PRIMARY_MATH_SUPPORT["多步驟解題"]; return <article className="focus-recommendation-card" key={area.topic}><span>0{index + 1}</span><p className="demo-chip">合作支援示範推薦</p><h3>{area.topic}</h3><div className="focus-score"><strong>{area.correct} / {area.total}</strong><span>本次答對</span></div><p className="support-title">{support.title}</p><dl><div><dt>適合支援</dt><dd>{support.focus}</dd></div><div><dt>建議形式</dt><dd>{support.format}</dd></div><div><dt>起步方向</dt><dd>{support.next}</dd></div></dl><button className="partner-button" disabled><MapPin size={16} /> 待加入真實合作資料</button></article>; })}</div> : <div className="focus-clear"><CheckCircle2 size={28} /><div><strong>精簡模式暫時不需列出支援建議</strong><p>這不代表孩子不需要練習；只代表本次 20 題中未出現符合弱項門檻的能力面向。</p></div></div>}<p className="focus-transparency"><strong>透明度說明：</strong>以上為按弱項和年級排列的支援類型示範，並非真實補習社名單或報讀推薦。加入真實合作資料後，才會顯示實際中心、地區、名額和聯絡方式。</p></section>}
+    {screen === "report" && gradeInfo && isPrimaryMath && focusMode && <section className="focus-report" aria-labelledby="focus-report-title"><div className="focus-report-header"><p className="eyebrow"><MapPin size={16} /> {gradeInfo.label} · 小學數學</p><h2 id="focus-report-title">{weakAreas.length ? "集中處理這些弱項。" : "本次未見明顯弱項。"}</h2><p>{weakAreas.length ? "以下只保留需要加強的能力面向、短期練習重點及可進一步了解的支援類型。" : "孩子在本次各能力面向至少答對 2 題；可返回完整報告查看延伸練習方向。"}</p></div>{weakAreas.length ? <div className="focus-recommendation-grid">{weakAreas.map((area, index) => { const support = primaryMathSupportForTopic(area.topic); return <article className="focus-recommendation-card" key={area.topic}><span>0{index + 1}</span><p className="demo-chip">合作支援示範推薦</p><h3>{area.topic}</h3><div className="focus-score"><strong>{area.correct} / {area.total}</strong><span>本次答對</span></div><p className="support-title">{support.title}</p><dl><div><dt>適合支援</dt><dd>{support.focus}</dd></div><div><dt>建議形式</dt><dd>{support.format}</dd></div><div><dt>起步方向</dt><dd>{support.next}</dd></div></dl><button className="partner-button" disabled><MapPin size={16} /> 待加入真實合作資料</button></article>; })}</div> : <div className="focus-clear"><CheckCircle2 size={28} /><div><strong>精簡模式暫時不需列出支援建議</strong><p>這不代表孩子不需要練習；只代表本次 20 題中未出現符合弱項門檻的能力面向。</p></div></div>}<p className="focus-transparency"><strong>透明度說明：</strong>以上為按弱項和年級排列的支援類型示範，並非真實補習社名單或報讀推薦。加入真實合作資料後，才會顯示實際中心、地區、名額和聯絡方式。</p></section>}
     {screen === "report" && gradeInfo && trackInfo && ["math", "chinese-reading", "chinese-writing", "english-reading", "english-writing", "science"].includes(trackId) && <RegionalSupport gradeLabel={gradeInfo.label} trackLabel={trackInfo.shortLabel} abilities={abilityResults} homeDistrict={district} />}
     <footer className="site-footer"><span>© 學習航圖</span><span>小一至小六 · 中一至中三 · 分級隨機評估</span><a href="/admin/centres">管理合作資料</a></footer>
   </main>;

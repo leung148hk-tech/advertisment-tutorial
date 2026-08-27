@@ -1,0 +1,4608 @@
+{
+  "generatedAt": "2026-08-27T06:42:43.662Z",
+  "audit": [
+    {
+      "grade": "P1",
+      "poolSize": 25,
+      "uniqueQuestionTexts": 25,
+      "expectedTopics": [
+        "100 以內數與比較",
+        "基本加減與生活題",
+        "平面與立體圖形",
+        "時間與直接比較",
+        "港幣與日常應用"
+      ],
+      "topicCounts": {
+        "100 以內數與比較": 5,
+        "基本加減與生活題": 5,
+        "平面與立體圖形": 5,
+        "時間與直接比較": 5,
+        "港幣與日常應用": 5
+      },
+      "selectionGroupCounts": {
+        "primary-math-P1-0": 5,
+        "primary-math-P1-1": 5,
+        "primary-math-P1-2": 5,
+        "primary-math-P1-3": 5,
+        "primary-math-P1-4": 5
+      },
+      "sampledQuestionCount": 20,
+      "sampledGroupCounts": {
+        "primary-math-P1-0": 4,
+        "primary-math-P1-3": 4,
+        "primary-math-P1-2": 4,
+        "primary-math-P1-4": 4,
+        "primary-math-P1-1": 4
+      },
+      "correctOptionPositions": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "items": [
+        {
+          "index": 1,
+          "id": "math-P1-0-0",
+          "label": "數數",
+          "topic": "100 以內數與比較",
+          "selectionGroup": "primary-math-P1-0",
+          "question": "由 36 開始每次加 1，下一個數是甚麼？",
+          "hint": "按數序向後數一個。",
+          "options": [
+            "37",
+            "35",
+            "46",
+            "63"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "37",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "數序：36 後加 1 是 37；其餘均非下一個數。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「37」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「100 以內數與比較」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「100 以內數與比較」及分組「primary-math-P1-0」與框架一致。"
+        },
+        {
+          "index": 2,
+          "id": "math-P1-1-0",
+          "label": "大小比較",
+          "topic": "100 以內數與比較",
+          "selectionGroup": "primary-math-P1-0",
+          "question": "下列哪一個數最大？",
+          "hint": "先比較十位，再比較個位。",
+          "options": [
+            "76",
+            "67",
+            "58",
+            "78"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "78",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "比較十位及個位，78 是四個數中最大。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「78」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「100 以內數與比較」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「100 以內數與比較」及分組「primary-math-P1-0」與框架一致。"
+        },
+        {
+          "index": 3,
+          "id": "math-P1-2-0",
+          "label": "數的組成",
+          "topic": "100 以內數與比較",
+          "selectionGroup": "primary-math-P1-0",
+          "question": "59 有多少個十和多少個一？",
+          "hint": "先看十位，再看個位。",
+          "options": [
+            "5 個一和 9 個十",
+            "59 個十",
+            "5 個十和 9 個一",
+            "9 個十和 5 個一"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "5 個十和 9 個一",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "59 = 5 個十 + 9 個一。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「5 個十和 9 個一」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「100 以內數與比較」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「100 以內數與比較」及分組「primary-math-P1-0」與框架一致。"
+        },
+        {
+          "index": 4,
+          "id": "math-P1-3-0",
+          "label": "數字排序",
+          "topic": "100 以內數與比較",
+          "selectionGroup": "primary-math-P1-0",
+          "question": "把 42、24、35 由小至大排列，哪一項正確？",
+          "hint": "先找最小的數。",
+          "options": [
+            "24、42、35",
+            "24、35、42",
+            "42、35、24",
+            "35、24、42"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "24、35、42",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "24 < 35 < 42，排序唯一。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「24、35、42」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「100 以內數與比較」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「100 以內數與比較」及分組「primary-math-P1-0」與框架一致。"
+        },
+        {
+          "index": 5,
+          "id": "math-P1-4-0",
+          "label": "數線",
+          "topic": "100 以內數與比較",
+          "selectionGroup": "primary-math-P1-0",
+          "question": "數線上 68 的後面兩格是甚麼數？",
+          "hint": "每一格增加 1。",
+          "options": [
+            "70",
+            "69",
+            "71",
+            "66"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "70",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "68 後兩格是 70。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「70」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「100 以內數與比較」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「100 以內數與比較」及分組「primary-math-P1-0」與框架一致。"
+        },
+        {
+          "index": 6,
+          "id": "math-P1-5-0",
+          "label": "兩位數加法",
+          "topic": "基本加減與生活題",
+          "selectionGroup": "primary-math-P1-1",
+          "question": "34 + 25 = ?",
+          "hint": "可先加十位，再加個位。",
+          "options": [
+            "49",
+            "69",
+            "39",
+            "59"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "59",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "34 + 25 = 59。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「59」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「基本加減與生活題」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「基本加減與生活題」及分組「primary-math-P1-1」與框架一致。"
+        },
+        {
+          "index": 7,
+          "id": "math-P1-6-0",
+          "label": "進位加法",
+          "topic": "基本加減與生活題",
+          "selectionGroup": "primary-math-P1-1",
+          "question": "47 + 8 = ?",
+          "hint": "個位相加超過 9 時要進位。",
+          "options": [
+            "49",
+            "65",
+            "55",
+            "54"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "55",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "47 + 8 = 55，須進 1。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「55」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「基本加減與生活題」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「基本加減與生活題」及分組「primary-math-P1-1」與框架一致。"
+        },
+        {
+          "index": 8,
+          "id": "math-P1-7-0",
+          "label": "兩位數減法",
+          "topic": "基本加減與生活題",
+          "selectionGroup": "primary-math-P1-1",
+          "question": "72 − 30 = ?",
+          "hint": "先減去三個十。",
+          "options": [
+            "52",
+            "42",
+            "32",
+            "45"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "42",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "72 − 30 = 42。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「42」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「基本加減與生活題」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「基本加減與生活題」及分組「primary-math-P1-1」與框架一致。"
+        },
+        {
+          "index": 9,
+          "id": "math-P1-8-0",
+          "label": "退位減法",
+          "topic": "基本加減與生活題",
+          "selectionGroup": "primary-math-P1-1",
+          "question": "63 − 8 = ?",
+          "hint": "可以先由 63 減 3，再減 5。",
+          "options": [
+            "55",
+            "56",
+            "45",
+            "65"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "55",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "63 − 8 = 55。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「55」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「基本加減與生活題」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「基本加減與生活題」及分組「primary-math-P1-1」與框架一致。"
+        },
+        {
+          "index": 10,
+          "id": "math-P1-9-0",
+          "label": "加減生活題",
+          "topic": "基本加減與生活題",
+          "selectionGroup": "primary-math-P1-1",
+          "question": "盒內原有 26 粒珠，加入 13 粒後共有多少粒？",
+          "hint": "找出是增加還是減少。",
+          "options": [
+            "13 粒",
+            "36 粒",
+            "49 粒",
+            "39 粒"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "39 粒",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "26 + 13 = 39。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「39 粒」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「基本加減與生活題」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「基本加減與生活題」及分組「primary-math-P1-1」與框架一致。"
+        },
+        {
+          "index": 11,
+          "id": "math-P1-10-0",
+          "label": "平面圖形",
+          "topic": "平面與立體圖形",
+          "selectionGroup": "primary-math-P1-2",
+          "question": "哪一個圖形有三條邊？",
+          "hint": "逐一數邊。",
+          "options": [
+            "長方形",
+            "正方形",
+            "三角形",
+            "圓形"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "三角形",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "三角形有 3 條直邊。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「三角形」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「平面與立體圖形」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「平面與立體圖形」及分組「primary-math-P1-2」與框架一致。"
+        },
+        {
+          "index": 12,
+          "id": "math-P1-11-0",
+          "label": "四邊形",
+          "topic": "平面與立體圖形",
+          "selectionGroup": "primary-math-P1-2",
+          "question": "哪一個圖形有四條直邊？",
+          "hint": "不包括圓形。",
+          "options": [
+            "球體",
+            "正方形",
+            "三角形",
+            "圓形"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "正方形",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "正方形有 4 條直邊；其餘選項不符。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「正方形」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「平面與立體圖形」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「平面與立體圖形」及分組「primary-math-P1-2」與框架一致。"
+        },
+        {
+          "index": 13,
+          "id": "math-P1-12-0",
+          "label": "圓形辨認",
+          "topic": "平面與立體圖形",
+          "selectionGroup": "primary-math-P1-2",
+          "question": "下列哪一樣物件的面最像圓形？",
+          "hint": "想想有沒有角和直邊。",
+          "options": [
+            "硬幣",
+            "書本",
+            "三角尺",
+            "紙盒"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "硬幣",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "硬幣的平面是圓形。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「硬幣」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「平面與立體圖形」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「平面與立體圖形」及分組「primary-math-P1-2」與框架一致。"
+        },
+        {
+          "index": 14,
+          "id": "math-P1-13-0",
+          "label": "立體圖形",
+          "topic": "平面與立體圖形",
+          "selectionGroup": "primary-math-P1-2",
+          "question": "哪一個物件最像圓柱體？",
+          "hint": "圓柱有兩個圓形平面。",
+          "options": [
+            "骰子",
+            "足球",
+            "三角旗",
+            "汽水罐"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "汽水罐",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "汽水罐的立體外形是圓柱。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「汽水罐」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「平面與立體圖形」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「平面與立體圖形」及分組「primary-math-P1-2」與框架一致。"
+        },
+        {
+          "index": 15,
+          "id": "math-P1-14-0",
+          "label": "球體辨認",
+          "topic": "平面與立體圖形",
+          "selectionGroup": "primary-math-P1-2",
+          "question": "哪一個物件最像球體？",
+          "hint": "球體各方向都是圓的。",
+          "options": [
+            "紙巾盒",
+            "鐵罐",
+            "皮球",
+            "積木"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "皮球",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "皮球最接近球體。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「皮球」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「平面與立體圖形」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「平面與立體圖形」及分組「primary-math-P1-2」與框架一致。"
+        },
+        {
+          "index": 16,
+          "id": "math-P1-15-0",
+          "label": "整點",
+          "topic": "時間與直接比較",
+          "selectionGroup": "primary-math-P1-3",
+          "question": "分針指向 12，時針指向 7，表示甚麼時間？",
+          "hint": "分針在 12 是整點。",
+          "options": [
+            "6 時",
+            "7 時",
+            "7 時半",
+            "12 時 7 分"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "7 時",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "分針在 12、時針在 7 是 7 時。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「7 時」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「時間與直接比較」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「時間與直接比較」及分組「primary-math-P1-3」與框架一致。"
+        },
+        {
+          "index": 17,
+          "id": "math-P1-16-0",
+          "label": "半點",
+          "topic": "時間與直接比較",
+          "selectionGroup": "primary-math-P1-3",
+          "question": "分針指向 6，時針在 3 和 4 中間，表示甚麼時間？",
+          "hint": "分針在 6 是半點。",
+          "options": [
+            "3 時半",
+            "3 時",
+            "4 時",
+            "6 時半"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "3 時半",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "分針在 6、時針介乎 3 和 4 是 3 時半。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「3 時半」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「時間與直接比較」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「時間與直接比較」及分組「primary-math-P1-3」與框架一致。"
+        },
+        {
+          "index": 18,
+          "id": "math-P1-17-0",
+          "label": "長度比較",
+          "topic": "時間與直接比較",
+          "selectionGroup": "primary-math-P1-3",
+          "question": "一條紅繩長 18 厘米，一條藍繩長 25 厘米。哪一條較長？",
+          "hint": "比較兩個數。",
+          "options": [
+            "紅繩",
+            "兩條一樣長",
+            "不能比較",
+            "藍繩"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "藍繩",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "25 cm > 18 cm，藍繩較長。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「藍繩」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「時間與直接比較」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「時間與直接比較」及分組「primary-math-P1-3」與框架一致。"
+        },
+        {
+          "index": 19,
+          "id": "math-P1-18-0",
+          "label": "重量比較",
+          "topic": "時間與直接比較",
+          "selectionGroup": "primary-math-P1-3",
+          "question": "西瓜重 4 公斤，蘋果重 1 公斤。哪一樣較重？",
+          "hint": "比較重量數字。",
+          "options": [
+            "一樣重",
+            "不能比較",
+            "西瓜",
+            "蘋果"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "西瓜",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "4 kg > 1 kg，西瓜較重。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「西瓜」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「時間與直接比較」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「時間與直接比較」及分組「primary-math-P1-3」與框架一致。"
+        },
+        {
+          "index": 20,
+          "id": "math-P1-19-0",
+          "label": "容量比較",
+          "topic": "時間與直接比較",
+          "selectionGroup": "primary-math-P1-3",
+          "question": "甲杯有 8 格水，乙杯有 5 格水。哪一杯裝的水較多？",
+          "hint": "比較水的格數。",
+          "options": [
+            "不能比較",
+            "甲杯",
+            "乙杯",
+            "兩杯一樣多"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "甲杯",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "8 格水 > 5 格水，甲杯較多。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「甲杯」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「時間與直接比較」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「時間與直接比較」及分組「primary-math-P1-3」與框架一致。"
+        },
+        {
+          "index": 21,
+          "id": "math-P1-20-0",
+          "label": "港幣幣值",
+          "topic": "港幣與日常應用",
+          "selectionGroup": "primary-math-P1-4",
+          "question": "哪一個硬幣的幣值是 $5？",
+          "hint": "辨認香港硬幣上的數字。",
+          "options": [
+            "$5 硬幣",
+            "$2 硬幣",
+            "$1 硬幣",
+            "50¢ 硬幣"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "$5 硬幣",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "香港 $5 硬幣幣值為五元。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「$5 硬幣」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「港幣與日常應用」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「港幣與日常應用」及分組「primary-math-P1-4」與框架一致。"
+        },
+        {
+          "index": 22,
+          "id": "math-P1-21-0",
+          "label": "相同幣值",
+          "topic": "港幣與日常應用",
+          "selectionGroup": "primary-math-P1-4",
+          "question": "兩個 $2 硬幣和一個 $1 硬幣，共有多少錢？",
+          "hint": "把硬幣幣值相加。",
+          "options": [
+            "$3",
+            "$4",
+            "$6",
+            "$5"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "$5",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "$2 + $2 + $1 = $5。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「$5」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「港幣與日常應用」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「港幣與日常應用」及分組「primary-math-P1-4」與框架一致。"
+        },
+        {
+          "index": 23,
+          "id": "math-P1-22-0",
+          "label": "付款",
+          "topic": "港幣與日常應用",
+          "selectionGroup": "primary-math-P1-4",
+          "question": "一枝鉛筆售 $4，用 $5 付款，應找回多少？",
+          "hint": "付款減去價錢。",
+          "options": [
+            "$5",
+            "$9",
+            "$1",
+            "$4"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "$1",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "$5 − $4 = $1。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「$1」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「港幣與日常應用」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「港幣與日常應用」及分組「primary-math-P1-4」與框架一致。"
+        },
+        {
+          "index": 24,
+          "id": "math-P1-23-0",
+          "label": "湊錢",
+          "topic": "港幣與日常應用",
+          "selectionGroup": "primary-math-P1-4",
+          "question": "買一個 $7 的麵包，下列哪一組硬幣剛好足夠？",
+          "hint": "把每組硬幣相加。",
+          "options": [
+            "$10 一張",
+            "$5 和兩個 $1",
+            "$5 和一個 $1",
+            "三個 $2"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "$5 和兩個 $1",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "$5 + $1 + $1 = $7，剛好足夠。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「$5 和兩個 $1」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「港幣與日常應用」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「港幣與日常應用」及分組「primary-math-P1-4」與框架一致。"
+        },
+        {
+          "index": 25,
+          "id": "math-P1-24-0",
+          "label": "日常加減",
+          "topic": "港幣與日常應用",
+          "selectionGroup": "primary-math-P1-4",
+          "question": "小美有 $10，買飲品用了 $6，還有多少錢？",
+          "hint": "由原有金額減去用了的金額。",
+          "options": [
+            "$4",
+            "$6",
+            "$14",
+            "$16"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "$4",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "$10 − $6 = $4。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「$4」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P1「港幣與日常應用」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「港幣與日常應用」及分組「primary-math-P1-4」與框架一致。"
+        }
+      ]
+    },
+    {
+      "grade": "P2",
+      "poolSize": 25,
+      "uniqueQuestionTexts": 25,
+      "expectedTopics": [
+        "1000 以內數與加減",
+        "乘除與平均分組",
+        "線、直角與圖形",
+        "單位與五分鐘時間",
+        "象形圖與資料讀取"
+      ],
+      "topicCounts": {
+        "1000 以內數與加減": 5,
+        "乘除與平均分組": 5,
+        "線、直角與圖形": 5,
+        "單位與五分鐘時間": 5,
+        "象形圖與資料讀取": 5
+      },
+      "selectionGroupCounts": {
+        "primary-math-P2-0": 5,
+        "primary-math-P2-1": 5,
+        "primary-math-P2-2": 5,
+        "primary-math-P2-3": 5,
+        "primary-math-P2-4": 5
+      },
+      "sampledQuestionCount": 20,
+      "sampledGroupCounts": {
+        "primary-math-P2-0": 4,
+        "primary-math-P2-4": 4,
+        "primary-math-P2-3": 4,
+        "primary-math-P2-2": 4,
+        "primary-math-P2-1": 4
+      },
+      "correctOptionPositions": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "items": [
+        {
+          "index": 1,
+          "id": "math-P2-0-0",
+          "label": "三位數比較",
+          "topic": "1000 以內數與加減",
+          "selectionGroup": "primary-math-P2-0",
+          "question": "下列哪一個數最大？",
+          "hint": "先比較百位。",
+          "options": [
+            "803",
+            "783",
+            "799",
+            "698"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "803",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "比較百位，803 大於其餘三數。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「803」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「1000 以內數與加減」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「1000 以內數與加減」及分組「primary-math-P2-0」與框架一致。"
+        },
+        {
+          "index": 2,
+          "id": "math-P2-1-0",
+          "label": "位值",
+          "topic": "1000 以內數與加減",
+          "selectionGroup": "primary-math-P2-0",
+          "question": "在 572 中，7 代表多少？",
+          "hint": "7 在十位。",
+          "options": [
+            "7",
+            "700",
+            "500",
+            "70"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "70",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "572 的 7 在十位，表示 70。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「70」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「1000 以內數與加減」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「1000 以內數與加減」及分組「primary-math-P2-0」與框架一致。"
+        },
+        {
+          "index": 3,
+          "id": "math-P2-2-0",
+          "label": "三位數加法",
+          "topic": "1000 以內數與加減",
+          "selectionGroup": "primary-math-P2-0",
+          "question": "286 + 143 = ?",
+          "hint": "把相同位值相加。",
+          "options": [
+            "439",
+            "529",
+            "429",
+            "419"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "429",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "286 + 143 = 429。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「429」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「1000 以內數與加減」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「1000 以內數與加減」及分組「primary-math-P2-0」與框架一致。"
+        },
+        {
+          "index": 4,
+          "id": "math-P2-3-0",
+          "label": "三位數減法",
+          "topic": "1000 以內數與加減",
+          "selectionGroup": "primary-math-P2-0",
+          "question": "650 − 230 = ?",
+          "hint": "先減百位和十位。",
+          "options": [
+            "320",
+            "420",
+            "430",
+            "520"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "420",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "650 − 230 = 420。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「420」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「1000 以內數與加減」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「1000 以內數與加減」及分組「primary-math-P2-0」與框架一致。"
+        },
+        {
+          "index": 5,
+          "id": "math-P2-4-0",
+          "label": "數字排序",
+          "topic": "1000 以內數與加減",
+          "selectionGroup": "primary-math-P2-0",
+          "question": "把 405、450、540 由大至小排列，哪一項正確？",
+          "hint": "先找百位最大的數。",
+          "options": [
+            "540、450、405",
+            "405、450、540",
+            "450、540、405",
+            "540、405、450"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "540、450、405",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "540 > 450 > 405。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「540、450、405」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「1000 以內數與加減」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「1000 以內數與加減」及分組「primary-math-P2-0」與框架一致。"
+        },
+        {
+          "index": 6,
+          "id": "math-P2-5-0",
+          "label": "乘法表",
+          "topic": "乘除與平均分組",
+          "selectionGroup": "primary-math-P2-1",
+          "question": "7 × 6 = ?",
+          "hint": "使用 7 的乘法表。",
+          "options": [
+            "36",
+            "48",
+            "56",
+            "42"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "42",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "7 × 6 = 42。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「42」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「乘除與平均分組」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「乘除與平均分組」及分組「primary-math-P2-1」與框架一致。"
+        },
+        {
+          "index": 7,
+          "id": "math-P2-6-0",
+          "label": "乘法分組",
+          "topic": "乘除與平均分組",
+          "selectionGroup": "primary-math-P2-1",
+          "question": "有 5 組貼紙，每組 8 張，共有多少張？",
+          "hint": "相同數量的組用乘法。",
+          "options": [
+            "35 張",
+            "45 張",
+            "40 張",
+            "13 張"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "40 張",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "5 組各 8 張：5 × 8 = 40。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「40 張」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「乘除與平均分組」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「乘除與平均分組」及分組「primary-math-P2-1」與框架一致。"
+        },
+        {
+          "index": 8,
+          "id": "math-P2-7-0",
+          "label": "平均分",
+          "topic": "乘除與平均分組",
+          "selectionGroup": "primary-math-P2-1",
+          "question": "24 枝鉛筆平均分給 4 位同學，每人有多少枝？",
+          "hint": "平均分用除法。",
+          "options": [
+            "20 枝",
+            "6 枝",
+            "4 枝",
+            "8 枝"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "6 枝",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "24 ÷ 4 = 6。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「6 枝」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「乘除與平均分組」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「乘除與平均分組」及分組「primary-math-P2-1」與框架一致。"
+        },
+        {
+          "index": 9,
+          "id": "math-P2-8-0",
+          "label": "分組除法",
+          "topic": "乘除與平均分組",
+          "selectionGroup": "primary-math-P2-1",
+          "question": "35 個橙每 5 個放一袋，可放多少袋？",
+          "hint": "看有多少個 5。",
+          "options": [
+            "7 袋",
+            "5 袋",
+            "6 袋",
+            "30 袋"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "7 袋",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "35 ÷ 5 = 7。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「7 袋」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「乘除與平均分組」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「乘除與平均分組」及分組「primary-math-P2-1」與框架一致。"
+        },
+        {
+          "index": 10,
+          "id": "math-P2-9-0",
+          "label": "乘除關係",
+          "topic": "乘除與平均分組",
+          "selectionGroup": "primary-math-P2-1",
+          "question": "哪一道算式可用來檢查 36 ÷ 4 = 9？",
+          "hint": "除法答案乘除數應回到原來的數。",
+          "options": [
+            "9 + 4 = 36",
+            "36 − 9 = 4",
+            "36 + 4 = 9",
+            "9 × 4 = 36"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "9 × 4 = 36",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "9 × 4 = 36，可逆向檢查除法。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「9 × 4 = 36」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「乘除與平均分組」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「乘除與平均分組」及分組「primary-math-P2-1」與框架一致。"
+        },
+        {
+          "index": 11,
+          "id": "math-P2-10-0",
+          "label": "直線與曲線",
+          "topic": "線、直角與圖形",
+          "selectionGroup": "primary-math-P2-2",
+          "question": "下列哪一項是曲線？",
+          "hint": "曲線沒有一直向同一方向延伸。",
+          "options": [
+            "直路",
+            "紙張邊",
+            "圓弧",
+            "尺邊"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "圓弧",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "圓弧是曲線；尺邊和直路是直線。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「圓弧」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「線、直角與圖形」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「線、直角與圖形」及分組「primary-math-P2-2」與框架一致。"
+        },
+        {
+          "index": 12,
+          "id": "math-P2-11-0",
+          "label": "平行線",
+          "topic": "線、直角與圖形",
+          "selectionGroup": "primary-math-P2-2",
+          "question": "哪兩條線永遠不會相交？",
+          "hint": "想想鐵路的兩條軌。",
+          "options": [
+            "折線",
+            "平行線",
+            "相交線",
+            "曲線"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "平行線",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "平行線不會相交。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「平行線」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「線、直角與圖形」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「線、直角與圖形」及分組「primary-math-P2-2」與框架一致。"
+        },
+        {
+          "index": 13,
+          "id": "math-P2-12-0",
+          "label": "垂直線",
+          "topic": "線、直角與圖形",
+          "selectionGroup": "primary-math-P2-2",
+          "question": "兩條線相交形成直角，叫作甚麼？",
+          "hint": "直角是 90 度的角。",
+          "options": [
+            "垂直線",
+            "平行線",
+            "曲線",
+            "弧線"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "垂直線",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "相交成直角的兩直線互相垂直。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「垂直線」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「線、直角與圖形」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「線、直角與圖形」及分組「primary-math-P2-2」與框架一致。"
+        },
+        {
+          "index": 14,
+          "id": "math-P2-13-0",
+          "label": "直角辨認",
+          "topic": "線、直角與圖形",
+          "selectionGroup": "primary-math-P2-2",
+          "question": "下列哪一樣物件最常有直角？",
+          "hint": "直角像正方形角落。",
+          "options": [
+            "足球表面",
+            "圓形碟邊",
+            "橙的表面",
+            "書本角"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "書本角",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "書本角最常形成直角。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「書本角」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「線、直角與圖形」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「線、直角與圖形」及分組「primary-math-P2-2」與框架一致。"
+        },
+        {
+          "index": 15,
+          "id": "math-P2-14-0",
+          "label": "圖形角",
+          "topic": "線、直角與圖形",
+          "selectionGroup": "primary-math-P2-2",
+          "question": "一個長方形有多少個直角？",
+          "hint": "每個角都是直角。",
+          "options": [
+            "3 個",
+            "5 個",
+            "4 個",
+            "2 個"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "4 個",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "長方形四角皆為直角。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「4 個」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「線、直角與圖形」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「線、直角與圖形」及分組「primary-math-P2-2」與框架一致。"
+        },
+        {
+          "index": 16,
+          "id": "math-P2-15-0",
+          "label": "厘米",
+          "topic": "單位與五分鐘時間",
+          "selectionGroup": "primary-math-P2-3",
+          "question": "一枝原子筆長約 14 ____.",
+          "hint": "短物件常用厘米量度。",
+          "options": [
+            "升",
+            "厘米",
+            "米",
+            "公斤"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "厘米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "原子筆約 14 cm，非米或容量／重量單位。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「厘米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「單位與五分鐘時間」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「單位與五分鐘時間」及分組「primary-math-P2-3」與框架一致。"
+        },
+        {
+          "index": 17,
+          "id": "math-P2-16-0",
+          "label": "米",
+          "topic": "單位與五分鐘時間",
+          "selectionGroup": "primary-math-P2-3",
+          "question": "一條走廊長約 20 ____.",
+          "hint": "較長的距離可用米量度。",
+          "options": [
+            "米",
+            "厘米",
+            "克",
+            "毫升"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "走廊約 20 m，非厘米。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「單位與五分鐘時間」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「單位與五分鐘時間」及分組「primary-math-P2-3」與框架一致。"
+        },
+        {
+          "index": 18,
+          "id": "math-P2-17-0",
+          "label": "重量單位",
+          "topic": "單位與五分鐘時間",
+          "selectionGroup": "primary-math-P2-3",
+          "question": "一包米重約 2 ____.",
+          "hint": "較重的物件可用公斤量度。",
+          "options": [
+            "克",
+            "厘米",
+            "毫升",
+            "公斤"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "公斤",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "一包米約 2 kg。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「公斤」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「單位與五分鐘時間」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「單位與五分鐘時間」及分組「primary-math-P2-3」與框架一致。"
+        },
+        {
+          "index": 19,
+          "id": "math-P2-18-0",
+          "label": "五分鐘時間",
+          "topic": "單位與五分鐘時間",
+          "selectionGroup": "primary-math-P2-3",
+          "question": "時鐘顯示上午 8 時 25 分，再過 10 分鐘是甚麼時間？",
+          "hint": "把分鐘加 10。",
+          "options": [
+            "上午 9 時 25 分",
+            "上午 8 時 15 分",
+            "上午 8 時 35 分",
+            "上午 8 時 30 分"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "上午 8 時 35 分",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "8:25 加 10 分鐘是 8:35。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「上午 8 時 35 分」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「單位與五分鐘時間」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「單位與五分鐘時間」及分組「primary-math-P2-3」與框架一致。"
+        },
+        {
+          "index": 20,
+          "id": "math-P2-19-0",
+          "label": "時間倒數",
+          "topic": "單位與五分鐘時間",
+          "selectionGroup": "primary-math-P2-3",
+          "question": "下午 3 時 40 分前 5 分鐘是甚麼時間？",
+          "hint": "由分鐘減去 5。",
+          "options": [
+            "下午 4 時 35 分",
+            "下午 3 時 35 分",
+            "下午 3 時 45 分",
+            "下午 2 時 35 分"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "下午 3 時 35 分",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "3:40 減 5 分鐘是 3:35。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「下午 3 時 35 分」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「單位與五分鐘時間」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「單位與五分鐘時間」及分組「primary-math-P2-3」與框架一致。"
+        },
+        {
+          "index": 21,
+          "id": "math-P2-20-0",
+          "label": "一對一象形圖",
+          "topic": "象形圖與資料讀取",
+          "selectionGroup": "primary-math-P2-4",
+          "question": "象形圖中每個蘋果圖案代表 1 個蘋果。圖中有 7 個圖案，表示多少個蘋果？",
+          "hint": "每個圖案只代表 1 個。",
+          "options": [
+            "7 個",
+            "1 個",
+            "8 個",
+            "14 個"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "7 個",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "一對一圖中 7 個圖案表示 7 個蘋果。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「7 個」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「象形圖與資料讀取」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「象形圖與資料讀取」及分組「primary-math-P2-4」與框架一致。"
+        },
+        {
+          "index": 22,
+          "id": "math-P2-21-0",
+          "label": "象形圖比較",
+          "topic": "象形圖與資料讀取",
+          "selectionGroup": "primary-math-P2-4",
+          "question": "象形圖中小狗有 6 個圖案，小貓有 4 個圖案，每個圖案代表 1 隻。小狗比小貓多多少隻？",
+          "hint": "由較大數減較小數。",
+          "options": [
+            "4 隻",
+            "6 隻",
+            "10 隻",
+            "2 隻"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "2 隻",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "6 − 4 = 2 隻。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「2 隻」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「象形圖與資料讀取」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「象形圖與資料讀取」及分組「primary-math-P2-4」與框架一致。"
+        },
+        {
+          "index": 23,
+          "id": "math-P2-22-0",
+          "label": "象形圖總數",
+          "topic": "象形圖與資料讀取",
+          "selectionGroup": "primary-math-P2-4",
+          "question": "象形圖顯示紅花有 3 個圖案、黃花有 5 個圖案，每個圖案代表 1 朵。一共有多少朵花？",
+          "hint": "把兩類數量相加。",
+          "options": [
+            "5 朵",
+            "15 朵",
+            "8 朵",
+            "2 朵"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "8 朵",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "3 + 5 = 8 朵。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「8 朵」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「象形圖與資料讀取」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「象形圖與資料讀取」及分組「primary-math-P2-4」與框架一致。"
+        },
+        {
+          "index": 24,
+          "id": "math-P2-23-0",
+          "label": "資料最多",
+          "topic": "象形圖與資料讀取",
+          "selectionGroup": "primary-math-P2-4",
+          "question": "班內最喜愛的水果圖中：蘋果 5 個圖案、香蕉 8 個圖案、橙 6 個圖案。哪一種最多人選？",
+          "hint": "找圖案數最多的一項。",
+          "options": [
+            "三種一樣多",
+            "香蕉",
+            "蘋果",
+            "橙"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "香蕉",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "8 個香蕉圖案最多。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「香蕉」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「象形圖與資料讀取」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「象形圖與資料讀取」及分組「primary-math-P2-4」與框架一致。"
+        },
+        {
+          "index": 25,
+          "id": "math-P2-24-0",
+          "label": "資料提問",
+          "topic": "象形圖與資料讀取",
+          "selectionGroup": "primary-math-P2-4",
+          "question": "象形圖中有 9 個書本圖案，每個代表 1 本書。下列哪一項正確？",
+          "hint": "直接讀取圖案數。",
+          "options": [
+            "共有 9 本書",
+            "共有 1 本書",
+            "共有 18 本書",
+            "不能知道數量"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "共有 9 本書",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "9 個一對一圖案表示 9 本書。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「共有 9 本書」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P2「象形圖與資料讀取」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「象形圖與資料讀取」及分組「primary-math-P2-4」與框架一致。"
+        }
+      ]
+    },
+    {
+      "grade": "P3",
+      "poolSize": 25,
+      "uniqueQuestionTexts": 25,
+      "expectedTopics": [
+        "10,000 以內四則運算",
+        "分數與整體部分",
+        "四邊形與方向",
+        "周界與進階量度",
+        "倍數象形圖與資料"
+      ],
+      "topicCounts": {
+        "10,000 以內四則運算": 5,
+        "分數與整體部分": 5,
+        "四邊形與方向": 5,
+        "周界與進階量度": 5,
+        "倍數象形圖與資料": 5
+      },
+      "selectionGroupCounts": {
+        "primary-math-P3-0": 5,
+        "primary-math-P3-1": 5,
+        "primary-math-P3-2": 5,
+        "primary-math-P3-3": 5,
+        "primary-math-P3-4": 5
+      },
+      "sampledQuestionCount": 20,
+      "sampledGroupCounts": {
+        "primary-math-P3-1": 4,
+        "primary-math-P3-2": 4,
+        "primary-math-P3-3": 4,
+        "primary-math-P3-0": 4,
+        "primary-math-P3-4": 4
+      },
+      "correctOptionPositions": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "items": [
+        {
+          "index": 1,
+          "id": "math-P3-0-0",
+          "label": "四位數位值",
+          "topic": "10,000 以內四則運算",
+          "selectionGroup": "primary-math-P3-0",
+          "question": "在 6,482 中，4 代表多少？",
+          "hint": "4 在百位。",
+          "options": [
+            "400",
+            "4",
+            "40",
+            "4,000"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "400",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "6,482 的 4 在百位，表示 400。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「400」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「10,000 以內四則運算」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「10,000 以內四則運算」及分組「primary-math-P3-0」與框架一致。"
+        },
+        {
+          "index": 2,
+          "id": "math-P3-1-0",
+          "label": "四位數加法",
+          "topic": "10,000 以內四則運算",
+          "selectionGroup": "primary-math-P3-0",
+          "question": "2,468 + 1,357 = ?",
+          "hint": "先把相同位值相加。",
+          "options": [
+            "3,715",
+            "3,925",
+            "2,825",
+            "3,825"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "3,825",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "2,468 + 1,357 = 3,825。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「3,825」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「10,000 以內四則運算」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「10,000 以內四則運算」及分組「primary-math-P3-0」與框架一致。"
+        },
+        {
+          "index": 3,
+          "id": "math-P3-2-0",
+          "label": "四位數減法",
+          "topic": "10,000 以內四則運算",
+          "selectionGroup": "primary-math-P3-0",
+          "question": "5,000 − 1,786 = ?",
+          "hint": "需要時可逐位借位。",
+          "options": [
+            "4,214",
+            "3,114",
+            "3,214",
+            "3,324"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "3,214",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "5,000 − 1,786 = 3,214。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「3,214」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「10,000 以內四則運算」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「10,000 以內四則運算」及分組「primary-math-P3-0」與框架一致。"
+        },
+        {
+          "index": 4,
+          "id": "math-P3-3-0",
+          "label": "混合運算",
+          "topic": "10,000 以內四則運算",
+          "selectionGroup": "primary-math-P3-0",
+          "question": "6 × 7 − 8 = ?",
+          "hint": "先做乘法，再做減法。",
+          "options": [
+            "40",
+            "34",
+            "26",
+            "50"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "34",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "先乘後減：6 × 7 − 8 = 34。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「34」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「10,000 以內四則運算」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「10,000 以內四則運算」及分組「primary-math-P3-0」與框架一致。"
+        },
+        {
+          "index": 5,
+          "id": "math-P3-4-0",
+          "label": "除法運算",
+          "topic": "10,000 以內四則運算",
+          "selectionGroup": "primary-math-P3-0",
+          "question": "96 ÷ 8 = ?",
+          "hint": "想 8 乘多少等於 96。",
+          "options": [
+            "12",
+            "11",
+            "14",
+            "88"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "12",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "96 ÷ 8 = 12。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「12」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「10,000 以內四則運算」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「10,000 以內四則運算」及分組「primary-math-P3-0」與框架一致。"
+        },
+        {
+          "index": 6,
+          "id": "math-P3-5-0",
+          "label": "分數表示",
+          "topic": "分數與整體部分",
+          "selectionGroup": "primary-math-P3-1",
+          "question": "把一個蛋糕平均分成 8 份，吃了其中 3 份，吃了多少個蛋糕？",
+          "hint": "分母表示總等份數，分子表示取了多少份。",
+          "options": [
+            "8/3",
+            "5/8",
+            "1/3",
+            "3/8"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "3/8",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "8 等份取 3 份表示 3/8。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「3/8」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「分數與整體部分」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「分數與整體部分」及分組「primary-math-P3-1」與框架一致。"
+        },
+        {
+          "index": 7,
+          "id": "math-P3-6-0",
+          "label": "同分母加法",
+          "topic": "分數與整體部分",
+          "selectionGroup": "primary-math-P3-1",
+          "question": "2/7 + 3/7 = ?",
+          "hint": "分母不變，分子相加。",
+          "options": [
+            "6/7",
+            "1/7",
+            "5/7",
+            "5/14"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "5/7",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "同分母相加：2/7 + 3/7 = 5/7。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「5/7」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「分數與整體部分」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「分數與整體部分」及分組「primary-math-P3-1」與框架一致。"
+        },
+        {
+          "index": 8,
+          "id": "math-P3-7-0",
+          "label": "同分母減法",
+          "topic": "分數與整體部分",
+          "selectionGroup": "primary-math-P3-1",
+          "question": "6/9 − 2/9 = ?",
+          "hint": "分母不變，分子相減。",
+          "options": [
+            "2/9",
+            "4/9",
+            "4/18",
+            "8/9"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "4/9",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "同分母相減：6/9 − 2/9 = 4/9。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「4/9」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「分數與整體部分」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「分數與整體部分」及分組「primary-math-P3-1」與框架一致。"
+        },
+        {
+          "index": 9,
+          "id": "math-P3-8-0",
+          "label": "整體部分",
+          "topic": "分數與整體部分",
+          "selectionGroup": "primary-math-P3-1",
+          "question": "哪一個分數表示把整體平均分成 5 份，取其中 1 份？",
+          "hint": "先看平均分成多少份。",
+          "options": [
+            "1/5",
+            "5/1",
+            "1/4",
+            "5/5"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "1/5",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "五等份取一份是 1/5。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「1/5」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「分數與整體部分」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「分數與整體部分」及分組「primary-math-P3-1」與框架一致。"
+        },
+        {
+          "index": 10,
+          "id": "math-P3-9-0",
+          "label": "分數比較",
+          "topic": "分數與整體部分",
+          "selectionGroup": "primary-math-P3-1",
+          "question": "在 2/6、4/6、5/6 中，哪一個最大？",
+          "hint": "分母相同時，分子較大表示分數較大。",
+          "options": [
+            "2/6",
+            "4/6",
+            "三個一樣大",
+            "5/6"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "5/6",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "同分母下分子 5 最大，所以 5/6 最大。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「5/6」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「分數與整體部分」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「分數與整體部分」及分組「primary-math-P3-1」與框架一致。"
+        },
+        {
+          "index": 11,
+          "id": "math-P3-10-0",
+          "label": "正方形性質",
+          "topic": "四邊形與方向",
+          "selectionGroup": "primary-math-P3-2",
+          "question": "哪一項是正方形的特性？",
+          "hint": "想想正方形的邊和角。",
+          "options": [
+            "沒有角",
+            "四邊都不一樣長",
+            "四邊一樣長，有四個直角",
+            "只有三條邊"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "四邊一樣長，有四個直角",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "正方形四邊等長且有四個直角。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「四邊一樣長，有四個直角」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「四邊形與方向」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「四邊形與方向」及分組「primary-math-P3-2」與框架一致。"
+        },
+        {
+          "index": 12,
+          "id": "math-P3-11-0",
+          "label": "長方形性質",
+          "topic": "四邊形與方向",
+          "selectionGroup": "primary-math-P3-2",
+          "question": "長方形有哪一項特性？",
+          "hint": "比較相對的邊。",
+          "options": [
+            "沒有直邊",
+            "相對兩邊一樣長",
+            "四邊一定一樣長",
+            "只有一個角"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "相對兩邊一樣長",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "長方形相對兩邊等長。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「相對兩邊一樣長」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「四邊形與方向」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「四邊形與方向」及分組「primary-math-P3-2」與框架一致。"
+        },
+        {
+          "index": 13,
+          "id": "math-P3-12-0",
+          "label": "平行四邊形",
+          "topic": "四邊形與方向",
+          "selectionGroup": "primary-math-P3-2",
+          "question": "哪一項最能描述平行四邊形？",
+          "hint": "留意兩組對邊。",
+          "options": [
+            "兩組對邊分別平行",
+            "四條邊都是彎曲的",
+            "只有三條邊",
+            "沒有角"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "兩組對邊分別平行",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "平行四邊形有兩組對邊分別平行。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「兩組對邊分別平行」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「四邊形與方向」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「四邊形與方向」及分組「primary-math-P3-2」與框架一致。"
+        },
+        {
+          "index": 14,
+          "id": "math-P3-13-0",
+          "label": "四方位",
+          "topic": "四邊形與方向",
+          "selectionGroup": "primary-math-P3-2",
+          "question": "從學校向東走到圖書館。由圖書館返回學校要向哪一方走？",
+          "hint": "返回時方向相反。",
+          "options": [
+            "東",
+            "北",
+            "南",
+            "西"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "西",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "東的相反方向是西。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「西」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「四邊形與方向」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「四邊形與方向」及分組「primary-math-P3-2」與框架一致。"
+        },
+        {
+          "index": 15,
+          "id": "math-P3-14-0",
+          "label": "方向判讀",
+          "topic": "四邊形與方向",
+          "selectionGroup": "primary-math-P3-2",
+          "question": "地圖上公園在郵局的北面。由郵局到公園要向哪一方走？",
+          "hint": "地圖上方通常是北。",
+          "options": [
+            "東",
+            "西",
+            "北",
+            "南"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "北",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "公園在郵局北面，前往公園要向北。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「北」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「四邊形與方向」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「四邊形與方向」及分組「primary-math-P3-2」與框架一致。"
+        },
+        {
+          "index": 16,
+          "id": "math-P3-15-0",
+          "label": "周界",
+          "topic": "周界與進階量度",
+          "selectionGroup": "primary-math-P3-3",
+          "question": "一個長方形長 9 厘米、闊 4 厘米，周界是多少？",
+          "hint": "把四條邊的長度相加。",
+          "options": [
+            "18 厘米",
+            "26 厘米",
+            "13 厘米",
+            "36 平方厘米"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "26 厘米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "長方形周界 = 2 × (9 + 4) = 26 cm。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「26 厘米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「周界與進階量度」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「周界與進階量度」及分組「primary-math-P3-3」與框架一致。"
+        },
+        {
+          "index": 17,
+          "id": "math-P3-16-0",
+          "label": "正方形周界",
+          "topic": "周界與進階量度",
+          "selectionGroup": "primary-math-P3-3",
+          "question": "一個正方形每邊長 6 厘米，周界是多少？",
+          "hint": "四條邊一樣長。",
+          "options": [
+            "24 厘米",
+            "12 厘米",
+            "36 平方厘米",
+            "18 厘米"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "24 厘米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "正方形周界 = 4 × 6 = 24 cm。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「24 厘米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「周界與進階量度」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「周界與進階量度」及分組「primary-math-P3-3」與框架一致。"
+        },
+        {
+          "index": 18,
+          "id": "math-P3-17-0",
+          "label": "公里",
+          "topic": "周界與進階量度",
+          "selectionGroup": "primary-math-P3-3",
+          "question": "學校到郊野公園的距離約 5 ____.",
+          "hint": "較遠的路程可用公里。",
+          "options": [
+            "厘米",
+            "毫升",
+            "克",
+            "公里"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "公里",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "較遠路程以公里量度。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「公里」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「周界與進階量度」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「周界與進階量度」及分組「primary-math-P3-3」與框架一致。"
+        },
+        {
+          "index": 19,
+          "id": "math-P3-18-0",
+          "label": "容量換算",
+          "topic": "周界與進階量度",
+          "selectionGroup": "primary-math-P3-3",
+          "question": "1 公升等於多少毫升？",
+          "hint": "記住公升和毫升的關係。",
+          "options": [
+            "10 毫升",
+            "10,000 毫升",
+            "1,000 毫升",
+            "100 毫升"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "1,000 毫升",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "1 L = 1,000 mL。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「1,000 毫升」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「周界與進階量度」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「周界與進階量度」及分組「primary-math-P3-3」與框架一致。"
+        },
+        {
+          "index": 20,
+          "id": "math-P3-19-0",
+          "label": "容量比較",
+          "topic": "周界與進階量度",
+          "selectionGroup": "primary-math-P3-3",
+          "question": "一支水有 750 毫升，另一支水有 1 公升。哪一支容量較大？",
+          "hint": "先把單位看清楚。",
+          "options": [
+            "不能比較",
+            "1 公升那一支",
+            "750 毫升那一支",
+            "兩支一樣大"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "1 公升那一支",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "1 L = 1,000 mL > 750 mL。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「1 公升那一支」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「周界與進階量度」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「周界與進階量度」及分組「primary-math-P3-3」與框架一致。"
+        },
+        {
+          "index": 21,
+          "id": "math-P3-20-0",
+          "label": "倍數象形圖",
+          "topic": "倍數象形圖與資料",
+          "selectionGroup": "primary-math-P3-4",
+          "question": "象形圖中每個星星代表 5 人。若有 4 個星星，表示多少人？",
+          "hint": "先把圖案數乘每個代表的人數。",
+          "options": [
+            "20 人",
+            "9 人",
+            "15 人",
+            "25 人"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "20 人",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "4 個圖案 × 每個 5 人 = 20 人。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「20 人」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「倍數象形圖與資料」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「倍數象形圖與資料」及分組「primary-math-P3-4」與框架一致。"
+        },
+        {
+          "index": 22,
+          "id": "math-P3-21-0",
+          "label": "倍數比較",
+          "topic": "倍數象形圖與資料",
+          "selectionGroup": "primary-math-P3-4",
+          "question": "象形圖中每個圖案代表 10 本書。A 組有 6 個圖案，B 組有 4 個圖案，A 組多多少本？",
+          "hint": "先找相差多少個圖案，再乘代表數。",
+          "options": [
+            "2 本",
+            "40 本",
+            "60 本",
+            "20 本"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "20 本",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "(6 − 4) 個圖案 × 10 本 = 20 本。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「20 本」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「倍數象形圖與資料」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「倍數象形圖與資料」及分組「primary-math-P3-4」與框架一致。"
+        },
+        {
+          "index": 23,
+          "id": "math-P3-22-0",
+          "label": "倍數總數",
+          "topic": "倍數象形圖與資料",
+          "selectionGroup": "primary-math-P3-4",
+          "question": "象形圖中每個三角形代表 2 個。紅色有 5 個三角形，藍色有 3 個三角形，共有多少個？",
+          "hint": "先合計圖案，再乘代表數。",
+          "options": [
+            "10 個",
+            "12 個",
+            "16 個",
+            "8 個"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "16 個",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "(5 + 3) 個圖案 × 2 = 16 個。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「16 個」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「倍數象形圖與資料」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「倍數象形圖與資料」及分組「primary-math-P3-4」與框架一致。"
+        },
+        {
+          "index": 24,
+          "id": "math-P3-23-0",
+          "label": "繪製圖表",
+          "topic": "倍數象形圖與資料",
+          "selectionGroup": "primary-math-P3-4",
+          "question": "每個圓形代表 2 人。要表示 8 人，應畫多少個圓形？",
+          "hint": "用總人數除以每個圖案代表的人數。",
+          "options": [
+            "16 個",
+            "4 個",
+            "2 個",
+            "6 個"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "4 個",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "8 ÷ 2 = 4 個圓形。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「4 個」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「倍數象形圖與資料」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「倍數象形圖與資料」及分組「primary-math-P3-4」與框架一致。"
+        },
+        {
+          "index": 25,
+          "id": "math-P3-24-0",
+          "label": "資料結論",
+          "topic": "倍數象形圖與資料",
+          "selectionGroup": "primary-math-P3-4",
+          "question": "象形圖顯示每個笑臉代表 10 人。游泳有 7 個笑臉，跑步有 5 個笑臉。哪項正確？",
+          "hint": "先把笑臉數轉成實際人數。",
+          "options": [
+            "游泳比跑步多 20 人",
+            "游泳比跑步多 2 人",
+            "跑步比游泳多 20 人",
+            "兩項一樣多人"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "游泳比跑步多 20 人",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "(7 − 5) 個笑臉 × 10 = 20 人。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「游泳比跑步多 20 人」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P3「倍數象形圖與資料」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「倍數象形圖與資料」及分組「primary-math-P3-4」與框架一致。"
+        }
+      ]
+    },
+    {
+      "grade": "P4",
+      "poolSize": 25,
+      "uniqueQuestionTexts": 25,
+      "expectedTopics": [
+        "因數倍數與同分母分數",
+        "三角形與八方位",
+        "面積與組合圖形",
+        "長條圖與資料解讀",
+        "生活情境綜合應用"
+      ],
+      "topicCounts": {
+        "因數倍數與同分母分數": 5,
+        "三角形與八方位": 5,
+        "面積與組合圖形": 5,
+        "長條圖與資料解讀": 5,
+        "生活情境綜合應用": 5
+      },
+      "selectionGroupCounts": {
+        "primary-math-P4-0": 5,
+        "primary-math-P4-1": 5,
+        "primary-math-P4-2": 5,
+        "primary-math-P4-3": 5,
+        "primary-math-P4-4": 5
+      },
+      "sampledQuestionCount": 20,
+      "sampledGroupCounts": {
+        "primary-math-P4-2": 4,
+        "primary-math-P4-4": 4,
+        "primary-math-P4-1": 4,
+        "primary-math-P4-3": 4,
+        "primary-math-P4-0": 4
+      },
+      "correctOptionPositions": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "items": [
+        {
+          "index": 1,
+          "id": "math-P4-0-0",
+          "label": "公因數",
+          "topic": "因數倍數與同分母分數",
+          "selectionGroup": "primary-math-P4-0",
+          "question": "12 和 18 的公因數中，最大的是多少？",
+          "hint": "列出兩個數的因數，再找共同最大的。",
+          "options": [
+            "6",
+            "3",
+            "9",
+            "36"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "6",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "12 和 18 的公因數為 1、2、3、6，最大是 6。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「6」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「因數倍數與同分母分數」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「因數倍數與同分母分數」及分組「primary-math-P4-0」與框架一致。"
+        },
+        {
+          "index": 2,
+          "id": "math-P4-1-0",
+          "label": "最小公倍數",
+          "topic": "因數倍數與同分母分數",
+          "selectionGroup": "primary-math-P4-0",
+          "question": "4 和 6 的最小公倍數是多少？",
+          "hint": "找第一個同時是 4 和 6 倍數的數。",
+          "options": [
+            "10",
+            "24",
+            "2",
+            "12"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "12",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "4 的倍數與 6 的倍數首次相同是 12。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「12」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「因數倍數與同分母分數」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「因數倍數與同分母分數」及分組「primary-math-P4-0」與框架一致。"
+        },
+        {
+          "index": 3,
+          "id": "math-P4-2-0",
+          "label": "同分母加法",
+          "topic": "因數倍數與同分母分數",
+          "selectionGroup": "primary-math-P4-0",
+          "question": "3/8 + 2/8 = ?",
+          "hint": "分母相同時，分子相加。",
+          "options": [
+            "1/8",
+            "6/8",
+            "5/8",
+            "5/16"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "5/8",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "同分母相加：3/8 + 2/8 = 5/8。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「5/8」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「因數倍數與同分母分數」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「因數倍數與同分母分數」及分組「primary-math-P4-0」與框架一致。"
+        },
+        {
+          "index": 4,
+          "id": "math-P4-3-0",
+          "label": "同分母減法",
+          "topic": "因數倍數與同分母分數",
+          "selectionGroup": "primary-math-P4-0",
+          "question": "7/10 − 3/10 = ?",
+          "hint": "分母不變，分子相減。",
+          "options": [
+            "3/10",
+            "4/10",
+            "4/20",
+            "10/10"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "4/10",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "同分母相減：7/10 − 3/10 = 4/10。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「4/10」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「因數倍數與同分母分數」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「因數倍數與同分母分數」及分組「primary-math-P4-0」與框架一致。"
+        },
+        {
+          "index": 5,
+          "id": "math-P4-4-0",
+          "label": "真分數比較",
+          "topic": "因數倍數與同分母分數",
+          "selectionGroup": "primary-math-P4-0",
+          "question": "在 3/9、5/9、7/9 中，哪一個最大？",
+          "hint": "分母相同時，比較分子。",
+          "options": [
+            "7/9",
+            "3/9",
+            "5/9",
+            "三個一樣大"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "7/9",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "同分母下分子 7 最大，所以 7/9 最大。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「7/9」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「因數倍數與同分母分數」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「因數倍數與同分母分數」及分組「primary-math-P4-0」與框架一致。"
+        },
+        {
+          "index": 6,
+          "id": "math-P4-5-0",
+          "label": "等腰三角形",
+          "topic": "三角形與八方位",
+          "selectionGroup": "primary-math-P4-1",
+          "question": "哪一項描述等腰三角形？",
+          "hint": "等腰三角形有兩條邊一樣長。",
+          "options": [
+            "三條邊一樣長",
+            "有一個直角一定成立",
+            "沒有角",
+            "有兩條邊一樣長"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "有兩條邊一樣長",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "等腰三角形有兩條邊一樣長；不一定有直角。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「有兩條邊一樣長」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「三角形與八方位」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「三角形與八方位」及分組「primary-math-P4-1」與框架一致。"
+        },
+        {
+          "index": 7,
+          "id": "math-P4-6-0",
+          "label": "等邊三角形",
+          "topic": "三角形與八方位",
+          "selectionGroup": "primary-math-P4-1",
+          "question": "等邊三角形有多少條一樣長的邊？",
+          "hint": "「等邊」表示每一邊相等。",
+          "options": [
+            "1 條",
+            "4 條",
+            "3 條",
+            "2 條"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "3 條",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "等邊三角形的 3 條邊均相等。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「3 條」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「三角形與八方位」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「三角形與八方位」及分組「primary-math-P4-1」與框架一致。"
+        },
+        {
+          "index": 8,
+          "id": "math-P4-7-0",
+          "label": "直角三角形",
+          "topic": "三角形與八方位",
+          "selectionGroup": "primary-math-P4-1",
+          "question": "哪一個三角形一定有一個 90° 的角？",
+          "hint": "90° 的角是直角。",
+          "options": [
+            "正五邊形",
+            "直角三角形",
+            "等邊三角形",
+            "圓形"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "直角三角形",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "直角三角形按定義有一個 90° 角。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「直角三角形」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「三角形與八方位」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「三角形與八方位」及分組「primary-math-P4-1」與框架一致。"
+        },
+        {
+          "index": 9,
+          "id": "math-P4-8-0",
+          "label": "八方位",
+          "topic": "三角形與八方位",
+          "selectionGroup": "primary-math-P4-1",
+          "question": "從 A 點向東北方走到 B 點。由 B 點返回 A 點要向哪一方走？",
+          "hint": "返回時找相反方位。",
+          "options": [
+            "西南方",
+            "東北方",
+            "西北方",
+            "東南方"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "西南方",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "東北方的相反方向是西南方。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「西南方」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「三角形與八方位」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「三角形與八方位」及分組「primary-math-P4-1」與框架一致。"
+        },
+        {
+          "index": 10,
+          "id": "math-P4-9-0",
+          "label": "方位判讀",
+          "topic": "三角形與八方位",
+          "selectionGroup": "primary-math-P4-1",
+          "question": "地圖上圖書館在學校的西北方。由圖書館到學校應向哪一方走？",
+          "hint": "西北方的相反方向是東南方。",
+          "options": [
+            "西北方",
+            "東北方",
+            "西南方",
+            "東南方"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "東南方",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "西北方的相反方向是東南方。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「東南方」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「三角形與八方位」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「三角形與八方位」及分組「primary-math-P4-1」與框架一致。"
+        },
+        {
+          "index": 11,
+          "id": "math-P4-10-0",
+          "label": "長方形面積",
+          "topic": "面積與組合圖形",
+          "selectionGroup": "primary-math-P4-2",
+          "question": "一個長方形長 12 厘米、闊 5 厘米，面積是多少？",
+          "hint": "面積 = 長 × 闊。",
+          "options": [
+            "34 平方厘米",
+            "120 平方厘米",
+            "60 平方厘米",
+            "17 平方厘米"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "60 平方厘米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "長方形面積 = 12 × 5 = 60 cm²。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「60 平方厘米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「面積與組合圖形」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「面積與組合圖形」及分組「primary-math-P4-2」與框架一致。"
+        },
+        {
+          "index": 12,
+          "id": "math-P4-11-0",
+          "label": "正方形面積",
+          "topic": "面積與組合圖形",
+          "selectionGroup": "primary-math-P4-2",
+          "question": "一個正方形每邊長 7 厘米，面積是多少？",
+          "hint": "正方形面積 = 邊長 × 邊長。",
+          "options": [
+            "56 平方厘米",
+            "49 平方厘米",
+            "28 平方厘米",
+            "14 平方厘米"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "49 平方厘米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "正方形面積 = 7 × 7 = 49 cm²。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「49 平方厘米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「面積與組合圖形」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「面積與組合圖形」及分組「primary-math-P4-2」與框架一致。"
+        },
+        {
+          "index": 13,
+          "id": "math-P4-12-0",
+          "label": "平方單位",
+          "topic": "面積與組合圖形",
+          "selectionGroup": "primary-math-P4-2",
+          "question": "要量度課室地板的面積，最合適用甚麼單位？",
+          "hint": "面積用平方單位。",
+          "options": [
+            "平方米",
+            "米",
+            "公斤",
+            "公升"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "平方米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "課室地板面積適用平方米。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「平方米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「面積與組合圖形」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「面積與組合圖形」及分組「primary-math-P4-2」與框架一致。"
+        },
+        {
+          "index": 14,
+          "id": "math-P4-13-0",
+          "label": "組合圖形",
+          "topic": "面積與組合圖形",
+          "selectionGroup": "primary-math-P4-2",
+          "question": "一個 L 形紙板可看成 8 cm × 6 cm 的長方形，挖去一個 3 cm × 2 cm 的長方形。面積是多少？",
+          "hint": "先找大長方形面積，再減去挖去部分。",
+          "options": [
+            "48 平方厘米",
+            "36 平方厘米",
+            "30 平方厘米",
+            "42 平方厘米"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "42 平方厘米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "大長方形 48 cm² − 挖去 6 cm² = 42 cm²。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「42 平方厘米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「面積與組合圖形」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「面積與組合圖形」及分組「primary-math-P4-2」與框架一致。"
+        },
+        {
+          "index": 15,
+          "id": "math-P4-14-0",
+          "label": "面積比較",
+          "topic": "面積與組合圖形",
+          "selectionGroup": "primary-math-P4-2",
+          "question": "甲長方形是 9 cm × 4 cm，乙長方形是 6 cm × 5 cm。哪項正確？",
+          "hint": "分別計算兩個面積再比較。",
+          "options": [
+            "兩個面積一樣",
+            "甲的周界較大所以面積一定較大",
+            "甲的面積大 6 平方厘米",
+            "乙的面積大 6 平方厘米"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "甲的面積大 6 平方厘米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "甲面積 9×4=36、乙面積 6×5=30，甲大 6 cm²。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「甲的面積大 6 平方厘米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「面積與組合圖形」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「面積與組合圖形」及分組「primary-math-P4-2」與框架一致。"
+        },
+        {
+          "index": 16,
+          "id": "math-P4-15-0",
+          "label": "長條圖讀取",
+          "topic": "長條圖與資料解讀",
+          "selectionGroup": "primary-math-P4-3",
+          "question": "長條圖顯示 A 隊得 28 分，B 隊得 35 分。B 隊多多少分？",
+          "hint": "由較大數減較小數。",
+          "options": [
+            "63 分",
+            "7 分",
+            "3 分",
+            "28 分"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "7 分",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "35 − 28 = 7 分。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「7 分」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「長條圖與資料解讀」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「長條圖與資料解讀」及分組「primary-math-P4-3」與框架一致。"
+        },
+        {
+          "index": 17,
+          "id": "math-P4-16-0",
+          "label": "長條圖最高",
+          "topic": "長條圖與資料解讀",
+          "selectionGroup": "primary-math-P4-3",
+          "question": "長條圖顯示四組回收紙張：甲 18 kg、乙 24 kg、丙 21 kg、丁 15 kg。哪組最多？",
+          "hint": "找最高的數值。",
+          "options": [
+            "乙組",
+            "甲組",
+            "丙組",
+            "丁組"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "乙組",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "24 kg 是四組數據中最高。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「乙組」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「長條圖與資料解讀」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「長條圖與資料解讀」及分組「primary-math-P4-3」與框架一致。"
+        },
+        {
+          "index": 18,
+          "id": "math-P4-17-0",
+          "label": "長條圖總數",
+          "topic": "長條圖與資料解讀",
+          "selectionGroup": "primary-math-P4-3",
+          "question": "長條圖顯示星期一借書 12 本、星期二 17 本、星期三 11 本，三天共借多少本？",
+          "hint": "把三天數量相加。",
+          "options": [
+            "29 本",
+            "30 本",
+            "51 本",
+            "40 本"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "40 本",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "12 + 17 + 11 = 40 本。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「40 本」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「長條圖與資料解讀」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「長條圖與資料解讀」及分組「primary-math-P4-3」與框架一致。"
+        },
+        {
+          "index": 19,
+          "id": "math-P4-18-0",
+          "label": "繪製長條圖",
+          "topic": "長條圖與資料解讀",
+          "selectionGroup": "primary-math-P4-3",
+          "question": "下列哪一項最適合作為長條圖的縱軸標題？",
+          "hint": "縱軸應說明所量度的數量。",
+          "options": [
+            "圖表題目",
+            "同學姓名",
+            "借閱書本數量",
+            "星期名稱"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "借閱書本數量",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "縱軸標題應是所量度的『借閱書本數量』。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「借閱書本數量」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「長條圖與資料解讀」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「長條圖與資料解讀」及分組「primary-math-P4-3」與框架一致。"
+        },
+        {
+          "index": 20,
+          "id": "math-P4-19-0",
+          "label": "資料結論",
+          "topic": "長條圖與資料解讀",
+          "selectionGroup": "primary-math-P4-3",
+          "question": "長條圖顯示本月用水量比上月少 15 公升。下列哪個結論最合理？",
+          "hint": "只根據圖表已給資料作結論。",
+          "options": [
+            "下月一定更多",
+            "本月用水量較少",
+            "本月完全沒有用水",
+            "每個人都不喝水"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "本月用水量較少",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "題幹只支持『本月用水量較少』，不可推斷未來或絕對情況。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「本月用水量較少」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「長條圖與資料解讀」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「長條圖與資料解讀」及分組「primary-math-P4-3」與框架一致。"
+        },
+        {
+          "index": 21,
+          "id": "math-P4-20-0",
+          "label": "分數生活題",
+          "topic": "生活情境綜合應用",
+          "selectionGroup": "primary-math-P4-4",
+          "question": "一條絲帶長 1 米，用了其中的 3/8，還剩多少？",
+          "hint": "整條是 8/8，扣除已用部分。",
+          "options": [
+            "5/8 米",
+            "3/8 米",
+            "11/8 米",
+            "5 米"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "5/8 米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "整條 8/8 − 已用 3/8 = 5/8 米。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「5/8 米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「生活情境綜合應用」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「生活情境綜合應用」及分組「primary-math-P4-4」與框架一致。"
+        },
+        {
+          "index": 22,
+          "id": "math-P4-21-0",
+          "label": "因數生活題",
+          "topic": "生活情境綜合應用",
+          "selectionGroup": "primary-math-P4-4",
+          "question": "24 支筆要平均放入相同數量的袋中。下列哪一個袋數可行？",
+          "hint": "袋數必須是 24 的因數。",
+          "options": [
+            "5 袋",
+            "7 袋",
+            "10 袋",
+            "6 袋"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "6 袋",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "24 可被 6 整除，5、7、10 均不能平均分。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「6 袋」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「生活情境綜合應用」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「生活情境綜合應用」及分組「primary-math-P4-4」與框架一致。"
+        },
+        {
+          "index": 23,
+          "id": "math-P4-22-0",
+          "label": "面積應用",
+          "topic": "生活情境綜合應用",
+          "selectionGroup": "primary-math-P4-4",
+          "question": "一幅長 10 米、闊 4 米的花圃要鋪草皮，需要多少平方米草皮？",
+          "hint": "先算花圃面積。",
+          "options": [
+            "28 平方米",
+            "80 平方米",
+            "40 平方米",
+            "14 平方米"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "40 平方米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "花圃面積 = 10 × 4 = 40 m²。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「40 平方米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「生活情境綜合應用」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「生活情境綜合應用」及分組「primary-math-P4-4」與框架一致。"
+        },
+        {
+          "index": 24,
+          "id": "math-P4-23-0",
+          "label": "資料應用",
+          "topic": "生活情境綜合應用",
+          "selectionGroup": "primary-math-P4-4",
+          "question": "班內 32 人中有 18 人選閱讀會，餘下全部選科學會。選科學會有多少人？",
+          "hint": "總人數減去選閱讀會人數。",
+          "options": [
+            "50 人",
+            "14 人",
+            "18 人",
+            "32 人"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "14 人",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "32 − 18 = 14 人。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「14 人」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「生活情境綜合應用」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「生活情境綜合應用」及分組「primary-math-P4-4」與框架一致。"
+        },
+        {
+          "index": 25,
+          "id": "math-P4-24-0",
+          "label": "綜合檢查",
+          "topic": "生活情境綜合應用",
+          "selectionGroup": "primary-math-P4-4",
+          "question": "要解答「4 個相同長方形拼成的圖案面積」題，第一步最重要是甚麼？",
+          "hint": "先找每個長方形的面積。",
+          "options": [
+            "計算一個長方形的面積",
+            "先把所有數相加",
+            "只看圖案顏色",
+            "先計算周界而不看題目"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "計算一個長方形的面積",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "先算一個長方形面積，才可求四個相同圖形總面積。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「計算一個長方形的面積」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P4「生活情境綜合應用」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「生活情境綜合應用」及分組「primary-math-P4-4」與框架一致。"
+        }
+      ]
+    },
+    {
+      "grade": "P5",
+      "poolSize": 25,
+      "uniqueQuestionTexts": 25,
+      "expectedTopics": [
+        "小數、異分母分數與百分比",
+        "面積公式與立體特性",
+        "體積與立方單位",
+        "代數符號與式子",
+        "平均數與資料分析"
+      ],
+      "topicCounts": {
+        "小數、異分母分數與百分比": 5,
+        "面積公式與立體特性": 5,
+        "體積與立方單位": 5,
+        "代數符號與式子": 5,
+        "平均數與資料分析": 5
+      },
+      "selectionGroupCounts": {
+        "primary-math-P5-0": 5,
+        "primary-math-P5-1": 5,
+        "primary-math-P5-2": 5,
+        "primary-math-P5-3": 5,
+        "primary-math-P5-4": 5
+      },
+      "sampledQuestionCount": 20,
+      "sampledGroupCounts": {
+        "primary-math-P5-0": 4,
+        "primary-math-P5-4": 4,
+        "primary-math-P5-2": 4,
+        "primary-math-P5-3": 4,
+        "primary-math-P5-1": 4
+      },
+      "correctOptionPositions": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "items": [
+        {
+          "index": 1,
+          "id": "math-P5-0-0",
+          "label": "小數加法",
+          "topic": "小數、異分母分數與百分比",
+          "selectionGroup": "primary-math-P5-0",
+          "question": "3.75 + 2.6 = ?",
+          "hint": "小數點要對齊。",
+          "options": [
+            "6.35",
+            "5.135",
+            "6.25",
+            "5.75"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "6.35",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "小數點對齊：3.75 + 2.60 = 6.35。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「6.35」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「小數、異分母分數與百分比」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「小數、異分母分數與百分比」及分組「primary-math-P5-0」與框架一致。"
+        },
+        {
+          "index": 2,
+          "id": "math-P5-1-0",
+          "label": "小數乘法",
+          "topic": "小數、異分母分數與百分比",
+          "selectionGroup": "primary-math-P5-0",
+          "question": "4.8 × 0.5 = ?",
+          "hint": "乘以 0.5 等於取一半。",
+          "options": [
+            "0.24",
+            "4.3",
+            "5.3",
+            "2.4"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "2.4",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "4.8 的一半是 2.4。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「2.4」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「小數、異分母分數與百分比」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「小數、異分母分數與百分比」及分組「primary-math-P5-0」與框架一致。"
+        },
+        {
+          "index": 3,
+          "id": "math-P5-2-0",
+          "label": "異分母分數加法",
+          "topic": "小數、異分母分數與百分比",
+          "selectionGroup": "primary-math-P5-0",
+          "question": "1/3 + 1/6 = ?",
+          "hint": "先化成相同分母。",
+          "options": [
+            "1/9",
+            "2/6",
+            "1/2",
+            "2/9"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "1/2",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "1/3 = 2/6，所以 2/6 + 1/6 = 3/6 = 1/2。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「1/2」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「小數、異分母分數與百分比」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「小數、異分母分數與百分比」及分組「primary-math-P5-0」與框架一致。"
+        },
+        {
+          "index": 4,
+          "id": "math-P5-3-0",
+          "label": "異分母分數減法",
+          "topic": "小數、異分母分數與百分比",
+          "selectionGroup": "primary-math-P5-0",
+          "question": "5/6 − 1/4 = ?",
+          "hint": "可先化成分母 12。",
+          "options": [
+            "4/12",
+            "7/12",
+            "4/2",
+            "1/2"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "7/12",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "5/6=10/12、1/4=3/12，差為 7/12。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「7/12」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「小數、異分母分數與百分比」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「小數、異分母分數與百分比」及分組「primary-math-P5-0」與框架一致。"
+        },
+        {
+          "index": 5,
+          "id": "math-P5-4-0",
+          "label": "百分比",
+          "topic": "小數、異分母分數與百分比",
+          "selectionGroup": "primary-math-P5-0",
+          "question": "80 的 25% 是多少？",
+          "hint": "25% 是四分之一。",
+          "options": [
+            "20",
+            "25",
+            "40",
+            "60"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "20",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "80 的四分之一，即 25%，是 20。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「20」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「小數、異分母分數與百分比」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「小數、異分母分數與百分比」及分組「primary-math-P5-0」與框架一致。"
+        },
+        {
+          "index": 6,
+          "id": "math-P5-5-0",
+          "label": "平行四邊形面積",
+          "topic": "面積公式與立體特性",
+          "selectionGroup": "primary-math-P5-1",
+          "question": "平行四邊形底 9 厘米、高 4 厘米，面積是多少？",
+          "hint": "面積 = 底 × 高。",
+          "options": [
+            "13 平方厘米",
+            "18 平方厘米",
+            "72 平方厘米",
+            "36 平方厘米"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "36 平方厘米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "平行四邊形面積 = 底×高 = 9×4 = 36 cm²。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「36 平方厘米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「面積公式與立體特性」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「面積公式與立體特性」及分組「primary-math-P5-1」與框架一致。"
+        },
+        {
+          "index": 7,
+          "id": "math-P5-6-0",
+          "label": "梯形面積",
+          "topic": "面積公式與立體特性",
+          "selectionGroup": "primary-math-P5-1",
+          "question": "梯形上底 6 厘米、下底 10 厘米、高 5 厘米，面積是多少？",
+          "hint": "（上底＋下底）× 高 ÷ 2。",
+          "options": [
+            "21 平方厘米",
+            "30 平方厘米",
+            "40 平方厘米",
+            "80 平方厘米"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "40 平方厘米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "梯形面積 = (6+10)×5÷2 = 40 cm²。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「40 平方厘米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「面積公式與立體特性」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「面積公式與立體特性」及分組「primary-math-P5-1」與框架一致。"
+        },
+        {
+          "index": 8,
+          "id": "math-P5-7-0",
+          "label": "三角形面積",
+          "topic": "面積公式與立體特性",
+          "selectionGroup": "primary-math-P5-1",
+          "question": "一個三角形底 14 厘米、高 5 厘米，面積是多少？",
+          "hint": "底 × 高 ÷ 2。",
+          "options": [
+            "28 平方厘米",
+            "35 平方厘米",
+            "70 平方厘米",
+            "19 平方厘米"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "35 平方厘米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "三角形面積 = 14×5÷2 = 35 cm²。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「35 平方厘米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「面積公式與立體特性」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「面積公式與立體特性」及分組「primary-math-P5-1」與框架一致。"
+        },
+        {
+          "index": 9,
+          "id": "math-P5-8-0",
+          "label": "立體頂點",
+          "topic": "面積公式與立體特性",
+          "selectionGroup": "primary-math-P5-1",
+          "question": "一個長方體有多少個頂點？",
+          "hint": "數一數角落的位置。",
+          "options": [
+            "8 個",
+            "6 個",
+            "12 個",
+            "4 個"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "8 個",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "長方體有 8 個頂點。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「8 個」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「面積公式與立體特性」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「面積公式與立體特性」及分組「primary-math-P5-1」與框架一致。"
+        },
+        {
+          "index": 10,
+          "id": "math-P5-9-0",
+          "label": "立體面數",
+          "topic": "面積公式與立體特性",
+          "selectionGroup": "primary-math-P5-1",
+          "question": "一個正方體有多少個面？",
+          "hint": "每一面都是正方形。",
+          "options": [
+            "8 個",
+            "12 個",
+            "4 個",
+            "6 個"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "6 個",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "正方體有 6 個面。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「6 個」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「面積公式與立體特性」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「面積公式與立體特性」及分組「primary-math-P5-1」與框架一致。"
+        },
+        {
+          "index": 11,
+          "id": "math-P5-10-0",
+          "label": "長方體體積",
+          "topic": "體積與立方單位",
+          "selectionGroup": "primary-math-P5-2",
+          "question": "長方體長 8 厘米、闊 3 厘米、高 5 厘米，體積是多少？",
+          "hint": "體積 = 長 × 闊 × 高。",
+          "options": [
+            "16 立方厘米",
+            "240 立方厘米",
+            "120 立方厘米",
+            "40 立方厘米"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "120 立方厘米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "長方體體積 = 8×3×5 = 120 cm³。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「120 立方厘米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「體積與立方單位」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「體積與立方單位」及分組「primary-math-P5-2」與框架一致。"
+        },
+        {
+          "index": 12,
+          "id": "math-P5-11-0",
+          "label": "正方體體積",
+          "topic": "體積與立方單位",
+          "selectionGroup": "primary-math-P5-2",
+          "question": "正方體每邊長 4 厘米，體積是多少？",
+          "hint": "4 × 4 × 4。",
+          "options": [
+            "48 立方厘米",
+            "64 立方厘米",
+            "16 平方厘米",
+            "12 立方厘米"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "64 立方厘米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "正方體體積 = 4×4×4 = 64 cm³。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「64 立方厘米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「體積與立方單位」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「體積與立方單位」及分組「primary-math-P5-2」與框架一致。"
+        },
+        {
+          "index": 13,
+          "id": "math-P5-12-0",
+          "label": "立方單位",
+          "topic": "體積與立方單位",
+          "selectionGroup": "primary-math-P5-2",
+          "question": "量度魚缸可盛載的空間，最合適的立方單位是甚麼？",
+          "hint": "體積用立方單位。",
+          "options": [
+            "立方厘米",
+            "平方厘米",
+            "厘米",
+            "公斤"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "立方厘米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "盛載空間是體積，使用立方厘米。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「立方厘米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「體積與立方單位」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「體積與立方單位」及分組「primary-math-P5-2」與框架一致。"
+        },
+        {
+          "index": 14,
+          "id": "math-P5-13-0",
+          "label": "體積比較",
+          "topic": "體積與立方單位",
+          "selectionGroup": "primary-math-P5-2",
+          "question": "甲盒體積是 48 立方厘米，乙盒體積是 60 立方厘米。乙盒比甲盒大多少？",
+          "hint": "由較大體積減去較小體積。",
+          "options": [
+            "8 立方厘米",
+            "108 立方厘米",
+            "20 立方厘米",
+            "12 立方厘米"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "12 立方厘米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "60 − 48 = 12 cm³。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「12 立方厘米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「體積與立方單位」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「體積與立方單位」及分組「primary-math-P5-2」與框架一致。"
+        },
+        {
+          "index": 15,
+          "id": "math-P5-14-0",
+          "label": "體積應用",
+          "topic": "體積與立方單位",
+          "selectionGroup": "primary-math-P5-2",
+          "question": "每個小方塊體積是 1 立方厘米，排成長 4、闊 3、高 2 的長方體，需要多少小方塊？",
+          "hint": "每個小方塊代表 1 立方厘米。",
+          "options": [
+            "12 個",
+            "48 個",
+            "24 個",
+            "9 個"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "24 個",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "4×3×2 個單位小方塊，共 24 個。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「24 個」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「體積與立方單位」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「體積與立方單位」及分組「primary-math-P5-2」與框架一致。"
+        },
+        {
+          "index": 16,
+          "id": "math-P5-15-0",
+          "label": "代數式",
+          "topic": "代數符號與式子",
+          "selectionGroup": "primary-math-P5-3",
+          "question": "用 x 表示一枝鉛筆的價錢，3 枝鉛筆的價錢可寫成甚麼？",
+          "hint": "相同價錢的 3 枝就是 3 乘 x。",
+          "options": [
+            "3 + x + x + x",
+            "3x",
+            "x + 3",
+            "x − 3"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "3x",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "每枝 x 元，3 枝共 3x；其餘式子不表示 3 個 x。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「3x」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「代數符號與式子」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「代數符號與式子」及分組「primary-math-P5-3」與框架一致。"
+        },
+        {
+          "index": 17,
+          "id": "math-P5-16-0",
+          "label": "代入求值",
+          "topic": "代數符號與式子",
+          "selectionGroup": "primary-math-P5-3",
+          "question": "當 x = 4 時，2x + 3 的值是多少？",
+          "hint": "把 x 換成 4 再計算。",
+          "options": [
+            "11",
+            "8",
+            "7",
+            "14"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "11",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "代入 x=4：2×4+3=11。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「11」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「代數符號與式子」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「代數符號與式子」及分組「primary-math-P5-3」與框架一致。"
+        },
+        {
+          "index": 18,
+          "id": "math-P5-17-0",
+          "label": "文字代數式",
+          "topic": "代數符號與式子",
+          "selectionGroup": "primary-math-P5-3",
+          "question": "一包餅乾有 y 塊，買了 5 包，共有多少塊？",
+          "hint": "相同數量有 5 包。",
+          "options": [
+            "y + 5",
+            "y − 5",
+            "5 ÷ y",
+            "5y"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "5y",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "5 包各 y 塊，總數是 5y。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「5y」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「代數符號與式子」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「代數符號與式子」及分組「primary-math-P5-3」與框架一致。"
+        },
+        {
+          "index": 19,
+          "id": "math-P5-18-0",
+          "label": "未知數",
+          "topic": "代數符號與式子",
+          "selectionGroup": "primary-math-P5-3",
+          "question": "□ + 18 = 47，□ = ?",
+          "hint": "用相反運算。",
+          "options": [
+            "19",
+            "25",
+            "29",
+            "65"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "29",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "□=47−18=29。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「29」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「代數符號與式子」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「代數符號與式子」及分組「primary-math-P5-3」與框架一致。"
+        },
+        {
+          "index": 20,
+          "id": "math-P5-19-0",
+          "label": "式子比較",
+          "topic": "代數符號與式子",
+          "selectionGroup": "primary-math-P5-3",
+          "question": "當 a = 6 時，哪一個式子的值等於 18？",
+          "hint": "逐一代入 a = 6。",
+          "options": [
+            "18 ÷ a",
+            "3a",
+            "a + 18",
+            "a − 18"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "3a",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "代入 a=6，3a=18；其餘式子不等於 18。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「3a」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「代數符號與式子」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「代數符號與式子」及分組「primary-math-P5-3」與框架一致。"
+        },
+        {
+          "index": 21,
+          "id": "math-P5-20-0",
+          "label": "平均數",
+          "topic": "平均數與資料分析",
+          "selectionGroup": "primary-math-P5-4",
+          "question": "5、7、9、11 的平均數是多少？",
+          "hint": "先找總和，再除以數量。",
+          "options": [
+            "8",
+            "7",
+            "9",
+            "32"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "8",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "(5+7+9+11)÷4=8。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「8」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「平均數與資料分析」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「平均數與資料分析」及分組「primary-math-P5-4」與框架一致。"
+        },
+        {
+          "index": 22,
+          "id": "math-P5-21-0",
+          "label": "缺失數據",
+          "topic": "平均數與資料分析",
+          "selectionGroup": "primary-math-P5-4",
+          "question": "4 個數的平均數是 18，前三個數是 16、20、17。第四個數是多少？",
+          "hint": "先找四個數的總和。",
+          "options": [
+            "18",
+            "17",
+            "21",
+            "19"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "19",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "四個數總和 4×18=72；已知總和53，第四數=19。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「19」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「平均數與資料分析」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「平均數與資料分析」及分組「primary-math-P5-4」與框架一致。"
+        },
+        {
+          "index": 23,
+          "id": "math-P5-22-0",
+          "label": "平均數判讀",
+          "topic": "平均數與資料分析",
+          "selectionGroup": "primary-math-P5-4",
+          "question": "甲組平均 76 分，乙組平均 81 分。根據平均數，哪項正確？",
+          "hint": "只比較已給的平均分。",
+          "options": [
+            "甲組人數一定較多",
+            "兩組成績完全相同",
+            "乙組平均分較高",
+            "乙組每人一定高過甲組每人"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "乙組平均分較高",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "81 > 76，只能判定乙組平均分較高。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「乙組平均分較高」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「平均數與資料分析」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「平均數與資料分析」及分組「primary-math-P5-4」與框架一致。"
+        },
+        {
+          "index": 24,
+          "id": "math-P5-23-0",
+          "label": "資料公平比較",
+          "topic": "平均數與資料分析",
+          "selectionGroup": "primary-math-P5-4",
+          "question": "比較兩班的閱讀量時，若兩班人數不同，哪個數據較適合比較？",
+          "hint": "平均數可減少人數不同的影響。",
+          "options": [
+            "書的封面顏色",
+            "每人平均閱讀本數",
+            "全班最高一本書",
+            "最先完成的人"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "每人平均閱讀本數",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "人數不同時，以每人平均閱讀本數作公平比較。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「每人平均閱讀本數」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「平均數與資料分析」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「平均數與資料分析」及分組「primary-math-P5-4」與框架一致。"
+        },
+        {
+          "index": 25,
+          "id": "math-P5-24-0",
+          "label": "資料結論",
+          "topic": "平均數與資料分析",
+          "selectionGroup": "primary-math-P5-4",
+          "question": "某組五日平均每天回收 12 kg，五日合共回收多少 kg？",
+          "hint": "平均每天數量乘日數。",
+          "options": [
+            "60 kg",
+            "17 kg",
+            "12 kg",
+            "7 kg"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "60 kg",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "5 日 × 平均每天 12 kg = 60 kg。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「60 kg」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P5「平均數與資料分析」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「平均數與資料分析」及分組「primary-math-P5-4」與框架一致。"
+        }
+      ]
+    },
+    {
+      "grade": "P6",
+      "poolSize": 25,
+      "uniqueQuestionTexts": 25,
+      "expectedTopics": [
+        "分數小數百分比綜合",
+        "圓與坐標平面",
+        "速度、路程與時間",
+        "一元一次方程式",
+        "圓形圖與折線圖"
+      ],
+      "topicCounts": {
+        "分數小數百分比綜合": 5,
+        "圓與坐標平面": 5,
+        "速度、路程與時間": 5,
+        "一元一次方程式": 5,
+        "圓形圖與折線圖": 5
+      },
+      "selectionGroupCounts": {
+        "primary-math-P6-0": 5,
+        "primary-math-P6-1": 5,
+        "primary-math-P6-2": 5,
+        "primary-math-P6-3": 5,
+        "primary-math-P6-4": 5
+      },
+      "sampledQuestionCount": 20,
+      "sampledGroupCounts": {
+        "primary-math-P6-3": 4,
+        "primary-math-P6-4": 4,
+        "primary-math-P6-2": 4,
+        "primary-math-P6-1": 4,
+        "primary-math-P6-0": 4
+      },
+      "correctOptionPositions": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "items": [
+        {
+          "index": 1,
+          "id": "math-P6-0-0",
+          "label": "分數小數轉換",
+          "topic": "分數小數百分比綜合",
+          "selectionGroup": "primary-math-P6-0",
+          "question": "3/4 轉成小數是多少？",
+          "hint": "四分之三等於 75 個百分之一。",
+          "options": [
+            "0.75",
+            "0.34",
+            "0.25",
+            "3.4"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "0.75",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "3/4 = 75/100 = 0.75。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「0.75」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「分數小數百分比綜合」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「分數小數百分比綜合」及分組「primary-math-P6-0」與框架一致。"
+        },
+        {
+          "index": 2,
+          "id": "math-P6-1-0",
+          "label": "小數百分比",
+          "topic": "分數小數百分比綜合",
+          "selectionGroup": "primary-math-P6-0",
+          "question": "0.35 轉成百分比是多少？",
+          "hint": "小數乘 100%。",
+          "options": [
+            "3.5%",
+            "0.35%",
+            "350%",
+            "35%"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "35%",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "0.35×100%=35%。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「35%」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「分數小數百分比綜合」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「分數小數百分比綜合」及分組「primary-math-P6-0」與框架一致。"
+        },
+        {
+          "index": 3,
+          "id": "math-P6-2-0",
+          "label": "折扣",
+          "topic": "分數小數百分比綜合",
+          "selectionGroup": "primary-math-P6-0",
+          "question": "一件原價 $480 的外套九折出售，售價是多少？",
+          "hint": "九折即付原價的 90%。",
+          "options": [
+            "$430",
+            "$528",
+            "$432",
+            "$48"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "$432",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "九折是原價 90%，480×0.9=$432。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「$432」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「分數小數百分比綜合」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「分數小數百分比綜合」及分組「primary-math-P6-0」與框架一致。"
+        },
+        {
+          "index": 4,
+          "id": "math-P6-3-0",
+          "label": "利潤",
+          "topic": "分數小數百分比綜合",
+          "selectionGroup": "primary-math-P6-0",
+          "question": "成本 $200 的物品以 $250 售出，利潤是多少？",
+          "hint": "售價減成本。",
+          "options": [
+            "$450",
+            "$50",
+            "$200",
+            "$250"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "$50",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "利潤=售價−成本=250−200=$50。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「$50」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「分數小數百分比綜合」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「分數小數百分比綜合」及分組「primary-math-P6-0」與框架一致。"
+        },
+        {
+          "index": 5,
+          "id": "math-P6-4-0",
+          "label": "混合運算",
+          "topic": "分數小數百分比綜合",
+          "selectionGroup": "primary-math-P6-0",
+          "question": "2.5 + 3/4 = ?",
+          "hint": "把 3/4 轉成小數再相加。",
+          "options": [
+            "3.25",
+            "5.5",
+            "2.8",
+            "3.75"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "3.25",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "3/4=0.75，2.5+0.75=3.25。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「3.25」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「分數小數百分比綜合」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「分數小數百分比綜合」及分組「primary-math-P6-0」與框架一致。"
+        },
+        {
+          "index": 6,
+          "id": "math-P6-5-0",
+          "label": "半徑直徑",
+          "topic": "圓與坐標平面",
+          "selectionGroup": "primary-math-P6-1",
+          "question": "一個圓的半徑是 6 厘米，直徑是多少？",
+          "hint": "直徑是兩倍半徑。",
+          "options": [
+            "6 厘米",
+            "3 厘米",
+            "36 厘米",
+            "12 厘米"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "12 厘米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "直徑是半徑兩倍：2×6=12 cm。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「12 厘米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「圓與坐標平面」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「圓與坐標平面」及分組「primary-math-P6-1」與框架一致。"
+        },
+        {
+          "index": 7,
+          "id": "math-P6-6-0",
+          "label": "圓周率",
+          "topic": "圓與坐標平面",
+          "selectionGroup": "primary-math-P6-1",
+          "question": "計算圓周時常用哪一個符號代表圓周率？",
+          "hint": "它讀作 pi。",
+          "options": [
+            "÷",
+            "%",
+            "π",
+            "×"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "π",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "圓周率的慣用符號是 π。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「π」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「圓與坐標平面」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「圓與坐標平面」及分組「primary-math-P6-1」與框架一致。"
+        },
+        {
+          "index": 8,
+          "id": "math-P6-7-0",
+          "label": "圓周",
+          "topic": "圓與坐標平面",
+          "selectionGroup": "primary-math-P6-1",
+          "question": "半徑 7 厘米的圓，取 π = 22/7，圓周約是多少？",
+          "hint": "圓周 = 2πr。",
+          "options": [
+            "49 厘米",
+            "44 厘米",
+            "154 平方厘米",
+            "22 厘米"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "44 厘米",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "圓周=2πr=2×22/7×7=44 cm。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「44 厘米」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「圓與坐標平面」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「圓與坐標平面」及分組「primary-math-P6-1」與框架一致。"
+        },
+        {
+          "index": 9,
+          "id": "math-P6-8-0",
+          "label": "坐標讀點",
+          "topic": "圓與坐標平面",
+          "selectionGroup": "primary-math-P6-1",
+          "question": "在坐標格上，點 A 在 (3, 5)，表示甚麼？",
+          "hint": "先橫向 3 格，再縱向 5 格。",
+          "options": [
+            "向右 3 格、向上 5 格",
+            "向右 5 格、向上 3 格",
+            "向左 3 格、向下 5 格",
+            "向上 3 格、向右 5 格"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "向右 3 格、向上 5 格",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "坐標 (3,5) 先右 3 格，再上 5 格。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「向右 3 格、向上 5 格」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「圓與坐標平面」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「圓與坐標平面」及分組「primary-math-P6-1」與框架一致。"
+        },
+        {
+          "index": 10,
+          "id": "math-P6-9-0",
+          "label": "坐標移動",
+          "topic": "圓與坐標平面",
+          "selectionGroup": "primary-math-P6-1",
+          "question": "點 B 在 (2, 4)，向右移 3 格後在哪裏？",
+          "hint": "橫坐標加 3，縱坐標不變。",
+          "options": [
+            "(2, 7)",
+            "(−1, 4)",
+            "(5, 7)",
+            "(5, 4)"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "(5, 4)",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "向右移只改橫坐標：2+3=5，縱坐標仍為4。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「(5, 4)」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「圓與坐標平面」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「圓與坐標平面」及分組「primary-math-P6-1」與框架一致。"
+        },
+        {
+          "index": 11,
+          "id": "math-P6-10-0",
+          "label": "速度公式",
+          "topic": "速度、路程與時間",
+          "selectionGroup": "primary-math-P6-2",
+          "question": "速度、路程和時間的關係中，速度等於甚麼？",
+          "hint": "用路程除以時間。",
+          "options": [
+            "時間 ÷ 路程",
+            "路程 − 時間",
+            "路程 ÷ 時間",
+            "路程 × 時間"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "路程 ÷ 時間",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "速度=路程÷時間。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「路程 ÷ 時間」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「速度、路程與時間」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「速度、路程與時間」及分組「primary-math-P6-2」與框架一致。"
+        },
+        {
+          "index": 12,
+          "id": "math-P6-11-0",
+          "label": "路程",
+          "topic": "速度、路程與時間",
+          "selectionGroup": "primary-math-P6-2",
+          "question": "巴士以每小時 48 公里行駛 2.5 小時，路程是多少？",
+          "hint": "路程 = 速度 × 時間。",
+          "options": [
+            "19.2 公里",
+            "120 公里",
+            "50.5 公里",
+            "96 公里"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "120 公里",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "路程=48 km/h×2.5 h=120 km。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「120 公里」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「速度、路程與時間」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「速度、路程與時間」及分組「primary-math-P6-2」與框架一致。"
+        },
+        {
+          "index": 13,
+          "id": "math-P6-12-0",
+          "label": "時間",
+          "topic": "速度、路程與時間",
+          "selectionGroup": "primary-math-P6-2",
+          "question": "跑手以每小時 10 公里跑了 25 公里，需時多少小時？",
+          "hint": "時間 = 路程 ÷ 速度。",
+          "options": [
+            "2.5 小時",
+            "15 小時",
+            "35 小時",
+            "250 小時"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "2.5 小時",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "時間=25 km÷10 km/h=2.5 h。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「2.5 小時」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「速度、路程與時間」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「速度、路程與時間」及分組「primary-math-P6-2」與框架一致。"
+        },
+        {
+          "index": 14,
+          "id": "math-P6-13-0",
+          "label": "單位換算",
+          "topic": "速度、路程與時間",
+          "selectionGroup": "primary-math-P6-2",
+          "question": "72 km/h 等於多少 m/s？",
+          "hint": "把 km/h 除以 3.6。",
+          "options": [
+            "200 m/s",
+            "7.2 m/s",
+            "25.2 m/s",
+            "20 m/s"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "20 m/s",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "72 km/h÷3.6=20 m/s。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「20 m/s」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「速度、路程與時間」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「速度、路程與時間」及分組「primary-math-P6-2」與框架一致。"
+        },
+        {
+          "index": 15,
+          "id": "math-P6-14-0",
+          "label": "速度比較",
+          "topic": "速度、路程與時間",
+          "selectionGroup": "primary-math-P6-2",
+          "question": "甲車 3 小時行 180 公里，乙車 4 小時行 200 公里。哪項正確？",
+          "hint": "各自計算每小時路程。",
+          "options": [
+            "兩車速度相同",
+            "資料不足",
+            "甲車較快",
+            "乙車較快"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "甲車較快",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "甲：180÷3=60 km/h；乙：200÷4=50 km/h，甲較快。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「甲車較快」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「速度、路程與時間」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「速度、路程與時間」及分組「primary-math-P6-2」與框架一致。"
+        },
+        {
+          "index": 16,
+          "id": "math-P6-15-0",
+          "label": "一元一次方程",
+          "topic": "一元一次方程式",
+          "selectionGroup": "primary-math-P6-3",
+          "question": "2x + 5 = 23，x = ?",
+          "hint": "先減去 5，再除以 2。",
+          "options": [
+            "18",
+            "9",
+            "14",
+            "11"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "9",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "2x=23−5=18，所以 x=9。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「9」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「一元一次方程式」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「一元一次方程式」及分組「primary-math-P6-3」與框架一致。"
+        },
+        {
+          "index": 17,
+          "id": "math-P6-16-0",
+          "label": "一元一次方程",
+          "topic": "一元一次方程式",
+          "selectionGroup": "primary-math-P6-3",
+          "question": "5y − 7 = 18，y = ?",
+          "hint": "先加上 7，再除以 5。",
+          "options": [
+            "5",
+            "2",
+            "11",
+            "25"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "5",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "5y=18+7=25，所以 y=5。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「5」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「一元一次方程式」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「一元一次方程式」及分組「primary-math-P6-3」與框架一致。"
+        },
+        {
+          "index": 18,
+          "id": "math-P6-17-0",
+          "label": "括號方程",
+          "topic": "一元一次方程式",
+          "selectionGroup": "primary-math-P6-3",
+          "question": "3(x + 2) = 21，x = ?",
+          "hint": "先除以 3，再減去 2。",
+          "options": [
+            "7",
+            "9",
+            "19",
+            "5"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "5",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "x+2=21÷3=7，所以 x=5。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「5」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「一元一次方程式」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「一元一次方程式」及分組「primary-math-P6-3」與框架一致。"
+        },
+        {
+          "index": 19,
+          "id": "math-P6-18-0",
+          "label": "文字方程",
+          "topic": "一元一次方程式",
+          "selectionGroup": "primary-math-P6-3",
+          "question": "一張入場券售 $x，買 4 張共 $60。哪一道方程正確？",
+          "hint": "總價 = 每張價錢 × 張數。",
+          "options": [
+            "60x = 4",
+            "x − 4 = 60",
+            "4x = 60",
+            "x + 4 = 60"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "4x = 60",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "4 張各 x 元共60元，即4x=60。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「4x = 60」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「一元一次方程式」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「一元一次方程式」及分組「primary-math-P6-3」與框架一致。"
+        },
+        {
+          "index": 20,
+          "id": "math-P6-19-0",
+          "label": "檢查答案",
+          "topic": "一元一次方程式",
+          "selectionGroup": "primary-math-P6-3",
+          "question": "若 x = 6，哪一道方程會成立？",
+          "hint": "把 x = 6 代入檢查。",
+          "options": [
+            "x ÷ 2 = 4",
+            "3x + 2 = 20",
+            "2x + 5 = 20",
+            "4x − 1 = 20"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "3x + 2 = 20",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "代入 x=6：3×6+2=20，只有第一項成立。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「3x + 2 = 20」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「一元一次方程式」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「一元一次方程式」及分組「primary-math-P6-3」與框架一致。"
+        },
+        {
+          "index": 21,
+          "id": "math-P6-20-0",
+          "label": "圓形圖",
+          "topic": "圓形圖與折線圖",
+          "selectionGroup": "primary-math-P6-4",
+          "question": "圓形圖中「步行」佔全班的 1/4；全班有 36 人，步行有多少人？",
+          "hint": "全班人數乘四分之一。",
+          "options": [
+            "9 人",
+            "12 人",
+            "18 人",
+            "27 人"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "9 人",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "36×1/4=9 人。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「9 人」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「圓形圖與折線圖」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「圓形圖與折線圖」及分組「primary-math-P6-4」與框架一致。"
+        },
+        {
+          "index": 22,
+          "id": "math-P6-21-0",
+          "label": "圓形圖比較",
+          "topic": "圓形圖與折線圖",
+          "selectionGroup": "primary-math-P6-4",
+          "question": "圓形圖中 A 項佔 40%，B 項佔 25%。A 項比 B 項多全體的多少百分比？",
+          "hint": "用 40% 減 25%。",
+          "options": [
+            "65%",
+            "25%",
+            "40%",
+            "15%"
+          ],
+          "correctIndex": 3,
+          "correctAnswer": "15%",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "40%−25%=15%。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「15%」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「圓形圖與折線圖」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「圓形圖與折線圖」及分組「primary-math-P6-4」與框架一致。"
+        },
+        {
+          "index": 23,
+          "id": "math-P6-22-0",
+          "label": "折線圖趨勢",
+          "topic": "圓形圖與折線圖",
+          "selectionGroup": "primary-math-P6-4",
+          "question": "折線圖顯示氣溫由上午 20°C 升至下午 29°C。哪項正確？",
+          "hint": "比較兩個時段的數值。",
+          "options": [
+            "氣溫沒有改變",
+            "氣溫上升了 49°C",
+            "氣溫上升了 9°C",
+            "氣溫下降了 9°C"
+          ],
+          "correctIndex": 2,
+          "correctAnswer": "氣溫上升了 9°C",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "29−20=9°C，為上升。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「氣溫上升了 9°C」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「圓形圖與折線圖」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「圓形圖與折線圖」及分組「primary-math-P6-4」與框架一致。"
+        },
+        {
+          "index": 24,
+          "id": "math-P6-23-0",
+          "label": "折線圖最高",
+          "topic": "圓形圖與折線圖",
+          "selectionGroup": "primary-math-P6-4",
+          "question": "折線圖顯示某日用電量：上午 10 時 15 度、下午 2 時 32 度、晚上 8 時 24 度。何時最高？",
+          "hint": "找最高數值。",
+          "options": [
+            "三個時段相同",
+            "下午 2 時",
+            "上午 10 時",
+            "晚上 8 時"
+          ],
+          "correctIndex": 1,
+          "correctAnswer": "下午 2 時",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "32 度最高，對應下午 2 時。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「下午 2 時」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「圓形圖與折線圖」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「圓形圖與折線圖」及分組「primary-math-P6-4」與框架一致。"
+        },
+        {
+          "index": 25,
+          "id": "math-P6-24-0",
+          "label": "資料判讀",
+          "topic": "圓形圖與折線圖",
+          "selectionGroup": "primary-math-P6-4",
+          "question": "折線圖顯示水位連續三天下降。根據圖表，哪個結論最合理？",
+          "hint": "只作圖表直接支持的結論。",
+          "options": [
+            "水位每天都比前一天低",
+            "水位一定會永遠下降",
+            "完全沒有水",
+            "下週一定下雨"
+          ],
+          "correctIndex": 0,
+          "correctAnswer": "水位每天都比前一天低",
+          "checks": {
+            "optionsAreDistinct": true,
+            "correctIndexIsValid": true,
+            "topicMatchesFramework": true,
+            "selectionGroupIsValid": true,
+            "noLegacyVariant": true
+          },
+          "editorialVerdict": "通過",
+          "editorialBasis": "連續三天下降只支持每天較前一天低，不推斷未來或絕對狀態。",
+          "uniqueBestAnswerVerdict": "通過：覆核依據已確定「水位每天都比前一天低」是唯一符合題幹的答案。",
+          "gradeAppropriatenessVerdict": "通過：題目只使用 P6「圓形圖與折線圖」的本級知識與語言。",
+          "metadataVerdict": "通過：範疇「圓形圖與折線圖」及分組「primary-math-P6-4」與框架一致。"
+        }
+      ]
+    }
+  ],
+  "issues": []
+}

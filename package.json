@@ -17,6 +17,7 @@
     "verify:central-referrals": "node --import tsx server/verify-central-referrals.mts",
     "audit:questions": "node --import tsx scripts/audit-question-bank.mts",
     "audit:primary-english": "node --import tsx scripts/audit-primary-english.mts",
+    "audit:primary-math": "node --import tsx scripts/audit-primary-math.mts",
     "smoke:graded-pdf": "node --import tsx scripts/smoke-graded-pdf.mjs",
     "format": "prettier --write .",
     "test": "vitest run",

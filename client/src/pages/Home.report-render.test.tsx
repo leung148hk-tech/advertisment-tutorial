@@ -6,6 +6,7 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { ASSESSMENT_MODULES, randomAssessment, type AssessmentQuestion, type GradeId } from "@/data/gradedAssessment";
 import { PRIMARY_CHINESE_READING_FRAMEWORK } from "@/data/primaryChineseReadingFramework";
 import { PRIMARY_ENGLISH_FRAMEWORK, type PrimaryEnglishTrack } from "@/data/primaryEnglishFramework";
+import { PRIMARY_MATH_FRAMEWORK } from "@/data/primaryMathFramework";
 
 vi.mock("@/components/FeaturedCentres", () => ({ default: () => null }));
 vi.mock("@/components/RegionalSupport", () => ({ default: () => null }));
@@ -177,5 +178,68 @@ describe("Home primary English framework rendering", () => {
     expect(displayedDomains).toEqual(expectedDomains);
     expect(Array.from(cards, (card) => card.textContent ?? "").every((text) => /\/\s*4/.test(text))).toBe(true);
     if (track === "english-writing") expect(within(report).getByText(/寫作字數教學目標約為 10–20 words/)).toBeTruthy();
+  });
+});
+
+async function openPrimaryMathReport(grade: "小一" | "小六") {
+  window.scrollTo = vi.fn();
+  const gradeId: GradeId = grade === "小一" ? "P1" : "P6";
+  const randomSpy = vi.spyOn(Math, "random");
+  randomSpy.mockImplementation(deterministicRandom());
+  const user = userEvent.setup();
+  const view = render(<Home />);
+
+  await user.click(screen.getByRole("button", { name: grade }));
+  const mathCard = screen.getByRole("button", { name: /^數學/ });
+  expect(within(mathCard).getByText("25 題獨立題庫 · 分級數學能力")).toBeTruthy();
+  await user.click(mathCard);
+  for (let index = 0; index < 20; index += 1) {
+    await user.click(screen.getAllByRole("radio")[0]);
+    await user.click(screen.getByRole("button", { name: index === 19 ? "生成免費報告" : "下一題" }));
+  }
+  await user.click(screen.getByRole("button", { name: "完成測驗資料" }));
+  const report = view.container.querySelector<HTMLElement>(".download-report");
+  if (!report) throw new Error("Expected the completed primary Mathematics report to render.");
+  randomSpy.mockRestore();
+  return { gradeId, report };
+}
+
+describe("Home primary Mathematics framework rendering", () => {
+  it.each(["小一", "小六"] as const)("renders five grade-specific Mathematics domains for %s", async (grade) => {
+    const { gradeId, report } = await openPrimaryMathReport(grade);
+    const expectedDomains = PRIMARY_MATH_FRAMEWORK[gradeId as "P1" | "P6"].map((domain) => domain.label);
+    const cards = report.querySelectorAll(".module-score-grid > article");
+    const displayedDomains = Array.from(cards, (card) => card.querySelector("span")?.textContent ?? "");
+
+    expect(within(report).getByText("5 個數學能力範疇")).toBeTruthy();
+    expect(within(report).getByText("數學能力範疇概覽")).toBeTruthy();
+    expect(within(report).getByText(/並非 IQ 測驗/)).toBeTruthy();
+    expect(within(report).queryByText("情境推理")).toBeNull();
+    expect(within(report).queryByText("5 個模組")).toBeNull();
+    expect(cards).toHaveLength(5);
+    expect(displayedDomains).toEqual(expectedDomains);
+    expect(Array.from(cards, (card) => card.textContent ?? "").every((text) => /\/\s*4/.test(text))).toBe(true);
+  });
+});
+
+describe("Home primary Mathematics quiz progression", () => {
+  it.each(["小一", "小六"] as const)("shows the actual five Mathematics domains while %s is answering", async (grade) => {
+    window.scrollTo = vi.fn();
+    const gradeId: GradeId = grade === "小一" ? "P1" : "P6";
+    const randomSpy = vi.spyOn(Math, "random");
+    randomSpy.mockImplementation(deterministicRandom());
+    const user = userEvent.setup();
+    const view = render(<Home />);
+
+    await user.click(screen.getByRole("button", { name: grade }));
+    await user.click(screen.getByRole("button", { name: /^數學/ }));
+    const progress = view.container.querySelector<HTMLElement>(".module-progress");
+    if (!progress) throw new Error("Expected primary Mathematics quiz progress to render.");
+    const expectedDomains = PRIMARY_MATH_FRAMEWORK[gradeId as "P1" | "P6"].map((domain) => domain.label);
+
+    expect(Array.from(progress.querySelectorAll("span"), (item) => item.textContent)).toEqual(expectedDomains);
+    expect(progress.querySelector(".module-progress-active")?.textContent).toBeTruthy();
+    expect(ASSESSMENT_MODULES.some((module) => progress.textContent?.includes(module))).toBe(false);
+    randomSpy.mockRestore();
   });
 });

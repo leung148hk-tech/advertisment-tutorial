@@ -1,6 +1,7 @@
 import { getSecondaryExamSeeds } from "./secondaryExamBanks";
 import { primaryChineseSelectionGroup } from "./primaryChineseReadingFramework";
 import { PRIMARY_ENGLISH_READING_BANKS, PRIMARY_ENGLISH_WRITING_BANKS } from "./primaryEnglishBanks";
+import { PRIMARY_MATH_BANKS } from "./primaryMathBanks";
 
 /**
  * Learning Compass / 學習航圖
@@ -38,7 +39,7 @@ export const TRACKS: { id: TrackId; label: string; shortLabel: string; descripti
   { id: "chinese-writing", label: "中文寫作基礎與組織", shortLabel: "中文寫作", description: "詞語運用、句子、段落、內容與表達組織", icon: "language", allowedStages: ["初中"], grades: ["S1", "S2", "S3"] },
   { id: "english-reading", label: "英文閱讀理解", shortLabel: "英文閱讀", description: "按年級遞進評核拼讀／詞彙、文法、文體、訊息理解與閱讀策略", icon: "language", allowedStages: ["小學", "初中"] },
   { id: "english-writing", label: "英文寫作基礎與組織", shortLabel: "英文寫作", description: "按年級評核句型與詞彙、段落組織、文體目的及修訂準備", icon: "language", allowedStages: ["小學", "初中"] },
-  { id: "math", label: "數學應用與解題", shortLabel: "數學", description: "運算、比例、幾何、數據與多步驟解題", icon: "math", allowedStages: ["小學", "初中"] },
+  { id: "math", label: "數學應用與解題", shortLabel: "數學", description: "按年級評核數、圖形與空間、度量、數據處理及代數／解題", icon: "math", allowedStages: ["小學", "初中"] },
   { id: "science", label: "Science 科學探究", shortLabel: "Science", description: "探究、生命、物質、能量與力學概念", icon: "science", allowedStages: ["初中"] },
   { id: "interview", label: "升中面試準備", shortLabel: "升中面試", description: "自我介紹、聆聽、應對、協作與表達", icon: "interview", allowedStages: ["小學"], grades: ["P5", "P6"] },
 ];
@@ -84,7 +85,7 @@ function moduleForSeed(track: TrackId, seed: QuestionSeed): ModuleName {
   if (track === "english-writing" && /identifying supporting details|supporting detail/.test(skill)) return "理解與應用";
   if (track === "chinese-reading" && /文本結構|段落組織/.test(skill)) return "理解與應用";
   if (track === "math") {
-    if (/生活/.test(skill)) return "情境推理";
+    if (/生活/.test(skill)) return "理解與應用";
     if (/資料|統計|平均|中位|圖表/.test(skill)) return "理解與應用";
     if (/比例|百分|比率|代數|方程|幾何|量度|時間|金錢/.test(skill)) return "理解與應用";
     return "基礎掌握";
@@ -561,15 +562,16 @@ function shuffle<T>(items: T[]) {
 export function buildQuestionPool(track: TrackId, grade: GradeId): AssessmentQuestion[] {
   const languageSeeds = primaryLanguageSeeds(track, grade);
   const secondarySeeds = grade.startsWith("S") ? getSecondaryExamSeeds(track as import("./secondaryExamBanks").SecondaryExamTrack, grade) : null;
-  const seeds = track === "math" && grade.startsWith("P") ? PRIMARY_MATH_GRADE_BANKS[grade as keyof typeof PRIMARY_MATH_GRADE_BANKS] : languageSeeds ?? secondarySeeds ?? BANKS[track];
+  const seeds = track === "math" && grade.startsWith("P") ? PRIMARY_MATH_BANKS[grade as "P1" | "P2" | "P3" | "P4" | "P5" | "P6"]! : languageSeeds ?? secondarySeeds ?? BANKS[track];
   const usesStandalonePrimaryChineseBank = track === "chinese-reading" && grade.startsWith("P") && PRIMARY_CHINESE_READING_BANKS[grade as "P1" | "P2" | "P3" | "P4" | "P5" | "P6"] === seeds;
   const usesStandalonePrimaryEnglishBank = grade.startsWith("P") && (
     (track === "english-reading" && PRIMARY_ENGLISH_READING_BANKS[grade as "P1" | "P2" | "P3" | "P4" | "P5" | "P6"] === seeds)
     || (track === "english-writing" && PRIMARY_ENGLISH_WRITING_BANKS[grade as "P1" | "P2" | "P3" | "P4" | "P5" | "P6"] === seeds)
   );
-  if (usesStandalonePrimaryChineseBank || usesStandalonePrimaryEnglishBank) {
+  const usesStandalonePrimaryMathBank = track === "math" && grade.startsWith("P") && PRIMARY_MATH_BANKS[grade as "P1" | "P2" | "P3" | "P4" | "P5" | "P6"] === seeds;
+  if (usesStandalonePrimaryChineseBank || usesStandalonePrimaryEnglishBank || usesStandalonePrimaryMathBank) {
     return seeds.map((seed, seedIndex) => {
-      const optionShift = usesStandalonePrimaryEnglishBank ? seedIndex % seed.options.length : 0;
+      const optionShift = usesStandalonePrimaryEnglishBank || usesStandalonePrimaryMathBank ? seedIndex % seed.options.length : 0;
       const options = optionShift ? [...seed.options.slice(optionShift), ...seed.options.slice(0, optionShift)] : [...seed.options];
       const correct = (seed.correct - optionShift + seed.options.length) % seed.options.length;
       return {

@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { ASSESSMENT_MODULES, buildQuestionPool, randomAssessment, TRACKS, trackForGrade } from "./gradedAssessment";
 import { PRIMARY_ENGLISH_FRAMEWORK } from "./primaryEnglishFramework";
+import { PRIMARY_MATH_FRAMEWORK } from "./primaryMathFramework";
 
 describe("assessment module reporting", () => {
   it("exposes all five report modules, including communication and collaboration", () => {
@@ -58,6 +59,28 @@ describe("assessment module reporting", () => {
         expect([...groupCounts.values()].sort()).toEqual([4, 4, 4, 4, 4]);
         expect(pool.every((question) => ["基礎掌握", "理解與應用"].includes(question.module))).toBe(true);
       }
+    }
+  });
+
+  it("uses standalone P1–P6 Mathematics banks with five grade-specific domains and balanced 20-question sampling", () => {
+    for (const grade of ["P1", "P2", "P3", "P4", "P5", "P6"] as const) {
+      const pool = buildQuestionPool("math", grade);
+      const questions = randomAssessment("math", grade);
+      const groupCounts = new Map<string, number>();
+      for (const question of questions) groupCounts.set(question.selectionGroup, (groupCounts.get(question.selectionGroup) ?? 0) + 1);
+      const expectedDomains = PRIMARY_MATH_FRAMEWORK[grade].map((domain) => domain.label);
+
+      expect(trackForGrade("math", grade)).toBe(true);
+      expect(pool).toHaveLength(25);
+      expect(new Set(pool.map((question) => question.question)).size).toBe(25);
+      expect(pool.some((question) => question.question.includes("延伸題"))).toBe(false);
+      expect(new Set(pool.map((question) => question.topic))).toEqual(new Set(expectedDomains));
+      expect(new Set(pool.map((question) => question.selectionGroup)).size).toBe(5);
+      expect(new Set(pool.map((question) => question.correct)).size).toBe(4);
+      expect(questions).toHaveLength(20);
+      expect(groupCounts.size).toBe(5);
+      expect([...groupCounts.values()].sort()).toEqual([4, 4, 4, 4, 4]);
+      expect(pool.every((question) => ["基礎掌握", "理解與應用"].includes(question.module))).toBe(true);
     }
   });
 
