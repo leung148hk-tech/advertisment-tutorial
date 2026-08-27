@@ -151,4 +151,4 @@
 - [x] 修正年級選擇區及評估卡片網格的寬度、排列與間距，消除桌面畫面中的不必要空白格並改善手機排版。
 - [x] 新增或更新回歸測試，驗證不再顯示升中面試、「中文」名稱正確及評估卡片排版資料結構一致。
 - [x] 完成題庫、抽題、型別、測試、PDF、頁面截圖及 production build 驗證。
-- [ ] 保存三科評估與首頁版面修正的 checkpoint，然後以 fresh clone、差異檢查、commit 及 push 同步 GitHub。
+- [x] 保存三科評估與首頁版面修正的 checkpoint，然後以 fresh clone、差異檢查、commit 及 push 同步 GitHub。
