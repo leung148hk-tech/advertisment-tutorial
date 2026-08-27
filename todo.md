@@ -124,4 +124,4 @@
 - [x] 完成數學題庫全庫結構、抽題、答案鍵、型別、測試、PDF 與 production build 驗證。
 - [x] 為小一與小六數學補上測驗進行畫面的範疇提示互動測試，驗證顯示實際數學範疇而非通用模組。
 - [x] 逐題人工覆核 P1–P3 新數學題庫 75 題，為每題記錄運算步驟／唯一最佳答案／年級適切性／metadata verdict，並以可提交文件保存證據。
-- [ ] 保存小學數學重整交付前 checkpoint，然後以 fresh clone、差異檢查、commit 及 push 同步至 GitHub。
+- [x] 保存小學數學重整交付前 checkpoint，然後以 fresh clone、差異檢查、commit 及 push 同步至 GitHub。
