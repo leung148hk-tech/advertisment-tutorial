@@ -145,4 +145,4 @@
 - [x] 為替換題保存題幹、四個選項、正解、年級範疇及單選答案覆核紀錄。
 - [x] 新增防回歸檢查，禁止小學中文閱讀單選題出現多選提示或要求多於一個答案。
 - [x] 完成小學中文題庫、隨機抽題、型別、測試、PDF 與 production build 驗證。
-- [ ] 保存中文單選題修正的交付前 checkpoint，然後以 fresh clone、差異檢查、commit 及 push 同步至 GitHub。
+- [x] 保存中文單選題修正的交付前 checkpoint，然後以 fresh clone、差異檢查、commit 及 push 同步至 GitHub。
