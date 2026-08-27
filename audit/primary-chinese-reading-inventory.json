@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-27T07:28:23.341Z",
+  "generatedAt": "2026-08-27T07:35:33.635Z",
   "scope": "小一至小六中文閱讀",
-  "finding": "同一題幹只附加情境字尾會被視為重覆；題幹不得要求學生觀看未提供的圖片或插圖。",
+  "finding": "同一題幹只附加情境字尾會被視為重覆；題幹不得要求學生觀看未提供的圖片或插圖，亦不得要求在單選介面中選取多於一個答案。",
   "inventory": {
     "P1": {
       "questionCount": 25,
@@ -10,6 +10,8 @@
       "repeatedStems": [],
       "imageDependentQuestionCount": 0,
       "imageDependentQuestions": [],
+      "multipleSelectionPromptCount": 0,
+      "multipleSelectionPromptQuestions": [],
       "topics": [
         "字形、筆畫與部首",
         "字詞與基本句子",
@@ -36,6 +38,8 @@
       "repeatedStems": [],
       "imageDependentQuestionCount": 0,
       "imageDependentQuestions": [],
+      "multipleSelectionPromptCount": 0,
+      "multipleSelectionPromptQuestions": [],
       "topics": [
         "詞義辨析與查字典",
         "句式與標點運用",
@@ -61,6 +65,8 @@
       "repeatedStems": [],
       "imageDependentQuestionCount": 0,
       "imageDependentQuestions": [],
+      "multipleSelectionPromptCount": 0,
+      "multipleSelectionPromptQuestions": [],
       "topics": [
         "詞彙、成語與字詞辨錯",
         "複句、標點與專名",
@@ -87,6 +93,8 @@
       "repeatedStems": [],
       "imageDependentQuestionCount": 0,
       "imageDependentQuestions": [],
+      "multipleSelectionPromptCount": 0,
+      "multipleSelectionPromptQuestions": [],
       "topics": [
         "字形、字音與詞義辨析",
         "轉折複句與進階標點",
@@ -113,6 +121,8 @@
       "repeatedStems": [],
       "imageDependentQuestionCount": 0,
       "imageDependentQuestions": [],
+      "multipleSelectionPromptCount": 0,
+      "multipleSelectionPromptQuestions": [],
       "topics": [
         "詞語感情色彩與詞義",
         "條件假設複句與破折號",
@@ -139,6 +149,8 @@
       "repeatedStems": [],
       "imageDependentQuestionCount": 0,
       "imageDependentQuestions": [],
+      "multipleSelectionPromptCount": 0,
+      "multipleSelectionPromptQuestions": [],
       "topics": [
         "熟語與多義詞運用",
         "讓步遞進複句與標點",

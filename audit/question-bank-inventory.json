@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T07:28:24.711Z",
+  "generatedAt": "2026-08-27T07:35:34.992Z",
   "questionCount": 660,
   "groupCount": 20,
   "groups": {
@@ -309,7 +309,7 @@
       "selectionGroup": "primary-chinese-reading-P1-0",
       "label": "部件辨識",
       "topic": "字形、筆畫與部首",
-      "question": "「明」字由哪兩個字組成？",
+      "question": "「明」字由哪一組字組成？",
       "hint": "把字拆開，看看左邊和右邊。",
       "options": [
         "日和月",
@@ -771,7 +771,7 @@
       "selectionGroup": "primary-chinese-reading-P1-4",
       "label": "古詩畫面",
       "topic": "簡單修辭與古詩",
-      "question": "「白毛浮綠水」主要寫出鵝的哪兩種顏色？",
+      "question": "「白毛浮綠水」主要寫出鵝的哪一組顏色？",
       "hint": "找出詩句中的顏色字。",
       "options": [
         "白色和綠色",

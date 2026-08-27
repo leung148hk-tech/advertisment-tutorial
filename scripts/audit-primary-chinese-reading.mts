@@ -4,6 +4,7 @@ import { buildQuestionPool } from "../client/src/data/gradedAssessment";
 const grades = ["P1", "P2", "P3", "P4", "P5", "P6"] as const;
 const contextualSuffix = /（(?:校園|社區|日常生活)情境延伸題）$/;
 const imageDependentPattern = /(?:^|：)看圖|圖中|根據(?:圖片|插圖|圖畫)|圖片顯示/;
+const multipleSelectionPromptPattern = /(?:請)?(?:選出|選擇|選取).{0,8}(?:兩|二)|哪兩(?:個|種)|兩個(?:答案|選項)/;
 
 const inventory = Object.fromEntries(
   grades.map((grade) => {
@@ -19,6 +20,9 @@ const inventory = Object.fromEntries(
     const imageDependentQuestions = questions
       .filter((question) => imageDependentPattern.test(question.question))
       .map((question) => ({ id: question.id, label: question.label, question: question.question }));
+    const multipleSelectionPromptQuestions = questions
+      .filter((question) => multipleSelectionPromptPattern.test(question.question))
+      .map((question) => ({ id: question.id, label: question.label, question: question.question }));
 
     return [grade, {
       questionCount: questions.length,
@@ -27,6 +31,8 @@ const inventory = Object.fromEntries(
       repeatedStems,
       imageDependentQuestionCount: imageDependentQuestions.length,
       imageDependentQuestions,
+      multipleSelectionPromptCount: multipleSelectionPromptQuestions.length,
+      multipleSelectionPromptQuestions,
       topics: Array.from(new Set(questions.map((question) => question.topic))),
       modules: Array.from(new Set(questions.map((question) => question.module))),
       selectionGroups: Array.from(new Set(questions.map((question) => question.selectionGroup))),
@@ -37,7 +43,7 @@ const inventory = Object.fromEntries(
 const output = {
   generatedAt: new Date().toISOString(),
   scope: "小一至小六中文閱讀",
-  finding: "同一題幹只附加情境字尾會被視為重覆；題幹不得要求學生觀看未提供的圖片或插圖。",
+  finding: "同一題幹只附加情境字尾會被視為重覆；題幹不得要求學生觀看未提供的圖片或插圖，亦不得要求在單選介面中選取多於一個答案。",
   inventory,
 };
 

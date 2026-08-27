@@ -41,6 +41,7 @@ describe("primary-only assessment catalogue", () => {
       expect(new Set(pool.map((item) => item.topic))).toEqual(new Set(expectedDomains));
       expect(new Set(pool.map((item) => item.selectionGroup)).size).toBe(5);
       expect(pool.some((item) => /(?:^|：)看圖|圖中|根據(?:圖片|插圖|圖畫)/.test(item.question))).toBe(false);
+      expect(pool.some((item) => /(?:請)?(?:選出|選擇|選取).{0,8}(?:兩|二)|哪兩(?:個|種)|兩個(?:答案|選項)/.test(item.question))).toBe(false);
       expect(assessment).toHaveLength(20);
       expect([...countBySelectionGroup(assessment).values()].sort()).toEqual([4, 4, 4, 4, 4]);
     }

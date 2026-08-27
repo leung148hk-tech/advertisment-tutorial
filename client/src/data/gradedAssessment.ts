@@ -62,7 +62,7 @@ function moduleForSeed(track: TrackId, seed: QuestionSeed): ModuleName {
 const PRIMARY_CHINESE_READING_BANKS: Partial<Record<"P1" | "P2" | "P3" | "P4" | "P5" | "P6", QuestionSeed[]>> = {
   P1: [
     { selectionGroup: primaryChineseSelectionGroup("P1", 0), label: "筆畫順序", topic: "字形、筆畫與部首", question: "「木」字的第二筆是甚麼？", hint: "「木」的筆畫次序是橫、豎、撇、捺。", options: ["橫", "豎", "撇", "捺"], correct: 1 },
-    { selectionGroup: primaryChineseSelectionGroup("P1", 0), label: "部件辨識", topic: "字形、筆畫與部首", question: "「明」字由哪兩個字組成？", hint: "把字拆開，看看左邊和右邊。", options: ["日和月", "人和木", "口和木", "山和水"], correct: 0 },
+    { selectionGroup: primaryChineseSelectionGroup("P1", 0), label: "部件辨識", topic: "字形、筆畫與部首", question: "「明」字由哪一組字組成？", hint: "把字拆開，看看左邊和右邊。", options: ["日和月", "人和木", "口和木", "山和水"], correct: 0 },
     { selectionGroup: primaryChineseSelectionGroup("P1", 0), label: "部首辨識", topic: "字形、筆畫與部首", question: "下列哪一個字的部首是「口」？", hint: "留意字的左邊或上面的主要部件。", options: ["唱", "林", "明", "語"], correct: 0 },
     { selectionGroup: primaryChineseSelectionGroup("P1", 0), label: "象形字初步", topic: "字形、筆畫與部首", question: "「山」字的字形最像下列哪一樣事物？", hint: "想想這個字像幾座高低不同的山峰。", options: ["山峰", "雨傘", "小鳥", "書本"], correct: 0 },
     { selectionGroup: primaryChineseSelectionGroup("P1", 0), label: "字義初步", topic: "字形、筆畫與部首", question: "「休」字有一個「人」和一個「木」，最接近哪個意思？", hint: "想想人靠在樹旁可以做甚麼。", options: ["休息", "跑步", "唱歌", "游水"], correct: 0 },
@@ -88,7 +88,7 @@ const PRIMARY_CHINESE_READING_BANKS: Partial<Record<"P1" | "P2" | "P3" | "P4" | 
     { selectionGroup: primaryChineseSelectionGroup("P1", 4), label: "擬人初步", topic: "簡單修辭與古詩", question: "「微風輕輕拍着樹葉。」這句話把微風寫得像甚麼？", hint: "「拍着」本來是人會做的動作。", options: ["人", "石頭", "書本", "雨傘"], correct: 0 },
     { selectionGroup: primaryChineseSelectionGroup("P1", 4), label: "比喻初步", topic: "簡單修辭與古詩", question: "「白雲像棉花。」白雲被比作甚麼？", hint: "找出「像」字後面的事物。", options: ["棉花", "雨傘", "小草", "書包"], correct: 0 },
     { selectionGroup: primaryChineseSelectionGroup("P1", 4), label: "古詩動物", topic: "簡單修辭與古詩", question: "古詩「鵝，鵝，鵝，曲項向天歌」寫的是哪一種動物？", hint: "留意詩句第一個字。", options: ["鵝", "小狗", "金魚", "小貓"], correct: 0 },
-    { selectionGroup: primaryChineseSelectionGroup("P1", 4), label: "古詩畫面", topic: "簡單修辭與古詩", question: "「白毛浮綠水」主要寫出鵝的哪兩種顏色？", hint: "找出詩句中的顏色字。", options: ["白色和綠色", "紅色和黃色", "藍色和黑色", "紫色和橙色"], correct: 0 },
+    { selectionGroup: primaryChineseSelectionGroup("P1", 4), label: "古詩畫面", topic: "簡單修辭與古詩", question: "「白毛浮綠水」主要寫出鵝的哪一組顏色？", hint: "找出詩句中的顏色字。", options: ["白色和綠色", "紅色和黃色", "藍色和黑色", "紫色和橙色"], correct: 0 },
     { selectionGroup: primaryChineseSelectionGroup("P1", 4), label: "擬聲詞辨識（疊字）", topic: "簡單修辭與古詩", question: "兒歌中的「小雨沙沙」，「沙沙」最能寫出甚麼？", hint: "重複的聲音詞可幫助我們想像聽到的聲音。", options: ["下雨的聲音", "跑步的聲音", "唱歌的聲音", "笑聲"], correct: 0 },
   ],
   P2: [
