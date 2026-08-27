@@ -1,5 +1,6 @@
 import { getSecondaryExamSeeds } from "./secondaryExamBanks";
 import { primaryChineseSelectionGroup } from "./primaryChineseReadingFramework";
+import { PRIMARY_ENGLISH_READING_BANKS, PRIMARY_ENGLISH_WRITING_BANKS } from "./primaryEnglishBanks";
 
 /**
  * Learning Compass / 學習航圖
@@ -35,8 +36,8 @@ export const GRADES: { id: GradeId; label: string; stage: "小學" | "初中" }[
 export const TRACKS: { id: TrackId; label: string; shortLabel: string; description: string; icon: "language" | "math" | "science" | "interview"; allowedStages: ("小學" | "初中")[]; grades?: GradeId[] }[] = [
   { id: "chinese-reading", label: "中文閱讀理解", shortLabel: "中文閱讀", description: "按年級評核字詞、標點、篇章閱讀、修辭與古詩文理解", icon: "language", allowedStages: ["小學", "初中"] },
   { id: "chinese-writing", label: "中文寫作基礎與組織", shortLabel: "中文寫作", description: "詞語運用、句子、段落、內容與表達組織", icon: "language", allowedStages: ["初中"], grades: ["S1", "S2", "S3"] },
-  { id: "english-reading", label: "英文閱讀理解", shortLabel: "英文閱讀", description: "詞彙、文法、找訊息、推論及閱讀目的", icon: "language", allowedStages: ["小學", "初中"] },
-  { id: "english-writing", label: "英文寫作基礎與組織", shortLabel: "英文寫作", description: "句型、連接、段落、語境與表達準確度", icon: "language", allowedStages: ["小學", "初中"] },
+  { id: "english-reading", label: "英文閱讀理解", shortLabel: "英文閱讀", description: "按年級遞進評核拼讀／詞彙、文法、文體、訊息理解與閱讀策略", icon: "language", allowedStages: ["小學", "初中"] },
+  { id: "english-writing", label: "英文寫作基礎與組織", shortLabel: "英文寫作", description: "按年級評核句型與詞彙、段落組織、文體目的及修訂準備", icon: "language", allowedStages: ["小學", "初中"] },
   { id: "math", label: "數學應用與解題", shortLabel: "數學", description: "運算、比例、幾何、數據與多步驟解題", icon: "math", allowedStages: ["小學", "初中"] },
   { id: "science", label: "Science 科學探究", shortLabel: "Science", description: "探究、生命、物質、能量與力學概念", icon: "science", allowedStages: ["初中"] },
   { id: "interview", label: "升中面試準備", shortLabel: "升中面試", description: "自我介紹、聆聽、應對、協作與表達", icon: "interview", allowedStages: ["小學"], grades: ["P5", "P6"] },
@@ -71,6 +72,9 @@ function moduleForSeed(track: TrackId, seed: QuestionSeed): ModuleName {
   if (track === "chinese-reading" && /要點歸納與思想感情|議論與散文閱讀|律詩格式、文化與內容理解/.test(skill)) return "理解與應用";
   if (track === "chinese-reading" && /熟語與多義詞運用|讓步遞進複句與標點/.test(skill)) return "基礎掌握";
   if (track === "chinese-reading" && /比較閱讀與觀點證據|淺易文言與進階修辭|古詩宋詞賞析/.test(skill)) return "理解與應用";
+  if (track === "english-reading" && /字母音素|長元音|magic e|子音群|二合字母|搭配|片語動詞|字首字尾|同反義詞|名詞、代名詞|進行式|過去式|完成式|被動語態|句首大寫|標點/.test(skill)) return "基礎掌握";
+  if (track === "english-writing" && /句型範本|句子連接|完整段落|三段結構|故事高潮|多段論證|名詞、代名詞|進行式|過去式|未來式|完成式|被動語態|大寫、句號|生活詞彙|興趣、天氣|社區、職業|環境與世界|科技、災害|同反義詞/.test(skill)) return "基礎掌握";
+  if ((track === "english-reading" || track === "english-writing") && /兒歌|寓言|圖畫書|資訊文章|傳記|論說文|故事|日記|書信|報告|傳單|校刊|修訂|語氣|證據|段落|主旨|訊息|觀點|批判|次序|內容檢查/.test(skill)) return "理解與應用";
   if (track === "chinese-writing" && /內容發展|觀點發展|論證|寫作規劃|應試準備|應試策略/.test(skill)) return "整合表達";
   if (track === "english-reading" && /writer's purpose|identifying writer/.test(skill)) return "理解與應用";
   if (track === "english-reading" && /inference strategies/.test(skill)) return "理解與應用";
@@ -491,7 +495,9 @@ function primaryChineseWritingSeeds(level: PrimaryLanguageLevel): QuestionSeed[]
   ];
 }
 
-function primaryEnglishReadingSeeds(level: PrimaryLanguageLevel): QuestionSeed[] {
+function primaryEnglishReadingSeeds(level: PrimaryLanguageLevel, grade?: "P1" | "P2" | "P3" | "P4" | "P5" | "P6"): QuestionSeed[] {
+  const dedicatedBank = grade ? PRIMARY_ENGLISH_READING_BANKS[grade] : undefined;
+  if (dedicatedBank) return dedicatedBank;
   const isP1 = level.enWord === "happy";
   const isP2 = level.enWord === "careful";
   const isP3 = level.enWord === "proud";
@@ -509,7 +515,9 @@ function primaryEnglishReadingSeeds(level: PrimaryLanguageLevel): QuestionSeed[]
   ];
 }
 
-function primaryEnglishWritingSeeds(level: PrimaryLanguageLevel): QuestionSeed[] {
+function primaryEnglishWritingSeeds(level: PrimaryLanguageLevel, grade?: "P1" | "P2" | "P3" | "P4" | "P5" | "P6"): QuestionSeed[] {
+  const dedicatedBank = grade ? PRIMARY_ENGLISH_WRITING_BANKS[grade] : undefined;
+  if (dedicatedBank) return dedicatedBank;
   const isP1 = level.enWord === "happy";
   const isP2 = level.enWord === "careful";
   const isP3 = level.enWord === "proud";
@@ -536,8 +544,8 @@ function primaryLanguageSeeds(track: TrackId, grade: GradeId): QuestionSeed[] | 
   const level = PRIMARY_LANGUAGE_LEVELS[grade as keyof typeof PRIMARY_LANGUAGE_LEVELS];
   if (track === "chinese-reading") return primaryChineseReadingSeeds(level, grade as "P1" | "P2" | "P3" | "P4" | "P5" | "P6");
   if (track === "chinese-writing") return primaryChineseWritingSeeds(level);
-  if (track === "english-reading") return primaryEnglishReadingSeeds(level);
-  if (track === "english-writing") return primaryEnglishWritingSeeds(level);
+  if (track === "english-reading") return primaryEnglishReadingSeeds(level, grade as "P1" | "P2" | "P3" | "P4" | "P5" | "P6");
+  if (track === "english-writing") return primaryEnglishWritingSeeds(level, grade as "P1" | "P2" | "P3" | "P4" | "P5" | "P6");
   return null;
 }
 
@@ -555,16 +563,27 @@ export function buildQuestionPool(track: TrackId, grade: GradeId): AssessmentQue
   const secondarySeeds = grade.startsWith("S") ? getSecondaryExamSeeds(track as import("./secondaryExamBanks").SecondaryExamTrack, grade) : null;
   const seeds = track === "math" && grade.startsWith("P") ? PRIMARY_MATH_GRADE_BANKS[grade as keyof typeof PRIMARY_MATH_GRADE_BANKS] : languageSeeds ?? secondarySeeds ?? BANKS[track];
   const usesStandalonePrimaryChineseBank = track === "chinese-reading" && grade.startsWith("P") && PRIMARY_CHINESE_READING_BANKS[grade as "P1" | "P2" | "P3" | "P4" | "P5" | "P6"] === seeds;
-  if (usesStandalonePrimaryChineseBank) {
-    return seeds.map((seed, seedIndex) => ({
-      ...seed,
-      id: `${track}-${grade}-${seedIndex}-0`,
-      grade,
-      gradeBand: gradeBand(grade),
-      selectionGroup: selectionGroupForSeed(track, grade, seed, seedIndex, seeds.length),
-      module: moduleForSeed(track, seed),
-      difficulty: seedIndex % 5 === 4 ? "核心" : "基礎",
-    }));
+  const usesStandalonePrimaryEnglishBank = grade.startsWith("P") && (
+    (track === "english-reading" && PRIMARY_ENGLISH_READING_BANKS[grade as "P1" | "P2" | "P3" | "P4" | "P5" | "P6"] === seeds)
+    || (track === "english-writing" && PRIMARY_ENGLISH_WRITING_BANKS[grade as "P1" | "P2" | "P3" | "P4" | "P5" | "P6"] === seeds)
+  );
+  if (usesStandalonePrimaryChineseBank || usesStandalonePrimaryEnglishBank) {
+    return seeds.map((seed, seedIndex) => {
+      const optionShift = usesStandalonePrimaryEnglishBank ? seedIndex % seed.options.length : 0;
+      const options = optionShift ? [...seed.options.slice(optionShift), ...seed.options.slice(0, optionShift)] : [...seed.options];
+      const correct = (seed.correct - optionShift + seed.options.length) % seed.options.length;
+      return {
+        ...seed,
+        options,
+        correct,
+        id: `${track}-${grade}-${seedIndex}-0`,
+        grade,
+        gradeBand: gradeBand(grade),
+        selectionGroup: selectionGroupForSeed(track, grade, seed, seedIndex, seeds.length),
+        module: moduleForSeed(track, seed),
+        difficulty: seedIndex % 5 === 4 ? "核心" : "基礎",
+      };
+    });
   }
   return seeds.flatMap((seed, seedIndex) => CONTEXTS.map((context, variant) => ({
     ...seed,

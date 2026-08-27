@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-26T09:33:37.167465+00:00",
+  "generatedAt": "2026-08-27T05:42:23.306069+00:00",
   "grade": "P1",
   "track": "english-reading",
-  "canonicalQuestionCount": 10,
-  "variantQuestionCount": 30,
+  "canonicalQuestionCount": 25,
+  "variantQuestionCount": 25,
   "model": "gpt-5-mini",
   "review": {
-    "batchSummary": "Part 1/5: Reviewed 2 P1 English-reading vocabulary items. Both items are clear, age-appropriate, have one unambiguous best answer, and align with expected P1 vocabulary and comprehension. Recommend PASS for both.\n\nPart 2/5: Both items are clear, unambiguous, and have a single best answer appropriate for Primary 1 reading. The wording, options, and cognitive demand match P1 expectations; no revision needed. (Verdict applies to each item's context-only variants as well.)\n\nPart 3/5: Both items are clear, age-appropriate P1 reading-inference questions with one unambiguous best answer. No revision needed.\n\nPart 4/5: Both items are clear, age-appropriate for P1, and have a single unambiguous correct answer. Keep the original wording and options.\n\nPart 5/5: Two P1 integrated-reading items reviewed. Both items are clear, age-appropriate, have one unambiguous best answer, and match the claimed difficulty and skill. Recommend no changes.",
+    "batchSummary": "Part 1/13: Reviewed 2 P1 English-reading phonics items. Both items are clear, age-appropriate, have a single best answer, and the supplied answers are correct. Recommend keeping both items as is.\n\nPart 2/13: Reviewed 2 P1 English-reading items (short vowel sound and family word). Both items are clear, unambiguous, grade-appropriate, and have a single best answer. Recommend keeping both as-is.\n\nPart 3/13: 2 items reviewed for P1 English reading. Both items are clear, unambiguous, have a single best answer, and are appropriate for the grade. Recommend keeping both items as-is.\n\nPart 4/13: Two P1 English-reading pronoun items reviewed. Both items are clear, age-appropriate, have one unambiguous best answer, and match the stated syllabus focus on nouns/pronouns and present tense.\n\nPart 5/13: Reviewed 2 P1 English-reading items (part 5). Both items are correct, age-appropriate, and have a single best answer. Recommend keeping the original items unchanged.\n\nPart 6/13: Reviewed 2 P1 English reading items (rhyme and story character). Both items are clear, age-appropriate, have a single best answer, and match the supplied correct answers. Recommend keeping both items as-is.\n\nPart 7/13: Reviewed 2 P1 English-reading items (picture/story comprehension). Both items are clear, age-appropriate, have a single best answer, and require no revision.\n\nPart 8/13: 2 items reviewed for P1 English reading. Both items are clear, age-appropriate, with one unambiguous best answer each. Recommend passing both without changes.\n\nPart 9/13: Both P1 items are clear, age-appropriate reading comprehension questions with one unambiguous correct answer each. No revisions needed.\n\nPart 10/13: Reviewed 2 P1 English-reading items (part 10). Both items are clear, age-appropriate, single-best-answer, and require no revision.\n\nPart 11/13: Reviewed 2 items for P1 English-reading (part 11). One item PASS, one item needs REVISE because the stem is ambiguous (more than one option begins with a capital letter). Replacements provided where required.\n\nPart 12/13: Both items are clear, age-appropriate P1 items testing sentence-initial capitalisation and sentence-final punctuation. Each has a single unambiguous best answer and suitable distractors; no revision needed.\n\nPart 13/13: One P1 English-reading item on sentence-ending punctuation and capitalisation. The item is clear, age-appropriate, and has a single unambiguous correct answer.",
     "reviews": [
       {
         "id": "english-reading-P1-0-0",
@@ -15,13 +15,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The target word 'happy' is correctly matched with 'glad' as the closest meaning. The distractors are clearly incorrect and age-appropriate. The item is simple and suitable for Primary 1 vocabulary testing.",
-        "recommendedQuestion": "The word “happy” is closest in meaning to ____ .",
+        "reason": "The item asks for the initial /m/ sound. Only 'moon' begins with /m/; distractors begin with different consonants. Language and hint are suitable for P1 phonics practice.",
+        "recommendedQuestion": "Which word begins with the /m/ sound?",
         "recommendedOptions": [
-          "glad",
-          "very noisy",
-          "always late",
-          "easy to break"
+          "moon",
+          "sun",
+          "fish",
+          "red"
         ],
         "recommendedCorrect": 0
       },
@@ -32,13 +32,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The context question asks which action shows Tom is happy doing classwork. 'He smiles and tries his best.' is the clear, age-appropriate indicator of happiness and effort. Other options are implausible or contradictory, so there is a single best answer.",
-        "recommendedQuestion": "Tom is happy when doing class work. Which action shows this best?",
+        "reason": "Only 'cat' contains the short a vowel (/æ/) among the options. Other choices have different vowel sounds. The hint and wording are suitable for P1.",
+        "recommendedQuestion": "Which word has the short a sound?",
         "recommendedOptions": [
-          "He smiles and tries his best.",
-          "He ignores the teacher.",
-          "He leaves the room for no reason.",
-          "He never tries again."
+          "cat",
+          "cake",
+          "bike",
+          "home"
         ],
         "recommendedCorrect": 0
       },
@@ -49,13 +49,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The question asks for the earlier required time and the correct option 'Sign up by 10:15' is unambiguous and clearly the best choice. Distractors are obviously wrong for P1 and the language is simple.",
-        "recommendedQuestion": "A notice says the event starts at 10:30 and sign-up closes at 10:15. What should a student do?",
+        "reason": "The stem asks for the short i sound as in 'sit'. Only 'ship' contains the short i vowel; other options contain different vowel sounds. Distractors are plausible at P1 level.",
+        "recommendedQuestion": "Which word has the short i sound?",
         "recommendedOptions": [
-          "Sign up by 10:15",
-          "Arrive after 10:30",
-          "Wait until noon",
-          "Bring nothing"
+          "ship",
+          "sheep",
+          "cake",
+          "boat"
         ],
         "recommendedCorrect": 0
       },
@@ -66,13 +66,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The stem asks for the main purpose of a how-to text; 'tell you what to do' clearly matches instructional intent. Other options are unrelated and serve as effective distractors for P1 level.",
-        "recommendedQuestion": "A short text explains how to get ready for a class presentation. Its main purpose is to ____ .",
+        "reason": "The phrase 'your mother’s son or daughter' clearly describes a 'child'. No other option fits. Wording is suitable for P1 learners who are familiar with family vocabulary.",
+        "recommendedQuestion": "Which word names your mother’s son or daughter?",
         "recommendedOptions": [
-          "tell you what to do",
-          "tell a make-believe story",
-          "sell a uniform",
-          "describe a storm"
+          "child",
+          "chair",
+          "school",
+          "book"
         ],
         "recommendedCorrect": 0
       },
@@ -83,13 +83,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The action 'makes a plan before starting the task' reasonably implies Tom cares about the task or wants to do it well, so 'The task is important to Tom' is the single best inference. The distractors are clearly incorrect or contradictory.",
-        "recommendedQuestion": "Tom makes a plan before starting the task. What can we infer?",
+        "reason": "The stem is clear and age-appropriate. 'Library' is the only place among the options where pupils read books, so there is a single best answer and distractors are plausible for young learners.",
+        "recommendedQuestion": "Where do pupils read books at school?",
         "recommendedOptions": [
-          "The task is important to Tom",
-          "Tom dislikes every task",
-          "The plan is missing",
-          "We cannot infer anything"
+          "library",
+          "playground",
+          "kitchen",
+          "bus stop"
         ],
         "recommendedCorrect": 0
       },
@@ -100,13 +100,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The phrase 'a useful chance to learn together' is clearly positive; the writer is most likely happy about the activity. Other options conflict with the positive wording.",
-        "recommendedQuestion": "The writer calls the activity “a useful chance to learn together”. The writer is most likely ____ .",
+        "reason": "The sentence requires a plural noun. 'Books' is the correct plural form; the other options are a singular form, a spelling error, and a possessive form—these are suitable distractors for P1.",
+        "recommendedQuestion": "There are two ____ on the desk.",
         "recommendedOptions": [
-          "happy about it",
-          "angry",
-          "not interested",
-          "confused"
+          "books",
+          "book",
+          "bookes",
+          "book’s"
         ],
         "recommendedCorrect": 0
       },
@@ -117,13 +117,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The pronoun 'It' unambiguously refers back to the nearest suitable noun 'the display'. Distractors ('the hall', 'the class', 'the preparation') are plausible but incorrect, and the item is suitable for P1 with straightforward reasoning.",
-        "recommendedQuestion": "“The class prepared a display. It was shown in the hall.” What does “It” refer to?",
+        "reason": "Sentence asks for a singular male pronoun referring to one boy. 'He' is the unambiguous correct choice; other options are plausible distractors for this level.",
+        "recommendedQuestion": "Ben is my brother. ____ is six.",
         "recommendedOptions": [
-          "The display",
-          "The hall",
-          "The class",
-          "The preparation"
+          "He",
+          "She",
+          "It",
+          "They"
         ],
         "recommendedCorrect": 0
       },
@@ -134,13 +134,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The sentence shows cause/result: practising led to a clearer presentation. 'so' correctly links the cause to the result; the other options express contrast or condition and are inappropriate.",
-        "recommendedQuestion": "Tom practised every day, ____ the presentation became clearer.",
+        "reason": "Refers to one animal with unspecified gender; the neutral singular pronoun 'It' is the correct choice. Distractors are reasonable for Primary 1.",
+        "recommendedQuestion": "The cat is small. ____ is sleeping.",
         "recommendedOptions": [
-          "so",
-          "however",
-          "although",
-          "unless"
+          "It",
+          "He",
+          "We",
+          "They"
         ],
         "recommendedCorrect": 0
       },
@@ -151,13 +151,13 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The webpage description (steps, reminders, sign-up link) clearly indicates the purpose is to invite people to join. Other choices are irrelevant to the context. Language and cognitive demand are suitable for P1.",
-        "recommendedQuestion": "A webpage gives steps, reminders and a sign-up link for a school event. It is mainly designed to ____ .",
+        "reason": "'I' takes the verb 'be' form 'am' in the present tense. Distractors ('is', 'are', 'be') are plausible for practice and only 'am' is grammatically correct, so the item has one clear best answer and is suitable for P1.",
+        "recommendedQuestion": "I ____ happy today.",
         "recommendedOptions": [
-          "invite people to join",
-          "sell a house",
-          "teach swimming",
-          "report a storm"
+          "am",
+          "is",
+          "are",
+          "be"
         ],
         "recommendedCorrect": 0
       },
@@ -168,13 +168,268 @@
         "singleBestAnswer": true,
         "gradeAppropriate": true,
         "difficultyJudgement": "appropriate",
-        "reason": "The detail 'Tom asks questions and shares ideas with classmates' directly shows active interest in learning; the other options are irrelevant. The item asks for evidence, which is suitable for P1 reading skills.",
-        "recommendedQuestion": "Which detail best supports the idea that Tom enjoys learning?",
+        "reason": "For third-person singular subject 'She' the correct present-tense form of 'have' is 'has'. Other options ('have','having','had') are reasonable distractors for this level, and only 'has' is correct, so the item is suitable for P1.",
+        "recommendedQuestion": "She ____ a red bag.",
         "recommendedOptions": [
-          "Tom asks questions and shares ideas with classmates.",
-          "Tom owns a blue bag.",
-          "Tom eats lunch at noon.",
-          "Tom walks home."
+          "has",
+          "have",
+          "having",
+          "had"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-10-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The item asks which word rhymes with 'cat'. 'Hat' is the only option that shares the same end sound. The stem, hint, and options are simple and suitable for Primary 1 students.",
+        "recommendedQuestion": "Which word rhymes with cat?",
+        "recommendedOptions": [
+          "hat",
+          "cup",
+          "dog",
+          "sun"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-11-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks who is the character in the sentence 'Mia feeds her puppy.' A character is a person or animal in a story; 'Mia' (a person) is the only option among the four that is a character. The item is clear and appropriate for Primary 1.",
+        "recommendedQuestion": "In a story, Mia feeds her puppy. Who is the character?",
+        "recommendedOptions": [
+          "Mia",
+          "the food",
+          "the bowl",
+          "the garden"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-12-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence explicitly states the place ('in the park'). Distractors are clearly incorrect for P1. The item matches the claimed skill (identify place word) and is unambiguous.",
+        "recommendedQuestion": "“Sam plays in the park after school.” Where is the story happening?",
+        "recommendedOptions": [
+          "in the park",
+          "after school",
+          "Sam",
+          "plays"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-13-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The picture description (boy holding an umbrella in the rain) supports 'walking in the rain' as the clear, age-appropriate action. Other options are clearly irrelevant.",
+        "recommendedQuestion": "A picture shows a boy holding an umbrella in the rain. What is he doing?",
+        "recommendedOptions": [
+          "He is walking in the rain.",
+          "He is sleeping.",
+          "He is swimming.",
+          "He is eating lunch."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-14-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The rhyme line names a star; the question asks directly what the rhyme is about. Options include one clear match (star). Suitable vocabulary and cognitive demand for P1.",
+        "recommendedQuestion": "“Twinkle, twinkle, little star” is mainly about a ____. ",
+        "recommendedOptions": [
+          "star",
+          "car",
+          "tree",
+          "fish"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-15-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence states Tom has a blue cap. The correct option repeats that phrase; other options are distractors. Straightforward comprehension task for P1.",
+        "recommendedQuestion": "“Tom has a blue cap.” What does Tom have?",
+        "recommendedOptions": [
+          "a blue cap",
+          "a red ball",
+          "a big dog",
+          "a green book"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-16-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence explicitly states the place. The correct option 'in the classroom' is clear and distractors are plausible for P1 learners.",
+        "recommendedQuestion": "“The children eat lunch in the classroom.” Where do they eat lunch?",
+        "recommendedOptions": [
+          "in the classroom",
+          "at home",
+          "in a shop",
+          "at the park"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-17-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The time adverbial 'at night' is explicit in the sentence. The distractors are simple and suitable for P1.",
+        "recommendedQuestion": "“Amy brushes her teeth at night.” When does Amy brush her teeth?",
+        "recommendedOptions": [
+          "at night",
+          "in the morning",
+          "at noon",
+          "after school"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-18-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sentence explicitly states the object 'the car' after the verb 'washes'. Distractors are plausible nouns but do not match the text. Language is suitable for P1.",
+        "recommendedQuestion": "“Dad washes the car on Sunday.” What does Dad wash?",
+        "recommendedOptions": [
+          "the car",
+          "the dog",
+          "the book",
+          "the window"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-19-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The sequence words 'First' and 'Then' make the order explicit; 'He puts on his shoes.' is unambiguously first. Distractors are clearly unrelated actions appropriate for P1.",
+        "recommendedQuestion": "Read: “First, Tim puts on his shoes. Then, he goes outside.” What does Tim do first?",
+        "recommendedOptions": [
+          "He puts on his shoes.",
+          "He goes outside.",
+          "He eats dinner.",
+          "He goes to bed."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-20-0",
+        "verdict": "REVISE",
+        "answerCorrect": false,
+        "singleBestAnswer": false,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question asks which sentence 'begins correctly' with the hint 'A sentence begins with a capital letter.' In the original options more than one choice begins with a capital letter (options 0, 2 and 3), so there is not a single best answer. Option 2 also has incorrect internal capitalization ('Name' capitalized) and option 3 lacks end punctuation, but the stem only asks about the sentence beginning, making the item ambiguous for P1.",
+        "recommendedQuestion": "Which sentence begins correctly?",
+        "recommendedOptions": [
+          "My name is May.",
+          "my name is Sue.",
+          "my name is Tim.",
+          "my name is Kim."
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-21-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Clear, age-appropriate question asking which punctuation ends a telling sentence. Only the full stop (.) is correct.",
+        "recommendedQuestion": "Which mark ends this telling sentence: “I like apples”",
+        "recommendedOptions": [
+          ".",
+          "?",
+          "!",
+          ","
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-22-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The question clearly asks which punctuation ends a question. The correct choice is '?' and the distractors (., ,, !) are plausible for young learners. Language and concept are suitable for P1.",
+        "recommendedQuestion": "Which mark ends “Where is my bag”",
+        "recommendedOptions": [
+          "?",
+          ".",
+          ",",
+          "!"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-23-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "Item tests capital letter at sentence start and correct end punctuation. Only 'We play ball.' is fully correct; other options contain lowercase start or incorrect end marks. Suitable for P1.",
+        "recommendedQuestion": "Choose the correct sentence.",
+        "recommendedOptions": [
+          "We play ball.",
+          "we play ball",
+          "We play ball?",
+          "we play ball!"
+        ],
+        "recommendedCorrect": 0
+      },
+      {
+        "id": "english-reading-P1-24-0",
+        "verdict": "PASS",
+        "answerCorrect": true,
+        "singleBestAnswer": true,
+        "gradeAppropriate": true,
+        "difficultyJudgement": "appropriate",
+        "reason": "The item asks a simple, P1-appropriate concept: identifying a question sentence. Only option 0 ('Can you swim?') is an interrogative with a question mark; the other options are declarative or imperative. Distractors are clear and plausible for young learners.",
+        "recommendedQuestion": "Which is a question?",
+        "recommendedOptions": [
+          "Can you swim?",
+          "I can swim.",
+          "Swim in the pool.",
+          "The pool is blue."
         ],
         "recommendedCorrect": 0
       }

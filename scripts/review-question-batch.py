@@ -111,6 +111,8 @@ def review_chunk(items: list[dict], part: int, total_parts: int) -> dict:
     )
     with urllib.request.urlopen(request, timeout=300) as response:
         result = json.loads(response.read())
+    if "choices" not in result:
+        raise RuntimeError(f"LLM review request did not return choices: {json.dumps(result, ensure_ascii=False)}")
     reviewed = json.loads(result["choices"][0]["message"]["content"])
     found_ids = {item["id"] for item in reviewed["reviews"]}
     expected_ids = {item["id"] for item in items}

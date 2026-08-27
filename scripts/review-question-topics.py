@@ -91,6 +91,11 @@ Review each multiple-choice item's metadata independently. Decide the actual ski
 
 For P1-P6 Chinese reading only, the topic intentionally names one of five parent-report domains for that grade, while the label names the precise subskill (for example '人物辨識', '時間訊息', '古詩動物', or '擬聲詞辨識'). The user-specified parent domains are authoritative for this review: P1 uses 字形、筆畫與部首／字詞與基本句子／基本標點與句式／兒歌與童話閱讀／簡單修辭與古詩; P2 uses 詞義辨析與查字典／句式與標點運用／段落大意與順敘／看圖與敘事閱讀／修辭與五言絕句; P3 uses 詞彙、成語與字詞辨錯／複句、標點與專名／中心句與段落組織／倒敘與實用文閱讀／修辭與七言絕句; P4 uses 字形、字音與詞義辨析／轉折複句與進階標點／寓言、神話與說明文／修辭與篇章結構／七言絕句與文學感受; P5 uses 詞語感情色彩與詞義／條件假設複句與破折號／要點歸納與思想感情／議論與散文閱讀／律詩格式、文化與內容理解; P6 uses 熟語與多義詞運用／讓步遞進複句與標點／比較閱讀與觀點證據／淺易文言與進階修辭／古詩宋詞賞析. A parent domain can explicitly join two curriculum elements with 「與」: an item that genuinely tests either named element is correctly classified. Do not substitute a different grade's topic or require a new one-item topic merely because the label is more specific or only one joined domain element appears in the stem. Mark REVISE only where a metadata field is substantively misleading, and give precise replacement names without modifying the question itself. Return JSON only."""
 
+if grade.startswith("P") and track in {"english-reading", "english-writing"}:
+    system += """
+
+For P1-P6 English reading and English writing only, the topic intentionally names one of five user-authorised, grade-specific parent-report domains. The domain labels are written in Traditional Chinese for parents but name English-language skills such as phonics/vocabulary, grammar, text types and reading strategies, writing purpose, organisation, and revision. Treat the five topic labels present in the supplied items as authoritative parent domains: do not reject a topic merely because it is bilingual, broad, or combines two related curriculum elements. The precise item label identifies the narrower subskill. English writing is a selected-response writing-preparation paper that checks planning, language choices and revision; it does not claim to auto-mark a full composition. Mark REVISE only where a metadata field is substantively misleading. Return JSON only."""
+
 
 def review_chunk(items: list[dict], part: int, total_parts: int) -> dict:
     payload = {
@@ -135,6 +140,8 @@ def review_chunk(items: list[dict], part: int, total_parts: int) -> dict:
     )
     with urllib.request.urlopen(request, timeout=300) as response:
         result = json.loads(response.read())
+    if "choices" not in result:
+        raise RuntimeError(f"LLM metadata review request did not return choices: {json.dumps(result, ensure_ascii=False)}")
     reviewed = json.loads(result["choices"][0]["message"]["content"])
     found_ids = {item["id"] for item in reviewed["reviews"]}
     expected_ids = {item["id"] for item in items}

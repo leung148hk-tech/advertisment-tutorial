@@ -1,0 +1,288 @@
+{
+  "generatedAt": "2026-08-27T05:47:18.885176+00:00",
+  "grade": "P1",
+  "track": "english-reading",
+  "canonicalQuestionCount": 25,
+  "variantQuestionCount": 25,
+  "model": "gpt-5-mini",
+  "review": {
+    "batchSummary": "Part 1/7: Reviewed 4 P1 English-reading items. All four items' metadata accurately match the skill assessed; recommend no changes (4 PASS).\n\nPart 2/7: Reviewed 4 English-reading P1 items. All four items have metadata that appropriately matches the skill tested (basic vocabulary, plural noun formation, and subject pronoun use). Recommend no changes.\n\nPart 3/7: Reviewed 4 P1 English-reading items (part 3). All four items measure the skills indicated by their stems and hints; supplied topic, label and module are educationally coherent and appropriate.\n\nPart 4/7: Reviewed 4 P1 English-reading items. All four items accurately target simple reading-comprehension subskills (identifying setting/location, inferring action from picture cues, identifying the subject of a rhyme, and finding an explicit character detail). Each item’s label and module are educationally coherent, but every item’s topic field uses Chinese primary-language domain names (appropriate only for P1 Chinese reading), which is misleading for the english-reading track. I recommend replacing the topic names with concise English reading-topic names.\n\nPart 5/7: Reviewed 4 P1 English-reading items (IDs english-reading-P1-16-0 to english-reading-P1-19-0). All four items measure literal sentence-level comprehension (finding explicit information and simple sequence) and their provided topic, label and module are coherent and appropriate. Verdict: all PASS.\n\nPart 6/7: Reviewed 4 P1 English-reading items (focus: sentence-initial capitalization and sentence-final punctuation). All four items' metadata are educationally coherent and appropriately labelled; no substantive changes required.\n\nPart 7/7: Reviewed 1 item: 1 REVISE (topic mismatch).",
+    "reviews": [
+      {
+        "id": "english-reading-P1-0-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses initial phoneme recognition (/m/), so the label 'Initial consonant' is precise. The topic '字母音素與生活詞彙' (letter phonemes and everyday vocabulary) correctly identifies phonemic awareness within basic vocabulary. The module '基礎掌握' fits the basic difficulty.",
+        "recommendedTopic": "字母音素與生活詞彙",
+        "recommendedLabel": "Initial consonant",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-P1-1-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests short vowel /a/ identification (phoneme discrimination). The label 'Short vowel a' and the topic '字母音素與生活詞彙' correctly describe the skill; the module '基礎掌握' is appropriate for this basic phonics item.",
+        "recommendedTopic": "字母音素與生活詞彙",
+        "recommendedLabel": "Short vowel a",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-P1-2-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item assesses recognition of the short /i/ vowel sound. The label 'Short vowel i' accurately names the subskill; the topic and module correctly indicate phonics within everyday vocabulary at a basic level.",
+        "recommendedTopic": "字母音素與生活詞彙",
+        "recommendedLabel": "Short vowel i",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-P1-3-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item measures knowledge of a kinship vocabulary item ('child' = mother’s son or daughter). The label 'Family word' and the topic '字母音素與生活詞彙' (everyday vocabulary) match the skill; the module '基礎掌握' is suitable.",
+        "recommendedTopic": "字母音素與生活詞彙",
+        "recommendedLabel": "Family word",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-P1-4-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks students to identify a school place (library) from vocabulary choices. The topic '字母音素與生活詞彙' (letters/phonemes and everyday vocabulary) and the label 'School word' accurately describe the tested skill. Module '基礎掌握' is appropriate for this core-level vocabulary item.",
+        "recommendedTopic": "字母音素與生活詞彙",
+        "recommendedLabel": "School word",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-P1-5-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The sentence completion tests recognition/selection of the plural noun form 'books'. The label 'Plural noun' and topic '名詞、代名詞與現在式' (nouns, pronouns and present tense) correctly identify the skill. Module '基礎掌握' fits the basic/ foundational difficulty.",
+        "recommendedTopic": "名詞、代名詞與現在式",
+        "recommendedLabel": "Plural noun",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-P1-6-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires choosing the correct subject pronoun for a boy ('He'). The label 'Pronoun he' and topic '名詞、代名詞與現在式' match the tested skill. Module '基礎掌握' is appropriate for this basic pronoun item.",
+        "recommendedTopic": "名詞、代名詞與現在式",
+        "recommendedLabel": "Pronoun he",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-P1-7-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the correct pronoun for an animal ('It'), testing basic pronoun use. The label 'Pronoun it' and topic '名詞、代名詞與現在式' are appropriate. Module '基礎掌握' suits the item's foundational level.",
+        "recommendedTopic": "名詞、代名詞與現在式",
+        "recommendedLabel": "Pronoun it",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-P1-8-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the present form of the verb 'be' after the pronoun 'I' (subject-verb agreement / present simple of 'be'). The label 'Present be' accurately names the skill. The topic '名詞、代名詞與現在式' (nouns, pronouns and present tense) appropriately covers the pronoun + present-tense verb focus. '基礎掌握' is a coherent module for this basic grammar item.",
+        "recommendedTopic": "名詞、代名詞與現在式",
+        "recommendedLabel": "Present be",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-P1-9-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests the present-tense third-person singular form of 'have' (subject-verb agreement for 'she'). The label 'Present have' matches the tested skill. The topic '名詞、代名詞與現在式' correctly situates this as a pronoun + present-tense verb item. '基礎掌握' is an appropriate module for this core elementary grammar item.",
+        "recommendedTopic": "名詞、代名詞與現在式",
+        "recommendedLabel": "Present have",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-P1-10-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires recognising a rhyming word. The label 'Rhyme' is accurate. The topic '兒歌與圖畫故事' (nursery rhymes and picture stories) appropriately includes rhyming as a subskill, and '理解與應用' fits the comprehension/application nature of the task.",
+        "recommendedTopic": "兒歌與圖畫故事",
+        "recommendedLabel": "Rhyme",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-reading-P1-11-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks the student to identify a character in a short story context. 'Story character' correctly names the skill tested. The topic '兒歌與圖畫故事' is appropriate for identifying characters in simple stories and '理解與應用' correctly reflects the comprehension/application level.",
+        "recommendedTopic": "兒歌與圖畫故事",
+        "recommendedLabel": "Story character",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-reading-P1-12-0",
+        "verdict": "REVISE",
+        "topicMatches": false,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests identification of the story setting/location in a simple sentence. The label 'Story setting' correctly names the skill and the module ('理解與應用' = comprehension and application) is educationally coherent. The topic '兒歌與圖畫故事' is a Chinese-domain name (nursery rhymes and picture stories) tied to P1 Chinese reading and is misleading for an English-reading item.",
+        "recommendedTopic": "Setting identification / Reading details",
+        "recommendedLabel": "Story setting",
+        "recommendedModule": "Comprehension"
+      },
+      {
+        "id": "english-reading-P1-13-0",
+        "verdict": "REVISE",
+        "topicMatches": false,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item measures inferring an action from a picture description (using visual clues to determine what someone is doing). The label 'Picture-story action' fits and the module '理解與應用' is coherent in meaning. The topic field '兒歌與圖畫故事' is a Chinese curriculum domain name and is misleading for an English-reading item.",
+        "recommendedTopic": "Picture-clue inference / Reading details",
+        "recommendedLabel": "Picture-story action",
+        "recommendedModule": "Comprehension"
+      },
+      {
+        "id": "english-reading-P1-14-0",
+        "verdict": "REVISE",
+        "topicMatches": false,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "This item assesses identifying the main subject/topic of a short rhyme (understanding what the rhyme is about). The label 'Rhyme meaning' is appropriate and the module meaning is fine. The topic '兒歌與圖畫故事' is a Chinese-domain label (nursery rhymes and picture stories) tied to P1 Chinese reading and so is misleading in the English-reading track.",
+        "recommendedTopic": "Rhyme/main idea identification",
+        "recommendedLabel": "Rhyme meaning",
+        "recommendedModule": "Comprehension"
+      },
+      {
+        "id": "english-reading-P1-15-0",
+        "verdict": "REVISE",
+        "topicMatches": false,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for an explicit detail about a character (finding stated information in a simple sentence). The label 'Character detail' correctly describes the tested skill and the module is educationally coherent. The topic '人物、場景與明示訊息' is a Chinese-domain phrase (characters, setting and explicit information) used for P1 Chinese reading and is therefore misleading for an English-reading item.",
+        "recommendedTopic": "Reading details: character information",
+        "recommendedLabel": "Character detail",
+        "recommendedModule": "Comprehension"
+      },
+      {
+        "id": "english-reading-P1-16-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks the student to locate explicit place information in a single sentence (‘Where do they eat lunch?’). This measures literal/detail comprehension (setting). The supplied topic '人物、場景與明示訊息' (people, setting and explicit information) correctly describes this skill; the label 'Setting detail' precisely names the subskill; the module '理解與應用' (comprehension and application) is appropriate.",
+        "recommendedTopic": "人物、場景與明示訊息",
+        "recommendedLabel": "Setting detail",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-reading-P1-17-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires identifying an explicit time word in the sentence (‘When does Amy brush her teeth?’). This is literal detail/time information extraction. The topic '人物、場景與明示訊息' fits, the label 'Time detail' accurately names the skill, and '理解與應用' is an appropriate module.",
+        "recommendedTopic": "人物、場景與明示訊息",
+        "recommendedLabel": "Time detail",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-reading-P1-18-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The stem asks for the object of the action in the sentence (‘What does Dad wash?’), which is explicit detail extraction (action/object). The topic '人物、場景與明示訊息' correctly covers explicit sentence information; the label 'Action detail' is precise; the module '理解與應用' is suitable.",
+        "recommendedTopic": "人物、場景與明示訊息",
+        "recommendedLabel": "Action detail",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-reading-P1-19-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "This item asks students to identify the first step in a simple two-step sequence (‘What does Tim do first?’). It measures understanding of simple temporal sequence/ordering in explicit text. The topic '人物、場景與明示訊息' (explicit information) is still appropriate; the label 'Simple sequence' correctly describes the subskill; and the module '理解與應用' fits the comprehension task.",
+        "recommendedTopic": "人物、場景與明示訊息",
+        "recommendedLabel": "Simple sequence",
+        "recommendedModule": "理解與應用"
+      },
+      {
+        "id": "english-reading-P1-20-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks which sentence begins correctly, so it assesses recognition of sentence-initial capitalization. The label \"Capital letter\" correctly names the subskill. The topic \"句首大寫與句末標點\" (sentence-initial capitalization and sentence-final punctuation) comfortably covers this item even though this particular question focuses on the initial-capital aspect. Module \"基礎掌握\" is appropriate.",
+        "recommendedTopic": "句首大寫與句末標點",
+        "recommendedLabel": "Capital letter",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-P1-21-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item tests recognition of the full stop as the appropriate end mark for a telling sentence. The label \"Full stop\" and the topic \"句首大寫與句末標點\" accurately describe the skill. Module \"基礎掌握\" is suitable.",
+        "recommendedTopic": "句首大寫與句末標點",
+        "recommendedLabel": "Full stop",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-P1-22-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item asks for the correct end mark for a question, so it measures recognition of the question mark. The label \"Question mark\" and topic \"句首大寫與句末標點\" match the tested skill. Module \"基礎掌握\" is appropriate.",
+        "recommendedTopic": "句首大寫與句末標點",
+        "recommendedLabel": "Question mark",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-P1-23-0",
+        "verdict": "PASS",
+        "topicMatches": true,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The item requires choosing a correctly formed sentence (capital at start and appropriate end punctuation), so the label \"Complete sentence\" and topic \"句首大寫與句末標點\" correctly identify the tested skills. Module \"基礎掌握\" is appropriate.",
+        "recommendedTopic": "句首大寫與句末標點",
+        "recommendedLabel": "Complete sentence",
+        "recommendedModule": "基礎掌握"
+      },
+      {
+        "id": "english-reading-P1-24-0",
+        "verdict": "REVISE",
+        "topicMatches": false,
+        "labelMatches": true,
+        "moduleMatches": true,
+        "reason": "The question asks students to identify which option is a question (an interrogative sentence). The supplied topic '句首大寫與句末標點' (capital letter at sentence start and end punctuation) emphasizes capitalization and terminal punctuation generally, which is broader and partially misleading: the item specifically tests recognition of a question form / use of a question mark and interrogative structure rather than capitalization. The label 'Question form' correctly names the skill, and the module '基礎掌握' is appropriate for a P1 foundational skill.",
+        "recommendedTopic": "疑問句與句末問號辨認",
+        "recommendedLabel": "Question form (interrogative sentence recognition)",
+        "recommendedModule": "基礎掌握"
+      }
+    ]
+  }
+}
