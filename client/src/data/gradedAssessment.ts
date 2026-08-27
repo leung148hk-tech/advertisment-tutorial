@@ -8,7 +8,7 @@ import { PRIMARY_MATH_BANKS } from "./primaryMathBanks";
  * conversations; they are not formal examinations or IQ tests.
  */
 export type GradeId = "P1" | "P2" | "P3" | "P4" | "P5" | "P6";
-export type TrackId = "chinese-reading" | "english" | "math" | "interview";
+export type TrackId = "chinese-reading" | "english" | "math";
 export type ModuleName = "基礎掌握" | "理解與應用" | "情境推理" | "整合表達" | "溝通與協作";
 export type AssessmentQuestion = {
   id: string;
@@ -31,15 +31,13 @@ export const GRADES: { id: GradeId; label: string; stage: "小學" }[] = [
   { id: "P4", label: "小四", stage: "小學" }, { id: "P5", label: "小五", stage: "小學" }, { id: "P6", label: "小六", stage: "小學" },
 ];
 
-export const TRACKS: { id: TrackId; label: string; shortLabel: string; description: string; icon: "language" | "math" | "interview"; allowedStages: "小學"[]; grades?: GradeId[] }[] = [
-  { id: "chinese-reading", label: "中文閱讀理解", shortLabel: "中文閱讀", description: "按年級評核字詞、標點、篇章閱讀、修辭與古詩文理解", icon: "language", allowedStages: ["小學"] },
+export const TRACKS: { id: TrackId; label: string; shortLabel: string; description: string; icon: "language" | "math"; allowedStages: "小學"[] }[] = [
+  { id: "chinese-reading", label: "中文", shortLabel: "中文", description: "按年級評核字詞、標點、篇章閱讀、修辭與古詩文理解", icon: "language", allowedStages: ["小學"] },
   { id: "english", label: "英文", shortLabel: "英文", description: "整合閱讀理解與寫作基礎，按年級評核拼讀／詞彙、文法、文體、組織及修訂準備", icon: "language", allowedStages: ["小學"] },
   { id: "math", label: "數學應用與解題", shortLabel: "數學", description: "按年級評核數、圖形與空間、度量、數據處理及代數／解題", icon: "math", allowedStages: ["小學"] },
-  { id: "interview", label: "升中面試準備", shortLabel: "升中面試", description: "自我介紹、聆聽、應對、協作與表達", icon: "interview", allowedStages: ["小學"], grades: ["P5", "P6"] },
 ];
 
 export const ASSESSMENT_MODULES: ModuleName[] = ["基礎掌握", "理解與應用", "情境推理", "整合表達", "溝通與協作"];
-const CONTEXTS = ["校園情境", "社區情境", "日常生活"];
 const PRIMARY_GRADES: GradeId[] = ["P1", "P2", "P3", "P4", "P5", "P6"];
 
 function gradeBand(grade: GradeId) {
@@ -50,7 +48,6 @@ function gradeBand(grade: GradeId) {
 
 function moduleForSeed(track: TrackId, seed: QuestionSeed): ModuleName {
   const skill = `${seed.topic} ${seed.label}`.toLowerCase();
-  if (track === "interview") return /introduction|interest|improve|school|memorable|response|reflection|自我|興趣|反思|學校|表達/.test(skill) ? "整合表達" : "溝通與協作";
   if (track === "english") {
     return /字母|元音|magic e|子音|拼讀|名詞|代名詞|進行式|過去式|未來式|完成式|被動|轉述|情態|大寫|標點|句型|詞彙|搭配|字首|字尾|同反義|comparative|grammar/.test(skill) ? "基礎掌握" : "理解與應用";
   }
@@ -233,19 +230,6 @@ const PRIMARY_CHINESE_READING_BANKS: Partial<Record<"P1" | "P2" | "P3" | "P4" | 
 };
 
 
-const PRIMARY_INTERVIEW_BANK: QuestionSeed[] = [
-  { label: "Self introduction", topic: "Self-introduction and authentic expression", question: "Which self-introduction gives the clearest first impression?", hint: "Choose a short, structured and genuine response.", options: ["Only say your name and stop.", "Greet, state your name and school, then share one genuine interest with an example.", "List every award without context.", "Ask the interviewer to answer first."], correct: 1 },
-  { label: "Listening", topic: "Listening and clarification", question: "If you do not understand a question, what is the best response?", hint: "Clarify politely instead of guessing.", options: ["Make up an answer immediately.", "Ask politely for the question to be repeated or explained.", "Stay silent until the interview ends.", "Ask a friend to answer."], correct: 1 },
-  { label: "Response structure", topic: "Interview communication: answering questions", question: "Which is the strongest way to answer “What do you enjoy learning?”", hint: "A good answer includes a reason and an example.", options: ["Say only one subject name.", "Name an area, explain why, and give one related experience.", "Change the question.", "Repeat “I don't know”."], correct: 1 },
-  { label: "Teamwork", topic: "Collaboration and inclusion", question: "In a group task, a quieter member has not spoken. What can you do?", hint: "Include others respectfully.", options: ["Ignore the person.", "Invite the person to share an idea and listen carefully.", "Tell everyone your idea is best.", "End the discussion."], correct: 1 },
-  { label: "Different views", topic: "Collaboration and disagreement", question: "When a teammate disagrees with you, what should you do first?", hint: "Understand before responding.", options: ["Say they are wrong.", "Ask about their reason and compare ideas calmly.", "Leave the group.", "Speak louder."], correct: 1 },
-  { label: "Body language", topic: "Non-verbal communication", question: "Which body language supports clear communication?", hint: "Choose a natural and respectful action.", options: ["Look at the floor all the time.", "Sit naturally and look at the speaker.", "Keep checking a phone.", "Turn away while speaking."], correct: 1 },
-  { label: "Reflection", topic: "Interview communication and self-reflection", question: "How can you answer a question about something you want to improve?", hint: "Be honest and show how you are working on it.", options: ["Say you have no area to improve.", "Name one area and explain one action you are taking.", "Blame classmates.", "Refuse to respond."], correct: 1 },
-  { label: "School knowledge", topic: "School awareness and motivation", question: "Why does learning about a secondary school before an interview help?", hint: "Connect what you know to your own interests.", options: ["It guarantees admission.", "It helps you give specific reasons for applying and ask thoughtful questions.", "It means no other preparation is needed.", "It lets you memorise a uniform colour."], correct: 1 },
-  { label: "Situation judgement", topic: "Peer inclusion and social awareness", question: "You notice a classmate is left out during an activity. What is a constructive response?", hint: "Show awareness and practical action.", options: ["Pretend not to notice.", "Invite the classmate to join and check what role they prefer.", "Tell others to stop talking.", "Leave the activity."], correct: 1 },
-  { label: "Integrated expression", topic: "Self-introduction and authentic expression", question: "What makes an interview answer memorable without sounding rehearsed?", hint: "Use a real, relevant example.", options: ["Using the longest words possible.", "Giving a clear answer supported by a genuine experience.", "Speaking as fast as possible.", "Reciting a script without listening."], correct: 1 },
-];
-
 function shuffle<T>(items: T[]) {
   const copy = [...items];
   for (let index = copy.length - 1; index > 0; index -= 1) {
@@ -258,8 +242,7 @@ function shuffle<T>(items: T[]) {
 function sourceFor(track: TrackId, grade: GradeId): QuestionSeed[] {
   if (track === "chinese-reading") return PRIMARY_CHINESE_READING_BANKS[grade]!;
   if (track === "english") return PRIMARY_ENGLISH_BANKS[grade]!;
-  if (track === "math") return PRIMARY_MATH_BANKS[grade]!;
-  return PRIMARY_INTERVIEW_BANK;
+  return PRIMARY_MATH_BANKS[grade]!;
 }
 
 function selectionGroupForSeed(track: TrackId, seed: QuestionSeed, seedIndex: number) {
@@ -269,35 +252,21 @@ function selectionGroupForSeed(track: TrackId, seed: QuestionSeed, seedIndex: nu
 
 export function buildQuestionPool(track: TrackId, grade: GradeId): AssessmentQuestion[] {
   const seeds = sourceFor(track, grade);
-  const isStandalone = track !== "interview";
-  if (isStandalone) {
-    return seeds.map((seed, seedIndex) => {
-      const optionShift = (track === "english" || track === "math") ? seedIndex % seed.options.length : 0;
-      const options = optionShift ? [...seed.options.slice(optionShift), ...seed.options.slice(0, optionShift)] : [...seed.options];
-      return {
-        ...seed,
-        options,
-        correct: (seed.correct - optionShift + seed.options.length) % seed.options.length,
-        id: `${track}-${grade}-${seedIndex}-0`,
-        grade,
-        gradeBand: gradeBand(grade),
-        selectionGroup: selectionGroupForSeed(track, seed, seedIndex),
-        module: moduleForSeed(track, seed),
-        difficulty: seedIndex % 5 === 4 ? "核心" : "基礎",
-      };
-    });
-  }
-  return seeds.flatMap((seed, seedIndex) => CONTEXTS.map((context, variant) => ({
-    ...seed,
-    id: `${track}-${grade}-${seedIndex}-${variant}`,
-    question: variant === 0 ? seed.question : `${seed.question}（${context}延伸題）`,
-    hint: variant === 0 ? seed.hint : `${seed.hint} 請留意題目在${context}中的線索。`,
-    grade,
-    gradeBand: gradeBand(grade),
-    selectionGroup: selectionGroupForSeed(track, seed, seedIndex),
-    module: moduleForSeed(track, seed),
-    difficulty: variant === 0 ? "基礎" : variant === 1 ? "核心" : "進階",
-  })));
+  return seeds.map((seed, seedIndex) => {
+    const optionShift = (track === "english" || track === "math") ? seedIndex % seed.options.length : 0;
+    const options = optionShift ? [...seed.options.slice(optionShift), ...seed.options.slice(0, optionShift)] : [...seed.options];
+    return {
+      ...seed,
+      options,
+      correct: (seed.correct - optionShift + seed.options.length) % seed.options.length,
+      id: `${track}-${grade}-${seedIndex}-0`,
+      grade,
+      gradeBand: gradeBand(grade),
+      selectionGroup: selectionGroupForSeed(track, seed, seedIndex),
+      module: moduleForSeed(track, seed),
+      difficulty: seedIndex % 5 === 4 ? "核心" : "基礎",
+    };
+  });
 }
 
 export function randomAssessment(track: TrackId, grade: GradeId) {
@@ -311,5 +280,5 @@ export function randomAssessment(track: TrackId, grade: GradeId) {
 export function trackForGrade(track: TrackId, grade: GradeId) {
   const gradeInfo = GRADES.find((item) => item.id === grade);
   const config = TRACKS.find((item) => item.id === track);
-  return Boolean(gradeInfo && config && config.allowedStages.includes(gradeInfo.stage) && (!config.grades || config.grades.includes(grade)));
+  return Boolean(gradeInfo && config && config.allowedStages.includes(gradeInfo.stage));
 }

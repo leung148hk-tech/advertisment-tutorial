@@ -8,7 +8,7 @@ import { getDb } from "../server/db";
 const port = 9333;
 const downloadDir = "/home/ubuntu/Downloads/learning-compass-smoke";
 const profileDir = "/tmp/learning-compass-smoke-profile";
-const testTrack = process.env.SMOKE_TRACK ?? "中文閱讀";
+const testTrack = process.env.SMOKE_TRACK ?? "中文";
 const answerIndex = Number(process.env.SMOKE_ANSWER_INDEX ?? 0);
 const expectRegionalSupport = process.env.SMOKE_EXPECT_REGIONAL_SUPPORT === "1";
 const smokeLeadName = "SMOKE_TEST_PARENT_20260825";

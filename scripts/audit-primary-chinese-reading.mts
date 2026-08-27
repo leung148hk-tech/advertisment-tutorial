@@ -42,7 +42,7 @@ const inventory = Object.fromEntries(
 
 const output = {
   generatedAt: new Date().toISOString(),
-  scope: "小一至小六中文閱讀",
+  scope: "小一至小六中文",
   finding: "同一題幹只附加情境字尾會被視為重覆；題幹不得要求學生觀看未提供的圖片或插圖，亦不得要求在單選介面中選取多於一個答案。",
   inventory,
 };

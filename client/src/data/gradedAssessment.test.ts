@@ -13,22 +13,16 @@ function countBySelectionGroup(items: ReturnType<typeof randomAssessment>) {
 }
 
 describe("primary-only assessment catalogue", () => {
-  it("exposes only P1–P6 and the four retained primary assessment tracks", () => {
+  it("exposes only P1–P6 and the three retained primary assessment tracks", () => {
     expect(GRADES.map((grade) => grade.id)).toEqual(PRIMARY_GRADES);
-    expect(TRACKS.map((track) => track.id)).toEqual(["chinese-reading", "english", "math", "interview"]);
+    expect(TRACKS.map((track) => track.id)).toEqual(["chinese-reading", "english", "math"]);
+    expect(TRACKS.find((track) => track.id === "chinese-reading")?.label).toBe("中文");
+    expect(TRACKS.find((track) => track.id === "chinese-reading")?.shortLabel).toBe("中文");
     expect(trackForGrade("english", "P1")).toBe(true);
-    expect(trackForGrade("interview", "P5")).toBe(true);
-    expect(trackForGrade("interview", "P4")).toBe(false);
+    expect(trackForGrade("chinese-reading", "P6")).toBe(true);
+    expect(trackForGrade("interview" as never, "P5")).toBe(false);
     expect(trackForGrade("science" as never, "P1")).toBe(false);
     expect(trackForGrade("english-reading" as never, "P1")).toBe(false);
-  });
-
-  it("keeps all five report modules for the primary interview assessment", () => {
-    expect(ASSESSMENT_MODULES).toEqual(["基礎掌握", "理解與應用", "情境推理", "整合表達", "溝通與協作"]);
-    const assessment = randomAssessment("interview", "P5");
-    expect(assessment).toHaveLength(20);
-    expect([...countBySelectionGroup(assessment).values()].sort()).toEqual([4, 4, 4, 4, 4]);
-    expect(assessment.some((item) => item.module === "溝通與協作")).toBe(true);
   });
 
   it("keeps each Chinese reading paper as 25 distinct questions across five curriculum domains", () => {

@@ -1,7 +1,6 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
-import { ASSESSMENT_MODULES, randomAssessment } from "@/data/gradedAssessment";
 
 const homeSource = readFileSync(resolve(process.cwd(), "client/src/pages/Home.tsx"), "utf8");
 
@@ -21,13 +20,8 @@ describe("Home report module presentation", () => {
     expect(homeSource).not.toContain("閱讀／寫作／解題／表達／溝通協作");
   });
 
-  it("keeps P5 interview reporting data compatible with all displayed modules", () => {
-    const questions = randomAssessment("interview", "P5");
-    const totals = new Map(ASSESSMENT_MODULES.map((module) => [module, 0]));
-    for (const question of questions) totals.set(question.module, (totals.get(question.module) ?? 0) + 1);
-
-    expect(totals.size).toBe(ASSESSMENT_MODULES.length);
-    expect(totals.get("溝通與協作")).toBeGreaterThan(0);
-    expect([...totals.values()].reduce((total, count) => total + count, 0)).toBe(20);
+  it("does not retain the removed secondary-school interview assessment in the public home page", () => {
+    expect(homeSource).not.toContain("升中面試");
+    expect(homeSource).not.toContain('"interview"');
   });
 });

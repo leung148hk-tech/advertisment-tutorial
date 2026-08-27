@@ -5,7 +5,7 @@ import { CheckCircle2, Pencil, Plus, Save, ToggleLeft, ToggleRight, Trash2 } fro
 import { FormEvent, useMemo, useState } from "react";
 
 const DISTRICTS = ["中西區", "灣仔區", "東區", "南區", "油尖旺區", "深水埗區", "九龍城區", "黃大仙區", "觀塘區", "葵青區", "荃灣區", "屯門區", "元朗區", "北區", "大埔區", "沙田區", "西貢區", "離島區"] as const;
-const SUBJECTS = ["中文", "英文", "數學", "Science", "升中面試"];
+const SUBJECTS = ["中文", "英文", "數學", "Science"];
 const GRADES = ["小一", "小二", "小三", "小四", "小五", "小六", "中一", "中二", "中三"];
 const COMMISSION_LABELS = { pending: "待商議", fixed: "固定金額", percentage: "百分比", mixed: "混合方式" } as const;
 type CommissionArrangement = keyof typeof COMMISSION_LABELS;
