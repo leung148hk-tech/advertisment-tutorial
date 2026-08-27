@@ -5,8 +5,8 @@ const validLead = {
   parentName: "陳太",
   phone: "9123 4567",
   district: "沙田區",
-  grade: "中一",
-  track: "英文閱讀",
+  grade: "小六",
+  track: "英文",
   score: 12,
   weaknessSummary: "閱讀理解：1/4；詞彙與語境：1/4",
   consent: true as const,
@@ -27,12 +27,14 @@ describe("parent lead contact validation", () => {
     expect(parsed.phone).toBe("+85291234567");
   });
 
-  it("rejects malformed contact details or a district outside the eighteen districts", () => {
+  it("rejects malformed contact details, out-of-scope assessment values, or a district outside the eighteen districts", () => {
     expect(leadInput.safeParse({ ...validLead, phone: "abc-123" }).success).toBe(false);
     expect(leadInput.safeParse({ ...validLead, phone: "9123456" }).success).toBe(false);
     expect(leadInput.safeParse({ ...validLead, phone: "+8613812345678" }).success).toBe(false);
     expect(leadInput.safeParse({ ...validLead, phone: "11234567" }).success).toBe(false);
     expect(leadInput.safeParse({ ...validLead, district: "香港" }).success).toBe(false);
+    expect(leadInput.safeParse({ ...validLead, grade: "中一" }).success).toBe(false);
+    expect(leadInput.safeParse({ ...validLead, track: "英文閱讀" }).success).toBe(false);
   });
 
   it("requires explicit consent before a lead can be submitted", () => {
@@ -59,15 +61,16 @@ describe("tutoring centre validation", () => {
 describe("parent lead management validation", () => {
   it("accepts an authorised status update with an internal note and valid filters", () => {
     expect(leadManagementInput.safeParse({ id: 12, followUpStatus: "contacted", internalNote: "已安排回電。" }).success).toBe(true);
-    expect(leadFilterInput.safeParse({ district: "觀塘區", grade: "中一", followUpStatus: "new", submittedFrom: "2026-08-01", submittedTo: "2026-08-31" }).success).toBe(true);
+    expect(leadFilterInput.safeParse({ district: "觀塘區", grade: "小六", followUpStatus: "new", submittedFrom: "2026-08-01", submittedTo: "2026-08-31" }).success).toBe(true);
     expect(leadBulkStatusInput.safeParse({ ids: [1, 2], followUpStatus: "closed" }).success).toBe(true);
   });
 
   it("rejects invalid status, district, grade, and oversized internal notes", () => {
     expect(leadManagementInput.safeParse({ id: 12, followUpStatus: "pending", internalNote: null }).success).toBe(false);
     expect(leadManagementInput.safeParse({ id: 12, followUpStatus: "new", internalNote: "x".repeat(2001) }).success).toBe(false);
-    expect(leadFilterInput.safeParse({ district: "香港", grade: "中一" }).success).toBe(false);
+    expect(leadFilterInput.safeParse({ district: "香港", grade: "小六" }).success).toBe(false);
     expect(leadFilterInput.safeParse({ district: "觀塘區", grade: "中四" }).success).toBe(false);
+    expect(leadFilterInput.safeParse({ district: "觀塘區", grade: "中一" }).success).toBe(false);
     expect(leadFilterInput.safeParse({ followUpStatus: "pending" }).success).toBe(false);
     expect(leadFilterInput.safeParse({ submittedFrom: "2026-02-30" }).success).toBe(false);
     expect(leadFilterInput.safeParse({ submittedFrom: "2026/08/01" }).success).toBe(false);

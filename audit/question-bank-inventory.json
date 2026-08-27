@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-27T09:17:35.721Z",
+  "generatedAt": "2026-08-27T13:41:25.283Z",
   "questionCount": 600,
   "groupCount": 18,
   "groups": {
@@ -4456,7 +4456,7 @@
       "selectionGroup": "primary-chinese-reading-P3-0",
       "label": "成語意思",
       "topic": "詞彙、成語與字詞辨錯",
-      "question": "「專心一致」最接近下列哪一個意思？",
+      "question": "「專心致志」最接近下列哪一個意思？",
       "hint": "想想做事時把注意力放在同一件事上。",
       "options": [
         "集中精神做事",
@@ -6745,7 +6745,7 @@
       "selectionGroup": "primary-chinese-reading-P4-1",
       "label": "關聯詞選擇",
       "topic": "轉折複句與進階標點",
-      "question": "「____ 路程很遠，小敏也會準時到達。」填入哪一組詞最合適？",
+      "question": "「____ 路程很遠，____小敏仍然會準時到達。」填入哪一組詞最合適？",
       "hint": "句子表示即使有困難，結果仍然不變。",
       "options": [
         "雖然……但是……",
@@ -6808,8 +6808,8 @@
       "selectionGroup": "primary-chinese-reading-P4-2",
       "label": "說明方法",
       "topic": "寓言、神話與說明文",
-      "question": "「鯨魚的心臟大約有一輛小汽車那麼重。」主要運用了甚麼說明方法？",
-      "hint": "句子把重量和熟悉的事物作比較。",
+      "question": "「這棵大樹約有五層樓那麼高。」主要運用了甚麼說明方法？",
+      "hint": "句子把高度和熟悉的事物作比較。",
       "options": [
         "作比較",
         "講故事",
@@ -9054,7 +9054,7 @@
     {
       "selectionGroup": "primary-chinese-reading-P5-3",
       "label": "詞義辨析",
-      "topic": "詞語感情色彩與詞義",
+      "topic": "議論與散文閱讀",
       "question": "「校園響起琅琅書聲」中的「書聲」指甚麼？",
       "hint": "想想誰發出讀書聲。",
       "options": [
@@ -9067,7 +9067,7 @@
       "id": "chinese-reading-P5-19-0",
       "grade": "P5",
       "gradeBand": "小學高年級進階",
-      "module": "基礎掌握",
+      "module": "理解與應用",
       "difficulty": "核心",
       "answer": "同學朗讀的聲音",
       "structuralIssues": []
@@ -9159,7 +9159,7 @@
     {
       "selectionGroup": "primary-chinese-reading-P5-4",
       "label": "詩句詞義",
-      "topic": "詞語感情色彩與詞義",
+      "topic": "律詩格式、文化與內容理解",
       "question": "「家書抵萬金」最能表現家書怎樣？",
       "hint": "「抵萬金」表示極其珍貴。",
       "options": [
@@ -9172,7 +9172,7 @@
       "id": "chinese-reading-P5-24-0",
       "grade": "P5",
       "gradeBand": "小學高年級進階",
-      "module": "基礎掌握",
+      "module": "理解與應用",
       "difficulty": "核心",
       "answer": "十分珍貴",
       "structuralIssues": []
@@ -11176,7 +11176,7 @@
       "selectionGroup": "primary-chinese-reading-P6-4",
       "label": "宋詞畫面",
       "topic": "古詩宋詞賞析",
-      "question": "「把酒問青天」最容易想像甚麼？",
+      "question": "「明月幾時有？把酒問青天。」最容易想像甚麼？",
       "hint": "找酒和月亮。",
       "options": [
         "舉杯望月問天",

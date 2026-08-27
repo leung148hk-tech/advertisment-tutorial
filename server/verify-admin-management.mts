@@ -29,16 +29,16 @@ async function run() {
     try { await publicCaller.centres.setActive({ id: 1, isActive: false }); } catch { toggleForbidden = true; }
     if (!leadsForbidden || !updateForbidden || !bulkForbidden || !toggleForbidden) throw new Error("Non-admin caller reached a protected management procedure.");
 
-    await createParentLead({ parentName: leadMarker, phone: "91234567", district: "觀塘區", grade: "中一", track: "英文閱讀", score: 11, weaknessSummary: "受控匯出驗證", consentAt: new Date("2026-08-25T01:00:00.000Z"), createdAt: new Date("2026-08-25T01:00:00.000Z") });
-    await createParentLead({ parentName: otherLeadMarker, phone: "91234568", district: "沙田區", grade: "中二", track: "數學", score: 9, weaknessSummary: "不應出現在最初篩選結果", consentAt: new Date("2026-08-25T01:05:00.000Z"), createdAt: new Date("2026-08-24T15:00:00.000Z") });
-    const filtered = await admin.leads.adminList({ district: "觀塘區", grade: "中一", followUpStatus: "new", submittedFrom: "2026-08-25", submittedTo: "2026-08-25" });
+    await createParentLead({ parentName: leadMarker, phone: "91234567", district: "觀塘區", grade: "小六", track: "英文", score: 11, weaknessSummary: "受控匯出驗證", consentAt: new Date("2026-08-25T01:00:00.000Z"), createdAt: new Date("2026-08-25T01:00:00.000Z") });
+    await createParentLead({ parentName: otherLeadMarker, phone: "91234568", district: "沙田區", grade: "小五", track: "數學", score: 9, weaknessSummary: "不應出現在最初篩選結果", consentAt: new Date("2026-08-25T01:05:00.000Z"), createdAt: new Date("2026-08-24T15:00:00.000Z") });
+    const filtered = await admin.leads.adminList({ district: "觀塘區", grade: "小六", followUpStatus: "new", submittedFrom: "2026-08-25", submittedTo: "2026-08-25" });
     const listed = filtered.find((lead) => lead.parentName === leadMarker);
     if (!listed || filtered.some((lead) => lead.parentName === otherLeadMarker) || listed.phone !== "91234567") throw new Error("Admin lead filter did not return only the expected authorised record.");
     await admin.leads.updateFollowUp({ id: listed.id, followUpStatus: "contacted", internalNote: "已安排回電（受控驗證）。" });
-    const exported = (await admin.leads.adminExport({ district: "觀塘區", grade: "中一", followUpStatus: "contacted" })).find((lead) => lead.id === listed.id);
+    const exported = (await admin.leads.adminExport({ district: "觀塘區", grade: "小六", followUpStatus: "contacted" })).find((lead) => lead.id === listed.id);
     if (!exported || exported.followUpStatus !== "contacted" || exported.internalNote !== "已安排回電（受控驗證）。") throw new Error("Individual follow-up update was not persisted to filtered export.");
 
-    const other = (await admin.leads.adminList({ district: "沙田區", grade: "中二", followUpStatus: "new" })).find((lead) => lead.parentName === otherLeadMarker);
+    const other = (await admin.leads.adminList({ district: "沙田區", grade: "小五", followUpStatus: "new" })).find((lead) => lead.parentName === otherLeadMarker);
     if (!other) throw new Error("Second controlled lead was not available for bulk update.");
     const bulkResult = await admin.leads.bulkUpdateStatus({ ids: [listed.id, other.id], followUpStatus: "closed" });
     if (bulkResult.updatedCount !== 2) throw new Error("Bulk update did not report the expected selected record count.");
@@ -46,7 +46,7 @@ async function run() {
     const closedListed = closed.find((lead) => lead.id === listed.id);
     const closedOther = closed.find((lead) => lead.id === other.id);
     if (!closedListed || !closedOther || closedListed.internalNote !== "已安排回電（受控驗證）。" || closedOther.internalNote !== null) throw new Error("Bulk status update did not preserve internal notes or status-filtered results.");
-    const combined = await admin.leads.adminList({ district: "觀塘區", grade: "中一", followUpStatus: "closed" });
+    const combined = await admin.leads.adminList({ district: "觀塘區", grade: "小六", followUpStatus: "closed" });
     if (!combined.some((lead) => lead.id === listed.id) || combined.some((lead) => lead.id === other.id)) throw new Error("Combined district, grade, and status filter returned unexpected leads.");
     const dated = await admin.leads.adminList({ submittedFrom: "2026-08-25", submittedTo: "2026-08-25", followUpStatus: "closed" });
     const datedExport = await admin.leads.adminExport({ submittedFrom: "2026-08-25", submittedTo: "2026-08-25", followUpStatus: "closed" });

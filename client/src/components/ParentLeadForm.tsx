@@ -33,7 +33,7 @@ export default function ParentLeadForm({ grade, track, score, weaknessSummary, o
     setPhoneTouched(true);
     if (!consent || !normalisedPhone) return;
     setStage("submitting");
-    submit.mutate({ parentName, phone: normalisedPhone, district: district as never, grade, track, score, weaknessSummary, consent: true });
+    submit.mutate({ parentName, phone: normalisedPhone, district: district as never, grade: grade as never, track: track as never, score, weaknessSummary, consent: true });
   };
 
   if (stage === "success") return <section className="parent-lead-stage" aria-live="polite"><div className="parent-lead-success"><CircleCheckBig size={42} /><p className="eyebrow">資料已安全提交</p><h2>正在為你整理完整報告。</h2><p>電話不會顯示在公開報告、PDF 或分享內容中。</p><div className="success-route-dots" aria-hidden="true"><i /><i /><i /></div></div></section>;

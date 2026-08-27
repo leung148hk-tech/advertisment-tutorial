@@ -5,7 +5,7 @@ import { CalendarDays, CheckSquare, Download, Filter, LockKeyhole, Save, ShieldC
 import { useEffect, useMemo, useState } from "react";
 
 const DISTRICTS = ["中西區", "灣仔區", "東區", "南區", "油尖旺區", "深水埗區", "九龍城區", "黃大仙區", "觀塘區", "葵青區", "荃灣區", "屯門區", "元朗區", "北區", "大埔區", "沙田區", "西貢區", "離島區"] as const;
-const GRADES = ["小一", "小二", "小三", "小四", "小五", "小六", "中一", "中二", "中三"] as const;
+const GRADES = ["小一", "小二", "小三", "小四", "小五", "小六"] as const;
 const STATUS = { new: { label: "新提交", className: "bg-blue-100 text-blue-800" }, contacted: { label: "已聯絡", className: "bg-amber-100 text-amber-800" }, closed: { label: "已結束", className: "bg-slate-200 text-slate-700" } } as const;
 type FollowUpStatus = keyof typeof STATUS;
 type LeadRow = { id: number; parentName: string; phone: string; district: string; grade: string; track: string; score: number; weaknessSummary: string; consentAt: Date | string; createdAt: Date | string; followUpStatus: FollowUpStatus; internalNote: string | null };

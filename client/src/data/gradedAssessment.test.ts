@@ -34,11 +34,26 @@ describe("primary-only assessment catalogue", () => {
       expect(new Set(pool.map((item) => item.question)).size).toBe(25);
       expect(new Set(pool.map((item) => item.topic))).toEqual(new Set(expectedDomains));
       expect(new Set(pool.map((item) => item.selectionGroup)).size).toBe(5);
+      expect(pool.every((item) => {
+        const domainIndex = Number(item.selectionGroup.split("-").at(-1));
+        return item.topic === expectedDomains[domainIndex];
+      })).toBe(true);
       expect(pool.some((item) => /(?:^|：)看圖|圖中|根據(?:圖片|插圖|圖畫)/.test(item.question))).toBe(false);
       expect(pool.some((item) => /(?:請)?(?:選出|選擇|選取).{0,8}(?:兩|二)|哪兩(?:個|種)|兩個(?:答案|選項)/.test(item.question))).toBe(false);
       expect(assessment).toHaveLength(20);
       expect([...countBySelectionGroup(assessment).values()].sort()).toEqual([4, 4, 4, 4, 4]);
     }
+  });
+
+  it("keeps the audited Chinese wording self-contained and aligned with a single best answer", () => {
+    const p3 = buildQuestionPool("chinese-reading", "P3");
+    const p4 = buildQuestionPool("chinese-reading", "P4");
+    const p6 = buildQuestionPool("chinese-reading", "P6");
+    expect(p3.some((item) => item.question.includes("專心致志"))).toBe(true);
+    expect(p3.some((item) => item.question.includes("專心一致"))).toBe(false);
+    expect(p4.some((item) => item.question.includes("____ 路程很遠，____小敏仍然會準時到達"))).toBe(true);
+    expect(p4.some((item) => item.question.includes("這棵大樹約有五層樓那麼高"))).toBe(true);
+    expect(p6.some((item) => item.question.includes("明月幾時有？把酒問青天"))).toBe(true);
   });
 
   it("combines five reading and five writing-foundation domains into one 50-question English pool", () => {

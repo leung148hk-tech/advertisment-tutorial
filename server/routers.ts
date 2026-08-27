@@ -6,6 +6,8 @@ import { systemRouter } from "./_core/systemRouter";
 import { adminProcedure, publicProcedure, router } from "./_core/trpc";
 
 export const DISTRICTS = ["中西區", "灣仔區", "東區", "南區", "油尖旺區", "深水埗區", "九龍城區", "黃大仙區", "觀塘區", "葵青區", "荃灣區", "屯門區", "元朗區", "北區", "大埔區", "沙田區", "西貢區", "離島區"] as const;
+const ASSESSMENT_GRADES = ["小一", "小二", "小三", "小四", "小五", "小六"] as const;
+const ASSESSMENT_TRACKS = ["中文", "英文", "數學"] as const;
 const hkPhone = z.string().trim().transform((value) => value.replace(/[\s()-]/g, "")).refine((value) => /^(?:\+852)?[2-9]\d{7}$/.test(value), "請填寫有效香港電話，例如 9123 4567 或 +852 9123 4567");
 export function getCentralWhatsAppNumber() {
   const digits = (process.env.VITE_CENTRAL_WHATSAPP ?? "").replace(/\D/g, "");
@@ -26,8 +28,8 @@ export const leadInput = z.object({
   parentName: z.string().trim().min(2, "請填寫家長稱呼").max(120),
   phone: hkPhone,
   district: z.enum(DISTRICTS),
-  grade: z.string().trim().min(2).max(8),
-  track: z.string().trim().min(2).max(64),
+  grade: z.enum(ASSESSMENT_GRADES),
+  track: z.enum(ASSESSMENT_TRACKS),
   score: z.number().int().min(0).max(20),
   weaknessSummary: z.string().trim().min(1).max(2000),
   consent: z.literal(true, { error: "需要同意資料用於學習跟進" }),
@@ -35,7 +37,7 @@ export const leadInput = z.object({
 
 export const leadFilterInput = z.object({
   district: z.enum(DISTRICTS).optional(),
-  grade: z.enum(["小一", "小二", "小三", "小四", "小五", "小六", "中一", "中二", "中三"]).optional(),
+  grade: z.enum(ASSESSMENT_GRADES).optional(),
   followUpStatus: z.enum(["new", "contacted", "closed"]).optional(),
   submittedFrom: hkDateOnly.optional(),
   submittedTo: hkDateOnly.optional(),

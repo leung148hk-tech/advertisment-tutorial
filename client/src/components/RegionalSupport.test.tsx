@@ -29,8 +29,8 @@ describe("RegionalSupport real partnership coverage", () => {
 
   it("renders 言點教育與轉介入口 for 荃灣, but a transparent pending state for 灣仔", () => {
     const abilities = [{ topic: "閱讀理解", total: 4, correct: 0, percentage: 0, state: "needs-support" }];
-    const tsuenWan = renderToStaticMarkup(<RegionalSupport gradeLabel="中一" trackLabel="英文閱讀" abilities={abilities} homeDistrict="荃灣區" />);
-    const wanChai = renderToStaticMarkup(<RegionalSupport gradeLabel="中一" trackLabel="英文閱讀" abilities={abilities} homeDistrict="灣仔區" />);
+    const tsuenWan = renderToStaticMarkup(<RegionalSupport gradeLabel="小六" trackLabel="英文" abilities={abilities} homeDistrict="荃灣區" />);
+    const wanChai = renderToStaticMarkup(<RegionalSupport gradeLabel="小六" trackLabel="英文" abilities={abilities} homeDistrict="灣仔區" />);
     expect(tsuenWan).toContain("言點教育 WELITedu");
     expect(tsuenWan).toContain("由學習航圖安排轉介");
     expect(wanChai).toContain("待合作中心加入");
