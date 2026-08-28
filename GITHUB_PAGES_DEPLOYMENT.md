@@ -21,4 +21,8 @@ GitHub Pages 會保留首頁、年級及三科選擇、20 題隨機評估、結�
 
 ## 發布來源遷移
 
-原有 GitHub Pages 設定使用 `main` 分支的根目錄（legacy），因此只會顯示儲存庫的 `README.md`。同步本工作流程後，發布來源必須更新為 GitHub Actions（`build_type: workflow`），才會上載 `dist/public` 靜態產物並顯示完整前台。
+原有 GitHub Pages 設定使用 `main` 分支的根目錄（legacy），因此只會顯示儲存庫的 `README.md`。同步本工作流程後，GitHub Actions 會上載 `dist/public` 靜態產物並部署完整前台。GitHub API 可能仍回傳舊的 legacy 設定描述；應以公開網址實際回應的部署產物及 Actions 執行結果作準。
+
+已推送的 Actions 執行 `33128602268` 已於 2026-08-28 成功完成「建置靜態前台」及「Deploy to GitHub Pages」兩個工作。公開網址為 `https://leung148hk-tech.github.io/advertisment-tutorial/`；其首頁 HTML 已載入「學習航圖｜小學分級免費評估」標題及由 `/advertisment-tutorial/assets/*` 提供的 CSS／JavaScript，不再是 README 文件。
+
+本任務的自動瀏覽器驗證環境未能動態匯入外部 GitHub Pages 模組，即使公開伺服器回應為 `200 application/javascript` 且已通過 JavaScript 語法檢查。因此，最終使用者端目視確認應以該公開網址在一般桌面或手機瀏覽器開啟的結果為準。
