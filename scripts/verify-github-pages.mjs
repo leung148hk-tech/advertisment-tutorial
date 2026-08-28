@@ -1,7 +1,7 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 
-const root = resolve(process.cwd(), "dist/public");
+const root = resolve(process.cwd(), "dist/github-pages");
 const requireFile = (relativePath) => {
   const filename = resolve(root, relativePath);
   if (!existsSync(filename)) throw new Error(`Missing GitHub Pages artifact: ${relativePath}`);

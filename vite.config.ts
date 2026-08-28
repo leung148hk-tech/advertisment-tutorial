@@ -167,7 +167,10 @@ export default defineConfig({
   cacheDir: path.resolve(import.meta.dirname, "client", "vite-cache"),
   publicDir: path.resolve(import.meta.dirname, "client", "public"),
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
+    outDir: path.resolve(
+      import.meta.dirname,
+      process.env.VITE_GITHUB_PAGES === "true" ? "dist/github-pages" : "dist/public",
+    ),
     emptyOutDir: true,
   },
   server: {

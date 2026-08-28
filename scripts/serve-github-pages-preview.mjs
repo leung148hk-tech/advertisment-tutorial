@@ -2,7 +2,7 @@ import { createReadStream, existsSync, statSync } from "node:fs";
 import { createServer } from "node:http";
 import { extname, resolve } from "node:path";
 
-const root = resolve(process.cwd(), "dist/public");
+const root = resolve(process.cwd(), "dist/github-pages");
 const base = "/advertisment-tutorial";
 const port = Number(process.env.PORT ?? 4175);
 const contentTypes = {
